@@ -32,6 +32,10 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 * ✅ Resistors, wiring, Dupont connectors
 
 ---
+## Custom PCBs
+
+All custom-designed PCB files and schematics are located in the `PCBs/` directory.
+
 
 ## 📁 File Structure
 
