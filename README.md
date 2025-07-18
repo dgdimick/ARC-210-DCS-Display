@@ -62,7 +62,7 @@ ARC-210/
    * Adafruit BusIO
    * Adafruit NeoPixel
    * SPI
-   * Your custom `ILI9488-ESP32S3` library
+   * My custom ILI9844 diplay library - https://github.com/dgdimick/ILI9488-ESP32S3-Fast
 
 2. **Connect your display**:
 
