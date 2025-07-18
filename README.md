@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II
 
-This project replicates the look and functionality of the ARC-210 radio used in the A-10C II Warthog module for Digital Combat Simulator (DCS). It uses an **ESP32-S3** microcontroller, an **ILI9488 SPI display**, a **button matrix**, **rotary encoders**, and an optional **WS2812 (NeoPixel)** LED for status indication.
+This project replicates the look and functionality of the ARC-210 radio used in the A-10C II Warthog module for Digital Combat Simulator (DCS). It uses an **ESP32-S3** microcontroller, an **ILI9488 SPI display**, **rotary encoders**, and an optional **WS2812 (NeoPixel)** LED for status indication.
 
 ---
 
@@ -8,7 +8,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 
 * **Full-color splash screen** and **connection status warnings**
 * **Text rendering** using Adafruit\_GFX and custom fonts
-* **16-button matrix** for manual frequency input or mode selection
+* **NO button matrix** for manual frequency input or mode selection
 * **Up to 9 rotary encoders** for channel/volume controls
 * **DCS-BIOS integration** (planned or active)
 * **WS2812 RGB LED** to indicate device state (e.g., red for no DCS connection)
