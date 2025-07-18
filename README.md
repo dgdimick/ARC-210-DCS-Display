@@ -8,7 +8,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 
 * **Full-color splash screen** and **connection status warnings**
 * **Text rendering** using Adafruit\_GFX and custom fonts
-* **16 Buttons** for manual frequency input or mode selection - split into 3 PCB's of 2 5buttons an a 6 button board
+* **16 Buttons** for manual frequency input or mode selection - split into 3 PCB's of 2 5 button PCB's an a 6 button PCB
 * **Up to 9 rotary encoders** for channel/volume controls
 * **DCS-BIOS integration** (planned or active)
 * **WS2812 RGB LED** to indicate device state (e.g., red for no DCS connection)
