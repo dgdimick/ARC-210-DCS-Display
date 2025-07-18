@@ -41,7 +41,7 @@ All custom-designed PCB files and schematics are located in the `PCBs/` director
 
 ```
 ARC-210/
-├── ARC210.ino              ← Main code
+├── ARC210.ino                   ← Main code
 ├── lib/
 │   └── ILI9488-ESP32S3/
 │       ├── ILI9488-ESP32S3.h
@@ -52,8 +52,29 @@ ARC-210/
 ├── images/
 │   └── splash_screen.jpg
 ├── docs/
-│   └── button_matrix_layout.png
+│   └── control_layout.png      ← Diagram of how buttons are arranged
+├── PCBs/                        ← Custom button PCBs
+│   ├── README.md                ← Description of the three PCBs
+│   ├── LeftPanel_5Btn/
+│   │   ├── LeftPanel.sch
+│   │   ├── LeftPanel.kicad_pcb
+│   │   └── Gerbers/
+│   │       ├── LeftPanel-F_Cu.gbr
+│   │       └── ...
+│   ├── CenterPanel_6Btn/
+│   │   ├── CenterPanel.sch
+│   │   ├── CenterPanel.kicad_pcb
+│   │   └── Gerbers/
+│   │       ├── CenterPanel-F_Cu.gbr
+│   │       └── ...
+│   └── RightPanel_5Btn/
+│       ├── RightPanel.sch
+│       ├── RightPanel.kicad_pcb
+│       └── Gerbers/
+│           ├── RightPanel-F_Cu.gbr
+│           └── ...
 └── README.md
+
 ```
 
 ---
@@ -66,7 +87,7 @@ ARC-210/
    * Adafruit BusIO
    * Adafruit NeoPixel
    * SPI
-   * My custom ILI9844 diplay library - https://github.com/dgdimick/ILI9488-ESP32S3-Fast
+   * My custom ILI9844-ESP32S3-FAST display library - https://github.com/dgdimick/ILI9488-ESP32S3-Fast
 
 2. **Connect your display**:
 
