@@ -55,25 +55,26 @@ ARC-210/
 │   └── control_layout.png      ← Diagram of how buttons are arranged
 ├── PCBs/                        ← Custom button PCBs
 │   ├── README.md                ← Description of the three PCBs
-│   ├── LeftPanel_5Btn/
-│   │   ├── LeftPanel.sch
-│   │   ├── LeftPanel.kicad_pcb
+│   ├── LeftSide_5Buttons/
+│   │   ├── LeftSide.sch
+│   │   ├── LeftSide.kicad_pcb
 │   │   └── Gerbers/
-│   │       ├── LeftPanel-F_Cu.gbr
+│   │       ├── LeftSide-F_Cu.gbr
 │   │       └── ...
-│   ├── CenterPanel_6Btn/
-│   │   ├── CenterPanel.sch
-│   │   ├── CenterPanel.kicad_pcb
+│   ├── Center_5Buttons/
+│   │   ├── Center.sch
+│   │   ├── Center.kicad_pcb
 │   │   └── Gerbers/
-│   │       ├── CenterPanel-F_Cu.gbr
+│   │       ├── Center-F_Cu.gbr
 │   │       └── ...
-│   └── RightPanel_5Btn/
-│       ├── RightPanel.sch
-│       ├── RightPanel.kicad_pcb
+│   └── RightSide_6Buttons/
+│       ├── RightSide.sch
+│       ├── RightSide.kicad_pcb
 │       └── Gerbers/
-│           ├── RightPanel-F_Cu.gbr
+│           ├── RightSide-F_Cu.gbr
 │           └── ...
 └── README.md
+
 
 ```
 
