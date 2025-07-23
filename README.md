@@ -8,7 +8,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 
 * **Full-color splash screen** and **DCSBIOS connection status warnings**
 * **Text rendering** using Adafruit\_GFX and custom fonts
-* **16 Buttons** for manual frequency input or mode selection - split into 3 PCB's: 2 5 button PCB's an a 6 button PCB
+* **16 Buttons** for manual frequency input or mode selection - implemented via 3 PCBs: 5 buttons (Left), 5 buttons (Center), and 6 buttons (Right)
 * **Up to 9 rotary encoders** for channel/volume controls
 * **DCS-BIOS integration** (planned or active)
 * **WS2812 RGB LED** to indicate device state (e.g., red/green for no/good DCS connection)
@@ -18,7 +18,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 ## 📷 Example Screens
 
 ![Splash Screen](images/splash_screen.jpg)
-![Matrix Layout](docs/button_matrix_layout.png)
+![Matrix Layout](docs/control_layout.png)
 
 ---
 
@@ -26,16 +26,19 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 
 * ✅ **ESP32-S3** (e.g., Lolin S3 Mini or DevKit)
 * ✅ **3.5” ILI9488 SPI TFT Display**
-* ✅ **16x momentary switches** in 4x4 matrix
+* ✅ **16x momentary switches** (wired directly or via custom PCBs)
 * ✅ **Up to 9 rotary encoders** (2 pins each + common GND)
 * ✅ **WS2812 LED** (optional)
 * ✅ Resistors, wiring, Dupont connectors
 
 ---
-## Custom PCBs
 
-All custom-designed PCB files and schematics are located in the `PCBs/` directory. I've posted the Gerber files for Version 1.0
+## 🧹 Custom PCB
 
+All custom-designed PCB files and Gerber outputs are located in the `PCBs/ARC-210_Full_PCB/` directory.
+This includes the finalized full front panel layout containing all switches and rotary encoder headers.
+
+No partial/segmented button boards are used in this version.
 
 ## 📁 File Structure
 
@@ -53,29 +56,9 @@ ARC-210/
 │   └── splash_screen.jpg
 ├── docs/
 │   └── control_layout.png      ← Diagram of how buttons are arranged
-├── PCBs/                        ← Custom button PCBs
-│   ├── README.md                ← Description of the three PCBs
-│   ├── LeftSide_5Buttons/
-│   │   ├── LeftSide.sch
-│   │   ├── LeftSide.kicad_pcb
-│   │   └── Gerbers/
-│   │       ├── LeftSide-F_Cu.gbr
-│   │       └── ...
-│   ├── Center_5Buttons/
-│   │   ├── Center.sch
-│   │   ├── Center.kicad_pcb
-│   │   └── Gerbers/
-│   │       ├── Center-F_Cu.gbr
-│   │       └── ...
-│   └── RightSide_6Buttons/
-│       ├── RightSide.sch
-│       ├── RightSide.kicad_pcb
-│       └── Gerbers/
-│           ├── RightSide-F_Cu.gbr
-│           └── ...
+├── PCBs/
+│   └── ARC-210_Full_PCB/        ← Complete front panel design (Gerbers + KiCad)
 └── README.md
-
-
 ```
 
 ---
@@ -88,7 +71,7 @@ ARC-210/
    * Adafruit BusIO
    * Adafruit NeoPixel
    * SPI
-   * My custom ILI9844-ESP32S3-FAST display library - https://github.com/dgdimick/ILI9488-ESP32S3-Fast
+   * My custom ILI9844-ESP32S3-FAST display library - [https://github.com/dgdimick/ILI9488-ESP32S3-Fast](https://github.com/dgdimick/ILI9488-ESP32S3-Fast)
 
 2. **Connect your display**:
 
@@ -100,7 +83,7 @@ ARC-210/
    SCK      → GPIO 12
    ```
 
-3. **Define your switch matrix pins** and connect accordingly.
+3. **Define your switch input pins** and connect accordingly.
 
 4. **Compile and upload** using Arduino IDE or PlatformIO with `esp32s3` board selected.
 
