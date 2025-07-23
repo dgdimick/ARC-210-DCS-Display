@@ -34,7 +34,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 ---
 ## Custom PCBs
 
-All custom-designed PCB files and schematics are located in the `PCBs/` directory.
+All custom-designed PCB files and schematics are located in the `PCBs/` directory. I've posted the Gerber files for Version 1.0
 
 
 ## 📁 File Structure
