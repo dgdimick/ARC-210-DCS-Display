@@ -15,7 +15,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 
 - **Microcontroller:** ESP32-S3
 - **Display:** ILI9488 SPI TFT (3.5")
-- **Encoders:** Rotary encoders (x9) - code will change if I can sourcew the correct switchs for the modes switches
+- **Encoders:** Rotary encoders (x9) - code will change if I can source the correct switchs for the modes switches
 - **Switches:** 16 momentary buttons
 - **LEDs:** Up to 50 WS2812 RGB LEDs
 - **Optional:** Arduino Mega 2560 version also supported - code changes will be required for display output
