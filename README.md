@@ -18,7 +18,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 - **Encoders:** Rotary encoders (x9)
 - **Switches:** 16 momentary buttons
 - **LEDs:** Up to 50 WS2812 RGB LEDs
-- **Optional:** Arduino Mega 2560 version also supported
+- **Optional:** Arduino Mega 2560 version also supported - some code changes will be required
 
 ## Software
 
