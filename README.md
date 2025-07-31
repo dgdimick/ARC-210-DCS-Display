@@ -42,7 +42,7 @@ The `Supporting STL's` directory includes:
 - **Mounting hardware** for the TFT screen and PCBs
 - **Brackets** for panel alignment
 
-All STLs are print-ready and designed for FDM printers with 0.4mm nozzles.
+All STLs are print-ready and designed for FDM printers with 0.4mm nozzles; SLA printers may have to adjust the print sizes
 
 ## Licensing
 
