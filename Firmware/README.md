@@ -1,0 +1,1 @@
+This is the Firmware for both ESP32-S3 chips
