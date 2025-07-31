@@ -4,7 +4,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 
 ## Features
 
-- Realistic interface modeled after the ARC-210 radio I used the A 10C "Thunderbolt" / "Warthog" VHF / UHF Cockpit Panel from PC Flights https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/ 
+- Realistic interface modeled after the ARC-210 radio; I used the A 10C "Thunderbolt" / "Warthog" VHF / UHF Cockpit Panel from PC Flights https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/ 
 - Powered by an ESP32-S3
 - ILI9488 SPI TFT display (480x320) - I'm using the 3.5 inch display
 - Support for rotary encoders and momentary switches
