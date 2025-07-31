@@ -39,7 +39,6 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 
 The `Supporting STL's` directory includes:
 - **Knobs** for rotary encoders
-- **Button caps** for momentary switches
 - **Mounting hardware** for the TFT screen and PCBs
 - **Brackets** for panel alignment
 
