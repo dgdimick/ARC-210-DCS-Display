@@ -15,6 +15,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 - Optional WS2812 LEDs for backlighting
 - DCSBIOS integration for in-game control and feedback
 - RESET button resets both ESP32-S3 chips
+- ESP32-S3 chips can be updated via WiFi - code will need to be changed by user.
 
 ## Hardware
 
