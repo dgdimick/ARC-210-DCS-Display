@@ -1,5 +1,7 @@
 # ARC-210 Radio Control Panel for DCS A-10C II
 
+**Updated July 31 2025**
+
 This project replicates the look and functionality of the ARC-210 radio used in the A-10C II Warthog module for Digital Combat Simulator (DCS). It is intended for use with a physical control panel powered by an ESP32-S3 microcontroller.
 
 🔗 [See the official DCS website](https://www.digitalcombatsimulator.com/en/) for the game.
