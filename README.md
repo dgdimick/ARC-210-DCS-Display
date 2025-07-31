@@ -16,6 +16,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 - DCSBIOS integration for in-game control and feedback
 - RESET button resets both ESP32-S3 chips
 - ESP32-S3 chips can be updated via WiFi - code will need to be changed by user.
+
   *Note: This will depend on having rotary switches for the Modes. Then putting both switches in postion 8 and pressing the GPS button will force a reboot that will launch over the air upgrade* 
 
 ## Hardware
