@@ -13,8 +13,10 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 
 ## Hardware
 
-- **Microcontroller:** ESP32-S3-WROOM-1 N16R8 https://www.amazon.com/dp/B0DB1WK3CW?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
-- **Display:** ILI9488 SPI TFT (3.5") https://www.amazon.com/dp/B0CKRJ81B5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_2
+- **Microcontroller:** ESP32-S3-WROOM-1 N16R8 
+    https://www.amazon.com/dp/B0DB1WK3CW?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
+- **Display:** ILI9488 SPI TFT (3.5") 
+    https://www.amazon.com/dp/B0CKRJ81B5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_2
 - **Encoders:** Rotary encoders (x9) - code will change if I can source the correct switches for the modes (1 Pole 8 Positions Rotary Switch 45 degrees angle of throw)
 - **Face plate from PC Flights https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/ 
 - **LEDs:** Up to 50 WS2812 RGB LEDs
