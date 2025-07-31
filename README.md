@@ -41,7 +41,8 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 
 - Written in Arduino C++
 - Uses `ILI9488-ESP32S3.h` custom display driver
-🔗 []https://github.com/dgdimick/ILI9488-ESP32S3-Fast  
+
+🔗 [download]https://github.com/dgdimick/ILI9488-ESP32S3-Fast  
   *Note: Do not use TFT_eSPI due to ESP32 compatibility issues, and the Code will change if I can source the correct switches for the modes (1 Pole 8 Position Rotary Switch, 45° angle of throw)*
 
 ## Directories
