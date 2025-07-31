@@ -18,7 +18,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 - **Display:** ILI9488 SPI TFT (3.5") 
     https://www.amazon.com/dp/B0CKRJ81B5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_2
 - **Encoders:** Rotary encoders (x9) - code will change if I can source the correct switches for the modes (1 Pole 8 Positions Rotary Switch 45 degrees angle of throw)
-- **Faceplate: https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/ 
+- **Faceplate:** https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/ 
 - **LEDs:** Up to 50 WS2812 RGB LEDs
 - **Optional:** Arduino Mega 2560 version also supported - code changes will be required for display output
 
