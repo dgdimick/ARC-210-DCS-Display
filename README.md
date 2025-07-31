@@ -28,7 +28,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 🔗 [Amazon] https://www.amazon.com/dp/B0CKRJ81B5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_2
 
 - **Encoders:** Rotary encoders (x9)  
-🔗 [Mouser Electronics] https://www.mouser.com/ProductDetail/652-PEC11H4220KS0024  
+🔗 [Mouser Electronics] 
 
 - **Faceplate:**  
 🔗 [PC Flights] https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/
