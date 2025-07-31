@@ -18,14 +18,19 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 
 - **Microcontroller:** ESP32-S3-WROOM-1 N16R8  
   [Amazon] https://www.amazon.com/dp/B0DB1WK3CW?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
+
 - **Display:** ILI9488 SPI TFT (3.5")  
   [Amazon] https://www.amazon.com/dp/B0CKRJ81B5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_2
+
 - **Encoders:** Rotary encoders (x9)  
   [Mouser Electronics] https://www.mouser.com/ProductDetail/652-PEC11H4220KS0024  
   *Code will change if I can source the correct switches for the modes (1 Pole 8 Position Rotary Switch, 45° angle of throw)*
+
 - **Faceplate:**  
   [PC Flights] https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/
+
 - **LEDs:** Up to 50 WS2812 RGB LEDs
+
 - **Optional:** Arduino Mega 2560 version also supported — code changes required for display output; pins need to be changed and the TFT_eSPI library used
 
 ## Software
