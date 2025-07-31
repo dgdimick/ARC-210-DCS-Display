@@ -29,7 +29,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 ## Directories
 
 - `ARC-210/`: Main source code and sketches
-- `ARC-210/PCBs/`: KiCad files and Gerbers for button boards and main panel
+- `ARC-210/PCBs/`: KiCad files and Gerbers for button board and ESP32-S3 Control board
 - `ARC-210/Firmware/`: INO source files
 - `ARC-210/Docs/`: Schematics, diagrams, and images
 - `ARC-210/Supporting STL's/`: 3D-printable parts such as knobs, bezels, brackets, and mounts
