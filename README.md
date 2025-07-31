@@ -4,12 +4,12 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 ## Features
 
 - Realistic interface modeled after the ARC-210 radio
-- Powered by an two ESP32-S3-WROOM-1 N16R8
+- Powered by an two ESP32-S3-WROOM-1 N16R8 - USB power or 5 volt supply
 - ILI9488 SPI TFT display (480x320) - I'm using the 3.5 inch display
 - Support for rotary encoders and momentary switches
 - Optional WS2812 LEDs for backlighting
 - DCS-BIOS integration for in-game control and feedback
-
+- RESET button that will reset both ESP32-S3 chips
 ## Hardware
 
 - **Microcontroller:** ESP32-S3-WROOM-1 N16R8 
