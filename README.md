@@ -18,7 +18,7 @@ This project replicates the look and functionality of the ARC-210 radio used in 
 - RESET button resets both ESP32-S3 chips
 - ESP32-S3 chips can be updated via WiFi
 
-  *Note: Placing both switches in postion 8 and pressing the GPS button will force a reboot that will launch over the air upgrade - code will need to be changed by user - wifi_config.h will need to be configured by the user* 
+  *Note: Placing both switches in postion 8 and pressing the GPS button will force a reboot launching the over the air upgrade - code will need to be changed by user - wifi_config.h will need to be configured by the user* 
 
 ## Hardware
 
