@@ -34,7 +34,7 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 🔗 [Mouser Electronics] https://www.mouser.com/ProductDetail/Bourns/PEC11R-4215F-S0024?qs=Zq5ylnUbLm5lAqmKF80wzQ%3D%3D - these are backordered until Nov 2025
 
 
-- **Rotery Switches:** 8 Postion Rotary Switches (45 degree angle, with stop)
+- **Rotary Switches:** 8 Postion Rotary Switches (45 degree angle, with stop)
 
 🔗 [Mouser Electronics] https://www.mouser.com/ProductDetail/611-A12503RNCQE
 
