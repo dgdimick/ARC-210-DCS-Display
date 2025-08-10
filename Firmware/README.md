@@ -1,1 +1,1 @@
-This is the Firmware for both ESP32-S3 chips
+This is the Firmware for both ESP32-S3 chips. The current design uses two esp32-S3 chips.
