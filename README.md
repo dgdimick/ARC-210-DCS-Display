@@ -65,7 +65,7 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 ## New: Supporting STL's
 
 The `Supporting STL's` directory includes:
-- **Knobs** for rotary encoders
+- **Knobs** for rotary encoders and rotary switches
 - **Mounting hardware** for the TFT screen and PCBs
 - **Brackets** for panel alignment
 
