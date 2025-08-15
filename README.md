@@ -12,17 +12,18 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 - Powered by two ESP32-S3-WROOM-1 N16R8 boards — uses USB or 5V supply
 - ILI9488 3.5" SPI TFT display (480x320) — powered by the control board
 - Support for digital rotary encoders, rotary switches, and momentary switches
-- Optional WS2812 LEDs for backlighting
+- Optional WS2812 LEDs for back lighting
 - DCSBIOS integration for in-game control and feedback
 - Red screen when DCSBIOS link has not been activated
 - RESET button resets both ESP32-S3 chips
-- ESP32-S3 chips can be updated via WiFi
+- ESP32-S3 chips can be updated via WiFI or over USB
+- USB or WiFI can be used for DCSBIOS connection
 
-  *Note: Placing both Rotary Switches in postion 8 and holding the GPS button for 5 seconds will force a reboot launching the over the air upgrade - code will need to be changed by user - wifi_config.h will need to be configured by the user* 
+  *Note: Placing both Rotary Switches in position 8 and holding the GPS button for 5 seconds will force a reboot launching the over the air upgrade - code will need to be changed by user - wifi_config.h will need to be configured by the user* 
 
 ## Hardware
 
-- **Microcontroller:** ESP32-S3-WROOM-1 N16R8  
+- **Micro controller:** ESP32-S3-WROOM-1 N16R8  
 🔗 [Amazon] https://www.amazon.com/dp/B0DB1WK3CW?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
 
 - **Display:** ILI9488 SPI TFT (3.5")  
@@ -34,7 +35,7 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 🔗 [Mouser Electronics] https://www.mouser.com/ProductDetail/Bourns/PEC11R-4215F-S0024?qs=Zq5ylnUbLm5lAqmKF80wzQ%3D%3D - these are backordered until Nov 2025
 
 
-- **Rotary Switches:** 8 Postion Rotary Switches (45 degree angle, with stop)
+- **Rotary Switches:** 8 Position Rotary Switches (45 degree angle, with stop)
 
 🔗 [Mouser Electronics] https://www.mouser.com/ProductDetail/611-A12503RNCQE
 
