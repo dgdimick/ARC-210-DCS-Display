@@ -1,3 +1,5 @@
+## Board Versions
+
 -V1.1 will work fine, it may require a bit of sanding on the left side
 for it to fit the rotary switch, there traces are far enough away from the edge to
 allow for this.
