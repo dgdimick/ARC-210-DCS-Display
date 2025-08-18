@@ -44,9 +44,11 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 🔗 [PC Flights] https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/
 
 - **Button Switches:** 16 6x6x5 mm Miniature Micro Momentary Tactile Tact Touch Push Button Switch Quality Switch SPST
+
 🔗 [Amazon] https://www.amazon.com/dp/B01CGMP9GY?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
 
 - **Diodes:** 16 1N4148 Small Signal Fast Switching Diodes High-Speed Axial 200mA 100V DO-35 (DO-204AH) IN4148 Silicon Diodes
+
 🔗 [Amazon] https://www.amazon.com/100-Pieces-1N4148-Switching-High-Speed/dp/B079KJ91JZ/ref=sr_1_1_sspa?s=industrial&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY
 
 
