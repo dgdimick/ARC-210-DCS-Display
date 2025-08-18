@@ -2,5 +2,5 @@ Button Board V1.1 will work fine, it may require a bit of sanding on the left si
 for it to fit the rotary switch, there traces are far enough away from the edge to
 allow for this.
 
-Version 1.2 has had some had these board modified to allow it to fit without any modification.
+Version 1.2 has had the board modified to allow it to fit without any modification.
 I also moved the traces to get rid of some of the wonky ways KiCad laid them out.
