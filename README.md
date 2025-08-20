@@ -9,7 +9,7 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 ## Features
 
 - Realistic interface modeled after the ARC-210 radio
-- Powered by 1 Teenys 4.1 Powered off of the USB Cable 
+- Powered by 1 Teenys 4.1
 - ILI9488 3.5" SPI TFT display (480x320) — powered by the control board
 - Support for digital rotary encoders, rotary switches, and momentary switches
 - DCSBIOS integration for in-game control and feedback
@@ -49,10 +49,6 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 ## Software
 
 - Written in Arduino C++
-- Uses `ILI9488-ESP32S3.h` custom display driver
-
-🔗 [download]https://github.com/dgdimick/ILI9488-ESP32S3-Fast  
-  *Note: Do not use TFT_eSPI due to ESP32 compatibility issues*
 
 ## Directories
 
