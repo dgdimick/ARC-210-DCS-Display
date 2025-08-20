@@ -9,22 +9,16 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 ## Features
 
 - Realistic interface modeled after the ARC-210 radio
-- Powered by two ESP32-S3-WROOM-1 N16R8 boards — uses USB or 5V supply
+- Powered by 1 Teenys 4.1 Powered off of the USB Cable 
 - ILI9488 3.5" SPI TFT display (480x320) — powered by the control board
 - Support for digital rotary encoders, rotary switches, and momentary switches
-- Optional WS2812 LEDs for back lighting
 - DCSBIOS integration for in-game control and feedback
 - Red screen when DCSBIOS link has not been activated
-- RESET button resets both ESP32-S3 chips
-- ESP32-S3 chips can be updated via WiFI or over USB
-- USB or WiFI can be used for DCSBIOS connection
-
-  *Note: Placing both Rotary Switches in position 8 and holding the GPS button for 5 seconds will force a reboot launching the over the air upgrade - code will need to be changed by user - wifi_config.h will need to be configured by the user* 
 
 ## Hardware
 
 - **Micro controller:** ESP32-S3-WROOM-1 N16R8  
-🔗 [Amazon] https://www.amazon.com/dp/B0DB1WK3CW?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
+🔗 [SparkFun] https://www.sparkfun.com/teensy-4-1-without-ethernet.html
 
 - **Display:** ILI9488 SPI TFT (3.5")  
 🔗 [Amazon] https://www.amazon.com/dp/B0CKRJ81B5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_2
@@ -51,10 +45,6 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 
 🔗 [Amazon] https://www.amazon.com/100-Pieces-1N4148-Switching-High-Speed/dp/B079KJ91JZ/ref=sr_1_1_sspa?s=industrial&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY
 
-
-- **LEDs:** Up to 50 WS2812 RGB LEDs
-
-- **Optional:** Arduino Mega 2560 version also supported — code changes required for display output; pins need to be changed and the TFT_eSPI library used
 
 ## Software
 
