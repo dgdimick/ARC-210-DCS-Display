@@ -17,7 +17,7 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 
 ## Hardware
 
-- **Micro controller:** ESP32-S3-WROOM-1 N16R8  
+- **Micro controller:** Teensy 4.1 w/o Ethernet  
 🔗 [SparkFun] https://www.sparkfun.com/teensy-4-1-without-ethernet.html
 
 - **Display:** ILI9488 SPI TFT (3.5")  
