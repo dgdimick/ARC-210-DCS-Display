@@ -1,6 +1,6 @@
-# Button Board Project
+# Button Board Project Tests
 
-This repository contains the code for an ARC-210 project that uses a 4x4 button matrix.
+This directory contains test code for the ARC-210 project that uses a 4x4 button matrix.
 
 ---
 
