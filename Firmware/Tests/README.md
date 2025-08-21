@@ -1,5 +1,10 @@
+# Button Board Project
+
+This repository contains the code for an ARC-210 project that uses a 4x4 button matrix.
+
+---
+
 ## Tests
 
-- Single_Button_Press.ino
-  A simple test to check if you have assembled the button board correctly, it will show the button being pressed as well as being
-  being released; you may need to reset the board for the program to run.
+### Single_Button_Press.ino
+A simple test to check if you have assembled the button board correctly. This program will output a message to the serial monitor when a button is pressed and when it's released. You may need to reset the board for the program to run.
