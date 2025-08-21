@@ -20,11 +20,14 @@ const int buttonMap[ROWS][COLS] = {
 };
 
 struct KeyState {
-  bool stable;         // debounced state (false=UP, true=DOWN)
-  bool reading;        // latest raw read
-  uint32_t tChange;    // time raw last changed
+  bool stable;       // debounced state (false=UP, true=DOWN)
+  bool reading;      // latest raw read
+  uint32_t tChange;  // time raw last changed
 };
 KeyState keys[ROWS * COLS];
+
+// Variable to store the currently active button
+int active_button = 0; 
 
 void setAllRowsHiZ() {
   for (uint8_t r = 0; r < ROWS; r++) pinMode(rowPins[r], INPUT); // Hi-Z
@@ -60,29 +63,48 @@ void setup() {
 }
 
 void loop() {
+  bool any_button_pressed_now = false;
+  int current_pressed_button = 0;
+
+  // First, check for any new button presses
   for (uint8_t r = 0; r < ROWS; r++) {
     driveRowLow(r);
     delayMicroseconds(40); // settle time
 
     for (uint8_t c = 0; c < COLS; c++) {
       const uint8_t idx = r * COLS + c;
-
-      // Active LOW on columns when this row is driven LOW
       bool raw = (digitalRead(colPins[c]) == LOW);
 
-      if (raw != keys[idx].reading) {          // raw changed -> start debounce
+      if (raw != keys[idx].reading) {
         keys[idx].reading = raw;
         keys[idx].tChange = millis();
       } else if ((millis() - keys[idx].tChange) >= DEBOUNCE_MS && raw != keys[idx].stable) {
-        keys[idx].stable = raw;                  // commit debounced change
+        keys[idx].stable = raw;
+      }
 
-        if (raw) { // print on PRESS only
-          int buttonNum = buttonMap[r][c];
-          Serial.print("Button pressed: ");
-          Serial.println(buttonNum);
-        }
+      if (keys[idx].stable) {
+        any_button_pressed_now = true;
+        current_pressed_button = buttonMap[r][c];
+        break; // Found a pressed button, no need to check others in this inner loop
       }
     }
+    if (any_button_pressed_now) {
+      break; // Found a pressed button, exit the outer loop
+    }
   }
+
   setAllRowsHiZ();
+
+  // Logic to handle button state
+  if (any_button_pressed_now && active_button == 0) {
+    // A new button has been pressed and no other button is currently active
+    active_button = current_pressed_button;
+    Serial.print("Button pressed: ");
+    Serial.println(active_button);
+  } else if (!any_button_pressed_now && active_button != 0) {
+    // The previously pressed button has been released
+    Serial.print("Button released: ");
+    Serial.println(active_button);
+    active_button = 0; // Reset the active button
+  }
 }
