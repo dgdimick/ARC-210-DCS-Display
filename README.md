@@ -29,7 +29,7 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 🔗 [Mouser Electronics] https://www.mouser.com/ProductDetail/Bourns/PEC11R-4215F-S0024?qs=Zq5ylnUbLm5lAqmKF80wzQ%3D%3D - these are backordered until Nov 2025
 
 
-- **Rotary Switches:** 8 Position Rotary Switches (45 degree angle, with stop)
+- **Rotary Switches:** 8 Position Rotary Switches (45 degree angle, with stop SP8T)
 
 🔗 [Mouser Electronics] https://www.mouser.com/ProductDetail/611-A12503RNCQE
 
@@ -37,7 +37,7 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 - **Faceplate:**  
 🔗 [PC Flights] https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/
 
-- **Button Switches:** 16 6x6x5 mm Miniature Micro Momentary Tactile Tact Touch Push Button Switch Quality Switch SPST
+- **Button Switches:** 16 6x6x5 mm Miniature Micro Momentary Tactile Push Button Switch (SPST)
 
 🔗 [Amazon] https://www.amazon.com/dp/B01CGMP9GY?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
 
