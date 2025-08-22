@@ -2,7 +2,7 @@
 
 ---
 
-## Tests to check rotary encoders
+## Tests to check 4x4 Matrix Button Board
 
-### EncoderTest.ino
-A simple test to ensure you have assembled the rotary encoders and wired them correctly, uses ButtonMatrix.h and ButtonMatrix.cpp
+### Button_Test.ino
+A simple test to ensure you have assembled the 4x4 Button Board is wired correctly, uses ButtonMatrix.h and ButtonMatrix.cpp
