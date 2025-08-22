@@ -16,6 +16,8 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 - Red screen when DCSBIOS link has not been activated
 
 ## Hardware
+**Note:** This is a simple design, no extra components are needed.
+
 
 - **Micro controller:** Teensy 4.1 w/o Ethernet  
 🔗 [SparkFun] https://www.sparkfun.com/teensy-4-1-without-ethernet.html
