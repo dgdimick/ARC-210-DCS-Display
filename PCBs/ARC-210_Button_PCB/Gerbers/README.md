@@ -4,3 +4,5 @@
           until the first button is released.
 
 - **V1.1 and V1.2** Pulled PCB's designs due to design errors
+
+- **V2.0** is the current version, the inside of the circle on the PCB may need to but cut out, I wasn't able to have it manufactured with it cut through due to the design becoming too complex for the PCB house. 

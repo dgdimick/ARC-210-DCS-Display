@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II
 
-**Updated Aug 21 2025**
+**Updated Aug 28 2025**
 
 This project replicates the look and functionality of the ARC-210 radio (VHF/UHF) used in the A-10C II Warthog module for Digital Combat Simulator (DCS). It is intended for use with a physical control panel powered by an Teensy 4.1 board.
 
