@@ -40,7 +40,7 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 - **Rotary Switches:** 8 Position Rotary Switches (45 degree angle, with stop SP8T) 
 
     🔗 [Mouser Electronics] https://www.mouser.com/ProductDetail/611-A12503RNCQE
-
+-**Note:** You will need just 2 of these, I currently don't have a part number for the On/Off switch
 
 - **Faceplate:** A 10C "Thunderbolt" / "Warthog" VHF / UHF Cockpit Panel
 
