@@ -15,6 +15,11 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 - DCSBIOS integration for in-game control and feedback
 - Red screen when DCSBIOS link has not been activated
 
+## Tools Needed
+
+- Soldering Iron
+- 3d Printer or access to one
+
 ## Hardware
 **Note:** This is a simple design, no extra components are needed.
 
