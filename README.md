@@ -19,6 +19,7 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 
 - Soldering Iron
 - 3d Printer or access to one
+- Wire Cutters (Flush)
 - USB micro cable, used to program the Teensy 4.1 board and connect the unit to your computer via DCSBIOS
 
 ## Hardware
