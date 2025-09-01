@@ -1,0 +1,222 @@
+Overall plan (pin-efficient)
+
+6 rotary encoders + ON/OFF switch: 1× MCP23017 (I²C)
+
+4×4 button matrix: 1× PCF8574 (I²C)
+
+Two 8-position rotary switches: 2× analog ladders → A0, A1
+
+SPI ILI9488 display: hardware SPI0
+
+This still uses only ~13 Teensy pins total.
+
+Teensy 4.1 pin budget (suggested)
+
+I²C bus: SDA=18, SCL=19 (shared by MCP23017 + PCF8574)
+
+MCP23017 INT: 2 (optional but recommended)
+
+Analog ladders: A0, A1
+
+SPI display: SCK=13, MOSI=11, MISO=12(optional), CS=10, DC=9, RST=8, BL=23
+Total: 2 + 1 + 2 + 6(–7) ≈ 11–12 pins
+
+Wiring summary
+MCP23017 (encoders + on/off)
+
+Power at 3.3 V, decouple with 0.1 µF.
+
+Teensy 18/19 ↔ SDA/SCL, add 2.2–4.7 k pull-ups if not on board.
+
+INTA → Teensy 2 (configure INPUT_PULLUP).
+
+Encoders (A/B) → MCP pins with pull-ups enabled (MCP internal or 10 k external).
+
+On/Off → MCP pin to GND (active-low).
+
+Example mapping (change as you like):
+
+E1..E6: GPA0/GPB0, GPA1/GPB1, GPA2/GPB2, GPA3/GPB3, GPA4/GPB4, GPA5/GPB5
+
+On/Off: GPA6 (pull-up on)
+
+Spares: GPA7, GPB6, GPB7
+
+PCF8574 (4×4 matrix)
+
+Power at 3.3 V, 0.1 µF decoupling.
+
+Same I²C lines (18/19). Set address (A2..A0) so it’s not the MCP’s address (e.g., PCF8574 at 0x21, MCP at 0x20).
+
+Rows = P0..P3 (outputs, one low at a time)
+
+Cols = P4..P7 (inputs). The PCF has weak internal pull-ups; for long cables add 10 k pull-ups on P4..P7.
+
+Multi-key combos? Add one 1N4148 diode per switch or use TCA8418. Without diodes, you can get ghosting when multiple keys are pressed.
+
+Two 8-position rotary switches (analog ladders)
+
+A0 / A1 each pulled up with 10 k to 3.3 V.
+
+Each position connects via a unique resistor to GND (e.g., 2.2k, 3.3k, 4.7k, 6.8k, 8.2k, 12k, 18k, 27k).
+
+Optional 0.047 µF cap from A0/A1 to GND for smoothing.
+
+Bucket ADC reading to 8 ranges.
+
+SPI ILI9488
+
+SCK=13, MOSI=11, MISO=12 (optional), CS=10, DC=9, RST=8, BL=23 (PWM-dimmable).
+
+Keep display updates batched; don’t repaint the full screen every loop.
+
+Drop-in skeleton (Teensy 4.1)
+#include <Wire.h>
+#include <SPI.h>
+
+// --- I2C addresses (set by your A0..A2 straps)
+constexpr uint8_t MCP_ADDR = 0x20;   // MCP23017 (encoders + on/off)
+constexpr uint8_t PCF_ADDR = 0x21;   // PCF8574 (4x4 matrix)
+
+// --- SPI Display pins (example)
+constexpr int TFT_CS  = 10, TFT_DC = 9, TFT_RST = 8, TFT_BL = 23;
+
+// --- Matrix layout on PCF8574
+// Rows = P0..P3 (drive), Cols = P4..P7 (read)
+static bool key_last[16] = {0};
+
+// --- Encoder state (6 encoders)
+uint8_t prevA = 0, prevB = 0;  // bitfields per 6 encoders (pack into low bits)
+volatile bool mcp_irq = false;
+
+// Quadrature decode (Gray) table
+const int8_t quad[16] = {0,-1,+1,0, +1,0,0,-1, -1,0,0,+1, 0,+1,-1,0};
+
+// ----- MCP helpers
+void mcpWrite(uint8_t reg, uint8_t val){
+  Wire.beginTransmission(MCP_ADDR); Wire.write(reg); Wire.write(val); Wire.endTransmission();
+}
+uint8_t mcpRead(uint8_t reg){
+  Wire.beginTransmission(MCP_ADDR); Wire.write(reg); Wire.endTransmission(false);
+  Wire.requestFrom(MCP_ADDR,(uint8_t)1); return Wire.read();
+}
+
+void IRAM_ATTR onMcpInt(){ mcp_irq = true; }
+
+void setupMCP(){
+  // IODIRA/B = inputs
+  mcpWrite(0x00, 0xFF); mcpWrite(0x01, 0xFF);
+  // pull-ups ON
+  mcpWrite(0x0C, 0xFF); mcpWrite(0x0D, 0xFF);
+  // interrupt-on-change enable
+  mcpWrite(0x04, 0xFF); mcpWrite(0x05, 0xFF);
+  // compare to previous (INTCON=0)
+  mcpWrite(0x08, 0x00); mcpWrite(0x09, 0x00);
+
+  pinMode(2, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(2), onMcpInt, FALLING);
+
+  // Prime previous state
+  prevA = mcpRead(0x12); // GPIOA
+  prevB = mcpRead(0x13); // GPIOB
+}
+
+void serviceEncoders(){
+  if (!mcp_irq) return;
+  mcp_irq = false;
+  uint8_t A = mcpRead(0x12), B = mcpRead(0x13);
+
+  for (int i=0;i<6;i++){
+    uint8_t a = (A>>i)&1, b = (B>>i)&1;
+    uint8_t pa = (prevA>>i)&1, pb = (prevB>>i)&1;
+    uint8_t idx = ((pa<<1)|pb)<<2 | ((a<<1)|b);
+    int8_t step = quad[idx];
+    if (step){
+      // TODO: route step (+1/-1) to your ARC-210 handler per encoder i
+      // e.g., freq, volume, channel, etc.
+    }
+  }
+  prevA = A; prevB = B;
+}
+
+// ----- PCF8574 helpers
+void pcfWrite(uint8_t v){ Wire.beginTransmission(PCF_ADDR); Wire.write(v); Wire.endTransmission(); }
+uint8_t pcfRead(){ Wire.requestFrom(PCF_ADDR,(uint8_t)1); return Wire.available() ? Wire.read() : 0xFF; }
+
+void scanMatrix(){
+  // Idle high
+  pcfWrite(0xFF);
+  for (uint8_t r=0; r<4; r++){
+    uint8_t out = 0xFF & ~(1 << r); // drive row r low
+    pcfWrite(out);
+    delayMicroseconds(80);
+    uint8_t in = pcfRead();
+    uint8_t cols = (in >> 4) & 0x0F; // 0 = pressed on the active row
+
+    for (uint8_t c=0; c<4; c++){
+      bool pressed = ((cols & (1<<c)) == 0);
+      uint8_t idx = r*4 + c;
+      if (pressed != key_last[idx]){
+        key_last[idx] = pressed;
+        if (pressed){
+          // TODO: ARC-210 key down event (idx 0..15)
+        } else {
+          // TODO: ARC-210 key up event
+        }
+      }
+    }
+  }
+  pcfWrite(0xFF);
+}
+
+// ----- Analog ladders (two 8-pos switches)
+int readSwitchPos(int analogPin){
+  const int raw = analogRead(analogPin); // 0..1023 (Teensy default; adjust if 12-bit)
+  // TODO: calibrate thresholds; example evenly spaced buckets:
+  const int T[7] = {160, 300, 440, 580, 720, 860, 980}; // adjust for your resistor set
+  for (int i=0;i<7;i++) if (raw < T[i]) return i; 
+  return 7;
+}
+
+void setup(){
+  Serial.begin(115200);
+  Wire.begin();              // SDA=18, SCL=19
+  // Wire.setClock(400000);  // optional fast mode
+
+  // PCF idle = all 1s
+  pcfWrite(0xFF);
+
+  // SPI display init
+  SPI.begin();
+  pinMode(TFT_BL, OUTPUT); digitalWrite(TFT_BL, HIGH);
+  // tft.begin(); tft.setRotation(1); tft.fillScreen(0x0000);
+
+  setupMCP();
+  analogReadResolution(10);   // match thresholds above (10-bit). Use 12 if preferred.
+}
+
+void loop(){
+  serviceEncoders();
+  scanMatrix();
+
+  int pos1 = readSwitchPos(A0);
+  int pos2 = readSwitchPos(A1);
+  // TODO: if changed, update UI / send DCS-BIOS message
+
+  // Do minimal, targeted display updates here
+  // tft.setCursor(0,0); tft.print("READY");
+
+  delay(3); // light debounce cadence
+}
+
+Notes & best practices
+
+Keep matrix cable runs short or add the 10 k pull-ups on PCF columns.
+
+If you need multi-key combos on the matrix, add diodes per switch or swap the PCF for a TCA8418 keypad controller (same two I²C pins).
+
+The MCP’s interrupt keeps encoder handling snappy even while you draw to the display.
+
+Calibrate the analog ladder thresholds once and add small hysteresis to avoid jitter at detents.
+
+If you want, I can tailor this to your exact pin choices, resistor values for the 8-pos ladders, and your preferred ILI9488 library, plus map each button/encoder to your ARC-210 functions.
