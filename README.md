@@ -11,7 +11,7 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 ## Features
 
 - Realistic interface modeled after the ARC-210 radio
-- Powered by 1 Teenys 4.1 - 43 GPIO's are needed
+- Powered by 1 Teenys 4.1
 - ILI9488 3.5" SPI TFT display (480x320) — powered by the control board
 - Support for digital rotary encoders, rotary switches, and momentary switches
 - DCSBIOS integration for in-game control and feedback
