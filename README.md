@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II
 
-**Updated Aug 31 2025**
+**Updated Sept 25th 2025**
 
 **Note:** This repository is now included in the A-10-Sim repository.
 
@@ -45,7 +45,8 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 
     🔗 [Mouser Electronics] https://www.mouser.com/ProductDetail/611-A12503RNCQE
 
--**Note:** You will need just 2 of these, I currently don't have a part number for the On/Off switch
+- **SQL On/Off Switch:** Sorry is it's a bit clunky, I tried to keep the cost down for the project
+🔗 [Home Depot]  https://www.homedepot.com/p/Gardner-Bender-6-Amp-Single-Pole-Rotary-Switch-Brass-GSW-61/100095964
 
 - **Faceplate:** A 10C "Thunderbolt" / "Warthog" VHF / UHF Cockpit Panel
 
