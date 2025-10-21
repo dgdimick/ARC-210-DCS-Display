@@ -83,4 +83,4 @@ All STLs are print-ready and designed for FDM printers with 0.4mm nozzles. SLA p
 
 ## Licensing
 
-This project is released under the MIT License. See `LICENSE.md` for details.
+This project is released under the GNU General Public License v3.0 (GPL-3.0) See `LICENSE.md` for details.
