@@ -11,21 +11,21 @@ Full license text: https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-ver
 
 ---
 
-# Software License (MIT)
+# Software License (GNU General Public License v3.0)
 
-This software is licensed under the **MIT License**.
+This software incorporates portions of the **DCS-BIOS** library, which is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
+As a result, the combined work is distributed under the terms of the GPL-3.0.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files 
-(the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, 
-publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
-subject to the following conditions:
+You are free to use, modify, and redistribute this software, provided that you comply with the GPL-3.0 terms.  
+This includes making the complete corresponding source code available to any recipient of the compiled binaries.
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Full license text: https://www.gnu.org/licenses/gpl-3.0.html
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+> Portions of this software © 2025 Denis Dimick.  
+> Portions of this software © DCS-BIOS contributors and released under GPL-3.0.
 
-(c) 2025 Denis Dimick
-
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ---
 
@@ -39,4 +39,3 @@ You are free to share and adapt the materials for any purpose, even commercially
 License details: https://creativecommons.org/licenses/by/4.0/
 
 (c) 2025 Denis Dimick
-
