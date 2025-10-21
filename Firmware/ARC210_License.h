@@ -4,7 +4,7 @@
    Copyright (C) 2025  Denis Dimick  <dgdimick@gmail.com>
 
    Project: ARC-210 Radio Control Interface for DCS A-10C II
-   Repository: https://github.com/dgdimick/A-10-Sim
+   Repository: https://https://github.com/dgdimick/ARC-210-DCS-Display
    License: GNU General Public License v3.0 (GPL-3.0)
 
    This firmware includes portions of the DCS-BIOS library, which is licensed
