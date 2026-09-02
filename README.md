@@ -63,6 +63,7 @@ This project replicates the look and functionality of the ARC-210 radio (VHF/UHF
 ## Software
 
 - Written in Arduino C++
+- Source available on request.
 
 ## Directories
 
@@ -83,4 +84,7 @@ All STLs are print-ready and designed for FDM printers with 0.4mm nozzles. SLA p
 
 ## Licensing
 
-This project is released under the GNU General Public License v3.0 (GPL-3.0) See `LICENSE.md` for details.
+This software is source-available for personal, 
+non-commercial use only. Redistribution, 
+modification, or use in commercial products 
+or kits is strictly prohibited without explicit permission.
