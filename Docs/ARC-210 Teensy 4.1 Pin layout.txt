@@ -1,0 +1,24 @@
+Pin Layout
+
+ARC-210 Teensy 4.1
+
+
+| Function       | Actual Teensy GPIO |
+| -------------- | -----------------: |
+| Panel LED PWM  |                  5 |
+| TFT BLK        |                  6 |
+| TFT RESET      |                  8 |
+| TFT MOSI       |                 11 |
+| TFT DC/RS      |                  9 |
+| TFT CS         |                 10 |
+| TFT SCK        |                 13 |
+| Encoder 1      |             16, 17 |
+| Encoder 2      |             28, 29 |
+| Encoder 3      |             20, 21 |
+| Encoder 4      |             22, 23 |
+| Encoder 5      |             24, 25 |
+| Encoder 6      |             26, 27 |
+| Matrix rows    |     30, 31, 32, 33 |
+| Matrix columns |     35, 36, 37, 40 |
+| SPST           |                 41 |
+| I²C reserved   |             18, 19 |
