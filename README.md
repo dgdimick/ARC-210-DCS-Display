@@ -86,3 +86,5 @@ All STLs are print-ready and designed for FDM printers with 0.4mm nozzles. SLA p
 - **The PCB's are under the CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0)
 - **The Teensy Frimware are under the MIT Licence
 - **The STL's are under the Creative Commons Attributiion 4.0 International 
+
+See the Docs Directory for a copy of the each licence.
