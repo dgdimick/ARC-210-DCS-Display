@@ -1,5 +1,7 @@
 # ARC-210 Radio Control Panel for DCS A-10C II
 
+![ARC-210 Face Plate](images/ARC-210-Face%20Plate.jpg)
+
 **Updated Sept 19th 2026**
 
 I have some of the screens done, the Freq's are being passed from DCSBIOS,
