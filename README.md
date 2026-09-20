@@ -81,6 +81,7 @@ It is intended for use with a physical control panel powered by an Teensy 4.1 bo
 
     🔗 [PC Flights] https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/
 - **Button Switches:** 16 6x6x5 mm Miniature Micro Momentary Tactile Push Button Switch (SPST)
+- **NOTE:** These switches will probably change as I develop the PCB, I didn't like the first one I built
 
     🔗 [Amazon] https://www.amazon.com/dp/B01CGMP9GY?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
 - **Diodes:** 16 1N4148 Small Signal Fast Switching Diodes High-Speed Axial 200mA 100V DO-35 (DO-204AH) IN4148 Silicon Dodes;      these are optional, you will just need to replace diodes with jumper wires
