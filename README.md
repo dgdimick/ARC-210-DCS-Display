@@ -1,10 +1,27 @@
 # ARC-210 Radio Control Panel for DCS A-10C II
 
-**Updated Sept 25th 2025**
+**Updated Sept 19th 2026**
+
+I have some of the screens done, the Freq's are being passed from DCSBIOS,
+the boot screens are correct, timing was a pain to get correct, and the
+UNAVILABLE screen is correct for the appropriate setting on the Freq and Mode
+switches. The AM/FM display. 
+Here's a short video showing the progress I have made so far.
+https://drive.google.com/file/d/15TccQAfNhI_mp24V_y9ZMpBznJ80Qydf/view?usp=sharing
+
+I am looking for BETA Tester to help with the screen layouts, placement of the
+lines and even if you have a better font to suggest. If you have a 3.5" TFT SPI display
+and a Teensy 4.1 laying around you have all the tools needed to BETA Test. 
+The Teensy_TFT_Hello_Works .ino file in the Firmware has the correct pins you'll need to
+test if you have the correct pins locations to get you started, and the Hex for the current
+state of the project are located in the Firmware/Maser Hex Files sub directory.
+
 
 **Note:** This repository is now included in the A-10-Sim repository.
 
-This project replicates the look and functionality of the ARC-210 radio (VHF/UHF) used in the A-10C II Warthog module for Digital Combat Simulator (DCS). It is intended for use with a physical control panel powered by an Teensy 4.1 board.
+This project replicates the look and functionality of the ARC-210 radio (VHF/UHF)
+used in the A-10C II Warthog module for Digital Combat Simulator (DCS).
+It is intended for use with a physical control panel powered by an Teensy 4.1 board.
 
 🔗 [See the official DCS website](https://www.digitalcombatsimulator.com/en/) for the game.
 
