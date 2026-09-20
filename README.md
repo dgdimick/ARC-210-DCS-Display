@@ -82,7 +82,7 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
   [PC Flights](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/)
 
 - **Button switches:** 16 × 6 × 6 × 5 mm miniature momentary tactile push-button switches (SPST)  
-  **Note:** These switches may change as I continue developing the PCB. I was not satisfied with the first version.  
+ > **Note:** These switches may change as I continue developing the PCB. I was not satisfied with the first version.  
   [Amazon](https://www.amazon.com/dp/B01CGMP9GY?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1)
 
 - **Diodes:** 16 × 1N4148 small-signal fast-switching diodes, DO-35  
