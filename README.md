@@ -16,6 +16,17 @@ The Teensy_TFT_Hello_Works .ino file in the Firmware has the correct pins you'll
 test if you have the correct pins locations to get you started, and the Hex for the current
 state of the project are located in the Firmware/Maser Hex Files sub directory.
 
+I assume if you own a teensy 4.1 you know how to install a HEX file, however, here are the steps
+
+To load the HEX file onto a Teensy 4.1:
+
+1. Install/open Teensy Loader.
+2. Open the supplied Master_Program.ino.hex file.
+3. Connect the Teensy 4.1 by USB.
+4. Press the button on the Teensy if it does not enter program mode automatically.
+5. Click Program in Teensy Loader.
+6. Reboot the Teensy.
+
 
 **Note:** This repository is now included in the A-10-Sim repository.
 
