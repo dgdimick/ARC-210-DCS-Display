@@ -101,7 +101,7 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 ## Directories
 
 - `ARC-210/` — project root
-- `ARC-210/Firmware/` — firmware and HEX files
+- `ARC-210/Firmware/` — firmware and test files\n- `ARC-210/Firmware/Boot Loader/` — precompiled Teensy HEX files for loading with Teensy Loader or TyTools
 - `ARC-210/Docs/` — schematics, diagrams, and documentation
 - `ARC-210/images/` — project images
 - `ARC-210/Supporting STL's/` — 3D-printable knobs, bezels, brackets, mounts, and other parts
