@@ -31,6 +31,81 @@ If you own a Teensy 4.1, you may already know how to install a HEX file. If not,
 5. Click **Program** in Teensy Loader.
 6. Reboot the Teensy.
 
+## Alternative: Loading Firmware with TyTools
+
+[TyTools](https://koromix.dev/tytools) is an alternative set of utilities for uploading firmware to and communicating with Teensy boards. The precompiled ARC-210 firmware will be placed in:
+
+`Firmware/Boot Loader/`
+
+Download the latest TyTools release from the [TyTools GitHub releases page](https://github.com/Koromix/tytools/releases). Development builds are also available from [koromix.dev](https://koromix.dev/files/tytools/).
+
+TyTools includes three independent programs:
+
+| Tool | Type | Purpose |
+| --- | --- | --- |
+| **TyCommander** | Graphical application | Upload, monitor, and communicate with one or more Teensy boards |
+| **TyUploader** | Graphical application | Simple firmware/HEX uploader |
+| **tycmd** | Command line | List, upload, monitor, reset, and manage Teensy boards |
+
+### Uploading with TyCommander or TyUploader
+
+1. Connect the Teensy 4.1 to the computer with USB.
+2. Open **TyCommander** or **TyUploader**.
+3. Select the Teensy 4.1.
+4. Select the ARC-210 `.hex` file from `Firmware/Boot Loader/`.
+5. Start the upload.
+6. If requested, press the physical programming button on the Teensy.
+
+### Uploading with `tycmd`
+
+Open a terminal or Command Prompt in the repository directory and list the connected Teensy boards:
+
+```text
+tycmd list
+```
+
+Upload the firmware by replacing `<firmware-file>.hex` with the actual HEX filename:
+
+```text
+tycmd upload "Firmware/Boot Loader/<firmware-file>.hex"
+```
+
+If the Teensy is already in bootloader mode, or you want `tycmd` to wait for you to press its programming button, use:
+
+```text
+tycmd upload --wait "Firmware/Boot Loader/<firmware-file>.hex"
+```
+
+When more than one Teensy is connected, select the intended board using its serial number, family, USB location, or COM port. First run `tycmd list` to find its identifying tag, then use the `--board` option:
+
+```text
+tycmd upload --board "714230" "Firmware/Boot Loader/<firmware-file>.hex"
+tycmd upload --board "@COM5" "Firmware/Boot Loader/<firmware-file>.hex"
+```
+
+The USB-location form can keep a particular cockpit device associated with the same physical USB port:
+
+```text
+tycmd upload --board "@usb-1-2-2" "Firmware/Boot Loader/<firmware-file>.hex"
+```
+
+Other useful commands include:
+
+```text
+tycmd monitor --reconnect
+tycmd reset
+tycmd reset -b
+tycmd help
+tycmd help upload
+```
+
+- `monitor --reconnect` reconnects after a Teensy reset or brief disconnect.
+- `reset` restarts the selected Teensy.
+- `reset -b` places the selected Teensy into bootloader mode.
+- `help <command>` displays detailed help for a specific command.
+
+For complete and current instructions, see the [official TyTools documentation](https://koromix.dev/tytools).
+
 > **Note:** This repository is now included in the A-10-Sim repository.
 
 This project replicates the look and functionality of the **ARC-210 VHF/UHF radio** used in the A-10C II Warthog module for Digital Combat Simulator (DCS).
@@ -98,7 +173,7 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 ## Directories
 
 - `ARC-210/` — project root
-- `ARC-210/Firmware/` — firmware and HEX files
+- `ARC-210/Firmware/` — firmware and test files\n- `ARC-210/Firmware/Boot Loader/` — precompiled Teensy HEX files for loading with Teensy Loader or TyTools
 - `ARC-210/Docs/` — schematics, diagrams, and documentation
 - `ARC-210/images/` — project images
 - `ARC-210/Supporting STL's/` — 3D-printable knobs, bezels, brackets, mounts, and other parts
