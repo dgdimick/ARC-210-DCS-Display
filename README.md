@@ -1,4 +1,7 @@
-# ARC-210 Radio Control Panel for DCS A-10C II
+# ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" TFT SPI display and DCSBIOS
+
+This project is an ARC-210 radio control panel for the DCS A-10C II using a Teensy 4.1, an ILI9488 TFT display,
+and DCS-BIOS for live radio data and cockpit control.
 
 <p align="center">
   <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
@@ -24,7 +27,7 @@ If you own a Teensy 4.1, you may already know how to install a HEX file. If not,
 
 ## Loading the HEX File onto a Teensy 4.1
 
-1. Install and open **Teensy Loader**.
+1. Install and open **Teensy Loader, you can find it in the firmware directory**.
 2. Open the supplied `Master_Program.ino.hex` file.
 3. Connect the Teensy 4.1 to your computer by USB.
 4. Press the button on the Teensy if it does not enter programming mode automatically.
