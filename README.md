@@ -151,6 +151,10 @@ The `Supporting STL's` directory includes:
 
 All STL files are intended to be print-ready for FDM printers using a 0.4 mm nozzle. Resin/SLA printers may require different settings or scaling.
 
+## PC Flights affiliation
+
+I am not affiliated with PC Flights in any way. I simply chose to use their panels for my own cockpit projects.
+
 ## Licensing
 
 - **PCBs:** CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0)
