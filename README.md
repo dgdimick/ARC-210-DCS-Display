@@ -65,6 +65,22 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 - Flush wire cutters
 - USB Micro-B cable for programming the Teensy 4.1 and connecting the unit to the computer
 
+## Why I had to use a Teensy
+
+The ARC-210 panel needs a lot of GPIO (general-purpose input/output) pins. It is not just driving a display: the same controller also has to read the knobs and switches, scan the buttons, and control the lighting.
+
+- Each rotary encoder needs two input pins to detect movement and direction.
+- The 16 push buttons use a 4 × 4 matrix, which still needs eight GPIO pins for its rows and columns.
+- The rotary-switch resistor ladders need analog inputs, and the squelch switch needs another input.
+- The SPI TFT needs clock and data connections plus control signals for chip select, reset, and data/command selection.
+- The display backlight and panel lighting need their own control outputs.
+
+These connections add up quickly. I chose the Teensy 4.1 because it gives this design enough pins to connect the controls and display directly, without adding GPIO expanders or another controller. Keeping everything on one board also keeps the wiring and firmware easier to manage.
+
+![Teensy 4.1 schematic showing the panel connections](Docs/Why%20I%20used%20a%20Teensy.png)
+
+The numbers around this schematic symbol are KiCad pad numbers; use the signal labels and the project wiring documentation to identify the corresponding Teensy GPIO pins.
+
 ## Hardware
 
 **Note:** This is intended to be a relatively simple design.
