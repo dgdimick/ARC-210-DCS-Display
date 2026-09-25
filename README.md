@@ -7,9 +7,13 @@ and DCS-BIOS for live radio data and cockpit control.
   <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
 </p>
 
-**Updated September 19, 2026**
+**Updated September 24, 2026 — Menu-system preview**
 
-I have some of the screens completed. Frequencies are being passed from DCS-BIOS, the boot screens are correct, and the boot timing is working properly. The **UNAVAILABLE** screen is also correct for the appropriate settings on the Frequency and Mode switches. The AM/FM display is now being developed and tested.
+The current HEX is available for testing the ARC-210 menu screens and navigation, including the HQ, COMSEC, and RADIO SETTINGS menus. This is a menu-system preview, not a finished radio implementation: some menu actions and synchronization still need work.
+
+The HQ MORE loop and detail screens are implemented. LOAD WOD has been tested against DCS: the displayed number matches, follows MLSK changes, and resets to 20 on re-entry in the tested session. MENU exits from the opening screen listing HQ MENUS / COMSEC / RADIO SETTINGS and is inactive on deeper pages.
+
+Download [Master_Program.ino.hex](Firmware/Master%20Hex%20Files/Master_Program.ino.hex). Read the [preview notes and required DCS-BIOS export changes](Firmware/Master%20Hex%20Files/README.md) before testing. The display starts blank until it receives powered-radio data from DCS-BIOS.
 
 Here is a short video showing the progress I have made so far:
 
