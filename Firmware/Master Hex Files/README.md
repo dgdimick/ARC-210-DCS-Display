@@ -1,4 +1,6 @@
-# ARC-210 menu-system preview — September 24, 2026
+# ARC-210 menu-system preview
+
+README last updated: **September 25, 2026**.
 
 `Master_Program.ino.hex` is the current Teensy 4.1 / ILI9488 480 × 320 display firmware, published for menu-screen and navigation testing. It is not a complete implementation of every radio function.
 
@@ -53,7 +55,7 @@ Fully close and restart DCS after these changes. Reloading a mission or flashing
 
 ## File verification
 
-This is the tested September 23 build published on September 24; it was copied without recompiling.
+Firmware build: **September 23, 2026**, originally published September 24, 2026. The September 25 README update adds offline testing instructions; the HEX file has not changed or been recompiled.
 
 SHA-256:
 
