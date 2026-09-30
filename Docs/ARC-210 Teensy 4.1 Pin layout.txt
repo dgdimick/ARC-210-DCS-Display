@@ -23,6 +23,11 @@ ARC-210 Teensy 4.1
 | SPST           |                 41 |
 | I²C reserved   |             18, 19 |
 
-TFT BLK PWM: reserve Teensy GPIO 4 (KiCad U1 terminal 6) for display backlight.
+TFT BLK PWM wiring (confirmed working):
+- Teensy board printed pin label: 4
+- GPIO / Arduino code pin number: 4
+- KiCad Teensy symbol U1 terminal number: 6
+These identify the same connection. BLK uses GPIO 4, not GPIO 6.
+Reserve this connection for the display backlight PWM.
 PWM dimming has been verified in the standalone test. Integration into
 Master_Program is deferred until the final test.
