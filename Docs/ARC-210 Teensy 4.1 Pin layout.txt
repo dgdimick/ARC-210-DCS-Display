@@ -6,7 +6,7 @@ ARC-210 Teensy 4.1
 | Function       | Actual Teensy GPIO |
 | -------------- | -----------------: |
 | Panel LED PWM  |                  5 |
-| TFT BLK        |                  6 |
+| TFT BLK PWM    |                  4 |
 | TFT RESET      |                  8 |
 | TFT MOSI       |                 11 |
 | TFT DC/RS      |                  9 |
@@ -22,3 +22,7 @@ ARC-210 Teensy 4.1
 | Matrix columns |     35, 36, 37, 40 |
 | SPST           |                 41 |
 | I²C reserved   |             18, 19 |
+
+TFT BLK PWM: reserve Teensy GPIO 4 (KiCad U1 terminal 6) for display backlight.
+PWM dimming has been verified in the standalone test. Integration into
+Master_Program is deferred until the final test.
