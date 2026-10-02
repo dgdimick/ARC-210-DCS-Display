@@ -25,7 +25,7 @@ Download [ARC210_Encoder_Check_Teensy41.hex](Firmware/Test%20Code/ARC210_Encoder
 
 Here is a short video showing the progress I have made so far:
 
-[ARC-210 Project Progress Video](https://drive.google.com/file/d/15TccQAfNhI_mp24V_y9ZMpBznJ80Qydf/view?usp=sharing)
+[ARC-210 Project Progress Video](https://drive.google.com/file/d/162CAG3RlfPK6QnCSb0p5lkmVlXDZjPrU/view)
 
 I am looking for **beta testers** to help with screen layouts, placement of the lines, and font suggestions. If you have a **3.5-inch SPI TFT display** and a **Teensy 4.1** lying around, you have the basic hardware needed to beta test.
 
