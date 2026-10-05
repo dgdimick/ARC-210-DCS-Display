@@ -12,7 +12,6 @@ Updated October 4, 2026.
 | --- | --- | --- |
 | Frequency | [Freq_Knob_v10.stl](Freq_Knob_v10.stl) | Replaces `Freq Mesh v9.stl` |
 | Mode | [Mode_Knob_v4.stl](Mode_Knob_v4.stl) | Supersedes `Mode Mesh v6.stl`, despite its higher filename number |
-
 | Channel | [Channel_Knob_v3.stl](Channel_Knob_v3.stl) | Replaces `Channel Knob v13.stl`, despite its higher filename number |
 
 ### If you downloaded an older ZIP
