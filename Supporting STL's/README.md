@@ -13,11 +13,13 @@ Updated October 4, 2026.
 | Frequency | [Freq_Knob_v10.stl](Freq_Knob_v10.stl) | Replaces `Freq Mesh v9.stl` |
 | Mode | [Mode_Knob_v4.stl](Mode_Knob_v4.stl) | Supersedes `Mode Mesh v6.stl`, despite its higher filename number |
 
+| Channel | [Channel_Knob_v3.stl](Channel_Knob_v3.stl) | Replaces `Channel Knob v13.stl`, despite its higher filename number |
+
 ### If you downloaded an older ZIP
 
-Download the current files linked above. Do not mix the older frequency or mode STLs with Knob Set V3. The old filenames have been removed from the current branch, but may still exist in previously downloaded ZIPs or repository history.
+Download the current files linked above. Do not mix the older frequency, mode, or channel STLs with Knob Set V3. The old filenames have been removed from the current branch, but may still exist in previously downloaded ZIPs or repository history.
 
-`Channel Knob v13.stl` was also removed during this update. It is not included in the current published collection; the separately revised channel knob has not yet been uploaded. The mode knob is not a substitute for the channel knob.
+`Channel_Knob_v3.stl` is the current channel knob for Knob Set V3. Its lower filename number does not mean it is older than `Channel Knob v13.stl`. Use the linked files above to identify the current versions.
 
 ### Printing and fit
 
