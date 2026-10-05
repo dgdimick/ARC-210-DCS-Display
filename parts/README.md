@@ -1,6 +1,6 @@
 # Parts
 
-Updated September 25, 2026.
+Updated October 4, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
@@ -37,11 +37,11 @@ The current candidate is a [12 × 12 × 12 mm tactile switch](https://www.amazon
   [Mouser Electronics - PEC11H](https://www.mouser.com/ProductDetail/652-PEC11H4215FS0024) — stronger rotation torque  
   [Mouser Electronics - PEC11R](https://www.mouser.com/ProductDetail/Bourns/PEC11R-4215F-S0024?qs=Zq5ylnUbLm5lAqmKF80wzQ%3D%3D) — lighter rotation torque
 
-- **Rotary switches:** 8-position rotary switches, 45-degree indexing with stop, SP8T  
-  [Mouser Electronics](https://www.mouser.com/ProductDetail/611-A12503RNCQE)
+- **Rotary switches:** C&K A12515RNZQ, 8-position, 45-degree indexing, SP8T, solder-lug terminals  
+  [Mouser Electronics](https://www.mouser.com/ProductDetail/CK/A12515RNZQ)
 
-- **SQL On/Off switch:** This part is a little clunky, but I selected it to help keep the project cost down.  
-  [Home Depot](https://www.homedepot.com/p/Gardner-Bender-6-Amp-Single-Pole-Rotary-Switch-Brass-GSW-61/100095964)
+- **SQL On/Off switch:** One additional C&K A12515RNZQ rotary switch, the same model used for the other rotary controls. The ON and OFF markings are two clicks (90 degrees) apart. This switch signals the Teensy.  
+  [Mouser Electronics](https://www.mouser.com/ProductDetail/CK/A12515RNZQ)
 
 - **Faceplate:** A-10C "Thunderbolt" / "Warthog" VHF/UHF cockpit panel  
   [PC Flights](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/)
