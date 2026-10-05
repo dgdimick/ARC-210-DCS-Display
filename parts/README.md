@@ -51,6 +51,9 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
 - **Button switches:** 16 per panel, 6 × 6 × 13 mm SPST momentary tactile push-button switches, four-pin through-hole  
   [Amazon](https://www.amazon.com/dp/B0HGBSFY2L)
 
+- **PCB standoffs:** Vibit 640-piece M3 nylon standoff assortment, including male–female and female–female spacers with screws. Select lengths to suit the final PCB spacing; the required lengths and quantity per panel are not yet finalized.  
+  [Amazon](https://www.amazon.com/dp/B0H1QS5Q6N)
+
 - **Diodes:** 16 × 1N4148 small-signal fast-switching diodes, DO-35  
   These are optional; jumper wires may be used in their place where appropriate.  
   [Amazon](https://www.amazon.com/100-Pieces-1N4148-Switching-High-Speed/dp/B079KJ91JZ/ref=sr_1_1_sspa?s=industrial&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY)
