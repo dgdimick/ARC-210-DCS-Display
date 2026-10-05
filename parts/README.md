@@ -1,6 +1,6 @@
 # Parts
 
-Updated October 4, 2026.
+Updated October 5, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
@@ -17,13 +17,13 @@ The front-panel PCB does not require a second microcontroller. The board layouts
 
 ## BOM coverage
 
-[BOM.csv](BOM.csv) originated from the **ARC-210_Master_Board schematic** export and now includes the selected 6 × 6 × 13 mm push buttons and the SQL rotary-switch hardware. That schematic includes button and panel-LED circuits, so the CSV is not yet separated by physical PCB. It is not a pair of finalized board-specific purchasing lists. Use each component reference once; do not double the quantities because the build uses two boards. Final allocation between the master and front-panel PCBs will be documented as the layouts are completed.
+[BOM.csv](BOM.csv) originated from the **ARC-210_Master_Board schematic** export and now includes the selected 6 × 6 × 6 mm push buttons and the SQL rotary-switch hardware. That schematic includes button and panel-LED circuits, so the CSV is not yet separated by physical PCB. It is not a pair of finalized board-specific purchasing lists. Use each component reference once; do not double the quantities because the build uses two boards. Final allocation between the master and front-panel PCBs will be documented as the layouts are completed.
 
 ## Current button switches
 
-Use **16 switches per panel**, each **6 × 6 × 13 mm**, SPST momentary tactile, with four through-hole leads. The taller actuators allow the PCB to sit farther behind the button caps, providing more vertical clearance for the SMD LEDs. The body still occupies 6 × 6 mm on the board.
+Use **16 switches per panel**, each **6 × 6 × 6 mm**, SPST momentary tactile, with four through-hole leads. The body still occupies 6 × 6 mm on the board.
 
-The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the purchased switches' lead spacing and contact pairing against it before fabrication. This selection replaces the previously listed 12 × 12 × 12 mm and shorter 6 × 6 mm candidates.
+The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the purchased switches' lead spacing and contact pairing against it before fabrication.
 
 ## Hardware selection and supplier links
 
@@ -48,7 +48,7 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
 - **Faceplate:** A-10C "Thunderbolt" / "Warthog" VHF/UHF cockpit panel  
   [PC Flights](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/)
 
-- **Button switches:** 16 per panel, 6 × 6 × 13 mm SPST momentary tactile push-button switches, four-pin through-hole  
+- **Button switches:** 16 per panel, 6 × 6 × 6 mm SPST momentary tactile push-button switches, four-pin through-hole  
   [Amazon](https://www.amazon.com/dp/B0HGBSFY2L)
 
 - **PCB standoffs:** Vibit 640-piece M3 nylon standoff assortment, including male–female and female–female spacers with screws. Select lengths to suit the final PCB spacing; the required lengths and quantity per panel are not yet finalized.  
