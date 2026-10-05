@@ -4,7 +4,7 @@ Updated October 4, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
-The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. It is a September 25 snapshot of the [KiCad project](https://github.com/dgdimick/Teensy/tree/main/KiCad/ARC-210_Master_Board), not a finalized purchasing list. Blank footprints and generic diode values still need confirmation. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
+The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. It is based on a September 25 snapshot of the [KiCad project](https://github.com/dgdimick/Teensy/tree/main/KiCad/ARC-210_Master_Board), with subsequent parts-selection updates, not a finalized purchasing list. Blank footprints and generic diode values still need confirmation. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
 
 ## Two-PCB layout
 
@@ -17,11 +17,13 @@ The front-panel PCB does not require a second microcontroller. The board layouts
 
 ## BOM coverage
 
-[BOM.csv](BOM.csv) is exported from the current **ARC-210_Master_Board schematic**. That schematic includes button and panel-LED circuits, so the CSV is not yet separated by physical PCB. It is not a pair of finalized board-specific purchasing lists. Use each component reference once; do not double the quantities because the build uses two boards. Final allocation between the master and front-panel PCBs will be documented as the layouts are completed.
+[BOM.csv](BOM.csv) originated from the **ARC-210_Master_Board schematic** export and now includes the selected 6 × 6 × 13 mm push buttons and the SQL rotary-switch hardware. That schematic includes button and panel-LED circuits, so the CSV is not yet separated by physical PCB. It is not a pair of finalized board-specific purchasing lists. Use each component reference once; do not double the quantities because the build uses two boards. Final allocation between the master and front-panel PCBs will be documented as the layouts are completed.
 
-## Current button-switch candidate
+## Current button switches
 
-The current candidate is a [12 × 12 × 12 mm tactile switch](https://www.amazon.com/dp/B07HCCMHSL). Its terminal spacing and contact pairing still need verification before assigning a footprint. With 15 mm button centers, 12 mm bodies leave a nominal 3 mm gap; panel height, caps, pins, and pads also need clearance. The 6 × 6 × 5 mm switch below is the earlier candidate, retained for reference.
+Use **16 switches per panel**, each **6 × 6 × 13 mm**, SPST momentary tactile, with four through-hole leads. The taller actuators allow the PCB to sit farther behind the button caps, providing more vertical clearance for the SMD LEDs. The body still occupies 6 × 6 mm on the board.
+
+The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the purchased switches' lead spacing and contact pairing against it before fabrication. This selection replaces the previously listed 12 × 12 × 12 mm and shorter 6 × 6 mm candidates.
 
 ## Hardware selection and supplier links
 
@@ -46,9 +48,8 @@ The current candidate is a [12 × 12 × 12 mm tactile switch](https://www.amazon
 - **Faceplate:** A-10C "Thunderbolt" / "Warthog" VHF/UHF cockpit panel  
   [PC Flights](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/)
 
-- **Button switches:** 16 × 6 × 6 × 5 mm miniature momentary tactile push-button switches (SPST)  
- > **Note:** These switches may change as I continue developing the PCB. I was not satisfied with the first version.  
-  [Amazon](https://www.amazon.com/dp/B01CGMP9GY?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1)
+- **Button switches:** 16 per panel, 6 × 6 × 13 mm SPST momentary tactile push-button switches, four-pin through-hole  
+  [Amazon](https://www.amazon.com/dp/B0HGBSFY2L)
 
 - **Diodes:** 16 × 1N4148 small-signal fast-switching diodes, DO-35  
   These are optional; jumper wires may be used in their place where appropriate.  
