@@ -1,6 +1,6 @@
 # Parts
 
-Updated October 5, 2026.
+Updated October 6, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
@@ -11,13 +11,19 @@ The BOM lists schematic references, values, footprints, quantities, and do-not-p
 The build uses two PCBs controlled by one Teensy 4.1:
 
 - **Master PCB:** carries the Teensy, power circuitry, and display and control connections.
-- **Front-panel PCB:** carries the push-button switches and panel LEDs behind the faceplate and connects to the master PCB.
+- **Front-panel PCB:** carries the push-button switches behind the faceplate and connects to the master PCB.
 
 The front-panel PCB does not require a second microcontroller. The board layouts and connections are still being developed.
 
 ## BOM coverage
 
-[BOM.csv](BOM.csv) originated from the **ARC-210_Master_Board schematic** export and now includes the selected 6 × 6 × 6 mm push buttons and the SQL rotary-switch hardware. That schematic includes button and panel-LED circuits, so the CSV is not yet separated by physical PCB. It is not a pair of finalized board-specific purchasing lists. Use each component reference once; do not double the quantities because the build uses two boards. Final allocation between the master and front-panel PCBs will be documented as the layouts are completed.
+[BOM.csv](BOM.csv) originated from the **ARC-210_Master_Board schematic** export and now includes the selected 6 × 6 × 6 mm push buttons and the SQL rotary-switch hardware. The original schematic includes panel-LED circuits that have since been dropped from the build. The CSV removes D21–D36 and their current-limiting resistors R21–R36, but is not yet separated by physical PCB. It is not a pair of finalized board-specific purchasing lists. Use each component reference once; do not double the quantities because the build uses two boards. Final allocation between the master and front-panel PCBs will be documented as the layouts are completed.
+
+## Panel illumination removed — October 6, 2026
+
+The panel/button illumination LEDs have been dropped because there is insufficient clearance with the TFT display in the current mechanical layout. The parts list no longer includes the 16 panel LEDs (D21–D36) or their 16 current-limiting resistors (R21–R36). The TFT display and its backlight remain, as does the separate power indicator LED.
+
+This update changes the documentation and parts list only; existing schematic drawings may still show the former panel-lighting circuit.
 
 ## Current button switches
 
