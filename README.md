@@ -7,7 +7,11 @@ and DCS-BIOS for live radio data and cockpit control.
   <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
 </p>
 
-**Updated September 29, 2026 — Rotary encoder test HEX available**
+**Updated October 6, 2026 — Panel illumination LEDs dropped**
+
+Panel/button illumination LEDs have been dropped due to insufficient clearance with the TFT display. The [parts list](parts/BOM.csv) now excludes the panel LEDs and their current-limiting resistors. The TFT display and its backlight remain. Existing schematic drawings may still show the former panel-lighting circuit.
+
+**September 29, 2026 — Rotary encoder test HEX available**
 
 The current HEX is available for testing the ARC-210 menu screens and navigation, including the HQ, COMSEC, and RADIO SETTINGS menus. This is a menu-system preview, not a finished radio implementation: some menu actions and synchronization still need work.
 
@@ -76,13 +80,13 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Why I had to use a Teensy
 
-The ARC-210 panel needs a lot of GPIO (general-purpose input/output) pins. It is not just driving a display: the same controller also has to read the knobs and switches, scan the buttons, and control the lighting.
+The ARC-210 panel needs a lot of GPIO (general-purpose input/output) pins. It is not just driving a display: the same controller also has to read the knobs and switches, scan the buttons, and control the TFT backlight.
 
 - Each rotary encoder needs two input pins to detect movement and direction.
 - The 16 push buttons use a 4 × 4 matrix, which still needs eight GPIO pins for its rows and columns.
 - The rotary-switch resistor ladders need analog inputs, and the squelch switch needs another input.
 - The SPI TFT needs clock and data connections plus control signals for chip select, reset, and data/command selection.
-- The display backlight and panel lighting need their own control outputs.
+- The TFT display backlight needs a control output.
 
 These connections add up quickly. I chose the Teensy 4.1 because it gives this design enough pins to connect the controls and display directly, without adding GPIO expanders or another controller. Using one controller for both PCBs also keeps the wiring and firmware easier to manage.
 
@@ -134,7 +138,7 @@ The numbers around this schematic symbol are KiCad pad numbers; use the signal l
 The build uses two PCBs controlled by one Teensy 4.1:
 
 - **Master PCB:** carries the Teensy, power circuitry, and display and control connections.
-- **Front-panel PCB:** carries the push-button switches and panel LEDs behind the faceplate and connects to the master PCB.
+- **Front-panel PCB:** carries the push-button switches behind the faceplate and connects to the master PCB.
 
 The front-panel PCB does not require a second microcontroller. The board layouts and connections are still being developed.
 
