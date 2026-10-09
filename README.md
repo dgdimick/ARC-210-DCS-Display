@@ -88,7 +88,7 @@ The ARC-210 panel needs a lot of GPIO (general-purpose input/output) pins. It is
 - The SPI TFT needs clock and data connections plus control signals for chip select, reset, and data/command selection.
 - The TFT display backlight needs a control output.
 
-These connections add up quickly. I chose the Teensy 4.1 because it gives this design enough pins to connect the controls and display directly, without adding GPIO expanders or another controller. Using one controller for both PCBs also keeps the wiring and firmware easier to manage.
+These connections add up quickly. I chose the Teensy 4.1 because it gives this design enough pins to connect the controls and display directly, without adding GPIO expanders or another controller. Using one controller for all five PCBs also keeps the wiring and firmware easier to manage.
 
 ### Could I have used several Arduinos?
 
@@ -133,14 +133,16 @@ At those listed prices, one Teensy costs **$53.20 less** than three official Uno
 
 The numbers around this schematic symbol are KiCad pad numbers; use the signal labels and the project wiring documentation to identify the corresponding Teensy GPIO pins.
 
-## Two-PCB layout
+## Five-PCB layout
 
-The build uses two PCBs controlled by one Teensy 4.1:
+The radio will use a total of **five PCBs**, controlled by one Teensy 4.1:
 
 - **Master PCB:** carries the Teensy, power circuitry, and display and control connections.
-- **Front-panel PCB:** carries the push-button switches behind the faceplate and connects to the master PCB.
+- **Button PCB:** carries the push-button switches behind the faceplate and connects to the master PCB.
+- **Rotary Encoder PCB:** carries the rotary encoders and connects to the master PCB.
+- **Two small Rotary Switch PCBs:** each rotary switch will have its own PCB for cleaner wiring and better wire support.
 
-The front-panel PCB does not require a second microcontroller. The board layouts and connections are still being developed.
+The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The board layouts and connections are still being developed.
 
 ## Parts
 
