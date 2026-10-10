@@ -7,7 +7,9 @@ and DCS-BIOS for live radio data and cockpit control.
   <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
 </p>
 
-**Updated October 9, 2026 — New PCBs in development**
+**Updated October 10, 2026 — Two new PCB pictures uploaded**
+
+Two new 3D PCB pictures have been uploaded to the `images` directory: the [Rotary Switch PCB](images/Rotary-Switch-PCB-3D.png) and [Rotary Encoder PCB](images/Rotary-Encoder-PCB-3D.png). The new PCBs are still in development.
 
 Panel/button illumination LEDs have been dropped due to insufficient clearance with the TFT display. The [parts list](parts/BOM.csv) now excludes the panel LEDs and their current-limiting resistors. The TFT display and its backlight remain. Existing schematic drawings may still show the former panel-lighting circuit.
 
