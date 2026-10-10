@@ -7,9 +7,9 @@ and DCS-BIOS for live radio data and cockpit control.
   <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
 </p>
 
-**Updated October 10, 2026 — Rotary Switch PCB files pulled for correction**
+**Updated October 10, 2026 — Rotary Switch PCB version 1.1 uploaded**
 
-Two new 3D PCB pictures have been uploaded to the `images` directory: the [Rotary Switch PCB](images/Rotary-Switch-PCB-3D.png) and [Rotary Encoder PCB](images/Rotary-Encoder-PCB-3D.png). The new PCBs are still in development. **A switch pin-assignment error was found in the Rotary Switch PCB project, so its KiCad files and custom libraries have been pulled while the design is corrected and checked. Do not manufacture the previously uploaded version.** The PCB pictures remain available as development previews.
+Two new 3D PCB pictures have been uploaded to the `images` directory: the [Rotary Switch PCB](images/Rotary-Switch-PCB-3D.png) and [Rotary Encoder PCB](images/Rotary-Encoder-PCB-3D.png). The new PCBs are still in development. The corrected [Rotary Switch PCB project, version 1.1](PCBs/Rotary%20Switches/), is now available with its schematic, PCB and custom libraries. Terminal 1 is used for the first position, and the PCB matches the corrected schematic. Version 1.1 replaces the withdrawn initial version; use the new files. The PCB pictures remain available as development previews.
 
 Panel/button illumination LEDs have been dropped due to insufficient clearance with the TFT display. The [parts list](parts/BOM.csv) now excludes the panel LEDs and their current-limiting resistors. The TFT display and its backlight remain. Existing schematic drawings may still show the former panel-lighting circuit.
 

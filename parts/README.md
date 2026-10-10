@@ -14,7 +14,7 @@ The build uses five PCBs controlled by one Teensy 4.1: the master PCB, button PC
 
 [BOM.csv](BOM.csv) originated from the ARC-210 master-board schematic and includes subsequent panel-hardware selections. Panel-hardware entries are explicitly labelled so their references are not confused with master-board references. This is not yet a finalized set of board-specific purchasing lists; do not multiply quantities by the number of PCBs.
 
-**The Rotary Switch KiCad project has been pulled after a switch pin-assignment error was found. Do not manufacture the previously uploaded files.** The parts listed below remain the selected hardware; the PCB design is being corrected.
+The corrected [Rotary Switch KiCad project, version 1.1](../PCBs/Rotary%20Switches/), replaces the withdrawn initial version. Use version 1.1 for the corrected switch pin assignments.
 
 ## Panel illumination removed — October 6, 2026
 

@@ -73,5 +73,5 @@
 "SW16","SW_Push 6x6x6mm SPST momentary","Button_Switch_THT:SW_PUSH-6mm","1",""
 "U1","Teensy4.1","Teensy:Teensy41","1",""
 "SQL panel hardware (not a schematic reference)","C&K A12515RNZQ - SQL On/Off; 38.1mm shaft; 45deg indexing; bracket mount; solder lugs","","1",""
-"Rotary switch panel hardware (not master-board references)","C&K A12505RNCQ - multi-position rotary switch; 12.7mm shaft; 45deg indexing; PCB pins","ARC210_RotarySwitches:A12515RNCQ (PCB pin assignment correction pending)","2",""
+"Rotary switch panel hardware (not master-board references)","C&K A12505RNCQ - multi-position rotary switch; 12.7mm shaft; 45deg indexing; PCB pins","ARC210_RotarySwitches:A12505RNCQ","2",""
 "Encoder PCB hardware (not master-board references)","Bourns PEC11H-4220F-S0024 - rotary encoder with push switch; PCB terminals","ARC210_Encoders:PEC11H4220FS0024","6",""
