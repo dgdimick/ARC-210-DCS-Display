@@ -7,6 +7,10 @@ and DCS-BIOS for live radio data and cockpit control.
   <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
 </p>
 
+**October 10, 2026 — Final hardware test HEX**
+
+The [final hardware test HEX](Firmware/Test%20Code/ARC210_Final_Hardware_Test_Teensy41.hex) is now available for Teensy 4.1. This combined TFT test checks all 16 buttons, six rotary encoders, brightness controls, and both seven-position rotary switches on GPIO 14 and 15. All of these functions were confirmed working together on the panel. See the [test instructions](Firmware/Test%20Code/ARC210_Button_Test/README.md).
+
 **Updated October 10, 2026 — Rotary Switch PCB version 1.2 adds On/Off support**
 
 Two new 3D PCB pictures have been uploaded to the `images` directory: the [Rotary Switch PCB](images/Rotary-Switch-PCB-3D.png) and [Rotary Encoder PCB](images/Rotary-Encoder-PCB-3D.png). The new PCBs are still in development. The corrected [Rotary Switch PCB project, version 1.2](PCBs/Rotary%20Switches/), is now available with its schematic, PCB and custom libraries. Terminal 1 is used for the first position, and the PCB matches the corrected schematic. Version 1.2 replaces the withdrawn initial version; use the new files. I modified the PCB so it can also be used with the On/Off switch. For On/Off use, omit R1–R6 and solder across **JP1**, marked **ON/OFF** on the back of the PCB. JP1 connects the R1–R2 junction (R2 pad 1 / switch terminal 2) to GND; connect J1 pin 2 to a Teensy input with a pull-up. For the normal resistor ladder, install R1–R6 and leave JP1 open. The PCB pictures remain available as development previews.
