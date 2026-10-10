@@ -22,6 +22,28 @@ The panel/button illumination LEDs have been dropped because there is insufficie
 
 This update changes the documentation and parts list only; existing schematic drawings may still show the former panel-lighting circuit.
 
+## Main Controller power and protection parts
+
+I am including the following power-input and protection components from the current Main Controller schematic. These entries are already included in [BOM.csv](BOM.csv); the quantities below are for one Main Controller board.
+
+| Reference | Part / value | Quantity |
+| --- | --- | ---: |
+| J3 | DC barrel power-input jack, labelled 5.0–5.5 V input in the current schematic | 1 |
+| F2 | Resettable PTC fuse, 1.1 A hold current | 1 |
+| D1 | SB560 Schottky diode | 1 |
+| C5 | 470 µF, 10 V electrolytic capacitor | 1 |
+| C6 | 100 nF (0.1 µF) capacitor | 1 |
+| D2 | Green power indicator LED, 5 mm footprint | 1 |
+| R15 | 1 kΩ resistor | 1 |
+| D3 | 1N4734A, 5.6 V Zener diode | 1 |
+| R16 | 220 Ω resistor | 1 |
+| R17 | 1 kΩ resistor | 1 |
+| Q2 | C106D SCR | 1 |
+
+The TFT backlight control on the Main Controller also uses **Q3: IRLZ44N MOSFET**, **R37: 10 kΩ**, and **R38: 100 Ω**, one of each. These are also listed in the BOM.
+
+I still need to finalize the Main Controller PCB. The exact barrel-jack size, PTC ordering code, resistor wattages and unfinished footprints need to be confirmed against that final design. This section records the current schematic parts; it does not add an external power supply to the purchasing list.
+
 ## Current button switches
 
 Use **16 switches per panel**, each **6 × 6 × 6 mm**, SPST momentary tactile, with four through-hole leads. The body still occupies 6 × 6 mm on the board.
