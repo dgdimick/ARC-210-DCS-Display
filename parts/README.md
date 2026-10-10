@@ -18,7 +18,7 @@ The corrected [Rotary Switch KiCad project, version 1.2](../PCBs/Rotary%20Switch
 
 ## Panel illumination removed — October 6, 2026
 
-The panel/button illumination LEDs have been dropped because there is insufficient clearance with the TFT display in the current mechanical layout. The parts list no longer includes the 16 panel LEDs (D21–D36) or their 16 current-limiting resistors (R21–R36). The TFT display and its backlight remain, as does the separate power indicator LED.
+The panel/button illumination LEDs have been dropped because there is insufficient clearance with the TFT display in the current mechanical layout. The PC Flights panel I am using also has no buttons that can be illuminated by the LEDs—all of the buttons are painted. The parts list no longer includes the 16 panel LEDs (D21–D36) or their 16 current-limiting resistors (R21–R36). The TFT display and its backlight remain, as does the separate power indicator LED.
 
 This update changes the documentation and parts list only; existing schematic drawings may still show the former panel-lighting circuit.
 
