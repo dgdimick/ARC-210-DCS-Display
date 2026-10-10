@@ -1,0 +1,4 @@
+(fp_lib_table
+(version 7)
+(lib (name "ARC210_RotarySwitches") (type "KiCad") (uri "${KIPRJMOD}/ARC210_RotarySwitches.pretty") (options "") (descr "C&K A12503RNCQE rotary switch"))
+)
