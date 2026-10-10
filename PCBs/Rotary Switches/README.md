@@ -1,4 +1,4 @@
-# ARC-210 Rotary Switch PCB — Version 1.1
+# ARC-210 Rotary Switch PCB — Version 1.2
 
 Updated October 10, 2026.
 
@@ -12,7 +12,14 @@ Open `Rotary Switches.kicad_pro`. The project includes its custom symbol and A12
 
 The 220 Ω resistor and 100 nF input filter belong near the Teensy on the master PCB.
 
-The solder-lug A12515RNZQ used for SQL on/off requires wiring and mechanical support. Its connections must be arranged for the required on/off positions rather than the seven-position resistor ladder.
+## On/Off option added in version 1.2
+
+I modified the PCB so it can also be used with the On/Off switch. **JP1**, marked **ON/OFF** on the back of the PCB near R2, is an open solder jumper between GND and the R1–R2 junction: R2 pad 1, also connected to switch terminal 2.
+
+- **On/Off:** omit all six resistors R1–R6 and bridge JP1 with solder. Connect J1 pin 2 (switch common A1) to a Teensy input configured with a pull-up, and J1 pin 3 to GND. Selecting terminal 2 pulls the input LOW; an ungrounded contact reads HIGH. J1 pin 1 is not needed for this configuration. Set the switch travel and contact selection to match the panel markings.
+- **Resistor ladder:** fit R1–R6 and leave JP1 open. Use the three J1 connections listed above.
+
+The solder-lug A12515RNZQ still requires mechanical support and wires to the corresponding PCB connections; it does not fit the PCB-pin footprint directly.
 
 Validation: KiCad electrical checks reported zero violations; PCB checks reported zero violations, zero unconnected pads and zero schematic parity issues under the project's configured checks. Physical fit and operation have not yet been verified on a manufactured board.
 

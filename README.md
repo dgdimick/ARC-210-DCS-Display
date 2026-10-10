@@ -7,9 +7,9 @@ and DCS-BIOS for live radio data and cockpit control.
   <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
 </p>
 
-**Updated October 10, 2026 — Rotary Switch PCB version 1.1 uploaded**
+**Updated October 10, 2026 — Rotary Switch PCB version 1.2 adds On/Off support**
 
-Two new 3D PCB pictures have been uploaded to the `images` directory: the [Rotary Switch PCB](images/Rotary-Switch-PCB-3D.png) and [Rotary Encoder PCB](images/Rotary-Encoder-PCB-3D.png). The new PCBs are still in development. The corrected [Rotary Switch PCB project, version 1.1](PCBs/Rotary%20Switches/), is now available with its schematic, PCB and custom libraries. Terminal 1 is used for the first position, and the PCB matches the corrected schematic. Version 1.1 replaces the withdrawn initial version; use the new files. The PCB pictures remain available as development previews.
+Two new 3D PCB pictures have been uploaded to the `images` directory: the [Rotary Switch PCB](images/Rotary-Switch-PCB-3D.png) and [Rotary Encoder PCB](images/Rotary-Encoder-PCB-3D.png). The new PCBs are still in development. The corrected [Rotary Switch PCB project, version 1.2](PCBs/Rotary%20Switches/), is now available with its schematic, PCB and custom libraries. Terminal 1 is used for the first position, and the PCB matches the corrected schematic. Version 1.2 replaces the withdrawn initial version; use the new files. I modified the PCB so it can also be used with the On/Off switch. For On/Off use, omit R1–R6 and solder across **JP1**, marked **ON/OFF** on the back of the PCB. JP1 connects the R1–R2 junction (R2 pad 1 / switch terminal 2) to GND; connect J1 pin 2 to a Teensy input with a pull-up. For the normal resistor ladder, install R1–R6 and leave JP1 open. The PCB pictures remain available as development previews.
 
 Panel/button illumination LEDs have been dropped due to insufficient clearance with the TFT display. The [parts list](parts/BOM.csv) now excludes the panel LEDs and their current-limiting resistors. The TFT display and its backlight remain. Existing schematic drawings may still show the former panel-lighting circuit.
 
