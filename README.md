@@ -11,6 +11,10 @@ and DCS-BIOS for live radio data and cockpit control.
 
 The [final hardware test HEX](Firmware/Test%20Code/ARC210_Final_Hardware_Test_Teensy41.hex) is now available for Teensy 4.1. This combined TFT test checks all 16 buttons, six rotary encoders, brightness controls, and both seven-position rotary switches on GPIO 14 and 15. All of these functions were confirmed working together on the panel. See the [test instructions](Firmware/Test%20Code/ARC210_Button_Test/README.md).
 
+**October 10, 2026 — Two PCBs remaining**
+
+With the combined hardware test confirmed working, the remaining PCB work is the **Main Controller board** and a **redesign of the 16-button board** to improve button alignment with the faceplate.
+
 **Updated October 10, 2026 — Rotary Switch PCB version 1.2 adds On/Off support**
 
 Two new 3D PCB pictures have been uploaded to the `images` directory: the [Rotary Switch PCB](images/Rotary-Switch-PCB-3D.png) and [Rotary Encoder PCB](images/Rotary-Encoder-PCB-3D.png). The new PCBs are still in development. The corrected [Rotary Switch PCB project, version 1.2](PCBs/Rotary%20Switches/), is now available with its schematic, PCB and custom libraries. Terminal 1 is used for the first position, and the PCB matches the corrected schematic. Version 1.2 replaces the withdrawn initial version; use the new files. I modified the PCB so it can also be used with the On/Off switch. For On/Off use, omit R1–R6 and solder across **JP1**, marked **ON/OFF** on the back of the PCB. JP1 connects the R1–R2 junction (R2 pad 1 / switch terminal 2) to GND; connect J1 pin 2 to a Teensy input with a pull-up. For the normal resistor ladder, install R1–R6 and leave JP1 open. The PCB pictures remain available as development previews.
@@ -148,7 +152,7 @@ The radio will use a total of **five PCBs**, controlled by one Teensy 4.1:
 - **Rotary Encoder PCB:** carries the rotary encoders and connects to the master PCB.
 - **Two small Rotary Switch PCBs:** each rotary switch will have its own PCB for cleaner wiring and better wire support.
 
-The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The board layouts and connections are still being developed.
+The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The two remaining PCB tasks are the Main Controller board and the redesign of the 16-button board.
 
 ## Parts
 
