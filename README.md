@@ -8,8 +8,12 @@
 4. Test the final fit with all six PCBs and the TFT installed.
 5. Arrange the Digital Encoder and Rotary Switch PCBs together on the same manufacturing panel to reduce manufacturing costs.
 6. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
-7. Review the completed project to ensure the correct licenses are used. Like most of my projects, this has been a labor of love. I want others to enjoy my work and use it however they see fit.
-8. Work out a way to distribute manufactured PCBs and completed parts—or even a complete panel—for those who need help finishing the project. This could include finished knobs, PCBs, programmed Teensys or a fully assembled radio panel.
+7. Complete the final assembly instructions, wiring diagrams and updated parts list.
+8. Document firmware installation and the required DCS-BIOS configuration.
+9. Test the manufactured boards and run an extended reliability test.
+10. Confirm that knob direction, switch positions and button labels match their functions in DCS.
+11. Review the completed project to ensure the correct licenses are used. Like most of my projects, this has been a labor of love. I want others to enjoy my work and use it however they see fit.
+12. Work out a way to distribute manufactured PCBs and completed parts—or even a complete panel—for those who need help finishing the project. This could include finished knobs, PCBs, programmed Teensys or a fully assembled radio panel.
 
 This project is an ARC-210 radio control panel for the DCS A-10C II using a Teensy 4.1, an ILI9488 TFT display,
 and DCS-BIOS for live radio data and cockpit control.
