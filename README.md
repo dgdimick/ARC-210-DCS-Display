@@ -1,5 +1,16 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" TFT SPI display and DCSBIOS
 
+## Items that need to be completed
+
+1. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
+2. Test the external power input and protection circuitry for the Main PCB.
+3. Finish the Master Board and Button PCB designs.
+4. Test the final fit with all six PCBs and the TFT installed.
+5. Arrange the Digital Encoder and Rotary Switch PCBs together on the same manufacturing panel to reduce manufacturing costs.
+6. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
+7. Review the completed project to ensure the correct licenses are used. Like most of my projects, this has been a labor of love. I want others to enjoy my work and use it however they see fit.
+8. Work out a way to distribute manufactured PCBs and completed parts—or even a complete panel—for those who need help finishing the project. This could include finished knobs, PCBs, programmed Teensys or a fully assembled radio panel.
+
 This project is an ARC-210 radio control panel for the DCS A-10C II using a Teensy 4.1, an ILI9488 TFT display,
 and DCS-BIOS for live radio data and cockpit control.
 
