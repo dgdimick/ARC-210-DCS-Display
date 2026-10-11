@@ -27,3 +27,11 @@ Use the hardware listed on the main project page. Earlier printing notes reporte
 ## Display bracket
 
 The 3.5 SPI display mount does not have mounting points. It is a bracket that holds the display between the PCB and front face and currently needs to be hot-glued in place. A proper mounting arrangement is planned.
+
+## Rotary encoder spacer
+
+Added October 11, 2026.
+
+[Rotary Encoder Spacer.stl](Rotary%20Encoder%20Spacer.stl)
+
+I use this spacer around the rotary encoder's threaded mounting section because the PC Flights ARC-210 faceplate has 10 mm holes, which are larger than the encoder threads. The spacer fills the gap and centers each encoder in its faceplate hole. Print six spacers for the six rotary encoders, and check the fit before printing the full set.
