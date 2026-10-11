@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "ARC210_Encoders") (type "KiCad") (uri "${KIPRJMOD}/ARC210_Encoders.pretty") (options "") (descr "Grounded encoder mounting tabs")))
