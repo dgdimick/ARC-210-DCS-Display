@@ -1,14 +1,16 @@
 # Parts
 
-Updated October 10, 2026.
+Updated October 11, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
 The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. It is based on a September 25 snapshot of the [KiCad project](https://github.com/dgdimick/Teensy/tree/main/KiCad/ARC-210_Master_Board), with subsequent parts-selection updates, not a finalized purchasing list. Blank footprints and generic diode values still need confirmation. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
 
-## Five-PCB layout
+## Six-PCB layout
 
-The build uses five PCBs controlled by one Teensy 4.1: the master PCB, button PCB, rotary encoder PCB, and two small rotary switch PCBs. The separate control boards provide cleaner wiring and wire support.
+My build uses six PCBs controlled by one Teensy 4.1: the master PCB, button PCB, rotary encoder PCB, and three small rotary switch PCBs. The separate control boards provide cleaner wiring and wire support.
+
+The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. For the On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
 
 ## BOM coverage
 
