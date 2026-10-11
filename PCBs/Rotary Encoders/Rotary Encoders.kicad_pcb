@@ -818,7 +818,7 @@
 			(uuid "be05478b-9b4e-4a28-86d1-ccdc59f570d2")
 		)
 		(embedded_fonts no)
-		(model "PEC11H-4220F-S0024.stp"
+		(model "${KIPRJMOD}/PEC11H-4220F-S0024.stp"
 			(offset
 				(xyz 2.499999962 7.489999659 2.229999986)
 			)
@@ -1195,7 +1195,7 @@
 			(uuid "f1ab860a-b0e2-4f18-96e9-8c3c2a77dd9b")
 		)
 		(embedded_fonts no)
-		(model "PEC11H-4220F-S0024.stp"
+		(model "${KIPRJMOD}/PEC11H-4220F-S0024.stp"
 			(offset
 				(xyz 2.499999962 7.489999659 2.229999986)
 			)
@@ -1572,7 +1572,7 @@
 			(uuid "b5f6b6c6-d910-4059-a9b1-becc0e28f0f0")
 		)
 		(embedded_fonts no)
-		(model "PEC11H-4220F-S0024.stp"
+		(model "${KIPRJMOD}/PEC11H-4220F-S0024.stp"
 			(offset
 				(xyz 2.499999962 7.489999659 2.229999986)
 			)
@@ -1949,7 +1949,7 @@
 			(uuid "4554e821-a071-44e3-860a-16c12e3eae92")
 		)
 		(embedded_fonts no)
-		(model "PEC11H-4220F-S0024.stp"
+		(model "${KIPRJMOD}/PEC11H-4220F-S0024.stp"
 			(offset
 				(xyz 2.499999962 7.489999659 2.229999986)
 			)
@@ -2326,7 +2326,7 @@
 			(uuid "0fe87944-7f97-45c4-8b76-2a0434a844b9")
 		)
 		(embedded_fonts no)
-		(model "PEC11H-4220F-S0024.stp"
+		(model "${KIPRJMOD}/PEC11H-4220F-S0024.stp"
 			(offset
 				(xyz 2.499999962 7.489999659 2.229999986)
 			)
@@ -2898,7 +2898,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "ARC-210 Rotary Encoder v1.1"
+	(gr_text "ARC-210 Rotary Encoder v1.3"
 		(at 105.6 89.3 90)
 		(layer "B.SilkS")
 		(uuid "9584642c-3e2b-46b0-bcc1-a8d458e5aa1a")
