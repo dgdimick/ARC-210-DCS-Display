@@ -7,6 +7,10 @@ and DCS-BIOS for live radio data and cockpit control.
   <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
 </p>
 
+**October 10, 2026 — Splash-screen picture removed**
+
+I removed `splash_screen.jpg` because [ARC-210-Face Plate.jpg](images/ARC-210-Face%20Plate.jpg) is a better picture. The faceplate picture remains at the top of this README.
+
 **October 10, 2026 — Outdated Button PCB image removed**
 
 I removed `Button_Ver2.0.jpg` because it does not show the final Button PCB. I am redesigning the 16-button board and removed the old picture to prevent confusion.
