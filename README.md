@@ -43,20 +43,21 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Items that need to be completed
 
-1. Look into finishing the SATCOM menus buried under the HQ menu. I am not sure whether anyone uses them, but they should be completed for a fully realistic panel.
-2. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
-3. Test the external power input and protection circuitry for the Main PCB.
-4. Finish the Master Board and Button PCB designs.
-5. Test the final fit with all six PCBs and the TFT installed.
-6. Arrange the Digital Encoder and Rotary Switch PCBs together on the same manufacturing panel to reduce manufacturing costs.
-7. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
-8. Complete the final assembly instructions, wiring diagrams and updated parts list.
-9. Document firmware installation and the required DCS-BIOS configuration.
-10. Test the manufactured boards and run an extended reliability test.
-11. Confirm that knob direction, switch positions and button labels match their functions in DCS.
-12. Review the completed project to ensure the correct licenses are used. Like most of my projects, this has been a labor of love. I want others to enjoy my work and use it however they see fit.
-13. Work out a way to distribute manufactured PCBs and completed parts—or even a complete panel—for those who need help finishing the project. This could include finished knobs, PCBs, programmed Teensys or a fully assembled radio panel.
-14. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker.
+1. Find a way to mount the TFT that does not involve hot glue, baling wire, hope and prayers. The current solution is truly craptastic—not exactly my proudest work.
+2. Look into finishing the SATCOM menus buried under the HQ menu. I am not sure whether anyone uses them, but they should be completed for a fully realistic panel.
+3. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
+4. Test the external power input and protection circuitry for the Main PCB.
+5. Finish the Master Board and Button PCB designs.
+6. Test the final fit with all six PCBs and the TFT installed.
+7. Arrange the Digital Encoder and Rotary Switch PCBs together on the same manufacturing panel to reduce manufacturing costs.
+8. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
+9. Complete the final assembly instructions, wiring diagrams and updated parts list.
+10. Document firmware installation and the required DCS-BIOS configuration.
+11. Test the manufactured boards and run an extended reliability test.
+12. Confirm that knob direction, switch positions and button labels match their functions in DCS.
+13. Review the completed project to ensure the correct licenses are used. Like most of my projects, this has been a labor of love. I want others to enjoy my work and use it however they see fit.
+14. Work out a way to distribute manufactured PCBs and completed parts—or even a complete panel—for those who need help finishing the project. This could include finished knobs, PCBs, programmed Teensys or a fully assembled radio panel.
+15. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker.
 
 ## Project updates
 
