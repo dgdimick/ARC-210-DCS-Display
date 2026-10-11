@@ -7,6 +7,10 @@ and DCS-BIOS for live radio data and cockpit control.
   <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
 </p>
 
+**October 10, 2026 — Outdated Button PCB image removed**
+
+I removed `Button_Ver2.0.jpg` because it does not show the final Button PCB. I am redesigning the 16-button board and removed the old picture to prevent confusion.
+
 **October 10, 2026 — Rotary Encoder PCB project published**
 
 I have published the [Rotary Encoder KiCad project](PCBs/Rotary%20Encoders/), including the schematic, PCB, custom libraries and header wiring instructions. The schematic and PCB pass their configured checks. I have confirmed that the printed rotary-encoder STL fits and all six encoders work in the final combined hardware test.
