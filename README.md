@@ -1,5 +1,46 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" TFT SPI display and DCSBIOS
 
+This project is an ARC-210 radio control panel for the DCS A-10C II using a Teensy 4.1, an ILI9488 TFT display,
+and DCS-BIOS for live radio data and cockpit control.
+
+<p align="center">
+  <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
+</p>
+
+This project replicates the look and functionality of the **ARC-210 VHF/UHF radio** used in the A-10C II Warthog module for Digital Combat Simulator (DCS).
+
+It is intended for use with a physical control panel powered by a Teensy 4.1.
+
+[See the official DCS website](https://www.digitalcombatsimulator.com/en/)
+
+> **Note:** This repository is now included in the A-10-Sim repository.
+
+## Features
+
+- Interface modeled after the ARC-210 radio
+- Powered by one Teensy 4.1
+- ILI9488 3.5-inch SPI TFT display (480 × 320)
+- Support for digital rotary encoders, rotary switches, and momentary switches
+- **Planned button support:** All panel buttons will be wired, and their in-game functions will be supported wherever DCS-BIOS provides the necessary controls. The current HEX remains display-only.
+- DCS-BIOS integration for in-game control and feedback
+- ARC-210 startup and initialization screens
+- Live frequency display from DCS-BIOS
+- AM/FM modulation display
+- UNAVAILABLE screen for the appropriate Frequency and Mode switch selections
+
+## Six-PCB layout
+
+The radio will use a total of **six PCBs**, controlled by one Teensy 4.1:
+
+- **Master PCB:** carries the Teensy, power circuitry, display and control connections.
+- **Button PCB:** carries the push-button switches behind the faceplate and connects to the master PCB.
+- **Rotary Encoder PCB:** carries the rotary encoders and connects to the master PCB.
+- **Three small Rotary Switch PCBs:** the two seven-position switches and the On/Off switch will each have their own PCB for cleaner wiring and better wire support.
+
+All three Rotary Switch PCBs use the same design and are interchangeable. For the **On/Off rotary switch PCB**, install **no resistors** (omit R1–R6) and bridge the small **JP1 solder pad**, marked **ON/OFF**, with solder. For either seven-position rotary switch PCB, install the six resistors and leave JP1 open.
+
+The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The two remaining PCB tasks are the Main Controller board and the redesign of the 16-button board.
+
 ## Items that need to be completed
 
 1. Look into finishing the SATCOM menus buried under the HQ menu. I am not sure whether anyone uses them, but they should be completed for a fully realistic panel.
@@ -16,12 +57,7 @@
 12. Review the completed project to ensure the correct licenses are used. Like most of my projects, this has been a labor of love. I want others to enjoy my work and use it however they see fit.
 13. Work out a way to distribute manufactured PCBs and completed parts—or even a complete panel—for those who need help finishing the project. This could include finished knobs, PCBs, programmed Teensys or a fully assembled radio panel.
 
-This project is an ARC-210 radio control panel for the DCS A-10C II using a Teensy 4.1, an ILI9488 TFT display,
-and DCS-BIOS for live radio data and cockpit control.
-
-<p align="center">
-  <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
-</p>
+## Project updates
 
 **October 10, 2026 — Splash-screen picture removed**
 
@@ -49,7 +85,9 @@ Two new 3D PCB pictures have been uploaded to the `images` directory: the [Rotar
 
 Panel/button illumination LEDs have been dropped due to insufficient clearance with the TFT display. The [parts list](parts/BOM.csv) now excludes the panel LEDs and their current-limiting resistors. The TFT display and its backlight remain. Existing schematic drawings may still show the former panel-lighting circuit.
 
-**September 29, 2026 — Rotary encoder test HEX available**
+## Firmware and hardware testing
+
+### DCS-BIOS firmware preview
 
 The current HEX is available for testing the ARC-210 menu screens and navigation, including the HQ, COMSEC, and RADIO SETTINGS menus. This is a menu-system preview, not a finished radio implementation: some menu actions and synchronization still need work.
 
@@ -64,14 +102,6 @@ Download [Master_Program.ino.hex](Firmware/Master%20Hex%20Files/Master_Program.i
 Download [ARC210_Encoder_Check_Teensy41.hex](Firmware/Test%20Code/ARC210_Encoder_Check_Teensy41.hex) for standalone testing of all six rotary encoders on a Teensy 4.1. The TFT displays each encoder's raw count, direction, and A/B input states. DCS is not required, and the backlight stays fully on using Teensy pin 4.
 
 **First pass the TFT hello test before loading the encoder test.** A working TFT is required to see the results. See the [test instructions](Firmware/Test%20Code/README.md) and [pin layout](Docs/ARC-210%20Teensy%204.1%20Pin%20layout.txt). Loading this HEX replaces the firmware currently on the Teensy.
-
-Here is a short video showing the progress I have made so far:
-
-[ARC-210 Project Progress Video](https://drive.google.com/file/d/162CAG3RlfPK6QnCSb0p5lkmVlXDZjPrU/view)
-
-I am looking for **beta testers** to help with screen layouts, placement of the lines, and font suggestions. If you have a **3.5-inch SPI TFT display** and a **Teensy 4.1** lying around, you have the basic hardware needed to beta test.
-
-The `Teensy_TFT_Hello_Works.ino` file in the `Firmware` directory contains the correct display pin assignments and can be used to verify that your display is connected correctly.
 
 The HEX file for the current state of the project is located in:
 
@@ -88,26 +118,30 @@ If you own a Teensy 4.1, you may already know how to install a HEX file. If not,
 5. Click **Program** in Teensy Loader.
 6. Reboot the Teensy.
 
-> **Note:** This repository is now included in the A-10-Sim repository.
+## ARC-210 Bench Testing App
 
-This project replicates the look and functionality of the **ARC-210 VHF/UHF radio** used in the A-10C II Warthog module for Digital Combat Simulator (DCS).
+The [working ARC-210 version of dcsBiosDebug](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working) is maintained in a separate repository. It provides buttons for menu testing and separate Frequency, Secondary, and Master controls for sending simulated DCS-BIOS data to your Teensy without running DCS.
 
-It is intended for use with a physical control panel powered by a Teensy 4.1.
+Download the **arc210-working** branch using **Code → Download ZIP**, extract it, and keep its `icons` folder beside the Python script. With Python 3 and Tkinter installed, open a terminal in that folder and run:
 
-[See the official DCS website](https://www.digitalcombatsimulator.com/en/)
+```cmd
+python -m pip install numpy pyserial Pillow
+python dcsBiosDebug.py
+```
 
-## Features
+Use the Python script, including the `.py` extension; the original bundled executable does not include the ARC-210 controls. Select your Teensy's serial port and click **Connect**. Choose **2 - TR** and click **Set Master** for the normal radio switch position, or **0 - OFF** to test power off.
 
-- Interface modeled after the ARC-210 radio
-- Powered by one Teensy 4.1
-- ILI9488 3.5-inch SPI TFT display (480 × 320)
-- Support for digital rotary encoders, rotary switches, and momentary switches
-- **Planned button support:** All panel buttons will be wired, and their in-game functions will be supported wherever DCS-BIOS provides the necessary controls. The current HEX remains display-only.
-- DCS-BIOS integration for in-game control and feedback
-- ARC-210 startup and initialization screens
-- Live frequency display from DCS-BIOS
-- AM/FM modulation display
-- UNAVAILABLE screen for the appropriate Frequency and Mode switch selections
+See the [full testing instructions and compatibility notes](https://github.com/dgdimick/dcsBiosDebug/blob/arc210-working/ARC210_TESTING.md). The shortcuts use fixed A-10C II addresses and send data to the hardware, not commands to DCS. Some firmware states require additional exports through the normal instrument controls.
+
+## Project progress and beta testing
+
+Here is a short video showing the progress I have made so far:
+
+[ARC-210 Project Progress Video](https://drive.google.com/file/d/162CAG3RlfPK6QnCSb0p5lkmVlXDZjPrU/view)
+
+I am looking for **beta testers** to help with screen layouts, placement of the lines, and font suggestions. If you have a **3.5-inch SPI TFT display** and a **Teensy 4.1** lying around, you have the basic hardware needed to beta test.
+
+The `Teensy_TFT_Hello_Works.ino` file in the `Firmware` directory contains the correct display pin assignments and can be used to verify that your display is connected correctly.
 
 ## Tools Needed
 
@@ -115,6 +149,26 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 - 3D printer, or access to one
 - Flush wire cutters
 - USB Micro-B cable for programming the Teensy 4.1 and connecting the unit to the computer
+
+## Parts
+
+See the [parts directory](parts/) for the [component list (BOM)](parts/BOM.csv), hardware supplier links, and switch-fit and compatibility notes.
+
+## Supporting STL Files
+
+The `Supporting STL's` directory includes:
+
+- Knobs for rotary encoders and rotary switches
+- Mounting hardware for the TFT screen and PCBs
+- Brackets for panel alignment
+
+All STL files are intended to be print-ready for FDM printers using a 0.4 mm nozzle. Resin/SLA printers may require different settings or scaling.
+
+## Software
+
+- Written in Arduino C++
+- Uses DCS-BIOS for communication with DCS
+- Firmware and test files are maintained in this repository
 
 ## Why I had to use a Teensy
 
@@ -171,62 +225,15 @@ At those listed prices, one Teensy costs **$53.20 less** than three official Uno
 
 The numbers around this schematic symbol are KiCad pad numbers; use the signal labels and the project wiring documentation to identify the corresponding Teensy GPIO pins.
 
-## Six-PCB layout
-
-The radio will use a total of **six PCBs**, controlled by one Teensy 4.1:
-
-- **Master PCB:** carries the Teensy, power circuitry, display and control connections.
-- **Button PCB:** carries the push-button switches behind the faceplate and connects to the master PCB.
-- **Rotary Encoder PCB:** carries the rotary encoders and connects to the master PCB.
-- **Three small Rotary Switch PCBs:** the two seven-position switches and the On/Off switch will each have their own PCB for cleaner wiring and better wire support.
-
-All three Rotary Switch PCBs use the same design and are interchangeable. For the **On/Off rotary switch PCB**, install **no resistors** (omit R1–R6) and bridge the small **JP1 solder pad**, marked **ON/OFF**, with solder. For either seven-position rotary switch PCB, install the six resistors and leave JP1 open.
-
-The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The two remaining PCB tasks are the Main Controller board and the redesign of the 16-button board.
-
-## Parts
-
-See the [parts directory](parts/) for the [component list (BOM)](parts/BOM.csv), hardware supplier links, and switch-fit and compatibility notes.
-
-## Software
-
-- Written in Arduino C++
-- Uses DCS-BIOS for communication with DCS
-- Firmware and test files are maintained in this repository
-
-## ARC-210 Bench Testing App
-
-The [working ARC-210 version of dcsBiosDebug](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working) is maintained in a separate repository. It provides buttons for menu testing and separate Frequency, Secondary, and Master controls for sending simulated DCS-BIOS data to your Teensy without running DCS.
-
-Download the **arc210-working** branch using **Code → Download ZIP**, extract it, and keep its `icons` folder beside the Python script. With Python 3 and Tkinter installed, open a terminal in that folder and run:
-
-```cmd
-python -m pip install numpy pyserial Pillow
-python dcsBiosDebug.py
-```
-
-Use the Python script, including the `.py` extension; the original bundled executable does not include the ARC-210 controls. Select your Teensy's serial port and click **Connect**. Choose **2 - TR** and click **Set Master** for the normal radio switch position, or **0 - OFF** to test power off.
-
-See the [full testing instructions and compatibility notes](https://github.com/dgdimick/dcsBiosDebug/blob/arc210-working/ARC210_TESTING.md). The shortcuts use fixed A-10C II addresses and send data to the hardware, not commands to DCS. Some firmware states require additional exports through the normal instrument controls.
-
 ## Directories
 
 - `ARC-210/` — project root
-- `ARC-210/Firmware/` — firmware and test files\n- `ARC-210/Firmware/Boot Loader/` — precompiled Teensy HEX files for loading with Teensy Loader or TyTools
+- `ARC-210/Firmware/` — firmware and test files
+- `ARC-210/Firmware/Boot Loader/` — precompiled Teensy HEX files for loading with Teensy Loader or TyTools
 - [`parts/`](parts/) — component list, hardware supplier links, and compatibility notes
 - `ARC-210/Docs/` — schematics, diagrams, and documentation
 - `ARC-210/images/` — project images
 - `ARC-210/Supporting STL's/` — 3D-printable knobs, bezels, brackets, mounts, and other parts
-
-## Supporting STL Files
-
-The `Supporting STL's` directory includes:
-
-- Knobs for rotary encoders and rotary switches
-- Mounting hardware for the TFT screen and PCBs
-- Brackets for panel alignment
-
-All STL files are intended to be print-ready for FDM printers using a 0.4 mm nozzle. Resin/SLA printers may require different settings or scaling.
 
 ## PC Flights affiliation
 
