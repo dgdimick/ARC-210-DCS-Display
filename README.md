@@ -7,6 +7,10 @@ and DCS-BIOS for live radio data and cockpit control.
   <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
 </p>
 
+**October 10, 2026 — Rotary Encoder PCB project published**
+
+I have published the [Rotary Encoder KiCad project](PCBs/Rotary%20Encoders/), including the schematic, PCB, custom libraries and header wiring instructions. The schematic and PCB pass their configured checks. I have confirmed that the printed rotary-encoder STL fits and all six encoders work in the final combined hardware test.
+
 **October 10, 2026 — Final hardware test HEX**
 
 The [final hardware test HEX](Firmware/Test%20Code/ARC210_Final_Hardware_Test_Teensy41.hex) is now available for Teensy 4.1. This combined TFT test checks all 16 buttons, six rotary encoders, brightness controls, and both seven-position rotary switches on GPIO 14 and 15. All of these functions were confirmed working together on the panel. See the [test instructions](Firmware/Test%20Code/ARC210_Button_Test/README.md).
