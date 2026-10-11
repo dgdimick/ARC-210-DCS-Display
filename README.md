@@ -159,7 +159,7 @@ The numbers around this schematic symbol are KiCad pad numbers; use the signal l
 
 The radio will use a total of **six PCBs**, controlled by one Teensy 4.1:
 
-- **Master PCB:** carries the Teensy, power circuitry, and display and control connections.
+- **Master PCB:** carries the Teensy, power circuitry, display and control connections.
 - **Button PCB:** carries the push-button switches behind the faceplate and connects to the master PCB.
 - **Rotary Encoder PCB:** carries the rotary encoders and connects to the master PCB.
 - **Three small Rotary Switch PCBs:** the two seven-position switches and the On/Off switch will each have their own PCB for cleaner wiring and better wire support.
