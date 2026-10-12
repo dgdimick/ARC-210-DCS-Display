@@ -48,7 +48,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 3. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
 4. Test the external power input and protection circuitry for the Main PCB.
 5. Finish the Master Board and Button PCB designs.
-6. Test the final fit with all six PCBs and the TFT installed.
+6. The TFT, Rotary Encoders and Rotary Switches have all been test-fitted.
 7. Arrange the Digital Encoder and Rotary Switch PCBs together on the same manufacturing panel to reduce manufacturing costs.
 8. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
 9. Complete the final assembly instructions, wiring diagrams and updated parts list.
