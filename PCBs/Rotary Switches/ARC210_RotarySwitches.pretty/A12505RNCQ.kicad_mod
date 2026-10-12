@@ -302,7 +302,7 @@
 		(uuid "4dc716b6-58f6-4444-8a8c-dcffd76d8072")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/A12503RNCQE.stp"
+	(model "${KIPRJMOD}/A12515RNZQ.stp"
 		(offset
 			(xyz 0 0 0)
 		)
