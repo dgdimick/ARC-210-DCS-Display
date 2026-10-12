@@ -61,6 +61,10 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
+**October 12, 2026 — Rotary Encoder and Rotary Switch PCBs finalized; test fits confirmed**
+
+The [Rotary Encoder PCB version 1.4](PCBs/Rotary%20Encoders/) and [Rotary Switch PCB version 2.0](PCBs/Rotary%20Switches/) are now **final designs**, and both have been **physically test-fitted**. See the [PCB status README](PCBs/README.md). I have published **version 1.4** of the [Rotary Encoder KiCad project](PCBs/Rotary%20Encoders/), with the latest saved PCB layout, updated board outline, v1.4 silkscreen label and [updated six-encoder 3D preview](images/Rotary-Encoder-PCB-3D.png). Download the current project before building or ordering this board. The project includes the schematic, PCB, custom libraries and header wiring instructions. The version 1.3 check results documented in the project README are historical; electrical and PCB design checks have not been rerun for this upload. I have confirmed that the printed rotary-encoder STL fits and all six encoders work in the final combined hardware test.
+
 **October 10, 2026 — Splash-screen picture removed**
 
 I removed `splash_screen.jpg` because [ARC-210-Face Plate.jpg](images/ARC-210-Face%20Plate.jpg) is a better picture. The faceplate picture remains at the top of this README.
@@ -68,10 +72,6 @@ I removed `splash_screen.jpg` because [ARC-210-Face Plate.jpg](images/ARC-210-Fa
 **October 10, 2026 — Outdated Button PCB image removed**
 
 I removed `Button_Ver2.0.jpg` because it does not show the final Button PCB. I am redesigning the 16-button board and removed the old picture to prevent confusion.
-
-**October 12, 2026 — Rotary Encoder and Rotary Switch PCBs finalized; test fits confirmed**
-
-The [Rotary Encoder PCB version 1.4](PCBs/Rotary%20Encoders/) and [Rotary Switch PCB version 2.0](PCBs/Rotary%20Switches/) are now **final designs**, and both have been **physically test-fitted**. See the [PCB status README](PCBs/README.md). I have published **version 1.4** of the [Rotary Encoder KiCad project](PCBs/Rotary%20Encoders/), with the latest saved PCB layout, updated board outline, v1.4 silkscreen label and [updated six-encoder 3D preview](images/Rotary-Encoder-PCB-3D.png). Download the current project before building or ordering this board. The project includes the schematic, PCB, custom libraries and header wiring instructions. The version 1.3 check results documented in the project README are historical; electrical and PCB design checks have not been rerun for this upload. I have confirmed that the printed rotary-encoder STL fits and all six encoders work in the final combined hardware test.
 
 **October 10, 2026 — Final hardware test HEX**
 
