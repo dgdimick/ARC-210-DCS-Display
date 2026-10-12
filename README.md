@@ -69,9 +69,9 @@ I removed `splash_screen.jpg` because [ARC-210-Face Plate.jpg](images/ARC-210-Fa
 
 I removed `Button_Ver2.0.jpg` because it does not show the final Button PCB. I am redesigning the 16-button board and removed the old picture to prevent confusion.
 
-**October 11, 2026 — Rotary Encoder PCB updated to version 1.3**
+**October 12, 2026 — Rotary Encoder PCB updated to version 1.4**
 
-I have published **version 1.3** of the [Rotary Encoder KiCad project](PCBs/Rotary%20Encoders/). I made minor changes to the PCB for version 1.3, retaining the corrected power GND connections. Version 1.3 replaces the previously published version; download the updated project before building or ordering this board. The project includes the schematic, PCB, custom libraries and header wiring instructions. The schematic and PCB pass their configured checks. I have confirmed that the printed rotary-encoder STL fits and all six encoders work in the final combined hardware test.
+I have published **version 1.4** of the [Rotary Encoder KiCad project](PCBs/Rotary%20Encoders/), with the latest saved PCB layout, updated board outline, v1.4 silkscreen label and [updated six-encoder 3D preview](images/Rotary-Encoder-PCB-3D.png). Download the current project before building or ordering this board. The project includes the schematic, PCB, custom libraries and header wiring instructions. The version 1.3 check results documented in the project README are historical; electrical and PCB design checks have not been rerun for this upload. I have confirmed that the printed rotary-encoder STL fits and all six encoders work in the final combined hardware test.
 
 **October 10, 2026 — Final hardware test HEX**
 
