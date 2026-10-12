@@ -1,10 +1,10 @@
 # ARC-210 Rotary Encoder PCB
 
-Version **1.3**, updated October 11, 2026. KiCad 10 project.
+Version **1.4**, updated October 12, 2026. KiCad 10 project.
 
-I made minor changes to the PCB for version 1.3. This version retains the corrected power GND connections and replaces the previously published project. Use version 1.3 for new builds and manufacturing exports.
+Version 1.4 publishes the latest saved PCB layout and project settings, including the updated board outline and v1.4 silkscreen label. The earlier version 1.3 check results below are historical; electrical and PCB design checks have not been rerun for this upload.
 
-I have checked this six-encoder PCB against its schematic. The electrical check reported zero errors and warnings; the PCB check reported zero violations, zero unconnected pads and zero schematic parity issues under the project's saved check settings. Courtyard and certain footprint checks are disabled in those settings.
+For version 1.3, I checked this six-encoder PCB against its schematic. The electrical check reported zero errors and warnings; the PCB check reported zero violations, zero unconnected pads and zero schematic parity issues under the project's saved check settings. Courtyard and certain footprint checks are disabled in those settings.
 
 I printed the rotary-encoder STL and confirmed that it fits. I have also confirmed all six encoders working in the combined hardware test. A manufactured PCB still needs assembly and testing.
 
