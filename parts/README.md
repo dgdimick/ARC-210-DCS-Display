@@ -1,6 +1,6 @@
 # Parts
 
-Updated October 11, 2026.
+Updated October 12, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
@@ -41,6 +41,10 @@ I am including the following power-input and protection components from the curr
 | R16 | 220 Ω resistor | 1 |
 | R17 | 1 kΩ resistor | 1 |
 | Q2 | C106D SCR | 1 |
+| JP1 | 3-pin header, 2.54 mm pitch, for TFT power selection | 1 |
+| JP1 accessory | 2-pin jumper shunt, 2.54 mm pitch | 1 |
+
+Fit the JP1 shunt across **pins 1–2 for protected 5 V** or **pins 2–3 for Teensy 3.3 V**. Fit only one shunt and remove power before changing it. This Main Controller header jumper is separate from the rotary-switch PCB solder jumper also named JP1.
 
 The TFT backlight control on the Main Controller also uses **Q3: IRLZ44N MOSFET**, **R37: 10 kΩ**, and **R38: 100 Ω**, one of each. These are also listed in the BOM.
 
