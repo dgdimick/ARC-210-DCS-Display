@@ -1,6 +1,8 @@
 # ARC-210 Rotary Encoder PCB
 
-Version **1.4**, updated October 12, 2026. KiCad 10 project.
+Version **1.4 — Final PCB design**, updated October 12, 2026. KiCad 10 project.
+
+Version **1.4 is the final PCB design and has been physically test-fitted**, confirmed October 12, 2026.
 
 ![Rotary encoder PCB version 1.4 with six encoders](../../images/Rotary-Encoder-PCB-3D.png)
 

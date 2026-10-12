@@ -1,6 +1,8 @@
-# ARC-210 Rotary Switch PCB — Version 2.0
+# ARC-210 Rotary Switch PCB — Version 2.0 — Final PCB design
 
 Updated October 12, 2026.
+
+Version **2.0 is the final PCB design and has been physically test-fitted**, confirmed October 12, 2026.
 
 ![Rotary-switch PCB version 2.0 with the A12505RNCQ through-hole switch and rear-mounted resistors](../../images/Rotary-Switch-PCB-3D.png)
 
@@ -23,7 +25,7 @@ I modified the PCB so it can also be used with the On/Off switch. **JP1**, marke
 
 The solder-lug A12515RNZQ still requires mechanical support and wires to the corresponding PCB connections; it does not fit the PCB-pin footprint directly.
 
-Validation for version 2.0: KiCad PCB DRC, with zones refilled, reported zero non-excluded violations and zero unconnected pads under the saved project settings. The project contains 15 specific PTH-inside-switch-courtyard exclusions for the rear-side resistors and connector; their lead and solder-joint clearance to the switch body still requires physical verification. Several other check categories are disabled in the project. Electrical schematic checks and schematic parity were not rerun for this upload. Physical fit and operation have not yet been verified on a manufactured board.
+Validation for version 2.0: KiCad PCB DRC, with zones refilled, reported zero non-excluded violations and zero unconnected pads under the saved project settings. The project contains 15 specific PTH-inside-switch-courtyard exclusions for the rear-side resistors and connector; their lead and solder-joint clearance to the switch body still requires physical verification. Several other check categories are disabled in the project. Electrical schematic checks and schematic parity were not rerun for this upload. Mechanical test fitting has been confirmed. Electrical operation on a manufactured board still needs verification.
 
 ## Optional switch 3D model
 
