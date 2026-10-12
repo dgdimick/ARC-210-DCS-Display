@@ -421,7 +421,7 @@
 			(uuid "1b501407-0495-4e36-af22-68844e13cbda")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/A12515RNZQ.stp"
+		(model "${KIPRJMOD}/A12505RNCQ.stp"
 			(offset
 				(xyz -10.5 3 7.5)
 			)
