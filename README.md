@@ -43,7 +43,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Items that need to be completed
 
-1. Find a way to mount the TFT that does not involve hot glue, baling wire, hope and prayers. The current solution is truly craptastic—not exactly my proudest work.
+1. The TFT fits, but it still needs a better mounting system.
 2. Look into finishing the SATCOM menus buried under the HQ menu. I am not sure whether anyone uses them, but they should be completed for a fully realistic panel.
 3. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
 4. Test the external power input and protection circuitry for the Main PCB.
