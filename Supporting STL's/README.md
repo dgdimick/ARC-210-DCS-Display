@@ -26,7 +26,9 @@ Use the hardware listed on the main project page. Earlier printing notes reporte
 
 ## Display bracket
 
-The 3.5 SPI display mount does not have mounting points. It is a bracket that holds the display between the PCB and front face and currently needs to be hot-glued in place. A proper mounting arrangement is planned.
+Updated October 12, 2026.
+
+The current display bracket is [Deep Bracket v5.stl](Deep%20Bracket%20v5.stl). This file replaces `3.5-SPI-Display-Bracket-v3.stl`, which has been removed from the current branch. Use this replacement for new downloads; the older bracket remains available in repository history.
 
 ## Rotary encoder spacer
 
