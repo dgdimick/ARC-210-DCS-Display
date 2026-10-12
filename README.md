@@ -61,6 +61,10 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
+**October 12, 2026 — Master Board schematic updated**
+
+The updated [Master Board KiCad project](https://github.com/dgdimick/Teensy/tree/main/KiCad/ARC-210_Master_Board) has been pushed to the Teensy repository. The schematic now uses one 14-pin connector matching the Rotary Encoder PCB and an eight-pin connector for the separate 4×4 button matrix. It includes corrected Teensy signal connections, the C106D SCR pin numbering and its project symbol library. A three-pin TFT power selector, **JP1**, selects **protected 5 V with pins 1–2** or **Teensy 3.3 V with pins 2–3**. Fit only one jumper shunt and remove power before changing it. The schematic passed ERC with zero errors and warnings under its saved settings. The Main PCB layout, routing and physical test fit remain unfinished.
+
 **October 12, 2026 — Rotary Encoder and Rotary Switch PCBs finalized; test fits confirmed**
 
 The [Rotary Encoder PCB version 1.4](PCBs/Rotary%20Encoders/) and [Rotary Switch PCB version 2.0](PCBs/Rotary%20Switches/) are now **final designs**, and both have been **physically test-fitted**. See the [PCB status README](PCBs/README.md). I have published **version 1.4** of the [Rotary Encoder KiCad project](PCBs/Rotary%20Encoders/), with the latest saved PCB layout, updated board outline, v1.4 silkscreen label and [updated six-encoder 3D preview](images/Rotary-Encoder-PCB-3D.png). Download the current project before building or ordering this board. The project includes the schematic, PCB, custom libraries and header wiring instructions. The version 1.3 check results documented in the project README are historical; electrical and PCB design checks have not been rerun for this upload. I have confirmed that the printed rotary-encoder STL fits and all six encoders work in the final combined hardware test.
