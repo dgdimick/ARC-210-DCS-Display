@@ -4,7 +4,7 @@ Updated October 12, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
-The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. It is based on a September 25 snapshot of the [KiCad project](https://github.com/dgdimick/Teensy/tree/main/KiCad/ARC-210_Master_Board), with subsequent parts-selection updates, not a finalized purchasing list. Blank footprints and generic diode values still need confirmation. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
+The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](https://github.com/dgdimick/Teensy/tree/main/KiCad/ARC-210_Master_Board), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 master schematic and final control-board projects. It is not yet a finalized purchasing list. Blank footprints and generic diode values still need confirmation. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
 
 ## Six-PCB layout
 
@@ -16,7 +16,7 @@ The three rotary switch PCBs use the same design and are interchangeable. I fit 
 
 [BOM.csv](BOM.csv) originated from the ARC-210 master-board schematic and includes subsequent panel-hardware selections. Panel-hardware entries are explicitly labelled so their references are not confused with master-board references. This is not yet a finalized set of board-specific purchasing lists; do not multiply quantities by the number of PCBs.
 
-The corrected [Rotary Switch KiCad project, version 1.2](../PCBs/Rotary%20Switches/), replaces the withdrawn initial version. Version 1.2 retains the corrected pin assignments and adds an ON/OFF solder jumper. Omit R1–R6 and bridge JP1 for On/Off operation; fit the resistors and leave JP1 open for resistor-ladder operation. See the project instructions for wiring and pull-up configuration.
+The corrected [Rotary Switch KiCad project, version 2.0](../PCBs/Rotary%20Switches/), replaces the withdrawn initial version. Version 2.0 retains the corrected pin assignments and adds an ON/OFF solder jumper. Omit R1–R6 and bridge JP1 for On/Off operation; fit the resistors and leave JP1 open for resistor-ladder operation. See the project instructions for wiring and pull-up configuration.
 
 ## Panel illumination removed — October 6, 2026
 
@@ -49,6 +49,42 @@ Fit the JP1 shunt across **pins 1–2 for protected 5 V** or **pins 2–3 for Te
 The TFT backlight control on the Main Controller also uses **Q3: IRLZ44N MOSFET**, **R37: 10 kΩ**, and **R38: 100 Ω**, one of each. These are also listed in the BOM.
 
 I still need to finalize the Main Controller PCB. The exact barrel-jack size, PTC ordering code, resistor wattages and unfinished footprints need to be confirmed against that final design. This section records the current schematic parts; it does not add an external power supply to the purchasing list.
+
+## Pin headers and mating connectors — October 12, 2026
+
+Quantities below are for **one complete panel**, including all three rotary-switch PCBs. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
+
+| Location / use | Board-side male header | Quantity | Mating cable housings |
+| --- | --- | ---: | --- |
+| Master J4 and Encoder PCB J1 | 1x14 | 2 | Two 1x14 female |
+| Master J2 and Button PCB | 1x08 | 2 | Two 1x08 female |
+| Master J9/J10 and two multi-position switch PCBs | 1x03 | 4 | Four 1x03 female |
+| Master SQL1 | 1x02 | 1 | One 1x02 female |
+| On/Off switch PCB J1 | 1x03 | 1 | One 1x03 female; use pins 2 and 3 only |
+| Master J1, TFT connection | 1x08 | 1 | One 1x08 female at master; one 1x14 female at TFT module |
+| Master JP1, power selector | 1x03 | 1 | One 2-pin jumper shunt |
+| Teensy mounting | Two 1x24 male strips on Teensy | 2 | Two 1x24 female PCB socket strips on master |
+
+Totals: **two 1x14, three 1x08, six 1x03 and one 1x02 male board headers**, plus two 1x24 Teensy male strips if not already fitted. Cable housings total **three 1x14, three 1x08, five 1x03 and one 1x02 female**, separate from the two 1x24 board sockets and JP1 shunt. Use at least **76 female crimp contacts**, plus spares, matched to the housing manufacturer's series. Wire lengths depend on the final panel layout. Preterminated female cables can replace housings and crimp contacts without counting both.
+
+The TFT module normally already has its 14-pin male header. Check before purchasing an additional one. The button PCB's 8-pin header is provisional until its design is finished; Master J2 and J9/J10 still need footprint assignments. Check connector stack height and cable clearance before finalizing the Main and Button PCBs. Unused Teensy USB-host, Ethernet and auxiliary headers are not required by the current panel wiring.
+
+**Cable mapping matters:** the encoder cable is pin-for-pin between the two 14-pin headers. The matrix cable uses rows on pins 1–4 and columns on pins 5–8. Multi-position switch cables use 1 = 3.3 V, 2 = signal and 3 = GND. The On/Off cable maps master SQL1 pin 1 to switch-board J1 pin 2, and SQL1 pin 2 to switch-board J1 pin 3; switch-board pin 1 stays unused.
+
+The TFT cable is **not straight-through**. With the current master schematic and MSP3520 module manual, connect:
+
+| Master J1 pin | Signal | TFT module pin |
+| --- | --- | --- |
+| 1 | Selected VCC | 1 |
+| 2 | GND | 2 |
+| 3 | RESET / GPIO8 | 4 |
+| 4 | CS / GPIO10 | 3 |
+| 5 | SCK / GPIO13 | 7 |
+| 6 | DC/RS / GPIO9 | 5 |
+| 7 | MOSI / GPIO11 | 6 |
+| 8 | Backlight control / GPIO4 | 8 |
+
+TFT module pins 9–14 are unused in this connection. Use the module's printed signal labels to identify pins, and check cable continuity before power-up. The rotary-switch ON/OFF solder bridge needs solder only, not another shunt.
 
 ## Current button switches
 
