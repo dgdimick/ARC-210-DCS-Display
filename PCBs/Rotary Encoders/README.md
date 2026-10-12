@@ -12,7 +12,13 @@ I printed the rotary-encoder STL and confirmed that it fits. I have also confirm
 
 Download this folder and keep its contents together. Open `Rotary Encoders.kicad_pro` in KiCad 10. The custom symbol and footprint libraries are included and use project-relative paths. Install KiCad's standard symbol and footprint libraries as well.
 
-Supplier encoder 3D models are optional and are not bundled. Existing model references now use project-relative paths: place the corresponding `.stp` files beside the project if you have them. The PEC11R model is a visual substitute; use the PEC11H part dimensions for mechanical checks. Missing models do not prevent opening or manufacturing the board.
+## Optional encoder 3D model
+
+Download [LIB_PEC11H-4220F-S0024.zip](LIB_PEC11H-4220F-S0024.zip), the original supplier library archive. Extract `PEC11H-4220F-S0024/3D/PEC11H-4220F-S0024.stp` and place the STP file beside `Rotary Encoders.kicad_pcb`.
+
+In KiCad PCB Editor, open each encoder's Footprint Properties → 3D Models and use `${KIPRJMOD}/PEC11H-4220F-S0024.stp`. Remove or disable the older `PEC11R-4220F-S0024.stp` substitute so two models are not displayed together. Use offset X = 2.5 mm, Y = 7.49 mm, Z = 0.2300 mm; scale = 1 on all axes; rotation X = 90°, Y = -180°, Z = -180°. Check alignment in the 3D Viewer. Make the same model change in the library footprint if you want it applied to future placements.
+
+The STEP model is optional; missing 3D models do not prevent opening or manufacturing the board.
 
 ## Parts and connections
 
