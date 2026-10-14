@@ -57,7 +57,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 12. Confirm that knob direction, switch positions and button labels match their functions in DCS.
 13. Review the completed project to ensure the correct licenses are used. Like most of my projects, this has been a labor of love. I want others to enjoy my work and use it however they see fit.
 14. Work out a way to distribute manufactured PCBs and completed parts—or even a complete panel—for those who need help finishing the project. This could include finished knobs, PCBs, programmed Teensys or a fully assembled radio panel.
-15. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker.
+15. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
 
 ## Project updates
 
