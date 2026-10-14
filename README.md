@@ -44,7 +44,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 ## Items that need to be completed
 
 1. The TFT fits, but it still needs a better mounting system.
-2. Look into finishing the SATCOM menus buried under the HQ menu. I am not sure whether anyone uses them, but they should be completed for a fully realistic panel.
+2. The SAT menus will be available with firmware 2.0.
 3. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
 4. Test the external power input and protection circuitry for the Main PCB.
 5. Finish the Master Board and Button PCB designs.
