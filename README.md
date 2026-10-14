@@ -46,7 +46,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 1. The TFT fits, but it still needs a better mounting system.
 2. The SAT menus will be available with firmware 2.0.
 3. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
-4. Test the external power input and protection circuitry for the Main PCB.
+4. Test the optional external 5 V power input and protection circuitry for the Main PCB. This circuit provides a protected 5 V supply for the TFT within its specified input-voltage range; the supply voltage may affect backlight brightness. JP1 selects the TFT power source: pins 1-2 select protected 5 V, and pins 2-3 select 3.3 V from the Teensy. To change supplies, power off the board and move the single jumper shunt. If using only the Teensy's 3.3 V supply, the external 5 V input and protection components are not needed and can be omitted from the PCB build.
 5. Finish the Master Board and Button PCB designs.
 6. The TFT, Rotary Encoders and Rotary Switches have all been test-fitted. The Button and Main PCBs still need to be test-fitted.
 7. Arrange the Digital Encoder and Rotary Switch PCBs together on the same manufacturing panel to reduce manufacturing costs.
