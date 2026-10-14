@@ -26,7 +26,7 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 - ARC-210 startup and initialization screens
 - Live frequency display from DCS-BIOS
 - AM/FM modulation display
-- UNAVAILABLE screen for unsupported submenu selections nested within the SAT menus.
+- Submenus nested within the SAT menus will be available with firmware 2.0.
 
 ## Six-PCB layout
 
