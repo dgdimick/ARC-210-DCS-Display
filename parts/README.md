@@ -112,7 +112,8 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
   [Mouser](https://www.mouser.com/ProductDetail/CK/A12515RNZQ) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
 
 - **Faceplate:** A-10C "Thunderbolt" / "Warthog" VHF/UHF cockpit panel  
-  [PC Flights](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/)
+  [PC Flights](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/)<br>
+  PC Flights has supplied me with a drawing file to assist with the Button PCB layout.
 
 - **Button switches:** 16 per panel, 6 × 6 × 6 mm SPST momentary tactile push-button switches, four-pin through-hole  
   [Amazon](https://www.amazon.com/dp/B0HGBSFY2L)

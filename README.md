@@ -243,7 +243,7 @@ The numbers around this schematic symbol are KiCad pad numbers; use the signal l
 
 ## PC Flights affiliation
 
-I am not affiliated with [PC Flights](https://pcflights.com/) in any way. I simply chose to use their panels for my own cockpit projects.
+I am not affiliated with [PC Flights](https://pcflights.com/) in any way. I simply chose to use their panels for my own cockpit projects. PC Flights has supplied me with a drawing file to assist with the Button PCB layout.
 
 ## Licensing
 
