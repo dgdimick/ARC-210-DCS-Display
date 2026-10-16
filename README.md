@@ -3,6 +3,8 @@
 This project is an ARC-210 radio control panel for the DCS A-10C II using a Teensy 4.1, an ILI9488 TFT display,
 and DCS-BIOS for live radio data and cockpit control.
 
+> **Disclaimer:** This hobby flight-simulation project is provided without warranty, subject to its licenses. Read the [full disclaimer](#disclaimer) before building or using it.
+
 <p align="center">
   <img src="images/ARC-210-Face%20Plate.jpg" width="300" alt="ARC-210 Face Plate">
 </p>
@@ -244,6 +246,12 @@ The numbers around this schematic symbol are KiCad pad numbers; use the signal l
 ## PC Flights affiliation
 
 I am not affiliated with [PC Flights](https://pcflights.com/) in any way. I simply chose to use their panels for my own cockpit projects. PC Flights has supplied me with a drawing file to assist with the Button PCB layout.
+
+## Disclaimer
+
+This is a hobby flight-simulation project, not equipment intended for use in real aircraft. Software, firmware, PCB designs, wiring information, and printable parts are provided "as is," without warranty, subject to their respective licenses.
+
+Users are responsible for verifying compatibility, wiring, supply voltages, assembly, and safe operation before use. To the maximum extent permitted by applicable law, the authors and contributors disclaim liability for injury, equipment damage, data loss, or other losses arising from use of this project.
 
 ## Licensing
 
