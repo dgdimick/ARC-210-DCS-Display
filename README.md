@@ -39,7 +39,7 @@ The radio will use a total of **six PCBs**, controlled by one Teensy 4.1:
 - **Rotary Encoder PCB:** carries the rotary encoders and connects to the master PCB.
 - **Three small Rotary Switch PCBs:** the two seven-position switches and the On/Off switch will each have their own PCB for cleaner wiring and better wire support.
 
-All three Rotary Switch PCBs use the same design and are interchangeable. For the **On/Off rotary switch PCB**, install **no resistors** (omit R1–R6) and bridge the small **JP1 solder pad**, marked **ON/OFF**, with solder. For either seven-position rotary switch PCB, install the six resistors and leave JP1 open.
+All three Rotary Switch PCBs use the same design and are interchangeable. For the **On/Off rotary switch PCB**, install **no resistors** (omit R1–R6) and bridge the small **JP1 solder pad**, marked **ON/OFF**, with solder. For the other 2 seven-position rotary switch PCBs, install the six resistors and leave JP1 open.
 
 The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The two remaining PCB tasks are the Main Controller board and the redesign of the 16-button board.
 
