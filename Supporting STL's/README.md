@@ -50,8 +50,8 @@ I use this spacer around the rotary encoder's threaded mounting section because 
 
 PC Flights has supplied me with a drawing file to assist with the Button PCB layout.
 
-## On/Off rotary switch support spacer — V.4
+## On/Off rotary switch support spacer v.4
 
-[Shaft Spacer.stl — V.4](Shaft%20Spacer.stl)
+[Shaft Spacer v.4](Shaft%20Spacer.stl)
 
 The **On/Off rotary switch PCB** will be attached to the main board, so use this spacer to support the rotary switch shaft.
