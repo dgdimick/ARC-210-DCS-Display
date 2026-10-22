@@ -37,9 +37,9 @@ The radio will use a total of **six PCBs**, controlled by one Teensy 4.1:
 - **Master PCB:** carries the Teensy, power circuitry, display and control connections.
 - **Button PCB:** carries the push-button switches behind the faceplate and connects to the master PCB.
 - **Rotary Encoder PCB:** carries the rotary encoders and connects to the master PCB.
-- **Three small Rotary Switch PCBs:** the two seven-position switches and the On/Off switch will each have their own PCB for cleaner wiring and better wire support.
+- **Three small Rotary Switch PCBs:** the two seven-position switches and the SQL On/Off switch will each have their own PCB for cleaner wiring and better wire support.
 
-All three Rotary Switch PCBs use the same design and are interchangeable. For the **On/Off rotary switch PCB**, install **no resistors** (omit R1–R6) and bridge the small **JP1 solder pad**, marked **ON/OFF**, with solder. For the other 2 seven-position rotary switch PCBs, install the six resistors and leave JP1 open.
+All three Rotary Switch PCBs use the same design and are interchangeable. For the **SQL On/Off rotary switch PCB**, install **no resistors** (omit R1–R6) and bridge the small **JP1 solder pad**, marked **ON/OFF**, with solder. For the other 2 seven-position rotary switch PCBs, install the six resistors and leave JP1 open.
 
 The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The two remaining PCB tasks are the Main Controller board and the redesign of the 16-button board.
 
@@ -95,9 +95,9 @@ The [final hardware test HEX](Firmware/Test%20Code/ARC210_Final_Hardware_Test_Te
 
 With the combined hardware test confirmed working, the remaining PCB work is the **Main Controller board** and a **redesign of the 16-button board** to improve button alignment with the faceplate.
 
-**Updated October 10, 2026 — Rotary Switch PCB version 1.2 adds On/Off support**
+**Updated October 10, 2026 — Rotary Switch PCB version 1.2 adds SQL On/Off support**
 
-Two new 3D PCB pictures have been uploaded to the `images` directory: the [Rotary Switch PCB](images/Rotary-Switch-PCB-3D.png) and [Rotary Encoder PCB](images/Rotary-Encoder-PCB-3D.png). The rotary encoder PCB version 1.4 and rotary switch PCB version 2.0 are final designs, and both have been physically test-fitted. The corrected [Rotary Switch PCB project, version 2.0](PCBs/Rotary%20Switches/), is now available with its schematic, PCB and custom libraries. Terminal 1 is used for the first position, and the PCB matches the corrected schematic. Version 2.0 uses a 27.99 mm circular board with the resistors and connector on the back. Its updated 3D preview shows the correct A12505RNCQ through-hole switch. Use the current version 2.0 files. I modified the PCB so it can also be used with the On/Off switch. For On/Off use, omit R1–R6 and solder across **JP1**, marked **ON/OFF** on the back of the PCB. JP1 connects the R1–R2 junction (R2 pad 1 / switch terminal 2) to GND; connect J1 pin 2 to a Teensy input with a pull-up. For the normal resistor ladder, install R1–R6 and leave JP1 open. The PCB pictures show the final rotary encoder and rotary switch designs.
+Two new 3D PCB pictures have been uploaded to the `images` directory: the [Rotary Switch PCB](images/Rotary-Switch-PCB-3D.png) and [Rotary Encoder PCB](images/Rotary-Encoder-PCB-3D.png). The rotary encoder PCB version 1.4 and rotary switch PCB version 2.0 are final designs, and both have been physically test-fitted. The corrected [Rotary Switch PCB project, version 2.0](PCBs/Rotary%20Switches/), is now available with its schematic, PCB and custom libraries. Terminal 1 is used for the first position, and the PCB matches the corrected schematic. Version 2.0 uses a 27.99 mm circular board with the resistors and connector on the back. Its updated 3D preview shows the correct A12505RNCQ through-hole switch. Use the current version 2.0 files. I modified the PCB so it can also be used with the SQL On/Off switch. For SQL On/Off use, omit R1–R6 and solder across **JP1**, marked **ON/OFF** on the back of the PCB. JP1 connects the R1–R2 junction (R2 pad 1 / switch terminal 2) to GND; connect J1 pin 2 to a Teensy input with a pull-up. For the normal resistor ladder, install R1–R6 and leave JP1 open. The PCB pictures show the final rotary encoder and rotary switch designs.
 
 Panel/button illumination LEDs have been dropped due to insufficient clearance with the TFT display. The [parts list](parts/BOM.csv) now excludes the panel LEDs and their current-limiting resistors. The TFT display and its backlight remain. Existing schematic drawings may still show the former panel-lighting circuit.
 

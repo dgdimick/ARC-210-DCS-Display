@@ -10,13 +10,13 @@ The BOM lists schematic references, values, footprints, quantities, and do-not-p
 
 My build uses six PCBs controlled by one Teensy 4.1: the master PCB, button PCB, rotary encoder PCB, and three small rotary switch PCBs. The separate control boards provide cleaner wiring and wire support.
 
-The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. For the On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
+The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. For the SQL On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
 
 ## BOM coverage
 
 [BOM.csv](BOM.csv) originated from the ARC-210 master-board schematic and includes subsequent panel-hardware selections. Panel-hardware entries are explicitly labelled so their references are not confused with master-board references. This is not yet a finalized set of board-specific purchasing lists; do not multiply quantities by the number of PCBs.
 
-The corrected [Rotary Switch KiCad project, version 2.0](../PCBs/Rotary%20Switches/), replaces the withdrawn initial version. Version 2.0 retains the corrected pin assignments and adds an ON/OFF solder jumper. Omit R1–R6 and bridge JP1 for On/Off operation; fit the resistors and leave JP1 open for resistor-ladder operation. See the project instructions for wiring and pull-up configuration.
+The corrected [Rotary Switch KiCad project, version 2.0](../PCBs/Rotary%20Switches/), replaces the withdrawn initial version. Version 2.0 retains the corrected pin assignments and adds an ON/OFF solder jumper for SQL On/Off. Omit R1–R6 and bridge JP1 for SQL On/Off operation; fit the resistors and leave JP1 open for resistor-ladder operation. See the project instructions for wiring and pull-up configuration.
 
 ## Panel illumination removed — October 6, 2026
 
@@ -60,7 +60,7 @@ Quantities below are for **one complete panel**, including all three rotary-swit
 | Master J2 and Button PCB | 1x08 | 2 | Two 1x08 female |
 | Master J9/J10 and two multi-position switch PCBs | 1x03 | 4 | Four 1x03 female |
 | Master SQL1 | 1x02 | 1 | One 1x02 female |
-| On/Off switch PCB J1 | 1x03 | 1 | One 1x03 female; use pins 2 and 3 only |
+| SQL On/Off switch PCB J1 | 1x03 | 1 | One 1x03 female; use pins 2 and 3 only |
 | Master J1, TFT connection | 1x08 | 1 | One 1x08 female at master; one 1x14 female at TFT module |
 | Master JP1, power selector | 1x03 | 1 | One 2-pin jumper shunt |
 | Teensy mounting | Two 1x24 male strips on Teensy | 2 | Two 1x24 female PCB socket strips on master |
@@ -69,7 +69,7 @@ Totals: **two 1x14, three 1x08, six 1x03 and one 1x02 male board headers**, plus
 
 The TFT module normally already has its 14-pin male header. Check before purchasing an additional one. The button PCB's 8-pin header is provisional until its design is finished; Master J2 and J9/J10 still need footprint assignments. Check connector stack height and cable clearance before finalizing the Main and Button PCBs. Unused Teensy USB-host, Ethernet and auxiliary headers are not required by the current panel wiring.
 
-**Cable mapping matters:** the encoder cable is pin-for-pin between the two 14-pin headers. The matrix cable uses rows on pins 1–4 and columns on pins 5–8. Multi-position switch cables use 1 = 3.3 V, 2 = signal and 3 = GND. The On/Off cable maps master SQL1 pin 1 to switch-board J1 pin 2, and SQL1 pin 2 to switch-board J1 pin 3; switch-board pin 1 stays unused.
+**Cable mapping matters:** the encoder cable is pin-for-pin between the two 14-pin headers. The matrix cable uses rows on pins 1–4 and columns on pins 5–8. Multi-position switch cables use 1 = 3.3 V, 2 = signal and 3 = GND. The SQL On/Off cable maps master SQL1 pin 1 to switch-board J1 pin 2, and SQL1 pin 2 to switch-board J1 pin 3; switch-board pin 1 stays unused.
 
 The TFT cable is **not straight-through**. With the current master schematic and MSP3520 module manual, connect:
 
@@ -84,7 +84,7 @@ The TFT cable is **not straight-through**. With the current master schematic and
 | 7 | MOSI / GPIO11 | 6 |
 | 8 | Backlight control / GPIO4 | 8 |
 
-TFT module pins 9–14 are unused in this connection. Use the module's printed signal labels to identify pins, and check cable continuity before power-up. The rotary-switch ON/OFF solder bridge needs solder only, not another shunt.
+TFT module pins 9–14 are unused in this connection. Use the module's printed signal labels to identify pins, and check cable continuity before power-up. The SQL On/Off rotary-switch ON/OFF solder bridge needs solder only, not another shunt.
 
 ## Current button switches
 
