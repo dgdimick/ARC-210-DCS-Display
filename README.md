@@ -52,18 +52,17 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Items that need to be completed
 
-1. The TFT fits, but it still needs a better mounting system.
-2. Some SAT menus are already complete. The remaining work is on some menus three or four levels deep, which will be completed in firmware 2.0.
-3. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
-4. Test the optional external 5 V power input and protection circuitry for the Main PCB. This circuit provides a protected 5 V supply for the TFT within its specified input-voltage range; the supply voltage may affect backlight brightness. JP1 selects the TFT power source: pins 1-2 select protected 5 V, and pins 2-3 select 3.3 V from the Teensy. To change supplies, power off the board and move the single jumper shunt. If using only the Teensy's 3.3 V supply, the external 5 V input and protection components are not needed and can be omitted from the PCB build.
-5. Finish the Master Board and Button PCB designs.
-6. The TFT, Rotary Encoders and Rotary Switches have all been test-fitted. The Button and Main PCBs still need to be test-fitted.
-7. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
-8. Complete the final assembly instructions, wiring diagrams and updated parts list.
-9. Document firmware installation and the required DCS-BIOS configuration.
-10. Test the manufactured boards and run an extended reliability test.
-11. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. This project provides files and build guidance; I’d prefer to keep this a DIY project rather than sell parts, kits, or completed panels. That said, a few people have already asked for help, so if you’re stuck and need a hand, feel free to reach out—I’d be happy to discuss what might be possible.
-12. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
+1. Some SAT menus are already complete. The remaining work is on some menus three or four levels deep, which will be completed in firmware 2.0.
+2. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
+3. Test the optional external 5 V power input and protection circuitry for the Main PCB. This circuit provides a protected 5 V supply for the TFT within its specified input-voltage range; the supply voltage may affect backlight brightness. JP1 selects the TFT power source: pins 1-2 select protected 5 V, and pins 2-3 select 3.3 V from the Teensy. To change supplies, power off the board and move the single jumper shunt. If using only the Teensy's 3.3 V supply, the external 5 V input and protection components are not needed and can be omitted from the PCB build.
+4. Finish the Master Board and Button PCB designs.
+5. The TFT, Rotary Encoders and Rotary Switches have all been test-fitted. The Button and Main PCBs still need to be test-fitted.
+6. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
+7. Complete the final assembly instructions, wiring diagrams and updated parts list.
+8. Document firmware installation and the required DCS-BIOS configuration.
+9. Test the manufactured boards and run an extended reliability test.
+10. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. This project provides files and build guidance; I’d prefer to keep this a DIY project rather than sell parts, kits, or completed panels. That said, a few people have already asked for help, so if you’re stuck and need a hand, feel free to reach out—I’d be happy to discuss what might be possible.
+11. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
 
 ## Project updates
 
@@ -177,7 +176,7 @@ The `Teensy_TFT_Hello_Works.ino` file in the `Firmware` directory contains the c
 
 ## Tools Needed
 
-- Hot glue gun, or an electronics-grade, neutral-cure silicone adhesive such as **MG Chemicals 1035**, for securing wires
+- Hot glue gun, or an electronics-grade, neutral-cure silicone adhesive such as **MG Chemicals 1035**, for securing wires and the TFT display
 - Soldering iron
 - 3D printer, or access to one
 - Flush wire cutters
