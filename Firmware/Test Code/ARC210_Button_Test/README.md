@@ -10,6 +10,8 @@ The TFT shows each switch position (SW14 and SW15), raw ADC reading, approximate
 
 Switch PCB wiring: J1 pin 1 to 3.3V, pin 2 to physical GPIO14/A0 for the first board or GPIO15/A1 for the second board, pin 3 to GND. Fit all six 1k resistors and leave JP1 open. Display backlight uses GPIO4.
 
+**Tested wiring:** Both seven-position rotary switches were tested and worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. This records the successful breadboard setup; the input-filter components shown in the master schematic were not part of that test.
+
 Build for Teensy 4.1, USB Serial, using the ILI9488_t3 and Encoder libraries. This is a standalone hardware test and does not require DCS. Programming it replaces the firmware on the Teensy.
 
 
