@@ -17,4 +17,6 @@ Users installing the precompiled HEX do not need to install the fonts separately
 
 ## Questions and community builds
 
+New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.
+
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
