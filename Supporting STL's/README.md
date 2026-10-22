@@ -30,21 +30,21 @@ Use the hardware listed on the main project page. Earlier printing notes reporte
 
 | Part | Current STL | Purpose |
 | --- | --- | --- |
-| Display bracket | [Deep Bracket v5.stl](Deep%20Bracket%20v5.stl) | Mounts the TFT display; replaces `3.5-SPI-Display-Bracket-v3.stl`. |
-| Rotary encoder spacer | [Rotary Encoder Spacer.stl](Rotary%20Encoder%20Spacer.stl) | Centers the rotary encoders in the faceplate holes. Print six. |
-| On/Off rotary switch shaft support | [Shaft Spacer v.4](Shaft%20Spacer.stl) | Supports the rotary switch shaft because the On/Off rotary switch PCB will be attached to the main board. |
+| Display bracket | [Deep_Bracket_v5.stl](Deep_Bracket_v5.stl) | Mounts the TFT display; replaces `3.5-SPI-Display-Bracket-v3.stl`. |
+| Rotary encoder spacer | [Rotary_Encoder_Spacer.stl](Rotary_Encoder_Spacer.stl) | Centers the rotary encoders in the faceplate holes. Print six. |
+| On/Off rotary switch shaft support | [Shaft_Spacer_v4.stl](Shaft_Spacer_v4.stl) | Supports the rotary switch shaft because the On/Off rotary switch PCB will be attached to the main board. |
 
 ## Display bracket
 
 Updated October 12, 2026.
 
-The current display bracket is [Deep Bracket v5.stl](Deep%20Bracket%20v5.stl). This file replaces `3.5-SPI-Display-Bracket-v3.stl`, which has been removed from the current branch. Use this replacement for new downloads; the older bracket remains available in repository history.
+The current display bracket is [Deep_Bracket_v5.stl](Deep_Bracket_v5.stl). This file replaces `3.5-SPI-Display-Bracket-v3.stl`, which has been removed from the current branch. Use this replacement for new downloads; the older bracket remains available in repository history.
 
 ## Rotary encoder spacer
 
 Added October 11, 2026.
 
-[Rotary Encoder Spacer.stl](Rotary%20Encoder%20Spacer.stl)
+[Rotary_Encoder_Spacer.stl](Rotary_Encoder_Spacer.stl)
 
 I use this spacer around the rotary encoder's threaded mounting section because the PC Flights ARC-210 faceplate has 10 mm holes, which are larger than the encoder threads. The spacer fills the gap and centers each encoder in its faceplate hole. Six of these spacers are needed.
 
@@ -52,6 +52,6 @@ PC Flights has supplied me with a drawing file to assist with the Button PCB lay
 
 ## On/Off rotary switch support spacer v.4
 
-[Shaft Spacer v.4](Shaft%20Spacer.stl)
+[Shaft_Spacer_v4.stl](Shaft_Spacer_v4.stl)
 
 The **On/Off rotary switch PCB** will be attached to the main board, so use this spacer to support the rotary switch shaft.
