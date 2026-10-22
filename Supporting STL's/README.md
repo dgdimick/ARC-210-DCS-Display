@@ -44,4 +44,4 @@ PC Flights has supplied me with a drawing file to assist with the Button PCB lay
 
 [Shaft Spacer.stl](Shaft%20Spacer.stl)
 
-Use this spacer with the **On/Off rotary switch** to support the switch in the ARC-210 panel.
+The **On/Off rotary switch PCB** will be attached to the main board, so use this spacer to support the switch.
