@@ -4,7 +4,7 @@
 
 **I have completed the final combined hardware test HEX file.** Download [ARC210_Final_Hardware_Test_Teensy41.hex](ARC210_Final_Hardware_Test_Teensy41.hex) and program it with Teensy Loader.
 
-I have confirmed that all 16 buttons, six rotary encoders, TFT brightness controls and both seven-position rotary switches work together on my panel. I use physical GPIO14/A0 and GPIO15/A1 for the switch inputs, and GPIO4 for the TFT backlight. The TFT shows encoder counts and A/B readings, button states and rotary positions, ADC readings, voltage and test coverage. No DCS connection is required.
+I have confirmed that all 16 buttons, six rotary encoders, TFT brightness controls and both seven-position rotary switches work together on my panel. I use GPIO14/A0 (label printed on the Teensy) and GPIO15/A1 for the switch inputs, and GPIO4 for the TFT backlight. The TFT shows encoder counts and A/B readings, button states and rotary positions, ADC readings, voltage and test coverage. No DCS connection is required.
 
 See the [combined test instructions and source](ARC210_Button_Test/). Programming this test replaces the running firmware. I have kept the earlier individual tests below for troubleshooting.
 

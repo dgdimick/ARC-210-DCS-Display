@@ -4,11 +4,11 @@
 
 Download [ARC210_Final_Hardware_Test_Teensy41.hex](../ARC210_Final_Hardware_Test_Teensy41.hex) and program it with Teensy Loader.
 
-Includes the existing 16-button matrix, six rotary encoders and TFT brightness controls, plus two seven-position rotary switches on physical Teensy GPIO14 (A0) and GPIO15 (A1).
+Includes the existing 16-button matrix, six rotary encoders and TFT brightness controls, plus two seven-position rotary switches on Teensy GPIO14 (A0) and GPIO15 (A1), using the labels printed on the Teensy.
 
 The TFT shows each switch position (SW14 and SW15), raw ADC reading, approximate voltage and number of positions tested. Serial Z resets test history and encoder counts. Hold B1 to dim or B2 to brighten, as in the original test.
 
-Switch PCB wiring: J1 pin 1 to 3.3V, pin 2 to physical GPIO14/A0 for the first board or GPIO15/A1 for the second board, pin 3 to GND. Fit all six 1k resistors and leave JP1 open. Display backlight uses GPIO4.
+Switch PCB wiring: J1 pin 1 to 3.3V, pin 2 to GPIO14/A0 (label printed on the Teensy) for the first board or GPIO15/A1 for the second board, pin 3 to GND. Fit all six 1k resistors and leave JP1 open. Display backlight uses GPIO4.
 
 **Tested wiring:** Both seven-position rotary switches were tested and worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. Some fluctuation was visible in the voltage readings on the TFT, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the master schematic were not part of that test.
 
