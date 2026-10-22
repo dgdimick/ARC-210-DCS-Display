@@ -1,10 +1,39 @@
 # Parts
 
-Updated October 12, 2026.
+Updated October 22, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
 The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](https://github.com/dgdimick/Teensy/tree/main/KiCad/ARC-210_Master_Board), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 master schematic and final control-board projects. It is not yet a finalized purchasing list. Blank footprints and generic diode values still need confirmation. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
+
+## Estimated build cost
+
+Estimated cost for one complete ARC-210 panel, including the PC Flights faceplate: **approximately $225–$310 USD before shipping and tax**.
+
+Prices checked October 22, 2026. Small hardware and PCB costs are allowances rather than supplier quotes.
+
+| Part | Quantity | Estimated total |
+| --- | ---: | ---: |
+| [PC Flights faceplate with painted buttons](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/) | 1 | $51.00 |
+| [Teensy 4.1 without Ethernet](https://www.sparkfun.com/teensy-4-1-without-ethernet.html) | 1 | $29.60 |
+| [Hosyond 3.5-inch ILI9488 SPI TFT display](https://www.amazon.com/dp/B0BWJHK4M6) | 1 | About $18 |
+| [Bourns PEC11H-4220F-S0024 rotary encoders](https://www.mouser.com/en/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D) | 6 | $19.74 |
+| [C&K A12505RNCQ multi-position rotary switches](https://www.digikey.com/en/products/detail/c-k/A12505RNCQ/2043159) | 2 | $26.82 |
+| [C&K A12515RNZQ SQL On/Off rotary switch](https://www.digikey.com/en/products/detail/c-k/A12515RNZQ/678340) | 1 | $12.01 |
+| [6 × 6 × 6 mm tactile button switches](https://www.amazon.com/dp/B0HGBSFY2L) and [matrix diodes](#hardware-selection-and-supplier-links) | 16 each | $5–$10 |
+| [Resistors, capacitors, power/protection components and backlight MOSFET](BOM.csv) | Complete set | $10–$20 |
+| [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Complete set | $15–$25 |
+| [Screws and PCB standoffs](https://www.amazon.com/dp/B0H1QS5Q6N) | Allowance | $8–$15 |
+| [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
+| [Bare PCBs](../PCBs/README.md) | One six-board set | $25–$60 |
+| USB cable | 1 | $3–$6 |
+| **Estimated total** | | **$225–$310** |
+
+An optional external regulated 5 V power adapter adds approximately **$8–$15**.
+
+This estimate excludes tools, labor, cockpit mounting fasteners, shipping, tax and tariffs. Buying component assortments or minimum PCB quantities may increase the initial purchase cost and leave spare parts.
+
+**PCB pricing is provisional:** the main and button PCB layouts must be completed before an accurate fabrication quote is available. See the component details and wiring requirements below.
 
 ## Six-PCB layout
 
