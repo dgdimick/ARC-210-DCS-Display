@@ -55,3 +55,7 @@ The tested physical Teensy GPIO pairs are: SW1 = 16/17, SW2 = 28/29, SW3 = 20/21
 This upload contains the editable project. Export copper, silkscreen, solder-mask and Edge.Cuts Gerbers plus drill files from KiCad for your PCB manufacturer. Review the manufacturer's preview before ordering.
 
 PCB licensing: CERN-OHL-P-2.0, as specified in the repository.
+
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

@@ -62,3 +62,7 @@ At those listed prices, one Teensy costs **$53.20 less** than three official Uno
 The red numbers beside the symbol are KiCad pad numbers, **not necessarily the Teensy GPIO numbers used in the code**. The signal names identify the corresponding functions. Power and ground connections are also shown; they are not extra GPIO pins.
 
 This image is a schematic excerpt, not a complete wiring guide. Use the [ARC-210 Teensy 4.1 pin layout](ARC-210%20Teensy%204.1%20Pin%20layout.txt) for the documented actual GPIO assignments, and check them against the firmware and PCB revision you are building.
+
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

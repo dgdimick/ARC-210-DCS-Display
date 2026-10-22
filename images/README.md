@@ -5,3 +5,7 @@
 ## Buttons and encoder test
 
 [View the buttons and encoder test, including the menus working with the buttons](https://drive.google.com/file/d/162CAG3RlfPK6QnCSb0p5lkmVlXDZjPrU/view).
+
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

@@ -38,3 +38,7 @@ The sketch averages ADC readings and requires a position to remain stable for 75
 Uses the Teensy core's 12-bit ADC configuration and averaging: https://www.pjrc.com/store/teensy41.html and https://github.com/PaulStoffregen/cores/blob/master/teensy4/analog.c.
 
 Compiled for Teensy 4.1 with Teensy core 1.62.0 and its bundled ILI9488_t3 library. Hardware operation still needs checking on the actual panel.
+
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

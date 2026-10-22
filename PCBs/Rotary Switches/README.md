@@ -36,3 +36,7 @@ The board and library footprint reference `${KIPRJMOD}/A12505RNCQ.stp`. Reopen o
 This correct model replaces the earlier A12515RNZQ solder-lug substitute. The older ZIP is retained only as a historical optional download; use **LIB_A12505RNCQ.zip** for this PCB. No pads or electrical connections were changed by correcting the model reference.
 
 PCB design licensing: CERN-OHL-P-2.0, as specified in the repository.
+
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

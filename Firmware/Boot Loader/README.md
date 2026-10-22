@@ -147,3 +147,7 @@ tycmd help monitor
 TyTools identifies boards by their USB topology, allowing multiple Teensy devices to be managed independently. A board that remains connected to the same USB port can continue to be recognized at the same USB location even when it changes between normal operation and bootloader mode.
 
 TyTools is released into the public domain. Refer to the [TyTools repository](https://github.com/Koromix/tytools) and its license information for details.
+
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

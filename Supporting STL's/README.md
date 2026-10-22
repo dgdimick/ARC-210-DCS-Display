@@ -57,3 +57,7 @@ PC Flights has supplied me with a drawing file to assist with the Button PCB lay
 The **SQL On/Off rotary switch PCB** will be attached to the main board, so use this spacer to support the rotary switch shaft.
 
 **October 22, 2026 — v.5 clearance fix:** The previous shaft spacer had a clearance issue. Version 5 corrects it and has now been physically test-fitted and confirmed to fit and work. Use v.5 for new prints; v.4 remains available in repository history.
+
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

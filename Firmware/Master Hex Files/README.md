@@ -62,3 +62,7 @@ SHA-256:
 ```text
 607418aa3843d871f3b5ff98abc2ede7575086a80b34e2273da59c333469278c
 ```
+
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

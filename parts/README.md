@@ -127,3 +127,7 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
 
 
 [Back to the project README](../README.md)
+
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

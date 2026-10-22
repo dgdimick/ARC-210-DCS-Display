@@ -14,3 +14,7 @@ Build for Teensy 4.1, USB Serial, using the ILI9488_t3 and Encoder libraries. Th
 
 
 Compiled for Teensy 4.1 with Teensy core 1.62.0. HEX SHA-256: `8b540030c7f2831d7bc496467934c2daeb3d0237b45f5f25da5b69300f37f6a2`.
+
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

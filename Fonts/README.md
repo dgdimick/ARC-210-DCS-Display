@@ -14,3 +14,7 @@ The renderer uses the Swansea28 bitmap glyph table with fractional scaling:
 These are rendering scales, not point sizes. The files depend on Arduino and ILI9488_t3 and use the display library's global `tft` object; they are not standalone desktop font files or Adafruit GFX font headers.
 
 Users installing the precompiled HEX do not need to install the fonts separately: the font data is already included in the firmware.
+
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
