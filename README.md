@@ -17,6 +17,10 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 > **Note:** This repository is now included in the A-10-Sim repository.
 
+## Questions and community builds
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, post build photos, and connect with other builders. Whether you are planning your first panel or already flying with one, you are welcome to join in!
+
 ## Features
 
 - Interface modeled after the ARC-210 radio
