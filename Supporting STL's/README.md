@@ -24,6 +24,14 @@ Download the current files linked above. Do not mix the older frequency, mode, o
 
 Use the hardware listed on the main project page. Earlier printing notes reported needing 106% scale for the mode and frequency knobs on the author's printer. That is a historical fit adjustment, not a verified requirement for every current STL or printer. Check shaft fit before printing the full set; scaling changes both the outside dimensions and the holes.
 
+## Other STL's that are needed
+
+| Part | Current STL | Purpose |
+| --- | --- | --- |
+| Display bracket | [Deep Bracket v5.stl](Deep%20Bracket%20v5.stl) | Mounts the TFT display; replaces `3.5-SPI-Display-Bracket-v3.stl`. |
+| Rotary encoder spacer | [Rotary Encoder Spacer.stl](Rotary%20Encoder%20Spacer.stl) | Centers the rotary encoders in the faceplate holes. Print six. |
+| On/Off rotary switch shaft support | [Shaft Spacer.stl](Shaft%20Spacer.stl) | Supports the rotary switch shaft because the On/Off rotary switch PCB will be attached to the main board. |
+
 ## Display bracket
 
 Updated October 12, 2026.
