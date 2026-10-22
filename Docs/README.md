@@ -4,7 +4,7 @@ These notes explain the choices behind my ARC-210 build and help you find your w
 
 ## Why I used a Teensy
 
-[Why I used a Teensy.png](Why%20I%20used%20a%20Teensy.png) is a screenshot of the Teensy 4.1 symbol and its connections in the ARC-210 panel's KiCad schematic. The green lines are electrical connections to the rest of the circuit. It shows how many connections are needed to bring the display, controls, and lighting together on one controller.
+[Why I used a Teensy.png](Why%20I%20used%20a%20Teensy.png) is a screenshot of the Teensy 4.1 symbol and its connections in the ARC-210 panel's KiCad schematic. The green lines are electrical connections to the rest of the circuit. It shows the display and control connections on one controller. The image also includes an earlier panel-lighting circuit; button lighting is not included in the current build.
 
 ![Teensy 4.1 connections in the ARC-210 schematic](Why%20I%20used%20a%20Teensy.png)
 
@@ -15,7 +15,7 @@ GPIO means general-purpose input/output. These are the pins the controller uses 
 - Rotary encoders each use two input signals to detect movement and direction.
 - The 16 buttons use a 4 × 4 matrix, requiring eight pins for the rows and columns instead of a separate pin for every button.
 - The SPI TFT needs clock and data signals, plus chip-select, data/command, and reset connections.
-- The display backlight and panel lighting have separate control signals.
+- The display backlight has its own control signal. The older panel-lighting signal shown in the image belongs to a previous design; future button lighting would require the external 5 V supply and redesigned boards.
 - Other switches need inputs, and the current pin layout reserves two pins for I²C.
 
 Even with a button matrix, the connections add up quickly. The Teensy 4.1 provides enough pins for this design without adding GPIO expanders or a second controller. That keeps the wiring and firmware easier to manage.
@@ -78,6 +78,12 @@ This image is a schematic excerpt, not a complete wiring guide. Use the [ARC-210
 | 15 / A1 — rotary-switch input | 37 |
 
 For example, connect a rotary-switch signal to the Teensy connection marked **14/A0**, which is **KiCad pad 36**—not pad 14. In KiCad, read the symbol’s pin name and net label to identify the signal. Updating the PCB from the schematic with the matching symbol and footprint maps the connections to the correct physical locations. This pad mapping applies to the Teensy library supplied with this project; other libraries may use different numbering.
+
+## Power and future button lighting
+
+The current design keeps the Teensy powered by USB. On the Master PCB, JP1 selects the TFT supply: **pins 1–2 select protected external 5 V; pins 2–3 select Teensy 3.3 V**. Fit only one shunt and remove power before moving it. JP1 does not select USB/VIN power. Keep the external protected 5 V rail separate from Teensy VIN and 3.3 V; the circuit uses a common ground. The TFT’s backlight is separate from the proposed button-lighting LEDs.
+
+**Future button lighting will require the external 5 V supply and the associated power-input and protection circuitry to be installed.** USB/VIN power is not the planned source for this lighting option. It would also need a revised Master PCB with space for the lighting-control SCR, associated discrete components, and a pin header, plus a new Button PCB design. That Button PCB is not currently planned; the ARC-164 and ARC-184 projects will be completed before this option is revisited. Button-lighting LEDs are not part of the current build or parts estimate.
 
 ## Estimated build cost
 

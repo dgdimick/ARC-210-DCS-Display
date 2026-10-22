@@ -6,6 +6,12 @@ Updated October 22, 2026.
 
 The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](https://github.com/dgdimick/Teensy/tree/main/KiCad/ARC-210_Master_Board), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 master schematic and final control-board projects. The parts list is still being refined as I finish the main and button PCBs. A few component details and footprints need confirming, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
 
+## Power and future button lighting
+
+The current design keeps the Teensy powered by USB. On the Master PCB, JP1 selects the TFT supply: **pins 1–2 select protected external 5 V; pins 2–3 select Teensy 3.3 V**. Fit only one shunt and remove power before moving it. JP1 does not select USB/VIN power. Keep the external protected 5 V rail separate from Teensy VIN and 3.3 V; the circuit uses a common ground. The TFT’s backlight is separate from the proposed button-lighting LEDs.
+
+**Future button lighting will require the external 5 V supply and the associated power-input and protection circuitry to be installed.** USB/VIN power is not the planned source for this lighting option. It would also need a revised Master PCB with space for the lighting-control SCR, associated discrete components, and a pin header, plus a new Button PCB design. That Button PCB is not currently planned; the ARC-164 and ARC-184 projects will be completed before this option is revisited. Button-lighting LEDs are not part of the current build or parts estimate.
+
 ## Estimated build cost
 
 To help you plan your build, I’ve put together an estimated parts budget of **$275–$320 USD before shipping and tax**, including the PC Flights faceplate. The links below point to independent suppliers; the figures are a budgeting guide rather than a kit price.
@@ -31,7 +37,7 @@ Prices checked October 22, 2026. Small hardware and PCB costs are allowances rat
 | USB cable | 1 | $3–$6 |
 | **Estimated DIY purchasing cost** | | **$275–$320** |
 
-An optional external regulated 5 V power adapter adds approximately **$8–$15**.
+For the current build without button lighting, an external regulated 5 V power adapter is optional when using the documented Teensy 3.3 V TFT supply option within its current limit. Allow approximately **$8–$15** for the adapter. **The external 5 V supply becomes required for any future button-lighting revision.**
 
 This estimate excludes tools, labor, cockpit mounting fasteners, shipping, tax and tariffs. Buying component assortments or minimum PCB quantities may increase the initial purchase cost and leave spare parts.
 
@@ -83,7 +89,7 @@ Fit the JP1 shunt across **pins 1–2 for protected 5 V** or **pins 2–3 for Te
 
 The TFT backlight control on the Main Controller also uses **Q3: IRLZ44N MOSFET**, **R37: 10 kΩ**, and **R38: 100 Ω**, one of each. These are also listed in the BOM.
 
-I still need to finalize the Main Controller PCB. The exact barrel-jack size, PTC ordering code, resistor wattages and unfinished footprints need to be confirmed against that final design. This section records the current schematic parts; it does not add an external power supply to the purchasing list.
+I still need to finalize the Main Controller PCB. The exact barrel-jack size, PTC ordering code, resistor wattages and unfinished footprints need to be confirmed against that final design. This section records the current schematic parts. The external adapter is budgeted separately above; it is required for the future button-lighting option.
 
 ## Teensy GPIO labels and KiCad pin numbers
 

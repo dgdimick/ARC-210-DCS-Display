@@ -51,6 +51,12 @@ Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discu
 
 For example, connect a rotary-switch signal to the Teensy connection marked **14/A0**, which is **KiCad pad 36**—not pad 14. In KiCad, read the symbol’s pin name and net label to identify the signal. Updating the PCB from the schematic with the matching symbol and footprint maps the connections to the correct physical locations. This pad mapping applies to the Teensy library supplied with this project; other libraries may use different numbering.
 
+## Power and future button lighting
+
+The current design keeps the Teensy powered by USB. On the Master PCB, JP1 selects the TFT supply: **pins 1–2 select protected external 5 V; pins 2–3 select Teensy 3.3 V**. Fit only one shunt and remove power before moving it. JP1 does not select USB/VIN power. Keep the external protected 5 V rail separate from Teensy VIN and 3.3 V; the circuit uses a common ground. The TFT’s backlight is separate from the proposed button-lighting LEDs.
+
+**Future button lighting will require the external 5 V supply and the associated power-input and protection circuitry to be installed.** USB/VIN power is not the planned source for this lighting option. It would also need a revised Master PCB with space for the lighting-control SCR, associated discrete components, and a pin header, plus a new Button PCB design. That Button PCB is not currently planned; the ARC-164 and ARC-184 projects will be completed before this option is revisited. Button-lighting LEDs are not part of the current build or parts estimate.
+
 ## Six-PCB layout
 
 The radio will use a total of **six PCBs**, controlled by one Teensy 4.1:
@@ -68,7 +74,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 1. Some SAT menus are already complete. The remaining work is on some menus three or four levels deep, which will be completed in firmware 2.0.
 2. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
-3. Test the optional external 5 V power input and protection circuitry for the Main PCB. This circuit provides a protected 5 V supply for the TFT within its specified input-voltage range; the supply voltage may affect backlight brightness. JP1 selects the TFT power source: pins 1-2 select protected 5 V, and pins 2-3 select 3.3 V from the Teensy. To change supplies, power off the board and move the single jumper shunt. If using only the Teensy's 3.3 V supply, the external 5 V input and protection components are not needed and can be omitted from the PCB build.
+3. Test the optional external 5 V power input and protection circuitry for the Main PCB. This circuit provides a protected 5 V supply for the TFT within its specified input-voltage range; the supply voltage may affect backlight brightness. JP1 selects the TFT power source: pins 1-2 select protected 5 V, and pins 2-3 select 3.3 V from the Teensy. To change supplies, power off the board and move the single jumper shunt. For the current build without button lighting, the external 5 V input and protection components can be omitted if the TFT uses the Teensy's 3.3 V supply and the total external 3.3 V load stays within the Teensy's 250 mA limit. Future button lighting would require the external 5 V supply and its input/protection circuitry.
 4. Finish the Master Board and Button PCB designs.
 5. The TFT, Rotary Encoders and Rotary Switches have all been test-fitted. The Button and Main PCBs still need to be test-fitted.
 6. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
