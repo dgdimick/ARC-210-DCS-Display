@@ -1,6 +1,6 @@
 # ARC-210 Supporting 3D Files
 
-**Final STLs — October 22, 2026:** The STL files linked in the tables below are the final versions. The shaft spacer is **V.4**.
+**Final STLs — October 22, 2026:** The STL files linked in the tables below are the final versions. The shaft spacer is **v.5**.
 
 ## Knob Set V3
 
@@ -32,7 +32,7 @@ Use the hardware listed on the main project page. Earlier printing notes reporte
 | --- | --- | --- |
 | Display bracket | [Deep_Bracket_v.5.stl](Deep_Bracket_v.5.stl) | Mounts the TFT display; replaces `3.5-SPI-Display-Bracket-v3.stl`. |
 | Rotary encoder spacer | [Rotary_Encoder_Spacer_v.1.stl](Rotary_Encoder_Spacer_v.1.stl) | Centers the rotary encoders in the faceplate holes. Print six. |
-| SQL On/Off rotary switch shaft support | [Shaft_Spacer_v.4.stl](Shaft_Spacer_v.4.stl) | Supports the rotary switch shaft because the SQL On/Off rotary switch PCB will be attached to the main board. |
+| SQL On/Off rotary switch shaft support | [Shaft_Spacer_v.5.stl](Shaft_Spacer_v.5.stl) | Supports the rotary switch shaft because the SQL On/Off rotary switch PCB will be attached to the main board. |
 
 ## Display bracket
 
@@ -50,8 +50,10 @@ I use this spacer around the rotary encoder's threaded mounting section because 
 
 PC Flights has supplied me with a drawing file to assist with the Button PCB layout.
 
-## SQL On/Off rotary switch support spacer v.4
+## SQL On/Off rotary switch support spacer v.5
 
-[Shaft_Spacer_v.4.stl](Shaft_Spacer_v.4.stl)
+[Shaft_Spacer_v.5.stl](Shaft_Spacer_v.5.stl)
 
 The **SQL On/Off rotary switch PCB** will be attached to the main board, so use this spacer to support the rotary switch shaft.
+
+**October 22, 2026 — v.5 clearance fix:** The previous shaft spacer had a clearance issue. Version 5 corrects it and has now been physically test-fitted and confirmed to fit and work. Use v.5 for new prints; v.4 remains available in repository history.

@@ -63,6 +63,10 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
+**October 22, 2026 — Shaft spacer v.5 clearance fix**
+
+[Shaft_Spacer_v.5.stl](Supporting%20STL%27s/Shaft_Spacer_v.5.stl) replaces v.4 to correct a clearance issue. The revised spacer has now been physically test-fitted and confirmed to fit and work.
+
 **October 22, 2026 — All STLs finalized**
 
 All STLs are now final. See the [Supporting STL files](Supporting%20STL%27s/README.md) for the final versions and printing notes.
