@@ -10,7 +10,7 @@ The BOM lists schematic references, values, footprints, quantities, and do-not-p
 
 For builders sourcing their own parts, allow **approximately $275–$320 USD before shipping and tax** to build one ARC-210 panel, including the PC Flights faceplate.
 
-**This is a DIY budgeting guide. I share the project files and build information; I do not sell parts, kits, PCBs, or assembled panels. Purchase components directly from the linked independent suppliers, arrange PCB fabrication with a manufacturer, and print the STL parts yourself or use a printing service. The amounts below are estimated purchasing costs, not prices for products supplied by me.
+**This is a DIY budgeting guide.** I share the project files and build information; I do not sell parts, kits, PCBs, or assembled panels. Purchase components directly from the linked independent suppliers, arrange PCB fabrication with a manufacturer, and print the STL parts yourself or use a printing service. The amounts below are estimated purchasing costs, not prices for products supplied by me.
 
 Prices checked October 22, 2026. Small hardware and PCB costs are allowances rather than supplier quotes.
 

@@ -39,7 +39,7 @@ PCB design licensing: CERN-OHL-P-2.0, as specified in the repository.
 
 ## Estimated build cost
 
-See the [complete ARC-210 build cost estimate](../../parts/README.md#estimated-build-cost) for the estimated cost of building one panel, including the PC Flights faceplate, TFT display, electronics, and PCBs.
+See the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) for a budget covering the PC Flights faceplate, TFT display, electronics, and PCB fabrication. Builders purchase parts directly from independent suppliers; I provide project files and build guidance, not parts or kits.
 
 ## Questions and community builds
 

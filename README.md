@@ -19,6 +19,8 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Questions and community builds
 
+This is a DIY project: I share files and build guidance. I do not sell parts, kits, PCBs, or assembled panels. Builders source their own components and fabrication services.
+
 New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly, what you are building, and how you plan to use the panel.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, post build photos, and connect with other builders. Whether you are planning your first panel or already flying with one, you are welcome to join in!
