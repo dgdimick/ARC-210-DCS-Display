@@ -64,7 +64,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 9. Document firmware installation and the required DCS-BIOS configuration.
 10. Test the manufactured boards and run an extended reliability test.
 11. Confirm that knob direction, switch positions and button labels match their functions in DCS.
-12. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. This project provides files and build guidance; I'd rather not sell parts, kits, or completed panels, however, if someone really needs the help I'd consider it; a few people have already asked.
+12. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. This project provides files and build guidance; I’d prefer to keep this a DIY project rather than sell parts, kits, or completed panels. That said, a few people have already asked for help, so if you’re stuck and need a hand, feel free to reach out—I’d be happy to discuss what might be possible.
 13. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
 
 ## Project updates
