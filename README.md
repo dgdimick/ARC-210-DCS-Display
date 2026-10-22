@@ -57,15 +57,14 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 4. Test the optional external 5 V power input and protection circuitry for the Main PCB. This circuit provides a protected 5 V supply for the TFT within its specified input-voltage range; the supply voltage may affect backlight brightness. JP1 selects the TFT power source: pins 1-2 select protected 5 V, and pins 2-3 select 3.3 V from the Teensy. To change supplies, power off the board and move the single jumper shunt. If using only the Teensy's 3.3 V supply, the external 5 V input and protection components are not needed and can be omitted from the PCB build.
 5. Finish the Master Board and Button PCB designs.
 6. The TFT, Rotary Encoders and Rotary Switches have all been test-fitted. The Button and Main PCBs still need to be test-fitted.
-7. Arrange the Digital Encoder and Rotary Switch PCBs together on the same manufacturing panel to reduce manufacturing costs.
-8. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
-9. Complete the final assembly instructions, wiring diagrams and updated parts list.
-10. Document firmware installation and the required DCS-BIOS configuration.
-11. Test the manufactured boards and run an extended reliability test.
-12. Confirm that knob direction, switch positions and button labels match their functions in DCS.
-13. Review the completed project to ensure the correct licenses are used. Like most of my projects, this has been a labor of love. I want others to enjoy my work and use it however they see fit.
-14. Work out a way to distribute manufactured PCBs and completed parts—or even a complete panel—for those who need help finishing the project. This could include finished knobs, PCBs, programmed Teensys or a fully assembled radio panel.
-15. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
+7. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
+8. Complete the final assembly instructions, wiring diagrams and updated parts list.
+9. Document firmware installation and the required DCS-BIOS configuration.
+10. Test the manufactured boards and run an extended reliability test.
+11. Confirm that knob direction, switch positions and button labels match their functions in DCS.
+12. Review the completed project to ensure the correct licenses are used. Like most of my projects, this has been a labor of love. I want others to enjoy my work and use it however they see fit.
+13. Work out a way to distribute manufactured PCBs and completed parts—or even a complete panel—for those who need help finishing the project. This could include finished knobs, PCBs, programmed Teensys or a fully assembled radio panel.
+14. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
 
 ## Project updates
 
