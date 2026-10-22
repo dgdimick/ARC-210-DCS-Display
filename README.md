@@ -69,6 +69,10 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
+**October 22, 2026 — Build cost estimate and button-switch update**
+
+Added a [complete build cost estimate](parts/README.md#estimated-build-cost) of approximately **$275–$320 USD before shipping and tax**, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a **$75 allowance for the six PCBs**. PCB pricing remains provisional until the main and button board layouts are finished. The button switches are now specified as **6 × 6 × 5 mm**, with 16 required per panel. The [parts documentation and supplier link](parts/README.md#current-button-switches) and [BOM](parts/BOM.csv) have been updated.
+
 **October 22, 2026 — Discussions now open**
 
 The [Discussions section](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) is now open for questions and sharing builds. Join in to ask for help, share ideas, and post photos of your progress.
