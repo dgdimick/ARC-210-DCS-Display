@@ -8,7 +8,7 @@ The BOM lists schematic references, values, footprints, quantities, and do-not-p
 
 ## Estimated build cost
 
-Estimated cost for one complete ARC-210 panel, including the PC Flights faceplate: **approximately $225–$310 USD before shipping and tax**.
+Estimated cost for one complete ARC-210 panel, including the PC Flights faceplate: **approximately $275–$320 USD before shipping and tax**.
 
 Prices checked October 22, 2026. Small hardware and PCB costs are allowances rather than supplier quotes.
 
@@ -17,7 +17,7 @@ Prices checked October 22, 2026. Small hardware and PCB costs are allowances rat
 | [PC Flights faceplate with painted buttons](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/) | 1 | $51.00 |
 | [Teensy 4.1 without Ethernet](https://www.sparkfun.com/teensy-4-1-without-ethernet.html) | 1 | $29.60 |
 | [Hosyond 3.5-inch ILI9488 SPI TFT display](https://www.amazon.com/dp/B0BWJHK4M6) | 1 | About $18 |
-| [Bourns PEC11H-4220F-S0024 rotary encoders](https://www.mouser.com/en/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D) | 6 | $19.74 |
+| [Bourns PEC11H-4220F-S0024 rotary encoders](https://www.mouser.com/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D) | 6 | $19.74 |
 | [C&K A12505RNCQ multi-position rotary switches](https://www.digikey.com/en/products/detail/c-k/A12505RNCQ/2043159) | 2 | $26.82 |
 | [C&K A12515RNZQ SQL On/Off rotary switch](https://www.digikey.com/en/products/detail/c-k/A12515RNZQ/678340) | 1 | $12.01 |
 | [6 × 6 × 6 mm tactile button switches](https://www.amazon.com/dp/B0HGBSFY2L) and [matrix diodes](#hardware-selection-and-supplier-links) | 16 each | $5–$10 |
@@ -25,9 +25,9 @@ Prices checked October 22, 2026. Small hardware and PCB costs are allowances rat
 | [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Complete set | $15–$25 |
 | [Screws and PCB standoffs](https://www.amazon.com/dp/B0H1QS5Q6N) | Allowance | $8–$15 |
 | [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
-| [Bare PCBs](../PCBs/README.md) | One six-board set | $25–$60 |
+| [Bare PCBs](../PCBs/README.md) | One six-board set | $75 |
 | USB cable | 1 | $3–$6 |
-| **Estimated total** | | **$225–$310** |
+| **Estimated total** | | **$275–$320** |
 
 An optional external regulated 5 V power adapter adds approximately **$8–$15**.
 
@@ -132,7 +132,7 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
   [Amazon](https://www.amazon.com/dp/B0BWJHK4M6)
 
 - **Encoders:** Six Bourns **PEC11H-4220F-S0024**, matching the current encoder PCB. These have PCB terminals and an integrated push switch. The older seven-encoder quantity and 4215 shaft-option links are superseded.  
-  [Mouser — 652-PEC11H4220FS0024](https://www.mouser.com/en/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D)
+  [Mouser — 652-PEC11H4220FS0024](https://www.mouser.com/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D)
 
 - **Multi-position rotary switches:** Two C&K **A12505RNCQ**, with 1/2-inch (12.7 mm) shafts, 45-degree indexing and **C PCB-pin terminals**. These replace the solder-lug versions for the two resistor-ladder PCBs. The circuit uses seven positions of each eight-position switch; verify the corrected wiring and stop-ring setting against the panel.  
   [Mouser — 611-A12505RNCQ](https://www.mouser.com/en/ProductDetail/CK/A12505RNCQ?qs=h7H1bHRqGz9AS0MdXl06Aw%3D%3D) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
