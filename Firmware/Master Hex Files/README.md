@@ -15,7 +15,7 @@ README last updated: **September 25, 2026**.
 
 ## Known limitations
 
-Some detail-page actions remain unimplemented, including the WOD erase YES outcome. COMSEC BASEBAND/DIPHASE selection synchronization needs further work because the game label depends on underlying settings. Early aircraft-power startup screens may lag DCS; frequency-screen timing and power behavior have been tested. Report the exact page, button/knob, and both DCS and physical-screen behavior when reporting an issue.
+Some detail-page actions remain unimplemented, including the WOD erase YES outcome. COMSEC BASEBAND/DIPHASE selection synchronization needs further work because the game label depends on underlying settings. Early aircraft-power startup screens may lag DCS; frequency-screen timing and power behavior have been tested. Found something that doesn’t behave as expected? Please share the menu page, the button or knob you used, and what happened on both the panel and the DCS screen. Those details make it much easier to track down. You can post your findings in Discussions.
 
 ## Loading and first startup
 
@@ -65,10 +65,10 @@ SHA-256:
 
 ## Estimated build cost
 
-See the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) for a budget covering the PC Flights faceplate, TFT display, electronics, and PCB fabrication. Builders purchase parts directly from independent suppliers; I provide project files and build guidance, not parts or kits.
+Thinking about building one? The [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
 
 ## Questions and community builds
 
-New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.
+**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

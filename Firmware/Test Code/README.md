@@ -8,10 +8,10 @@ I have confirmed that all 16 buttons, six rotary encoders, TFT brightness contro
 
 See the [combined test instructions and source](ARC210_Button_Test/). Programming this test replaces the running firmware. I have kept the earlier individual tests below for troubleshooting.
 
-**I recommend passing the Teensy_TFT_Hello_Works test before running the encoder test.** The encoder test requires a working TFT display to show encoder counts, direction, and input states.
+**Start with the TFT hello test** so you know the display is working before checking the encoders. The encoder test uses the screen to show counts, direction, and input states. If the screen stays blank, the wiring notes are a good place to start. You’re welcome to ask for help in Discussions.
 
 1. Load the [TFT hello test](Teenys_TFT_Hello_Works/Teenys_TFT_Hello_Works.ino) and confirm that its output appears correctly on the TFT. (The existing folder and sketch are named `Teenys_TFT_Hello_Works`.)
-2. If the display does not work, resolve the display wiring and setup before proceeding.
+2. If the display stays blank, work through the display wiring and setup first. Feel free to ask in Discussions if you get stuck.
 3. After the TFT test passes, load [ARC210_Encoder_Check_Teensy41.hex](ARC210_Encoder_Check_Teensy41.hex) onto the Teensy 4.1 and turn each encoder in both directions. Watch its row on the TFT for changing counts and direction.
 
 Passing the hello test confirms the display is ready; it does not install a dependency. Loading the encoder HEX replaces the hello-test firmware.
@@ -25,10 +25,10 @@ Download [ARC210_Rotary_Switch_Test.ino.hex](ARC210_Rotary_Switch_Test/ARC210_Ro
 
 ## Estimated build cost
 
-See the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) for a budget covering the PC Flights faceplate, TFT display, electronics, and PCB fabrication. Builders purchase parts directly from independent suppliers; I provide project files and build guidance, not parts or kits.
+Thinking about building one? The [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
 
 ## Questions and community builds
 
-New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.
+**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

@@ -1,6 +1,6 @@
 # ARC-210 seven-position rotary switch test
 
-For the Teensy 4.1 and six-resistor rotary switch PCB. This standalone sketch shows switch position, raw ADC reading and approximate voltage on the ILI9488 TFT. USB Serial provides the same readings as an optional diagnostic. DCS and DCS-BIOS are not required.
+Use this standalone test to check your Teensy 4.1 and six-resistor rotary switch PCB. The ILI9488 TFT shows the switch position, raw ADC reading, and approximate voltage, so you can see how each position behaves. USB Serial provides the same readings if you’d like another way to check them. You can run this test without DCS or DCS-BIOS.
 
 ## Wiring
 
@@ -41,10 +41,10 @@ Compiled for Teensy 4.1 with Teensy core 1.62.0 and its bundled ILI9488_t3 libra
 
 ## Estimated build cost
 
-See the [DIY parts purchasing estimate](../../../parts/README.md#estimated-build-cost) for a budget covering the PC Flights faceplate, TFT display, electronics, and PCB fabrication. Builders purchase parts directly from independent suppliers; I provide project files and build guidance, not parts or kits.
+Thinking about building one? The [DIY parts purchasing estimate](../../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
 
 ## Questions and community builds
 
-New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.
+**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

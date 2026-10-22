@@ -1,5 +1,7 @@
 # ARC-210 Documentation
 
+These notes explain the choices behind my ARC-210 build and help you find your way around the wiring and hardware. If something is unclear, feel free to ask in Discussions.
+
 ## Why I used a Teensy
 
 [Why I used a Teensy.png](Why%20I%20used%20a%20Teensy.png) is a screenshot of the Teensy 4.1 symbol and its connections in the ARC-210 panel's KiCad schematic. The green lines are electrical connections to the rest of the circuit. It shows how many connections are needed to bring the display, controls, and lighting together on one controller.
@@ -65,10 +67,10 @@ This image is a schematic excerpt, not a complete wiring guide. Use the [ARC-210
 
 ## Estimated build cost
 
-See the [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) for a budget covering the PC Flights faceplate, TFT display, electronics, and PCB fabrication. Builders purchase parts directly from independent suppliers; I provide project files and build guidance, not parts or kits.
+Thinking about building one? The [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
 
 ## Questions and community builds
 
-New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.
+**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

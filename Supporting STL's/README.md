@@ -18,13 +18,13 @@ Updated October 4, 2026.
 
 ### If you downloaded an older ZIP
 
-Download the current files linked above. Do not mix the older frequency, mode, or channel STLs with Knob Set V3. The old filenames have been removed from the current branch, but may still exist in previously downloaded ZIPs or repository history.
+If you downloaded an earlier ZIP, please grab the current knob files from the table above. These files are intended to be used together as Knob Set V3. Some revision numbers look lower than the older filenames, so the table is the best guide to which files to print. Older files may still appear in previously downloaded ZIPs or repository history.
 
 `Channel_Knob_v.3.stl` is the current channel knob for Knob Set V3. Its lower filename number does not mean it is older than `Channel Knob v13.stl`. Use the linked files above to identify the current versions.
 
 ### Printing and fit
 
-Use the hardware listed on the main project page. Earlier printing notes reported needing 106% scale for the mode and frequency knobs on the author's printer. That is a historical fit adjustment, not a verified requirement for every current STL or printer. Check shaft fit before printing the full set; scaling changes both the outside dimensions and the holes.
+Use the hardware listed on the main project page. Printer tolerances vary, so try one knob on its shaft before printing the full set. I previously used 106% scaling for the mode and frequency knobs, but your printer and the current files may need a different adjustment. Scaling changes both the outside dimensions and the holes.
 
 ## Other STL's that are needed
 
@@ -60,10 +60,10 @@ The **SQL On/Off rotary switch PCB** will be attached to the main board, so use 
 
 ## Estimated build cost
 
-See the [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) for a budget covering the PC Flights faceplate, TFT display, electronics, and PCB fabrication. Builders purchase parts directly from independent suppliers; I provide project files and build guidance, not parts or kits.
+Thinking about building one? The [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
 
 ## Questions and community builds
 
-New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.
+**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

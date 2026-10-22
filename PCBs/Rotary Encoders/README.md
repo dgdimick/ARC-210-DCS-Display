@@ -10,7 +10,7 @@ Version 1.4 publishes the latest saved PCB layout and project settings, includin
 
 For version 1.3, I checked this six-encoder PCB against its schematic. The electrical check reported zero errors and warnings; the PCB check reported zero violations, zero unconnected pads and zero schematic parity issues under the project's saved check settings. Courtyard and certain footprint checks are disabled in those settings.
 
-I printed the rotary-encoder STL and confirmed that it fits. I have also confirmed all six encoders working in the combined hardware test. A manufactured PCB still needs assembly and testing.
+I printed the rotary-encoder STL and confirmed that it fits, and all six encoders worked together in the combined hardware test. Testing an assembled, manufactured PCB is still on my list. The check results above explain what has been verified so far.
 
 ## Open the project
 
@@ -58,10 +58,10 @@ PCB licensing: CERN-OHL-P-2.0, as specified in the repository.
 
 ## Estimated build cost
 
-See the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) for a budget covering the PC Flights faceplate, TFT display, electronics, and PCB fabrication. Builders purchase parts directly from independent suppliers; I provide project files and build guidance, not parts or kits.
+Thinking about building one? The [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
 
 ## Questions and community builds
 
-New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.
+**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

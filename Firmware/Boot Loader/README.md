@@ -1,6 +1,6 @@
 # ARC-210 Teensy Firmware and Boot Loader Files
 
-This directory contains the precompiled Teensy 4.1 firmware files for the ARC-210 DCS Display project. These files can be installed without compiling the Arduino source code.
+Ready to try the ARC-210 firmware? This folder contains precompiled files for the Teensy 4.1, so you can load them without compiling the Arduino source code. The steps below will walk you through the upload tools.
 
 The firmware files use the `.hex` extension.
 
@@ -150,10 +150,10 @@ TyTools is released into the public domain. Refer to the [TyTools repository](ht
 
 ## Estimated build cost
 
-See the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) for a budget covering the PC Flights faceplate, TFT display, electronics, and PCB fabrication. Builders purchase parts directly from independent suppliers; I provide project files and build guidance, not parts or kits.
+Thinking about building one? The [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
 
 ## Questions and community builds
 
-New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.
+**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
