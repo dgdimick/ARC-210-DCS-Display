@@ -20,7 +20,7 @@ Prices checked October 22, 2026. Small hardware and PCB costs are allowances rat
 | [Bourns PEC11H-4220F-S0024 rotary encoders](https://www.mouser.com/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D) | 6 | $19.74 |
 | [C&K A12505RNCQ multi-position rotary switches](https://www.digikey.com/en/products/detail/c-k/A12505RNCQ/2043159) | 2 | $26.82 |
 | [C&K A12515RNZQ SQL On/Off rotary switch](https://www.digikey.com/en/products/detail/c-k/A12515RNZQ/678340) | 1 | $12.01 |
-| [6 × 6 × 6 mm tactile button switches](https://www.amazon.com/dp/B0HGBSFY2L) and [matrix diodes](#hardware-selection-and-supplier-links) | 16 each | $5–$10 |
+| [6 × 6 × 5 mm tactile button switches](https://www.amazon.com/dp/B01CGMP9GY) and [matrix diodes](#hardware-selection-and-supplier-links) | 16 each | $5–$10 |
 | [Resistors, capacitors, power/protection components and backlight MOSFET](BOM.csv) | Complete set | $10–$20 |
 | [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Complete set | $15–$25 |
 | [Screws and PCB standoffs](https://www.amazon.com/dp/B0H1QS5Q6N) | Allowance | $8–$15 |
@@ -117,7 +117,7 @@ TFT module pins 9–14 are unused in this connection. Use the module's printed s
 
 ## Current button switches
 
-Use **16 switches per panel**, each **6 × 6 × 6 mm**, SPST momentary tactile, with four through-hole leads. The body still occupies 6 × 6 mm on the board.
+Use **16 switches per panel**, each **6 × 6 × 5 mm**, SPST momentary tactile, with four through-hole leads. The body still occupies 6 × 6 mm on the board.
 
 The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the purchased switches' lead spacing and contact pairing against it before fabrication.
 
@@ -144,8 +144,8 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
   [PC Flights](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/)<br>
   PC Flights has supplied me with a drawing file to assist with the Button PCB layout.
 
-- **Button switches:** 16 per panel, 6 × 6 × 6 mm SPST momentary tactile push-button switches, four-pin through-hole  
-  [Amazon](https://www.amazon.com/dp/B0HGBSFY2L)
+- **Button switches:** 16 per panel, 6 × 6 × 5 mm SPST momentary tactile push-button switches, four-pin through-hole  
+  [Amazon](https://www.amazon.com/dp/B01CGMP9GY)
 
 - **PCB standoffs:** Vibit 640-piece M3 nylon standoff assortment, including male–female and female–female spacers with screws. Select lengths to suit the final PCB spacing; the required lengths and quantity per panel are not yet finalized.  
   [Amazon](https://www.amazon.com/dp/B0H1QS5Q6N)
