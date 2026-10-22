@@ -63,6 +63,10 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
+**October 22, 2026 — All STLs finalized**
+
+All STLs are now final. See the [Supporting STL files](Supporting%20STL%27s/README.md) for the final versions and printing notes.
+
 **October 22, 2026 — Button PCB work continues**
 
 Work continues on the Button PCB.
