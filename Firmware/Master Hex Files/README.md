@@ -63,6 +63,10 @@ SHA-256:
 607418aa3843d871f3b5ff98abc2ede7575086a80b34e2273da59c333469278c
 ```
 
+## Estimated build cost
+
+See the [complete ARC-210 build cost estimate](../../parts/README.md#estimated-build-cost) for the estimated cost of building one panel, including the PC Flights faceplate, TFT display, electronics, and PCBs.
+
 ## Questions and community builds
 
 New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.

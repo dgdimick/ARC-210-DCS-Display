@@ -63,6 +63,10 @@ The red numbers beside the symbol are KiCad pad numbers, **not necessarily the T
 
 This image is a schematic excerpt, not a complete wiring guide. Use the [ARC-210 Teensy 4.1 pin layout](ARC-210%20Teensy%204.1%20Pin%20layout.txt) for the documented actual GPIO assignments, and check them against the firmware and PCB revision you are building.
 
+## Estimated build cost
+
+See the [complete ARC-210 build cost estimate](../parts/README.md#estimated-build-cost) for the estimated cost of building one panel, including the PC Flights faceplate, TFT display, electronics, and PCBs.
+
 ## Questions and community builds
 
 New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.

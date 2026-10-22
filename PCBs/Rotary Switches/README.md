@@ -37,6 +37,10 @@ This correct model replaces the earlier A12515RNZQ solder-lug substitute. The ol
 
 PCB design licensing: CERN-OHL-P-2.0, as specified in the repository.
 
+## Estimated build cost
+
+See the [complete ARC-210 build cost estimate](../../parts/README.md#estimated-build-cost) for the estimated cost of building one panel, including the PC Flights faceplate, TFT display, electronics, and PCBs.
+
 ## Questions and community builds
 
 New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.

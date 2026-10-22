@@ -23,6 +23,10 @@ I also included a standalone [rotary switch test](ARC210_Rotary_Switch_Test/) th
 
 Download [ARC210_Rotary_Switch_Test.ino.hex](ARC210_Rotary_Switch_Test/ARC210_Rotary_Switch_Test.ino.hex) for Teensy Loader, or build the [sketch](ARC210_Rotary_Switch_Test/ARC210_Rotary_Switch_Test.ino). This test uses backlight **GPIO 4** and runs without DCS or an open Serial Monitor. See its [instructions](ARC210_Rotary_Switch_Test/README.md). Programming the HEX replaces the firmware on the Teensy.
 
+## Estimated build cost
+
+See the [complete ARC-210 build cost estimate](../../parts/README.md#estimated-build-cost) for the estimated cost of building one panel, including the PC Flights faceplate, TFT display, electronics, and PCBs.
+
 ## Questions and community builds
 
 New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.

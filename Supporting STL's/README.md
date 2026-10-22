@@ -58,6 +58,10 @@ The **SQL On/Off rotary switch PCB** will be attached to the main board, so use 
 
 **October 22, 2026 — v.5 clearance fix:** The previous shaft spacer had a clearance issue. Version 5 corrects it and has now been physically test-fitted and confirmed to fit and work. Use v.5 for new prints; v.4 remains available in repository history.
 
+## Estimated build cost
+
+See the [complete ARC-210 build cost estimate](../parts/README.md#estimated-build-cost) for the estimated cost of building one panel, including the PC Flights faceplate, TFT display, electronics, and PCBs.
+
 ## Questions and community builds
 
 New here? [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly and what you are building.
