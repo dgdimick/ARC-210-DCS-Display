@@ -100,7 +100,7 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
   [SparkFun](https://www.sparkfun.com/teensy-4-1-without-ethernet.html)
 
 - **Display:** ILI9488 SPI TFT, 3.5-inch  
-  [Amazon](https://www.amazon.com/dp/B0CKRJ81B5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_2)
+  [Amazon](https://www.amazon.com/dp/B0BWJHK4M6)
 
 - **Encoders:** Six Bourns **PEC11H-4220F-S0024**, matching the current encoder PCB. These have PCB terminals and an integrated push switch. The older seven-encoder quantity and 4215 shaft-option links are superseded.  
   [Mouser — 652-PEC11H4220FS0024](https://www.mouser.com/en/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D)
