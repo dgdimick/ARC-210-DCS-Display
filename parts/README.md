@@ -8,11 +8,13 @@ The BOM lists schematic references, values, footprints, quantities, and do-not-p
 
 ## Estimated build cost
 
-Estimated cost for one complete ARC-210 panel, including the PC Flights faceplate: **approximately $275–$320 USD before shipping and tax**.
+For builders sourcing their own parts, allow **approximately $275–$320 USD before shipping and tax** to build one ARC-210 panel, including the PC Flights faceplate.
+
+**This is a DIY budgeting guide. I share the project files and build information; I do not sell parts, kits, PCBs, or assembled panels. Purchase components directly from the linked independent suppliers, arrange PCB fabrication with a manufacturer, and print the STL parts yourself or use a printing service. The amounts below are estimated purchasing costs, not prices for products supplied by me.
 
 Prices checked October 22, 2026. Small hardware and PCB costs are allowances rather than supplier quotes.
 
-| Part | Quantity | Estimated total |
+| Part / sourcing reference | Quantity needed | Estimated builder cost |
 | --- | ---: | ---: |
 | [PC Flights faceplate with painted buttons](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/) | 1 | $51.00 |
 | [Teensy 4.1 without Ethernet](https://www.sparkfun.com/teensy-4-1-without-ethernet.html) | 1 | $29.60 |
@@ -21,13 +23,13 @@ Prices checked October 22, 2026. Small hardware and PCB costs are allowances rat
 | [C&K A12505RNCQ multi-position rotary switches](https://www.digikey.com/en/products/detail/c-k/A12505RNCQ/2043159) | 2 | $26.82 |
 | [C&K A12515RNZQ SQL On/Off rotary switch](https://www.digikey.com/en/products/detail/c-k/A12515RNZQ/678340) | 1 | $12.01 |
 | [6 × 6 × 5 mm tactile button switches](https://www.amazon.com/dp/B01CGMP9GY) and [matrix diodes](#hardware-selection-and-supplier-links) | 16 each | $5–$10 |
-| [Resistors, capacitors, power/protection components and backlight MOSFET](BOM.csv) | Complete set | $10–$20 |
-| [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Complete set | $15–$25 |
+| [Resistors, capacitors, power/protection components and backlight MOSFET](BOM.csv) | Parts needed for one build | $10–$20 |
+| [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Parts needed for one build | $15–$25 |
 | [Screws and PCB standoffs](https://www.amazon.com/dp/B0H1QS5Q6N) | Allowance | $8–$15 |
 | [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
-| [Bare PCBs](../PCBs/README.md) | One six-board set | $75 |
+| [Bare PCBs](../PCBs/README.md) | Six boards, ordered from a PCB manufacturer | $75 budget allowance |
 | USB cable | 1 | $3–$6 |
-| **Estimated total** | | **$275–$320** |
+| **Estimated DIY purchasing cost** | | **$275–$320** |
 
 An optional external regulated 5 V power adapter adds approximately **$8–$15**.
 

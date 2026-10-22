@@ -62,14 +62,14 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 9. Document firmware installation and the required DCS-BIOS configuration.
 10. Test the manufactured boards and run an extended reliability test.
 11. Confirm that knob direction, switch positions and button labels match their functions in DCS.
-12. Work out a way to distribute manufactured PCBs and completed parts—or even a complete panel—for those who need help finishing the project. This could include finished knobs, PCBs, programmed Teensys or a fully assembled radio panel.
+12. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. This project provides files and build guidance; I do not sell parts, kits, or completed panels.
 13. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
 
 ## Project updates
 
 **October 22, 2026 — Build cost estimate and button-switch update**
 
-Added a [complete build cost estimate](parts/README.md#estimated-build-cost) of approximately **$275–$320 USD before shipping and tax**, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a **$75 allowance for the six PCBs**. PCB pricing remains provisional until the main and button board layouts are finished. The button switches are now specified as **6 × 6 × 5 mm**, with 16 required per panel. The [parts documentation and supplier link](parts/README.md#current-button-switches) and [BOM](parts/BOM.csv) have been updated.
+Added a [DIY parts purchasing estimate](parts/README.md#estimated-build-cost) of approximately **$275–$320 USD before shipping and tax**, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a **$75 allowance for the six PCBs**. PCB pricing remains provisional until the main and button board layouts are finished. The button switches are now specified as **6 × 6 × 5 mm**, with 16 required per panel. The [parts documentation and supplier link](parts/README.md#current-button-switches) and [BOM](parts/BOM.csv) have been updated.
 
 **October 22, 2026 — Discussions now open**
 
