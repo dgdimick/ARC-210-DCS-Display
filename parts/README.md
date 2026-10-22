@@ -85,6 +85,20 @@ The TFT backlight control on the Main Controller also uses **Q3: IRLZ44N MOSFET*
 
 I still need to finalize the Main Controller PCB. The exact barrel-jack size, PTC ordering code, resistor wattages and unfinished footprints need to be confirmed against that final design. This section records the current schematic parts; it does not add an external power supply to the purchasing list.
 
+## Teensy GPIO labels and KiCad pin numbers
+
+**Use the numbers printed on the Teensy (or the matching GPIO labels on your breakout adapter) when following the firmware and wiring instructions.** KiCad uses a separate set of pin/pad numbers for the Teensy symbol and its matching `teensy:Teensy41` footprint. These include power and ground connections, so they are not the same as GPIO numbers.
+
+| Teensy printed label / firmware GPIO | KiCad U1 pin / footprint pad |
+| --- | ---: |
+| GND (one of several ground connections) | 1 |
+| 0 | 2 |
+| 4 — TFT backlight | 6 |
+| 14 / A0 — rotary-switch input | 36 |
+| 15 / A1 — rotary-switch input | 37 |
+
+For example, connect a rotary-switch signal to the Teensy connection marked **14/A0**, which is **KiCad pad 36**—not pad 14. In KiCad, read the symbol’s pin name and net label to identify the signal. Updating the PCB from the schematic with the matching symbol and footprint maps the connections to the correct physical locations. This pad mapping applies to the Teensy library supplied with this project; other libraries may use different numbering.
+
 ## Pin headers and mating connectors — October 12, 2026
 
 Quantities below are for **one complete panel**, including all three rotary-switch PCBs. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.

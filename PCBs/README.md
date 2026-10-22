@@ -13,6 +13,20 @@ Use the KiCad project files in each linked folder. Each folder includes its wiri
 
 I’ve confirmed the mechanical fit of these designs. Testing an assembled, manufactured PCB is still on my list. Each project’s README explains the electrical checks and hardware tests completed so far.
 
+## Teensy GPIO labels and KiCad pin numbers
+
+**Use the numbers printed on the Teensy (or the matching GPIO labels on your breakout adapter) when following the firmware and wiring instructions.** KiCad uses a separate set of pin/pad numbers for the Teensy symbol and its matching `teensy:Teensy41` footprint. These include power and ground connections, so they are not the same as GPIO numbers.
+
+| Teensy printed label / firmware GPIO | KiCad U1 pin / footprint pad |
+| --- | ---: |
+| GND (one of several ground connections) | 1 |
+| 0 | 2 |
+| 4 — TFT backlight | 6 |
+| 14 / A0 — rotary-switch input | 36 |
+| 15 / A1 — rotary-switch input | 37 |
+
+For example, connect a rotary-switch signal to the Teensy connection marked **14/A0**, which is **KiCad pad 36**—not pad 14. In KiCad, read the symbol’s pin name and net label to identify the signal. Updating the PCB from the schematic with the matching symbol and footprint maps the connections to the correct physical locations. This pad mapping applies to the Teensy library supplied with this project; other libraries may use different numbering.
+
 ## Estimated build cost
 
 Thinking about building one? The [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.

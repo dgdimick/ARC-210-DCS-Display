@@ -7,7 +7,7 @@ Use this standalone test to check your Teensy 4.1 and six-resistor rotary switch
 | Rotary switch PCB | Teensy 4.1 |
 | --- | --- |
 | J1 pin 1 | 3.3V |
-| J1 pin 2 | Physical pin 14 (A0) |
+| J1 pin 2 | GPIO 14 / A0 (label printed on the Teensy) |
 | J1 pin 3 | GND |
 
 Fit all six 1k resistors R1-R6 and leave JP1 open. Use the Teensy's 3.3V rail, not 5V. **Tested wiring:** Both seven-position rotary switches were tested and worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. Some fluctuation was visible in the voltage readings on the TFT, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the master schematic were not part of that test.
@@ -21,7 +21,7 @@ Fit all six 1k resistors R1-R6 and leave JP1 open. Use the Teensy's 3.3V rail, n
 
 To build from source, open `ARC210_Rotary_Switch_Test.ino` in the Arduino IDE, select Teensy 4.1 and USB Type **Serial**, then upload. It requires the `ILI9488_t3` library included in the Teensy installation used for this build.
 
-TFT wiring: CS = 10, DC = 9, RESET = 8, MOSI = 11, SCK = 13, MISO = 12 (if connected), and backlight = **physical GPIO 4**. Backlight stays fully on. This uses the project's TFT hello-test initialization, with backlight corrected to the confirmed GPIO 4 assignment. If the screen stays blank, first check that this HEX was programmed and that the backlight and display wiring match these pins. No Serial Monitor connection is needed for the display to run.
+TFT wiring: CS = 10, DC = 9, RESET = 8, MOSI = 11, SCK = 13, MISO = 12 (if connected), and backlight = **GPIO 4 (label printed on the Teensy)**. Backlight stays fully on. This uses the project's TFT hello-test initialization, with backlight corrected to the confirmed GPIO 4 assignment. If the screen stays blank, first check that this HEX was programmed and that the backlight and display wiring match these pins. No Serial Monitor connection is needed for the display to run.
 
 | Position | Switch terminal | Nominal voltage | Approximate 12-bit reading |
 | --- | --- | --- | --- |
@@ -38,6 +38,20 @@ The sketch averages ADC readings and requires a position to remain stable for 75
 Uses the Teensy core's 12-bit ADC configuration and averaging: https://www.pjrc.com/store/teensy41.html and https://github.com/PaulStoffregen/cores/blob/master/teensy4/analog.c.
 
 Compiled for Teensy 4.1 with Teensy core 1.62.0 and its bundled ILI9488_t3 library. Hardware operation still needs checking on the actual panel.
+
+## Teensy GPIO labels and KiCad pin numbers
+
+**Use the numbers printed on the Teensy (or the matching GPIO labels on your breakout adapter) when following the firmware and wiring instructions.** KiCad uses a separate set of pin/pad numbers for the Teensy symbol and its matching `teensy:Teensy41` footprint. These include power and ground connections, so they are not the same as GPIO numbers.
+
+| Teensy printed label / firmware GPIO | KiCad U1 pin / footprint pad |
+| --- | ---: |
+| GND (one of several ground connections) | 1 |
+| 0 | 2 |
+| 4 — TFT backlight | 6 |
+| 14 / A0 — rotary-switch input | 36 |
+| 15 / A1 — rotary-switch input | 37 |
+
+For example, connect a rotary-switch signal to the Teensy connection marked **14/A0**, which is **KiCad pad 36**—not pad 14. In KiCad, read the symbol’s pin name and net label to identify the signal. Updating the PCB from the schematic with the matching symbol and footprint maps the connections to the correct physical locations. This pad mapping applies to the Teensy library supplied with this project; other libraries may use different numbering.
 
 ## Estimated build cost
 
