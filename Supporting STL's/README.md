@@ -32,7 +32,7 @@ Use the hardware listed on the main project page. Earlier printing notes reporte
 | --- | --- | --- |
 | Display bracket | [Deep Bracket v5.stl](Deep%20Bracket%20v5.stl) | Mounts the TFT display; replaces `3.5-SPI-Display-Bracket-v3.stl`. |
 | Rotary encoder spacer | [Rotary Encoder Spacer.stl](Rotary%20Encoder%20Spacer.stl) | Centers the rotary encoders in the faceplate holes. Print six. |
-| On/Off rotary switch shaft support | [Shaft Spacer.stl — V.4](Shaft%20Spacer.stl) | Supports the rotary switch shaft because the On/Off rotary switch PCB will be attached to the main board. |
+| On/Off rotary switch shaft support | [Shaft Spacer v.4](Shaft%20Spacer.stl) | Supports the rotary switch shaft because the On/Off rotary switch PCB will be attached to the main board. |
 
 ## Display bracket
 
