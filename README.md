@@ -161,6 +161,7 @@ The `Teensy_TFT_Hello_Works.ino` file in the `Firmware` directory contains the c
 
 ## Tools Needed
 
+- Hot glue gun, or an electronics-grade, neutral-cure silicone adhesive such as **MG Chemicals 1035**, for securing wires
 - Soldering iron
 - 3D printer, or access to one
 - Flush wire cutters
