@@ -67,6 +67,10 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
+**October 22, 2026 — Future button-lighting option**
+
+I may revisit button lighting in a future revision. This would require changes to the Master PCB to provide space for an SCR, the associated discrete components, and a lighting connector, along with the external 5 V power supply and its power-input and protection circuitry. It would also require a new Button PCB design, which is not currently planned. The **ARC-164 and ARC-184 projects will be completed first**, before I revisit this option.
+
 **October 22, 2026 — Build cost estimate and button-switch update**
 
 Added a [DIY parts purchasing estimate](parts/README.md#estimated-build-cost) of approximately **$275–$320 USD before shipping and tax**, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a **$75 allowance for the six PCBs**. PCB pricing remains provisional until the main and button board layouts are finished. The button switches are now specified as **6 × 6 × 5 mm**, with 16 required per panel. The [parts documentation and supplier link](parts/README.md#current-button-switches) and [BOM](parts/BOM.csv) have been updated.
