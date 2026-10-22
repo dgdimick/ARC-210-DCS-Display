@@ -46,7 +46,7 @@ Added October 11, 2026.
 
 [Rotary Encoder Spacer.stl](Rotary%20Encoder%20Spacer.stl)
 
-I use this spacer around the rotary encoder's threaded mounting section because the PC Flights ARC-210 faceplate has 10 mm holes, which are larger than the encoder threads. The spacer fills the gap and centers each encoder in its faceplate hole. Print six spacers for the six rotary encoders, and check the fit before printing the full set.
+I use this spacer around the rotary encoder's threaded mounting section because the PC Flights ARC-210 faceplate has 10 mm holes, which are larger than the encoder threads. The spacer fills the gap and centers each encoder in its faceplate hole. Six of these spacers are needed.
 
 PC Flights has supplied me with a drawing file to assist with the Button PCB layout.
 
