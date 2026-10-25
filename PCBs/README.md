@@ -13,6 +13,10 @@ Use the KiCad project files in each linked folder. Each folder includes its wiri
 
 I’ve confirmed the mechanical fit of these designs. Testing an assembled, manufactured PCB is still on my list. Each project’s README explains the electrical checks and hardware tests completed so far.
 
+## Button PCB schematic
+
+The [Button Matrix v1.1 schematic and KiCad project](Button%20Matrix/) are available to download. This is the current unlit 16-button matrix; PCB layout and routing remain unfinished. It is separate from the future Button LED PCB, which is not currently planned.
+
 ## Master Board schematic
 
 The [Master Board schematic and KiCad project](Master%20Board/) are available to download, including their custom symbol libraries. The Master PCB layout and routing remain unfinished; this is not a fabrication-ready board release.
