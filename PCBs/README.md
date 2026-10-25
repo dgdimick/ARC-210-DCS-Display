@@ -33,6 +33,10 @@ The current design keeps the Teensy powered by USB. On the Master PCB, JP1 selec
 
 **Future button lighting will require the external 5 V supply and the associated power-input and protection circuitry to be installed.** USB/VIN power is not the planned source for this lighting option. It would also need a revised Master PCB with space for the lighting-control SCR, associated discrete components, and a pin header, plus a new Button PCB design. That Button PCB is not currently planned; the ARC-164 and ARC-184 projects will be completed before this option is revisited. Button-lighting LEDs are not part of the current build or parts estimate.
 
+## Optional SQL On/Off PCB
+
+The SQL On/Off PCB is optional when wiring directly to the switch’s solder lugs. The build uses five PCBs without it, or six with it. Dedicated SQL signal (GPIO 41) and GND solder pads are planned for the Master PCB; these pads have not yet been added. See the [direct-wiring notes](../parts/README.md#six-pcb-layout) for details.
+
 ## Estimated build cost
 
 Thinking about building one? The [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.

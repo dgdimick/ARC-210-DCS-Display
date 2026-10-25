@@ -32,7 +32,7 @@ Use the hardware listed on the main project page. Printer tolerances vary, so tr
 | --- | --- | --- |
 | Display bracket | [Deep_Bracket_v.5.stl](Deep_Bracket_v.5.stl) | Mounts the TFT display; replaces `3.5-SPI-Display-Bracket-v3.stl`. |
 | Rotary encoder spacer | [Rotary_Encoder_Spacer_v.1.stl](Rotary_Encoder_Spacer_v.1.stl) | Centers the rotary encoders in the faceplate holes. Print six. |
-| SQL On/Off rotary switch shaft support | [Shaft_Spacer_v.5.stl](Shaft_Spacer_v.5.stl) | Supports the rotary switch shaft because the SQL On/Off rotary switch PCB will be attached to the main board. |
+| SQL On/Off rotary switch shaft support | [Shaft_Spacer_v.5.stl](Shaft_Spacer_v.5.stl) | Supports the rotary switch shaft when the optional SQL On/Off rotary switch PCB is attached to the main board. |
 
 ## Display bracket
 
@@ -54,7 +54,7 @@ PC Flights has supplied me with a drawing file to assist with the Button PCB lay
 
 [Shaft_Spacer_v.5.stl](Shaft_Spacer_v.5.stl)
 
-The **SQL On/Off rotary switch PCB** will be attached to the main board, so use this spacer to support the rotary switch shaft.
+When the optional **SQL On/Off rotary switch PCB** is attached to the main board, use this spacer to support the rotary switch shaft. The switch PCB can be omitted when wires are soldered directly to the switch’s solder lugs. Dedicated SQL signal (GPIO 41) and GND solder pads are planned for the Master PCB but have not yet been added; direct wiring still needs suitable mechanical support for the switch.
 
 **October 22, 2026 — v.5 clearance fix:** The previous shaft spacer had a clearance issue. Version 5 corrects it and has now been physically test-fitted and confirmed to fit and work. Use v.5 for new prints; v.4 remains available in repository history.
 

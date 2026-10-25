@@ -47,7 +47,7 @@ This estimate excludes tools, labor, cockpit mounting fasteners, shipping, tax a
 
 My build uses up to six PCBs controlled by one Teensy 4.1: the master PCB, button PCB, rotary encoder PCB, and three small rotary switch PCBs. The SQL On/Off PCB is optional, reducing the build to five boards if the solder-lug switch is wired directly. The estimate above allows for all six boards.
 
-The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. For the SQL On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
+The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. When using the optional SQL On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
 
 **SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated, labelled SQL signal and GND solder pads are planned for the Master PCB so these wires can be soldered directly to it instead of using the switch PCB and cable headers; these pads have not yet been added to the PCB design.
 
@@ -109,7 +109,7 @@ For example, connect a rotary-switch signal to the Teensy connection marked **14
 
 ## Pin headers and mating connectors — October 12, 2026
 
-Quantities below are for **one complete panel**, including all three rotary-switch PCBs. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
+Quantities below are for **one complete panel with the optional SQL On/Off PCB installed**, including all three rotary-switch PCBs. If you wire the solder-lug SQL switch directly, omit its PCB-side header and cable connectors as appropriate for your wiring method. The dedicated Master PCB SQL signal and GND solder pads are planned and have not yet been added. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
 
 | Location / use | Board-side male header | Quantity | Mating cable housings |
 | --- | --- | ---: | --- |
@@ -126,7 +126,7 @@ Totals: **two 1x14, three 1x08, six 1x03 and one 1x02 male board headers**, plus
 
 The TFT module normally already has its 14-pin male header. Check before purchasing an additional one. The button PCB's 8-pin header is provisional until its design is finished; Master J2 and J9/J10 still need footprint assignments. Check connector stack height and cable clearance before finalizing the Main and Button PCBs. Unused Teensy USB-host, Ethernet and auxiliary headers are not required by the current panel wiring.
 
-**Cable mapping matters:** the encoder cable is pin-for-pin between the two 14-pin headers. The matrix cable uses rows on pins 1–4 and columns on pins 5–8. Multi-position switch cables use 1 = 3.3 V, 2 = signal and 3 = GND. The SQL On/Off cable maps master SQL1 pin 1 to switch-board J1 pin 2, and SQL1 pin 2 to switch-board J1 pin 3; switch-board pin 1 stays unused.
+**Cable mapping matters:** the encoder cable is pin-for-pin between the two 14-pin headers. The matrix cable uses rows on pins 1–4 and columns on pins 5–8. Multi-position switch cables use 1 = 3.3 V, 2 = signal and 3 = GND. When using the optional SQL On/Off PCB, its cable maps master SQL1 pin 1 to switch-board J1 pin 2, and SQL1 pin 2 to switch-board J1 pin 3; switch-board pin 1 stays unused.
 
 The TFT cable is **not straight-through**. With the current master schematic and MSP3520 module manual, connect:
 
@@ -141,7 +141,7 @@ The TFT cable is **not straight-through**. With the current master schematic and
 | 7 | MOSI / GPIO11 | 6 |
 | 8 | Backlight control / GPIO4 | 8 |
 
-TFT module pins 9–14 are unused in this connection. Use the module's printed signal labels to identify pins, and check cable continuity before power-up. The SQL On/Off rotary-switch ON/OFF solder bridge needs solder only, not another shunt.
+TFT module pins 9–14 are unused in this connection. Use the module's printed signal labels to identify pins, and check cable continuity before power-up. When using the optional SQL On/Off PCB, its ON/OFF solder bridge needs solder only, not another shunt; direct wiring does not use this bridge.
 
 ## Current button switches
 

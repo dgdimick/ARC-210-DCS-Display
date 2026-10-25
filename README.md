@@ -59,7 +59,7 @@ The current design keeps the Teensy powered by USB. On the Master PCB, JP1 selec
 
 ## Six-PCB layout
 
-The radio will use a total of **six PCBs**, controlled by one Teensy 4.1:
+The radio uses **up to six PCBs**, controlled by one Teensy 4.1. Five boards are needed if the solder-lug SQL On/Off switch is wired directly; its separate PCB is optional:
 
 - **Master PCB:** carries the Teensy, power circuitry, display and control connections.
 - **Button PCB:** carries the push-button switches behind the faceplate and connects to the master PCB.
@@ -243,7 +243,7 @@ The ARC-210 panel needs a lot of GPIO (general-purpose input/output) pins. It is
 - The SPI TFT needs clock and data connections plus control signals for chip select, reset, and data/command selection.
 - The TFT display backlight needs a control output.
 
-These connections add up quickly. I chose the Teensy 4.1 because it gives this design enough pins to connect the controls and display directly, without adding GPIO expanders or another controller. Using one controller for all six PCBs also keeps the wiring and firmware easier to manage.
+These connections add up quickly. I chose the Teensy 4.1 because it gives this design enough pins to connect the controls and display directly, without adding GPIO expanders or another controller. Using one controller for the five- or six-board build also keeps the wiring and firmware easier to manage.
 
 ### Could I have used several Arduinos?
 
