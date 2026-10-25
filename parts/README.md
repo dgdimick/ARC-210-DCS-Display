@@ -45,9 +45,11 @@ This estimate excludes tools, labor, cockpit mounting fasteners, shipping, tax a
 
 ## Six-PCB layout
 
-My build uses six PCBs controlled by one Teensy 4.1: the master PCB, button PCB, rotary encoder PCB, and three small rotary switch PCBs. The separate control boards provide cleaner wiring and wire support.
+My build uses up to six PCBs controlled by one Teensy 4.1: the master PCB, button PCB, rotary encoder PCB, and three small rotary switch PCBs. The SQL On/Off PCB is optional, reducing the build to five boards if the solder-lug switch is wired directly. The estimate above allows for all six boards.
 
 The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. For the SQL On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
+
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated, labelled SQL signal and GND solder pads are planned for the Master PCB so these wires can be soldered directly to it instead of using the switch PCB and cable headers; these pads have not yet been added to the PCB design.
 
 ## Rotary-switch test wiring
 

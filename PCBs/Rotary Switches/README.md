@@ -29,6 +29,8 @@ The solder-lug A12515RNZQ still requires mechanical support and wires to the cor
 
 Validation for version 2.0: KiCad PCB DRC, with zones refilled, reported zero non-excluded violations and zero unconnected pads under the saved project settings. The project contains 15 specific PTH-inside-switch-courtyard exclusions for the rear-side resistors and connector; their lead and solder-joint clearance to the switch body still requires physical verification. Several other check categories are disabled in the project. Electrical schematic checks and schematic parity were not rerun for this upload. I’ve confirmed the mechanical fit. Testing the electrical operation of an assembled, manufactured board is still on my list; the check results above describe what has been verified so far.
 
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated, labelled SQL signal and GND solder pads are planned for the Master PCB so these wires can be soldered directly to it instead of using the switch PCB and cable headers; these pads have not yet been added to the PCB design.
+
 ## Optional switch 3D model
 
 Download [LIB_A12505RNCQ.zip](LIB_A12505RNCQ.zip), the supplier archive for the actual **A12505RNCQ through-hole PCB-terminal switch**. Extract `A12505RNCQ/3D/A12505RNCQ.stp` and place the STP file beside `Rotary Switches.kicad_pcb`.

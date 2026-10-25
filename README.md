@@ -64,18 +64,20 @@ The radio will use a total of **six PCBs**, controlled by one Teensy 4.1:
 - **Master PCB:** carries the Teensy, power circuitry, display and control connections.
 - **Button PCB:** carries the push-button switches behind the faceplate and connects to the master PCB.
 - **Rotary Encoder PCB:** carries the rotary encoders and connects to the master PCB.
-- **Three small Rotary Switch PCBs:** the two seven-position switches and the SQL On/Off switch will each have their own PCB for cleaner wiring and better wire support.
+- **Rotary Switch PCBs:** the two seven-position switches each use a PCB. A third PCB can be used for the SQL On/Off switch for cleaner wiring and wire support, or omitted when wiring the solder-lug switch directly.
 
-All three Rotary Switch PCBs use the same design and are interchangeable. For the **SQL On/Off rotary switch PCB**, install **no resistors** (omit R1–R6) and bridge the small **JP1 solder pad**, marked **ON/OFF**, with solder. For the other 2 seven-position rotary switch PCBs, install the six resistors and leave JP1 open.
+The three Rotary Switch PCBs use the same design and are interchangeable; the SQL On/Off board is optional. For the **SQL On/Off rotary switch PCB**, install **no resistors** (omit R1–R6) and bridge the small **JP1 solder pad**, marked **ON/OFF**, with solder. For the other 2 seven-position rotary switch PCBs, install the six resistors and leave JP1 open.
 
 The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The two remaining PCB tasks are the Main Controller board and the redesign of the 16-button board.
+
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated, labelled SQL signal and GND solder pads are planned for the Master PCB so these wires can be soldered directly to it instead of using the switch PCB and cable headers; these pads have not yet been added to the PCB design.
 
 ## Items that need to be completed
 
 1. Some SAT menus are already complete. The remaining work is on some menus three or four levels deep, which will be completed in firmware 2.0.
 2. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
 3. Test the optional external 5 V power input and protection circuitry for the Main PCB. This circuit provides a protected 5 V supply for the TFT within its specified input-voltage range; the supply voltage may affect backlight brightness. JP1 selects the TFT power source: pins 1-2 select protected 5 V, and pins 2-3 select 3.3 V from the Teensy. To change supplies, power off the board and move the single jumper shunt. For the current build without button lighting, the external 5 V input and protection components can be omitted if the TFT uses the Teensy's 3.3 V supply and the total external 3.3 V load stays within the Teensy's 250 mA limit. Future button lighting would require the external 5 V supply and its input/protection circuitry.
-4. Finish the Master Board and Button PCB designs.
+4. Finish the Master Board and Button PCB designs. Add labelled SQL signal (GPIO 41) and GND solder pads to the Master PCB for builders who wire the solder-lug SQL On/Off switch directly instead of using its optional PCB.
 5. The TFT, Rotary Encoders and Rotary Switches have all been test-fitted. The Button and Main PCBs still need to be test-fitted.
 6. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
 7. Complete the final assembly instructions, wiring diagrams and updated parts list.
