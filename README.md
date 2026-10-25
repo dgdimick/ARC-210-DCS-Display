@@ -55,7 +55,7 @@ For example, connect a rotary-switch signal to the Teensy connection marked **14
 
 The current design keeps the Teensy powered by USB. On the Master PCB, JP1 selects the TFT supply: **pins 1–2 select protected external 5 V; pins 2–3 select Teensy 3.3 V**. Fit only one shunt and remove power before moving it. JP1 does not select USB/VIN power. Keep the external protected 5 V rail separate from Teensy VIN and 3.3 V; the circuit uses a common ground. The TFT’s backlight is separate from the proposed button-lighting LEDs.
 
-**Future button lighting will require the external 5 V supply and the associated power-input and protection circuitry to be installed.** USB/VIN power is not the planned source for this lighting option. It would also need a revised Master PCB with space for the lighting-control SCR, associated discrete components, and a pin header, plus a new Button PCB design. That Button PCB is not currently planned; the ARC-164 and ARC-184 projects will be completed before this option is revisited. Button-lighting LEDs are not part of the current build or parts estimate.
+**Future button lighting will require the external 5 V supply and the associated power-input and protection circuitry to be installed.** USB/VIN power is not the planned source for this lighting option. It would also need a revised Master PCB with space for the lighting-control SCR, associated discrete components, and a pin header, plus a new Button LED PCB design. That Button LED PCB is not currently planned; the ARC-164 and ARC-184 projects will be completed before this option is revisited. Button-lighting LEDs are not part of the current build or parts estimate.
 
 ## Six-PCB layout
 
@@ -83,7 +83,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 9. Test the manufactured boards and run an extended reliability test.
 10. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. This project provides files and build guidance; I’d prefer to keep this a DIY project rather than sell parts, kits, or completed panels. That said, a few people have already asked for help, so if you’re stuck and need a hand, feel free to reach out—I’d be happy to discuss what might be possible.
 11. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
-12. Consider redesigning the Master PCB to support LEDs on the Button PCB in a future revision. Reserve space for an SCR, the associated discrete components, and a pin header for connecting the button-board lighting. This lighting option would require the external 5 V power supply and its associated power-input and protection circuitry to be installed. It would also require a new Button PCB design, which is not currently planned. The ARC-164 and ARC-184 projects will be completed before revisiting this lighting option.
+12. Consider redesigning the Master PCB to support LEDs on the Button PCB in a future revision. Reserve space for an SCR, the associated discrete components, and a pin header for connecting the button-board lighting. This lighting option would require the external 5 V power supply and its associated power-input and protection circuitry to be installed. It would also require a new Button LED PCB design, which is not currently planned. The ARC-164 and ARC-184 projects will be completed before revisiting this lighting option.
 
 ## Project updates
 
@@ -93,7 +93,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 **October 22, 2026 — Future button-lighting option**
 
-I may revisit button lighting in a future revision. This would require changes to the Master PCB to provide space for an SCR, the associated discrete components, and a lighting connector, along with the external 5 V power supply and its power-input and protection circuitry. It would also require a new Button PCB design, which is not currently planned. The **ARC-164 and ARC-184 projects will be completed first**, before I revisit this option.
+I may revisit button lighting in a future revision. This would require changes to the Master PCB to provide space for an SCR, the associated discrete components, and a lighting connector, along with the external 5 V power supply and its power-input and protection circuitry. It would also require a new Button LED PCB design, which is not currently planned. The **ARC-164 and ARC-184 projects will be completed first**, before I revisit this option.
 
 **October 22, 2026 — Build cost estimate and button-switch update**
 
