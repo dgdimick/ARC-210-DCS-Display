@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+  (lib (name "ARC210_Custom") (type "KiCad") (uri "${KIPRJMOD}/ARC210_Custom.pretty") (options "") (descr "ARC-210 custom footprints"))
+  (lib (name "teensy") (type "KiCad") (uri "${KIPRJMOD}/Libraries/teensy.pretty") (options "") (descr "Teensy footprints"))
+)

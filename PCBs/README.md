@@ -13,6 +13,10 @@ Use the KiCad project files in each linked folder. Each folder includes its wiri
 
 I’ve confirmed the mechanical fit of these designs. Testing an assembled, manufactured PCB is still on my list. Each project’s README explains the electrical checks and hardware tests completed so far.
 
+## Master Board schematic
+
+The [Master Board schematic and KiCad project](Master%20Board/) are available to download, including their custom symbol libraries. The Master PCB layout and routing remain unfinished; this is not a fabrication-ready board release.
+
 ## Teensy GPIO labels and KiCad pin numbers
 
 **Use the numbers printed on the Teensy (or the matching GPIO labels on your breakout adapter) when following the firmware and wiring instructions.** KiCad uses a separate set of pin/pad numbers for the Teensy symbol and its matching `teensy:Teensy41` footprint. These include power and ground connections, so they are not the same as GPIO numbers.

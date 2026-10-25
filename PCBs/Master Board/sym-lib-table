@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "teensy") (type "KiCad") (uri "${KIPRJMOD}/Libraries/symbols/teensy.kicad_sym") (options "") (descr "Teensy symbols"))
+  (lib (name "ARC210_Power") (type "KiCad") (uri "${KIPRJMOD}/Libraries/symbols/ARC210_Power.kicad_sym") (options "") (descr "C106D SCR with datasheet pin numbering"))
+)

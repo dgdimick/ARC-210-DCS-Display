@@ -4,7 +4,7 @@ Updated October 22, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
-The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](https://github.com/dgdimick/Teensy/tree/main/KiCad/ARC-210_Master_Board), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 master schematic and final control-board projects. The parts list is still being refined as I finish the main and button PCBs. A few component details and footprints need confirming, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
+The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 master schematic and final control-board projects. The parts list is still being refined as I finish the main and button PCBs. A few component details and footprints need confirming, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
 
 ## Power and future button lighting
 

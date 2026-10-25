@@ -91,6 +91,10 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
+**October 24, 2026 — Master Board schematic published**
+
+The [Master Board schematic and KiCad project](PCBs/Master%20Board/) are now available in this public repository, with the custom symbol libraries needed to open them. Download the repository ZIP and keep the project folder together. This is a schematic release; the Master PCB layout and routing are not finished, and the planned SQL direct-wiring solder pads have not yet been added.
+
 **October 24, 2026 — Optional SQL On/Off PCB and planned solder pads**
 
 The **SQL On/Off PCB is optional** when using the solder-lug switch: wires can be soldered directly to the switch instead. This reduces the build from six PCBs to five. I plan to add labelled **SQL signal (GPIO 41) and GND solder pads** to the Master PCB to support this direct-wiring option. These pads **have not yet been added** to the PCB design. See the [direct-wiring notes](parts/README.md#six-pcb-layout) for details.
@@ -125,7 +129,7 @@ Work continues on the Button PCB.
 
 **October 12, 2026 — Master Board schematic updated**
 
-The updated [Master Board KiCad project](https://github.com/dgdimick/Teensy/tree/main/KiCad/ARC-210_Master_Board) has been pushed to the Teensy repository. The schematic now uses one 14-pin connector matching the Rotary Encoder PCB and an eight-pin connector for the separate 4×4 button matrix. It includes corrected Teensy signal connections, the C106D SCR pin numbering and its project symbol library. A three-pin TFT power selector, **JP1**, selects **protected 5 V with pins 1–2** or **Teensy 3.3 V with pins 2–3**. Fit only one jumper shunt and remove power before changing it. The schematic passed ERC with zero errors and warnings under its saved settings. The Main PCB layout, routing and physical test fit remain unfinished.
+The updated [Master Board KiCad project](PCBs/Master%20Board/) has been pushed to the Teensy repository. The schematic now uses one 14-pin connector matching the Rotary Encoder PCB and an eight-pin connector for the separate 4×4 button matrix. It includes corrected Teensy signal connections, the C106D SCR pin numbering and its project symbol library. A three-pin TFT power selector, **JP1**, selects **protected 5 V with pins 1–2** or **Teensy 3.3 V with pins 2–3**. Fit only one jumper shunt and remove power before changing it. The schematic passed ERC with zero errors and warnings under its saved settings. The Main PCB layout, routing and physical test fit remain unfinished.
 
 **October 12, 2026 — Rotary Encoder and Rotary Switch PCBs finalized; test fits confirmed**
 
