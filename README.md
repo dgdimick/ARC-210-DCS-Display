@@ -91,7 +91,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
-**October 24, 2026 — Button PCB schematic published**
+**October 24, 2026 — Button PCB schematic now available in the public repository**
 
 The [Button Matrix v1.1 schematic and KiCad project](PCBs/Button%20Matrix/) are now available publicly. The schematic passed ERC with zero violations under its saved settings. This is a schematic-only release; the Button PCB layout and routing remain unfinished. The current schematic uses separate four-pin row and column connectors; see the project README for the mapping to the Master Board’s eight-pin matrix header. This is the current unlit button matrix, not the proposed future Button LED PCB.
 
