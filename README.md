@@ -91,7 +91,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
-**October 24, 2026 — Master Board schematic published**
+**October 24, 2026 — Master Board schematic now available in the public repository**
 
 The [Master Board schematic and KiCad project](PCBs/Master%20Board/) are now available in this public repository, with the custom symbol libraries needed to open them. Download the repository ZIP and keep the project folder together. This is a schematic release; the Master PCB layout and routing are not finished, and the planned SQL direct-wiring solder pads have not yet been added.
 
