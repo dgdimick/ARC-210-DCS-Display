@@ -37,6 +37,12 @@ Both seven-position switches worked with their outputs connected directly to GPI
 
 ## Teensy 4.1 in the 3D Viewer
 
+### Main PCB 3D preview
+
+![Main Controller PCB draft, back-side angled view with the Teensy 4.1 model and component bodies facing away from the faceplate](../../images/Main-PCB-Teensy-3D.png)
+
+*Back-side angled view of the Main Controller PCB with the Teensy 4.1 model. Component placement is in progress; routing and physical fit verification remain unfinished.*
+
 The project includes [Teensy_4.1_Board.step](Libraries/3dmodels/Teensy_4.1_Board.step), already attached to **U1** in the Main PCB. Its model path is `${KIPRJMOD}/Libraries/3dmodels/Teensy_4.1_Board.step`, so it works after downloading or cloning the repository without a machine-specific path.
 
 1. Download the repository ZIP or clone it, then extract/keep the entire Main Board project folder together.
