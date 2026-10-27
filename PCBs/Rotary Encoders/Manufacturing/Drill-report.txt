@@ -1,0 +1,24 @@
+Drill report for Rotary Encoders.kicad_pcb
+Created on 2026-10-27T01:40:33
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Rotary Encoders-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (9 holes))
+    T2  1.000mm  0.0394"  (44 holes))
+    T3  2.610mm  0.1028"  (12 holes))
+
+    Total plated holes count 65
+
+
+Drill file 'Rotary Encoders-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

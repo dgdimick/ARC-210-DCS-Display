@@ -6,7 +6,7 @@ Version **1.4 is the final PCB design and has been physically test-fitted**, con
 
 ![Rotary encoder PCB version 1.4 with six encoders](../../images/Rotary-Encoder-PCB-3D.png)
 
-Version 1.4 publishes the latest saved PCB layout and project settings, including the updated board outline and v1.4 silkscreen label. The earlier version 1.3 check results below are historical; electrical and PCB design checks have not been rerun for this upload.
+Version 1.4 publishes the latest saved PCB layout and project settings, including the updated board outline and v1.4 silkscreen label. Fresh version 1.4 checks were run October 27, 2026; see the manufacturing files section. The earlier version 1.3 results below are historical.
 
 For version 1.3, I checked this six-encoder PCB against its schematic. The electrical check reported zero errors and warnings; the PCB check reported zero violations, zero unconnected pads and zero schematic parity issues under the project's saved check settings. Courtyard and certain footprint checks are disabled in those settings.
 
@@ -52,7 +52,11 @@ The tested GPIO pairs, identified by the labels printed on the Teensy, are: SW1 
 
 ## Manufacturing files
 
-This upload contains the editable project. Export copper, silkscreen, solder-mask and Edge.Cuts Gerbers plus drill files from KiCad for your PCB manufacturer. Review the manufacturer's preview before ordering.
+Download [Rotary-Encoder-PCB-v1.4-Gerbers-Drill.zip](Manufacturing/Rotary-Encoder-PCB-v1.4-Gerbers-Drill.zip) for PCB fabrication. Generated October 27, 2026 from the published version **1.4** PCB using KiCad 10.0.7. [Individual Gerbers, drill files, drill maps, and check reports](Manufacturing/) are also included.
+
+The ZIP contains seven Gerber X2 layers (front/back copper, solder mask, silkscreen, and Edge.Cuts), a Gerber job file, separate metric Excellon PTH/NPTH drill files, a drill report, and manufacturing notes. Both Gerbers and drills use the absolute origin without mirroring. The source specifies a two-layer, 1.6 mm board. Verified drill totals: **65 plated holes and zero non-plated holes**; the empty NPTH file is included intentionally.
+
+Fresh checks reported **zero ERC violations, zero non-excluded DRC violations, zero unconnected items, and zero schematic/PCB parity issues** under the saved settings. Existing disabled checks remain in effect. Review the manufacturer's preview before ordering. Testing an assembled, manufactured PCB remains pending.
 
 PCB licensing: CERN-OHL-P-2.0, as specified in the repository.
 

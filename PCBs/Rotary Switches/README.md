@@ -27,9 +27,17 @@ I modified the PCB so it can also be used with the SQL On/Off switch. **JP1**, m
 
 The solder-lug A12515RNZQ still requires mechanical support and wires to the corresponding PCB connections; it does not fit the PCB-pin footprint directly.
 
-Validation for version 2.0: KiCad PCB DRC, with zones refilled, reported zero non-excluded violations and zero unconnected pads under the saved project settings. The project contains 15 specific PTH-inside-switch-courtyard exclusions for the rear-side resistors and connector; their lead and solder-joint clearance to the switch body still requires physical verification. Several other check categories are disabled in the project. Electrical schematic checks and schematic parity were not rerun for this upload. I’ve confirmed the mechanical fit. Testing the electrical operation of an assembled, manufactured board is still on my list; the check results above describe what has been verified so far.
+Validation for version 2.0: KiCad PCB DRC, with zones refilled, reported zero non-excluded violations and zero unconnected pads under the saved project settings. The project contains 15 specific PTH-inside-switch-courtyard exclusions for the rear-side resistors and connector; their lead and solder-joint clearance to the switch body still requires physical verification. Several other check categories are disabled in the project. Fresh electrical schematic and PCB checks, including schematic parity, were run October 27, 2026; see the manufacturing files section. I’ve confirmed the mechanical fit. Testing the electrical operation of an assembled, manufactured board is still on my list; the check results above describe what has been verified so far.
 
 **SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated, labelled SQL signal and GND solder pads are planned for the Master PCB so these wires can be soldered directly to it instead of using the switch PCB and cable headers; these pads have not yet been added to the PCB design.
+
+## Manufacturing files
+
+Download [Rotary-Switch-PCB-v2.0-Gerbers-Drill.zip](Manufacturing/Rotary-Switch-PCB-v2.0-Gerbers-Drill.zip) for PCB fabrication. Generated October 27, 2026 from the published version **2.0** PCB using KiCad 10.0.7. [Individual Gerbers, drill files, drill maps, and check reports](Manufacturing/) are also included.
+
+The ZIP contains seven Gerber X2 layers (front/back copper, solder mask, silkscreen, and Edge.Cuts), a Gerber job file, separate metric Excellon PTH/NPTH drill files, a drill report, and manufacturing notes. Both Gerbers and drills use the absolute origin without mirroring. The source specifies a two-layer, 1.6 mm board. Verified drill totals: **24 plated holes and zero non-plated holes**; the empty NPTH file is included intentionally.
+
+Fresh checks reported **zero ERC violations, zero non-excluded DRC violations, zero unconnected items, and zero schematic/PCB parity issues** under the saved settings. Existing disabled checks and the 15 PTH-inside-switch-courtyard exclusions remain in effect. Review the manufacturer's preview before ordering. Testing an assembled, manufactured PCB remains pending.
 
 ## Optional switch 3D model
 
