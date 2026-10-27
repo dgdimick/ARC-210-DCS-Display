@@ -1,6 +1,6 @@
 # ARC-210 Button Matrix PCB
 
-PCB version **3.1 — Final design**. KiCad 10 project.
+PCB version **3.1 — Final design; physical test fit confirmed**. KiCad 10 project.
 
 Updated October 27, 2026. The current PCB, schematic, project settings, and project-local footprint library are included in this folder.
 
@@ -22,7 +22,7 @@ The ZIP contains the seven Gerber X2 layers (front/back copper, solder mask, sil
 
 The exports were checked against the source: **130 plated holes and five non-plated holes**, including four 3.5 mm mounting holes and H3’s 12 mm SQL On/Off pass-through. [Individual files, drill maps, and drill report](Manufacturing/) are also available. Check the manufacturer's preview for the board outline, central opening, and drill placement before ordering. The printed fit check confirmed button alignment; manufactured-board assembly and electrical testing remain pending.
 
-**Final design and fit check — October 27, 2026:** The buttons are in the correct locations. The board edges were slightly too long and have been shortened for version **3.1**, which is the final design. Use v3.1 for new orders. The obsolete v3.0 manufacturing ZIP has been removed; Git history retains earlier revisions.
+**Final v3.1 design; test fit confirmed — October 27, 2026:** The revised v3.1 board has been physically test-fitted and confirmed to fit. The buttons are in the correct locations. The board edges were slightly too long and have been shortened for version **3.1**, which is the final design. Use v3.1 for new orders. The obsolete v3.0 manufacturing ZIP has been removed; Git history retains earlier revisions.
 
 ## Layout reference pictures
 

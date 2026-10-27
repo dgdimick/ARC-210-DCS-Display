@@ -84,7 +84,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 2. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
 3. Test the optional external 5 V power input and protection circuitry for the Main PCB. This circuit provides a protected 5 V supply for the TFT within its specified input-voltage range; the supply voltage may affect backlight brightness. JP1 selects the TFT power source: pins 1-2 select protected 5 V, and pins 2-3 select 3.3 V from the Teensy. To change supplies, power off the board and move the single jumper shunt. For the current build without button lighting, the external 5 V input and protection components can be omitted if the TFT uses the Teensy's 3.3 V supply and the total external 3.3 V load stays within the Teensy's 250 mA limit. Future button lighting would require the external 5 V supply and its input/protection circuitry.
 4. Finish the Main Board PCB design.
-5. Test-fit the Main PCB when its design is complete. The TFT, Button Matrix, Rotary Encoders, and Rotary Switches have already been physically checked; the Button Matrix v3.1 edges were shortened slightly and the button positions are confirmed correct.
+5. Test-fit the Main PCB when its design is complete. The TFT, Button Matrix, Rotary Encoders, and Rotary Switches have already been physically checked; the final Button Matrix v3.1 physical test fit and button alignment are confirmed.
 6. Publish the Main Board PCB layout and its Gerber/drill manufacturing package once the design is complete. The final Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 KiCad project files, schematics, Gerbers, drill files, and manufacturing ZIPs have already been uploaded; see the [PCB downloads](PCBs/README.md#gerber-and-drill-downloads).
 7. Complete the final assembly instructions, wiring diagrams and updated parts list.
 8. Document firmware installation and the required DCS-BIOS configuration.
@@ -95,9 +95,9 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
-**October 27, 2026 — Button Matrix PCB v3.1 finalized**
+**October 27, 2026 — Button Matrix PCB v3.1 finalized; test fit confirmed**
 
-The **Button Matrix PCB v3.1 is the final design**. The board edges were slightly too long and have been shortened; the printed fit check confirmed that the buttons are in the correct locations. The updated [KiCad files](PCBs/Button%20Matrix/) and [v3.1 Gerber/drill manufacturing ZIP](PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) are uploaded and ready for manufacture. Use v3.1 for new orders; it supersedes v3.0.
+The **Button Matrix PCB v3.1 is the final design, and its physical test fit is confirmed**. The board edges were slightly too long and have been shortened; the printed fit check confirmed that the buttons are in the correct locations. The updated [KiCad files](PCBs/Button%20Matrix/) and [v3.1 Gerber/drill manufacturing ZIP](PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) are uploaded and ready for manufacture. Use v3.1 for new orders; it supersedes v3.0.
 
 The final files pass ERC and DRC with zero reported violations, no unconnected items, and no schematic/PCB mismatches under the saved settings. Manufactured-board assembly and electrical testing remain pending. Only the Main Board PCB design remains to be completed.
 

@@ -6,7 +6,7 @@ The following three PCB designs are final. Physical fit and button alignment hav
 
 | PCB | Final version | Status |
 | --- | --- | --- |
-| [Button Matrix](Button%20Matrix/) | 3.1 | Final design; shortened edges and button alignment confirmed |
+| [Button Matrix](Button%20Matrix/) | 3.1 | Final design; v3.1 physical test fit and button alignment confirmed |
 | [Rotary Encoders](Rotary%20Encoders/) | 1.4 | Final design; test fit confirmed |
 | [Rotary Switches](Rotary%20Switches/) | 2.0 | Final design; test fit confirmed |
 
@@ -30,7 +30,7 @@ Review the manufacturer's preview before ordering. The Button Matrix's printed f
 
 ## Button Matrix PCB — version 3.1
 
-**Final design — October 27, 2026:** The printed fit check confirmed that the buttons are correctly positioned. The slightly long board edges were shortened, and version **3.1** is the final design, replacing v3.0. The updated KiCad and manufacturing files are uploaded.
+**Final design; v3.1 test fit confirmed — October 27, 2026:** The printed fit check confirmed that the buttons are correctly positioned. The slightly long board edges were shortened, and version **3.1** is the final design, replacing v3.0. The physical test fit of the revised v3.1 board is confirmed. The updated KiCad and manufacturing files are uploaded.
 
 The current unlit 16-button, 4 × 4 Button Matrix PCB is **version 3.1**. See the [Button Matrix README](Button%20Matrix/README.md) for front and back layout previews. The front carries the push-button switches; the back carries the matrix diodes and row/column connectors. A 12 mm pass-through provides clearance for the SQL On/Off switch.
 
