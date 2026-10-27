@@ -69,7 +69,7 @@ KiCad 10.0.7 checks run October 27, 2026 reported **zero ERC violations, zero DR
 
 The PC Flights panel buttons used for this build are painted and opaque, so light will not pass through them to illuminate their legends. This design has no button-lighting LEDs.
 
-A future lighting option would need suitable light-transmitting replacement buttons, a new Button LED PCB, and a revised Master PCB. It would require the **external 5 V supply and its power-input/protection circuitry**. The ARC-164 and ARC-184 projects will be completed before that option is revisited.
+A future lighting option would need suitable light-transmitting replacement buttons, a new Button LED PCB, and a revised Master PCB. It would require a separately designed power supply and driver circuit; the current USB/3.3 V Main Board no longer includes the former protected 5 V input. The ARC-164 and ARC-184 projects will be completed before that option is revisited.
 
 ## Build cost and community
 

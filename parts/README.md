@@ -8,9 +8,9 @@ The BOM lists schematic references, values, footprints, quantities, and do-not-p
 
 ## Power and future button lighting
 
-The current design keeps the Teensy powered by USB. On the Master PCB, JP1 selects the TFT supply: **pins 1–2 select protected external 5 V; pins 2–3 select Teensy 3.3 V**. Fit only one shunt and remove power before moving it. JP1 does not select USB/VIN power. Keep the external protected 5 V rail separate from Teensy VIN and 3.3 V; the circuit uses a common ground. The TFT’s backlight is separate from the proposed button-lighting LEDs.
+The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). TFT brightness at 3.3 V has been confirmed satisfactory. The external protected 5 V input and Main Board JP1 power selector have been removed. C5/C6 decoupling and the rotary-input filters remain. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
 
-**Future button lighting will require the external 5 V supply and the associated power-input and protection circuitry to be installed.** USB/VIN power is not the planned source for this lighting option. It would also need a revised Master PCB with space for the lighting-control SCR, associated discrete components, and a pin header, plus a new Button PCB design. That Button PCB is not currently planned; the ARC-164 and ARC-184 projects will be completed before this option is revisited. Button-lighting LEDs are not part of the current build or parts estimate.
+Future button lighting would require a separate power and driver design, suitable light-transmitting buttons, and a new Button LED PCB. The current Main Board has no external lighting-power circuit. This lighting revision is not currently planned; the other radio projects remain the priority.
 
 ## Estimated build cost
 
@@ -29,7 +29,7 @@ Prices checked October 22, 2026. Small hardware and PCB costs are allowances rat
 | [C&K A12505RNCQ multi-position rotary switches](https://www.digikey.com/en/products/detail/c-k/A12505RNCQ/2043159) | 2 | $26.82 |
 | [C&K A12515RNZQ SQL On/Off rotary switch](https://www.digikey.com/en/products/detail/c-k/A12515RNZQ/678340) | 1 | $12.01 |
 | [6 × 6 × 5 mm tactile button switches](https://www.amazon.com/dp/B01CGMP9GY) and [matrix diodes](#hardware-selection-and-supplier-links) | 16 each | $5–$10 |
-| [Resistors, capacitors, power/protection components and backlight MOSFET](BOM.csv) | Parts needed for one build | $10–$20 |
+| [Resistors, capacitors and remaining electronics](BOM.csv) | Allowance pending an updated full-panel parts estimate; removed power/protection parts are excluded | $10–$20 |
 | [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Parts needed for one build | $15–$25 |
 | [Screws and PCB standoffs](https://www.amazon.com/dp/B0H1QS5Q6N) | Allowance | $8–$15 |
 | [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
@@ -37,7 +37,7 @@ Prices checked October 22, 2026. Small hardware and PCB costs are allowances rat
 | USB cable | 1 | $3–$6 |
 | **Estimated DIY purchasing cost** | | **$275–$320** |
 
-For the current build without button lighting, an external regulated 5 V power adapter is optional when using the documented Teensy 3.3 V TFT supply option within its current limit. Allow approximately **$8–$15** for the adapter. **The external 5 V supply becomes required for any future button-lighting revision.**
+The current Main Board is USB-powered and does not use an external 5 V adapter. A future button-lighting redesign would need its own power arrangement, which is outside the current build estimate.
 
 This estimate excludes tools, labor, cockpit mounting fasteners, shipping, tax and tariffs. Buying component assortments or minimum PCB quantities may increase the initial purchase cost and leave spare parts.
 
@@ -49,7 +49,7 @@ My build uses up to six PCBs controlled by one Teensy 4.1: the master PCB, butto
 
 The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. When using the optional SQL On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
 
-**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated, labelled SQL signal and GND solder pads are planned for the Master PCB so these wires can be soldered directly to it instead of using the switch PCB and cable headers; these pads have not yet been added to the PCB design.
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available; final pad placement and routing are pending.
 
 ## Rotary-switch test wiring
 
@@ -63,35 +63,24 @@ The corrected [Rotary Switch KiCad project, version 2.0](../PCBs/Rotary%20Switch
 
 ## Panel illumination removed — October 6, 2026
 
-The panel/button illumination LEDs have been dropped because there is insufficient clearance with the TFT display in the current mechanical layout. The buttons supplied with the PC Flights panel used for this build are painted and opaque, so light will not pass through them. Adding LEDs behind these buttons would not illuminate their legends; backlit buttons would require suitable light-transmitting replacements. The parts list no longer includes the 16 panel LEDs (D21–D36) or their 16 current-limiting resistors (R21–R36). The TFT display and its backlight remain, as does the separate power indicator LED.
+The panel/button illumination LEDs have been dropped because there is insufficient clearance with the TFT display in the current mechanical layout. The buttons supplied with the PC Flights panel used for this build are painted and opaque, so light will not pass through them. Adding LEDs behind these buttons would not illuminate their legends; backlit buttons would require suitable light-transmitting replacements. The parts list no longer includes the 16 panel LEDs (D21–D36) or their 16 current-limiting resistors (R21–R36). The TFT display and its backlight remain. The separate power-indicator LED was removed with the protected 5 V branch.
 
 This update changes the documentation and parts list only; existing schematic drawings may still show the former panel-lighting circuit.
 
-## Main Controller power and protection parts
+## Main Controller power and decoupling
 
-I am including the following power-input and protection components from the current Main Controller schematic. These entries are already included in [BOM.csv](BOM.csv); the quantities below are for one Main Controller board.
+The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). TFT brightness at 3.3 V has been confirmed satisfactory. The external protected 5 V input and Main Board JP1 power selector have been removed. C5/C6 decoupling and the rotary-input filters remain. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
+
+The current Main Board retains:
 
 | Reference | Part / value | Quantity |
 | --- | --- | ---: |
-| J3 | DC barrel power-input jack, labelled 5.0–5.5 V input in the current schematic | 1 |
-| F2 | Resettable PTC fuse, 1.1 A hold current | 1 |
-| D1 | SB560 Schottky diode | 1 |
 | C5 | 470 µF, 10 V electrolytic capacitor | 1 |
 | C6 | 100 nF (0.1 µF) capacitor | 1 |
-| D2 | Green power indicator LED, 5 mm footprint | 1 |
-| R15 | 1 kΩ resistor | 1 |
-| D3 | 1N4734A, 5.6 V Zener diode | 1 |
-| R16 | 220 Ω resistor | 1 |
-| R17 | 1 kΩ resistor | 1 |
-| Q2 | C106D SCR | 1 |
-| JP1 | 3-pin header, 2.54 mm pitch, for TFT power selection | 1 |
-| JP1 accessory | 2-pin jumper shunt, 2.54 mm pitch | 1 |
 
-Fit the JP1 shunt across **pins 1–2 for protected 5 V** or **pins 2–3 for Teensy 3.3 V**. Fit only one shunt and remove power before changing it. This Main Controller header jumper is separate from the rotary-switch PCB solder jumper also named JP1.
+J3, F2, D1, D2, D3, Q2, R15–R17, and the Main Board JP1 header/shunt are removed and are not required purchases for this revision. The [BOM](BOM.csv) has been updated to remove those entries. Other mixed-panel BOM entries and the cost allowance still need review as the Main Board layout is finalized; use its current schematic as the authority for Main Board parts.
 
-The TFT backlight control on the Main Controller also uses **Q3: IRLZ44N MOSFET**, **R37: 10 kΩ**, and **R38: 100 Ω**, one of each. These are also listed in the BOM.
-
-I still need to finalize the Main Controller PCB. The exact barrel-jack size, PTC ordering code, resistor wattages and unfinished footprints need to be confirmed against that final design. This section records the current schematic parts. The external adapter is budgeted separately above; it is required for the future button-lighting option.
+The 100 nF rotary-input capacitors C1/C2 and series resistors R1/R2 are retained. SQL solder-wire pads TP1/TP2 are implemented in the Main Board draft; placement and routing remain pending.
 
 ## Teensy GPIO labels and KiCad pin numbers
 
@@ -107,24 +96,26 @@ I still need to finalize the Main Controller PCB. The exact barrel-jack size, PT
 
 For example, connect a rotary-switch signal to the Teensy connection marked **14/A0**, which is **KiCad pad 36**—not pad 14. In KiCad, read the symbol’s pin name and net label to identify the signal. Updating the PCB from the schematic with the matching symbol and footprint maps the connections to the correct physical locations. This pad mapping applies to the Teensy library supplied with this project; other libraries may use different numbering.
 
-## Pin headers and mating connectors — October 12, 2026
+<a id="pin-headers-and-mating-connectors--october-12-2026"></a>
 
-Quantities below are for **one complete panel with the optional SQL On/Off PCB installed**, including all three rotary-switch PCBs. If you wire the solder-lug SQL switch directly, omit its PCB-side header and cable connectors as appropriate for your wiring method. The dedicated Master PCB SQL signal and GND solder pads are planned and have not yet been added. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
+## Pin headers and mating connectors — October 27, 2026
+
+Quantities below are for **one complete panel with the optional SQL On/Off PCB installed**, including all three rotary-switch PCBs. If you wire the solder-lug SQL switch directly, omit its PCB-side header and cable connectors as appropriate for your wiring method. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available; final pad placement and routing are pending. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
 
 | Location / use | Board-side male header | Quantity | Mating cable housings |
 | --- | --- | ---: | --- |
 | Master J4 and Encoder PCB J1 | 1x14 | 2 | Two 1x14 female |
-| Master J2 and Button PCB | 1x08 | 2 | Two 1x08 female |
+| Master J2 | 1x08 | 1 | One 1x08 female |
+| Button Matrix PCB J1/J2 | 1x04 | 2 | Two 1x04 female |
 | Master J9/J10 and two multi-position switch PCBs | 1x03 | 4 | Four 1x03 female |
 | Master SQL1 | 1x02 | 1 | One 1x02 female |
 | SQL On/Off switch PCB J1 | 1x03 | 1 | One 1x03 female; use pins 2 and 3 only |
 | Master J1, TFT connection | 1x08 | 1 | One 1x08 female at master; one 1x14 female at TFT module |
-| Master JP1, power selector | 1x03 | 1 | One 2-pin jumper shunt |
 | Teensy mounting | Two 1x24 male strips on Teensy | 2 | Two 1x24 female PCB socket strips on master |
 
-Totals: **two 1x14, three 1x08, six 1x03 and one 1x02 male board headers**, plus two 1x24 Teensy male strips if not already fitted. Cable housings total **three 1x14, three 1x08, five 1x03 and one 1x02 female**, separate from the two 1x24 board sockets and JP1 shunt. Use at least **76 female crimp contacts**, plus spares, matched to the housing manufacturer's series. Wire lengths depend on the final panel layout. Preterminated female cables can replace housings and crimp contacts without counting both.
+Totals: **two 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 male board headers**, plus two 1x24 Teensy male strips if not already fitted. Cable housings total **three 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 female**, separate from the two 1x24 board sockets. Use at least **76 female crimp contacts**, plus spares, matched to the housing manufacturer's series. Wire lengths depend on the final panel layout. Preterminated female cables can replace housings and crimp contacts without counting both.
 
-The TFT module normally already has its 14-pin male header. Check before purchasing an additional one. The [published Button Matrix v1.1 schematic](../PCBs/Button%20Matrix/) currently uses separate four-pin row and column connectors; the single 8-pin Button PCB header listed above remains provisional until its design is finished; Master J2 and J9/J10 still need footprint assignments. Check connector stack height and cable clearance before finalizing the Main and Button PCBs. Unused Teensy USB-host, Ethernet and auxiliary headers are not required by the current panel wiring.
+The TFT module normally already has its 14-pin male header. Check before purchasing an additional one. The final [Button Matrix v3.1](../PCBs/Button%20Matrix/) uses separate four-pin row and column connectors. Split the Master J2 eight-wire matrix cable accordingly: pins 1–4 to Button Matrix J1, and pins 5–8 to Button Matrix J2. Main J2 and J9/J10 now have 2.54 mm header footprints assigned. Check connector stack height and cable clearance when arranging the Main PCB. Unused Teensy USB-host, Ethernet and auxiliary headers are not required.
 
 **Cable mapping matters:** the encoder cable is pin-for-pin between the two 14-pin headers. The matrix cable uses rows on pins 1–4 and columns on pins 5–8. Multi-position switch cables use 1 = 3.3 V, 2 = signal and 3 = GND. When using the optional SQL On/Off PCB, its cable maps master SQL1 pin 1 to switch-board J1 pin 2, and SQL1 pin 2 to switch-board J1 pin 3; switch-board pin 1 stays unused.
 
@@ -132,7 +123,7 @@ The TFT cable is **not straight-through**. With the current master schematic and
 
 | Master J1 pin | Signal | TFT module pin |
 | --- | --- | --- |
-| 1 | Selected VCC | 1 |
+| 1 | Teensy 3.3 V (direct supply) | 1 |
 | 2 | GND | 2 |
 | 3 | RESET / GPIO8 | 4 |
 | 4 | CS / GPIO10 | 3 |
