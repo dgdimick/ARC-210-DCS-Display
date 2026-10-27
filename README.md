@@ -83,7 +83,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 1. Some SAT menus are already complete. The remaining work is on some menus three or four levels deep, which will be completed in firmware 2.0.
 2. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
 3. Test the optional external 5 V power input and protection circuitry for the Main PCB. This circuit provides a protected 5 V supply for the TFT within its specified input-voltage range; the supply voltage may affect backlight brightness. JP1 selects the TFT power source: pins 1-2 select protected 5 V, and pins 2-3 select 3.3 V from the Teensy. To change supplies, power off the board and move the single jumper shunt. For the current build without button lighting, the external 5 V input and protection components can be omitted if the TFT uses the Teensy's 3.3 V supply and the total external 3.3 V load stays within the Teensy's 250 mA limit. Future button lighting would require the external 5 V supply and its input/protection circuitry.
-4. Finish the Master Board and Button PCB designs. Add labelled SQL signal (GPIO 41) and GND solder pads to the Master PCB for builders who wire the solder-lug SQL On/Off switch directly instead of using its optional PCB.
+4. Finish the Main Board PCB design.
 5. The TFT, Rotary Encoders and Rotary Switches have all been test-fitted. The Button and Main PCBs still need to be test-fitted.
 6. Publish the final schematics, Gerber files and project ZIP files so others can build their own radio panels.
 7. Complete the final assembly instructions, wiring diagrams and updated parts list.
