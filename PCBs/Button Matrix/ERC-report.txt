@@ -1,5 +1,3 @@
-Button Matrix PCB v3.0 — ERC summary
-Checked October 27, 2026 with KiCad 10.0.7.
-Command: kicad-cli sch erc "Button Matrix.kicad_sch"
-Result: 0 violations under the saved project settings.
-This check does not establish mechanical fit or successful hardware operation.
+Button Matrix final PCB v3.1
+Checked October 27, 2026 using KiCad 10.0.7.
+ERC: 0 violations under saved settings. See ERC-report.json.

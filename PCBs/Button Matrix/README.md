@@ -1,6 +1,6 @@
 # ARC-210 Button Matrix PCB
 
-PCB version **3.0**. KiCad 10 project.
+PCB version **3.1 — Final design**. KiCad 10 project.
 
 Updated October 27, 2026. The current PCB, schematic, project settings, and project-local footprint library are included in this folder.
 
@@ -12,21 +12,21 @@ Use **Code → Download ZIP** on the repository, extract it, and keep this folde
 
 The design uses standard KiCad `Connector`, `Device`, `Switch`, and `Mechanical` symbols. Install KiCad’s standard libraries and keep `fp-lib-table` and `ButtonMatrix.pretty/` beside the project. The local library supplies H3’s 12 mm non-plated SQL On/Off switch pass-through footprint.
 
-**PCB version 3.0:** The saved PCB includes placement and routing. Unused floating copper fills were removed on October 27, 2026. Physical test fitting and testing of an assembled manufactured board remain pending. A [Gerber and drill ZIP](Manufacturing/Button-Matrix-PCB-v3.0-Gerbers-Drill.zip) is included for manufacturing.
+**PCB version 3.1:** The saved PCB includes placement and routing. Unused floating copper fills were removed on October 27, 2026. The slightly long board edges were shortened, and the printed fit check confirmed correct button positions. Testing an assembled manufactured board remains pending. A [Gerber and drill ZIP](Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) is included for manufacturing.
 
 ## Gerber and drill files
 
-Download [Button-Matrix-PCB-v3.0-Gerbers-Drill.zip](Manufacturing/Button-Matrix-PCB-v3.0-Gerbers-Drill.zip) for a PCB manufacturer. Generated October 27, 2026 from the corrected version 3.0 PCB using KiCad 10.0.7.
+Download [Button-Matrix-PCB-v3.1-Gerbers-Drill.zip](Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) for a PCB manufacturer. Generated October 27, 2026 from the corrected version 3.1 PCB using KiCad 10.0.7.
 
 The ZIP contains the seven Gerber X2 layers (front/back copper, solder mask, silkscreen, and board outline), a Gerber job file, separate metric Excellon PTH/NPTH drill files, and manufacturing notes. Both Gerbers and drills use the absolute origin without mirroring. The source specifies a two-layer, 1.6 mm board.
 
-The exports were checked against the source: **130 plated holes and five non-plated holes**, including four 3.5 mm mounting holes and H3’s 12 mm SQL On/Off pass-through. [Individual files, drill maps, and drill report](Manufacturing/) are also available. Check the manufacturer's preview for the board outline, central opening, and drill placement before ordering. Physical test fit and manufactured-board testing remain pending.
+The exports were checked against the source: **130 plated holes and five non-plated holes**, including four 3.5 mm mounting holes and H3’s 12 mm SQL On/Off pass-through. [Individual files, drill maps, and drill report](Manufacturing/) are also available. Check the manufacturer's preview for the board outline, central opening, and drill placement before ordering. The printed fit check confirmed button alignment; manufactured-board assembly and electrical testing remain pending.
 
-**Button alignment check — October 27, 2026:** I’m 3D-printing the Button Matrix board to check that the button positions line up correctly with the faceplate. I’m 99% sure the alignment is right, but the physical fit check is still in progress.
+**Final design and fit check — October 27, 2026:** The buttons are in the correct locations. The board edges were slightly too long and have been shortened for version **3.1**, which is the final design. Use v3.1 for new orders; the earlier v3.0 manufacturing ZIP is retained only as a superseded reference.
 
-## PCB version 3.0 layout previews
+## Layout reference pictures
 
-Front and back views of the Button Matrix PCB version **3.0** layout in progress. These previews do not indicate a fabrication-ready release. The large 12 mm opening is the pass-through for the SQL On/Off switch.
+These front and back pictures show the earlier **v3.0** layout. The final v3.1 files have slightly shortened board edges; use the current KiCad layout and manufacturing files for exact dimensions. The large opening is the SQL On/Off switch pass-through.
 
 ### Front — push-button switches
 
@@ -61,9 +61,9 @@ The connector reference J2 on this button schematic is different from J2 on the 
 
 D5–D20 are the 16 matrix diodes. Their cathodes connect to the row lines. Confirm the intended 1N4148 parts, polarity, and supplied footprints before fabrication. See the [parts documentation](../../parts/README.md).
 
-The [combined hardware test](../../Firmware/Test%20Code/ARC210_Button_Test/) documents the working matrix GPIO assignments and button tests. A successful breadboard test does not establish that this unfinished PCB layout has been assembled or tested.
+The [combined hardware test](../../Firmware/Test%20Code/ARC210_Button_Test/) documents the working matrix GPIO assignments and button tests. A successful breadboard test does not establish that the final PCB design has been assembled or tested.
 
-KiCad 10.0.7 checks run October 27, 2026 reported **zero ERC violations, zero DRC errors, zero unconnected items, and zero schematic/PCB parity issues** under the saved settings. After removal of the unused no-net copper fills, DRC reports **zero warnings**. The board has no ground net and does not require a ground plane. See the [ERC summary](ERC-report.txt) and [DRC report](DRC-report.json). Some check categories are disabled. These checks do not establish physical fit or successful hardware operation.
+KiCad 10.0.7 checks run October 27, 2026 reported **zero ERC violations, zero DRC errors, zero unconnected items, and zero schematic/PCB parity issues** under the saved settings. After removal of the unused no-net copper fills, DRC reports **zero warnings**. The board has no ground net and does not require a ground plane. See the [ERC summary](ERC-report.txt) and [DRC report](DRC-report.json). Some check categories are disabled. Button alignment was verified with the printed fit check; electrical operation of an assembled manufactured board has not yet been tested.
 
 ## Lighting
 
