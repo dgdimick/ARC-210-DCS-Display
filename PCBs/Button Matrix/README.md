@@ -22,6 +22,8 @@ The ZIP contains the seven Gerber X2 layers (front/back copper, solder mask, sil
 
 The exports were checked against the source: **130 plated holes and five non-plated holes**, including four 3.5 mm mounting holes and H3’s 12 mm SQL On/Off pass-through. [Individual files, drill maps, and drill report](Manufacturing/) are also available. Check the manufacturer's preview for the board outline, central opening, and drill placement before ordering. Physical test fit and manufactured-board testing remain pending.
 
+**Button alignment check — October 27, 2026:** I’m 3D-printing the Button Matrix board to check that the button positions line up correctly with the faceplate. I’m 99% sure the alignment is right, but the physical fit check is still in progress.
+
 ## PCB version 3.0 layout previews
 
 Front and back views of the Button Matrix PCB version **3.0** layout in progress. These previews do not indicate a fabrication-ready release. The large 12 mm opening is the pass-through for the SQL On/Off switch.
