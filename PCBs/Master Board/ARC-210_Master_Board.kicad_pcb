@@ -694,11 +694,10 @@
 			)
 		)
 	)
-	
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "26a03a8d-0ec0-4631-bc1d-59c6ad89f1a4")
-		(at 289.356049 223.22825 180)
+		(at 152.325 146.85 180)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J9"
@@ -956,7 +955,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 		(layer "B.Cu")
 		(uuid "37812b52-2781-416a-a3fa-712a83a3b60b")
-		(at 315.15643 82.00475 180)
+		(at 173.965 110.8 180)
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=5.08mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 5.08mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R2"
@@ -1142,7 +1141,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "3a610f40-90c5-498a-a677-67cfff82c871")
-		(at 316.844145 223.22825 180)
+		(at 185.075 127.475 180)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J10"
@@ -1776,7 +1775,6 @@
 			)
 		)
 	)
-	
 	(footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 		(layer "B.Cu")
 		(uuid "6faa1ea5-b469-4975-a56c-67dcebd37647")
@@ -3484,7 +3482,7 @@
 			(uuid "cda4251e-5f5c-4b54-abd9-abe0a5461972")
 		)
 		(embedded_fonts no)
-		(model "${KICAD_USER_DIR}/teensy.pretty/Teensy_4.1_Assembly.STEP"
+		(model "${KIPRJMOD}/Libraries/3dmodels/Teensy_4.1_Board.step"
 			(offset
 				(xyz 0 0 0.762)
 			)
@@ -3499,7 +3497,7 @@
 	(footprint "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
 		(layer "B.Cu")
 		(uuid "c4272522-3758-46f5-8843-44dd71fef9b5")
-		(at 391.923098 82.48475 180)
+		(at 158.025 74.675 180)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
 		(property "Reference" "TP2"
@@ -3616,7 +3614,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "d6944455-d741-4514-a5f2-73e93596b5c7")
-		(at 337.375478 82.46475 180)
+		(at 183.525 83.225 180)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "SQL1"
@@ -4176,7 +4174,7 @@
 	(footprint "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
 		(layer "B.Cu")
 		(uuid "e852f8f6-5deb-4fb2-ba13-ae2942342d11")
-		(at 366.05405 82.48475 180)
+		(at 149.075 69.2 180)
 		(descr "THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm")
 		(tags "test point THT pad")
 		(property "Reference" "TP1"

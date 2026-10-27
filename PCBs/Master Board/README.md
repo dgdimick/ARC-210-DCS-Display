@@ -8,7 +8,7 @@ Download this repository using **Code → Download ZIP**, extract it, and keep t
 
 You can also download the [schematic](ARC-210_Master_Board.kicad_sch) and [PCB draft](ARC-210_Master_Board.kicad_pcb) directly. Downloading only that file does not include the project library configuration.
 
-This is a **PCB layout draft**, not a manufacturing release. The outline, switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes, and retained component footprints are present. All 13 circuit component footprints are on B.Cu, with their bodies facing away from the faceplate, and are grouped beside the outline for placement. Component placement, routing, current verification, and physical test fit remain unfinished. No Main Board Gerber package is included.
+This is a **PCB layout draft**, not a manufacturing release. The outline, switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes, and retained component footprints are present. All 13 circuit component footprints are on B.Cu, with their bodies facing away from the faceplate. Initial placement is in progress. Component placement, routing, current verification, and physical test fit remain unfinished. No Main Board Gerber package is included.
 
 ## Signals and connectors
 
@@ -35,6 +35,19 @@ Future button lighting would require a separate power and driver design, suitabl
 
 Both seven-position switches worked with their outputs connected directly to GPIO 14 and 15, without the schematic's 220 Ω series resistors or 100 nF filter capacitors. The six 1 kΩ ladder resistors on each switch board were fitted and JP1 on each switch board was open. Voltage fluctuations were visible on the TFT but did not affect the detected switch positions.
 
+## Teensy 4.1 in the 3D Viewer
+
+The project includes [Teensy_4.1_Board.step](Libraries/3dmodels/Teensy_4.1_Board.step), already attached to **U1** in the Main PCB. Its model path is `${KIPRJMOD}/Libraries/3dmodels/Teensy_4.1_Board.step`, so it works after downloading or cloning the repository without a machine-specific path.
+
+1. Download the repository ZIP or clone it, then extract/keep the entire Main Board project folder together.
+2. Open `ARC-210_Master_Board.kicad_pro` and launch PCB Editor.
+3. Open **View → 3D Viewer** (**Alt+3**).
+4. Rotate to the back/underside: U1 and the other component bodies are on **B.Cu**, facing away from the faceplate.
+
+If U1 is missing, check its **Footprint Properties → 3D Models** entry and confirm the STEP file is present at the path above. Reopen the viewer after replacing project files. The old missing assembly-model path and erroneous footprint-folder model entry have been removed.
+
+The model was checked in bottom and angled renders. This verifies visibility and visual alignment; physical mounting/socket clearance still needs the Main Board fit check. No electrical connections were changed by attaching the model.
+
 ## Included libraries and checks
 
 - `Libraries/symbols/teensy.kicad_sym`: Teensy symbols; accompanying license included.
@@ -43,7 +56,7 @@ Both seven-position switches worked with their outputs connected directly to GPI
 - `ARC210_Custom.pretty`: historical custom footprints; the removed protection parts are no longer fitted.
 - `sym-lib-table` and `fp-lib-table`: project-relative library paths.
 
-Install KiCad's standard symbol and footprint libraries too. Optional 3D models are not included and are not required to read the schematic.
+Install KiCad's standard symbol, footprint, and 3D model libraries too. The Teensy 4.1 STEP model is now included and attached to U1; see the 3D Viewer section above.
 
 October 27, 2026 checks: [ERC](ERC-report.json) reports zero violations under the saved settings. [PCB DRC and schematic parity](DRC-report.json) report zero non-routing violations and zero schematic/PCB mismatches, with 51 unconnected items because the draft is not routed. Netlist verification confirms J1 pin 1 connects directly to `TEENSY_3V3` / U1 pad 15. Only the C5/C6 pin connections were removed; C1/C2 and all other retained connections are unchanged. Some check categories are disabled. These results do not make the draft ready for manufacture.
 
@@ -54,3 +67,4 @@ PCB design license: CERN-OHL-P-2.0, as specified in the [main README](../../READ
 See the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) to plan your budget. This is primarily a DIY project, with files and guidance to help you source parts and fabrication independently.
 
 Questions or build photos? Join [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions), or [introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1).
+

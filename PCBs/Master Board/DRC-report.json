@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-10-27T04:38:54",
+    "date": "2026-10-27T05:06:07",
     "ignored_checks": [
         {
             "description": "Footprint has no courtyard defined",
@@ -92,8 +92,8 @@
                 {
                     "description": "PTH pad 2 [Net-(J10-Pin_2)] of J10",
                     "pos": {
-                        "x": 316.844145,
-                        "y": 225.76825
+                        "x": 185.075,
+                        "y": 130.015
                     },
                     "uuid": "6b3cd562-5b11-4800-bef8-a72a5abcbdd6"
                 }
@@ -138,8 +138,8 @@
                 {
                     "description": "PTH pad 1 [/TEENSY_3V3] of J9",
                     "pos": {
-                        "x": 289.356049,
-                        "y": 223.22825
+                        "x": 152.325,
+                        "y": 146.85
                     },
                     "uuid": "aeed23a0-6c26-4b76-a1b2-194db3268927"
                 }
@@ -153,16 +153,16 @@
                 {
                     "description": "PTH pad 1 [/TEENSY_3V3] of J9",
                     "pos": {
-                        "x": 289.356049,
-                        "y": 223.22825
+                        "x": 152.325,
+                        "y": 146.85
                     },
                     "uuid": "aeed23a0-6c26-4b76-a1b2-194db3268927"
                 },
                 {
                     "description": "PTH pad 1 [/TEENSY_3V3] of J10",
                     "pos": {
-                        "x": 316.844145,
-                        "y": 223.22825
+                        "x": 185.075,
+                        "y": 127.475
                     },
                     "uuid": "3c83a058-9d64-4101-b2b5-cc08294b8e3f"
                 }
@@ -176,16 +176,16 @@
                 {
                     "description": "PTH pad 2 [Net-(J9-Pin_2)] of J9",
                     "pos": {
-                        "x": 289.356049,
-                        "y": 225.76825
+                        "x": 152.325,
+                        "y": 149.39
                     },
                     "uuid": "c7b13d5e-11fd-4ddf-8521-79f8f9298dda"
                 },
                 {
                     "description": "PTH pad 1 [Net-(J9-Pin_2)] of R2",
                     "pos": {
-                        "x": 315.15643,
-                        "y": 82.00475
+                        "x": 173.965,
+                        "y": 110.8
                     },
                     "uuid": "020cf276-8db1-4380-9efd-3d0b9127aeea"
                 }
@@ -220,20 +220,20 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "PTH pad 14 [GND] of J4",
-                    "pos": {
-                        "x": 81.325,
-                        "y": 114.405
-                    },
-                    "uuid": "78831404-64ef-4237-8bf9-c842244dd10f"
-                },
-                {
                     "description": "PTH pad 1 [GND] of C1",
                     "pos": {
                         "x": 115.975,
                         "y": 84.275
                     },
                     "uuid": "4b3c6373-4282-4308-a5bf-d21d6e4ef09d"
+                },
+                {
+                    "description": "PTH pad 34 [GND] of U1",
+                    "pos": {
+                        "x": 143.45,
+                        "y": 109.965
+                    },
+                    "uuid": "3eef59d3-9867-41fe-ae83-ebb5003c3c8c"
                 }
             ],
             "severity": "error",
@@ -251,12 +251,12 @@
                     "uuid": "4b3c6373-4282-4308-a5bf-d21d6e4ef09d"
                 },
                 {
-                    "description": "PTH pad 34 [GND] of U1",
+                    "description": "PTH pad 14 [GND] of J4",
                     "pos": {
-                        "x": 143.45,
-                        "y": 109.965
+                        "x": 81.325,
+                        "y": 114.405
                     },
-                    "uuid": "3eef59d3-9867-41fe-ae83-ebb5003c3c8c"
+                    "uuid": "78831404-64ef-4237-8bf9-c842244dd10f"
                 }
             ],
             "severity": "error",
@@ -320,6 +320,29 @@
                     "uuid": "17625428-54e0-4de4-bf44-9fef49aa91a3"
                 },
                 {
+                    "description": "PTH pad 64 [GND] of U1",
+                    "pos": {
+                        "x": 139.0116,
+                        "y": 130.555
+                    },
+                    "uuid": "af2fa0e5-bcb1-4486-9500-ac3f0d0c6fb4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 58 [GND] of U1",
+                    "pos": {
+                        "x": 131.2608,
+                        "y": 131.6058
+                    },
+                    "uuid": "17625428-54e0-4de4-bf44-9fef49aa91a3"
+                },
+                {
                     "description": "PTH pad 1 [GND] of U1",
                     "pos": {
                         "x": 128.21,
@@ -343,12 +366,12 @@
                     "uuid": "af2fa0e5-bcb1-4486-9500-ac3f0d0c6fb4"
                 },
                 {
-                    "description": "PTH pad 58 [GND] of U1",
+                    "description": "PTH pad 34 [GND] of U1",
                     "pos": {
-                        "x": 131.2608,
-                        "y": 131.6058
+                        "x": 143.45,
+                        "y": 109.965
                     },
-                    "uuid": "17625428-54e0-4de4-bf44-9fef49aa91a3"
+                    "uuid": "3eef59d3-9867-41fe-ae83-ebb5003c3c8c"
                 }
             ],
             "severity": "error",
@@ -357,14 +380,6 @@
         {
             "description": "Missing connection between items",
             "items": [
-                {
-                    "description": "PTH pad 64 [GND] of U1",
-                    "pos": {
-                        "x": 139.0116,
-                        "y": 130.555
-                    },
-                    "uuid": "af2fa0e5-bcb1-4486-9500-ac3f0d0c6fb4"
-                },
                 {
                     "description": "PTH pad 47 [GND] of U1",
                     "pos": {
@@ -372,6 +387,14 @@
                         "y": 142.985
                     },
                     "uuid": "a5d7c841-dbaf-4812-bec3-eff5042224c6"
+                },
+                {
+                    "description": "PTH pad 3 [GND] of J9",
+                    "pos": {
+                        "x": 152.325,
+                        "y": 151.93
+                    },
+                    "uuid": "5554cf10-3616-4a6f-a3dd-c478d1964c69"
                 }
             ],
             "severity": "error",
@@ -380,6 +403,14 @@
         {
             "description": "Missing connection between items",
             "items": [
+                {
+                    "description": "PTH pad 47 [GND] of U1",
+                    "pos": {
+                        "x": 143.45,
+                        "y": 142.985
+                    },
+                    "uuid": "a5d7c841-dbaf-4812-bec3-eff5042224c6"
+                },
                 {
                     "description": "PTH pad 64 [GND] of U1",
                     "pos": {
@@ -387,14 +418,6 @@
                         "y": 130.555
                     },
                     "uuid": "af2fa0e5-bcb1-4486-9500-ac3f0d0c6fb4"
-                },
-                {
-                    "description": "PTH pad 34 [GND] of U1",
-                    "pos": {
-                        "x": 143.45,
-                        "y": 109.965
-                    },
-                    "uuid": "3eef59d3-9867-41fe-ae83-ebb5003c3c8c"
                 }
             ],
             "severity": "error",
@@ -404,13 +427,28 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "PTH pad 34 [GND] of U1",
+                    "description": "PTH pad 3 [GND] of J9",
                     "pos": {
-                        "x": 143.45,
-                        "y": 109.965
+                        "x": 152.325,
+                        "y": 151.93
                     },
-                    "uuid": "3eef59d3-9867-41fe-ae83-ebb5003c3c8c"
+                    "uuid": "5554cf10-3616-4a6f-a3dd-c478d1964c69"
                 },
+                {
+                    "description": "PTH pad 3 [GND] of J10",
+                    "pos": {
+                        "x": 185.075,
+                        "y": 132.555
+                    },
+                    "uuid": "06b18f10-eefb-4e66-ba23-0fca0ccfc247"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
                 {
                     "description": "PTH pad 2 [GND] of C2",
                     "pos": {
@@ -418,96 +456,35 @@
                         "y": 87.325
                     },
                     "uuid": "e739ab86-5f14-4966-95b5-3d51aece2716"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "PTH pad 3 [GND] of J9",
-                    "pos": {
-                        "x": 289.356049,
-                        "y": 228.30825
-                    },
-                    "uuid": "5554cf10-3616-4a6f-a3dd-c478d1964c69"
                 },
-                {
-                    "description": "PTH pad 3 [GND] of J10",
-                    "pos": {
-                        "x": 316.844145,
-                        "y": 228.30825
-                    },
-                    "uuid": "06b18f10-eefb-4e66-ba23-0fca0ccfc247"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "PTH pad 3 [GND] of J9",
-                    "pos": {
-                        "x": 289.356049,
-                        "y": 228.30825
-                    },
-                    "uuid": "5554cf10-3616-4a6f-a3dd-c478d1964c69"
-                },
-                {
-                    "description": "PTH pad 47 [GND] of U1",
-                    "pos": {
-                        "x": 143.45,
-                        "y": 142.985
-                    },
-                    "uuid": "a5d7c841-dbaf-4812-bec3-eff5042224c6"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "PTH pad 3 [GND] of J10",
-                    "pos": {
-                        "x": 316.844145,
-                        "y": 228.30825
-                    },
-                    "uuid": "06b18f10-eefb-4e66-ba23-0fca0ccfc247"
-                },
-                {
-                    "description": "PTH pad 2 [GND] of SQL1",
-                    "pos": {
-                        "x": 337.375478,
-                        "y": 85.00475
-                    },
-                    "uuid": "89db279e-d68a-4236-99e7-afef9c073a2d"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
                 {
                     "description": "PTH pad 1 [GND] of TP2",
                     "pos": {
-                        "x": 391.923098,
-                        "y": 82.48475
+                        "x": 158.025,
+                        "y": 74.675
                     },
                     "uuid": "101af8f8-f6a1-4dc1-ab6c-52f16820fd30"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 2 [GND] of C2",
+                    "pos": {
+                        "x": 164.675,
+                        "y": 87.325
+                    },
+                    "uuid": "e739ab86-5f14-4966-95b5-3d51aece2716"
                 },
                 {
                     "description": "PTH pad 2 [GND] of SQL1",
                     "pos": {
-                        "x": 337.375478,
-                        "y": 85.00475
+                        "x": 183.525,
+                        "y": 85.765
                     },
                     "uuid": "89db279e-d68a-4236-99e7-afef9c073a2d"
                 }
@@ -519,13 +496,28 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "PTH pad 1 [/ROTARY_GPIO15] of C2",
+                    "description": "PTH pad 2 [GND] of C2",
                     "pos": {
-                        "x": 167.175,
+                        "x": 164.675,
                         "y": 87.325
                     },
-                    "uuid": "e98ccd50-8d39-4a19-865f-e93f2c873c62"
+                    "uuid": "e739ab86-5f14-4966-95b5-3d51aece2716"
                 },
+                {
+                    "description": "PTH pad 34 [GND] of U1",
+                    "pos": {
+                        "x": 143.45,
+                        "y": 109.965
+                    },
+                    "uuid": "3eef59d3-9867-41fe-ae83-ebb5003c3c8c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
                 {
                     "description": "PTH pad 37 [/ROTARY_GPIO15] of U1",
                     "pos": {
@@ -533,6 +525,14 @@
                         "y": 117.585
                     },
                     "uuid": "0d13a94f-41de-4ded-86e4-2b50a7ecf61e"
+                },
+                {
+                    "description": "PTH pad 2 [/ROTARY_GPIO15] of R2",
+                    "pos": {
+                        "x": 168.885,
+                        "y": 110.8
+                    },
+                    "uuid": "4696ea7e-1f6e-490e-ba9d-a7465d5ba109"
                 }
             ],
             "severity": "error",
@@ -544,8 +544,8 @@
                 {
                     "description": "PTH pad 2 [/ROTARY_GPIO15] of R2",
                     "pos": {
-                        "x": 310.07643,
-                        "y": 82.00475
+                        "x": 168.885,
+                        "y": 110.8
                     },
                     "uuid": "4696ea7e-1f6e-490e-ba9d-a7465d5ba109"
                 },
@@ -1140,12 +1140,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "PTH pad 1 [/SQL_ONOFF] of SQL1",
+                    "description": "PTH pad 1 [/SQL_ONOFF] of TP1",
                     "pos": {
-                        "x": 337.375478,
-                        "y": 82.46475
+                        "x": 149.075,
+                        "y": 69.2
                     },
-                    "uuid": "d94b319f-5b77-4815-b480-b73e5e32ef1d"
+                    "uuid": "98a8a4bb-d4c1-4322-a622-d969bc9b7c69"
                 },
                 {
                     "description": "PTH pad 33 [/SQL_ONOFF] of U1",
@@ -1163,20 +1163,20 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "PTH pad 1 [/SQL_ONOFF] of TP1",
-                    "pos": {
-                        "x": 366.05405,
-                        "y": 82.48475
-                    },
-                    "uuid": "98a8a4bb-d4c1-4322-a622-d969bc9b7c69"
-                },
-                {
                     "description": "PTH pad 1 [/SQL_ONOFF] of SQL1",
                     "pos": {
-                        "x": 337.375478,
-                        "y": 82.46475
+                        "x": 183.525,
+                        "y": 83.225
                     },
                     "uuid": "d94b319f-5b77-4815-b480-b73e5e32ef1d"
+                },
+                {
+                    "description": "PTH pad 1 [/SQL_ONOFF] of TP1",
+                    "pos": {
+                        "x": 149.075,
+                        "y": 69.2
+                    },
+                    "uuid": "98a8a4bb-d4c1-4322-a622-d969bc9b7c69"
                 }
             ],
             "severity": "error",
