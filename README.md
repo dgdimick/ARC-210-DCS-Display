@@ -78,18 +78,6 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 **SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated, labelled SQL signal and GND solder pads are planned for the Master PCB so these wires can be soldered directly to it instead of using the switch PCB and cable headers; these pads have not yet been added to the PCB design.
 
-## Button Matrix PCB previews
-
-Front and back views of the Button Matrix PCB layout in progress. The large 12 mm opening provides clearance for the SQL On/Off switch.
-
-### Front — push-button switches
-
-![Button Matrix PCB front view showing the 16 push-button switches](images/Button-Matrix-PCB-3D.png)
-
-### Back — diodes and connectors
-
-![Button Matrix PCB back view showing the diodes, row and column connectors, and routing](images/Button-Matrix-PCB-Back-3D.png)
-
 ## Items that need to be completed
 
 1. Some SAT menus are already complete. The remaining work is on some menus three or four levels deep, which will be completed in firmware 2.0.
