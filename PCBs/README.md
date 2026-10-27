@@ -1,6 +1,6 @@
 # ARC-210 PCBs
 
-Updated October 12, 2026.
+Updated October 27, 2026.
 
 The following two PCB designs are final and have been physically test-fitted:
 
@@ -13,9 +13,11 @@ Use the KiCad project files in each linked folder. Each folder includes its wiri
 
 I’ve confirmed the mechanical fit of these designs. Testing an assembled, manufactured PCB is still on my list. Each project’s README explains the electrical checks and hardware tests completed so far.
 
-## Button PCB schematic
+## Button Matrix PCB — version 3.0
 
-The [Button Matrix v1.1 schematic and KiCad project](Button%20Matrix/) are available to download. This is the current unlit 16-button matrix; PCB layout and routing remain unfinished. It is separate from the future Button LED PCB, which is not currently planned.
+The current unlit 16-button, 4 × 4 Button Matrix PCB is **version 3.0**. See the [Button Matrix README](Button%20Matrix/README.md) for front and back layout previews. The front carries the push-button switches; the back carries the matrix diodes and row/column connectors. A 12 mm pass-through provides clearance for the SQL On/Off switch.
+
+The downloadable [schematic and KiCad project](Button%20Matrix/) remain the **version 1.1 schematic release**. The version 3.0 PCB previews show the layout in progress; a fabrication-ready PCB release and physical test fit are still pending. This board is separate from the future Button LED PCB, which is not currently planned.
 
 ## Master Board schematic
 
