@@ -13,6 +13,20 @@ Use the KiCad project files in each linked folder. Each folder includes its wiri
 
 I’ve confirmed the mechanical fit of these designs. Testing an assembled, manufactured PCB is still on my list. Each project’s README explains the electrical checks and hardware tests completed so far.
 
+## Gerber and drill downloads
+
+Manufacturing files generated October 27, 2026:
+
+| PCB | Version | Gerber and drill ZIP | Individual files and reports |
+| --- | --- | --- | --- |
+| Button Matrix | 3.0 | [Download ZIP](Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.0-Gerbers-Drill.zip) | [Browse files](Button%20Matrix/Manufacturing/) |
+| Rotary Encoders | 1.4 | [Download ZIP](Rotary%20Encoders/Manufacturing/Rotary-Encoder-PCB-v1.4-Gerbers-Drill.zip) | [Browse files](Rotary%20Encoders/Manufacturing/) |
+| Rotary Switches | 2.0 | [Download ZIP](Rotary%20Switches/Manufacturing/Rotary-Switch-PCB-v2.0-Gerbers-Drill.zip) | [Browse files](Rotary%20Switches/Manufacturing/) |
+
+Each ZIP includes copper, solder-mask, silkscreen, and board-outline Gerbers, a Gerber job file, separate plated/non-plated Excellon drill files, a drill report, and manufacturing notes. Drill maps and ERC/DRC reports are available in each manufacturing folder.
+
+Review the manufacturer's preview before ordering. The Button Matrix still needs a physical test fit; manufactured-board testing remains pending for all three designs. Existing check exclusions and disabled categories are documented in the individual project READMEs and reports.
+
 ## Button Matrix PCB — version 3.0
 
 The current unlit 16-button, 4 × 4 Button Matrix PCB is **version 3.0**. See the [Button Matrix README](Button%20Matrix/README.md) for front and back layout previews. The front carries the push-button switches; the back carries the matrix diodes and row/column connectors. A 12 mm pass-through provides clearance for the SQL On/Off switch.
