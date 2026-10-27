@@ -8,7 +8,7 @@ The BOM lists schematic references, values, footprints, quantities, and do-not-p
 
 ## Power and future button lighting
 
-The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). TFT brightness at 3.3 V has been confirmed satisfactory. The external protected 5 V input and Main Board JP1 power selector have been removed. C5/C6 decoupling and the rotary-input filters remain. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
+The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). TFT brightness at 3.3 V has been confirmed satisfactory. The external protected 5 V input and Main Board JP1 power selector have been removed. C5 (470 µF) and C6 (0.1 µF) have been removed to match the tested direct Teensy-to-TFT wiring. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
 
 Future button lighting would require a separate power and driver design, suitable light-transmitting buttons, and a new Button LED PCB. The current Main Board has no external lighting-power circuit. This lighting revision is not currently planned; the other radio projects remain the priority.
 
@@ -67,18 +67,13 @@ The panel/button illumination LEDs have been dropped because there is insufficie
 
 This update changes the documentation and parts list only; existing schematic drawings may still show the former panel-lighting circuit.
 
-## Main Controller power and decoupling
+## Main Controller direct TFT power
 
-The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). TFT brightness at 3.3 V has been confirmed satisfactory. The external protected 5 V input and Main Board JP1 power selector have been removed. C5/C6 decoupling and the rotary-input filters remain. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
+The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). TFT brightness at 3.3 V has been confirmed satisfactory. The external protected 5 V input and Main Board JP1 power selector have been removed. C5 (470 µF) and C6 (0.1 µF) have been removed to match the tested direct Teensy-to-TFT wiring. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
 
-The current Main Board retains:
+C5 (470 µF) and C6 (0.1 µF) are no longer fitted or required purchases. The Main Board has no added TFT supply capacitors; its TFT connections match the tested direct Teensy wiring.
 
-| Reference | Part / value | Quantity |
-| --- | --- | ---: |
-| C5 | 470 µF, 10 V electrolytic capacitor | 1 |
-| C6 | 100 nF (0.1 µF) capacitor | 1 |
-
-J3, F2, D1, D2, D3, Q2, R15–R17, and the Main Board JP1 header/shunt are removed and are not required purchases for this revision. The [BOM](BOM.csv) has been updated to remove those entries. Other mixed-panel BOM entries and the cost allowance still need review as the Main Board layout is finalized; use its current schematic as the authority for Main Board parts.
+J3, F2, D1, D2, D3, Q2, R15–R17, C5/C6, and the Main Board JP1 header/shunt are removed and are not required purchases for this revision. The [BOM](BOM.csv) has been updated to remove those entries. Other mixed-panel BOM entries and the cost allowance still need review as the Main Board layout is finalized; use its current schematic as the authority for Main Board parts.
 
 The 100 nF rotary-input capacitors C1/C2 and series resistors R1/R2 are retained. SQL solder-wire pads TP1/TP2 are implemented in the Main Board draft; placement and routing remain pending.
 

@@ -1,8 +1,6 @@
 "Refs","Value","Footprint","Qty","DNP"
 "C1","100nF","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm","1",""
 "C2","100nF","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm","1",""
-"C5","470uF 10V","Capacitor_THT:CP_Radial_D8.0mm_P3.50mm","1",""
-"C6","0.1uF","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm","1",""
 "D5","D","Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal","1",""
 "D6","D","Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal","1",""
 "D7","D","Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal","1",""

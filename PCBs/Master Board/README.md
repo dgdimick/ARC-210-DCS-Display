@@ -8,7 +8,7 @@ Download this repository using **Code → Download ZIP**, extract it, and keep t
 
 You can also download the [schematic](ARC-210_Master_Board.kicad_sch) and [PCB draft](ARC-210_Master_Board.kicad_pcb) directly. Downloading only that file does not include the project library configuration.
 
-This is a **PCB layout draft**, not a manufacturing release. The outline, switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes, and retained component footprints are present. All 15 circuit component footprints are on B.Cu, with their bodies facing away from the faceplate, and are grouped beside the outline for placement. Component placement, routing, current verification, and physical test fit remain unfinished. No Main Board Gerber package is included.
+This is a **PCB layout draft**, not a manufacturing release. The outline, switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes, and retained component footprints are present. All 13 circuit component footprints are on B.Cu, with their bodies facing away from the faceplate, and are grouped beside the outline for placement. Component placement, routing, current verification, and physical test fit remain unfinished. No Main Board Gerber package is included.
 
 ## Signals and connectors
 
@@ -23,11 +23,11 @@ This is a **PCB layout draft**, not a manufacturing release. The outline, switch
 
 ## Power and lighting
 
-The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). TFT brightness at 3.3 V has been confirmed satisfactory. The external protected 5 V input and Main Board JP1 power selector have been removed. C5/C6 decoupling and the rotary-input filters remain. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
+The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). TFT brightness at 3.3 V has been confirmed satisfactory. The external protected 5 V input and Main Board JP1 power selector have been removed. C5 (470 µF) and C6 (0.1 µF) have been removed to match the tested direct Teensy-to-TFT wiring. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
 
-Removed from the schematic and PCB: **J3, F2, D1, D2, D3, Q2, R15, R16, R17, and JP1**. There is no external input jack, fuse, SCR/zener protection branch, power indicator LED, or TFT power-selector shunt in this revision. This does not affect the separate rotary-switch PCB's JP1 solder bridge.
+Removed from the schematic and PCB: **J3, F2, D1, D2, D3, Q2, R15, R16, R17, JP1, C5, and C6**. There is no external input jack, fuse, SCR/zener protection branch, power indicator LED, or TFT power-selector shunt in this revision. This does not affect the separate rotary-switch PCB's JP1 solder bridge.
 
-C5 (470 µF, 10 V) and C6 (0.1 µF) remain between 3.3 V and GND. C1/C2 and R1/R2 remain as the rotary-input filters. The TFT backlight-control signal remains connected to GPIO 4.
+C5 (470 µF) and C6 (0.1 µF) have been removed from the schematic, PCB, and BOM to match the tested direct TFT wiring. No additional TFT supply capacitors are fitted on this Main Board. C1/C2 and R1/R2 remain as the rotary-input filters. The TFT backlight-control signal remains connected to GPIO 4.
 
 Future button lighting would require a separate power and driver design, suitable light-transmitting buttons, and a new Button LED PCB. The current Main Board has no external lighting-power circuit. This lighting revision is not currently planned; the other radio projects remain the priority.
 
@@ -45,7 +45,7 @@ Both seven-position switches worked with their outputs connected directly to GPI
 
 Install KiCad's standard symbol and footprint libraries too. Optional 3D models are not included and are not required to read the schematic.
 
-October 27, 2026 checks: [ERC](ERC-report.json) reports zero violations under the saved settings. [PCB DRC and schematic parity](DRC-report.json) report zero non-routing violations and zero schematic/PCB mismatches, with 55 unconnected items because the draft is not routed. Netlist verification confirms J1 pin 1, C5 pin 1, and C6 pin 1 connect to `TEENSY_3V3` / U1 pad 15, while other retained pin connections are unchanged. Some check categories are disabled. These results do not make the draft ready for manufacture.
+October 27, 2026 checks: [ERC](ERC-report.json) reports zero violations under the saved settings. [PCB DRC and schematic parity](DRC-report.json) report zero non-routing violations and zero schematic/PCB mismatches, with 51 unconnected items because the draft is not routed. Netlist verification confirms J1 pin 1 connects directly to `TEENSY_3V3` / U1 pad 15. Only the C5/C6 pin connections were removed; C1/C2 and all other retained connections are unchanged. Some check categories are disabled. These results do not make the draft ready for manufacture.
 
 PCB design license: CERN-OHL-P-2.0, as specified in the [main README](../../README.md#licensing). The bundled Teensy library retains its included license.
 
