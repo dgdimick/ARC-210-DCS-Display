@@ -1,0 +1,12 @@
+(footprint "MountingHole_12mm"
+ (version 20260206) (generator "pcbnew") (layer "F.Cu")
+ (descr "12 mm non-plated mechanical clearance hole")
+ (tags "mounting hole NPTH 12mm")
+ (property "Reference" "REF**" (at 0 -7) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+ (property "Value" "MountingHole_12mm" (at 0 7) (layer "F.Fab") (hide yes) (effects (font (size 1 1) (thickness 0.15))))
+ (attr exclude_from_pos_files exclude_from_bom)
+ (fp_circle (center 0 0) (end 6 0) (stroke (width 0.1) (type solid)) (fill no) (layer "F.Fab"))
+ (fp_circle (center 0 0) (end 6.25 0) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd"))
+ (pad "" np_thru_hole circle (at 0 0) (size 12 12) (drill 12) (layers "*.Cu" "*.Mask"))
+ (embedded_fonts no)
+)

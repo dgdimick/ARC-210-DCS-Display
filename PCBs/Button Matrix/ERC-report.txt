@@ -1,12 +1,5 @@
-ERC report (2026-10-24T23:22:04, Encoding UTF8)
-Report includes: Errors, Warnings
-
-***** Sheet /
-
- ** ERC messages: 0  Errors 0  Warnings 0
-
- ** Ignored checks:
-    - Global label only appears once in the schematic
-    - Four connection points are joined together
-    - SPICE model issue
-    - Assigned footprint doesn't match footprint filters
+Button Matrix PCB v3.0 — ERC summary
+Checked October 27, 2026 with KiCad 10.0.7.
+Command: kicad-cli sch erc "Button Matrix.kicad_sch"
+Result: 0 violations under the saved project settings.
+This check does not establish mechanical fit or successful hardware operation.

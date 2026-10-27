@@ -1,0 +1,4 @@
+(fp_lib_table
+ (version 7)
+ (lib (name "ButtonMatrix")(type "KiCad")(uri "${KIPRJMOD}/ButtonMatrix.pretty")(options "")(descr "Button Matrix project footprints"))
+)

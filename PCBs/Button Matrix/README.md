@@ -2,17 +2,17 @@
 
 PCB version **3.0**. KiCad 10 project.
 
-The published schematic release is version **1.1**, published October 24, 2026.
+Updated October 27, 2026. The current PCB, schematic, project settings, and project-local footprint library are included in this folder.
 
 This is the current **unlit 16-button, 4 × 4 matrix**. It is separate from the proposed future Button LED PCB, which is not currently planned.
 
 ## Download and open
 
-Use **Code → Download ZIP** on the repository, extract it, and keep this folder together. Open `Button Matrix.kicad_pro` in KiCad 10, then open the schematic. The [schematic file](Button%20Matrix.kicad_sch) is also available directly.
+Use **Code → Download ZIP** on the repository, extract it, and keep this folder together. Open `Button Matrix.kicad_pro` in KiCad 10, then open the schematic or PCB Editor. The [schematic](Button%20Matrix.kicad_sch) and [PCB layout](Button%20Matrix.kicad_pcb) are also available directly.
 
-The design uses standard KiCad `Connector`, `Device`, and `Switch` symbols. Install KiCad’s standard symbol and footprint libraries.
+The design uses standard KiCad `Connector`, `Device`, `Switch`, and `Mechanical` symbols. Install KiCad’s standard libraries and keep `fp-lib-table` and `ButtonMatrix.pretty/` beside the project. The local library supplies H3’s 12 mm non-plated SQL On/Off switch pass-through footprint.
 
-**Schematic-only release:** PCB placement, routing, final footprint selection, and physical test fitting remain unfinished. No fabrication-ready PCB or Gerber set is included.
+**PCB version 3.0:** The saved PCB includes placement, routing, and front/back copper fills. Physical test fitting and testing of an assembled manufactured board remain pending. No Gerber set is included.
 
 ## PCB version 3.0 layout previews
 
@@ -28,7 +28,7 @@ Front and back views of the Button Matrix PCB version **3.0** layout in progress
 
 ## Buttons and connectors
 
-Use 16 SPST momentary tactile switches, **6 × 6 × 5 mm**, with four through-hole leads. See the [parts list and supplier](../../parts/README.md#current-button-switches). Confirm the purchased switches’ contact pairing and footprint before fabrication. The saved schematic uses the `SW_PUSH_6mm` footprint name; final footprint assignments still need review.
+Use 16 SPST momentary tactile switches, **6 × 6 × 5 mm**, with four through-hole leads. See the [parts list and supplier](../../parts/README.md#current-button-switches). Confirm the purchased switches’ contact pairing and footprint before fabrication. Verify the supplied footprint against your purchased switches before fabrication.
 
 The schematic has **two separate four-pin connectors**, rather than one eight-pin connector:
 
@@ -43,17 +43,17 @@ The schematic has **two separate four-pin connectors**, rather than one eight-pi
 | J2 pin 3 — column 3 | 7 | 37 | 29 |
 | J2 pin 4 — column 4 | 8 | 40 | 32 |
 
-The connector reference J2 on this button schematic is different from J2 on the Master Board. Use the table to wire between them. A final combined eight-pin Button PCB connector is still provisional.
+The connector reference J2 on this button schematic is different from J2 on the Master Board. Use the table to wire between them. The supplied PCB uses these two four-pin connectors.
 
 **Teensy printed GPIO labels differ from KiCad pad numbers.** For example, GPIO 30 is U1 pad 22. Use the Teensy labels for firmware and wiring, and the matching symbol/footprint pad numbers when working in KiCad.
 
 ## Diodes and testing
 
-D5–D20 are the 16 matrix diodes. Their cathodes connect to the row lines. The schematic retains generic diode values and one differing diode footprint, so confirm the intended 1N4148 parts and consistent footprint assignments before board fabrication. See the [parts documentation](../../parts/README.md).
+D5–D20 are the 16 matrix diodes. Their cathodes connect to the row lines. Confirm the intended 1N4148 parts, polarity, and supplied footprints before fabrication. See the [parts documentation](../../parts/README.md).
 
 The [combined hardware test](../../Firmware/Test%20Code/ARC210_Button_Test/) documents the working matrix GPIO assignments and button tests. A successful breadboard test does not establish that this unfinished PCB layout has been assembled or tested.
 
-KiCad ERC run October 24, 2026 reported **zero errors and zero warnings** under the project’s saved settings. Some check categories are disabled; see the [ERC report](ERC-report.txt). ERC does not verify physical button alignment, footprint suitability, or an unrouted PCB.
+KiCad 10.0.7 checks run October 27, 2026 reported **zero ERC violations, zero DRC errors, zero unconnected items, and zero schematic/PCB parity issues** under the saved settings. DRC reports **two isolated-copper warnings**, one for each no-net copper fill on F.Cu and B.Cu. These fills are floating copper, not a ground plane. See the [ERC summary](ERC-report.txt) and [DRC report](DRC-report.json). Some check categories are disabled. These checks do not establish physical fit or successful hardware operation.
 
 ## Lighting
 
