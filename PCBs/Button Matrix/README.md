@@ -12,7 +12,15 @@ Use **Code → Download ZIP** on the repository, extract it, and keep this folde
 
 The design uses standard KiCad `Connector`, `Device`, `Switch`, and `Mechanical` symbols. Install KiCad’s standard libraries and keep `fp-lib-table` and `ButtonMatrix.pretty/` beside the project. The local library supplies H3’s 12 mm non-plated SQL On/Off switch pass-through footprint.
 
-**PCB version 3.0:** The saved PCB includes placement and routing. Unused floating copper fills were removed on October 27, 2026. Physical test fitting and testing of an assembled manufactured board remain pending. No Gerber set is included.
+**PCB version 3.0:** The saved PCB includes placement and routing. Unused floating copper fills were removed on October 27, 2026. Physical test fitting and testing of an assembled manufactured board remain pending. A [Gerber and drill ZIP](Manufacturing/Button-Matrix-PCB-v3.0-Gerbers-Drill.zip) is included for manufacturing.
+
+## Gerber and drill files
+
+Download [Button-Matrix-PCB-v3.0-Gerbers-Drill.zip](Manufacturing/Button-Matrix-PCB-v3.0-Gerbers-Drill.zip) for a PCB manufacturer. Generated October 27, 2026 from the corrected version 3.0 PCB using KiCad 10.0.7.
+
+The ZIP contains the seven Gerber X2 layers (front/back copper, solder mask, silkscreen, and board outline), a Gerber job file, separate metric Excellon PTH/NPTH drill files, and manufacturing notes. Both Gerbers and drills use the absolute origin without mirroring. The source specifies a two-layer, 1.6 mm board.
+
+The exports were checked against the source: **130 plated holes and five non-plated holes**, including four 3.5 mm mounting holes and H3’s 12 mm SQL On/Off pass-through. [Individual files, drill maps, and drill report](Manufacturing/) are also available. Check the manufacturer's preview for the board outline, central opening, and drill placement before ordering. Physical test fit and manufactured-board testing remain pending.
 
 ## PCB version 3.0 layout previews
 
