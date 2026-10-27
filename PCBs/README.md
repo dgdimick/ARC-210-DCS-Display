@@ -29,6 +29,8 @@ Review the manufacturer's preview before ordering. The Button Matrix still needs
 
 ## Button Matrix PCB — version 3.0
 
+**Button alignment check — October 27, 2026:** I’m 3D-printing the Button Matrix board to confirm that the button positions line up correctly with the faceplate. I’m 99% sure the alignment is right, but the physical fit check is still in progress.
+
 The current unlit 16-button, 4 × 4 Button Matrix PCB is **version 3.0**. See the [Button Matrix README](Button%20Matrix/README.md) for front and back layout previews. The front carries the push-button switches; the back carries the matrix diodes and row/column connectors. A 12 mm pass-through provides clearance for the SQL On/Off switch.
 
 The downloadable [version 3.0 KiCad files](Button%20Matrix/) now include the PCB layout, schematic, project settings, and custom 12 mm footprint library. The PCB includes routing; unused floating copper fills were removed. Checks found zero ERC violations, zero DRC errors, no unconnected items, and no schematic/PCB parity issues; DRC also reports zero warnings after removal of those fills. Physical test fitting and manufactured-board testing are still pending. This board is separate from the future Button LED PCB, which is not currently planned.
