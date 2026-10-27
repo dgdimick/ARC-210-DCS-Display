@@ -12,6 +12,18 @@ The design uses standard KiCad `Connector`, `Device`, and `Switch` symbols. Inst
 
 **Schematic-only release:** PCB placement, routing, final footprint selection, and physical test fitting remain unfinished. No fabrication-ready PCB or Gerber set is included.
 
+## PCB layout previews
+
+Front and back views of the Button Matrix PCB layout in progress. These previews do not indicate a fabrication-ready release. The large 12 mm opening is the pass-through for the SQL On/Off switch.
+
+### Front — push-button switches
+
+![Button Matrix PCB front view showing the 16 push-button switches](../../images/Button-Matrix-PCB-3D.png)
+
+### Back — diodes and connectors
+
+![Button Matrix PCB back view showing the diodes, row and column connectors, and routing](../../images/Button-Matrix-PCB-Back-3D.png)
+
 ## Buttons and connectors
 
 Use 16 SPST momentary tactile switches, **6 × 6 × 5 mm**, with four through-hole leads. See the [parts list and supplier](../../parts/README.md#current-button-switches). Confirm the purchased switches’ contact pairing and footprint before fabrication. The saved schematic uses the `SW_PUSH_6mm` footprint name; final footprint assignments still need review.
