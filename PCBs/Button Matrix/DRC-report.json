@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-10-27T01:24:17",
+    "date": "2026-10-27T01:30:38",
     "ignored_checks": [
         {
             "description": "Footprint has no courtyard defined",
@@ -32,36 +32,5 @@
     "schematic_parity": [],
     "source": "Button Matrix.kicad_pcb",
     "unconnected_items": [],
-    "violations": [
-        {
-            "description": "Isolated copper fill",
-            "items": [
-                {
-                    "description": "Zone [<no net>] on F.Cu, priority 0",
-                    "pos": {
-                        "x": 40.55,
-                        "y": 30.45
-                    },
-                    "uuid": "c10ef221-00c2-41f0-855d-c716a497c243"
-                }
-            ],
-            "severity": "warning",
-            "type": "isolated_copper"
-        },
-        {
-            "description": "Isolated copper fill",
-            "items": [
-                {
-                    "description": "Zone [<no net>] on B.Cu, priority 1",
-                    "pos": {
-                        "x": 37.175,
-                        "y": 27.375
-                    },
-                    "uuid": "ea754249-923a-48d8-964b-48c04dd1e400"
-                }
-            ],
-            "severity": "warning",
-            "type": "isolated_copper"
-        }
-    ]
+    "violations": []
 }

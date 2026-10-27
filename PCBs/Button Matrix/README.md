@@ -12,7 +12,7 @@ Use **Code → Download ZIP** on the repository, extract it, and keep this folde
 
 The design uses standard KiCad `Connector`, `Device`, `Switch`, and `Mechanical` symbols. Install KiCad’s standard libraries and keep `fp-lib-table` and `ButtonMatrix.pretty/` beside the project. The local library supplies H3’s 12 mm non-plated SQL On/Off switch pass-through footprint.
 
-**PCB version 3.0:** The saved PCB includes placement, routing, and front/back copper fills. Physical test fitting and testing of an assembled manufactured board remain pending. No Gerber set is included.
+**PCB version 3.0:** The saved PCB includes placement and routing. Unused floating copper fills were removed on October 27, 2026. Physical test fitting and testing of an assembled manufactured board remain pending. No Gerber set is included.
 
 ## PCB version 3.0 layout previews
 
@@ -53,7 +53,7 @@ D5–D20 are the 16 matrix diodes. Their cathodes connect to the row lines. Conf
 
 The [combined hardware test](../../Firmware/Test%20Code/ARC210_Button_Test/) documents the working matrix GPIO assignments and button tests. A successful breadboard test does not establish that this unfinished PCB layout has been assembled or tested.
 
-KiCad 10.0.7 checks run October 27, 2026 reported **zero ERC violations, zero DRC errors, zero unconnected items, and zero schematic/PCB parity issues** under the saved settings. DRC reports **two isolated-copper warnings**, one for each no-net copper fill on F.Cu and B.Cu. These fills are floating copper, not a ground plane. See the [ERC summary](ERC-report.txt) and [DRC report](DRC-report.json). Some check categories are disabled. These checks do not establish physical fit or successful hardware operation.
+KiCad 10.0.7 checks run October 27, 2026 reported **zero ERC violations, zero DRC errors, zero unconnected items, and zero schematic/PCB parity issues** under the saved settings. After removal of the unused no-net copper fills, DRC reports **zero warnings**. The board has no ground net and does not require a ground plane. See the [ERC summary](ERC-report.txt) and [DRC report](DRC-report.json). Some check categories are disabled. These checks do not establish physical fit or successful hardware operation.
 
 ## Lighting
 
