@@ -95,6 +95,14 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
+**October 27, 2026 — Main PCB layout progress and Teensy 4.1 3D preview**
+
+Initial component placement is progressing on the Main Controller PCB. The components are on the back of the board, with their bodies facing away from the faceplate. The draft includes the board outline, rotary-switch mounting hole and anti-rotation slot, four 3.5 mm mounting holes, and SQL On/Off solder-wire pads.
+
+The Teensy 4.1 STEP model is now included and attached to U1 using a project-relative path. See the [new Main PCB 3D picture with the Teensy](images/Main-PCB-Teensy-3D.png), or download the [Main Board project](PCBs/Master%20Board/) and follow its [3D Viewer instructions](PCBs/Master%20Board/README.md#teensy-41-in-the-3d-viewer).
+
+The TFT uses the Teensy's 3.3 V supply directly, matching the tested wiring; the former protected 5 V circuit and C5/C6 are removed. **Placement, routing, current verification, and the Main PCB physical test fit remain unfinished.** This is a layout-progress update, not a manufacturing release.
+
 **October 27, 2026 — Main Board C5/C6 removed to match tested TFT wiring**
 
 C5 (470 µF) and C6 (0.1 µF) have been removed from the [Main PCB draft and schematic](PCBs/Master%20Board/) and the [parts BOM](parts/BOM.csv). TFT VCC remains connected directly to the Teensy's 3.3 V supply, as used in the working build. C1/C2 and the associated rotary-input filters are retained. Placement and routing remain unfinished.
