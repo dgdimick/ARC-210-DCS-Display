@@ -38,6 +38,10 @@ The downloadable [version 3.1 KiCad files](Button%20Matrix/) now include the PCB
 
 ## Main Board PCB draft and schematic
 
+**Layout progress — October 27, 2026:** Initial component placement is underway, with component bodies on the back of the board facing away from the faceplate. The draft includes the rotary-switch mounting opening and anti-rotation slot, four 3.5 mm mounting holes, and SQL On/Off solder-wire pads.
+
+The Teensy 4.1 STEP model is included and attached to U1 with a project-relative path. See the [Main PCB 3D picture with the Teensy](../images/Main-PCB-Teensy-3D.png) and the [Main Board 3D Viewer instructions](Master%20Board/README.md#teensy-41-in-the-3d-viewer). Placement, routing, current verification, and physical test fit remain unfinished; the Main Board is not ready for manufacture.
+
 The updated [Main Board PCB draft, schematic, and KiCad project](Master%20Board/) are available to download. The board now uses USB power and the Teensy's 3.3 V supply for TFT VCC; the external protected 5 V branch and power selector are removed. C5/C6 have been removed to match the tested direct TFT wiring; C1/C2 rotary-input filters remain. TFT brightness at 3.3 V is confirmed satisfactory. Components are on B.Cu, facing away from the faceplate. Placement, routing, current verification, and physical test fit remain unfinished; no Main Board manufacturing files are provided.
 
 ## Teensy GPIO labels and KiCad pin numbers
