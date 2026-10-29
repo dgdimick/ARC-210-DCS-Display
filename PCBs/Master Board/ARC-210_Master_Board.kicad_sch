@@ -9386,7 +9386,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x14_Pin"
+		(property "Value" "ROTARY ENCODERS"
 			(at 254 374.015 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9501,7 +9501,7 @@
 				)
 			)
 		)
-		(property "Value" "SQL_ONOFF_GPIO41"
+		(property "Value" "SQL ON/OFF"
 			(at 703.5 206 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -89,16 +89,15 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 1. Some SAT menus are already complete. The remaining work is on some menus three or four levels deep, which will be completed in firmware 2.0.
 2. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
-3. Verify TFT startup and full-brightness current on the Teensy's 3.3 V supply, keeping total external 3.3 V load within 250 mA. Brightness at 3.3 V has been confirmed satisfactory; the external protected 5 V circuit and Main Board JP1 selector have been removed.
-4. Finish the Main Board PCB design.
-5. Test-fit the Main PCB when its design is complete. The TFT, Button Matrix, Rotary Encoders, and Rotary Switches have already been physically checked; the final Button Matrix v3.1 physical test fit and button alignment are confirmed.
-6. Publish the Main Board PCB layout and its Gerber/drill manufacturing package once the design is complete. The final Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 KiCad project files, schematics, Gerbers, drill files, and manufacturing ZIPs have already been uploaded; see the [PCB downloads](PCBs/README.md#gerber-and-drill-downloads).
-7. Complete the final assembly instructions, wiring diagrams and updated parts list.
-8. Document firmware installation and the required DCS-BIOS configuration.
-9. Test the manufactured boards and run an extended reliability test.
-10. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. This project provides files and build guidance; I’d prefer to keep this a DIY project rather than sell parts, kits, or completed panels. That said, a few people have already asked for help, so if you’re stuck and need a hand, feel free to reach out—I’d be happy to discuss what might be possible.
-11. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
-12. Consider button lighting only as a future redesign with a separate power/driver circuit, suitable translucent buttons, and a new Button LED PCB. The current USB/3.3 V Main Board does not include this circuitry.
+3. Finish the Main Board PCB design.
+4. Test-fit the Main PCB when its design is complete. The TFT, Button Matrix, Rotary Encoders, and Rotary Switches have already been physically checked; the final Button Matrix v3.1 physical test fit and button alignment are confirmed.
+5. Publish the Main Board PCB layout and its Gerber/drill manufacturing package once the design is complete. The final Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 KiCad project files, schematics, Gerbers, drill files, and manufacturing ZIPs have already been uploaded; see the [PCB downloads](PCBs/README.md#gerber-and-drill-downloads).
+6. Complete the final assembly instructions, wiring diagrams and updated parts list.
+7. Document firmware installation and the required DCS-BIOS configuration.
+8. Test the manufactured boards and run an extended reliability test.
+9. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. This project provides files and build guidance; I’d prefer to keep this a DIY project rather than sell parts, kits, or completed panels. That said, a few people have already asked for help, so if you’re stuck and need a hand, feel free to reach out—I’d be happy to discuss what might be possible.
+10. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
+11. Consider button lighting only as a future redesign with a separate power/driver circuit, suitable translucent buttons, and a new Button LED PCB. The current USB/3.3 V Main Board does not include this circuitry.
 
 ## Project updates
 
@@ -106,7 +105,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 The latest [Main Board layout picture](images/Main-PCB-Layout-2026-10-28.png) shows the Teensy 4.1, TFT and control connectors, SQL On/Off solder connections, and routing in progress. Component bodies face away from the faceplate on the back of the PCB. J9 is labelled **MODE** and J10 **MASTER**. A 26.2 mm circle marks the SQL switch body for spacing without adding electrical pads.
 
-See the [Main Board README](PCBs/Master%20Board/README.md#main-pcb-3d-preview) for the new picture and layout notes. The current saved PCB and schematic are now uploaded. Fresh checks report zero ERC violations and zero unconnected items, with zero DRC violations and two schematic/PCB value warnings remaining after the October 29 correction. This picture shows the current working layout; final placement, routing, design checks, current verification, and Main Board physical test fit remain to be completed. The Main Board is still a draft, with no manufacturing release.
+See the [Main Board README](PCBs/Master%20Board/README.md#main-pcb-3d-preview) for the new picture and layout notes. The current saved PCB and schematic are now uploaded. October 29 checks after correcting the J4/TP1 values report zero ERC violations, zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. This picture shows the current working layout; final placement, routing, design checks, current verification, and Main Board physical test fit remain to be completed. The Main Board is still a draft, with no manufacturing release.
 
 **October 27, 2026 — Main PCB layout progress and Teensy 4.1 3D preview**
 

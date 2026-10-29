@@ -80,7 +80,7 @@ The model was checked in bottom and angled renders. This verifies visibility and
 
 Install KiCad's standard symbol, footprint, and 3D model libraries too. The Teensy 4.1 STEP model is now included and attached to U1; see the 3D Viewer section above.
 
-October 29, 2026 corrected-upload checks: [ERC](ERC-report.json) reports **zero violations**. [PCB DRC and schematic parity](DRC-report.json) report **zero unconnected items**, **zero DRC violations**, and **two schematic/PCB value warnings** under the saved settings. The value warnings concern J4 and TP1. Some check categories are disabled. These warnings and final routing review, current verification, and physical fit checks remain pending; this is not a manufacturing release.
+October 29, 2026 checks after matching J4 and TP1 values: [ERC](ERC-report.json) reports **zero violations**. [PCB DRC and schematic parity](DRC-report.json) report **zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches** under the saved settings. J4 is labelled **ROTARY ENCODERS** and TP1 **SQL ON/OFF** in both the schematic and PCB. The silkscreen clipping warning is also resolved. Some check categories are disabled. Final routing review, current verification, and physical fit checks remain pending; this is not a manufacturing release.
 
 PCB design license: CERN-OHL-P-2.0, as specified in the [main README](../../README.md#licensing). The bundled Teensy library retains its included license.
 
