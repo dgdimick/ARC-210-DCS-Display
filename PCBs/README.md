@@ -86,6 +86,10 @@ The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **requir
 
 The **SQL ON/OFF knob still needs to be designed and 3D printed**. Its finished STL is not yet included in the published files. The existing shaft support spacer v.5 remains required in all installations.
 
+## Remaining SAT menus
+
+Some SAT menus three or four levels deep remain unfinished and are planned for firmware 2.0. I’m not sure what these remaining menus do, and I haven’t heard of anyone using them, so I don’t expect them to be an issue for most users.
+
 ## Estimated build cost
 
 Thinking about building one? The [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
