@@ -74,3 +74,4 @@
 "TFT cable master end","1x08 female cable housing, 2.54mm","","1",""
 "TFT cable display end","1x14 female cable housing, 2.54mm; populate the eight used display signals only","","1",""
 "Cable female crimp terminals","Female contacts matched to chosen 2.54mm cable housing series; minimum populated count, buy spares","","76",""
+"USB cable (panel hardware; not a schematic reference)","USB Micro-B data cable - required for powering and programming the Teensy 4.1; must carry data as well as power","","1",""
