@@ -18,12 +18,12 @@ To help you plan your build, I’ve put together an estimated parts budget of **
 
 This is primarily a DIY project. I share the files and build notes to help you make your own panel. You’ll purchase components from the linked suppliers, arrange PCB fabrication with a manufacturer, and print the STL parts yourself or use a printing service. If you’re stuck and need a hand, feel free to ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)—I’m happy to help where I can.
 
-Prices checked October 22, 2026. Small hardware and PCB costs are allowances rather than supplier quotes.
+Prices checked October 22, 2026, except the recommended Teensy with headers, updated October 29, 2026. The overall range remains a provisional budget; small hardware and PCB costs are allowances rather than supplier quotes.
 
 | Part / sourcing reference | Quantity needed | Estimated builder cost |
 | --- | ---: | ---: |
 | [PC Flights faceplate with painted buttons](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/) | 1 | $51.00 |
-| [Teensy 4.1 without Ethernet](https://www.sparkfun.com/teensy-4-1-without-ethernet.html) | 1 | $29.60 |
+| [Teensy 4.1 with headers — recommended](https://www.sparkfun.com/teensy-4-1-headers.html) | 1 | $35.95 (checked October 29, 2026) |
 | [Hosyond 3.5-inch ILI9488 SPI TFT display](https://www.amazon.com/dp/B0BWJHK4M6) | 1 | About $18 |
 | [Bourns PEC11H-4220F-S0024 rotary encoders](https://www.mouser.com/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D) | 6 | $19.74 |
 | [C&K A12505RNCQ multi-position rotary switches](https://www.digikey.com/en/products/detail/c-k/A12505RNCQ/2043159) | 2 | $26.82 |
@@ -162,8 +162,10 @@ Both spacer quantities are included in the [BOM](BOM.csv).
 
 **Note:** This is intended to be a relatively simple design.
 
-- **Microcontroller:** Teensy 4.1 without Ethernet  
-  [SparkFun](https://www.sparkfun.com/teensy-4-1-without-ethernet.html)
+- **Microcontroller:** Teensy 4.1 with pre-soldered headers — recommended.  
+  [SparkFun](https://www.sparkfun.com/teensy-4-1-headers.html) · [Amazon example](https://www.amazon.com/PJRC-Teensy-4-1-with-Pins/dp/B08CTM3279)
+
+I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFun Teensy 4.1 (Headers)](https://www.sparkfun.com/teensy-4-1-headers.html), or this [Amazon Teensy 4.1 with Pins listing](https://www.amazon.com/PJRC-Teensy-4-1-with-Pins/dp/B08CTM3279) as an alternative example. The pre-fitted pins avoid having to solder the two long header rows yourself. The Main Board's two 1 × 24 female sockets are separate parts; they are optional but recommended for removing the Teensy during board upgrades or replacement.
 
 - **Display:** ILI9488 SPI TFT, 3.5-inch  
   [Amazon](https://www.amazon.com/dp/B0BWJHK4M6)
