@@ -102,6 +102,12 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
+**October 28, 2026 — Main Board placement and routing progress**
+
+The latest [Main Board layout picture](images/Main-PCB-Layout-2026-10-28.png) shows the Teensy 4.1, TFT and control connectors, SQL On/Off solder connections, and routing in progress. Component bodies face away from the faceplate on the back of the PCB. J9 is labelled **MODE** and J10 **MASTER**. A 26.2 mm circle on User.Drawings marks the SQL switch body for spacing without adding electrical pads.
+
+See the [Main Board README](PCBs/Master%20Board/README.md#main-pcb-3d-preview) for the new picture and layout notes. This picture shows the current working layout; final placement, routing, design checks, current verification, and Main Board physical test fit remain to be completed. The Main Board is still a draft, with no manufacturing release.
+
 **October 27, 2026 — Main PCB layout progress and Teensy 4.1 3D preview**
 
 Initial component placement is progressing on the Main Controller PCB. The components are on the back of the board, with their bodies facing away from the faceplate. The draft includes the board outline, rotary-switch mounting hole and anti-rotation slot, four 3.5 mm mounting holes, and SQL On/Off solder-wire pads.
