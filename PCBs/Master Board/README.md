@@ -23,7 +23,7 @@ This is a **PCB layout draft**, not a manufacturing release. The outline, switch
 
 ## SQL On/Off rotary switch support
 
-Use the [shaft support spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) to provide mechanical support for the **SQL On/Off rotary switch when mounted on the Main Board**. Print this spacer as part of the switch mounting assembly, including when the optional switch PCB is omitted and wires are soldered directly to the switch's solder lugs.
+Use the [shaft support spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) in **all installations** to support the **longer shaft used by the SQL On/Off rotary switch**. Fit the spacer whether using the optional switch PCB or wiring directly to the switch's solder lugs.
 
 ## Power and lighting
 
