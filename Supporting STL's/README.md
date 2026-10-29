@@ -54,7 +54,7 @@ PC Flights has supplied me with a drawing file to assist with the Button PCB lay
 
 [Shaft_Spacer_v.5.stl](Shaft_Spacer_v.5.stl)
 
-Use this spacer in **all installations** to support the **longer shaft used by the SQL On/Off rotary switch**. Fit it whether using the optional switch PCB or wiring directly to the switch’s solder lugs. Dedicated TP1 (SQL signal, GPIO 41) and TP2 (GND) solder-wire pads are included in the Main Board schematic and PCB draft; final pad placement and routing are pending.
+Use this spacer in **all installations** to support the **longer shaft used by the SQL On/Off rotary switch**. Fit it whether using the optional switch PCB or wiring directly to the switch’s solder lugs.
 
 **October 22, 2026 — v.5 clearance fix:** The previous shaft spacer had a clearance issue. Version 5 corrects it and has now been physically test-fitted and confirmed to fit and work. Use v.5 for new prints; v.4 remains available in repository history.
 
