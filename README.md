@@ -97,6 +97,7 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 8. Test the manufactured boards and run an extended reliability test.
 9. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. This project provides files and build guidance; I’d prefer to keep this a DIY project rather than sell parts, kits, or completed panels. That said, a few people have already asked for help, so if you’re stuck and need a hand, feel free to reach out—I’d be happy to discuss what might be possible.
 10. Design and print the SQL ON/OFF knob.
+11. Design and print a USB cable strain-relief support to protect the Teensy's Micro-B connector from cable pulls.
 
 
 ## Future Thoughts and Plans
