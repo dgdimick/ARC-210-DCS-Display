@@ -2,6 +2,10 @@
 
 These notes explain the choices behind my ARC-210 build and help you find your way around the wiring and hardware. If something is unclear, feel free to ask in Discussions.
 
+## Build guide
+
+The [step-by-step build guide](Build%20Guide/README.md) covers parts, printing, PCB assembly, wiring, and testing. It marks unfinished steps and manufactured-board validation as **pending**.
+
 ## Why I used a Teensy
 
 [Why I used a Teensy.png](Why%20I%20used%20a%20Teensy.png) is a screenshot of the Teensy 4.1 symbol and its connections in the ARC-210 panel's KiCad schematic. The green lines are electrical connections to the rest of the circuit. It shows the display and control connections on one controller. This is a historical schematic image: its panel-lighting and protected-power circuitry are not part of the current build. Use the current Main Board schematic for wiring.
