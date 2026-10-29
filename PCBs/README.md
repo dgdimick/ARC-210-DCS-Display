@@ -20,6 +20,10 @@ Use the KiCad project files in each linked folder. Each folder includes its wiri
 
 I’ve confirmed the mechanical fit of these designs. Testing an assembled, manufactured PCB is still on my list. Each project’s README explains the electrical checks and hardware tests completed so far.
 
+## Required Rotary Encoder spacers
+
+Print **six [Rotary Encoder spacers v.1](../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl)**, one for each encoder, to center the encoder threads in the faceplate holes.
+
 ## Gerber and drill downloads
 
 Manufacturing files generated October 27, 2026:
