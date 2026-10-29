@@ -281,6 +281,10 @@ The `Teensy_TFT_Hello_Works.ino` file in the `Firmware` directory contains the c
 - Flush wire cutters
 - USB Micro-B cable for programming the Teensy 4.1 and connecting the unit to the computer
 
+## Build guide
+
+Start with the [step-by-step build guide](Docs/Build%20Guide/README.md) for parts, printing, PCB assembly, wiring, and hardware testing. Unfinished design and validation steps are marked **pending**.
+
 ## Parts
 
 See the [parts directory](parts/) for the [component list (BOM)](parts/BOM.csv), hardware supplier links, and switch-fit and compatibility notes.
