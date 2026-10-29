@@ -143,6 +143,10 @@ Use **16 switches per panel**, each **6 × 6 × 5 mm**, SPST momentary tactile, 
 
 The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the purchased switches' lead spacing and contact pairing against it before fabrication.
 
+## SQL ON/OFF knob — design pending
+
+The **SQL ON/OFF knob still needs to be designed and 3D printed**. A finished SQL ON/OFF knob STL is not yet included in the published files.
+
 ## Required 3D-printed spacers
 
 - **Rotary Encoder spacers: print six.** Use [Rotary_Encoder_Spacer_v.1.stl](../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl), one per encoder, to center the encoder threads in the faceplate holes.
