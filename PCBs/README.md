@@ -82,6 +82,10 @@ The SQL On/Off PCB is optional when wiring directly to the switch’s solder lug
 
 The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether using the optional switch PCB or wiring directly to the switch’s solder lugs.
 
+## SQL ON/OFF knob — design pending
+
+The **SQL ON/OFF knob still needs to be designed and 3D printed**. Its finished STL is not yet included in the published files. The existing shaft support spacer v.5 remains required in all installations.
+
 ## Estimated build cost
 
 Thinking about building one? The [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
