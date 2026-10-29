@@ -33,7 +33,7 @@ Prices checked October 22, 2026. Small hardware and PCB costs are allowances rat
 | [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Parts needed for one build | $15–$25 |
 | [Screws and PCB standoffs](https://www.amazon.com/dp/B0H1QS5Q6N) | Allowance | $8–$15 |
 | [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
-| [Bare PCBs](../PCBs/README.md) | Six boards, ordered from a PCB manufacturer | $75 budget allowance |
+| [Bare PCBs](../PCBs/README.md) | Five required boards; six with the optional SQL On/Off PCB | $75 budget allowance |
 | USB cable | 1 | $3–$6 |
 | **Estimated DIY purchasing cost** | | **$275–$320** |
 
@@ -43,15 +43,19 @@ This estimate excludes tools, labor, cockpit mounting fasteners, shipping, tax a
 
 **PCB pricing is provisional:** the main and button PCB layouts must be completed before an accurate fabrication quote is available. See the component details and wiring requirements below.
 
-## Six-PCB layout
+<a id="six-pcb-layout"></a>
 
-My build uses up to six PCBs controlled by one Teensy 4.1: the master PCB, button PCB, rotary encoder PCB, and three small rotary switch PCBs. The SQL On/Off PCB is optional, reducing the build to five boards if the solder-lug switch is wired directly. The estimate above allows for all six boards.
+## PCB layout — five or six boards
+
+The panel uses five required PCBs: one Main Controller, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards. An optional SQL On/Off switch PCB brings the total to six; it can be omitted when wiring directly to the switch’s solder lugs.
+
+The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether or not the optional PCB is fitted.
+
+All boards are controlled by one Teensy 4.1. The estimate above allows for all six boards.
 
 The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. When using the optional SQL On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
 
 **SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available; final pad placement and routing are pending.
-
-The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether using the optional switch PCB or wiring directly to the switch’s solder lugs.
 
 ## Rotary-switch test wiring
 
