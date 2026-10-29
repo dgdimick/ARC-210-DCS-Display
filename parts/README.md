@@ -186,8 +186,10 @@ I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFu
 - **Button switches:** 16 per panel, 6 × 6 × 5 mm SPST momentary tactile push-button switches, four-pin through-hole  
   [Amazon](https://www.amazon.com/dp/B01CGMP9GY)
 
-- **PCB standoffs — required to install the PCBs; $10 per kit:** Vibit 640-piece M3 nylon standoff assortment, including male–female and female–female spacers with screws. Select lengths to suit the final PCB spacing; the required lengths and quantity per panel are not yet finalized.  
+- **PCB standoffs — required to install the PCBs; $10 per kit:** Vibit 640-piece M3 nylon standoff assortment, including male–female and female–female spacers with screws. The number of individual standoffs needed per panel is not yet finalized.  
   [Amazon](https://www.amazon.com/dp/B0H1QS5Q6N)
+
+  **Choose the stand-off height by the clearance your build needs.** Expect approximately **22–26 mm of total stand-off height**, depending on the shaft length of your SQL ON/OFF rotary switch. Dry-fit the boards, switch and faceplate, then select the height that provides the required clearance and correct shaft position before tightening the mounting hardware.
 
 - **Diodes:** 16 × 1N4148 small-signal fast-switching diodes, DO-35  
   The current Button Matrix PCB uses D5–D20; fit the 16 diodes as shown in its schematic.  
