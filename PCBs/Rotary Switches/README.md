@@ -14,9 +14,9 @@ Open `Rotary Switches.kicad_pro`. The project includes its custom symbol and A12
 - R1–R6: **six resistors**, each 1 kΩ, 1%, 1/8 W.
 - J1: pin 1 = 3.3 V; pin 2 = analog output; pin 3 = GND.
 
-The master schematic shows a 220 Ω series resistor and 100 nF capacitor near each Teensy rotary-switch input.
+The Main Board schematic shows a 220 Ω series resistor and 100 nF capacitor near each Teensy rotary-switch input.
 
-**Tested wiring:** Both seven-position rotary switches were tested and worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. Some fluctuation was visible in the voltage readings on the TFT, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the master schematic were not part of that test.
+**Tested wiring:** Both seven-position rotary switches were tested and worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. Some fluctuation was visible in the voltage readings on the TFT, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the Main Board schematic were not part of that test.
 
 ## SQL On/Off option added in version 1.2
 
@@ -33,7 +33,7 @@ The solder-lug A12515RNZQ still requires mechanical support and wires to the cor
 
 Validation for version 2.0: KiCad PCB DRC, with zones refilled, reported zero non-excluded violations and zero unconnected pads under the saved project settings. The project contains 15 specific PTH-inside-switch-courtyard exclusions for the rear-side resistors and connector; their lead and solder-joint clearance to the switch body still requires physical verification. Several other check categories are disabled in the project. Fresh electrical schematic and PCB checks, including schematic parity, were run October 27, 2026; see the manufacturing files section. I’ve confirmed the mechanical fit. Testing the electrical operation of an assembled, manufactured board is still on my list; the check results above describe what has been verified so far.
 
-**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. The Main Board v1.1 now includes TP1 (SQL signal, GPIO 41 / U1 pad 33) and TP2 (GND) for direct solder-wire connections. The optional SQL1 header remains; the current Main Board v1.1 is routed with zero unconnected items; final routing review, physical fit, and assembly checks remain pending.
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Main Board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. The Main Board v1.1 now includes TP1 (SQL signal, GPIO 41 / U1 pad 33) and TP2 (GND) for direct solder-wire connections. The optional SQL1 header remains; the current Main Board v1.1 is routed with zero unconnected items; final routing review, physical fit, and assembly checks remain pending.
 
 ## Manufacturing files
 

@@ -1,4 +1,4 @@
-# ARC-210 Main Controller PCB v1.1 and schematic
+# ARC-210 Main Board v1.1 and schematic
 
 Updated October 29, 2026: USB-powered design with TFT VCC supplied directly from the Teensy's 3.3 V rail.
 
@@ -12,7 +12,7 @@ Main Board **v1.1** includes the completed placement and routing, GND copper pou
 
 ## PCB layout — five or six boards
 
-The panel uses **five required PCBs**: one Main Controller, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards, all controlled by one Teensy 4.1. An **optional SQL On/Off switch PCB brings the total to six**; it can be omitted when wiring directly to the switch’s solder lugs. The optional SQL board uses the same Rotary Switch PCB design.
+The panel uses **five required PCBs**: one Main Board, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards, all controlled by one Teensy 4.1. An **optional SQL On/Off switch PCB brings the total to six**; it can be omitted when wiring directly to the switch’s solder lugs. The optional SQL board uses the same Rotary Switch PCB design.
 
 The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the longer SQL On/Off switch shaft, whether or not the optional PCB is fitted.
 
@@ -23,7 +23,7 @@ The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **req
 - **J4:** 14-pin rotary-encoder connector; pins 13 and 14 are GND.
 - **J10 (MASTER) pin 2:** rotary-switch signal through R1 to GPIO 14 / A0, KiCad U1 pad 36.
 - **J9 (MODE) pin 2:** rotary-switch signal through R2 to GPIO 15 / A1, KiCad U1 pad 37.
-- **SQL1:** pin 1 is GPIO 41 / U1 pad 33; pin 2 is GND. The SQL On/Off switch PCB is optional when wiring its solder lugs directly. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending.
+- **SQL1:** pin 1 is GPIO 41 / U1 pad 33; pin 2 is GND. The SQL On/Off switch PCB is optional when wiring its solder lugs directly. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending.
 
 **GPIO labels are not KiCad pad numbers.** For example, GPIO 4 is U1 pad 6, GPIO 14 is pad 36, and GPIO 15 is pad 37. Use the labels printed on the Teensy for wiring and firmware; use the matching symbol and `teensy:Teensy41` footprint when updating the PCB.
 

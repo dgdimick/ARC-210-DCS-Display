@@ -1,5 +1,7 @@
 # ARC-210 Button Matrix PCB
 
+Current Main Board version: **1.1**.
+
 PCB version **3.1 — Final design; physical test fit confirmed**. KiCad 10 project.
 
 Updated October 27, 2026. The current PCB, schematic, project settings, and project-local footprint library are included in this folder.
@@ -46,7 +48,7 @@ Use 16 SPST momentary tactile switches, **6 × 6 × 5 mm**, with four through-ho
 
 The schematic has **two separate four-pin connectors**, rather than one eight-pin connector:
 
-| Button Matrix connector | Master Board J2 pin | Teensy GPIO label | KiCad Teensy U1 pad |
+| Button Matrix connector | Main Board J2 pin | Teensy GPIO label | KiCad Teensy U1 pad |
 | --- | ---: | ---: | ---: |
 | J1 pin 1 — row 1 | 1 | 30 | 22 |
 | J1 pin 2 — row 2 | 2 | 31 | 23 |
@@ -57,7 +59,7 @@ The schematic has **two separate four-pin connectors**, rather than one eight-pi
 | J2 pin 3 — column 3 | 7 | 37 | 29 |
 | J2 pin 4 — column 4 | 8 | 40 | 32 |
 
-The connector reference J2 on this button schematic is different from J2 on the Master Board. Use the table to wire between them. The supplied PCB uses these two four-pin connectors.
+The connector reference J2 on this button schematic is different from J2 on the Main Board. Use the table to wire between them. The supplied PCB uses these two four-pin connectors.
 
 **Teensy printed GPIO labels differ from KiCad pad numbers.** For example, GPIO 30 is U1 pad 22. Use the Teensy labels for firmware and wiring, and the matching symbol/footprint pad numbers when working in KiCad.
 

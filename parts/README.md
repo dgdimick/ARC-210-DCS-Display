@@ -4,7 +4,7 @@ Updated October 29, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
-The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 master schematic and final control-board projects. The Main Board v1.1, Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 design and manufacturing files are published. The parts list will continue to improve as the manufactured boards are assembled and tested. A few component details and footprints need confirming, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
+The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 Main Board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 Main Board schematic and final control-board projects. The Main Board v1.1, Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 design and manufacturing files are published. The parts list will continue to improve as the manufactured boards are assembled and tested. A few component details and footprints need confirming, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
 
 ## Power and future button lighting
 
@@ -49,7 +49,7 @@ This estimate excludes tools, labor, cockpit mounting fasteners, shipping, tax a
 
 ## PCB layout — five or six boards
 
-The panel uses five required PCBs: one Main Controller, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards. An optional SQL On/Off switch PCB brings the total to six; it can be omitted when wiring directly to the switch’s solder lugs.
+The panel uses five required PCBs: one Main Board, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards. An optional SQL On/Off switch PCB brings the total to six; it can be omitted when wiring directly to the switch’s solder lugs.
 
 The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether or not the optional PCB is fitted.
 
@@ -57,15 +57,15 @@ All boards are controlled by one Teensy 4.1. The estimate above allows for all s
 
 The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. When using the optional SQL On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
 
-**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending.
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Main Board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending.
 
 ## Rotary-switch test wiring
 
-**Tested wiring:** Both seven-position rotary switches were tested and worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. Some fluctuation was visible in the voltage readings on the TFT, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the master schematic were not part of that test.
+**Tested wiring:** Both seven-position rotary switches were tested and worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. Some fluctuation was visible in the voltage readings on the TFT, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the Main Board schematic were not part of that test.
 
 ## BOM coverage
 
-[BOM.csv](BOM.csv) originated from the ARC-210 master-board schematic and includes subsequent panel-hardware selections. Panel-hardware entries are explicitly labelled so their references are not confused with master-board references. The board-specific purchasing lists are still being refined. The quantities already account for the documented build, so there’s no need to multiply them by the number of PCBs.
+[BOM.csv](BOM.csv) originated from the ARC-210 Main Board schematic and includes subsequent panel-hardware selections. Panel-hardware entries are explicitly labelled so their references are not confused with Main Board references. The board-specific purchasing lists are still being refined. The quantities already account for the documented build, so there’s no need to multiply them by the number of PCBs.
 
 The corrected [Rotary Switch KiCad project, version 2.0](../PCBs/Rotary%20Switches/), replaces the withdrawn initial version. Version 2.0 retains the corrected pin assignments and adds an ON/OFF solder jumper for SQL On/Off. Omit R1–R6 and bridge JP1 for SQL On/Off operation; fit the resistors and leave JP1 open for resistor-ladder operation. See the project instructions for wiring and pull-up configuration.
 
@@ -75,7 +75,7 @@ The panel/button illumination LEDs have been dropped because there is insufficie
 
 This update changes the documentation and parts list only; existing schematic drawings may still show the former panel-lighting circuit.
 
-## Main Controller direct TFT power
+## Main Board direct TFT power
 
 The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). TFT brightness at 3.3 V has been confirmed satisfactory. The external protected 5 V input and Main Board JP1 power selector have been removed. C5 (470 µF) and C6 (0.1 µF) have been removed to match the tested direct Teensy-to-TFT wiring. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
 
@@ -103,28 +103,28 @@ For example, connect a rotary-switch signal to the Teensy connection marked **14
 
 ## Pin headers and mating connectors — October 27, 2026
 
-Quantities below are for **one complete panel with the optional SQL On/Off PCB installed**, including all three rotary-switch PCBs. If you wire the solder-lug SQL switch directly, omit its PCB-side header and cable connectors as appropriate for your wiring method. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
+Quantities below are for **one complete panel with the optional SQL On/Off PCB installed**, including all three rotary-switch PCBs. If you wire the solder-lug SQL switch directly, omit its PCB-side header and cable connectors as appropriate for your wiring method. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
 
 | Location / use | Board-side male header | Quantity | Mating cable housings |
 | --- | --- | ---: | --- |
-| Master J4 and Encoder PCB J1 | 1x14 | 2 | Two 1x14 female |
-| Master J2 | 1x08 | 1 | One 1x08 female |
+| Main Board J4 and Encoder PCB J1 | 1x14 | 2 | Two 1x14 female |
+| Main Board J2 | 1x08 | 1 | One 1x08 female |
 | Button Matrix PCB J1/J2 | 1x04 | 2 | Two 1x04 female |
-| Master J9/J10 and two multi-position switch PCBs | 1x03 | 4 | Four 1x03 female |
-| Master SQL1 | 1x02 | 1 | One 1x02 female |
+| Main Board J9/J10 and two multi-position switch PCBs | 1x03 | 4 | Four 1x03 female |
+| Main Board SQL1 | 1x02 | 1 | One 1x02 female |
 | SQL On/Off switch PCB J1 | 1x03 | 1 | One 1x03 female; use pins 2 and 3 only |
-| Master J1, TFT connection | 1x08 | 1 | One 1x08 female at master; one 1x14 female at TFT module |
+| Main Board J1, TFT connection | 1x08 | 1 | One 1x08 female at master; one 1x14 female at TFT module |
 | Teensy mounting | Two 1x24 male strips on Teensy | 2 | Two 1x24 female PCB socket strips on master |
 
 Totals: **two 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 male board headers**, plus two 1x24 Teensy male strips if not already fitted. Cable housings total **three 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 female**, separate from the two 1x24 board sockets. Use at least **76 female crimp contacts**, plus spares, matched to the housing manufacturer's series. Wire lengths depend on the final panel layout. Preterminated female cables can replace housings and crimp contacts without counting both.
 
-The TFT module normally already has its 14-pin male header. Check before purchasing an additional one. The final [Button Matrix v3.1](../PCBs/Button%20Matrix/) uses separate four-pin row and column connectors. Split the Master J2 eight-wire matrix cable accordingly: pins 1–4 to Button Matrix J1, and pins 5–8 to Button Matrix J2. Main J2 and J9/J10 now have 2.54 mm header footprints assigned. Check connector stack height and cable clearance when arranging the Main PCB. Unused Teensy USB-host, Ethernet and auxiliary headers are not required.
+The TFT module normally already has its 14-pin male header. Check before purchasing an additional one. The final [Button Matrix v3.1](../PCBs/Button%20Matrix/) uses separate four-pin row and column connectors. Split the Main Board J2 eight-wire matrix cable accordingly: pins 1–4 to Button Matrix J1, and pins 5–8 to Button Matrix J2. Main J2 and J9/J10 now have 2.54 mm header footprints assigned. Check connector stack height and cable clearance when arranging the Main PCB. Unused Teensy USB-host, Ethernet and auxiliary headers are not required.
 
 **Cable mapping matters:** the encoder cable is pin-for-pin between the two 14-pin headers. The matrix cable uses rows on pins 1–4 and columns on pins 5–8. Multi-position switch cables use 1 = 3.3 V, 2 = signal and 3 = GND. When using the optional SQL On/Off PCB, its cable maps master SQL1 pin 1 to switch-board J1 pin 2, and SQL1 pin 2 to switch-board J1 pin 3; switch-board pin 1 stays unused.
 
-The TFT cable is **not straight-through**. With the current master schematic and MSP3520 module manual, connect:
+The TFT cable is **not straight-through**. With the current Main Board schematic and MSP3520 module manual, connect:
 
-| Master J1 pin | Signal | TFT module pin |
+| Main Board J1 pin | Signal | TFT module pin |
 | --- | --- | --- |
 | 1 | Teensy 3.3 V (direct supply) | 1 |
 | 2 | GND | 2 |

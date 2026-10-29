@@ -67,7 +67,7 @@ Future button lighting would require a separate power and driver design, suitabl
 
 ## PCB layout — five or six boards
 
-The panel uses five required PCBs: one Main Controller, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards. An optional SQL On/Off switch PCB brings the total to six; it can be omitted when wiring directly to the switch’s solder lugs.
+The panel uses five required PCBs: one Main Board, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards. An optional SQL On/Off switch PCB brings the total to six; it can be omitted when wiring directly to the switch’s solder lugs.
 
 The [shaft spacer v.5](Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether or not the optional PCB is fitted.
 
@@ -83,7 +83,7 @@ The three Rotary Switch PCBs use the same design and are interchangeable; the SQ
 
 The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The Button Matrix PCB v3.1, Rotary Encoder PCB v1.4, and Rotary Switch PCB v2.0 are final designs. Main Board v1.1 completes the PCB designs, and its standalone manufacturing files are published. Manufactured-board fit and electrical testing are next.
 
-**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending.
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Main Board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending.
 
 ## Items that need to be completed
 
@@ -123,7 +123,7 @@ See the [Main Board README](PCBs/Master%20Board/README.md#main-pcb-3d-preview) f
 
 **October 27, 2026 — Main PCB layout progress and Teensy 4.1 3D preview**
 
-Initial component placement is progressing on the Main Controller PCB. The components are on the back of the board, with their bodies facing away from the faceplate. The draft includes the board outline, rotary-switch mounting hole and anti-rotation slot, four 3.5 mm mounting holes, and SQL On/Off solder-wire pads.
+Initial component placement is progressing on the Main Board. The components are on the back of the board, with their bodies facing away from the faceplate. The draft includes the board outline, rotary-switch mounting hole and anti-rotation slot, four 3.5 mm mounting holes, and SQL On/Off solder-wire pads.
 
 The Teensy 4.1 STEP model is now included and attached to U1 using a project-relative path. See the [new Main PCB 3D picture with the Teensy](images/Main-PCB-Teensy-3D.png), or download the [Main Board project](PCBs/Master%20Board/) and follow its [3D Viewer instructions](PCBs/Master%20Board/README.md#teensy-41-in-the-3d-viewer).
 
@@ -153,11 +153,11 @@ The earlier **Button Matrix PCB v3.0** (now superseded by v3.1), **Rotary Encode
 
 **October 24, 2026 — Button PCB schematic now available in the public repository**
 
-The then-current [Button Matrix v1.1 schematic and KiCad project](PCBs/Button%20Matrix/) are now available publicly. The schematic passed ERC with zero violations under its saved settings. This is a schematic-only release; the Button PCB layout and routing remain unfinished. That schematic used separate four-pin row and column connectors; see the project README for the mapping to the Master Board’s eight-pin matrix header. This is the current unlit button matrix, not the proposed future Button LED PCB.
+The then-current [Button Matrix v1.1 schematic and KiCad project](PCBs/Button%20Matrix/) are now available publicly. The schematic passed ERC with zero violations under its saved settings. This is a schematic-only release; the Button PCB layout and routing remain unfinished. That schematic used separate four-pin row and column connectors; see the project README for the mapping to the Main Board’s eight-pin matrix header. This is the current unlit button matrix, not the proposed future Button LED PCB.
 
-**October 24, 2026 — Master Board schematic now available in the public repository**
+**October 24, 2026 — Main Board schematic now available in the public repository**
 
-The [Master Board schematic and KiCad project](PCBs/Master%20Board/) are now available in this public repository, with the custom symbol libraries needed to open them. Download the repository ZIP and keep the project folder together. This was a schematic-only release at the time. The current Main Board draft now includes the SQL solder pads and routing; see the October 29 check results above.
+The [Main Board schematic and KiCad project](PCBs/Master%20Board/) are now available in this public repository, with the custom symbol libraries needed to open them. Download the repository ZIP and keep the project folder together. This was a schematic-only release at the time. The current Main Board draft now includes the SQL solder pads and routing; see the October 29 check results above.
 
 **October 24, 2026 — Optional SQL On/Off PCB and planned solder pads**
 
@@ -165,7 +165,7 @@ The **SQL On/Off PCB is optional** when using the solder-lug switch: wires can b
 
 **October 22, 2026 — Rotary switches work without input filters; position readings remain stable**
 
-**Tested wiring:** Both seven-position rotary switches were tested and worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. Some fluctuation was visible in the voltage readings on the TFT, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the master schematic were not part of that test.
+**Tested wiring:** Both seven-position rotary switches were tested and worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. Some fluctuation was visible in the voltage readings on the TFT, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the Main Board schematic were not part of that test.
 
 **October 22, 2026 — Future button-lighting option**
 
@@ -191,9 +191,9 @@ All STLs are now final. See the [Supporting STL files](Supporting%20STL%27s/READ
 
 Work continues on the Button PCB.
 
-**October 12, 2026 — Master Board schematic updated**
+**October 12, 2026 — Main Board schematic updated**
 
-The updated [Master Board KiCad project](PCBs/Master%20Board/) has been pushed to the Teensy repository. That schematic revision used one 14-pin connector matching the Rotary Encoder PCB and an eight-pin connector for the separate 4×4 button matrix. It includes corrected Teensy signal connections, the C106D SCR pin numbering and its project symbol library. In that superseded revision, a three-pin TFT power selector, **JP1**, selected **protected 5 V with pins 1–2** or **Teensy 3.3 V with pins 2–3**. That earlier selector required one jumper shunt, changed only with power removed. The selector and protected 5 V branch are absent from the current design. The schematic passed ERC with zero errors and warnings under its saved settings. The Main PCB layout, routing and physical test fit remain unfinished.
+The updated [Main Board KiCad project](PCBs/Master%20Board/) has been pushed to the Teensy repository. That schematic revision used one 14-pin connector matching the Rotary Encoder PCB and an eight-pin connector for the separate 4×4 button matrix. It includes corrected Teensy signal connections, the C106D SCR pin numbering and its project symbol library. In that superseded revision, a three-pin TFT power selector, **JP1**, selected **protected 5 V with pins 1–2** or **Teensy 3.3 V with pins 2–3**. That earlier selector required one jumper shunt, changed only with power removed. The selector and protected 5 V branch are absent from the current design. The schematic passed ERC with zero errors and warnings under its saved settings. The Main PCB layout, routing and physical test fit remain unfinished.
 
 **October 12, 2026 — Rotary Encoder and Rotary Switch PCBs finalized; test fits confirmed**
 
@@ -213,7 +213,7 @@ The [final hardware test HEX](Firmware/Test%20Code/ARC210_Final_Hardware_Test_Te
 
 **October 10, 2026 — Two PCBs remaining**
 
-With the combined hardware test confirmed working, the remaining PCB work is the **Main Controller board** and a **redesign of the 16-button board** to improve button alignment with the faceplate.
+With the combined hardware test confirmed working, the remaining PCB work is the **Main Board** and a **redesign of the 16-button board** to improve button alignment with the faceplate.
 
 **Updated October 10, 2026 — Rotary Switch PCB version 1.2 adds SQL On/Off support**
 

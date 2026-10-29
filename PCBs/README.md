@@ -4,7 +4,7 @@ Updated October 29, 2026.
 
 ## PCB layout — five or six boards
 
-The panel uses **five required PCBs**: one Main Controller, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards, all controlled by one Teensy 4.1. The **optional SQL On/Off PCB brings the total to six**; it can be omitted when wiring directly to the switch’s solder lugs. The SQL board uses the same Rotary Switch PCB design.
+The panel uses **five required PCBs**: one Main Board, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards, all controlled by one Teensy 4.1. The **optional SQL On/Off PCB brings the total to six**; it can be omitted when wiring directly to the switch’s solder lugs. The SQL board uses the same Rotary Switch PCB design.
 
 The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the longer SQL On/Off switch shaft, whether or not the optional PCB is fitted.
 
@@ -79,7 +79,7 @@ Future button lighting would require a separate power and driver design, suitabl
 
 ## Optional SQL On/Off PCB
 
-The SQL On/Off PCB is optional when wiring directly to the switch’s solder lugs. The build uses five PCBs without it, or six with it. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending. See the [direct-wiring notes](../parts/README.md#six-pcb-layout) for details.
+The SQL On/Off PCB is optional when wiring directly to the switch’s solder lugs. The build uses five PCBs without it, or six with it. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending. See the [direct-wiring notes](../parts/README.md#six-pcb-layout) for details.
 
 The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether using the optional switch PCB or wiring directly to the switch’s solder lugs.
 
