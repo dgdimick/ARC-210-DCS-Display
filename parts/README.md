@@ -147,6 +147,10 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
 
 The **SQL ON/OFF knob still needs to be designed and 3D printed**. A finished SQL ON/OFF knob STL is not yet included in the published files.
 
+## USB cable strain-relief support — design pending
+
+The **USB cable strain-relief support still needs to be designed and 3D printed**. It should secure the cable to the Main Board mounting structure or panel so cable pulls do not load the Teensy's Micro-B connector, while leaving enough slack to unplug the cable and remove the Teensy. Its finished STL and physical fit verification are pending.
+
 ## Required 3D-printed spacers
 
 - **Rotary Encoder spacers: print six.** Use [Rotary_Encoder_Spacer_v.1.stl](../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl), one per encoder, to center the encoder threads in the faceplate holes.
