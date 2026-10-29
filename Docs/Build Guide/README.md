@@ -107,9 +107,13 @@ The Main Board component bodies face **away from the faceplate**, on the back of
 
 **Pending:** the final Main Board fit check, exact standoff and socket heights, fastener lengths, TFT-to-board clearance, final assembly order, and step-by-step photographs. The Main Board's layout-spacing guide does not replace a physical fit check.
 
-### USB cable strain relief — pending design
+### USB cable strain relief — zip-tie slots added; physical validation pending
 
-Design and print a support that secures the USB cable to the Main Board mounting structure or panel, so cable pulls and movement are carried by the support rather than the Teensy's Micro-B connector. Leave enough slack to unplug the cable and remove the socketed Teensy for service. Final mounting points, cable clearance, dimensions, STL, and physical fit testing are **pending**.
+The [current Main Board PCB](../../PCBs/Master%20Board/README.md#usb-cable-zip-tie-slots) includes **two 4 × 2 mm oblong slots** below the Teensy's USB connector, aligned with its two pin rows. These are Edge.Cuts milling contours and are intended for a small **2.5 mm zip tie**.
+
+After checking the fit of the actual cable and boot, pass the tie through the two slots and around the cable so pulls are taken by the PCB support rather than the Micro-B connector. Avoid overtightening and leave enough slack to unplug the cable and remove the socketed Teensy for service.
+
+**Pending:** physical fit and strain-relief validation with the actual cable/tie, an installation photograph, and the design/printing of any additional cable support. The slots are included in the published draft; the Main Board manufacturing release remains pending.
 
 ## 8. Main Board assembly and wiring — pending final validation
 

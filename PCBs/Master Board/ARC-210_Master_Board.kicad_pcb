@@ -4741,9 +4741,9 @@
 		)
 	)
 	(gr_text "ARC-210 https://github.com/dgdimick/ARC-210-DCS-Display\nMain Controler Board v1.0\n"
-		(at 170.675 168.55 0)
+		(at 191.86 69.42 90)
 		(layer "B.SilkS")
-		(uuid "1565add6-7307-446e-a316-8115ce7fd1bc")
+		(uuid "e7098253-3e78-4f40-9bde-b878aecb82a0")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -7199,4 +7199,13 @@
 		(uuid "dd1d9a37-439b-4612-8f71-798ffeb2b9f2")
 	)
 	(embedded_fonts no)
+
+(gr_line (start 127.21000000000001 162.5) (end 127.21000000000001 164.5) (stroke (width 0.05) (type default)) (layer "Edge.Cuts") (uuid "bc4096ab-fe10-436c-9ae7-50b286e2520e"))
+(gr_arc (start 127.21000000000001 164.5) (mid 128.21 165.5) (end 129.21 164.5) (stroke (width 0.05) (type default)) (layer "Edge.Cuts") (uuid "7b043323-4d69-44e6-822b-93a544d214e6"))
+(gr_line (start 129.21 164.5) (end 129.21 162.5) (stroke (width 0.05) (type default)) (layer "Edge.Cuts") (uuid "2445a3f6-2a35-4407-a89f-f0387186c555"))
+(gr_arc (start 129.21 162.5) (mid 128.21 161.5) (end 127.21000000000001 162.5) (stroke (width 0.05) (type default)) (layer "Edge.Cuts") (uuid "7b6bd812-3169-479e-850f-10c3b4b4ef21"))
+(gr_line (start 142.45 162.5) (end 142.45 164.5) (stroke (width 0.05) (type default)) (layer "Edge.Cuts") (uuid "d67089fe-9564-4fa2-882c-83e98eb3cd56"))
+(gr_arc (start 142.45 164.5) (mid 143.45 165.5) (end 144.45 164.5) (stroke (width 0.05) (type default)) (layer "Edge.Cuts") (uuid "061db4dc-35cc-48b1-b905-fc84a6989144"))
+(gr_line (start 144.45 164.5) (end 144.45 162.5) (stroke (width 0.05) (type default)) (layer "Edge.Cuts") (uuid "b44d1336-70bb-480d-8db6-daa77b2a00aa"))
+(gr_arc (start 144.45 162.5) (mid 143.45 161.5) (end 142.45 162.5) (stroke (width 0.05) (type default)) (layer "Edge.Cuts") (uuid "ac8ce236-8bb0-4346-8cbb-2b97df3eb281"))
 )

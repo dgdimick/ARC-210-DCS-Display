@@ -27,6 +27,16 @@ The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **req
 
 **GPIO labels are not KiCad pad numbers.** For example, GPIO 4 is U1 pad 6, GPIO 14 is pad 36, and GPIO 15 is pad 37. Use the labels printed on the Teensy for wiring and firmware; use the matching symbol and `teensy:Teensy41` footprint when updating the PCB.
 
+## USB cable zip-tie slots
+
+**Added October 29, 2026:** The PCB includes two **4 × 2 mm oblong internal cutouts** below the Teensy's USB connector. Their centers align with the two Teensy pin rows, at X = 128.21 mm and 143.45 mm, Y = 163.50 mm in the KiCad board coordinates. The long direction follows the pin rows/cable direction.
+
+The slots are intended for a small **2.5 mm zip tie** to hold the USB cable against the PCB and reduce strain on the Teensy's Micro-B connector. They are milled cutouts on **Edge.Cuts**, with no electrical pads. The existing routing and component positions are unchanged.
+
+**Pending physical fit check:** Confirm the actual cable plug, boot, and tie fit before final assembly. Secure the cable without loading the USB connector, leave service slack, and avoid overtightening. Final cable support validation and any additional printed support remain pending. This remains a draft PCB, not a manufacturing release.
+
+The updated DRC/parity report shows **zero violations, zero unconnected items, and zero schematic/PCB mismatches** under the saved settings.
+
 ## Required Rotary Encoder spacers
 
 Print **six [Rotary Encoder spacers v.1](../../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl)**, one for each encoder, to center the encoder threads in the faceplate holes.
