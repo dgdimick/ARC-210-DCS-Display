@@ -63,9 +63,16 @@ The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.
 
 Future button lighting would require a separate power and driver design, suitable light-transmitting buttons, and a new Button LED PCB. The current Main Board has no external lighting-power circuit. This lighting revision is not currently planned; the other radio projects remain the priority.
 
-## Six-PCB layout
+<a id="six-pcb-layout"></a>
 
-The radio uses **up to six PCBs**, controlled by one Teensy 4.1. Five boards are needed if the solder-lug SQL On/Off switch is wired directly; its separate PCB is optional:
+## PCB layout — five or six boards
+
+The panel uses five required PCBs: one Main Controller, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards. An optional SQL On/Off switch PCB brings the total to six; it can be omitted when wiring directly to the switch’s solder lugs.
+
+The [shaft spacer v.5](Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether or not the optional PCB is fitted.
+
+All boards are controlled by one Teensy 4.1:
+
 
 - **Master PCB:** carries the USB-powered Teensy, 3.3 V TFT supply, display and control connections.
 - **Button PCB:** carries the push-button switches behind the faceplate and connects to the master PCB.
