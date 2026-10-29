@@ -6,6 +6,10 @@
 
 The **SQL ON/OFF knob still needs to be designed and 3D printed**. Its finished STL is not yet included in this directory. The final-version notes below apply to the files already published.
 
+## USB cable strain-relief support — design pending
+
+The **USB cable strain-relief support still needs to be designed and 3D printed**. Its finished STL is not yet included in this directory. The support should protect the Teensy's Micro-B connector from cable pulls while allowing the cable to be unplugged and the Teensy removed for service. Physical fit verification is pending.
+
 ## Knob Set V3
 
 Updated October 4, 2026.
