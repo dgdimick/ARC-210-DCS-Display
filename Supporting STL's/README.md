@@ -1,6 +1,10 @@
 # ARC-210 Supporting 3D Files
 
-**Final STLs — October 22, 2026:** The STL files linked in the tables below are the final versions. The shaft spacer is **v.5**.
+**Final STLs — October 22, 2026:** The published STL files linked in the tables below are the final versions. The shaft spacer is **v.5**. The SQL ON/OFF knob remains to be designed and printed.
+
+## SQL ON/OFF knob — design pending
+
+The **SQL ON/OFF knob still needs to be designed and 3D printed**. Its finished STL is not yet included in this directory. The final-version notes below apply to the files already published.
 
 ## Knob Set V3
 
