@@ -1,6 +1,6 @@
 # ARC-210 Main Controller PCB draft and schematic
 
-Updated October 27, 2026: USB-powered design with TFT VCC supplied directly from the Teensy's 3.3 V rail.
+Updated October 28, 2026: USB-powered design with TFT VCC supplied directly from the Teensy's 3.3 V rail.
 
 ## Download and open
 
@@ -8,7 +8,7 @@ Download this repository using **Code → Download ZIP**, extract it, and keep t
 
 You can also download the [schematic](ARC-210_Master_Board.kicad_sch) and [PCB draft](ARC-210_Master_Board.kicad_pcb) directly. Downloading only that file does not include the project library configuration.
 
-This is a **PCB layout draft**, not a manufacturing release. The outline, switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes, and retained component footprints are present. All 13 circuit component footprints are on B.Cu, with their bodies facing away from the faceplate. Initial placement is in progress. Component placement, routing, current verification, and physical test fit remain unfinished. No Main Board Gerber package is included.
+This is a **PCB layout draft**, not a manufacturing release. The outline, switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes, and retained component footprints are present. All 13 circuit component footprints are on B.Cu, with their bodies facing away from the faceplate. Component placement and routing are in progress; see the October 28 picture below. Final placement, routing, design checks, current verification, and physical test fit remain unfinished. No Main Board Gerber package is included.
 
 ## PCB layout — five or six boards
 
@@ -49,9 +49,15 @@ Both seven-position switches worked with their outputs connected directly to GPI
 
 ### Main PCB 3D preview
 
-![Main Controller PCB draft, back-side angled view with the Teensy 4.1 model and component bodies facing away from the faceplate](../../images/Main-PCB-Teensy-3D.png)
+![Main Board working layout showing the Teensy 4.1, back-side components, MODE and MASTER connectors, and routing in progress](../../images/Main-PCB-Layout-2026-10-28.png)
 
-*Back-side angled view of the Main Controller PCB with the Teensy 4.1 model. Component placement is in progress; routing and physical fit verification remain unfinished.*
+*October 28, 2026 — Main Board placement and routing in progress, viewed from the component side facing away from the faceplate.*
+
+The current working layout includes the Teensy 4.1, TFT and control connectors, and SQL On/Off solder connections. **J9 is MODE** (GPIO 15 / A1), and **J10 is MASTER** (GPIO 14 / A0). A **26.2 mm circle on User.Drawings**, centered on the SQL shaft hole, provides a switch-body spacing guide without electrical pads. The existing shaft opening, anti-rotation slot, and mounting holes are retained.
+
+This picture shows the working layout and may be ahead of the published KiCad files. Final placement, routing, design checks, current verification, and Main Board physical test fit remain unfinished. The Main Board is not ready for manufacture.
+
+[Earlier angled Teensy 4.1 preview — October 27](../../images/Main-PCB-Teensy-3D.png)
 
 The project includes [Teensy_4.1_Board.step](Libraries/3dmodels/Teensy_4.1_Board.step), already attached to **U1** in the Main PCB. Its model path is `${KIPRJMOD}/Libraries/3dmodels/Teensy_4.1_Board.step`, so it works after downloading or cloning the repository without a machine-specific path.
 
