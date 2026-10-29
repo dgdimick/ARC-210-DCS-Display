@@ -108,3 +108,9 @@ See the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-co
 
 Questions or build photos? Join [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions), or [introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1).
 
+
+## Standalone manufacturing files
+
+[Download Main Board Gerbers and drill files](Manufacturing/Main-Board-PCB-Draft-Gerbers-Drill.zip) — exported October 29, 2026 from the current PCB, including the USB zip-tie slots. The package is for a two-layer, 1.6 mm bare PCB and contains separate plated/nonplated drills. See [fabrication notes](Manufacturing/README.txt) and [drill report](Manufacturing/Drill-report.txt).
+
+These files are a **draft fabrication export**, not a validated production release. Main Board physical fit, final routing review, current verification, assembly and electrical testing remain pending.

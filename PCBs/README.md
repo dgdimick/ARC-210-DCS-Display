@@ -95,3 +95,7 @@ Thinking about building one? The [DIY parts purchasing estimate](../parts/README
 **Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+
+### Main Board draft fabrication export
+
+The current [Main Board Gerber/drill ZIP](Master%20Board/Manufacturing/Main-Board-PCB-Draft-Gerbers-Drill.zip) is available, including the USB zip-tie slots. This standalone two-layer, 1.6 mm export remains a draft pending Main Board physical fit, final routing review, current verification and electrical testing. See the [Main Board README](Master%20Board/README.md#standalone-manufacturing-files).

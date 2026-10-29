@@ -11,7 +11,7 @@ This guide covers the ARC-210 panel using one Teensy 4.1, a 3.5-inch ILI9488 SPI
 | Button Matrix PCB v3.1 | Final design; physical fit and button alignment confirmed; manufacturing files published |
 | Rotary Encoder PCB v1.4 | Final design; physical fit confirmed; manufacturing files published |
 | Rotary Switch PCB v2.0 | Final design; physical fit confirmed; manufacturing files published |
-| Main Board | Routed draft; October 29 ERC/DRC and parity checks pass under saved settings; final review, current verification, physical fit, and manufacturing release pending |
+| Main Board v1.0 | Gerber/drill files published; October 29 ERC/DRC and parity checks pass under saved settings; final review, current verification, physical fit, and assembled-board testing pending |
 | Printed parts | Published knobs, bracket, and spacers available; SQL ON/OFF knob design and printing pending |
 | Electrical testing | Combined breadboard hardware test confirmed; assembled manufactured-board testing pending |
 | Radio firmware | Menu/display preview available; complete physical-control integration and final in-DCS validation pending |
@@ -61,7 +61,7 @@ Download the manufacturing packages from the [Gerber and drill table](../../PCBs
 
 Review the manufacturer's preview against the project outline and drill information. These control boards specify two layers and 1.6 mm thickness; consult each manufacturing README for details.
 
-**Pending — Main Board:** no Main Board manufacturing package is released. Do not treat the draft as a final fabrication release.
+**Main Board Version 1.0:** [Gerber and drill package](../../PCBs/Master%20Board/Manufacturing/Main-Board-PCB-Draft-Gerbers-Drill.zip) is available for a two-layer, 1.6 mm PCB. Physical fit, final routing review, current verification, and assembled-board testing remain pending; this is not yet a validated production release.
 
 ## 4. Assemble the Button Matrix PCB
 
