@@ -11,7 +11,7 @@ This guide covers the ARC-210 panel using one Teensy 4.1, a 3.5-inch ILI9488 SPI
 | Button Matrix PCB v3.1 | Final design; physical fit and button alignment confirmed; manufacturing files published |
 | Rotary Encoder PCB v1.4 | Final design; physical fit confirmed; manufacturing files published |
 | Rotary Switch PCB v2.0 | Final design; physical fit confirmed; manufacturing files published |
-| Main Board v1.1 | Gerber/drill files published; October 29 ERC/DRC and parity checks pass under saved settings; final review, current verification, physical fit, and assembled-board testing pending |
+| Main Board v1.1 | Gerber/drill files published; October 29 ERC/DRC and parity checks pass under saved settings; physical fit confirmed October 29, 2026; final review, current verification and assembled-board testing pending |
 | Printed parts | Published knobs, bracket, and spacers available; SQL ON/OFF knob design and printing pending |
 | Electrical testing | Combined breadboard hardware test confirmed; assembled manufactured-board testing pending |
 | Radio firmware | Menu/display preview available; complete physical-control integration and final in-DCS validation pending |
@@ -64,7 +64,7 @@ Download the manufacturing packages from the [Gerber and drill table](../../PCBs
 
 Review the manufacturer's preview against the project outline and drill information. These control boards specify two layers and 1.6 mm thickness; consult each manufacturing README for details.
 
-**Main Board Version 1.1:** [Gerber and drill package](../../PCBs/Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) is available for a two-layer, 1.6 mm PCB. Physical fit, final routing review, current verification, and assembled-board testing remain pending; this is not yet a validated production release.
+**Main Board Version 1.1:** [Gerber and drill package](../../PCBs/Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) is available for a two-layer, 1.6 mm PCB. Physical fit is confirmed for Main Board v1.1; final routing review, current verification and assembled-board testing remain pending; this is not yet a validated production release.
 
 ## 4. Assemble the Button Matrix PCB
 
@@ -108,7 +108,9 @@ Use the current TFT bracket, encoder spacers, switch shaft spacer, and faceplate
 
 The Main Board component bodies face **away from the faceplate**, on the back of the board. Version 1.1 includes the switch shaft and anti-rotation openings and four 3.5 mm mounting holes.
 
-**Pending:** the final Main Board fit check, exact standoff and socket heights, fastener lengths, TFT-to-board clearance, final assembly order, and step-by-step photographs. The Main Board's layout-spacing guide does not replace a physical fit check.
+**Main Board v1.1 physical fit confirmed — October 29, 2026.**
+
+**Pending:** exact standoff and socket heights, fastener lengths, TFT-to-board component clearance, final assembly order, and step-by-step photographs.
 
 ### USB cable strain relief — zip-tie slots added; physical validation pending
 

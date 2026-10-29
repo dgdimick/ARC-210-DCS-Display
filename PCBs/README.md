@@ -8,10 +8,11 @@ The panel uses **five required PCBs**: one Main Board, one Button Matrix, one Ro
 
 The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the longer SQL On/Off switch shaft, whether or not the optional PCB is fitted.
 
-The following three PCB designs are final. Physical fit and button alignment have been checked:
+Physical fit has been confirmed for all four PCB designs; Button Matrix alignment is also confirmed:
 
 | PCB | Final version | Status |
 | --- | --- | --- |
+| [Main Board](Master%20Board/) | 1.1 | Physical fit confirmed October 29, 2026; manufactured-board assembly and electrical testing pending |
 | [Button Matrix](Button%20Matrix/) | 3.1 | Final design; v3.1 physical test fit and button alignment confirmed |
 | [Rotary Encoders](Rotary%20Encoders/) | 1.4 | Final design; test fit confirmed |
 | [Rotary Switches](Rotary%20Switches/) | 2.0 | Final design; test fit confirmed |
@@ -51,9 +52,9 @@ The downloadable [version 3.1 KiCad files](Button%20Matrix/) now include the PCB
 
 **Layout progress — October 28, 2026:** Component placement and routing are progressing on the Main Board. The [new Main Board layout picture](../images/Main-PCB-Layout-2026-10-28.png) shows the Teensy 4.1, TFT and control connectors, SQL On/Off solder connections, and back-side component arrangement. J9 is labelled **MODE** and J10 **MASTER**. A 26.2 mm circle provides a SQL switch body spacing guide without electrical pads. The rotary-switch mounting opening, anti-rotation slot, and four 3.5 mm mounting holes remain.
 
-The current saved Main Board PCB and schematic have now been uploaded to match the layout-progress picture. October 29 checks after correcting the J4/TP1 values report zero ERC violations, zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. See the [Main Board README and picture](Master%20Board/README.md#main-pcb-3d-preview) and [3D Viewer instructions](Master%20Board/README.md#teensy-41-in-the-3d-viewer). Final placement/routing review, current verification, and Main Board physical test fit remain to be completed; the October 29 ERC/DRC and parity checks pass under the saved settings. Main Board v1.1 Gerber and drill files are now available above; physical fit and manufactured-board testing remain pending.
+The current saved Main Board PCB and schematic have now been uploaded to match the layout-progress picture. October 29 checks after correcting the J4/TP1 values report zero ERC violations, zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. See the [Main Board README and picture](Master%20Board/README.md#main-pcb-3d-preview) and [3D Viewer instructions](Master%20Board/README.md#teensy-41-in-the-3d-viewer). Main Board v1.1 physical fit is confirmed. Final placement/routing review and current verification remain to be completed; the October 29 ERC/DRC and parity checks pass under the saved settings. Main Board v1.1 Gerber and drill files are now available above; physical fit is confirmed and manufactured-board testing remains pending.
 
-The updated [Main Board PCB draft, schematic, and KiCad project](Master%20Board/) are available to download. The board now uses USB power and the Teensy's 3.3 V supply for TFT VCC; the external protected 5 V branch and power selector are removed. C5/C6 have been removed to match the tested direct TFT wiring; C1/C2 rotary-input filters remain. TFT brightness at 3.3 V is confirmed satisfactory. Components are on B.Cu, facing away from the faceplate. The draft has zero unconnected items under the October 29 checks. Final placement/routing review, current verification, and physical test fit remain pending; Main Board v1.1 manufacturing files are provided above.
+The updated [Main Board PCB draft, schematic, and KiCad project](Master%20Board/) are available to download. The board now uses USB power and the Teensy's 3.3 V supply for TFT VCC; the external protected 5 V branch and power selector are removed. C5/C6 have been removed to match the tested direct TFT wiring; C1/C2 rotary-input filters remain. TFT brightness at 3.3 V is confirmed satisfactory. Components are on B.Cu, facing away from the faceplate. The draft has zero unconnected items under the October 29 checks. Main Board v1.1 physical fit is confirmed. Final placement/routing review and current verification remain pending; Main Board v1.1 manufacturing files are provided above.
 
 ## Teensy GPIO labels and KiCad pin numbers
 
@@ -79,7 +80,7 @@ Future button lighting would require a separate power and driver design, suitabl
 
 ## Optional SQL On/Off PCB
 
-The SQL On/Off PCB is optional when wiring directly to the switch’s solder lugs. The build uses five PCBs without it, or six with it. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending. See the [direct-wiring notes](../parts/README.md#six-pcb-layout) for details.
+The SQL On/Off PCB is optional when wiring directly to the switch’s solder lugs. The build uses five PCBs without it, or six with it. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; Main Board v1.1 physical fit is confirmed; assembly checks remain pending. See the [direct-wiring notes](../parts/README.md#six-pcb-layout) for details.
 
 The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether using the optional switch PCB or wiring directly to the switch’s solder lugs.
 
@@ -99,6 +100,6 @@ Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discu
 
 ### Main Board v1.1 fabrication export
 
-The current [Main Board Gerber/drill ZIP](Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) is available, including the USB zip-tie slots. This standalone two-layer, 1.6 mm v1.1 export includes the ground pours. Main Board physical fit, current verification and electrical testing remain pending. See the [Main Board README](Master%20Board/README.md#standalone-manufacturing-files).
+The current [Main Board Gerber/drill ZIP](Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) is available, including the USB zip-tie slots. This standalone two-layer, 1.6 mm v1.1 export includes the ground pours. Main Board v1.1 physical fit is confirmed; current verification and electrical testing remain pending. See the [Main Board README](Master%20Board/README.md#standalone-manufacturing-files).
 
 Main Board **v1.1** includes GND-connected copper pours on both layers, with isolated islands removed. Use its updated [v1.1 fabrication package](Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip).

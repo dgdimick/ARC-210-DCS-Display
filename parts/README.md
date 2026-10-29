@@ -57,7 +57,7 @@ All boards are controlled by one Teensy 4.1. The estimate above allows for all s
 
 The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. When using the optional SQL On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
 
-**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Main Board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending.
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Main Board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; Main Board v1.1 physical fit is confirmed; assembly checks remain pending.
 
 ## Rotary-switch test wiring
 
@@ -83,7 +83,7 @@ C5 (470 µF) and C6 (0.1 µF) are no longer fitted or required purchases. The Ma
 
 J3, F2, D1, D2, D3, Q2, R15–R17, C5/C6, and the Main Board JP1 header/shunt are removed and are not required purchases for this revision. The [BOM](BOM.csv) has been updated to remove those entries. The obsolete Q3, R37, and R38 entries, absent from every current board schematic, have also been removed from the BOM. The matrix diode entries specify 1N4148 with the current DO-35 footprint, including corrected D8. The cost allowance still needs review before purchasing; use the current board schematics as the authority for fitted parts.
 
-The 100 nF rotary-input capacitors C1/C2 and series resistors R1/R2 are retained. SQL solder-wire pads TP1/TP2 are placed and routed in the Main Board draft; final physical fit and assembly checks remain pending.
+The 100 nF rotary-input capacitors C1/C2 and series resistors R1/R2 are retained. SQL solder-wire pads TP1/TP2 are placed and routed in the Main Board draft; Main Board v1.1 physical fit is confirmed; assembly checks remain pending.
 
 ## Teensy GPIO labels and KiCad pin numbers
 
@@ -103,7 +103,7 @@ For example, connect a rotary-switch signal to the Teensy connection marked **14
 
 ## Pin headers and mating connectors — October 27, 2026
 
-Quantities below are for **one complete panel with the optional SQL On/Off PCB installed**, including all three rotary-switch PCBs. If you wire the solder-lug SQL switch directly, omit its PCB-side header and cable connectors as appropriate for your wiring method. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
+Quantities below are for **one complete panel with the optional SQL On/Off PCB installed**, including all three rotary-switch PCBs. If you wire the solder-lug SQL switch directly, omit its PCB-side header and cable connectors as appropriate for your wiring method. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; Main Board v1.1 physical fit is confirmed; assembly checks remain pending. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
 
 | Location / use | Board-side male header | Quantity | Mating cable housings |
 | --- | --- | ---: | --- |

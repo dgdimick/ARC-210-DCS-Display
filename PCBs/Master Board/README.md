@@ -8,7 +8,7 @@ Download this repository using **Code → Download ZIP**, extract it, and keep t
 
 You can also download the [schematic](ARC-210_Master_Board.kicad_sch) and [PCB v1.1](ARC-210_Master_Board.kicad_pcb) directly. Downloading only that file does not include the project library configuration.
 
-Main Board **v1.1** includes the completed placement and routing, GND copper pours on both layers, and a [Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). Its switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes and USB zip-tie slots are retained. All 13 circuit component footprints are on B.Cu, facing away from the faceplate. ERC, DRC and schematic/PCB parity pass under the saved settings, with zero unconnected items. Physical fit, current verification, assembly and manufactured-board testing are still ahead. Take your time with the build, and please ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) if you need a hand.
+Main Board **v1.1** includes the completed placement and routing, GND copper pours on both layers, and a [Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). Its switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes and USB zip-tie slots are retained. All 13 circuit component footprints are on B.Cu, facing away from the faceplate. ERC, DRC and schematic/PCB parity pass under the saved settings, with zero unconnected items. Physical fit is confirmed for Main Board v1.1; current verification, assembly and manufactured-board testing are still ahead. Take your time with the build, and please ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) if you need a hand.
 
 ## PCB layout — five or six boards
 
@@ -23,7 +23,7 @@ The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **req
 - **J4:** 14-pin rotary-encoder connector; pins 13 and 14 are GND.
 - **J10 (MASTER) pin 2:** rotary-switch signal through R1 to GPIO 14 / A0, KiCad U1 pad 36.
 - **J9 (MODE) pin 2:** rotary-switch signal through R2 to GPIO 15 / A1, KiCad U1 pad 37.
-- **SQL1:** pin 1 is GPIO 41 / U1 pad 33; pin 2 is GND. The SQL On/Off switch PCB is optional when wiring its solder lugs directly. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending.
+- **SQL1:** pin 1 is GPIO 41 / U1 pad 33; pin 2 is GND. The SQL On/Off switch PCB is optional when wiring its solder lugs directly. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; Main Board v1.1 physical fit is confirmed; assembly checks remain pending.
 
 **GPIO labels are not KiCad pad numbers.** For example, GPIO 4 is U1 pad 6, GPIO 14 is pad 36, and GPIO 15 is pad 37. Use the labels printed on the Teensy for wiring and firmware; use the matching symbol and `teensy:Teensy41` footprint when updating the PCB.
 
@@ -73,7 +73,7 @@ Both seven-position switches worked with their outputs connected directly to GPI
 
 The current working layout includes the Teensy 4.1, TFT and control connectors, and SQL On/Off solder connections. **J9 is MODE** (GPIO 15 / A1), and **J10 is MASTER** (GPIO 14 / A0). A **26.2 mm circle**, centered on the SQL shaft hole, provides a switch-body spacing guide without electrical pads. The earlier board-edge silkscreen clipping warning is resolved in the corrected upload. The existing shaft opening, anti-rotation slot, and mounting holes are retained.
 
-The current saved PCB and schematic shown by this layout-progress update are now uploaded to this folder. The v1.1 design checks pass under the saved settings. Current verification and the Main Board physical test fit remain pending. Main Board v1.1 design and fabrication files are now published; physical fit and manufactured-board validation are still to come.
+The current saved PCB and schematic shown by this layout-progress update are now uploaded to this folder. The v1.1 design checks pass under the saved settings. Main Board v1.1 physical fit is confirmed; current verification remains pending. Main Board v1.1 design and fabrication files are now published; physical fit is confirmed and manufactured-board validation is still to come.
 
 [Earlier angled Teensy 4.1 preview — October 27](../../images/Main-PCB-Teensy-3D.png)
 
@@ -86,7 +86,7 @@ The project includes [Teensy_4.1_Board.step](Libraries/3dmodels/Teensy_4.1_Board
 
 If U1 is missing, check its **Footprint Properties → 3D Models** entry and confirm the STEP file is present at the path above. Reopen the viewer after replacing project files. The old missing assembly-model path and erroneous footprint-folder model entry have been removed.
 
-The model was checked in bottom and angled renders. This verifies visibility and visual alignment; physical mounting/socket clearance still needs the Main Board fit check. No electrical connections were changed by attaching the model.
+The model was checked in bottom and angled renders. This verifies visibility and visual alignment; Main Board v1.1 physical fit is now confirmed. Final socket height and component clearances should still be checked during assembly. No electrical connections were changed by attaching the model.
 
 ## Included libraries and checks
 
@@ -98,7 +98,7 @@ The model was checked in bottom and angled renders. This verifies visibility and
 
 Install KiCad's standard symbol, footprint, and 3D model libraries too. The Teensy 4.1 STEP model is now included and attached to U1; see the 3D Viewer section above.
 
-October 29, 2026 checks after matching J4 and TP1 values: [ERC](ERC-report.json) reports **zero violations**. [PCB DRC and schematic parity](DRC-report.json) report **zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches** under the saved settings. J4 is labelled **ROTARY ENCODERS** and TP1 **SQL ON/OFF** in both the schematic and PCB. The silkscreen clipping warning is also resolved. Some check categories are disabled. Final routing review, current verification, and physical fit checks remain pending; the v1.1 fabrication files are published, with physical validation still pending.
+October 29, 2026 checks after matching J4 and TP1 values: [ERC](ERC-report.json) reports **zero violations**. [PCB DRC and schematic parity](DRC-report.json) report **zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches** under the saved settings. J4 is labelled **ROTARY ENCODERS** and TP1 **SQL ON/OFF** in both the schematic and PCB. The silkscreen clipping warning is also resolved. Some check categories are disabled. Physical fit is confirmed for Main Board v1.1. Final routing review and current verification remain pending; the v1.1 fabrication files are published, with board fit confirmed and assembled-board validation still pending.
 
 PCB design license: CERN-OHL-P-2.0, as specified in the [main README](../../README.md#licensing). The bundled Teensy library retains its included license.
 
@@ -113,8 +113,8 @@ Questions or build photos? Join [Discussions](https://github.com/dgdimick/ARC-21
 
 [Download Main Board Gerbers and drill files](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) — exported October 29, 2026 from the current PCB, including the USB zip-tie slots. The package is for a two-layer, 1.6 mm bare PCB and contains separate plated/nonplated drills. See [fabrication notes](Manufacturing/README.txt) and [drill report](Manufacturing/Drill-report.txt).
 
-These files are a **draft fabrication export**, not a validated production release. Main Board physical fit, final routing review, current verification, assembly and electrical testing remain pending.
+These files are a **draft fabrication export**, not a validated production release. Main Board v1.1 physical fit is confirmed; final routing review, current verification, assembly and electrical testing remain pending.
 
 ## Main Board version 1.1
 
-Version 1.1 adds filled GND copper pours on F.Cu and B.Cu, with isolated islands removed. PCB and schematic revisions are 1.1; circuit connections, component placement and mechanical outlines are unchanged. Use the [v1.1 Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). Physical fit, current verification and manufactured-board testing remain pending. The previously submitted manufacturing order is unchanged.
+Version 1.1 adds filled GND copper pours on F.Cu and B.Cu, with isolated islands removed. PCB and schematic revisions are 1.1; circuit connections, component placement and mechanical outlines are unchanged. Use the [v1.1 Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). Physical fit is confirmed for Main Board v1.1; current verification and manufactured-board testing remain pending. The previously submitted manufacturing order is unchanged.

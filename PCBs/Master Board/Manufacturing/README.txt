@@ -8,7 +8,7 @@ SQL shaft hole and anti-rotation opening are retained.
 
 Generated from the current Main Board PCB in the parent directory.
 The source PCB and schematic are unchanged. This is a draft export:
-Main Board physical fit, final routing review, current verification,
+Main Board v1.1 physical fit confirmed October 29, 2026. Final routing review, current verification,
 assembly and electrical testing remain pending. See the parent README
 and existing DRC/ERC reports for check results and limitations.
 No components or assembly data are included.
