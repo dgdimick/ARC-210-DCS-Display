@@ -105,6 +105,10 @@ The Main Board component bodies face **away from the faceplate**, on the back of
 
 **Pending:** the final Main Board fit check, exact standoff and socket heights, fastener lengths, TFT-to-board clearance, final assembly order, and step-by-step photographs. The Main Board's layout-spacing guide does not replace a physical fit check.
 
+### USB cable strain relief — pending design
+
+Design and print a support that secures the USB cable to the Main Board mounting structure or panel, so cable pulls and movement are carried by the support rather than the Teensy's Micro-B connector. Leave enough slack to unplug the cable and remove the socketed Teensy for service. Final mounting points, cable clearance, dimensions, STL, and physical fit testing are **pending**.
+
 ## 8. Main Board assembly and wiring — pending final validation
 
 Use the [current Main Board schematic and README](../../PCBs/Master%20Board/README.md) as the authority. This section records the draft's connections, not a final assembly release.
