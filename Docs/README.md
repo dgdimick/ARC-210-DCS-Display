@@ -4,7 +4,7 @@ These notes explain the choices behind my ARC-210 build and help you find your w
 
 ## Why I used a Teensy
 
-[Why I used a Teensy.png](Why%20I%20used%20a%20Teensy.png) is a screenshot of the Teensy 4.1 symbol and its connections in the ARC-210 panel's KiCad schematic. The green lines are electrical connections to the rest of the circuit. It shows the display and control connections on one controller. The image also includes an earlier panel-lighting circuit; button lighting is not included in the current build.
+[Why I used a Teensy.png](Why%20I%20used%20a%20Teensy.png) is a screenshot of the Teensy 4.1 symbol and its connections in the ARC-210 panel's KiCad schematic. The green lines are electrical connections to the rest of the circuit. It shows the display and control connections on one controller. This is a historical schematic image: its panel-lighting and protected-power circuitry are not part of the current build. Use the current Main Board schematic for wiring.
 
 ![Teensy 4.1 connections in the ARC-210 schematic](Why%20I%20used%20a%20Teensy.png)
 
@@ -15,7 +15,7 @@ GPIO means general-purpose input/output. These are the pins the controller uses 
 - Rotary encoders each use two input signals to detect movement and direction.
 - The 16 buttons use a 4 × 4 matrix, requiring eight pins for the rows and columns instead of a separate pin for every button.
 - The SPI TFT needs clock and data signals, plus chip-select, data/command, and reset connections.
-- The display backlight has its own control signal. The older panel-lighting signal shown in the image belongs to a previous design; future button lighting would require the external 5 V supply and redesigned boards.
+- The display backlight has its own control signal. The older panel-lighting signal shown in the image belongs to a previous design; future button lighting would require a separate power/driver design and redesigned boards.
 - Other switches need inputs, and the current pin layout reserves two pins for I²C.
 
 Even with a button matrix, the connections add up quickly. The Teensy 4.1 provides enough pins for this design without adding GPIO expanders or a second controller. That keeps the wiring and firmware easier to manage.
@@ -83,13 +83,13 @@ For example, connect a rotary-switch signal to the Teensy connection marked **14
 
 The painted buttons supplied with the PC Flights panel used for this build are opaque: light will not pass through them, so LEDs behind them would not illuminate their legends. Future backlighting would also require suitable light-transmitting replacement buttons.
 
-The current design keeps the Teensy powered by USB. On the Master PCB, JP1 selects the TFT supply: **pins 1–2 select protected external 5 V; pins 2–3 select Teensy 3.3 V**. Fit only one shunt and remove power before moving it. JP1 does not select USB/VIN power. Keep the external protected 5 V rail separate from Teensy VIN and 3.3 V; the circuit uses a common ground. The TFT’s backlight is separate from the proposed button-lighting LEDs.
+The Teensy is powered by USB, and TFT VCC connects directly to the Teensy's 3.3 V supply. The external protected 5 V input, Main Board JP1 power selector, and C5/C6 TFT supply capacitors have been removed. C1/C2 and R1/R2 remain as rotary-input filters. The TFT backlight uses GPIO 4. Use a USB Micro-B data cable for power, programming, and USB communications.
 
-**Future button lighting will require the external 5 V supply and the associated power-input and protection circuitry to be installed.** USB/VIN power is not the planned source for this lighting option. It would also need a revised Master PCB with space for the lighting-control SCR, associated discrete components, and a pin header, plus a new Button PCB design. That Button PCB is not currently planned; the ARC-164 and ARC-184 projects will be completed before this option is revisited. Button-lighting LEDs are not part of the current build or parts estimate.
+Future button lighting would require suitable light-transmitting buttons, a separate power and driver design, a revised Main Board, and a new Button LED PCB. This is not currently planned; the other radio projects remain the priority. Button-lighting LEDs are not part of the current build or parts estimate.
 
 ## Optional SQL On/Off PCB
 
-The SQL On/Off PCB is optional when wiring directly to the switch’s solder lugs. The build uses five PCBs without it, or six with it. Dedicated SQL signal (GPIO 41) and GND solder pads are planned for the Master PCB; these pads have not yet been added. See the [direct-wiring notes](../parts/README.md#six-pcb-layout) for details.
+The SQL On/Off PCB is optional: the panel uses five required PCBs, or six with this optional board. For direct wiring, use TP1 (SQL signal, GPIO 41 / U1 pad 33) and TP2 (GND), both included and routed in the current Main Board draft. SQL1 remains an alternative two-pin header. The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is required in all installations to support the longer SQL On/Off switch shaft, whether or not the optional PCB is fitted. See the [direct-wiring notes](../parts/README.md#six-pcb-layout). Final physical fit and assembly testing remain pending.
 
 ## Estimated build cost
 

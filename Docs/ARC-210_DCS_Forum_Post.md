@@ -1,3 +1,5 @@
+> Historical forum-post draft. For current PCB releases, wiring, power, and firmware status, use the [main README](../README.md) and [parts documentation](../parts/README.md). The control-board manufacturing packages are now published; the Main Board remains a draft.
+
 I’m starting a **DCS-BIOS ARC-210 project**.
 
 So far, I’ve completed the schematic and have the Teensy communicating with DCS-BIOS and successfully displaying the current ARC-210 frequency on the TFT.
@@ -15,7 +17,7 @@ I also plan to release the firmware as a **HEX file**, so someone who isn’t a 
 
 Because this project will handle all **16 buttons**, the rotary encoders, rotary switches, TFT display, and the other ARC-210 controls, I’m using a **Teensy 4.1** as the controller.
 
-If you build one yourself, I expect the total cost to be **under $200 USD**, depending on where you source the parts.
+The current DIY purchasing estimate is **$275–$320 USD before shipping and tax**, including the faceplate and a provisional PCB allowance. See the [parts estimate](../parts/README.md#estimated-build-cost) for the dated figures and exclusions.
 
 I’ve also set up a GitHub repository where I’ll post project updates and files as the build progresses. There is already some test firmware available, including a basic TFT test that displays “Hello World” so you can verify that the Teensy and SPI TFT display are wired and working correctly.
 

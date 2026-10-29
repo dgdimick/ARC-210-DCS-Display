@@ -1,3 +1,5 @@
+Updated October 29, 2026. Current USB-powered Main Board; TFT VCC uses Teensy 3.3 V. Panel button-lighting circuitry is not fitted.
+
 Pin Layout
 
 ARC-210 Teensy 4.1
@@ -5,7 +7,6 @@ ARC-210 Teensy 4.1
 
 | Function       | Actual Teensy GPIO |
 | -------------- | -----------------: |
-| Panel LED PWM  |                  5 |
 | TFT BLK PWM    |                  4 |
 | TFT RESET      |                  8 |
 | TFT MOSI       |                 11 |
@@ -20,7 +21,9 @@ ARC-210 Teensy 4.1
 | Encoder 6      |             26, 27 |
 | Matrix rows    |     30, 31, 32, 33 |
 | Matrix columns |     35, 36, 37, 40 |
-| SPST           |                 41 |
+| SQL On/Off     |                 41 |
+| MASTER (J10)   |            14 / A0 |
+| MODE (J9)      |            15 / A1 |
 | I²C reserved   |             18, 19 |
 
 TFT BLK PWM wiring (confirmed working):

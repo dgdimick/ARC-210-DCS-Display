@@ -1,10 +1,10 @@
 # Parts
 
-Updated October 22, 2026.
+Updated October 29, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
-The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 master schematic and final control-board projects. The parts list is still being refined as I finish the main and button PCBs. A few component details and footprints need confirming, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
+The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 master schematic and final control-board projects. The parts list is still being refined as I finalize the Main Board; the three control-board designs and manufacturing files are already published. A few component details and footprints need confirming, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
 
 ## Power and future button lighting
 
@@ -43,7 +43,7 @@ The current Main Board is USB-powered and does not use an external 5 V adapter. 
 
 This estimate excludes tools, labor, cockpit mounting fasteners, shipping, tax and tariffs. Buying component assortments or minimum PCB quantities may increase the initial purchase cost and leave spare parts.
 
-**PCB pricing is provisional:** the main and button PCB layouts must be completed before an accurate fabrication quote is available. See the component details and wiring requirements below.
+**PCB pricing is provisional:** the Main Board must be finalized before an accurate full-panel fabrication quote is available. The Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 manufacturing files are already published. See the component details and wiring requirements below.
 
 <a id="six-pcb-layout"></a>
 
@@ -57,7 +57,7 @@ All boards are controlled by one Teensy 4.1. The estimate above allows for all s
 
 The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. When using the optional SQL On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
 
-**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available; final pad placement and routing are pending.
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending.
 
 ## Rotary-switch test wiring
 
@@ -81,9 +81,9 @@ The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.
 
 C5 (470 µF) and C6 (0.1 µF) are no longer fitted or required purchases. The Main Board has no added TFT supply capacitors; its TFT connections match the tested direct Teensy wiring.
 
-J3, F2, D1, D2, D3, Q2, R15–R17, C5/C6, and the Main Board JP1 header/shunt are removed and are not required purchases for this revision. The [BOM](BOM.csv) has been updated to remove those entries. Other mixed-panel BOM entries and the cost allowance still need review as the Main Board layout is finalized; use its current schematic as the authority for Main Board parts.
+J3, F2, D1, D2, D3, Q2, R15–R17, C5/C6, and the Main Board JP1 header/shunt are removed and are not required purchases for this revision. The [BOM](BOM.csv) has been updated to remove those entries. The obsolete Q3, R37, and R38 entries, absent from every current board schematic, have also been removed from the BOM. The matrix diode entries specify 1N4148 with the current DO-35 footprint, including corrected D8. The cost allowance still needs review before purchasing; use the current board schematics as the authority for fitted parts.
 
-The 100 nF rotary-input capacitors C1/C2 and series resistors R1/R2 are retained. SQL solder-wire pads TP1/TP2 are implemented in the Main Board draft; placement and routing remain pending.
+The 100 nF rotary-input capacitors C1/C2 and series resistors R1/R2 are retained. SQL solder-wire pads TP1/TP2 are placed and routed in the Main Board draft; final physical fit and assembly checks remain pending.
 
 ## Teensy GPIO labels and KiCad pin numbers
 
@@ -103,7 +103,7 @@ For example, connect a rotary-switch signal to the Teensy connection marked **14
 
 ## Pin headers and mating connectors — October 27, 2026
 
-Quantities below are for **one complete panel with the optional SQL On/Off PCB installed**, including all three rotary-switch PCBs. If you wire the solder-lug SQL switch directly, omit its PCB-side header and cable connectors as appropriate for your wiring method. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available; final pad placement and routing are pending. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
+Quantities below are for **one complete panel with the optional SQL On/Off PCB installed**, including all three rotary-switch PCBs. If you wire the solder-lug SQL switch directly, omit its PCB-side header and cable connectors as appropriate for your wiring method. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
 
 | Location / use | Board-side male header | Quantity | Mating cable housings |
 | --- | --- | ---: | --- |
@@ -143,6 +143,13 @@ Use **16 switches per panel**, each **6 × 6 × 5 mm**, SPST momentary tactile, 
 
 The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the purchased switches' lead spacing and contact pairing against it before fabrication.
 
+## Required 3D-printed spacers
+
+- **Rotary Encoder spacers: print six.** Use [Rotary_Encoder_Spacer_v.1.stl](../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl), one per encoder, to center the encoder threads in the faceplate holes.
+- **SQL On/Off shaft spacer: print one.** Use [Shaft_Spacer_v.5.stl](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) in all installations to support the longer SQL switch shaft, whether or not its optional PCB is fitted.
+
+Both spacer quantities are included in the [BOM](BOM.csv).
+
 ## Hardware selection and supplier links
 
 **Note:** This is intended to be a relatively simple design.
@@ -173,7 +180,7 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
   [Amazon](https://www.amazon.com/dp/B0H1QS5Q6N)
 
 - **Diodes:** 16 × 1N4148 small-signal fast-switching diodes, DO-35  
-  These are optional; jumper wires may be used in their place where appropriate.  
+  The current Button Matrix PCB uses D5–D20; fit the 16 diodes as shown in its schematic.  
   [Amazon](https://www.amazon.com/100-Pieces-1N4148-Switching-High-Speed/dp/B079KJ91JZ/ref=sr_1_1_sspa?s=industrial&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY)
 
 

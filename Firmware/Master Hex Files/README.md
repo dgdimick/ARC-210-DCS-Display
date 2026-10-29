@@ -23,7 +23,7 @@ Open this HEX in Teensy Loader, enable Auto, and press the Teensy's programming 
 
 ## Test the menu system without running DCS
 
-Use [dcsBiosDebug](https://github.com/dgdimick/dcsBiosDebug) to send simulated DCS-BIOS updates to the Teensy over USB serial. This lets you exercise the firmware's menu screens and navigation without launching DCS or loading a mission. See its [README and download links](https://github.com/dgdimick/dcsBiosDebug#downloads) for installation.
+Use the maintained [ARC-210 working branch of dcsBiosDebug](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working) to send simulated DCS-BIOS updates to the Teensy over USB serial. This lets you exercise the firmware's menu screens and navigation without launching DCS or loading a mission. See the [ARC-210 testing instructions](https://github.com/dgdimick/dcsBiosDebug/blob/arc210-working/ARC210_TESTING.md) for installation and the ARC-210 controls. The original executable does not contain those controls; use the Python script from the arc210-working branch. The manual JSON/Active Indicators procedure below describes the earlier generic workflow.
 
 1. Load `Master_Program.ino.hex` onto the Teensy and connect the display hardware.
 2. Close the DCS-BIOS serial bridge and any Serial Monitor using the Teensy's COM port.

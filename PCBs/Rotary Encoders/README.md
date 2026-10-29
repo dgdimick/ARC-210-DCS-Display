@@ -16,6 +16,10 @@ I printed the rotary-encoder STL and confirmed that it fits, and all six encoder
 
 Download this folder and keep its contents together. Open `Rotary Encoders.kicad_pro` in KiCad 10. The custom symbol and footprint libraries are included and use project-relative paths. Install KiCad's standard symbol and footprint libraries as well.
 
+## Required 3D-printed encoder spacers
+
+Print **six** [Rotary Encoder spacers v.1](../../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl), one per encoder. They center the encoder threads in the faceplate holes.
+
 ## Optional encoder 3D model
 
 Download [LIB_PEC11H-4220F-S0024.zip](LIB_PEC11H-4220F-S0024.zip), the original supplier library archive. Extract `PEC11H-4220F-S0024/3D/PEC11H-4220F-S0024.stp` and place the STP file beside `Rotary Encoders.kicad_pcb`.

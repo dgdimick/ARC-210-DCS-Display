@@ -83,7 +83,7 @@ The three Rotary Switch PCBs use the same design and are interchangeable; the SQ
 
 The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The Button Matrix PCB v3.1, Rotary Encoder PCB v1.4, and Rotary Switch PCB v2.0 are final designs. The remaining PCB design task is the Main Controller board.
 
-**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available; final pad placement and routing are pending.
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending.
 
 ## Items that need to be completed
 
@@ -96,16 +96,22 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 7. Document firmware installation and the required DCS-BIOS configuration.
 8. Test the manufactured boards and run an extended reliability test.
 9. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. This project provides files and build guidance; I’d prefer to keep this a DIY project rather than sell parts, kits, or completed panels. That said, a few people have already asked for help, so if you’re stuck and need a hand, feel free to reach out—I’d be happy to discuss what might be possible.
-10. Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
-11. Consider button lighting only as a future redesign with a separate power/driver circuit, suitable translucent buttons, and a new Button LED PCB. The current USB/3.3 V Main Board does not include this circuitry.
+
+## Future Thoughts and Plans
+
+- Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
+
+- Consider button lighting only as a future redesign with a separate power/driver circuit, suitable translucent buttons, and a new Button LED PCB. The current USB/3.3 V Main Board does not include this circuitry.
 
 ## Project updates
+
+Current hardware status: Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 are final designs with published manufacturing files. The routed Main Board draft passes the October 29 ERC/DRC and parity checks under its saved settings; final review, current verification, physical fit, and manufacturing release remain pending. **The dated entries below record development history. Earlier circuit descriptions, missing-pad notes, and old board revisions are superseded by the current project files and instructions above.**
 
 **October 28, 2026 — Main Board placement and routing progress**
 
 The latest [Main Board layout picture](images/Main-PCB-Layout-2026-10-28.png) shows the Teensy 4.1, TFT and control connectors, SQL On/Off solder connections, and routing in progress. Component bodies face away from the faceplate on the back of the PCB. J9 is labelled **MODE** and J10 **MASTER**. A 26.2 mm circle marks the SQL switch body for spacing without adding electrical pads.
 
-See the [Main Board README](PCBs/Master%20Board/README.md#main-pcb-3d-preview) for the new picture and layout notes. The current saved PCB and schematic are now uploaded. October 29 checks after correcting the J4/TP1 values report zero ERC violations, zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. This picture shows the current working layout; final placement, routing, design checks, current verification, and Main Board physical test fit remain to be completed. The Main Board is still a draft, with no manufacturing release.
+See the [Main Board README](PCBs/Master%20Board/README.md#main-pcb-3d-preview) for the new picture and layout notes. The current saved PCB and schematic are now uploaded. October 29 checks after correcting the J4/TP1 values report zero ERC violations, zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. This picture shows the current working layout; final placement/routing review, current verification, and Main Board physical test fit remain to be completed; the October 29 ERC/DRC and parity checks pass under the saved settings. The Main Board is still a draft, with no manufacturing release.
 
 **October 27, 2026 — Main PCB layout progress and Teensy 4.1 3D preview**
 
@@ -133,21 +139,21 @@ The final files pass ERC and DRC with zero reported violations, no unconnected i
 
 **October 27, 2026 — Three PCB designs uploaded and ready for manufacture**
 
-The **Button Matrix PCB v3.0**, **Rotary Encoder PCB v1.4**, and **Rotary Switch PCB v2.0** have been uploaded with their KiCad project files, Gerbers, and drill files. The manufacturing packages are ready to send to a PCB manufacturer; download them from the [PCB manufacturing files page](PCBs/README.md#gerber-and-drill-downloads).
+The earlier **Button Matrix PCB v3.0** (now superseded by v3.1), **Rotary Encoder PCB v1.4**, and **Rotary Switch PCB v2.0** were uploaded with their KiCad project files, Gerbers, and drill files. The manufacturing packages are ready to send to a PCB manufacturer; download them from the [PCB manufacturing files page](PCBs/README.md#gerber-and-drill-downloads).
 
 **Superseded by the v3.1 final-design update above:** the printed fit check confirmed button alignment, and the slightly long board edges were shortened. The rotary encoder and rotary switch designs have already been physically test-fitted. Testing assembled, manufactured boards remains to be completed.
 
 **October 24, 2026 — Button PCB schematic now available in the public repository**
 
-The [Button Matrix v1.1 schematic and KiCad project](PCBs/Button%20Matrix/) are now available publicly. The schematic passed ERC with zero violations under its saved settings. This is a schematic-only release; the Button PCB layout and routing remain unfinished. The current schematic uses separate four-pin row and column connectors; see the project README for the mapping to the Master Board’s eight-pin matrix header. This is the current unlit button matrix, not the proposed future Button LED PCB.
+The then-current [Button Matrix v1.1 schematic and KiCad project](PCBs/Button%20Matrix/) are now available publicly. The schematic passed ERC with zero violations under its saved settings. This is a schematic-only release; the Button PCB layout and routing remain unfinished. That schematic used separate four-pin row and column connectors; see the project README for the mapping to the Master Board’s eight-pin matrix header. This is the current unlit button matrix, not the proposed future Button LED PCB.
 
 **October 24, 2026 — Master Board schematic now available in the public repository**
 
-The [Master Board schematic and KiCad project](PCBs/Master%20Board/) are now available in this public repository, with the custom symbol libraries needed to open them. Download the repository ZIP and keep the project folder together. This is a schematic release; the Master PCB layout and routing are not finished, and the planned SQL direct-wiring solder pads have not yet been added.
+The [Master Board schematic and KiCad project](PCBs/Master%20Board/) are now available in this public repository, with the custom symbol libraries needed to open them. Download the repository ZIP and keep the project folder together. This was a schematic-only release at the time. The current Main Board draft now includes the SQL solder pads and routing; see the October 29 check results above.
 
 **October 24, 2026 — Optional SQL On/Off PCB and planned solder pads**
 
-The **SQL On/Off PCB is optional** when using the solder-lug switch: wires can be soldered directly to the switch instead. This reduces the build from six PCBs to five. I plan to add labelled **SQL signal (GPIO 41) and GND solder pads** to the Master PCB to support this direct-wiring option. These pads **have not yet been added** to the PCB design. See the [direct-wiring notes](parts/README.md#six-pcb-layout) for details.
+The **SQL On/Off PCB is optional** when using the solder-lug switch: wires can be soldered directly to the switch instead. This reduces the build from six PCBs to five. At the time of this update, labelled **SQL signal (GPIO 41) and GND solder pads** were planned. They are now implemented as TP1/TP2 and routed in the current Main Board draft. See the [direct-wiring notes](parts/README.md#six-pcb-layout) for details.
 
 **October 22, 2026 — Rotary switches work without input filters; position readings remain stable**
 
@@ -155,11 +161,11 @@ The **SQL On/Off PCB is optional** when using the solder-lug switch: wires can b
 
 **October 22, 2026 — Future button-lighting option**
 
-I may revisit button lighting in a future revision. This would require changes to the Master PCB to provide space for an SCR, the associated discrete components, and a lighting connector, along with the external 5 V power supply and its power-input and protection circuitry. It would also require a new Button LED PCB design, which is not currently planned. The **ARC-164 and ARC-184 projects will be completed first**, before I revisit this option.
+I may revisit button lighting in a future revision. This would require changes to the Master PCB to provide space for an SCR, the associated discrete components, and a lighting connector, along with the external 5 V power supply and its power-input and protection circuitry. It would also require a new Button LED PCB design, which is not currently planned. The **ARC-164 and ARC-186 projects will be completed first**, before I revisit this option.
 
 **October 22, 2026 — Build cost estimate and button-switch update**
 
-Added a [DIY parts purchasing estimate](parts/README.md#estimated-build-cost) of approximately **$275–$320 USD before shipping and tax**, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a **$75 allowance for the six PCBs**. PCB pricing remains provisional until the main and button board layouts are finished. The button switches are now specified as **6 × 6 × 5 mm**, with 16 required per panel. The [parts documentation and supplier link](parts/README.md#current-button-switches) and [BOM](parts/BOM.csv) have been updated.
+Added a [DIY parts purchasing estimate](parts/README.md#estimated-build-cost) of approximately **$275–$320 USD before shipping and tax**, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a **$75 allowance for the six PCBs**. The PCB allowance was provisional; the three control-board manufacturing packages are now published, while the Main Board still awaits final review and manufacturing release. The button switches are now specified as **6 × 6 × 5 mm**, with 16 required per panel. The [parts documentation and supplier link](parts/README.md#current-button-switches) and [BOM](parts/BOM.csv) have been updated.
 
 **October 22, 2026 — Discussions now open**
 
@@ -179,11 +185,11 @@ Work continues on the Button PCB.
 
 **October 12, 2026 — Master Board schematic updated**
 
-The updated [Master Board KiCad project](PCBs/Master%20Board/) has been pushed to the Teensy repository. The schematic now uses one 14-pin connector matching the Rotary Encoder PCB and an eight-pin connector for the separate 4×4 button matrix. It includes corrected Teensy signal connections, the C106D SCR pin numbering and its project symbol library. A three-pin TFT power selector, **JP1**, selects **protected 5 V with pins 1–2** or **Teensy 3.3 V with pins 2–3**. Fit only one jumper shunt and remove power before changing it. The schematic passed ERC with zero errors and warnings under its saved settings. The Main PCB layout, routing and physical test fit remain unfinished.
+The updated [Master Board KiCad project](PCBs/Master%20Board/) has been pushed to the Teensy repository. That schematic revision used one 14-pin connector matching the Rotary Encoder PCB and an eight-pin connector for the separate 4×4 button matrix. It includes corrected Teensy signal connections, the C106D SCR pin numbering and its project symbol library. In that superseded revision, a three-pin TFT power selector, **JP1**, selected **protected 5 V with pins 1–2** or **Teensy 3.3 V with pins 2–3**. That earlier selector required one jumper shunt, changed only with power removed. The selector and protected 5 V branch are absent from the current design. The schematic passed ERC with zero errors and warnings under its saved settings. The Main PCB layout, routing and physical test fit remain unfinished.
 
 **October 12, 2026 — Rotary Encoder and Rotary Switch PCBs finalized; test fits confirmed**
 
-The [Rotary Encoder PCB version 1.4](PCBs/Rotary%20Encoders/) and [Rotary Switch PCB version 2.0](PCBs/Rotary%20Switches/) are now **final designs**, and both have been **physically test-fitted**. See the [PCB status README](PCBs/README.md). I have published **version 1.4** of the [Rotary Encoder KiCad project](PCBs/Rotary%20Encoders/), with the latest saved PCB layout, updated board outline, v1.4 silkscreen label and [updated six-encoder 3D preview](images/Rotary-Encoder-PCB-3D.png). Download the current project before building or ordering this board. The project includes the schematic, PCB, custom libraries and header wiring instructions. The version 1.3 check results documented in the project README are historical; electrical and PCB design checks have not been rerun for this upload. I have confirmed that the printed rotary-encoder STL fits and all six encoders work in the final combined hardware test.
+The [Rotary Encoder PCB version 1.4](PCBs/Rotary%20Encoders/) and [Rotary Switch PCB version 2.0](PCBs/Rotary%20Switches/) are now **final designs**, and both have been **physically test-fitted**. See the [PCB status README](PCBs/README.md). I have published **version 1.4** of the [Rotary Encoder KiCad project](PCBs/Rotary%20Encoders/), with the latest saved PCB layout, updated board outline, v1.4 silkscreen label and [updated six-encoder 3D preview](images/Rotary-Encoder-PCB-3D.png). Download the current project before building or ordering this board. The project includes the schematic, PCB, custom libraries and header wiring instructions. The version 1.3 check results documented in the project README are historical; the version 1.4 checks were subsequently rerun on October 27; see the Rotary Encoder README and manufacturing reports. I have confirmed that the printed rotary-encoder STL fits and all six encoders work in the final combined hardware test.
 
 **October 10, 2026 — Splash-screen picture removed**
 
