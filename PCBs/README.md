@@ -2,6 +2,12 @@
 
 Updated October 27, 2026.
 
+## PCB layout — five or six boards
+
+The panel uses **five required PCBs**: one Main Controller, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards, all controlled by one Teensy 4.1. The **optional SQL On/Off PCB brings the total to six**; it can be omitted when wiring directly to the switch’s solder lugs. The SQL board uses the same Rotary Switch PCB design.
+
+The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the longer SQL On/Off switch shaft, whether or not the optional PCB is fitted.
+
 The following three PCB designs are final. Physical fit and button alignment have been checked:
 
 | PCB | Final version | Status |
