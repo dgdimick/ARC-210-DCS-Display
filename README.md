@@ -273,6 +273,8 @@ The `Supporting STL's` directory includes:
 - Mounting hardware for the TFT screen and PCBs
 - Brackets for panel alignment
 
+The [shaft spacer v.5](Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether using the optional switch PCB or wiring directly to the switch’s solder lugs.
+
 All STL files are intended to be print-ready for FDM printers using a 0.4 mm nozzle. Resin/SLA printers may require different settings or scaling.
 
 ## Software
