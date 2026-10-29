@@ -53,7 +53,7 @@ Both seven-position switches worked with their outputs connected directly to GPI
 
 *October 28, 2026 — Main Board placement and routing in progress, viewed from the component side facing away from the faceplate.*
 
-The current working layout includes the Teensy 4.1, TFT and control connectors, and SQL On/Off solder connections. **J9 is MODE** (GPIO 15 / A1), and **J10 is MASTER** (GPIO 14 / A0). A **26.2 mm circle**, centered on the SQL shaft hole, provides a switch-body spacing guide without electrical pads. In the current saved PCB this circle is on B.Silkscreen; its board-edge clipping warning remains to be resolved. The existing shaft opening, anti-rotation slot, and mounting holes are retained.
+The current working layout includes the Teensy 4.1, TFT and control connectors, and SQL On/Off solder connections. **J9 is MODE** (GPIO 15 / A1), and **J10 is MASTER** (GPIO 14 / A0). A **26.2 mm circle**, centered on the SQL shaft hole, provides a switch-body spacing guide without electrical pads. The earlier board-edge silkscreen clipping warning is resolved in the corrected upload. The existing shaft opening, anti-rotation slot, and mounting holes are retained.
 
 The current saved PCB and schematic shown by this layout-progress update are now uploaded to this folder. Final placement, routing, design checks, current verification, and Main Board physical test fit remain unfinished. The Main Board is not ready for manufacture.
 
@@ -80,7 +80,7 @@ The model was checked in bottom and angled renders. This verifies visibility and
 
 Install KiCad's standard symbol, footprint, and 3D model libraries too. The Teensy 4.1 STEP model is now included and attached to U1; see the 3D Viewer section above.
 
-Current-upload checks (following the October 28 layout picture): [ERC](ERC-report.json) reports **zero violations**. [PCB DRC and schematic parity](DRC-report.json) report **zero unconnected items**, **one silkscreen warning**, and **two schematic/PCB value warnings** under the saved settings. The silkscreen circle around the SQL shaft opening is clipped by the board edge. The value warnings concern J4 and TP1. Some check categories are disabled. These warnings and final routing review, current verification, and physical fit checks remain pending; this is not a manufacturing release.
+October 29, 2026 corrected-upload checks: [ERC](ERC-report.json) reports **zero violations**. [PCB DRC and schematic parity](DRC-report.json) report **zero unconnected items**, **zero DRC violations**, and **two schematic/PCB value warnings** under the saved settings. The value warnings concern J4 and TP1. Some check categories are disabled. These warnings and final routing review, current verification, and physical fit checks remain pending; this is not a manufacturing release.
 
 PCB design license: CERN-OHL-P-2.0, as specified in the [main README](../../README.md#licensing). The bundled Teensy library retains its included license.
 

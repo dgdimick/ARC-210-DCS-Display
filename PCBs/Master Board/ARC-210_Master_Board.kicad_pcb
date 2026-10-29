@@ -4525,17 +4525,6 @@
 			)
 		)
 	)
-	(gr_circle
-		(center 175.125 69.125)
-		(end 188.225 69.125)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(fill no)
-		(layer "B.SilkS")
-		(uuid "1889571f-7ce6-497f-a65d-77b28566f4fd")
-	)
 	(gr_line
 		(start 154.1 145.1)
 		(end 176.15 145.1)
