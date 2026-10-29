@@ -20,6 +20,10 @@ The master schematic shows a 220 Ω series resistor and 100 nF capacitor near ea
 
 ## SQL On/Off option added in version 1.2
 
+The **SQL On/Off PCB is optional**: use it for the switch wiring, or omit it and wire directly to the switch’s solder lugs as described below. The panel uses five required boards, or six with this optional SQL board.
+
+The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether or not the optional PCB is fitted.
+
 I modified the PCB so it can also be used with the SQL On/Off switch. **JP1**, marked **ON/OFF** on the back of the PCB near R2, is an open solder jumper between GND and the R1–R2 junction: R2 pad 1, also connected to switch terminal 2.
 
 - **SQL On/Off:** omit all six resistors R1–R6 and bridge JP1 with solder. Connect J1 pin 2 (switch common A1) to a Teensy input configured with a pull-up, and J1 pin 3 to GND. Selecting terminal 2 pulls the input LOW; an ungrounded contact reads HIGH. J1 pin 1 is not needed for this configuration. Set the switch travel and contact selection to match the panel markings.
