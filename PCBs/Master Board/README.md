@@ -21,8 +21,8 @@ The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **req
 - **J1:** TFT connector. See the [TFT cable mapping](../../parts/README.md#pin-headers-and-mating-connectors--october-12-2026); it is not a straight-through cable.
 - **J2:** separate 4 × 4 button matrix; pins 1–4 use GPIO 30, 31, 32, 33, and pins 5–8 use GPIO 35, 36, 37, 40.
 - **J4:** 14-pin rotary-encoder connector; pins 13 and 14 are GND.
-- **J10 pin 2:** rotary-switch signal through R1 to GPIO 14 / A0, KiCad U1 pad 36.
-- **J9 pin 2:** rotary-switch signal through R2 to GPIO 15 / A1, KiCad U1 pad 37.
+- **J10 (MASTER) pin 2:** rotary-switch signal through R1 to GPIO 14 / A0, KiCad U1 pad 36.
+- **J9 (MODE) pin 2:** rotary-switch signal through R2 to GPIO 15 / A1, KiCad U1 pad 37.
 - **SQL1:** pin 1 is GPIO 41 / U1 pad 33; pin 2 is GND. The SQL On/Off switch PCB is optional when wiring its solder lugs directly. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available; final pad placement and routing are pending.
 
 **GPIO labels are not KiCad pad numbers.** For example, GPIO 4 is U1 pad 6, GPIO 14 is pad 36, and GPIO 15 is pad 37. Use the labels printed on the Teensy for wiring and firmware; use the matching symbol and `teensy:Teensy41` footprint when updating the PCB.
@@ -53,9 +53,9 @@ Both seven-position switches worked with their outputs connected directly to GPI
 
 *October 28, 2026 — Main Board placement and routing in progress, viewed from the component side facing away from the faceplate.*
 
-The current working layout includes the Teensy 4.1, TFT and control connectors, and SQL On/Off solder connections. **J9 is MODE** (GPIO 15 / A1), and **J10 is MASTER** (GPIO 14 / A0). A **26.2 mm circle on User.Drawings**, centered on the SQL shaft hole, provides a switch-body spacing guide without electrical pads. The existing shaft opening, anti-rotation slot, and mounting holes are retained.
+The current working layout includes the Teensy 4.1, TFT and control connectors, and SQL On/Off solder connections. **J9 is MODE** (GPIO 15 / A1), and **J10 is MASTER** (GPIO 14 / A0). A **26.2 mm circle**, centered on the SQL shaft hole, provides a switch-body spacing guide without electrical pads. In the current saved PCB this circle is on B.Silkscreen; its board-edge clipping warning remains to be resolved. The existing shaft opening, anti-rotation slot, and mounting holes are retained.
 
-This picture shows the working layout and may be ahead of the published KiCad files. Final placement, routing, design checks, current verification, and Main Board physical test fit remain unfinished. The Main Board is not ready for manufacture.
+The current saved PCB and schematic shown by this layout-progress update are now uploaded to this folder. Final placement, routing, design checks, current verification, and Main Board physical test fit remain unfinished. The Main Board is not ready for manufacture.
 
 [Earlier angled Teensy 4.1 preview — October 27](../../images/Main-PCB-Teensy-3D.png)
 
@@ -80,7 +80,7 @@ The model was checked in bottom and angled renders. This verifies visibility and
 
 Install KiCad's standard symbol, footprint, and 3D model libraries too. The Teensy 4.1 STEP model is now included and attached to U1; see the 3D Viewer section above.
 
-October 27, 2026 checks: [ERC](ERC-report.json) reports zero violations under the saved settings. [PCB DRC and schematic parity](DRC-report.json) report zero non-routing violations and zero schematic/PCB mismatches, with 51 unconnected items because the draft is not routed. Netlist verification confirms J1 pin 1 connects directly to `TEENSY_3V3` / U1 pad 15. Only the C5/C6 pin connections were removed; C1/C2 and all other retained connections are unchanged. Some check categories are disabled. These results do not make the draft ready for manufacture.
+Current-upload checks (following the October 28 layout picture): [ERC](ERC-report.json) reports **zero violations**. [PCB DRC and schematic parity](DRC-report.json) report **zero unconnected items**, **one silkscreen warning**, and **two schematic/PCB value warnings** under the saved settings. The silkscreen circle around the SQL shaft opening is clipped by the board edge. The value warnings concern J4 and TP1. Some check categories are disabled. These warnings and final routing review, current verification, and physical fit checks remain pending; this is not a manufacturing release.
 
 PCB design license: CERN-OHL-P-2.0, as specified in the [main README](../../README.md#licensing). The bundled Teensy library retains its included license.
 
