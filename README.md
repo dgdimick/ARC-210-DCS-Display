@@ -105,7 +105,11 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
-Current hardware status: Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 are final designs with published manufacturing files. The routed Main Board draft passes the October 29 ERC/DRC and parity checks under its saved settings; final review, current verification, physical fit, and manufacturing release remain pending. **The dated entries below record development history. Earlier circuit descriptions, missing-pad notes, and old board revisions are superseded by the current project files and instructions above.**
+Current hardware status: PCB design is complete, and the boards have been ordered from JLCPCB for manufacture. Button Matrix v3.1, Rotary Encoder v1.4, Rotary Switch v2.0, and Main Board v1.0 source files and standalone Gerber/drill packages are published. Main Board physical fit, current verification, assembly, and manufactured-board electrical testing remain pending. **The dated entries below record development history. Earlier circuit descriptions, missing-pad notes, and old board revisions are superseded by the current project files and instructions above.**
+
+**October 29, 2026 — PCB design completed; boards sent for manufacture**
+
+The PCB design has been completed and sent to **JLCPCB** for manufacture; the order has been placed and paid for. The standalone [Gerber and drill files](PCBs/README.md#gerber-and-drill-downloads), including the [Main Board v1.0 package](PCBs/Master%20Board/Manufacturing/Main-Board-PCB-Draft-Gerbers-Drill.zip), are available for builders. Once the boards arrive, the next steps are to check the Main Board's physical fit, assemble the boards, and test the completed hardware.
 
 **October 28, 2026 — Main Board placement and routing progress**
 
