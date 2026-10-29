@@ -24,6 +24,10 @@ The exports were checked against the source: **130 plated holes and five non-pla
 
 **Final v3.1 design; test fit confirmed — October 27, 2026:** The revised v3.1 board has been physically test-fitted and confirmed to fit. The buttons are in the correct locations. The board edges were slightly too long and have been shortened for version **3.1**, which is the final design. Use v3.1 for new orders. The obsolete v3.0 manufacturing ZIP has been removed; Git history retains earlier revisions.
 
+## SQL On/Off switch shaft support
+
+The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**. Fit it whether using the optional SQL On/Off PCB or wiring directly to the switch’s solder lugs. H3’s 12 mm opening in the Button Matrix PCB provides pass-through clearance for the SQL On/Off switch.
+
 ## Layout reference pictures
 
 These front and back pictures show the earlier **v3.0** layout. The final v3.1 files have slightly shortened board edges; use the current KiCad layout and manufacturing files for exact dimensions. The large opening is the SQL On/Off switch pass-through.
