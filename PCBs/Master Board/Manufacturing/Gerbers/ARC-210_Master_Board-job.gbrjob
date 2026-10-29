@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "10.0.7"
     },
-    "CreationDate": "2026-10-29T02:01:03-06:00"
+    "CreationDate": "2026-10-29T02:21:20-06:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "ARC-210_Master_Board",
       "GUID": "4152432d-3231-4305-9f4d-61737465725f",
-      "Revision": "rev?"
+      "Revision": "1.1"
     },
     "Size": {
       "X": 132.015,
@@ -27,7 +27,9 @@
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.2
+      "MinLineWidth": 0.2,
+      "TrackToRegion": 0.5,
+      "RegionToRegion": 0.5
     }
   ],
   "FilesAttributes": [

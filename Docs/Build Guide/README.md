@@ -11,7 +11,7 @@ This guide covers the ARC-210 panel using one Teensy 4.1, a 3.5-inch ILI9488 SPI
 | Button Matrix PCB v3.1 | Final design; physical fit and button alignment confirmed; manufacturing files published |
 | Rotary Encoder PCB v1.4 | Final design; physical fit confirmed; manufacturing files published |
 | Rotary Switch PCB v2.0 | Final design; physical fit confirmed; manufacturing files published |
-| Main Board v1.0 | Gerber/drill files published; October 29 ERC/DRC and parity checks pass under saved settings; final review, current verification, physical fit, and assembled-board testing pending |
+| Main Board v1.1 | Gerber/drill files published; October 29 ERC/DRC and parity checks pass under saved settings; final review, current verification, physical fit, and assembled-board testing pending |
 | Printed parts | Published knobs, bracket, and spacers available; SQL ON/OFF knob design and printing pending |
 | Electrical testing | Combined breadboard hardware test confirmed; assembled manufactured-board testing pending |
 | Radio firmware | Menu/display preview available; complete physical-control integration and final in-DCS validation pending |
@@ -30,6 +30,8 @@ I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFu
 For removable mounting, use **two 1 × 24 female PCB socket strips, 2.54 mm (0.1-inch) pitch**, on the Main Board, with matching male headers on the Teensy. **These sockets are optional but recommended.** They allow the Teensy to be removed when replacing or updating the Main Board for new features, such as future LED support, or when the Teensy itself is damaged and needs replacement. **Pending:** final socket height, header lead length, standoff lengths, fastener quantities, and cable lengths must be confirmed against the finished assembly.
 
 The build uses **five required boards**: one Main Board, one Button Matrix, one Rotary Encoder, and two Rotary Switch boards. A third Rotary Switch PCB is optional for the SQL On/Off switch, bringing the total to six.
+
+The PCBs require mounting stand-offs. Use the [Vibit M3 nylon stand-off kit](https://www.amazon.com/dp/B0H1QS5Q6N), budgeted at **$10 per kit** in the BOM. Select lengths to suit the installed board spacing; exact lengths and individual quantities remain pending.
 
 ## 2. Print and check the mechanical parts
 
@@ -55,13 +57,14 @@ Download the manufacturing packages from the [Gerber and drill table](../../PCBs
 
 | Design | Boards per panel |
 | --- | ---: |
+| Main Board v1.1 | 1 |
 | Button Matrix v3.1 | 1 |
 | Rotary Encoder v1.4 | 1 |
 | Rotary Switch v2.0 | 2 required, plus 1 optional for SQL On/Off |
 
 Review the manufacturer's preview against the project outline and drill information. These control boards specify two layers and 1.6 mm thickness; consult each manufacturing README for details.
 
-**Main Board Version 1.0:** [Gerber and drill package](../../PCBs/Master%20Board/Manufacturing/Main-Board-PCB-Draft-Gerbers-Drill.zip) is available for a two-layer, 1.6 mm PCB. Physical fit, final routing review, current verification, and assembled-board testing remain pending; this is not yet a validated production release.
+**Main Board Version 1.1:** [Gerber and drill package](../../PCBs/Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) is available for a two-layer, 1.6 mm PCB. Physical fit, final routing review, current verification, and assembled-board testing remain pending; this is not yet a validated production release.
 
 ## 4. Assemble the Button Matrix PCB
 
@@ -103,7 +106,7 @@ The SQL On/Off switch is the **A12515RNZQ solder-lug version with the longer sha
 
 Use the current TFT bracket, encoder spacers, switch shaft spacer, and faceplate. Check button movement and shaft alignment before soldering or fastening makes adjustment difficult.
 
-The Main Board component bodies face **away from the faceplate**, on the back of the board. Its draft includes the switch shaft and anti-rotation openings and four 3.5 mm mounting holes.
+The Main Board component bodies face **away from the faceplate**, on the back of the board. Version 1.1 includes the switch shaft and anti-rotation openings and four 3.5 mm mounting holes.
 
 **Pending:** the final Main Board fit check, exact standoff and socket heights, fastener lengths, TFT-to-board clearance, final assembly order, and step-by-step photographs. The Main Board's layout-spacing guide does not replace a physical fit check.
 
@@ -113,11 +116,11 @@ The [current Main Board PCB](../../PCBs/Master%20Board/README.md#usb-cable-zip-t
 
 After checking the fit of the actual cable and boot, pass the tie through the two slots and around the cable so pulls are taken by the PCB support rather than the Micro-B connector. Avoid overtightening and leave enough slack to unplug the cable and remove the socketed Teensy for service.
 
-**Pending:** physical fit and strain-relief validation with the actual cable/tie, an installation photograph, and the design/printing of any additional cable support. The slots are included in the published draft; the Main Board manufacturing release remains pending.
+**Pending:** physical fit and strain-relief validation with the actual cable/tie, an installation photograph, and the design/printing of any additional cable support. The slots are included in the published Main Board v1.1 manufacturing files; physical validation remains pending.
 
 ## 8. Main Board assembly and wiring — pending final validation
 
-Use the [current Main Board schematic and README](../../PCBs/Master%20Board/README.md) as the authority. This section records the draft's connections, not a final assembly release.
+Use the [current Main Board schematic and README](../../PCBs/Master%20Board/README.md) as the authority. This section records the v1.1 connections; we'll add assembly photos and confirmed fit details as the boards are tested.
 
 | Main Board connection | Purpose |
 | --- | --- |

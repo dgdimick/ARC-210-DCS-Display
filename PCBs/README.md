@@ -26,17 +26,18 @@ Print **six [Rotary Encoder spacers v.1](../Supporting%20STL%27s/Rotary_Encoder_
 
 ## Gerber and drill downloads
 
-Manufacturing files generated October 27, 2026:
+Control-board manufacturing files generated October 27, 2026; Main Board v1.1 files updated October 29, 2026:
 
 | PCB | Version | Gerber and drill ZIP | Individual files and reports |
 | --- | --- | --- | --- |
+| Main Board | 1.1 | [Download ZIP](Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) | [Browse files](Master%20Board/Manufacturing/) |
 | Button Matrix | 3.1 | [Download ZIP](Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) | [Browse files](Button%20Matrix/Manufacturing/) |
 | Rotary Encoders | 1.4 | [Download ZIP](Rotary%20Encoders/Manufacturing/Rotary-Encoder-PCB-v1.4-Gerbers-Drill.zip) | [Browse files](Rotary%20Encoders/Manufacturing/) |
 | Rotary Switches | 2.0 | [Download ZIP](Rotary%20Switches/Manufacturing/Rotary-Switch-PCB-v2.0-Gerbers-Drill.zip) | [Browse files](Rotary%20Switches/Manufacturing/) |
 
 Each ZIP includes copper, solder-mask, silkscreen, and board-outline Gerbers, a Gerber job file, separate plated/non-plated Excellon drill files, a drill report, and manufacturing notes. Drill maps and ERC/DRC reports are available in each manufacturing folder.
 
-Review the manufacturer's preview before ordering. The Button Matrix's printed fit check confirmed button alignment, and its slightly long edges were shortened for final v3.1. Manufactured-board testing remains pending for all three designs. Existing check exclusions and disabled categories are documented in the individual project READMEs and reports.
+Review the manufacturer's preview before ordering. The Button Matrix's printed fit check confirmed button alignment, and its slightly long edges were shortened for final v3.1. Manufactured-board testing remains pending for all four designs. Existing check exclusions and disabled categories are documented in the individual project READMEs and reports.
 
 ## Button Matrix PCB — version 3.1
 
@@ -46,13 +47,13 @@ The current unlit 16-button, 4 × 4 Button Matrix PCB is **version 3.1**. See th
 
 The downloadable [version 3.1 KiCad files](Button%20Matrix/) now include the PCB layout, schematic, project settings, and custom 12 mm footprint library. The PCB includes routing; unused floating copper fills were removed. Checks found zero ERC violations, zero DRC errors, no unconnected items, and no schematic/PCB parity issues; DRC also reports zero warnings after removal of those fills. Physical fit and button alignment have been checked; manufactured-board assembly and electrical testing remain pending. This board is separate from the future Button LED PCB, which is not currently planned.
 
-## Main Board PCB draft and schematic
+## Main Board PCB v1.1 and schematic
 
 **Layout progress — October 28, 2026:** Component placement and routing are progressing on the Main Board. The [new Main Board layout picture](../images/Main-PCB-Layout-2026-10-28.png) shows the Teensy 4.1, TFT and control connectors, SQL On/Off solder connections, and back-side component arrangement. J9 is labelled **MODE** and J10 **MASTER**. A 26.2 mm circle provides a SQL switch body spacing guide without electrical pads. The rotary-switch mounting opening, anti-rotation slot, and four 3.5 mm mounting holes remain.
 
-The current saved Main Board PCB and schematic have now been uploaded to match the layout-progress picture. October 29 checks after correcting the J4/TP1 values report zero ERC violations, zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. See the [Main Board README and picture](Master%20Board/README.md#main-pcb-3d-preview) and [3D Viewer instructions](Master%20Board/README.md#teensy-41-in-the-3d-viewer). Final placement/routing review, current verification, and Main Board physical test fit remain to be completed; the October 29 ERC/DRC and parity checks pass under the saved settings. No Main Board manufacturing release is available.
+The current saved Main Board PCB and schematic have now been uploaded to match the layout-progress picture. October 29 checks after correcting the J4/TP1 values report zero ERC violations, zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. See the [Main Board README and picture](Master%20Board/README.md#main-pcb-3d-preview) and [3D Viewer instructions](Master%20Board/README.md#teensy-41-in-the-3d-viewer). Final placement/routing review, current verification, and Main Board physical test fit remain to be completed; the October 29 ERC/DRC and parity checks pass under the saved settings. Main Board v1.1 Gerber and drill files are now available above; physical fit and manufactured-board testing remain pending.
 
-The updated [Main Board PCB draft, schematic, and KiCad project](Master%20Board/) are available to download. The board now uses USB power and the Teensy's 3.3 V supply for TFT VCC; the external protected 5 V branch and power selector are removed. C5/C6 have been removed to match the tested direct TFT wiring; C1/C2 rotary-input filters remain. TFT brightness at 3.3 V is confirmed satisfactory. Components are on B.Cu, facing away from the faceplate. The draft has zero unconnected items under the October 29 checks. Final placement/routing review, current verification, and physical test fit remain pending; no Main Board manufacturing files are provided.
+The updated [Main Board PCB draft, schematic, and KiCad project](Master%20Board/) are available to download. The board now uses USB power and the Teensy's 3.3 V supply for TFT VCC; the external protected 5 V branch and power selector are removed. C5/C6 have been removed to match the tested direct TFT wiring; C1/C2 rotary-input filters remain. TFT brightness at 3.3 V is confirmed satisfactory. Components are on B.Cu, facing away from the faceplate. The draft has zero unconnected items under the October 29 checks. Final placement/routing review, current verification, and physical test fit remain pending; Main Board v1.1 manufacturing files are provided above.
 
 ## Teensy GPIO labels and KiCad pin numbers
 
@@ -96,6 +97,8 @@ Thinking about building one? The [DIY parts purchasing estimate](../parts/README
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
 
-### Main Board draft fabrication export
+### Main Board v1.1 fabrication export
 
-The current [Main Board Gerber/drill ZIP](Master%20Board/Manufacturing/Main-Board-PCB-Draft-Gerbers-Drill.zip) is available, including the USB zip-tie slots. This standalone two-layer, 1.6 mm export remains a draft pending Main Board physical fit, final routing review, current verification and electrical testing. See the [Main Board README](Master%20Board/README.md#standalone-manufacturing-files).
+The current [Main Board Gerber/drill ZIP](Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) is available, including the USB zip-tie slots. This standalone two-layer, 1.6 mm v1.1 export includes the ground pours. Main Board physical fit, current verification and electrical testing remain pending. See the [Main Board README](Master%20Board/README.md#standalone-manufacturing-files).
+
+Main Board **v1.1** includes GND-connected copper pours on both layers, with isolated islands removed. Use its updated [v1.1 fabrication package](Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip).

@@ -81,7 +81,7 @@ All boards are controlled by one Teensy 4.1:
 
 The three Rotary Switch PCBs use the same design and are interchangeable; the SQL On/Off board is optional. For the **SQL On/Off rotary switch PCB**, install **no resistors** (omit R1–R6) and bridge the small **JP1 solder pad**, marked **ON/OFF**, with solder. For the other 2 seven-position rotary switch PCBs, install the six resistors and leave JP1 open.
 
-The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The Button Matrix PCB v3.1, Rotary Encoder PCB v1.4, and Rotary Switch PCB v2.0 are final designs. The remaining PCB design task is the Main Controller board.
+The button, rotary encoder, and rotary switch PCBs do not require additional microcontrollers. The Button Matrix PCB v3.1, Rotary Encoder PCB v1.4, and Rotary Switch PCB v2.0 are final designs. Main Board v1.1 completes the PCB designs, and its standalone manufacturing files are published. Manufactured-board fit and electrical testing are next.
 
 **SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Master board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; final physical fit and assembly checks remain pending.
 
@@ -105,17 +105,21 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
-Current hardware status: PCB design is complete, and the boards have been ordered from JLCPCB for manufacture. Button Matrix v3.1, Rotary Encoder v1.4, Rotary Switch v2.0, and Main Board v1.0 source files and standalone Gerber/drill packages are published. Main Board physical fit, current verification, assembly, and manufactured-board electrical testing remain pending. **The dated entries below record development history. Earlier circuit descriptions, missing-pad notes, and old board revisions are superseded by the current project files and instructions above.**
+**October 29, 2026 — Main Board v1.1: ground copper pours added**
+
+Main Board **v1.1** adds GND-connected copper pours on both copper layers and removes isolated copper islands. The PCB, schematic revision and standalone Gerber/drill package are updated. This revision does not change the files already submitted for manufacture.
+
+Current hardware status: PCB design is complete, and the boards have been ordered from JLCPCB for manufacture. Button Matrix v3.1, Rotary Encoder v1.4, Rotary Switch v2.0, and Main Board v1.1 source files and standalone Gerber/drill packages are published. Main Board physical fit, current verification, assembly, and manufactured-board electrical testing remain pending. **The dated entries below record development history. Earlier circuit descriptions, missing-pad notes, and old board revisions are superseded by the current project files and instructions above.**
 
 **October 29, 2026 — PCB design completed; boards sent for manufacture**
 
-The PCB design has been completed and sent to **JLCPCB** for manufacture; the order has been placed and paid for. The standalone [Gerber and drill files](PCBs/README.md#gerber-and-drill-downloads), including the [Main Board v1.0 package](PCBs/Master%20Board/Manufacturing/Main-Board-PCB-Draft-Gerbers-Drill.zip), are available for builders. Once the boards arrive, the next steps are to check the Main Board's physical fit, assemble the boards, and test the completed hardware.
+The PCB design has been completed and sent to **JLCPCB** for manufacture; the order has been placed and paid for. The standalone [Gerber and drill files](PCBs/README.md#gerber-and-drill-downloads), including the [current Main Board v1.1 package](PCBs/Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip), are available for builders. Once the boards arrive, the next steps are to check the Main Board's physical fit, assemble the boards, and test the completed hardware.
 
 **October 28, 2026 — Main Board placement and routing progress**
 
 The latest [Main Board layout picture](images/Main-PCB-Layout-2026-10-28.png) shows the Teensy 4.1, TFT and control connectors, SQL On/Off solder connections, and routing in progress. Component bodies face away from the faceplate on the back of the PCB. J9 is labelled **MODE** and J10 **MASTER**. A 26.2 mm circle marks the SQL switch body for spacing without adding electrical pads.
 
-See the [Main Board README](PCBs/Master%20Board/README.md#main-pcb-3d-preview) for the new picture and layout notes. The current saved PCB and schematic are now uploaded. October 29 checks after correcting the J4/TP1 values report zero ERC violations, zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. This picture shows the current working layout; final placement/routing review, current verification, and Main Board physical test fit remain to be completed; the October 29 ERC/DRC and parity checks pass under the saved settings. The Main Board is still a draft, with no manufacturing release.
+See the [Main Board README](PCBs/Master%20Board/README.md#main-pcb-3d-preview) for the new picture and layout notes. The current saved PCB and schematic are now uploaded. October 29 checks after correcting the J4/TP1 values report zero ERC violations, zero DRC violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. This picture shows the current working layout; final placement/routing review, current verification, and Main Board physical test fit remain to be completed; the October 29 ERC/DRC and parity checks pass under the saved settings. At the time of this picture it was a draft; the current Main Board v1.1 fabrication files are now published.
 
 **October 27, 2026 — Main PCB layout progress and Teensy 4.1 3D preview**
 
@@ -123,7 +127,7 @@ Initial component placement is progressing on the Main Controller PCB. The compo
 
 The Teensy 4.1 STEP model is now included and attached to U1 using a project-relative path. See the [new Main PCB 3D picture with the Teensy](images/Main-PCB-Teensy-3D.png), or download the [Main Board project](PCBs/Master%20Board/) and follow its [3D Viewer instructions](PCBs/Master%20Board/README.md#teensy-41-in-the-3d-viewer).
 
-The TFT uses the Teensy's 3.3 V supply directly, matching the tested wiring; the former protected 5 V circuit and C5/C6 are removed. **Placement, routing, current verification, and the Main PCB physical test fit remain unfinished.** This is a layout-progress update, not a manufacturing release.
+The TFT uses the Teensy's 3.3 V supply directly, matching the tested wiring; the former protected 5 V circuit and C5/C6 are removed. **Placement, routing, current verification, and the Main PCB physical test fit remain unfinished.** This historical layout-progress entry predates the published Main Board v1.1 fabrication files.
 
 **October 27, 2026 — Main Board C5/C6 removed to match tested TFT wiring**
 
@@ -133,7 +137,7 @@ C5 (470 µF) and C6 (0.1 µF) have been removed from the [Main PCB draft and sch
 
 The updated [Main Board PCB draft and schematic](PCBs/Master%20Board/) are uploaded. The external protected 5 V branch and TFT power-selection jumper have been removed. TFT VCC now connects directly to the Teensy's 3.3 V supply, without the extra C5/C6 supply capacitors, matching the tested direct wiring. Brightness at 3.3 V is confirmed satisfactory.
 
-The draft includes back-side component footprints, the board outline, rotary-switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes, and SQL On/Off solder-wire pads TP1/TP2. ERC reports zero violations and the PCB matches the schematic; component placement, routing, current verification, and physical test fit remain unfinished. This is not a manufacturing release. Older dated updates below describe earlier circuit revisions.
+The draft includes back-side component footprints, the board outline, rotary-switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes, and SQL On/Off solder-wire pads TP1/TP2. ERC reports zero violations and the PCB matches the schematic; component placement, routing, current verification, and physical test fit remain unfinished. This historical entry predates the published Main Board v1.1 fabrication files. Older dated updates below describe earlier circuit revisions.
 
 **October 27, 2026 — Button Matrix PCB v3.1 finalized; test fit confirmed**
 

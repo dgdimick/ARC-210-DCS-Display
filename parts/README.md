@@ -4,7 +4,7 @@ Updated October 29, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
-The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 master schematic and final control-board projects. The parts list is still being refined as I finalize the Main Board; the three control-board designs and manufacturing files are already published. A few component details and footprints need confirming, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
+The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 master board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 master schematic and final control-board projects. The Main Board v1.1, Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 design and manufacturing files are published. The parts list will continue to improve as the manufactured boards are assembled and tested. A few component details and footprints need confirming, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
 
 ## Power and future button lighting
 
@@ -31,7 +31,7 @@ Prices checked October 22, 2026, except the recommended Teensy with headers, upd
 | [6 × 6 × 5 mm tactile button switches](https://www.amazon.com/dp/B01CGMP9GY) and [matrix diodes](#hardware-selection-and-supplier-links) | 16 each | $5–$10 |
 | [Resistors, capacitors and remaining electronics](BOM.csv) | Allowance pending an updated full-panel parts estimate; removed power/protection parts are excluded | $10–$20 |
 | [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Parts needed for one build | $15–$25 |
-| [Screws and PCB standoffs](https://www.amazon.com/dp/B0H1QS5Q6N) | Allowance | $8–$15 |
+| [Required PCB standoff kit and screws](https://www.amazon.com/dp/B0H1QS5Q6N) | 1 kit | $10 |
 | [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
 | [Bare PCBs](../PCBs/README.md) | Five required boards; six with the optional SQL On/Off PCB | $75 budget allowance |
 | USB Micro-B data cable — for powering and programming the Teensy 4.1 | 1 | $3–$6 |
@@ -43,7 +43,7 @@ The current Main Board is USB-powered and does not use an external 5 V adapter. 
 
 This estimate excludes tools, labor, cockpit mounting fasteners, shipping, tax and tariffs. Buying component assortments or minimum PCB quantities may increase the initial purchase cost and leave spare parts.
 
-**PCB pricing is provisional:** the Main Board must be finalized before an accurate full-panel fabrication quote is available. The Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 manufacturing files are already published. See the component details and wiring requirements below.
+**PCB pricing is provisional:** fabrication costs depend on your manufacturer, order quantity and shipping. Main Board v1.1, Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 manufacturing files are published. See the component details and wiring requirements below.
 
 <a id="six-pcb-layout"></a>
 
@@ -186,7 +186,7 @@ I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFu
 - **Button switches:** 16 per panel, 6 × 6 × 5 mm SPST momentary tactile push-button switches, four-pin through-hole  
   [Amazon](https://www.amazon.com/dp/B01CGMP9GY)
 
-- **PCB standoffs:** Vibit 640-piece M3 nylon standoff assortment, including male–female and female–female spacers with screws. Select lengths to suit the final PCB spacing; the required lengths and quantity per panel are not yet finalized.  
+- **PCB standoffs — required to install the PCBs; $10 per kit:** Vibit 640-piece M3 nylon standoff assortment, including male–female and female–female spacers with screws. Select lengths to suit the final PCB spacing; the required lengths and quantity per panel are not yet finalized.  
   [Amazon](https://www.amazon.com/dp/B0H1QS5Q6N)
 
 - **Diodes:** 16 × 1N4148 small-signal fast-switching diodes, DO-35  

@@ -10,7 +10,7 @@ See the [combined test instructions and source](ARC210_Button_Test/). Programmin
 
 **Start with the TFT hello test** so you know the display is working before checking the encoders. The encoder test uses the screen to show counts, direction, and input states. If the screen stays blank, the wiring notes are a good place to start. You’re welcome to ask for help in Discussions.
 
-1. Load the [TFT hello test](Teenys_TFT_Hello_Works/Teenys_TFT_Hello_Works.ino) and confirm that its output appears correctly on the TFT. (The existing folder and sketch are named `Teenys_TFT_Hello_Works`.)
+1. Load the [TFT hello test and compile instructions](Teenys_TFT_Hello_Works/README.md) and confirm that its output appears correctly on the TFT. (The existing folder and sketch are named `Teenys_TFT_Hello_Works`.)
 2. If the display stays blank, work through the display wiring and setup first. Feel free to ask in Discussions if you get stuck.
 3. After the TFT test passes, load [ARC210_Encoder_Check_Teensy41.hex](ARC210_Encoder_Check_Teensy41.hex) onto the Teensy 4.1 and turn each encoder in both directions. Watch its row on the TFT for changing counts and direction.
 

@@ -93,7 +93,7 @@ Future button lighting would require suitable light-transmitting buttons, a sepa
 
 ## Optional SQL On/Off PCB
 
-The SQL On/Off PCB is optional: the panel uses five required PCBs, or six with this optional board. For direct wiring, use TP1 (SQL signal, GPIO 41 / U1 pad 33) and TP2 (GND), both included and routed in the current Main Board draft. SQL1 remains an alternative two-pin header. The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is required in all installations to support the longer SQL On/Off switch shaft, whether or not the optional PCB is fitted. See the [direct-wiring notes](../parts/README.md#six-pcb-layout). Final physical fit and assembly testing remain pending.
+The SQL On/Off PCB is optional: the panel uses five required PCBs, or six with this optional board. For direct wiring, use TP1 (SQL signal, GPIO 41 / U1 pad 33) and TP2 (GND), both included and routed in the current Main Board v1.1. SQL1 remains an alternative two-pin header. The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is required in all installations to support the longer SQL On/Off switch shaft, whether or not the optional PCB is fitted. See the [direct-wiring notes](../parts/README.md#six-pcb-layout). Final physical fit and assembly testing remain pending.
 
 ## Estimated build cost
 
@@ -104,3 +104,7 @@ Thinking about building one? The [DIY parts purchasing estimate](../parts/README
 **Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+
+## Current PCB versions and a friendly starting point
+
+Use Main Board **v1.1**, Button Matrix **v3.1**, Rotary Encoder **v1.4**, and Rotary Switch **v2.0**. The [PCB downloads](../PCBs/README.md#gerber-and-drill-downloads) link to their current manufacturing files. Start with the [build guide](Build%20Guide/README.md), take it one step at a time, and ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) whenever you need a hand. Progress photos and questions are welcome!

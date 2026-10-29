@@ -1,4 +1,4 @@
-> Historical forum-post draft. For current PCB releases, wiring, power, and firmware status, use the [main README](../README.md) and [parts documentation](../parts/README.md). The control-board manufacturing packages are now published; the Main Board remains a draft.
+> Historical forum-post draft. For current PCB releases, wiring, power, and firmware status, use the [main README](../README.md) and [parts documentation](../parts/README.md). The control-board manufacturing packages are now published; Main Board v1.1 fabrication files are also published; physical validation is pending.
 
 I’m starting a **DCS-BIOS ARC-210 project**.
 
