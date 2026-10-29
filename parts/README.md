@@ -34,8 +34,10 @@ Prices checked October 22, 2026. Small hardware and PCB costs are allowances rat
 | [Screws and PCB standoffs](https://www.amazon.com/dp/B0H1QS5Q6N) | Allowance | $8–$15 |
 | [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
 | [Bare PCBs](../PCBs/README.md) | Five required boards; six with the optional SQL On/Off PCB | $75 budget allowance |
-| USB cable | 1 | $3–$6 |
+| USB Micro-B data cable — for powering and programming the Teensy 4.1 | 1 | $3–$6 |
 | **Estimated DIY purchasing cost** | | **$275–$320** |
+
+Use a **USB Micro-B data cable** for powering and programming the **Teensy 4.1**. The cable must carry data as well as power; a charge-only cable cannot program the Teensy or carry the panel’s USB communications.
 
 The current Main Board is USB-powered and does not use an external 5 V adapter. A future button-lighting redesign would need its own power arrangement, which is outside the current build estimate.
 
