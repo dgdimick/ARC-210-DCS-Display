@@ -67,7 +67,9 @@ Future button lighting would require a separate power and driver design, suitabl
 
 ## PCB layout — five or six boards
 
-![ARC-210 PCB layout mockup showing board spacing and clearance behind the faceplate](images/arc-210-pcb-layout-mockup.jpg)
+<p align="center">
+  <img src="images/arc-210-pcb-layout-mockup.jpg" width="300" alt="ARC-210 PCB layout mockup showing board spacing and clearance behind the faceplate">
+</p>
 
 ARC-210 PCB layout mockup showing board spacing, control placement, and clearance behind the PC Flights faceplate. Mechanical fit check before final PCB design.
 
