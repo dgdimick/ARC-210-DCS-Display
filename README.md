@@ -16,9 +16,11 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 > **Note:** This repository is now included in the A-10-Sim repository.
 
-## Related radio project
+<a id="related-radio-project"></a>
 
-I’m also planning an [ARC-186 COMM-VHF radio panel](https://github.com/dgdimick/ARC-186-DCS-Display) for the DCS A-10C II. Follow its repository for project updates and build plans.
+## Related radio projects
+
+[Explore the ARC-164 and ARC-186 radio projects](Docs/Related-Radio-Projects.md) for project updates and build plans.
 
 ## Questions and community builds
 
