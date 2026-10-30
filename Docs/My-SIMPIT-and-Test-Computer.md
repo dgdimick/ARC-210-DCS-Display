@@ -2,6 +2,14 @@
 
 # My SIMPIT and test computer
 
+## Copy into a new chat
+
+I can copy and paste this message into a new chat to provide my computer specs and cockpit setup:
+
+```text
+Use https://github.com/dgdimick/ARC-210-DCS-Display/blob/master/Docs/My-SIMPIT-and-Test-Computer.md as the reference for my computer specs, monitors, and cockpit USB setup. Please read it before answering questions about my system.
+```
+
 **This page describes my own development and flight-simulation setup. It is not a list of minimum requirements for the ARC-210, ARC-164, or ARC-186 panels.** You do not need the same computer, monitors, or USB hubs to build these radio panels. DCS system requirements depend on the simulator, aircraft, mission, and display configuration.
 
 I’m sharing my equipment here to show what I’m using as I develop and test the panels. I’ll test the panels together as I add them to my cockpit.
@@ -57,11 +65,3 @@ I also use:
 - DCS-BIOS, Tacview, and OpenKneeboard.
 
 My primary DCS aircraft is the **A-10C II Thunderbolt II**. I’m developing the radio panels for this cockpit. Supporting other aircraft will require the appropriate DCS-BIOS mappings and testing.
-
-## Copy into a new chat
-
-I can copy and paste this message into a new chat to provide my computer specs and cockpit setup:
-
-```text
-Use https://github.com/dgdimick/ARC-210-DCS-Display/blob/master/Docs/My-SIMPIT-and-Test-Computer.md as the reference for my computer specs, monitors, and cockpit USB setup. Please read it before answering questions about my system.
-```
