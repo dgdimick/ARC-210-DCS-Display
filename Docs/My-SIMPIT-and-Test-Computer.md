@@ -57,3 +57,11 @@ I also use:
 - DCS-BIOS, Tacview, and OpenKneeboard.
 
 My primary DCS aircraft is the **A-10C II Thunderbolt II**. I’m developing the radio panels for this cockpit. Supporting other aircraft will require the appropriate DCS-BIOS mappings and testing.
+
+## Copy into a new chat
+
+I can copy and paste this message into a new chat to provide my computer specs and cockpit setup:
+
+```text
+Use https://github.com/dgdimick/ARC-210-DCS-Display/blob/master/Docs/My-SIMPIT-and-Test-Computer.md as the reference for my computer specs, monitors, and cockpit USB setup. Please read it before answering questions about my system.
+```
