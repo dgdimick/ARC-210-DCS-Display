@@ -18,11 +18,11 @@ Updated October 4, 2026.
 
 ### Current published knobs
 
-| Knob | Current STL | Earlier file |
-| --- | --- | --- |
-| Frequency | [Freq_Knob_v.10.stl](Freq_Knob_v.10.stl) | Replaces `Freq Mesh v9.stl` |
-| Mode | [Mode_Knob_v.4.stl](Mode_Knob_v.4.stl) | Supersedes `Mode Mesh v6.stl`, despite its higher filename number |
-| Channel | [Channel_Knob_v.3.stl](Channel_Knob_v.3.stl) | Replaces `Channel Knob v13.stl`, despite its higher filename number |
+| Knob | Quantity to print | Current STL | Earlier file |
+| --- | ---: | --- | --- |
+| Frequency | 5 | [Freq_Knob_v.10.stl](Freq_Knob_v.10.stl) | Replaces `Freq Mesh v9.stl` |
+| Mode | 2 | [Mode_Knob_v.4.stl](Mode_Knob_v.4.stl) | Supersedes `Mode Mesh v6.stl`, despite its higher filename number |
+| Channel | 1 | [Channel_Knob_v.3.stl](Channel_Knob_v.3.stl) | Replaces `Channel Knob v13.stl`, despite its higher filename number |
 
 ### If you downloaded an older ZIP
 
