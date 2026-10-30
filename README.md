@@ -46,6 +46,10 @@ The [v3.2 Gerber/drill ZIP](PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
+## My SIMPIT and test computer
+
+[View my SIMPIT and test computer](Docs/My-SIMPIT-and-Test-Computer.md) for my computer configuration, monitors, and current USB setup. **This describes my own development and flight-simulation setup, not minimum requirements for the radio panels.**
+
 ## USB connections and powered hubs
 
 [Read about the USB connection plan and purchased powered hubs](Docs/USB-Connections-and-Powered-Hubs.md) for why I am using USB instead of RS-485, GPIO availability, sharing a Teensy across smaller panels, and expansion using my existing cockpit USB setup.
