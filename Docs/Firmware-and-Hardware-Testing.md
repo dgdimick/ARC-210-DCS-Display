@@ -1,3 +1,3 @@
-# Firmware and Hardware Information
+# Firmware and hardware information
 
-This page has moved to [Firmware and Hardware Information](Firmware-and-Hardware-Information.md).
+This page has moved to [Firmware and hardware information](Firmware-and-Hardware-Information.md).

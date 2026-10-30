@@ -1,4 +1,4 @@
-# ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" TFT SPI display and DCSBIOS
+# ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -22,17 +22,17 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Items that need to be completed
 
-**Last updated: October 30, 2026 at 3:10 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 3:15 AM MDT (America/Denver)**
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
-## Tools Needed
+## Tools needed
 
 [View the tools needed](Docs/Tools-Needed.md) to build and program the panel.
 
-## Future Thoughts and Plans
+## Future thoughts and plans
 
-[View Future Thoughts and Plans](Docs/Future-Thoughts.md) for possible redesigns, lighting, and support for other aircraft.
+[View Future thoughts and plans](Docs/Future-Thoughts.md) for possible redesigns, lighting, and support for other aircraft.
 
 ## Project updates
 
@@ -40,9 +40,9 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 [Read the project updates](Docs/Project-Updates.md) for the dated development history, PCB progress, and testing milestones.
 
-## Firmware and Hardware Information
+## Firmware and hardware information
 
-[Open Firmware and Hardware Information](Docs/Firmware-and-Hardware-Information.md) for wiring, power, PCB layout, parts, printable files, software, firmware loading, and testing guides.
+[Open Firmware and hardware information](Docs/Firmware-and-Hardware-Information.md) for wiring, power, PCB layout, parts, printable files, software, firmware loading, and testing guides.
 
 ## Project progress and beta testing
 

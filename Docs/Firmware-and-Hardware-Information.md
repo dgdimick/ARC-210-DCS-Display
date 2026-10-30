@@ -1,6 +1,6 @@
 [Back to the main project README](../README.md)
 
-# Firmware and Hardware Information
+# Firmware and hardware information
 
 Technical information and build resources for the ARC-210 panel.
 
@@ -24,7 +24,7 @@ Technical information and build resources for the ARC-210 panel.
 
 [View the ARC-210 Bench Testing App guide](Bench-Testing-App.md) to test the panel with simulated DCS-BIOS data without running DCS.
 
-## Tools Needed
+## Tools needed
 
 [View the tools needed](Tools-Needed.md) to build and program the panel.
 

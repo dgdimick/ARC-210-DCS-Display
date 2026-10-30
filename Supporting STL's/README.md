@@ -45,7 +45,7 @@ If you downloaded an earlier ZIP, please grab the current knob files from the ta
 
 Use the hardware listed on the main project page. Printer tolerances vary, so try one knob on its shaft before printing the full set. I previously used 106% scaling for the mode and frequency knobs, but your printer and the current files may need a different adjustment. Scaling changes both the outside dimensions and the holes.
 
-## Other STL's that are needed
+## Other required STLs
 
 | Part | Current STL | Purpose |
 | --- | --- | --- |
