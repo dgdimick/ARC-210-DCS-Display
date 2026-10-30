@@ -36,13 +36,13 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 6:34 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 10:24 AM MDT (America/Denver)**
 
-**October 30, 2026 at 3:25 AM MDT — Button Matrix v3.2 manufacturing release**
+**October 30, 2026 at 10:24 AM MDT — Frequency knob v10.1 released; shaft fit tested**
 
-I’ve released Button Matrix **v3.2** with matching PCB silkscreen, board revision, and schematic revision. I removed the duplicate SQL clearance-hole outline, leaving the intended **12.0 mm non-plated hole**, and moved H3’s reference label clear of the solder-mask opening. I made no electrical changes.
+I’ve printed **frequency knob v10.1** and checked that it fits my encoder shaft. I enlarged only the shaft socket to **102% of v10’s original XY size**, keeping the outside dimensions and height unchanged. **Print v10.1 at 100% slicer scale.**
 
-I regenerated the [v3.2 Gerber/drill ZIP](PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) with KiCad 10.0.7. ERC and DRC report **zero violations, zero unconnected items, and zero schematic/PCB mismatches** under saved settings. Drill checks confirm 130 plated holes and five non-plated holes. These fresh exports and checks supersede the targeted correction’s verification limitation described below. Use v3.2 for future orders; the existing JLCPCB order still needs its separate engineering confirmation. I still need to assemble and electrically test the manufactured boards.
+Download [Freq_Knob_v.10.1.stl](Supporting%20STL%27s/Freq_Knob_v.10.1.stl). I’ve also updated the combined eight-knob STL and 3MF to include five v10.1 frequency knobs, along with the existing two mode knobs and one channel knob. I recommend printing one knob to check the shaft fit before printing all five. The individual knob’s fit is tested; I haven’t physically print-tested the complete combined layout yet. The older v10 file remains available for earlier shaft fits.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

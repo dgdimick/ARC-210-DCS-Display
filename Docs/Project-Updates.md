@@ -2,10 +2,16 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 6:34 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 10:24 AM MDT (America/Denver)**
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
+
+**October 30, 2026 at 10:24 AM MDT — Frequency knob v10.1 released; shaft fit tested**
+
+I’ve printed **frequency knob v10.1** and checked that it fits my encoder shaft. I enlarged only the shaft socket to **102% of v10’s original XY size**, keeping the outside dimensions and height unchanged. **Print v10.1 at 100% slicer scale.**
+
+Download [Freq_Knob_v.10.1.stl](../Supporting%20STL%27s/Freq_Knob_v.10.1.stl). I’ve also updated the combined eight-knob STL and 3MF to include five v10.1 frequency knobs, along with the existing two mode knobs and one channel knob. I recommend printing one knob to check the shaft fit before printing all five. The individual knob’s fit is tested; I haven’t physically print-tested the complete combined layout yet. The older v10 file remains available for earlier shaft fits.
 
 **October 30, 2026 at 3:25 AM MDT — Button Matrix v3.2 manufacturing release**
 

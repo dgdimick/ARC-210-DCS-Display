@@ -39,7 +39,7 @@ Use the [Supporting STL instructions](../../Supporting%20STL%27s/README.md) for 
 
 | Part | Quantity / action |
 | --- | --- |
-| [Frequency knob v.10](../../Supporting%20STL%27s/Freq_Knob_v.10.stl) | Print for the frequency controls; confirm fit on each shaft |
+| [Frequency knob v.10.1](../../Supporting%20STL%27s/Freq_Knob_v.10.1.stl) | Print for the frequency controls; confirm fit on each shaft |
 | [Mode knob v.4](../../Supporting%20STL%27s/Mode_Knob_v.4.stl) | Print for the Mode control |
 | [Channel knob v.3](../../Supporting%20STL%27s/Channel_Knob_v.3.stl) | Print for the Channel control |
 | [TFT bracket v.5](../../Supporting%20STL%27s/Deep_Bracket_v.5.stl) | Print one |

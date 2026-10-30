@@ -149,7 +149,7 @@ Print the following quantities for one ARC-210 panel:
 
 | Knob | Quantity to print | STL |
 | --- | ---: | --- |
-| Frequency | 5 | [Freq_Knob_v.10.stl](../Supporting%20STL%27s/Freq_Knob_v.10.stl) |
+| Frequency | 5 | [Freq_Knob_v.10.1.stl](../Supporting%20STL%27s/Freq_Knob_v.10.1.stl) |
 | Mode | 2 | [Mode_Knob_v.4.stl](../Supporting%20STL%27s/Mode_Knob_v.4.stl) |
 | Channel | 1 | [Channel_Knob_v.3.stl](../Supporting%20STL%27s/Channel_Knob_v.3.stl) |
 

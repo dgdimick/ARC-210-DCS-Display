@@ -1,6 +1,6 @@
 # ARC-210 Supporting 3D Files
 
-**Final STLs — October 22, 2026:** The published STL files linked in the tables below are the final versions. The shaft spacer is **v.5**. The SQL ON/OFF knob remains to be designed and printed.
+**Current STL files — October 30, 2026:** Frequency knob **v10.1** is now available with a larger shaft socket and a successful physical fit test. The other published STL versions remain as listed below. The shaft spacer is **v.5**. The SQL ON/OFF knob remains to be designed and printed.
 
 ## SQL ON/OFF knob — design pending
 
@@ -12,7 +12,7 @@ I still need to **design and 3D print the USB cable strain-relief support**. Its
 
 ## Knob Set V3
 
-Updated October 4, 2026.
+Updated October 30, 2026: frequency knob v10.1 replaces v10 in the individual downloads and combined layouts.
 
 **Knob Set V3** identifies this collection. Each knob retains its own revision number; the collection number does not reset or replace those numbers.
 
@@ -20,7 +20,7 @@ Updated October 4, 2026.
 
 | Knob | Quantity to print | Current STL | Earlier file |
 | --- | ---: | --- | --- |
-| Frequency | 5 | [Freq_Knob_v.10.stl](Freq_Knob_v.10.stl) | Replaces `Freq Mesh v9.stl` |
+| Frequency | 5 | [Freq_Knob_v.10.1.stl](Freq_Knob_v.10.1.stl) | Replaces `Freq_Knob_v.10.stl`; v10 remains available for earlier shaft fits |
 | Mode | 2 | [Mode_Knob_v.4.stl](Mode_Knob_v.4.stl) | Supersedes `Mode Mesh v6.stl`, despite its higher filename number |
 | Channel | 1 | [Channel_Knob_v.3.stl](Channel_Knob_v.3.stl) | Replaces `Channel Knob v13.stl`, despite its higher filename number |
 
@@ -43,9 +43,11 @@ If you downloaded an earlier ZIP, please grab the current knob files from the ta
 
 ### Printing and fit
 
-Use the hardware listed on the main project page. **I print the frequency knobs at 102% scale for a good shaft fit.** I recommend printing **one frequency knob first and checking the fit on its encoder shaft** before printing all five. Printer tolerances vary, so adjust the scale if your build needs it.
+Use the hardware listed on the main project page. **I’ve printed frequency knob v10.1 and checked that it fits my encoder shaft. Print v10.1 at 100% slicer scale.** I enlarged only the shaft socket to 102% of v10’s original XY size; the outside dimensions and height remain unchanged. The nominal round socket diameter is now approximately **6.375 mm**, up from **6.25 mm**, with the same **8 mm socket depth**.
 
-I previously used 106% scaling for the mode and frequency knobs; **102% is my current setting for the frequency knobs**. Scaling changes both the outside dimensions and the holes. The combined STL and 3MF files remain at 100% source scale; if using the combined layout, apply any frequency-knob adjustment only to those knobs rather than automatically scaling the entire set.
+I recommend printing **one frequency knob first and checking its shaft fit** before printing all five. Printer tolerances and shaft sizes vary. For the older [v10 STL](Freq_Knob_v.10.stl), I found **103% whole-knob scaling** gave the best fit; that enlarges both the socket and the outside of the knob. That older setting does not apply to v10.1.
+
+The combined STL and 3MF now contain **five v10.1 frequency knobs** at 100% scale. I haven’t physically print-tested the complete combined layout yet. Mode and channel knobs retain their existing versions; the SQL knob remains under development.
 
 ## Other required STLs
 
