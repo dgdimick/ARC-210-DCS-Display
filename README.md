@@ -22,14 +22,6 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 [Explore the ARC-164 and ARC-186 radio projects](Docs/Related-Radio-Projects.md) for project updates and build plans.
 
-## Questions and community builds
-
-This is primarily a DIY project, and the files and build notes are here to help you make your own panel. Parts can be purchased from the linked suppliers. If you get stuck, feel free to ask in Discussions—I’m happy to help where I can.
-
-**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
-
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, post build photos, and connect with other builders. Whether you are planning your first panel or already flying with one, you are welcome to join in!
-
 ## Features
 
 [View the features](Docs/Features.md) for the hardware capabilities and planned firmware support.
@@ -182,6 +174,14 @@ The numbers around this schematic symbol are KiCad pad numbers; use the signal l
 - `ARC-210/Docs/` — schematics, diagrams, and documentation
 - `ARC-210/images/` — project images
 - `ARC-210/Supporting STL's/` — 3D-printable knobs, bezels, brackets, mounts, and other parts
+
+## Questions and community builds
+
+This is primarily a DIY project, and the files and build notes are here to help you make your own panel. Parts can be purchased from the linked suppliers. If you get stuck, feel free to ask in Discussions—I’m happy to help where I can.
+
+**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
+
+Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, post build photos, and connect with other builders. Whether you are planning your first panel or already flying with one, you are welcome to join in!
 
 ## PC Flights affiliation
 
