@@ -2,6 +2,9 @@
 
 # Items that need to be completed
 
+**Last updated: October 30, 2026 at 2:52 AM MDT (America/Denver)**
+<!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
+
 1. Some SAT menus are already complete. The remaining work is on some menus three or four levels deep, which will be completed in firmware 2.0. I’m not sure what these remaining menus do, and I haven’t heard of anyone using them, so I don’t expect them to be an issue for most users.
 2. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
 3. Complete the final assembly instructions, wiring diagrams and updated parts list.

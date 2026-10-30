@@ -2,6 +2,9 @@
 
 # Project updates
 
+**Last updated: October 30, 2026 at 2:52 AM MDT (America/Denver)**
+<!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
+
 **October 29, 2026 — PCB budget updated**
 
 The PCB budget allowance is now approximately **$120** to reflect increased fabrication costs. The [estimated DIY purchasing cost](../parts/README.md#estimated-build-cost) is now **$320–$365 USD before shipping and tax**, including the faceplate. Earlier cost figures in the dated history below are superseded by this estimate.

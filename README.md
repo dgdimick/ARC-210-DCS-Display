@@ -22,6 +22,8 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Items that need to be completed
 
+**Last updated: October 30, 2026 at 2:52 AM MDT (America/Denver)**
+
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
 ## Tools Needed
@@ -33,6 +35,8 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 [View Future Thoughts and Plans](Docs/Future-Thoughts.md) for possible redesigns, lighting, and support for other aircraft.
 
 ## Project updates
+
+**Last updated: October 30, 2026 at 2:52 AM MDT (America/Denver)**
 
 [Read the project updates](Docs/Project-Updates.md) for the dated development history, PCB progress, and testing milestones.
 
