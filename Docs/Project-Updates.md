@@ -2,8 +2,10 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 3:25 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 6:31 AM MDT (America/Denver)**
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
+
+This history covers hardware and firmware changes, releases, testing milestones, and build cost estimates. Routine documentation edits, community announcements, and future ideas are tracked elsewhere.
 
 **October 30, 2026 at 3:25 AM MDT — Button Matrix v3.2 manufacturing release**
 
@@ -87,17 +89,9 @@ The **SQL On/Off PCB is optional** when using the solder-lug switch: wires can b
 
 **Tested wiring:** Both seven-position rotary switches were tested and worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. Some fluctuation was visible in the voltage readings on the TFT, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the Main Board schematic were not part of that test.
 
-**October 22, 2026 — Future button-lighting option**
-
-I may revisit button lighting in a future revision. This would require changes to the Master PCB to provide space for an SCR, the associated discrete components, and a lighting connector, along with the external 5 V power supply and its power-input and protection circuitry. It would also require a new Button LED PCB design, which is not currently planned. The **ARC-164 and ARC-186 projects will be completed first**, before I revisit this option.
-
 **October 22, 2026 — Build cost estimate and button-switch update**
 
 Added the initial DIY parts purchasing estimate, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a provisional PCB allowance. **The original figures have been superseded:** use the [current parts estimate](../parts/README.md#estimated-build-cost), with an approximately **$120 PCB allowance** and **$320–$365 USD total before shipping and tax**. Manufacturing files for all four PCB designs are now published. The button switches are specified as **6 × 6 × 5 mm**, with 16 required per panel. See the [parts documentation and supplier link](../parts/README.md#current-button-switches) and [BOM](../parts/BOM.csv).
-
-**October 22, 2026 — Discussions now open**
-
-The [Discussions section](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) is now open for questions and sharing builds. Join in to ask for help, share ideas, and post photos of your progress.
 
 **October 22, 2026 — Shaft spacer v.5 clearance fix**
 
@@ -118,14 +112,6 @@ The updated [Main Board KiCad project](../PCBs/Master%20Board/) has been pushed 
 **October 12, 2026 — Rotary Encoder and Rotary Switch PCBs finalized; test fits confirmed**
 
 The [Rotary Encoder PCB version 1.4](../PCBs/Rotary%20Encoders/) and [Rotary Switch PCB version 2.0](../PCBs/Rotary%20Switches/) are now **final designs**, and both have been **physically test-fitted**. See the [PCB status README](../PCBs/README.md). I have published **version 1.4** of the [Rotary Encoder KiCad project](../PCBs/Rotary%20Encoders/), with the latest saved PCB layout, updated board outline, v1.4 silkscreen label and [updated six-encoder 3D preview](../images/Rotary-Encoder-PCB-3D.png). Download the current project before building or ordering this board. The project includes the schematic, PCB, custom libraries and header wiring instructions. The version 1.3 check results documented in the project README are historical; the version 1.4 checks were subsequently rerun on October 27; see the Rotary Encoder README and manufacturing reports. I have confirmed that the printed rotary-encoder STL fits and all six encoders work in the final combined hardware test.
-
-**October 10, 2026 — Splash-screen picture removed**
-
-I removed `splash_screen.jpg` because [ARC-210-Face Plate.jpg](../images/ARC-210-Face%20Plate.jpg) is a better picture. The faceplate picture remains at the top of the [main README](../README.md).
-
-**October 10, 2026 — Outdated Button PCB image removed**
-
-I removed `Button_Ver2.0.jpg` because it does not show the final Button PCB. I am redesigning the 16-button board and removed the old picture to prevent confusion.
 
 **October 10, 2026 — Final hardware test HEX**
 
