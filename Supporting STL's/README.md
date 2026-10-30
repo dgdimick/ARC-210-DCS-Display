@@ -24,6 +24,17 @@ Updated October 4, 2026.
 | Mode | 2 | [Mode_Knob_v.4.stl](Mode_Knob_v.4.stl) | Supersedes `Mode Mesh v6.stl`, despite its higher filename number |
 | Channel | 1 | [Channel_Knob_v.3.stl](Channel_Knob_v.3.stl) | Replaces `Channel Knob v13.stl`, despite its higher filename number |
 
+### Complete eight-knob print layout
+
+Both downloads contain **5 Frequency knobs, 2 Mode knobs, and 1 Channel knob**, using the current files linked above:
+
+- [Download all eight knobs as one STL](ARC-210-Knob-Set-V3-All-8.stl)
+- [Download all eight knobs as a 3MF with eight separate objects](ARC-210-Knob-Set-V3-All-8.3mf)
+
+The layout occupies approximately **91 × 42 mm**, with at least **8 mm clearance** between knobs. Both files retain the source geometry at **100% scale**, preserve the original orientation, and place every knob on Z=0. STL dimensions are intended as millimeters; the 3MF explicitly uses millimeters. The 3MF contains geometry and placement only, with no printer, filament, support, or slicer settings. Check the sliced preview and allow extra bed space for brims or skirts. These combined files have not yet been physically print-tested.
+
+The SQL ON/OFF knob is **not included**, because its design is still pending. Individual knob STLs remain available for replacements and fit checks; see the printing and fit notes below before printing the full set.
+
 ### If you downloaded an older ZIP
 
 If you downloaded an earlier ZIP, please grab the current knob files from the table above. These files are intended to be used together as Knob Set V3. Some revision numbers look lower than the older filenames, so the table is the best guide to which files to print. Older files may still appear in previously downloaded ZIPs or repository history.
