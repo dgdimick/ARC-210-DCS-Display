@@ -60,6 +60,15 @@ Where practical, connect several powered hubs directly to the PC and keep any hu
 
 **One Teensy can also run multiple smaller panels through a single USB connection**, provided their combined pin count, processing needs, and power requirements fit within the controller's limits. Nearby panels can share a controller when the wiring is practical, so future expansion does not require a separate USB connection for every panel. The current radio plan remains unchanged: the ARC-210, ARC-164, and ARC-186 will each have their own dedicated Teensy 4.1.
 
+### USB hubs purchased for this cockpit
+
+I have purchased the following powered USB hubs and plan to use them for the **ARC-210, ARC-164, and ARC-186 radio panels, along with future cockpit panels**:
+
+- [RSHTECH RSH-ST10C-6 powered 10-port USB hub](https://www.amazon.com/dp/B0DX6KR79L) — six USB-C ports and four USB-A ports, with a listed 60 W power adapter.
+- [ACASIS powered 16-port USB hub](https://www.amazon.com/dp/B07G8S324L) — with a listed 96 W power adapter.
+
+Where practical, each hub will connect directly to the PC. The connected controllers and displays will share each hub's available power; completed-panel current draw and multi-panel operation still need to be tested. These are the hubs I have purchased for my build, rather than required purchases for other builders.
+
 ## Firmware and hardware information
 
 [Open Firmware and hardware information](Docs/Firmware-and-Hardware-Information.md) for wiring, power, PCB layout, parts, printable files, software, firmware loading, and testing guides.
