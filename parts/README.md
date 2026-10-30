@@ -143,6 +143,16 @@ Use **16 switches per panel**, each **6 × 6 × 5 mm**, SPST momentary tactile, 
 
 The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the purchased switches' lead spacing and contact pairing against it before fabrication.
 
+## Required 3D-printed knobs
+
+Print the following quantities for one ARC-210 panel:
+
+| Knob | Quantity to print | STL |
+| --- | ---: | --- |
+| Frequency | 5 | [Freq_Knob_v.10.stl](../Supporting%20STL%27s/Freq_Knob_v.10.stl) |
+| Mode | 2 | [Mode_Knob_v.4.stl](../Supporting%20STL%27s/Mode_Knob_v.4.stl) |
+| Channel | 1 | [Channel_Knob_v.3.stl](../Supporting%20STL%27s/Channel_Knob_v.3.stl) |
+
 ## SQL ON/OFF knob — design pending
 
 The **SQL ON/OFF knob still needs to be designed and 3D printed**. A finished SQL ON/OFF knob STL is not yet included in the published files.
