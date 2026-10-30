@@ -53,7 +53,7 @@ I also use:
 
 - WinWing HOTAS, rudder pedals, and control panels.
 - Thrustmaster Cougar MFD controls.
-- TrackIR 5 and Stream Deck.
+- TrackIR 5 and a 15-button Stream Deck.
 - DCS-BIOS, Tacview, and OpenKneeboard.
 
 My primary DCS aircraft is the **A-10C II Thunderbolt II**. I’m developing the radio panels for this cockpit. Supporting other aircraft will require the appropriate DCS-BIOS mappings and testing.
