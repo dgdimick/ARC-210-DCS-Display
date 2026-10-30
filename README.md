@@ -67,6 +67,10 @@ Future button lighting would require a separate power and driver design, suitabl
 
 ## PCB layout — five or six boards
 
+![ARC-210 PCB layout mockup showing board spacing and clearance behind the faceplate](images/arc-210-pcb-layout-mockup.jpg)
+
+ARC-210 PCB layout mockup showing board spacing, control placement, and clearance behind the PC Flights faceplate. Mechanical fit check before final PCB design.
+
 The panel uses five required PCBs: one Main Board, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards. An optional SQL On/Off switch PCB brings the total to six; it can be omitted when wiring directly to the switch’s solder lugs.
 
 The [shaft spacer v.5](Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether or not the optional PCB is fitted.
