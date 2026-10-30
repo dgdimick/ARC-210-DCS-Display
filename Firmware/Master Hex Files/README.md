@@ -1,6 +1,6 @@
 # ARC-210 menu-system preview
 
-README last updated: **September 25, 2026**.
+README last updated: **October 30, 2026 at 3:11 AM MDT (America/Denver)**.
 
 `Master_Program.ino.hex` is the current Teensy 4.1 / ILI9488 480 × 320 display firmware, published for menu-screen and navigation testing. It is not a complete implementation of every radio function.
 
@@ -15,7 +15,7 @@ README last updated: **September 25, 2026**.
 
 ## Known limitations
 
-Some SAT menus three or four levels deep remain unfinished and are planned for firmware 2.0. I’m not sure what these remaining menus do, and I haven’t heard of anyone using them, so I don’t expect them to be an issue for most users.
+Some of the deeper SAT menus are still being worked on. I’m not sure what these remaining menus do, and I haven’t heard of anyone using them, so I don’t expect them to be an issue for most users.
 
 Some detail-page actions remain unimplemented, including the WOD erase YES outcome. COMSEC BASEBAND/DIPHASE selection synchronization needs further work because the game label depends on underlying settings. Early aircraft-power startup screens may lag DCS; frequency-screen timing and power behavior have been tested. Found something that doesn’t behave as expected? Please share the menu page, the button or knob you used, and what happened on both the panel and the DCS screen. Those details make it much easier to track down. You can post your findings in Discussions.
 
