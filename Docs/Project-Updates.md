@@ -2,8 +2,14 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 2:52 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 3:20 AM MDT (America/Denver)**
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
+
+**October 30, 2026 at 3:20 AM MDT — Button Matrix SQL clearance-hole correction**
+
+JLCPCB flagged overlapping drill and outline definitions at the Button Matrix's SQL switch clearance hole. The intended opening is a **12.0 mm non-plated hole**; a duplicate approximately **13.38 mm Edge.Cuts circle** has now been removed from the PCB source and outline Gerber. The [Button Matrix v3.1 manufacturing ZIP](../PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) has been rebuilt for future orders, and the [board documentation](../PCBs/Button%20Matrix/README.md) records the correction.
+
+The 12.0 mm drill definition remains, and all manufacturing ZIP entries except the corrected outline and manufacturing notes were verified byte-for-byte unchanged. This was a targeted source/Gerber correction; a fresh KiCad export and DRC were not available, and the included check reports predate the correction. The repository update does not replace the files already submitted to JLCPCB; the current order requires a separate response to their engineering question.
 
 **October 29, 2026 — PCB budget updated**
 
