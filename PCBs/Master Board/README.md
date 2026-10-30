@@ -8,7 +8,7 @@ Download this repository using **Code → Download ZIP**, extract it, and keep t
 
 You can also download the [schematic](ARC-210_Master_Board.kicad_sch) and [PCB v1.1](ARC-210_Master_Board.kicad_pcb) directly. Downloading only that file does not include the project library configuration.
 
-Main Board **v1.1** includes the completed placement and routing, GND copper pours on both layers, and a [Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). Its switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes and USB zip-tie slots are retained. All 13 circuit component footprints are on B.Cu, facing away from the faceplate. ERC, DRC and schematic/PCB parity pass under the saved settings, with zero unconnected items. Physical fit is confirmed for Main Board v1.1; current verification, assembly and manufactured-board testing are still ahead. Take your time with the build, and please ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) if you need a hand.
+Main Board **v1.1** includes the completed placement and routing, GND copper pours on both layers, and a [Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). Its switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes and USB zip-tie slots are retained. All 13 circuit component footprints are on B.Cu, facing away from the faceplate. ERC, DRC and schematic/PCB parity pass under the saved settings, with zero unconnected items. I’ve checked the physical fit of Main Board v1.1; current verification, assembly and manufactured-board testing are still ahead. Take your time with the build, and please ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) if you need a hand.
 
 ## PCB layout — five or six boards
 
@@ -23,7 +23,7 @@ The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **req
 - **J4:** 14-pin rotary-encoder connector; pins 13 and 14 are GND.
 - **J10 (MASTER) pin 2:** rotary-switch signal through R1 to GPIO 14 / A0, KiCad U1 pad 36.
 - **J9 (MODE) pin 2:** rotary-switch signal through R2 to GPIO 15 / A1, KiCad U1 pad 37.
-- **SQL1:** pin 1 is GPIO 41 / U1 pad 33; pin 2 is GND. The SQL On/Off switch PCB is optional when wiring its solder lugs directly. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; Main Board v1.1 physical fit is confirmed; assembly checks remain pending.
+- **SQL1:** pin 1 is GPIO 41 / U1 pad 33; pin 2 is GND. The SQL On/Off switch PCB is optional when wiring its solder lugs directly. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; I’ve checked the physical fit of Main Board v1.1; I still need to check the assembled board.
 
 **GPIO labels are not KiCad pad numbers.** For example, GPIO 4 is U1 pad 6, GPIO 14 is pad 36, and GPIO 15 is pad 37. Use the labels printed on the Teensy for wiring and firmware; use the matching symbol and `teensy:Teensy41` footprint when updating the PCB.
 
@@ -47,21 +47,21 @@ Use the [shaft support spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.s
 
 ## SQL ON/OFF knob — design pending
 
-The **SQL ON/OFF knob still needs to be designed and 3D printed**. Its finished STL is not yet included in the published files. This is separate from the existing shaft support spacer v.5, which is required in all installations.
+I still need to **design and 3D print the SQL ON/OFF knob**. Its finished STL is not yet included in the published files. This is separate from the existing shaft support spacer v.5, which is required in all installations.
 
 ## Power and lighting
 
-The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). TFT brightness at 3.3 V has been confirmed satisfactory. The external protected 5 V input and Main Board JP1 power selector have been removed. C5 (470 µF) and C6 (0.1 µF) have been removed to match the tested direct Teensy-to-TFT wiring. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
+The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). I’ve tested the TFT at 3.3 V and found the brightness satisfactory. I removed the external protected 5 V input and Main Board JP1 power selector. I removed C5 (470 µF) and C6 (0.1 µF) to match the direct Teensy-to-TFT wiring I tested. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
 
 Removed from the schematic and PCB: **J3, F2, D1, D2, D3, Q2, R15, R16, R17, JP1, C5, and C6**. There is no external input jack, fuse, SCR/zener protection branch, power indicator LED, or TFT power-selector shunt in this revision. This does not affect the separate rotary-switch PCB's JP1 solder bridge.
 
 C5 (470 µF) and C6 (0.1 µF) have been removed from the schematic, PCB, and BOM to match the tested direct TFT wiring. No additional TFT supply capacitors are fitted on this Main Board. C1/C2 and R1/R2 remain as the rotary-input filters. The TFT backlight-control signal remains connected to GPIO 4.
 
-Future button lighting would require a separate power and driver design, suitable light-transmitting buttons, and a new Button LED PCB. The current Main Board has no external lighting-power circuit. This lighting revision is not currently planned; the other radio projects remain the priority.
+Future button lighting would require a separate power and driver design, suitable light-transmitting buttons, and a new Button LED PCB. The current Main Board has no external lighting-power circuit. I’m leaving this lighting redesign for later and prioritizing the other radio projects.
 
 ## Rotary-switch test wiring
 
-Both seven-position switches worked with their outputs connected directly to GPIO 14 and 15, without the schematic's 220 Ω series resistors or 100 nF filter capacitors. The six 1 kΩ ladder resistors on each switch board were fitted and JP1 on each switch board was open. Voltage fluctuations were visible on the TFT but did not affect the detected switch positions.
+I tested both seven-position switches with their outputs connected directly to GPIO 14 and 15. They worked without the schematic's 220 Ω series resistors or 100 nF filter capacitors. The six 1 kΩ ladder resistors on each switch board were fitted and JP1 on each switch board was open. I saw voltage fluctuations on the TFT, but they did not affect the detected switch positions.
 
 ## Teensy 4.1 in the 3D Viewer
 
@@ -73,7 +73,7 @@ Both seven-position switches worked with their outputs connected directly to GPI
 
 The current working layout includes the Teensy 4.1, TFT and control connectors, and SQL On/Off solder connections. **J9 is MODE** (GPIO 15 / A1), and **J10 is MASTER** (GPIO 14 / A0). A **26.2 mm circle**, centered on the SQL shaft hole, provides a switch-body spacing guide without electrical pads. The earlier board-edge silkscreen clipping warning is resolved in the corrected upload. The existing shaft opening, anti-rotation slot, and mounting holes are retained.
 
-The current saved PCB and schematic shown by this layout-progress update are now uploaded to this folder. The v1.1 design checks pass under the saved settings. Main Board v1.1 physical fit is confirmed; current verification remains pending. Main Board v1.1 design and fabrication files are now published; physical fit is confirmed and manufactured-board validation is still to come.
+The current saved PCB and schematic shown by this layout-progress update are now uploaded to this folder. The v1.1 design checks pass under the saved settings. I’ve checked the physical fit of Main Board v1.1; I still need to complete verification. Main Board v1.1 design and fabrication files are now published; physical fit is confirmed and manufactured-board validation is still to come.
 
 [Earlier angled Teensy 4.1 preview — October 27](../../images/Main-PCB-Teensy-3D.png)
 
@@ -86,7 +86,7 @@ The project includes [Teensy_4.1_Board.step](Libraries/3dmodels/Teensy_4.1_Board
 
 If U1 is missing, check its **Footprint Properties → 3D Models** entry and confirm the STEP file is present at the path above. Reopen the viewer after replacing project files. The old missing assembly-model path and erroneous footprint-folder model entry have been removed.
 
-The model was checked in bottom and angled renders. This verifies visibility and visual alignment; Main Board v1.1 physical fit is now confirmed. Final socket height and component clearances should still be checked during assembly. No electrical connections were changed by attaching the model.
+I checked the model in bottom and angled renders. This verifies visibility and visual alignment; I’ve now checked the physical fit of Main Board v1.1. Final socket height and component clearances should still be checked during assembly. No electrical connections were changed by attaching the model.
 
 ## Included libraries and checks
 
@@ -117,4 +117,4 @@ These files are a **draft fabrication export**, not a validated production relea
 
 ## Main Board version 1.1
 
-Version 1.1 adds filled GND copper pours on F.Cu and B.Cu, with isolated islands removed. PCB and schematic revisions are 1.1; circuit connections, component placement and mechanical outlines are unchanged. Use the [v1.1 Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). Physical fit is confirmed for Main Board v1.1; current verification and manufactured-board testing remain pending. The previously submitted manufacturing order is unchanged.
+Version 1.1 adds filled GND copper pours on F.Cu and B.Cu, with isolated islands removed. PCB and schematic revisions are 1.1; circuit connections, component placement and mechanical outlines are unchanged. Use the [v1.1 Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). I’ve checked the physical fit of Main Board v1.1; current verification and manufactured-board testing remain pending. The previously submitted manufacturing order is unchanged.

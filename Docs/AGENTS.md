@@ -13,3 +13,7 @@ When updating `Project-Updates.md` or `Remaining-Work.md`:
 # Project update scope
 
 Project-Updates.md is for substantive hardware and firmware changes, version releases, testing milestones, and build cost estimates. Do not add entries for routine documentation or wording changes, page reorganization, equipment lists, community announcements, or future ideas. Keep future ideas on Future-Thoughts.md. A documentation cleanup may refresh the page-maintenance timestamp without creating a new project-update entry or changing a historical milestone date.
+
+# Documentation voice
+
+Write personal build choices, progress, plans, and test experience in Denis’s first-person voice (I/my). Keep technical descriptions and reader-facing build instructions natural; do not turn every specification into a personal statement. Preserve historical dates, technical facts, code examples, licenses, and validation limits during wording edits.

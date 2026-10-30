@@ -4,11 +4,11 @@
 
 ## SQL ON/OFF knob — design pending
 
-The **SQL ON/OFF knob still needs to be designed and 3D printed**. Its finished STL is not yet included in this directory. The final-version notes below apply to the files already published.
+I still need to **design and 3D print the SQL ON/OFF knob**. Its finished STL is not yet included in this directory. The final-version notes below apply to the files already published.
 
 ## USB cable strain-relief support — design pending
 
-The **USB cable strain-relief support still needs to be designed and 3D printed**. Its finished STL is not yet included in this directory. The support should protect the Teensy's Micro-B connector from cable pulls while allowing the cable to be unplugged and the Teensy removed for service. Physical fit verification is pending.
+I still need to **design and 3D print the USB cable strain-relief support**. Its finished STL is not yet included in this directory. The support should protect the Teensy's Micro-B connector from cable pulls while allowing the cable to be unplugged and the Teensy removed for service. Physical fit verification is pending.
 
 ## Knob Set V3
 
@@ -31,7 +31,7 @@ Both downloads contain **5 Frequency knobs, 2 Mode knobs, and 1 Channel knob**, 
 - [Download all eight knobs as one STL](ARC-210-Knob-Set-V3-All-8.stl)
 - [Download all eight knobs as a 3MF with eight separate objects](ARC-210-Knob-Set-V3-All-8.3mf)
 
-The layout occupies approximately **91 × 42 mm**, with at least **8 mm clearance** between knobs. Both files retain the source geometry at **100% scale**, preserve the original orientation, and place every knob on Z=0. STL dimensions are intended as millimeters; the 3MF explicitly uses millimeters. The 3MF contains geometry and placement only, with no printer, filament, support, or slicer settings. Check the sliced preview and allow extra bed space for brims or skirts. These combined files have not yet been physically print-tested.
+The layout occupies approximately **91 × 42 mm**, with at least **8 mm clearance** between knobs. Both files retain the source geometry at **100% scale**, preserve the original orientation, and place every knob on Z=0. STL dimensions are intended as millimeters; the 3MF explicitly uses millimeters. The 3MF contains geometry and placement only, with no printer, filament, support, or slicer settings. Check the sliced preview and allow extra bed space for brims or skirts. I haven’t physically print-tested these combined files yet.
 
 The SQL ON/OFF knob is **not included**, because its design is still pending. Individual knob STLs remain available for replacements and fit checks; see the printing and fit notes below before printing the full set.
 
@@ -75,7 +75,7 @@ PC Flights has supplied me with a drawing file to assist with the Button PCB lay
 
 Use this spacer in **all installations** to support the **longer shaft used by the SQL On/Off rotary switch**. Fit it whether using the optional switch PCB or wiring directly to the switch’s solder lugs.
 
-**October 22, 2026 — v.5 clearance fix:** The previous shaft spacer had a clearance issue. Version 5 corrects it and has now been physically test-fitted and confirmed to fit and work. Use v.5 for new prints; v.4 remains available in repository history.
+**October 22, 2026 — v.5 clearance fix:** The previous shaft spacer had a clearance issue. I corrected it in version 5, then physically test-fitted the spacer and checked that it works. Use v.5 for new prints; v.4 remains available in repository history.
 
 ## Estimated build cost
 

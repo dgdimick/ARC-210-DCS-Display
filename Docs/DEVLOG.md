@@ -4,7 +4,7 @@
 
 ### Teensy 4.1 TFT and DCS-BIOS Milestone
 
-Successfully got the ARC-210 TFT display working with the Teensy 4.1.
+I got the ARC-210 TFT display working with the Teensy 4.1.
 
 Confirmed working display:
 - 3.5-inch 480x320 SPI TFT
@@ -20,14 +20,14 @@ Confirmed working TFT pinout:
 - MISO / SDO -> GPIO 12
 - BLK / Backlight -> GPIO 6
 
-Also confirmed the Teensy 4.1 is communicating with DCS through DCS-BIOS using:
+I also checked that the Teensy 4.1 communicates with DCS through DCS-BIOS using:
 
 ```cpp
 #define DCSBIOS_DEFAULT_SERIAL
 #include "DcsBios.h"
 ```
 
-The ARC-210 frequency was successfully received from DCS-BIOS and displayed on the TFT.
+I received the ARC-210 frequency from DCS-BIOS and displayed it on the TFT.
 
 Tested live frequency received from DCS:
 - 133.000 MHz
@@ -47,7 +47,7 @@ DcsBios::StringBuffer<7> arc210FrequencyBuffer(
 
 ### Status
 
-At this point, the following has been verified:
+At this point, I had verified the following:
 - Teensy 4.1 is working
 - TFT display is working
 - TFT pinout is confirmed

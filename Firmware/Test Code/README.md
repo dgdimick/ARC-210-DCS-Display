@@ -21,7 +21,7 @@ Passing the hello test confirms the display is ready; it does not install a depe
 
 ## Seven-position rotary switch TFT test
 
-**Tested wiring:** Both seven-position rotary switches were tested and worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. Some fluctuation was visible in the voltage readings on the TFT, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the Main Board schematic were not part of that test.
+**Tested wiring:** I tested both seven-position rotary switches, and they worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. I saw some fluctuation in the TFT voltage readings, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the Main Board schematic were not part of that test.
 
 I also included a standalone [rotary switch test](ARC210_Rotary_Switch_Test/) that displays position 1–7, raw ADC reading and approximate voltage on the TFT. Connect the switch PCB's J1 pin 2 to Teensy **GPIO 14 (A0)**, fit all six resistors and leave JP1 open. J1 pin 1 goes to 3.3V and pin 3 to GND.
 

@@ -89,11 +89,11 @@ The painted buttons supplied with the PC Flights panel used for this build are o
 
 The Teensy is powered by USB, and TFT VCC connects directly to the Teensy's 3.3 V supply. The external protected 5 V input, Main Board JP1 power selector, and C5/C6 TFT supply capacitors have been removed. C1/C2 and R1/R2 remain as rotary-input filters. The TFT backlight uses GPIO 4. Use a USB Micro-B data cable for power, programming, and USB communications.
 
-Future button lighting would require suitable light-transmitting buttons, a separate power and driver design, a revised Main Board, and a new Button LED PCB. This is not currently planned; the other radio projects remain the priority. Button-lighting LEDs are not part of the current build or parts estimate.
+Future button lighting would require suitable light-transmitting buttons, a separate power and driver design, a revised Main Board, and a new Button LED PCB. I’m leaving this for later and prioritizing the other radio projects. Button-lighting LEDs are not part of the current build or parts estimate.
 
 ## Optional SQL On/Off PCB
 
-The SQL On/Off PCB is optional: the panel uses five required PCBs, or six with this optional board. For direct wiring, use TP1 (SQL signal, GPIO 41 / U1 pad 33) and TP2 (GND), both included and routed in the current Main Board v1.1. SQL1 remains an alternative two-pin header. The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is required in all installations to support the longer SQL On/Off switch shaft, whether or not the optional PCB is fitted. See the [direct-wiring notes](../parts/README.md#six-pcb-layout). Main Board v1.1 physical fit is confirmed; assembly testing remains pending.
+The SQL On/Off PCB is optional: the panel uses five required PCBs, or six with this optional board. For direct wiring, use TP1 (SQL signal, GPIO 41 / U1 pad 33) and TP2 (GND), both included and routed in the current Main Board v1.1. SQL1 remains an alternative two-pin header. The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is required in all installations to support the longer SQL On/Off switch shaft, whether or not the optional PCB is fitted. See the [direct-wiring notes](../parts/README.md#six-pcb-layout). I’ve checked the physical fit of Main Board v1.1; I still need to test the assembled board.
 
 ## Estimated build cost
 

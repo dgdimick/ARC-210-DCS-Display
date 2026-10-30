@@ -2,11 +2,11 @@
 
 Version **1.4 — Final PCB design**, updated October 12, 2026. KiCad 10 project.
 
-Version **1.4 is the final PCB design and has been physically test-fitted**, confirmed October 12, 2026.
+I finalized **PCB version 1.4 and checked its physical fit** on October 12, 2026.
 
 ![Rotary encoder PCB version 1.4 with six encoders](../../images/Rotary-Encoder-PCB-3D.png)
 
-Version 1.4 publishes the latest saved PCB layout and project settings, including the updated board outline and v1.4 silkscreen label. Fresh version 1.4 checks were run October 27, 2026; see the manufacturing files section. The earlier version 1.3 results below are historical.
+Version 1.4 publishes the latest saved PCB layout and project settings, including the updated board outline and v1.4 silkscreen label. I ran fresh version 1.4 checks on October 27, 2026; see the manufacturing files section. The earlier version 1.3 results below are historical.
 
 For version 1.3, I checked this six-encoder PCB against its schematic. The electrical check reported zero errors and warnings; the PCB check reported zero violations, zero unconnected pads and zero schematic parity issues under the project's saved check settings. Courtyard and certain footprint checks are disabled in those settings.
 

@@ -2,7 +2,7 @@
 
 Draft started October 29, 2026.
 
-This guide covers the ARC-210 panel using one Teensy 4.1, a 3.5-inch ILI9488 SPI TFT, and the published control boards. It is a work in progress. **Pending** means the step still needs final design work, assembly validation, measurements, or photographs; it is not a confirmed assembly procedure.
+This guide covers the ARC-210 panel using one Teensy 4.1, a 3.5-inch ILI9488 SPI TFT, and the published control boards. I’m still writing it. **Pending** means the step still needs final design work, assembly validation, measurements, or photographs; it is not a confirmed assembly procedure.
 
 ## Build status
 
@@ -64,7 +64,7 @@ Download the manufacturing packages from the [Gerber and drill table](../../PCBs
 
 Review the manufacturer's preview against the project outline and drill information. These control boards specify two layers and 1.6 mm thickness; consult each manufacturing README for details.
 
-**Main Board Version 1.1:** [Gerber and drill package](../../PCBs/Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) is available for a two-layer, 1.6 mm PCB. Physical fit is confirmed for Main Board v1.1; final routing review, current verification and assembled-board testing remain pending; this is not yet a validated production release.
+**Main Board Version 1.1:** [Gerber and drill package](../../PCBs/Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) is available for a two-layer, 1.6 mm PCB. I’ve checked the physical fit of Main Board v1.1; final routing review, current verification and assembled-board testing remain pending; this is not yet a validated production release.
 
 ## 4. Assemble the Button Matrix PCB
 
@@ -86,7 +86,7 @@ Refer to the [Rotary Encoder instructions](../../PCBs/Rotary%20Encoders/README.m
 - The encoders' push-switch contacts are unused in this design.
 - Fit the **six printed encoder spacers**, one at each encoder's threaded faceplate mounting section.
 
-The PCB has been physically checked, and all six encoders worked in the combined hardware test. **Pending:** photographed assembly order and electrical testing of a manufactured board.
+I’ve checked the PCB’s physical fit, and all six encoders worked in my combined hardware test. **Pending:** photographed assembly order and electrical testing of a manufactured board.
 
 ## 6. Assemble the Rotary Switch boards and SQL switch
 
@@ -122,7 +122,7 @@ After checking the fit of the actual cable and boot, pass the tie through the tw
 
 ## 8. Main Board assembly and wiring — pending final validation
 
-Use the [current Main Board schematic and README](../../PCBs/Master%20Board/README.md) as the authority. This section records the v1.1 connections; we'll add assembly photos and confirmed fit details as the boards are tested.
+Use the [current Main Board schematic and README](../../PCBs/Master%20Board/README.md) as the authority. This section records the v1.1 connections; I’ll add assembly photos and fit details as I test the boards.
 
 | Main Board connection | Purpose |
 | --- | --- |
@@ -144,7 +144,7 @@ Use the **GPIO labels printed on the Teensy** for wiring instructions; they are 
 
 ## 9. Test the hardware in stages
 
-The existing test firmware was confirmed on the development hardware. **Validation of the assembled manufactured boards remains pending.**
+I tested the existing test firmware on my development hardware. **Validation of the assembled manufactured boards remains pending.**
 
 1. Start with the [TFT hello test and test-code instructions](../../Firmware/Test%20Code/README.md). Confirm that the display works.
 2. Use the standalone encoder and rotary-switch tests there if a control needs troubleshooting.

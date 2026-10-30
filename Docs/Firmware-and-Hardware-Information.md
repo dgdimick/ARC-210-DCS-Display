@@ -2,7 +2,7 @@
 
 # Firmware and hardware information
 
-Technical information and build resources for the ARC-210 panel.
+I’ve gathered the wiring, hardware, firmware, and testing resources for my ARC-210 panel here.
 
 ## Teensy GPIO labels and KiCad pin numbers
 
@@ -54,7 +54,7 @@ All STL files are intended to be print-ready for FDM printers using a 0.4 mm noz
 
 - Written in Arduino C++
 - Uses DCS-BIOS for communication with DCS
-- Firmware and test files are maintained in this repository
+- I keep the firmware and test files in this repository
 
 ## Why I had to use a Teensy
 

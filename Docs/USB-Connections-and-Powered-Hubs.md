@@ -2,17 +2,17 @@
 
 # USB connections and powered hubs
 
-The **ARC-210, ARC-164, and ARC-186 will each use a dedicated Teensy 4.1 with its own USB connection to DCS-BIOS**. Three USB connections are manageable, and each radio can be built, tested, updated, and troubleshot independently.
+I’ll use a **dedicated Teensy 4.1 and USB connection to DCS-BIOS for each radio: the ARC-210, ARC-164, and ARC-186**. Three USB connections are manageable, and each radio can be built, tested, updated, and troubleshot independently.
 
-RS-485 can reduce USB ports and COM-port connections when many cockpit panels share a communication bus, but it adds transceiver hardware, bus wiring, termination, addressing, and a master interface. For these three radios, separate USB connections keep assembly and setup simpler. **USB remains the planned connection for each radio.**
+RS-485 can reduce USB ports and COM-port connections when many cockpit panels share a communication bus, but it adds transceiver hardware, bus wiring, termination, addressing, and a master interface. For these three radios, separate USB connections keep assembly and setup simpler. **I plan to keep USB for each radio.**
 
-**Powered USB hubs are the preferred expansion approach for this cockpit.** I already use USB for my MFCDs, button boxes, keyboard, HOTAS, and flight stick, so the radio panels will use the same USB setup. **I currently run all 12 USB devices through a single USB hub without any issues, after rewiring my SIMPIT when I started the ARC-210 project.** That experience supports continuing with USB and adding the radio controllers incrementally, while checking power requirements and testing the expanded setup as new panels are connected. RS-485 would consolidate the panel-controller connections, but those existing devices would still need USB. Building on the powered-hub setup already in use keeps the radios consistent with the rest of my cockpit. Powered hubs allow multiple Teensy controllers to share the PC's USB connections, preserve header GPIO pins, and work with the planned USB DCS-BIOS firmware. Each controller can still be tested, updated, and troubleshot independently, without adding RS-485 transceivers, bus termination, addressing, or a master interface. One Teensy can serve several smaller panels, so the number of cockpit panels or DCS-BIOS categories does not determine the number of USB devices.
+**I’m using powered USB hubs to expand my cockpit.** I already use USB for my MFCDs, button boxes, keyboard, HOTAS, and flight stick, so the radio panels will use the same USB setup. **I currently run all 12 USB devices through a single USB hub without any issues, after rewiring my SIMPIT when I started the ARC-210 project.** That experience supports my plan to keep using USB and add the radio controllers one at a time. I’ll check power requirements and test the setup as I connect new panels. RS-485 would consolidate the panel-controller connections, but those existing devices would still need USB. Building on the powered-hub setup already in use keeps the radios consistent with the rest of my cockpit. Powered hubs allow multiple Teensy controllers to share the PC's USB connections, preserve header GPIO pins, and work with the planned USB DCS-BIOS firmware. Each controller can still be tested, updated, and troubleshot independently, without adding RS-485 transceivers, bus termination, addressing, or a master interface. One Teensy can serve several smaller panels, so the number of cockpit panels or DCS-BIOS categories does not determine the number of USB devices.
 
 Where practical, connect several powered hubs directly to the PC and keep any hub daisy-chaining short. Choose hubs and power supplies with enough capacity for the connected controllers and displays; higher-current lighting and other loads may need separate power.
 
 **RS-485 would normally use three GPIO pins per controller: hardware-serial TX, RX, and a transmit/receive direction-control pin. USB uses no header GPIO pins, leaving those connections available for controls and displays.** On a Teensy 4.1, that means 42 readily accessible I/O pins remain available with USB, compared with 39 after allocating three pins to RS-485, before accounting for the panel's other connections.
 
-**One Teensy can also run multiple smaller panels through a single USB connection**, provided their combined pin count, processing needs, and power requirements fit within the controller's limits. Nearby panels can share a controller when the wiring is practical, so future expansion does not require a separate USB connection for every panel. The current radio plan remains unchanged: the ARC-210, ARC-164, and ARC-186 will each have their own dedicated Teensy 4.1.
+**One Teensy can also run multiple smaller panels through a single USB connection**, provided their combined pin count, processing needs, and power requirements fit within the controller's limits. Nearby panels can share a controller when the wiring is practical, so future expansion does not require a separate USB connection for every panel. I’m keeping a dedicated Teensy 4.1 for each of the three radios.
 
 ### USB hubs purchased for this cockpit
 
@@ -21,15 +21,15 @@ I have purchased the following powered USB hubs and plan to use them for the **A
 - [RSHTECH RSH-ST10C-6 powered 10-port USB hub](https://www.amazon.com/dp/B0DX6KR79L) — six USB-C ports and four USB-A ports, with a listed 60 W power adapter.
 - [ACASIS powered 16-port USB hub](https://www.amazon.com/dp/B07G8S324L) — with a listed 96 W power adapter.
 
-Where practical, each hub will connect directly to the PC. The connected controllers and displays will share each hub's available power; completed-panel current draw and multi-panel operation still need to be tested. These are the hubs I have purchased for my build, rather than required purchases for other builders.
+Where practical, I’ll connect each hub directly to my PC. The connected controllers and displays will share each hub's available power; I still need to check the completed panels’ current draw and test them together. These are the hubs I have purchased for my build, rather than required purchases for other builders.
 
 ## Electronic noise and a full cockpit
 
-**USB remains a reasonable choice even if I build all of the cockpit controls.** Adding RS-485 solely to prevent possible electrical noise would add hardware and firmware complexity without an established need. This is a design choice to verify as the cockpit expands, rather than a claim that every completed panel has already been tested together.
+**USB remains a reasonable choice even if I build all of the cockpit controls.** Adding RS-485 solely to prevent possible electrical noise would add hardware and firmware complexity without an established need. I’ll check this choice as I expand the cockpit; I haven’t tested every planned panel together yet.
 
 The number of switches and panels is not the main source of interference. Motors, solenoids, force-feedback equipment, and high-current lighting drivers are more significant potential noise sources. USB already uses differential signaling to help reject interference. RS-485 also uses differential signaling, but an ordinary, non-isolated RS-485 transceiver does not provide electrical isolation or automatically eliminate ground loops. See [Analog Devices' explanation of differential USB communication and ground-loop isolation](https://www.analog.com/en/resources/technical-articles/breaking-ground-loops-with-functional-isolation.html).
 
-For the full cockpit, the plan is to:
+For my full cockpit, I plan to:
 
 - Keep controllers close to their panels and keep switch and encoder wiring short.
 - Use good USB data cables and keep hub chains short.
@@ -37,7 +37,7 @@ For the full cockpit, the plan is to:
 - Provide suitable separate power for motors and larger loads instead of drawing it through the Teensy or its USB supply; see [PJRC's servo-power guidance](https://www.pjrc.com/teensy/td_libs_Servo.html).
 - Check power budgets and test panels together as the cockpit grows.
 
-RS-485 would change the communication link between controllers; it would not fix noisy switch wiring, unstable display power, or overloaded USB hubs. **The plan is to continue with powered USB hubs and revisit the communication system only if testing reveals a persistent problem that appropriate wiring and power distribution do not resolve.**
+RS-485 would change the communication link between controllers; it would not fix noisy switch wiring, unstable display power, or overloaded USB hubs. **I’ll continue with powered USB hubs and revisit the communication system only if testing reveals a persistent problem that appropriate wiring and power distribution do not resolve.**
 
 ### Optional clip-on ferrite chokes
 
@@ -53,4 +53,4 @@ My DCS computer uses an **ASUS ROG STRIX X870E-E GAMING WIFI** motherboard. Its 
 
 Devices on a hub share its upstream connection, and separate motherboard sockets may still share internal controller resources. USB 2.0 devices also remain subject to the USB 2.0 side of the hub rather than gaining the full advertised USB 3 bandwidth. Powered hubs add connections and supply power, but do not increase the host controller's device or endpoint capacity.
 
-For this setup, power budgets, controller resource limits, cable reliability, and hub depth are more likely constraints than the radio panels' bandwidth needs. The plan is to connect each powered hub directly to the motherboard where practical and add panels incrementally. If used, higher-bandwidth devices such as **Quest Link, USB cameras, and external SSDs** should connect directly to the PC where practical. The existing 12-device setup runs reliably through one hub; the completed cockpit's combined operation still needs testing as it grows.
+For this setup, power budgets, controller resource limits, cable reliability, and hub depth are more likely constraints than the radio panels' bandwidth needs. I’ll connect each powered hub directly to the motherboard where practical and add panels incrementally. If used, higher-bandwidth devices such as **Quest Link, USB cameras, and external SSDs** should connect directly to the PC where practical. The existing 12-device setup runs reliably through one hub; I’ll keep testing everything together as I add panels.
