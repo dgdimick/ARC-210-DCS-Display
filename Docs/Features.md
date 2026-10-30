@@ -3,10 +3,7 @@
 # Features
 
 - DCS-BIOS integration for in-game control and feedback
-- All buttons, switches, and the display are modeled after the ARC-210 radio, with its screens recreated on a **3.5" LCD display**.
+- All buttons, switches, and the display are modeled after the ARC-210 radio. The **3.5" LCD display** recreates the startup and initialization screens and shows the live frequency and AM/FM modulation from DCS-BIOS.
 - Powered by one **Teensy 4.1 at 600 MHz**, compared with **16 MHz** for the classic **Arduino Uno R3 and Mega 2560** — **37.5 times the CPU clock frequency**. See the [controller comparison](Why-Teensy.md) for details; clock frequency is not a direct measure of display refresh speed.
 - All digital rotary encoders, rotary switches, and momentary switches are supported and working in the hardware tests.
-- ARC-210 startup and initialization screens
-- Live frequency display from DCS-BIOS
-- AM/FM modulation display
 - Submenus nested within the SAT menus will be available with firmware 2.0.
