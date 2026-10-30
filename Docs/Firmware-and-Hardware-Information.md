@@ -60,20 +60,6 @@ All STL files are intended to be print-ready for FDM printers using a 0.4 mm noz
 
 [Read why I chose the Teensy 4.1](Why-Teensy.md) for the GPIO requirements, display performance, programming workflow, and cost comparison.
 
-## Firmware and hardware testing
-
-Start with the TFT hello test, then use the individual tests to troubleshoot or the combined test to check the controls together. These hardware tests run without DCS. Loading a test replaces the firmware currently on the Teensy.
-
-| Test | Files | Instructions |
-| --- | --- | --- |
-| TFT hello / display setup | [Sketch](../Firmware/Test%20Code/Teenys_TFT_Hello_Works/Teenys_TFT_Hello_Works.ino) — compile and upload; no precompiled HEX is supplied | [Display setup and compile instructions](../Firmware/Test%20Code/Teenys_TFT_Hello_Works/README.md) |
-| Six rotary encoders | [ARC210_Encoder_Check_Teensy41.hex](../Firmware/Test%20Code/ARC210_Encoder_Check_Teensy41.hex) | [Encoder test instructions](../Firmware/Test%20Code/README.md) |
-| Earlier button-matrix test | [ARC210_Button_Test_Teensy41.hex](../Firmware/Test%20Code/ARC210_Button_Test_Teensy41.hex) | [Current button and combined-test documentation](../Firmware/Test%20Code/ARC210_Button_Test/README.md) |
-| Seven-position rotary switch | [HEX](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/ARC210_Rotary_Switch_Test.ino.hex) · [Sketch](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/ARC210_Rotary_Switch_Test.ino) | [Rotary-switch instructions](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/README.md) |
-| Final combined hardware test: 16 buttons, six encoders, TFT brightness, and two seven-position switches | [ARC210_Final_Hardware_Test_Teensy41.hex](../Firmware/Test%20Code/ARC210_Final_Hardware_Test_Teensy41.hex) · [Current combined-test sketch](../Firmware/Test%20Code/ARC210_Button_Test/ARC210_Button_Test.ino) | [Combined-test instructions](../Firmware/Test%20Code/ARC210_Button_Test/README.md) |
-
-The button-test folder now documents the combined test; its current sketch is not presented as the source for the earlier button-only HEX. See the [complete test-code directory](../Firmware/Test%20Code/) for all published test files and the [pin layout](ARC-210%20Teensy%204.1%20Pin%20layout.txt) for wiring. The encoder test displays raw counts, direction, and A/B states on the TFT, so confirm the display works first.
-
 ## Loading the current working HEX file
 
 1. Download [Master_Program.ino.hex](../Firmware/Master%20Hex%20Files/Master_Program.ino.hex), the current radio display/menu firmware.
@@ -90,3 +76,17 @@ The current `Master_Program.ino.hex` works with DCS-BIOS while running DCS, but 
 The HQ MORE loop and detail screens are implemented. LOAD WOD has been tested against DCS: the displayed number matches, follows MLSK changes, and resets to 20 on re-entry in the tested session. MENU exits from the opening screen listing HQ MENUS / COMSEC / RADIO SETTINGS and is inactive on deeper pages.
 
 Download [Master_Program.ino.hex](../Firmware/Master%20Hex%20Files/Master_Program.ino.hex). Read the [preview notes and required DCS-BIOS export changes](../Firmware/Master%20Hex%20Files/README.md) before testing. The display starts blank until it receives powered-radio data from DCS-BIOS.
+
+## Firmware and hardware testing
+
+Start with the TFT hello test, then use the individual tests to troubleshoot or the combined test to check the controls together. These hardware tests run without DCS. Loading a test replaces the firmware currently on the Teensy.
+
+| Test | Files | Instructions |
+| --- | --- | --- |
+| TFT hello / display setup | [Sketch](../Firmware/Test%20Code/Teenys_TFT_Hello_Works/Teenys_TFT_Hello_Works.ino) — compile and upload; no precompiled HEX is supplied | [Display setup and compile instructions](../Firmware/Test%20Code/Teenys_TFT_Hello_Works/README.md) |
+| Six rotary encoders | [ARC210_Encoder_Check_Teensy41.hex](../Firmware/Test%20Code/ARC210_Encoder_Check_Teensy41.hex) | [Encoder test instructions](../Firmware/Test%20Code/README.md) |
+| Earlier button-matrix test | [ARC210_Button_Test_Teensy41.hex](../Firmware/Test%20Code/ARC210_Button_Test_Teensy41.hex) | [Current button and combined-test documentation](../Firmware/Test%20Code/ARC210_Button_Test/README.md) |
+| Seven-position rotary switch | [HEX](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/ARC210_Rotary_Switch_Test.ino.hex) · [Sketch](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/ARC210_Rotary_Switch_Test.ino) | [Rotary-switch instructions](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/README.md) |
+| Final combined hardware test: 16 buttons, six encoders, TFT brightness, and two seven-position switches | [ARC210_Final_Hardware_Test_Teensy41.hex](../Firmware/Test%20Code/ARC210_Final_Hardware_Test_Teensy41.hex) · [Current combined-test sketch](../Firmware/Test%20Code/ARC210_Button_Test/ARC210_Button_Test.ino) | [Combined-test instructions](../Firmware/Test%20Code/ARC210_Button_Test/README.md) |
+
+The button-test folder now documents the combined test; its current sketch is not presented as the source for the earlier button-only HEX. See the [complete test-code directory](../Firmware/Test%20Code/) for all published test files and the [pin layout](ARC-210%20Teensy%204.1%20Pin%20layout.txt) for wiring. The encoder test displays raw counts, direction, and A/B states on the TFT, so confirm the display works first.
