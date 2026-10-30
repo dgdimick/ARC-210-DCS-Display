@@ -2,10 +2,16 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 10:24 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:39 AM MDT (America/Denver)**
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
+
+**October 30, 2026 at 11:39 AM MDT — Updated Channel and SQL knobs released**
+
+I printed the corrected SQL knob at **100% scale** and checked its fit. I’m publishing it as **Channel knob v4** and **SQL knob v1.1**. **They are the same knob design with identical geometry: print two copies of either file, one for each control.**
+
+Only the shaft socket is enlarged to **107% of the original XY dimensions**; the outside diameter, height, and small radial hole retain their original dimensions. Download [Channel v4](../Supporting%20STL%27s/Channel_Knob_v.4.stl) or [SQL v1.1](../Supporting%20STL%27s/SQL_Knob_v.1.1.stl) and print at **100%**. Check the fit on each shaft. I’ve updated the combined eight-knob STL and 3MF with Channel v4; print one additional Channel/SQL knob separately for SQL. I haven’t physically print-tested the complete combined layout yet.
 
 **October 30, 2026 at 10:24 AM MDT — Frequency knob v10.1 released; shaft fit tested**
 

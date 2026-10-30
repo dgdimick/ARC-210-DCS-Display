@@ -151,13 +151,18 @@ Print the following quantities for one ARC-210 panel:
 | --- | ---: | --- |
 | Frequency | 5 | [Freq_Knob_v.10.1.stl](../Supporting%20STL%27s/Freq_Knob_v.10.1.stl) |
 | Mode | 2 | [Mode_Knob_v.4.stl](../Supporting%20STL%27s/Mode_Knob_v.4.stl) |
-| Channel | 1 | [Channel_Knob_v.3.stl](../Supporting%20STL%27s/Channel_Knob_v.3.stl) |
+| Channel | 1 | [Channel_Knob_v.4.stl](../Supporting%20STL%27s/Channel_Knob_v.4.stl) |
+| SQL ON/OFF | 1 | [SQL_Knob_v.1.1.stl](../Supporting%20STL%27s/SQL_Knob_v.1.1.stl) |
 
-Print all eight knobs together using the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-8.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-8.3mf). Both contain 5 Frequency, 2 Mode, and 1 Channel knob; the 3MF keeps them as separate objects. See the [combined-layout printing notes](../Supporting%20STL%27s/README.md#complete-eight-knob-print-layout) before slicing. The SQL ON/OFF knob is not included.
+Print the eight-knob layout using the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-8.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-8.3mf). Both contain 5 Frequency, 2 Mode, and 1 Channel knob; the 3MF keeps them as separate objects. See the [combined-layout printing notes](../Supporting%20STL%27s/README.md#complete-eight-knob-print-layout) before slicing. Print the SQL knob separately, for **nine knobs total**. The Channel and SQL knobs use identical geometry.
 
-## SQL ON/OFF knob — design pending
+## Channel and SQL knobs
 
-I still need to **design and 3D print the SQL ON/OFF knob**. A finished SQL ON/OFF knob STL is not yet included in the published files.
+[Channel knob v4](../Supporting%20STL%27s/Channel_Knob_v.4.stl) · [SQL knob v1.1](../Supporting%20STL%27s/SQL_Knob_v.1.1.stl)
+
+**The Channel and SQL knobs are the same knob design.** Channel v4 and SQL v1.1 contain identical geometry; I’ve kept separate filenames to make their uses clear. Print **two copies of either file at 100% scale** for one panel: one Channel and one SQL. I printed the corrected SQL knob at 100% and checked its fit. Check the fit on each shaft before final assembly.
+
+The SQL shaft support spacer v.5 remains required in all installations.
 
 ## USB cable strain-relief support — design pending
 

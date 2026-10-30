@@ -22,7 +22,7 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Items that need to be completed
 
-**Last updated: October 30, 2026 at 6:38 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:39 AM MDT (America/Denver)**
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
@@ -36,13 +36,13 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 10:24 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:39 AM MDT (America/Denver)**
 
-**October 30, 2026 at 10:24 AM MDT — Frequency knob v10.1 released; shaft fit tested**
+**October 30, 2026 at 11:39 AM MDT — Updated Channel and SQL knobs released**
 
-I’ve printed **frequency knob v10.1** and checked that it fits my encoder shaft. I enlarged only the shaft socket to **102% of v10’s original XY size**, keeping the outside dimensions and height unchanged. **Print v10.1 at 100% slicer scale.**
+I printed the corrected SQL knob at **100% scale** and checked its fit. I’m publishing it as **Channel knob v4** and **SQL knob v1.1**. **They are the same knob design with identical geometry: print two copies of either file, one for each control.**
 
-Download [Freq_Knob_v.10.1.stl](Supporting%20STL%27s/Freq_Knob_v.10.1.stl). I’ve also updated the combined eight-knob STL and 3MF to include five v10.1 frequency knobs, along with the existing two mode knobs and one channel knob. I recommend printing one knob to check the shaft fit before printing all five. The individual knob’s fit is tested; I haven’t physically print-tested the complete combined layout yet. The older v10 file remains available for earlier shaft fits.
+Only the shaft socket is enlarged to **107% of the original XY dimensions**; the outside diameter, height, and small radial hole retain their original dimensions. Download [Channel v4](Supporting%20STL%27s/Channel_Knob_v.4.stl) or [SQL v1.1](Supporting%20STL%27s/SQL_Knob_v.1.1.stl) and print at **100%**. Check the fit on each shaft. I’ve updated the combined eight-knob STL and 3MF with Channel v4; print one additional Channel/SQL knob separately for SQL. I haven’t physically print-tested the complete combined layout yet.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
