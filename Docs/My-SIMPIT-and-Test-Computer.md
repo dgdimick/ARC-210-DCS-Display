@@ -19,8 +19,6 @@ The equipment below provides context for development and testing. Listing it her
 | Power supply | 750 W, 80 PLUS Gold |
 | CPU cooling | Liquid cooling |
 
-**The Kingston FURY 64 GB kit listed above is currently installed.**
-
 ## Monitors and DCS display layout
 
 | Display | Resolution | Listed refresh rate | Use |
