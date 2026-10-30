@@ -38,3 +38,9 @@ For the full cockpit, the plan is to:
 - Check power budgets and test panels together as the cockpit grows.
 
 RS-485 would change the communication link between controllers; it would not fix noisy switch wiring, unstable display power, or overloaded USB hubs. **The plan is to continue with powered USB hubs and revisit the communication system only if testing reveals a persistent problem that appropriate wiring and power distribution do not resolve.**
+
+### Optional clip-on ferrite chokes
+
+If testing reveals high-frequency interference on USB or power cables, **clip-on ferrite chokes (also called ferrite cores or clamp filters) can be added as a troubleshooting measure**. They clamp around the whole cable without cutting it and suppress common-mode noise. Their effectiveness depends on the ferrite material, noise frequency, and placement; locations near the controller, hub, or identified noise source can be evaluated. See [TDK's explanation of snap-on clamp filters](https://www.tdk.com/en/tech-mag/noise/09).
+
+Ferrite chokes will not fix insufficient power, loose connections, mechanical switch bounce, or every grounding problem. **They can be added later if needed; possible noise alone is not a reason to change the USB plan.**
