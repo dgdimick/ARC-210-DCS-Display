@@ -153,6 +153,8 @@ Print the following quantities for one ARC-210 panel:
 | Mode | 2 | [Mode_Knob_v.4.stl](../Supporting%20STL%27s/Mode_Knob_v.4.stl) |
 | Channel | 1 | [Channel_Knob_v.3.stl](../Supporting%20STL%27s/Channel_Knob_v.3.stl) |
 
+Print all eight knobs together using the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-8.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-8.3mf). Both contain 5 Frequency, 2 Mode, and 1 Channel knob; the 3MF keeps them as separate objects. See the [combined-layout printing notes](../Supporting%20STL%27s/README.md#complete-eight-knob-print-layout) before slicing. The SQL ON/OFF knob is not included.
+
 ## SQL ON/OFF knob — design pending
 
 The **SQL ON/OFF knob still needs to be designed and 3D printed**. A finished SQL ON/OFF knob STL is not yet included in the published files.
