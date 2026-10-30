@@ -181,7 +181,7 @@ I may revisit button lighting in a future revision. This would require changes t
 
 **October 22, 2026 — Build cost estimate and button-switch update**
 
-Added a [DIY parts purchasing estimate](parts/README.md#estimated-build-cost) of approximately **$275–$320 USD before shipping and tax**, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a **$75 allowance for the six PCBs**. The PCB allowance was provisional; the three control-board manufacturing packages are now published, while the Main Board still awaits final review and manufacturing release. The button switches are now specified as **6 × 6 × 5 mm**, with 16 required per panel. The [parts documentation and supplier link](parts/README.md#current-button-switches) and [BOM](parts/BOM.csv) have been updated.
+Added the initial DIY parts purchasing estimate, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a provisional PCB allowance. **The original figures have been superseded:** use the [current parts estimate](parts/README.md#estimated-build-cost), with an approximately **$120 PCB allowance** and **$320–$365 USD total before shipping and tax**. Manufacturing files for all four PCB designs are now published. The button switches are specified as **6 × 6 × 5 mm**, with 16 required per panel. See the [parts documentation and supplier link](parts/README.md#current-button-switches) and [BOM](parts/BOM.csv).
 
 **October 22, 2026 — Discussions now open**
 
