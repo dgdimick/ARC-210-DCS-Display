@@ -105,6 +105,10 @@ The button, rotary encoder, and rotary switch PCBs do not require additional mic
 
 ## Project updates
 
+**October 29, 2026 — PCB budget updated**
+
+The PCB budget allowance is now approximately **$120** to reflect increased fabrication costs. The [estimated DIY purchasing cost](parts/README.md#estimated-build-cost) is now **$320–$365 USD before shipping and tax**, including the faceplate. Earlier cost figures in the dated history below are superseded by this estimate.
+
 **October 29, 2026 — Main Board v1.1 physical fit confirmed**
 
 The Main Board fits! Its physical fit is now confirmed, alongside the Button Matrix, Rotary Encoder and Rotary Switch boards. Next comes assembling and electrically testing the manufactured boards.

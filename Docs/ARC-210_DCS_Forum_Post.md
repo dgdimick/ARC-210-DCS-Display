@@ -17,7 +17,7 @@ I also plan to release the firmware as a **HEX file**, so someone who isn’t a 
 
 Because this project will handle all **16 buttons**, the rotary encoders, rotary switches, TFT display, and the other ARC-210 controls, I’m using a **Teensy 4.1** as the controller.
 
-The current DIY purchasing estimate is **$275–$320 USD before shipping and tax**, including the faceplate and a provisional PCB allowance. See the [parts estimate](../parts/README.md#estimated-build-cost) for the dated figures and exclusions.
+The current DIY purchasing estimate is **$320–$365 USD before shipping and tax**, including the faceplate and an approximately **$120 PCB allowance**. See the [parts estimate](../parts/README.md#estimated-build-cost) for the dated figures and exclusions.
 
 I’ve also set up a GitHub repository where I’ll post project updates and files as the build progresses. There is already some test firmware available, including a basic TFT test that displays “Hello World” so you can verify that the Teensy and SPI TFT display are wired and working correctly.
 

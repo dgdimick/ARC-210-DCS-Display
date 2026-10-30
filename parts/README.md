@@ -14,11 +14,11 @@ Future button lighting would require a separate power and driver design, suitabl
 
 ## Estimated build cost
 
-To help you plan your build, I’ve put together an estimated parts budget of **$275–$320 USD before shipping and tax**, including the PC Flights faceplate. The links below point to independent suppliers; the figures are a budgeting guide rather than a kit price.
+To help you plan your build, I’ve put together an estimated parts budget of **$320–$365 USD before shipping and tax**, including the PC Flights faceplate. The links below point to independent suppliers; the figures are a budgeting guide rather than a kit price.
 
 This is primarily a DIY project. I share the files and build notes to help you make your own panel. You’ll purchase components from the linked suppliers, arrange PCB fabrication with a manufacturer, and print the STL parts yourself or use a printing service. If you’re stuck and need a hand, feel free to ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)—I’m happy to help where I can.
 
-Prices checked October 22, 2026, except the recommended Teensy with headers, updated October 29, 2026. The overall range remains a provisional budget; small hardware and PCB costs are allowances rather than supplier quotes.
+Prices checked October 22, 2026, except the recommended Teensy with headers and PCB budget allowance, updated October 29, 2026. The PCB allowance is now approximately **$120** to reflect increased fabrication costs. The overall range remains a provisional budget; small hardware and PCB costs are allowances rather than supplier quotes.
 
 | Part / sourcing reference | Quantity needed | Estimated builder cost |
 | --- | ---: | ---: |
@@ -33,9 +33,9 @@ Prices checked October 22, 2026, except the recommended Teensy with headers, upd
 | [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Parts needed for one build | $15–$25 |
 | [Required PCB standoff kit and screws](https://www.amazon.com/dp/B0H1QS5Q6N) | 1 kit | $10 |
 | [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
-| [Bare PCBs](../PCBs/README.md) | Five required boards; six with the optional SQL On/Off PCB | $75 budget allowance |
+| [Bare PCBs](../PCBs/README.md) | Five required boards; six with the optional SQL On/Off PCB | Approximately $120 budget allowance |
 | USB Micro-B data cable — for powering and programming the Teensy 4.1 | 1 | $3–$6 |
-| **Estimated DIY purchasing cost** | | **$275–$320** |
+| **Estimated DIY purchasing cost** | | **$320–$365** |
 
 Use a **USB Micro-B data cable** for powering and programming the **Teensy 4.1**. The cable must carry data as well as power; a charge-only cable cannot program the Teensy or carry the panel’s USB communications.
 
