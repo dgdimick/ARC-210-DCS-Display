@@ -20,6 +20,10 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 [View the features](Docs/Features.md) for the hardware capabilities and planned firmware support.
 
+## Items that need to be completed
+
+[View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
+
 ## Teensy GPIO labels and KiCad pin numbers
 
 [Read the Teensy GPIO and KiCad pin guide](Docs/Teensy-GPIO.md) before wiring the panel or working with the PCB files.
@@ -33,10 +37,6 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 ## PCB layout — five or six boards
 
 [View the PCB layout page](PCBs/PCB-Layout.md) for the mockup photo, board descriptions, and optional SQL On/Off direct-wiring details.
-
-## Items that need to be completed
-
-[View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
 ## Future Thoughts and Plans
 
