@@ -24,20 +24,6 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
-## Teensy GPIO labels and KiCad pin numbers
-
-[Read the Teensy GPIO and KiCad pin guide](Docs/Teensy-GPIO.md) before wiring the panel or working with the PCB files.
-
-## Power and future button lighting
-
-[Read the power and lighting notes](Docs/Power-and-Lighting.md) for USB power, the TFT supply, and future button-lighting requirements.
-
-<a id="six-pcb-layout"></a>
-
-## PCB layout — five or six boards
-
-[View the PCB layout page](PCBs/PCB-Layout.md) for the mockup photo, board descriptions, and optional SQL On/Off direct-wiring details.
-
 ## Future Thoughts and Plans
 
 [View Future Thoughts and Plans](Docs/Future-Thoughts.md) for possible redesigns, lighting, and support for other aircraft.
@@ -46,67 +32,13 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 [Read the project updates](Docs/Project-Updates.md) for the dated development history, PCB progress, and testing milestones.
 
-## Firmware and hardware testing
+## Firmware and Hardware Information
 
-[View the firmware and hardware testing guide](Docs/Firmware-and-Hardware-Testing.md) for the DCS-BIOS preview, test HEX files, and test instructions.
-
-## Loading the HEX File onto a Teensy 4.1
-
-[Read the HEX loading instructions](Docs/Loading-HEX-Files.md) to program the Teensy 4.1.
-
-## ARC-210 Bench Testing App
-
-[View the ARC-210 Bench Testing App guide](Docs/Bench-Testing-App.md) to test the panel with simulated DCS-BIOS data without running DCS.
+[Open Firmware and Hardware Information](Docs/Firmware-and-Hardware-Information.md) for wiring, power, PCB layout, parts, printable files, software, firmware loading, and testing guides.
 
 ## Project progress and beta testing
 
 [View project progress and beta testing](Docs/Project-Progress-and-Beta-Testing.md) for the progress video and information on helping test the panel.
-
-## Tools Needed
-
-[View the tools needed](Docs/Tools-Needed.md) to build and program the panel.
-
-## Build guide
-
-Start with the [step-by-step build guide](Docs/Build%20Guide/README.md) for parts, printing, PCB assembly, wiring, and hardware testing. Unfinished design and validation steps are marked **pending**.
-
-## Parts
-
-See the [parts directory](parts/) for the [component list (BOM)](parts/BOM.csv), hardware supplier links, and switch-fit and compatibility notes.
-
-## Supporting STL Files
-
-The `Supporting STL's` directory includes:
-
-- Knobs for rotary encoders and rotary switches
-- Mounting hardware for the TFT screen and PCBs
-- Brackets for panel alignment
-
-The [shaft spacer v.5](Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether using the optional switch PCB or wiring directly to the switch’s solder lugs.
-
-Print **six [Rotary Encoder spacers v.1](Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl)**, one for each encoder, to center the encoder threads in the faceplate holes.
-
-All STL files are intended to be print-ready for FDM printers using a 0.4 mm nozzle. Resin/SLA printers may require different settings or scaling.
-
-## Software
-
-- Written in Arduino C++
-- Uses DCS-BIOS for communication with DCS
-- Firmware and test files are maintained in this repository
-
-## Why I had to use a Teensy
-
-[Read why I chose the Teensy 4.1](Docs/Why-Teensy.md) for the GPIO requirements, display performance, programming workflow, and cost comparison.
-
-## Directories
-
-- `ARC-210/` — project root
-- `ARC-210/Firmware/` — firmware and test files
-- `ARC-210/Firmware/Boot Loader/` — precompiled Teensy HEX files for loading with Teensy Loader or TyTools
-- [`parts/`](parts/) — component list, hardware supplier links, and compatibility notes
-- `ARC-210/Docs/` — schematics, diagrams, and documentation
-- `ARC-210/images/` — project images
-- `ARC-210/Supporting STL's/` — 3D-printable knobs, bezels, brackets, mounts, and other parts
 
 ## Questions and community builds
 
