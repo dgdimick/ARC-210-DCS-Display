@@ -1,5 +1,8 @@
 # ARC-210 Button Matrix PCB
 
+**October 30, 2026 — SQL clearance-hole correction:** Removed the duplicate approximately 13.38 mm Edge.Cuts circle at H3. The intended opening remains a **12.0 mm non-plated hole**. The PCB source, outline Gerber, and [manufacturing ZIP](Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) are corrected. Download the updated package for future orders. This targeted correction has not had a fresh KiCad DRC run; the included reports predate it. Copper and drill files are unchanged.
+
+
 Current Main Board version: **1.1**.
 
 PCB version **3.1 — Final design; physical test fit confirmed**. KiCad 10 project.
