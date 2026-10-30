@@ -46,6 +46,12 @@ The [v3.2 Gerber/drill ZIP](PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
+## Separate USB connections for each radio
+
+The **ARC-210, ARC-164, and ARC-186 will each use a dedicated Teensy 4.1 with its own USB connection to DCS-BIOS**. Three USB connections are manageable, and each radio can be built, tested, updated, and troubleshot independently.
+
+RS-485 can reduce USB ports and COM-port connections when many cockpit panels share a communication bus, but it adds transceiver hardware, bus wiring, termination, addressing, and a master interface. For these three radios, separate USB connections keep assembly and setup simpler. **USB remains the planned connection for each radio.**
+
 ## Firmware and hardware information
 
 [Open Firmware and hardware information](Docs/Firmware-and-Hardware-Information.md) for wiring, power, PCB layout, parts, printable files, software, firmware loading, and testing guides.
