@@ -8,7 +8,7 @@
 	)
 	(paper "A3")
 	(title_block
-		(rev "3.1")
+		(rev "3.2")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -3151,7 +3151,7 @@
 		(descr "12 mm non-plated mechanical clearance hole")
 		(tags "mounting hole NPTH 12mm")
 		(property "Reference" "H3"
-			(at 0 -4.45 0)
+			(at 9 0 0)
 			(layer "F.SilkS")
 			(uuid "3991a61b-2420-41ec-a336-62c16fb9765d")
 			(effects
@@ -14326,7 +14326,7 @@
 		(layer "Edge.Cuts")
 		(uuid "7db31dcb-4ff5-4b6c-aac1-9dcf2740609e")
 	)
-	(gr_text "ARC-210 v3.1\n"
+	(gr_text "ARC-210 v3.2"
 		(at 179.375 155.075 0)
 		(layer "B.SilkS")
 		(uuid "9eb41044-b847-4a8c-b994-5d1bcf4a891d")

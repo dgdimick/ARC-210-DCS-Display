@@ -107,4 +107,4 @@ Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discu
 
 ## Current PCB versions and a friendly starting point
 
-Use Main Board **v1.1**, Button Matrix **v3.1**, Rotary Encoder **v1.4**, and Rotary Switch **v2.0**. The [PCB downloads](../PCBs/README.md#gerber-and-drill-downloads) link to their current manufacturing files. Start with the [build guide](Build%20Guide/README.md), take it one step at a time, and ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) whenever you need a hand. Progress photos and questions are welcome!
+Use Main Board **v1.1**, Button Matrix **v3.2**, Rotary Encoder **v1.4**, and Rotary Switch **v2.0**. The [PCB downloads](../PCBs/README.md#gerber-and-drill-downloads) link to their current manufacturing files. Start with the [build guide](Build%20Guide/README.md), take it one step at a time, and ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) whenever you need a hand. Progress photos and questions are welcome!

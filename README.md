@@ -36,9 +36,15 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 3:20 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 3:25 AM MDT (America/Denver)**
 
-[Read the project updates](Docs/Project-Updates.md) for the dated development history, PCB progress, and testing milestones.
+**October 30, 2026 at 3:25 AM MDT — Button Matrix v3.2 manufacturing release**
+
+Button Matrix **v3.2** now has matching PCB silkscreen, board revision, and schematic revision. The duplicate SQL clearance-hole outline is removed, leaving the intended **12.0 mm non-plated hole**. H3’s reference label was moved clear of the solder-mask opening. There are no electrical changes.
+
+The [v3.2 Gerber/drill ZIP](PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) was freshly generated with KiCad 10.0.7. ERC and DRC report **zero violations, zero unconnected items, and zero schematic/PCB mismatches** under saved settings. Drill checks confirm 130 plated holes and five non-plated holes. These fresh exports and checks supersede the targeted correction’s verification limitation described below. Use v3.2 for future orders; the existing JLCPCB order still needs its separate engineering confirmation. Manufactured-board assembly and electrical testing remain pending.
+
+[Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
 ## Firmware and hardware information
 

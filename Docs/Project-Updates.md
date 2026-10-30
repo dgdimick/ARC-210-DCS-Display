@@ -2,12 +2,18 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 3:20 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 3:25 AM MDT (America/Denver)**
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
+
+**October 30, 2026 at 3:25 AM MDT — Button Matrix v3.2 manufacturing release**
+
+Button Matrix **v3.2** now has matching PCB silkscreen, board revision, and schematic revision. The duplicate SQL clearance-hole outline is removed, leaving the intended **12.0 mm non-plated hole**. H3’s reference label was moved clear of the solder-mask opening. There are no electrical changes.
+
+The [v3.2 Gerber/drill ZIP](../PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) was freshly generated with KiCad 10.0.7. ERC and DRC report **zero violations, zero unconnected items, and zero schematic/PCB mismatches** under saved settings. Drill checks confirm 130 plated holes and five non-plated holes. These fresh exports and checks supersede the targeted correction’s verification limitation described below. Use v3.2 for future orders; the existing JLCPCB order still needs its separate engineering confirmation. Manufactured-board assembly and electrical testing remain pending.
 
 **October 30, 2026 at 3:20 AM MDT — Button Matrix SQL clearance-hole correction**
 
-JLCPCB flagged overlapping drill and outline definitions at the Button Matrix's SQL switch clearance hole. The intended opening is a **12.0 mm non-plated hole**; a duplicate approximately **13.38 mm Edge.Cuts circle** has now been removed from the PCB source and outline Gerber. The [Button Matrix v3.1 manufacturing ZIP](../PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) has been rebuilt for future orders, and the [board documentation](../PCBs/Button%20Matrix/README.md) records the correction.
+JLCPCB flagged overlapping drill and outline definitions at the Button Matrix's SQL switch clearance hole. The intended opening is a **12.0 mm non-plated hole**; a duplicate approximately **13.38 mm Edge.Cuts circle** has now been removed from the PCB source and outline Gerber. The [Button Matrix v3.1 manufacturing ZIP](../PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) has been rebuilt for future orders, and the [board documentation](../PCBs/Button%20Matrix/README.md) records the correction.
 
 The 12.0 mm drill definition remains, and all manufacturing ZIP entries except the corrected outline and manufacturing notes were verified byte-for-byte unchanged. This was a targeted source/Gerber correction; a fresh KiCad export and DRC were not available, and the included check reports predate the correction. The repository update does not replace the files already submitted to JLCPCB; the current order requires a separate response to their engineering question.
 
@@ -55,7 +61,7 @@ The draft includes back-side component footprints, the board outline, rotary-swi
 
 **October 27, 2026 — Button Matrix PCB v3.1 finalized; test fit confirmed**
 
-The **Button Matrix PCB v3.1 is the final design, and its physical test fit is confirmed**. The board edges were slightly too long and have been shortened; the printed fit check confirmed that the buttons are in the correct locations. The updated [KiCad files](../PCBs/Button%20Matrix/) and [v3.1 Gerber/drill manufacturing ZIP](../PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) are uploaded and ready for manufacture. Use v3.1 for new orders; it supersedes v3.0.
+The **Button Matrix PCB v3.1 is the final design, and its physical test fit is confirmed**. The board edges were slightly too long and have been shortened; the printed fit check confirmed that the buttons are in the correct locations. The updated [KiCad files](../PCBs/Button%20Matrix/) and [v3.1 Gerber/drill manufacturing ZIP](../PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) are uploaded and ready for manufacture. Use v3.1 for new orders; it supersedes v3.0.
 
 The final files pass ERC and DRC with zero reported violations, no unconnected items, and no schematic/PCB mismatches under the saved settings. Manufactured-board assembly and electrical testing remain pending. Only the Main Board PCB design remains to be completed.
 

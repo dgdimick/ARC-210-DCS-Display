@@ -8,7 +8,7 @@ This guide covers the ARC-210 panel using one Teensy 4.1, a 3.5-inch ILI9488 SPI
 
 | Area | Current status |
 | --- | --- |
-| Button Matrix PCB v3.1 | Final design; physical fit and button alignment confirmed; manufacturing files published |
+| Button Matrix PCB v3.2 | Final design; physical fit and button alignment confirmed; manufacturing files published |
 | Rotary Encoder PCB v1.4 | Final design; physical fit confirmed; manufacturing files published |
 | Rotary Switch PCB v2.0 | Final design; physical fit confirmed; manufacturing files published |
 | Main Board v1.1 | Gerber/drill files published; October 29 ERC/DRC and parity checks pass under saved settings; physical fit confirmed October 29, 2026; final review, current verification and assembled-board testing pending |
@@ -58,7 +58,7 @@ Download the manufacturing packages from the [Gerber and drill table](../../PCBs
 | Design | Boards per panel |
 | --- | ---: |
 | Main Board v1.1 | 1 |
-| Button Matrix v3.1 | 1 |
+| Button Matrix v3.2 | 1 |
 | Rotary Encoder v1.4 | 1 |
 | Rotary Switch v2.0 | 2 required, plus 1 optional for SQL On/Off |
 

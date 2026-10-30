@@ -1,13 +1,13 @@
 # ARC-210 Button Matrix PCB
 
-**October 30, 2026 — SQL clearance-hole correction:** Removed the duplicate approximately 13.38 mm Edge.Cuts circle at H3. The intended opening remains a **12.0 mm non-plated hole**. The PCB source, outline Gerber, and [manufacturing ZIP](Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) are corrected. Download the updated package for future orders. This targeted correction has not had a fresh KiCad DRC run; the included reports predate it. Copper and drill files are unchanged.
+**October 30, 2026 — v3.2 released:** Removed the duplicate approximately 13.38 mm Edge.Cuts circle at H3; the intended opening remains a **12.0 mm non-plated hole**. Board and schematic revisions and the silkscreen are now **3.2**. H3’s reference label was moved clear of the hole’s solder-mask opening. There are no electrical changes. Gerbers and drills were freshly exported with KiCad 10.0.7; fresh ERC/DRC checks report zero violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. Use the [v3.2 manufacturing ZIP](Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) for new orders.
 
 
 Current Main Board version: **1.1**.
 
-PCB version **3.1 — Final design; physical test fit confirmed**. KiCad 10 project.
+PCB version **3.2 — SQL clearance-hole correction**. The outer outline and button positions retain the v3.1 physical-fit check; manufactured v3.2 assembly and electrical testing remain pending. KiCad 10 project.
 
-Updated October 27, 2026. The current PCB, schematic, project settings, and project-local footprint library are included in this folder.
+Updated October 30, 2026. The current PCB, schematic, project settings, and project-local footprint library are included in this folder.
 
 This is the current **unlit 16-button, 4 × 4 matrix**. It is separate from the proposed future Button LED PCB, which is not currently planned.
 
@@ -17,17 +17,17 @@ Use **Code → Download ZIP** on the repository, extract it, and keep this folde
 
 The design uses standard KiCad `Connector`, `Device`, `Switch`, and `Mechanical` symbols. Install KiCad’s standard libraries and keep `fp-lib-table` and `ButtonMatrix.pretty/` beside the project. The local library supplies H3’s 12 mm non-plated SQL On/Off switch pass-through footprint.
 
-**PCB version 3.1:** The saved PCB includes placement and routing. Unused floating copper fills were removed on October 27, 2026. The slightly long board edges were shortened, and the printed fit check confirmed correct button positions. Testing an assembled manufactured board remains pending. A [Gerber and drill ZIP](Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) is included for manufacturing.
+**PCB version 3.2:** The saved PCB includes placement and routing. Unused floating copper fills were removed on October 27, 2026. The slightly long board edges were shortened, and the printed fit check confirmed correct button positions. Testing an assembled manufactured board remains pending. A [Gerber and drill ZIP](Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) is included for manufacturing.
 
 ## Gerber and drill files
 
-Download [Button-Matrix-PCB-v3.1-Gerbers-Drill.zip](Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) for a PCB manufacturer. Generated October 27, 2026 from the corrected version 3.1 PCB using KiCad 10.0.7.
+Download [Button-Matrix-PCB-v3.2-Gerbers-Drill.zip](Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) for a PCB manufacturer. Generated October 30, 2026 from the corrected version 3.2 PCB using KiCad 10.0.7.
 
 The ZIP contains the seven Gerber X2 layers (front/back copper, solder mask, silkscreen, and board outline), a Gerber job file, separate metric Excellon PTH/NPTH drill files, and manufacturing notes. Both Gerbers and drills use the absolute origin without mirroring. The source specifies a two-layer, 1.6 mm board.
 
 The exports were checked against the source: **130 plated holes and five non-plated holes**, including four 3.5 mm mounting holes and H3’s 12 mm SQL On/Off pass-through. [Individual files, drill maps, and drill report](Manufacturing/) are also available. Check the manufacturer's preview for the board outline, central opening, and drill placement before ordering. The printed fit check confirmed button alignment; manufactured-board assembly and electrical testing remain pending.
 
-**Final v3.1 design; test fit confirmed — October 27, 2026:** The revised v3.1 board has been physically test-fitted and confirmed to fit. The buttons are in the correct locations. The board edges were slightly too long and have been shortened for version **3.1**, which is the final design. Use v3.1 for new orders. The obsolete v3.0 manufacturing ZIP has been removed; Git history retains earlier revisions.
+**Final v3.1 design; test fit confirmed — October 27, 2026:** The revised v3.1 board has been physically test-fitted and confirmed to fit. The buttons are in the correct locations. The board edges were slightly too long and have been shortened for version **3.1**, which preceded the v3.2 hole correction. This historical fit check applies to the unchanged outer outline and button positions; use v3.2 for new orders. The obsolete v3.0 manufacturing ZIP has been removed; Git history retains earlier revisions.
 
 ## SQL On/Off switch shaft support
 
@@ -35,7 +35,7 @@ The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **req
 
 ## Layout reference pictures
 
-These front and back pictures show the earlier **v3.0** layout. The final v3.1 files have slightly shortened board edges; use the current KiCad layout and manufacturing files for exact dimensions. The large opening is the SQL On/Off switch pass-through.
+These front and back pictures show the earlier **v3.0** layout. The current v3.2 files retain the slightly shortened v3.1 board edges; use the current KiCad layout and manufacturing files for exact dimensions. The large opening is the SQL On/Off switch pass-through.
 
 ### Front — push-button switches
 

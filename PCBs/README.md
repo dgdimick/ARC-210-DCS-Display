@@ -13,7 +13,7 @@ Physical fit has been confirmed for all four PCB designs; Button Matrix alignmen
 | PCB | Final version | Status |
 | --- | --- | --- |
 | [Main Board](Master%20Board/) | 1.1 | Physical fit confirmed October 29, 2026; manufactured-board assembly and electrical testing pending |
-| [Button Matrix](Button%20Matrix/) | 3.1 | Final design; v3.1 physical test fit and button alignment confirmed |
+| [Button Matrix](Button%20Matrix/) | 3.2 | Final design; v3.1 physical test fit and button alignment confirmed |
 | [Rotary Encoders](Rotary%20Encoders/) | 1.4 | Final design; test fit confirmed |
 | [Rotary Switches](Rotary%20Switches/) | 2.0 | Final design; test fit confirmed |
 
@@ -27,12 +27,12 @@ Print **six [Rotary Encoder spacers v.1](../Supporting%20STL%27s/Rotary_Encoder_
 
 ## Gerber and drill downloads
 
-Control-board manufacturing files generated October 27, 2026; Main Board v1.1 files updated October 29, 2026:
+Button Matrix v3.2 manufacturing files generated October 30, 2026; other control-board files generated October 27, 2026; Main Board v1.1 files updated October 29, 2026:
 
 | PCB | Version | Gerber and drill ZIP | Individual files and reports |
 | --- | --- | --- | --- |
 | Main Board | 1.1 | [Download ZIP](Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) | [Browse files](Master%20Board/Manufacturing/) |
-| Button Matrix | 3.1 | [Download ZIP](Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.1-Gerbers-Drill.zip) | [Browse files](Button%20Matrix/Manufacturing/) |
+| Button Matrix | 3.2 | [Download ZIP](Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) | [Browse files](Button%20Matrix/Manufacturing/) |
 | Rotary Encoders | 1.4 | [Download ZIP](Rotary%20Encoders/Manufacturing/Rotary-Encoder-PCB-v1.4-Gerbers-Drill.zip) | [Browse files](Rotary%20Encoders/Manufacturing/) |
 | Rotary Switches | 2.0 | [Download ZIP](Rotary%20Switches/Manufacturing/Rotary-Switch-PCB-v2.0-Gerbers-Drill.zip) | [Browse files](Rotary%20Switches/Manufacturing/) |
 
@@ -40,13 +40,15 @@ Each ZIP includes copper, solder-mask, silkscreen, and board-outline Gerbers, a 
 
 Review the manufacturer's preview before ordering. The Button Matrix's printed fit check confirmed button alignment, and its slightly long edges were shortened for final v3.1. Manufactured-board testing remains pending for all four designs. Existing check exclusions and disabled categories are documented in the individual project READMEs and reports.
 
-## Button Matrix PCB — version 3.1
+## Button Matrix PCB — version 3.2
 
-**Final design; v3.1 test fit confirmed — October 27, 2026:** The printed fit check confirmed that the buttons are correctly positioned. The slightly long board edges were shortened, and version **3.1** is the final design, replacing v3.0. The physical test fit of the revised v3.1 board is confirmed. The updated KiCad and manufacturing files are uploaded.
+**October 30, 2026:** v3.2 removes the duplicate SQL hole outline, retains the 12 mm NPTH, updates revision markings, and moves H3’s reference clear of the mask opening. Fresh KiCad exports and ERC/DRC checks pass under saved settings. No electrical changes; manufactured-board testing remains pending. The v3.1 notes below record the earlier outline and physical-fit work.
 
-The current unlit 16-button, 4 × 4 Button Matrix PCB is **version 3.1**. See the [Button Matrix README](Button%20Matrix/README.md) for front and back layout previews. The front carries the push-button switches; the back carries the matrix diodes and row/column connectors. A 12 mm pass-through provides clearance for the SQL On/Off switch.
+**Final design; v3.1 test fit confirmed — October 27, 2026:** The printed fit check confirmed that the buttons are correctly positioned. The slightly long board edges were shortened, and version **3.1** replaced v3.0 before the v3.2 hole correction. The physical test fit of the revised v3.1 board is confirmed. The updated KiCad and manufacturing files are uploaded.
 
-The downloadable [version 3.1 KiCad files](Button%20Matrix/) now include the PCB layout, schematic, project settings, and custom 12 mm footprint library. The PCB includes routing; unused floating copper fills were removed. Checks found zero ERC violations, zero DRC errors, no unconnected items, and no schematic/PCB parity issues; DRC also reports zero warnings after removal of those fills. Physical fit and button alignment have been checked; manufactured-board assembly and electrical testing remain pending. This board is separate from the future Button LED PCB, which is not currently planned.
+The current unlit 16-button, 4 × 4 Button Matrix PCB is **version 3.2**. See the [Button Matrix README](Button%20Matrix/README.md) for front and back layout previews. The front carries the push-button switches; the back carries the matrix diodes and row/column connectors. A 12 mm pass-through provides clearance for the SQL On/Off switch.
+
+The downloadable [version 3.2 KiCad files](Button%20Matrix/) now include the PCB layout, schematic, project settings, and custom 12 mm footprint library. The PCB includes routing; unused floating copper fills were removed. Checks found zero ERC violations, zero DRC errors, no unconnected items, and no schematic/PCB parity issues; DRC also reports zero warnings after removal of those fills. Physical fit and button alignment have been checked; manufactured-board assembly and electrical testing remain pending. This board is separate from the future Button LED PCB, which is not currently planned.
 
 ## Main Board PCB v1.1 and schematic
 

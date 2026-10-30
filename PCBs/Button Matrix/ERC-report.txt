@@ -1,3 +1,3 @@
-Button Matrix final PCB v3.1
-Checked October 27, 2026 using KiCad 10.0.7.
-ERC: 0 violations under saved settings. See ERC-report.json.
+Button Matrix PCB v3.2
+Checked October 30, 2026 with KiCad 10.0.7.
+ERC: 0 violations under saved settings. See Manufacturing/ERC-report.json.

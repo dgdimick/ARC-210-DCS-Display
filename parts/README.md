@@ -4,7 +4,7 @@ Updated October 29, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
-The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 Main Board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 Main Board schematic and final control-board projects. The Main Board v1.1, Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 design and manufacturing files are published. The parts list will continue to improve as the manufactured boards are assembled and tested. A few component details and footprints need confirming, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
+The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 Main Board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. Connector entries were reconciled against the October 12 Main Board schematic and final control-board projects. The Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 design and manufacturing files are published. The parts list will continue to improve as the manufactured boards are assembled and tested. A few component details and footprints need confirming, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
 
 ## Power and future button lighting
 
@@ -43,7 +43,7 @@ The current Main Board is USB-powered and does not use an external 5 V adapter. 
 
 This estimate excludes tools, labor, cockpit mounting fasteners, shipping, tax and tariffs. Buying component assortments or minimum PCB quantities may increase the initial purchase cost and leave spare parts.
 
-**PCB pricing is provisional:** fabrication costs depend on your manufacturer, order quantity and shipping. Main Board v1.1, Button Matrix v3.1, Rotary Encoder v1.4, and Rotary Switch v2.0 manufacturing files are published. See the component details and wiring requirements below.
+**PCB pricing is provisional:** fabrication costs depend on your manufacturer, order quantity and shipping. Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 manufacturing files are published. See the component details and wiring requirements below.
 
 <a id="six-pcb-layout"></a>
 
@@ -118,7 +118,7 @@ Quantities below are for **one complete panel with the optional SQL On/Off PCB i
 
 Totals: **two 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 male board headers**, plus two 1x24 Teensy male strips if not already fitted. Cable housings total **three 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 female**, separate from the two 1x24 board sockets. Use at least **76 female crimp contacts**, plus spares, matched to the housing manufacturer's series. Wire lengths depend on the final panel layout. Preterminated female cables can replace housings and crimp contacts without counting both.
 
-The TFT module normally already has its 14-pin male header. Check before purchasing an additional one. The final [Button Matrix v3.1](../PCBs/Button%20Matrix/) uses separate four-pin row and column connectors. Split the Main Board J2 eight-wire matrix cable accordingly: pins 1–4 to Button Matrix J1, and pins 5–8 to Button Matrix J2. Main J2 and J9/J10 now have 2.54 mm header footprints assigned. Check connector stack height and cable clearance when arranging the Main PCB. Unused Teensy USB-host, Ethernet and auxiliary headers are not required.
+The TFT module normally already has its 14-pin male header. Check before purchasing an additional one. The final [Button Matrix v3.2](../PCBs/Button%20Matrix/) uses separate four-pin row and column connectors. Split the Main Board J2 eight-wire matrix cable accordingly: pins 1–4 to Button Matrix J1, and pins 5–8 to Button Matrix J2. Main J2 and J9/J10 now have 2.54 mm header footprints assigned. Check connector stack height and cable clearance when arranging the Main PCB. Unused Teensy USB-host, Ethernet and auxiliary headers are not required.
 
 **Cable mapping matters:** the encoder cable is pin-for-pin between the two 14-pin headers. The matrix cable uses rows on pins 1–4 and columns on pins 5–8. Multi-position switch cables use 1 = 3.3 V, 2 = signal and 3 = GND. When using the optional SQL On/Off PCB, its cable maps master SQL1 pin 1 to switch-board J1 pin 2, and SQL1 pin 2 to switch-board J1 pin 3; switch-board pin 1 stays unused.
 
@@ -174,37 +174,37 @@ Both spacer quantities are included in the [BOM](BOM.csv).
 
 **Note:** This is intended to be a relatively simple design.
 
-- **Microcontroller:** Teensy 4.1 with pre-soldered headers — recommended.  
+- **Microcontroller:** Teensy 4.1 with pre-soldered headers — recommended.
   [SparkFun](https://www.sparkfun.com/teensy-4-1-headers.html) · [Amazon example](https://www.amazon.com/PJRC-Teensy-4-1-with-Pins/dp/B08CTM3279)
 
 I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFun Teensy 4.1 (Headers)](https://www.sparkfun.com/teensy-4-1-headers.html), or this [Amazon Teensy 4.1 with Pins listing](https://www.amazon.com/PJRC-Teensy-4-1-with-Pins/dp/B08CTM3279) as an alternative example. The pre-fitted pins avoid having to solder the two long header rows yourself. The Main Board's two 1 × 24 female sockets are separate parts; they are optional but recommended for removing the Teensy during board upgrades or replacement.
 
-- **Display:** ILI9488 SPI TFT, 3.5-inch  
+- **Display:** ILI9488 SPI TFT, 3.5-inch
   [Amazon](https://www.amazon.com/dp/B0BWJHK4M6)
 
-- **Encoders:** Six Bourns **PEC11H-4220F-S0024**, matching the current encoder PCB. These have PCB terminals and an integrated push switch. The older seven-encoder quantity and 4215 shaft-option links are superseded.  
+- **Encoders:** Six Bourns **PEC11H-4220F-S0024**, matching the current encoder PCB. These have PCB terminals and an integrated push switch. The older seven-encoder quantity and 4215 shaft-option links are superseded.
   [Mouser — 652-PEC11H4220FS0024](https://www.mouser.com/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D)
 
-- **Multi-position rotary switches:** Two C&K **A12505RNCQ**, with 1/2-inch (12.7 mm) shafts, 45-degree indexing and **C PCB-pin terminals**. These replace the solder-lug versions for the two resistor-ladder PCBs. The circuit uses seven positions of each eight-position switch; verify the corrected wiring and stop-ring setting against the panel.  
+- **Multi-position rotary switches:** Two C&K **A12505RNCQ**, with 1/2-inch (12.7 mm) shafts, 45-degree indexing and **C PCB-pin terminals**. These replace the solder-lug versions for the two resistor-ladder PCBs. The circuit uses seven positions of each eight-position switch; verify the corrected wiring and stop-ring setting against the panel.
   [Mouser — 611-A12505RNCQ](https://www.mouser.com/en/ProductDetail/CK/A12505RNCQ?qs=h7H1bHRqGz9AS0MdXl06Aw%3D%3D) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
 
-- **SQL On/Off switch:** One C&K **A12515RNZQ**, with a 1-1/2-inch (38.1 mm) shaft, 45-degree indexing and **Z solder-lug terminals**. Mount it in a bracket, fit the [required shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) to support its longer shaft in all installations, and wire its contacts to the Teensy input. It does not mount directly in the PCB-pin footprint and does not need a resistor ladder. The panel's ON and OFF markings are two clicks (90 degrees) apart; confirm the contact selection and travel stops against those markings.  
+- **SQL On/Off switch:** One C&K **A12515RNZQ**, with a 1-1/2-inch (38.1 mm) shaft, 45-degree indexing and **Z solder-lug terminals**. Mount it in a bracket, fit the [required shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) to support its longer shaft in all installations, and wire its contacts to the Teensy input. It does not mount directly in the PCB-pin footprint and does not need a resistor ladder. The panel's ON and OFF markings are two clicks (90 degrees) apart; confirm the contact selection and travel stops against those markings.
   [Mouser](https://www.mouser.com/ProductDetail/CK/A12515RNZQ) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
 
-- **Faceplate:** A-10C "Thunderbolt" / "Warthog" VHF/UHF cockpit panel  
+- **Faceplate:** A-10C "Thunderbolt" / "Warthog" VHF/UHF cockpit panel
   [PC Flights](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/)<br>
   PC Flights has supplied me with a drawing file to assist with the Button PCB layout.
 
-- **Button switches:** 16 per panel, 6 × 6 × 5 mm SPST momentary tactile push-button switches, four-pin through-hole  
+- **Button switches:** 16 per panel, 6 × 6 × 5 mm SPST momentary tactile push-button switches, four-pin through-hole
   [Amazon](https://www.amazon.com/dp/B01CGMP9GY)
 
-- **PCB standoffs — required to install the PCBs; $10 per kit:** Vibit 640-piece M3 nylon standoff assortment, including male–female and female–female spacers with screws. The number of individual standoffs needed per panel is not yet finalized.  
+- **PCB standoffs — required to install the PCBs; $10 per kit:** Vibit 640-piece M3 nylon standoff assortment, including male–female and female–female spacers with screws. The number of individual standoffs needed per panel is not yet finalized.
   [Amazon](https://www.amazon.com/dp/B0H1QS5Q6N)
 
   **Choose the stand-off height by the clearance your build needs.** Expect approximately **22–26 mm of total stand-off height**, depending on the shaft length of your SQL ON/OFF rotary switch. Dry-fit the boards, switch and faceplate, then select the height that provides the required clearance and correct shaft position before tightening the mounting hardware.
 
-- **Diodes:** 16 × 1N4148 small-signal fast-switching diodes, DO-35  
-  The current Button Matrix PCB uses D5–D20; fit the 16 diodes as shown in its schematic.  
+- **Diodes:** 16 × 1N4148 small-signal fast-switching diodes, DO-35
+  The current Button Matrix PCB uses D5–D20; fit the 16 diodes as shown in its schematic.
   [Amazon](https://www.amazon.com/100-Pieces-1N4148-Switching-High-Speed/dp/B079KJ91JZ/ref=sr_1_1_sspa?s=industrial&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY)
 
 
