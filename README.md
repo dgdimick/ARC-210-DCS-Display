@@ -32,38 +32,15 @@ Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discu
 
 ## Features
 
-- Interface modeled after the ARC-210 radio
-- Powered by one Teensy 4.1
-- ILI9488 3.5-inch SPI TFT display (480 × 320)
-- Support for digital rotary encoders, rotary switches, and momentary switches
-- **Planned button support:** All panel buttons will be wired, and their in-game functions will be supported wherever DCS-BIOS provides the necessary controls. The current HEX remains display-only.
-- DCS-BIOS integration for in-game control and feedback
-- ARC-210 startup and initialization screens
-- Live frequency display from DCS-BIOS
-- AM/FM modulation display
-- Submenus nested within the SAT menus will be available with firmware 2.0.
+[View the features](Docs/Features.md) for the hardware capabilities and planned firmware support.
 
 ## Teensy GPIO labels and KiCad pin numbers
 
-**Use the numbers printed on the Teensy (or the matching GPIO labels on your breakout adapter) when following the firmware and wiring instructions.** KiCad uses a separate set of pin/pad numbers for the Teensy symbol and its matching `teensy:Teensy41` footprint. These include power and ground connections, so they are not the same as GPIO numbers.
-
-| Teensy printed label / firmware GPIO | KiCad U1 pin / footprint pad |
-| --- | ---: |
-| GND (one of several ground connections) | 1 |
-| 0 | 2 |
-| 4 — TFT backlight | 6 |
-| 14 / A0 — rotary-switch input | 36 |
-| 15 / A1 — rotary-switch input | 37 |
-
-For example, connect a rotary-switch signal to the Teensy connection marked **14/A0**, which is **KiCad pad 36**—not pad 14. In KiCad, read the symbol’s pin name and net label to identify the signal. Updating the PCB from the schematic with the matching symbol and footprint maps the connections to the correct physical locations. This pad mapping applies to the Teensy library supplied with this project; other libraries may use different numbering.
+[Read the Teensy GPIO and KiCad pin guide](Docs/Teensy-GPIO.md) before wiring the panel or working with the PCB files.
 
 ## Power and future button lighting
 
-The painted buttons supplied with the PC Flights panel used for this build are opaque: light will not pass through them, so LEDs behind them would not illuminate their legends. Future backlighting would also require suitable light-transmitting replacement buttons.
-
-The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). TFT brightness at 3.3 V has been confirmed satisfactory. The external protected 5 V input and Main Board JP1 power selector have been removed. C5 (470 µF) and C6 (0.1 µF) have been removed to match the tested direct Teensy-to-TFT wiring. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
-
-Future button lighting would require a separate power and driver design, suitable light-transmitting buttons, and a new Button LED PCB. The current Main Board has no external lighting-power circuit. This lighting revision is not currently planned; the other radio projects remain the priority.
+[Read the power and lighting notes](Docs/Power-and-Lighting.md) for USB power, the TFT supply, and future button-lighting requirements.
 
 <a id="six-pcb-layout"></a>
 
@@ -85,27 +62,7 @@ Future button lighting would require a separate power and driver design, suitabl
 
 ## Firmware and hardware testing
 
-### DCS-BIOS firmware preview
-
-The current HEX is available for testing the ARC-210 menu screens and navigation, including the HQ, COMSEC, and RADIO SETTINGS menus. This is a menu-system preview, not a finished radio implementation: some menu actions and synchronization still need work.
-
-The current `Master_Program.ino.hex` works with DCS-BIOS while running DCS, but it is **display-only at this time**. It displays radio information from the game; physical panel controls do not yet operate the in-game radio.
-
-The HQ MORE loop and detail screens are implemented. LOAD WOD has been tested against DCS: the displayed number matches, follows MLSK changes, and resets to 20 on re-entry in the tested session. MENU exits from the opening screen listing HQ MENUS / COMSEC / RADIO SETTINGS and is inactive on deeper pages.
-
-Download [Master_Program.ino.hex](Firmware/Master%20Hex%20Files/Master_Program.ino.hex). Read the [preview notes and required DCS-BIOS export changes](Firmware/Master%20Hex%20Files/README.md) before testing. The display starts blank until it receives powered-radio data from DCS-BIOS.
-
-### Rotary encoder test HEX download
-
-Download [ARC210_Encoder_Check_Teensy41.hex](Firmware/Test%20Code/ARC210_Encoder_Check_Teensy41.hex) for standalone testing of all six rotary encoders on a Teensy 4.1. The TFT displays each encoder's raw count, direction, and A/B input states. DCS is not required, and the backlight stays fully on using Teensy pin 4.
-
-**Start with the TFT hello test** so you know the display is working before checking the encoders. A working TFT is required to see the results. If the screen stays blank, check the wiring notes and feel free to ask for help in Discussions. See the [test instructions](Firmware/Test%20Code/README.md) and [pin layout](Docs/ARC-210%20Teensy%204.1%20Pin%20layout.txt). Loading this HEX replaces the firmware currently on the Teensy.
-
-The HEX file for the current state of the project is located in:
-
-`Firmware/Master Hex Files/`
-
-If you own a Teensy 4.1, you may already know how to install a HEX file. If not, here are the steps.
+[View the firmware and hardware testing guide](Docs/Firmware-and-Hardware-Testing.md) for the DCS-BIOS preview, test HEX files, and test instructions.
 
 ## Loading the HEX File onto a Teensy 4.1
 
