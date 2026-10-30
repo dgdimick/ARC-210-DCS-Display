@@ -22,3 +22,19 @@ I have purchased the following powered USB hubs and plan to use them for the **A
 - [ACASIS powered 16-port USB hub](https://www.amazon.com/dp/B07G8S324L) — with a listed 96 W power adapter.
 
 Where practical, each hub will connect directly to the PC. The connected controllers and displays will share each hub's available power; completed-panel current draw and multi-panel operation still need to be tested. These are the hubs I have purchased for my build, rather than required purchases for other builders.
+
+## Electronic noise and a full cockpit
+
+**USB remains a reasonable choice even if I build all of the cockpit controls.** Adding RS-485 solely to prevent possible electrical noise would add hardware and firmware complexity without an established need. This is a design choice to verify as the cockpit expands, rather than a claim that every completed panel has already been tested together.
+
+The number of switches and panels is not the main source of interference. Motors, solenoids, force-feedback equipment, and high-current lighting drivers are more significant potential noise sources. USB already uses differential signaling to help reject interference. RS-485 also uses differential signaling, but an ordinary, non-isolated RS-485 transceiver does not provide electrical isolation or automatically eliminate ground loops. See [Analog Devices' explanation of differential USB communication and ground-loop isolation](https://www.analog.com/en/resources/technical-articles/breaking-ground-loops-with-functional-isolation.html).
+
+For the full cockpit, the plan is to:
+
+- Keep controllers close to their panels and keep switch and encoder wiring short.
+- Use good USB data cables and keep hub chains short.
+- Route signal cables away from motor wiring and high-current power wiring.
+- Provide suitable separate power for motors and larger loads instead of drawing it through the Teensy or its USB supply; see [PJRC's servo-power guidance](https://www.pjrc.com/teensy/td_libs_Servo.html).
+- Check power budgets and test panels together as the cockpit grows.
+
+RS-485 would change the communication link between controllers; it would not fix noisy switch wiring, unstable display power, or overloaded USB hubs. **The plan is to continue with powered USB hubs and revisit the communication system only if testing reveals a persistent problem that appropriate wiring and power distribution do not resolve.**
