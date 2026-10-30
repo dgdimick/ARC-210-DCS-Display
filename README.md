@@ -71,23 +71,11 @@ Future button lighting would require a separate power and driver design, suitabl
 
 ## Items that need to be completed
 
-1. Some SAT menus are already complete. The remaining work is on some menus three or four levels deep, which will be completed in firmware 2.0. I’m not sure what these remaining menus do, and I haven’t heard of anyone using them, so I don’t expect them to be an issue for most users.
-2. Test the finished breadboard design with DCS-BIOS and the DCS A-10C II aircraft to ensure the panel works correctly while in DCS.
-3. Complete the final assembly instructions, wiring diagrams and updated parts list.
-4. Document firmware installation and the required DCS-BIOS configuration.
-5. Test the manufactured boards and run an extended reliability test.
-6. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. This project provides files and build guidance; I’d prefer to keep this a DIY project rather than sell parts, kits, or completed panels. That said, a few people have already asked for help, so if you’re stuck and need a hand, feel free to reach out—I’d be happy to discuss what might be possible.
-7. Design and print the SQL ON/OFF knob.
-8. Design and print a USB cable strain-relief support to protect the Teensy's Micro-B connector from cable pulls.
-
+[View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
 ## Future Thoughts and Plans
 
-- I'm considering reworking the Main Board to carry the rotary-switch resistor ladders, allowing the switches to mount directly to the panel and be wired like the SQL On/Off switch. This would reduce the number of PCBs, but each seven-position switch would need roughly eight wires back to the Main Board, adding soldering and making the project harder for people to build. The likely cost savings probably would not justify the added build difficulty, so this is a low-priority idea. If I do decide to rework the Main Board, I may add LED backlighting at the same time, including the separate power and driver circuitry and suitable light-transmitting buttons described below. 🟢 **The current rotary-switch PCB design remains the build approach.**
-
-- Look at other aircraft using the ARC-210 and decide whether I want to spend the time branching this project to support them. Only a small number of DCS aircraft have the ARC-210, but other sim-pit builders may want a working panel instead of a sticker. If I decide to branch this project, the first additional aircraft supported will be the C-130J, since it is the only other aircraft using the ARC-210 that I currently own.
-
-- Consider button lighting only as a future redesign with a separate power/driver circuit, suitable translucent buttons, and a new Button LED PCB. The current USB/3.3 V Main Board does not include this circuitry.
+[View Future Thoughts and Plans](Docs/Future-Thoughts.md) for possible redesigns, lighting, and support for other aircraft.
 
 ## Project updates
 
