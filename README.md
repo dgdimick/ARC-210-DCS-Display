@@ -24,6 +24,10 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
+## Tools Needed
+
+[View the tools needed](Docs/Tools-Needed.md) to build and program the panel.
+
 ## Future Thoughts and Plans
 
 [View Future Thoughts and Plans](Docs/Future-Thoughts.md) for possible redesigns, lighting, and support for other aircraft.
