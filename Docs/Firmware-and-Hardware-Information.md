@@ -60,16 +60,6 @@ All STL files are intended to be print-ready for FDM printers using a 0.4 mm noz
 
 [Read why I chose the Teensy 4.1](Why-Teensy.md) for the GPIO requirements, display performance, programming workflow, and cost comparison.
 
-## Directories
-
-- `ARC-210/` — project root
-- `ARC-210/Firmware/` — firmware and test files
-- `ARC-210/Firmware/Boot Loader/` — precompiled Teensy HEX files for loading with Teensy Loader or TyTools
-- [`parts/`](../parts/) — component list, hardware supplier links, and compatibility notes
-- `ARC-210/Docs/` — schematics, diagrams, and documentation
-- `ARC-210/images/` — project images
-- `ARC-210/Supporting STL's/` — 3D-printable knobs, bezels, brackets, mounts, and other parts
-
 ## Firmware and hardware testing
 
 ### DCS-BIOS firmware preview
