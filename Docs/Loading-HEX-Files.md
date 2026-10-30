@@ -1,0 +1,10 @@
+[Back to the main project README](../README.md)
+
+# Loading the HEX File onto a Teensy 4.1
+
+1. Install and open **Teensy Loader, you can find it in the firmware directory**.
+2. Open the supplied `Master_Program.ino.hex` file.
+3. Connect the Teensy 4.1 to your computer by USB.
+4. Press the button on the Teensy if it does not enter programming mode automatically.
+5. Click **Program** in Teensy Loader.
+6. Reboot the Teensy.

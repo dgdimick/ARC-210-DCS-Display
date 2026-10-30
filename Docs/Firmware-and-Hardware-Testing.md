@@ -22,4 +22,4 @@ The HEX file for the current state of the project is located in:
 
 `Firmware/Master Hex Files/`
 
-For installation steps, see [Loading the HEX File onto a Teensy 4.1](../README.md#loading-the-hex-file-onto-a-teensy-41).
+For installation steps, see [Loading the HEX File onto a Teensy 4.1](Loading-HEX-Files.md).

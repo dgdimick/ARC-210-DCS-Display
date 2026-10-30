@@ -66,27 +66,11 @@ Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discu
 
 ## Loading the HEX File onto a Teensy 4.1
 
-1. Install and open **Teensy Loader, you can find it in the firmware directory**.
-2. Open the supplied `Master_Program.ino.hex` file.
-3. Connect the Teensy 4.1 to your computer by USB.
-4. Press the button on the Teensy if it does not enter programming mode automatically.
-5. Click **Program** in Teensy Loader.
-6. Reboot the Teensy.
+[Read the HEX loading instructions](Docs/Loading-HEX-Files.md) to program the Teensy 4.1.
 
 ## ARC-210 Bench Testing App
 
-The [working ARC-210 version of dcsBiosDebug](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working) is maintained in a separate repository. It provides buttons for menu testing and separate Frequency, Secondary, and Master controls for sending simulated DCS-BIOS data to your Teensy without running DCS.
-
-Download the **arc210-working** branch using **Code → Download ZIP**, extract it, and keep its `icons` folder beside the Python script. With Python 3 and Tkinter installed, open a terminal in that folder and run:
-
-```cmd
-python -m pip install numpy pyserial Pillow
-python dcsBiosDebug.py
-```
-
-Use the Python script, including the `.py` extension; the original bundled executable does not include the ARC-210 controls. Select your Teensy's serial port and click **Connect**. Choose **2 - TR** and click **Set Master** for the normal radio switch position, or **0 - OFF** to test power off.
-
-See the [full testing instructions and compatibility notes](https://github.com/dgdimick/dcsBiosDebug/blob/arc210-working/ARC210_TESTING.md). The shortcuts use fixed A-10C II addresses and send data to the hardware, not commands to DCS. Some firmware states require additional exports through the normal instrument controls.
+[View the ARC-210 Bench Testing App guide](Docs/Bench-Testing-App.md) to test the panel with simulated DCS-BIOS data without running DCS.
 
 ## Project progress and beta testing
 
