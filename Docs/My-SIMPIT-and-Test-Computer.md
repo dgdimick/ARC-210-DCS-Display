@@ -2,9 +2,9 @@
 
 # My SIMPIT and test computer
 
-**This page describes my own development and flight-simulation setup. It is not a list of minimum requirements for the ARC-210, ARC-164, or ARC-186 panels.** Builders do not need a comparable gaming PC, these monitors, or these particular USB hubs to build the radio hardware. DCS system requirements depend on the simulator, aircraft, mission, and display configuration.
+**This page describes my own development and flight-simulation setup. It is not a list of minimum requirements for the ARC-210, ARC-164, or ARC-186 panels.** You do not need the same computer, monitors, or USB hubs to build these radio panels. DCS system requirements depend on the simulator, aircraft, mission, and display configuration.
 
-The equipment below provides context for development and testing. Listing it here does not mean every planned panel or the completed cockpit has already been tested.
+I’m sharing my equipment here to show what I’m using as I develop and test the panels. I’ll test the panels together as I add them to my cockpit.
 
 ## Computer configuration
 
@@ -14,7 +14,7 @@ The equipment below provides context for development and testing. Listing it her
 | CPU | AMD Ryzen 7 9800X3D |
 | Motherboard | ASUS ROG STRIX X870E-E GAMING WIFI |
 | GPU | NVIDIA GeForce RTX 5060 Ti, 16 GB |
-| Current installed RAM | **Kingston FURY Beast RGB 64 GB (2 × 32 GB) DDR5-6000 CL36**, model KF560C36BWEAK2-64 |
+| RAM | **Kingston FURY Beast RGB 64 GB (2 × 32 GB) DDR5-6000 CL36**, model KF560C36BWEAK2-64 |
 | Storage | Samsung 990 PRO 4 TB NVMe SSD with heatsink |
 | Power supply | 750 W, 80 PLUS Gold |
 | CPU cooling | Liquid cooling |
@@ -28,9 +28,9 @@ The equipment below provides context for development and testing. Listing it her
 | Left MFCD display | 800 × 600 | Not recorded | DCS instrument export |
 | Right MFCD display | 800 × 600 | Not recorded | DCS instrument export |
 
-My normal DCS configuration uses the **Samsung 49-inch monitor and both MFCD exports**. The LG 32-inch monitor is for other applications. Listed monitor refresh rates are not measured DCS frame rates.
+My normal DCS configuration uses the **Samsung 49-inch monitor and both MFCD exports**. The LG 32-inch monitor is for other applications. The refresh rates in the table describe the monitors, not the frame rates I get in DCS.
 
-I also own a **Meta Quest 3, 512 GB, with a Quest Link cable**, but I am not currently using VR for DCS. VR performance and settings are considered separately from the normal monitor configuration.
+I also own a **Meta Quest 3, 512 GB, with a Quest Link cable**, but I am not currently using VR for DCS. I keep VR performance and settings separate from my normal monitor setup.
 
 ## Existing USB setup and expansion
 
@@ -41,19 +41,19 @@ I have purchased these hubs for the radio panels and future cockpit panels:
 - [RSHTECH RSH-ST10C-6 powered 10-port USB hub](https://www.amazon.com/dp/B0DX6KR79L) — six USB-C and four USB-A ports, with a listed 60 W power adapter.
 - [ACASIS powered 16-port USB hub](https://www.amazon.com/dp/B07G8S324L) — with a listed 96 W power adapter.
 
-Only one hub is currently in use; the other is available for expansion. Which of the two is currently connected has not been recorded here.
+I’m currently using one of these hubs and have the other available for expansion.
 
-The ARC-210, ARC-164, and ARC-186 are each planned to use a dedicated Teensy 4.1 and their own USB connection. A Teensy may also operate several smaller panels where the pin count, processing needs, power budget, and wiring allow. Where practical, expanded hubs will connect directly to the PC with short hub chains.
+I plan to use a dedicated Teensy 4.1 and USB connection for each radio: the ARC-210, ARC-164, and ARC-186. I may use one Teensy for several smaller panels where the pin count, processing needs, power budget, and wiring allow. As I expand, I’ll connect the hubs directly to my PC where practical and keep hub chains short.
 
 See [USB connections and powered hubs](USB-Connections-and-Powered-Hubs.md) for the USB-versus-RS-485 decision, GPIO use, bandwidth, power, electrical noise, and optional ferrite chokes.
 
 ## Other cockpit equipment and software
 
-My saved setup also lists:
+I also use:
 
 - WinWing HOTAS, rudder pedals, and control panels.
 - Thrustmaster Cougar MFD controls.
 - TrackIR 5 and Stream Deck.
 - DCS-BIOS, Tacview, and OpenKneeboard.
 
-My primary DCS aircraft is the **A-10C II Thunderbolt II**. The radio projects are being developed for this cockpit; compatibility with additional aircraft requires the appropriate mappings and testing.
+My primary DCS aircraft is the **A-10C II Thunderbolt II**. I’m developing the radio panels for this cockpit. Supporting other aircraft will require the appropriate DCS-BIOS mappings and testing.
