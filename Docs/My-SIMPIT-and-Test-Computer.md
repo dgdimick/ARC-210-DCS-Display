@@ -14,13 +14,12 @@ The equipment below provides context for development and testing. Listing it her
 | CPU | AMD Ryzen 7 9800X3D |
 | Motherboard | ASUS ROG STRIX X870E-E GAMING WIFI |
 | GPU | NVIDIA GeForce RTX 5060 Ti, 16 GB |
-| Current installed RAM | **64 GB** |
-| Saved RAM kit details | Kingston FURY Beast RGB 64 GB (2 × 32 GB) DDR5-6000 CL36, model KF560C36BWEAK2-64 |
+| Current installed RAM | **Kingston FURY Beast RGB 64 GB (2 × 32 GB) DDR5-6000 CL36**, model KF560C36BWEAK2-64 |
 | Storage | Samsung 990 PRO 4 TB NVMe SSD with heatsink |
 | Power supply | 750 W, 80 PLUS Gold |
 | CPU cooling | Liquid cooling |
 
-**I have confirmed that 64 GB of RAM is currently installed.** The Kingston kit details above come from my saved configuration; the latest confirmation establishes the installed capacity, without reconfirming the kit model.
+**The Kingston FURY 64 GB kit listed above is currently installed.**
 
 ## Monitors and DCS display layout
 
