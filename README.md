@@ -57,6 +57,8 @@ See the [STL instructions](Supporting%20STL%27s/README.md#complete-17-part-print
 [Read about the USB connection plan and purchased powered hubs](Docs/USB-Connections-and-Powered-Hubs.md) for why I am using USB instead of RS-485;<br>
 GPIO availability, sharing a Teensy across smaller panels, and expansion using my existing cockpit USB setup.
 
+I also own three other SIMPIT panels that use USB.
+
 ## Firmware and hardware information
 
 [Open Firmware and hardware information](Docs/Firmware-and-Hardware-Information.md) for wiring, power, PCB layout, parts, printable files, software, firmware loading, and testing guides.
