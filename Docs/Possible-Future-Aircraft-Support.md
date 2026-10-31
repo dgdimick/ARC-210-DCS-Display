@@ -2,9 +2,9 @@
 
 # Possible future aircraft support
 
-**Last updated: October 30, 2026 at 9:48 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:14 PM MDT (America/Denver)**
 
-I’ll focus future support on aircraft with **physical radio control panels** that my hardware can reasonably represent. Sharing the radio's transceiver model alone is not enough.
+I’m focusing future support on aircraft with **physical radio control panels** that match my hardware, so the panel will be useful to builders flying those aircraft. I’ll compare the controls and displays as well as the radio model before deciding which aircraft to support.
 
 ## C-130J ARC-210 — part of the main project
 

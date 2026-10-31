@@ -2,11 +2,11 @@
 
 # Items that need to be completed
 
-**Last updated: October 30, 2026 at 10:07 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:14 PM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
-1. Most SAT menus are complete; I’m still working on some deeper SAT menus. I’m not sure what these remaining menus do, and I haven’t heard of anyone using them, so I don’t expect them to be an issue for most users.
+1. Most SAT menus are complete. I’m still working on some deeper SAT menus and investigating how they operate. I’d welcome input from anyone familiar with them.
 2. Final test of the menu system.
 3. Complete the final assembly instructions, wiring diagrams, and an updated parts list.
 4. Test the manufactured boards and run an extended reliability test.

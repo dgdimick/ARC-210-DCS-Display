@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — October 30, 2026
 
-**Last updated: October 30, 2026 at 11:12 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:14 PM MDT (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -24,7 +24,7 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Items that need to be completed
 
-**Last updated: October 30, 2026 at 10:07 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:14 PM MDT (America/Denver)**
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
@@ -78,13 +78,9 @@ Follow the guide before replacing files.
 
 ## Questions and community builds
 
-**Planning a build?** Tell me which panel you’re interested in—even if you haven’t started yet. You’re welcome to [introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1).
+**Planning a build, already working on one, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell me which panel interests you and what you fly. Questions, ideas, and progress photos are welcome—even if you haven’t started yet.
 
-This is primarily a DIY project, and the files and build notes are here to help you make your own panel. Parts can be purchased from the linked suppliers. If you get stuck, feel free to ask in Discussions—I’m happy to help where I can.
-
-**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
-
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, post build photos, and connect with other builders. Whether you are planning your first panel or already flying with one, you are welcome to join in!
+I’m sharing the files and build notes to help you make your own panel, with parts available from the linked suppliers. If you get stuck, ask in [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)—I’m happy to help where I can.
 
 <a id="related-radio-project"></a>
 
