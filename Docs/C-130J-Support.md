@@ -2,7 +2,7 @@
 
 # C-130J ARC-210 support
 
-**Last updated: October 30, 2026 at 10:03 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 10:07 PM MDT (America/Denver)**
 
 I’m planning C-130J support as part of this ARC-210 project. After comparing the panel, I plan to reuse the same faceplate, controls, display, PCBs, and printed parts as my A-10C II build. Keeping the hardware and software work in one repository gives builders one place for files, questions, and updates.
 
@@ -49,12 +49,42 @@ See the [ARC-210 panel definitions](https://github.com/DCS-Skunkworks/dcs-bios/b
 
 The existing controls and frequency export give me a useful starting point. For full LCD support, I need to inspect the C-130J's live display indications and available parameters, identify the missing fields, add the necessary DCS-BIOS exports, and test them against the cockpit. If some data is unavailable, I will document that limitation. Full support will require more than changing the A-10's control names and addresses.
 
+## Helios findings and LCD export plan
+
+I found a concrete starting point in Helios's C-130J implementation. Its [C-130J export script](https://github.com/HeliosVirtualCockpit/Helios/blob/master/Aircraft%20C-130J%20Plugin/Interfaces/ExportC130JFunctions.lua) reads **indicator 44** using `helios.encodeIndication(44)` and sends the indication data to its [ARC-210 display parser](https://github.com/HeliosVirtualCockpit/Helios/blob/master/Aircraft%20C-130J%20Plugin/Interfaces/Functions/ARC210Display.cs). This is text-data handling, which gives me a useful reference for adding DCS-BIOS exports.
+
+| Display content | Fields handled by the Helios parser |
+|---|---|
+| Frequency | `freq_label_mhz`, `dot_mark`, `freq_label_khz` |
+| Selected RT | `txt_RT` |
+| Active preset | `active_channel` |
+| Modulation | `modulation_label` |
+| Transmit/receive label | `xmit_recv_label` |
+| Menu and soft-key labels | `top_line_label`, `mid_line_label`, `bot_line_label` |
+| Security information | `comsec_mode`, `comsec_submode`, `ky_label`, `ky_submode_label` |
+| ECCM and segment information | `active_eccm_channel_index`, `WOD_segment`, `HQII_segment` |
+| SATCOM information | `satcom_top_channel_label`, `satcom_channel_type_label`, `satcom_connection_status`, `satcom_activated_status`, `satcom_activated_time_remain` |
+
+The parser also handles startup screens, multiline values, alternate field names, and page-dependent labels. It clears values that are no longer present. These names are findings from the Helios source, not a guarantee that every field is available or correct in my installed DCS version.
+
+The [Helios ARC-210 viewport patch](https://github.com/HeliosVirtualCockpit/Helios/blob/master/Patching/Patches/DCS/002_009_00028_26385_00000/Viewports/mods/Aircraft/C130J/Cockpit/Scripts/ARC_210/init.lua.gpatch) adds viewport handling and screen positioning; it does not add the text fields listed above. Based on that, my first approach will be a **DCS-BIOS-only change**, checking whether the existing indication already exposes the data I need.
+
+My implementation plan is to:
+
+1. Confirm the ARC-210 indicator number in the installed C-130J cockpit scripts and capture its live `list_indication()` output. Indicator 44 is the starting point from Helios, not an assumed permanent ID.
+2. Read and parse the indication once per DCS-BIOS export cycle, using `Module.parse_indication()` if it correctly handles the captured pages. Compare its results with the raw data, especially multiline values and changing field names.
+3. Add named string outputs in `C-130J.lua` for the frequency components, preset, selected RT, modulation, menu labels, and other required LCD fields. Choose suitable lengths and allocate addresses through DCS-BIOS's normal helpers, then update the Teensy mappings to match.
+4. Normalize page-dependent fields where needed and clear missing fields so previous menu text does not remain on the LCD. Verify power-off blanking and startup screens too.
+5. Add captured page samples to the bench-testing workflow, then test normal radio operation, RT selection, frequency changes, and all available menu pages against the cockpit. Document any data that remains unavailable.
+
+**This is an implementation plan, not a working or tested export release.** DCS is on my other computer, so I still need its C-130J cockpit scripts and live indication captures to verify the indicator, field contents, and parser behavior. The Helios references help identify the route; they do not require builders to install Helios for the planned DCS-BIOS connection.
+
 ## Work needed for C-130J support
 
 The main [Things that need to be completed list](Remaining-Work.md) tracks C-130J support. The work includes:
 
 1. **Compare operation:** Check the aircraft’s current ARC-210 functions, controls, display pages, startup behavior, and menus against my existing panel.
-2. **DCS-BIOS mappings and missing LCD exports:** Verify the existing panel controls and `RADIO_ARC210` frequency export in DCS. Inspect live indications and available parameters, then add and test exports for menu text, active preset, selected RT, modulation, and other required screen fields. Check RT SELECT behavior and document any unavailable data or export changes.
+2. **DCS-BIOS mappings and missing LCD exports:** Verify the existing panel controls and `RADIO_ARC210` frequency export in DCS. Follow the [LCD export plan](#helios-findings-and-lcd-export-plan): verify indicator 44 against the installed module, capture and parse live indications, add named string outputs for the required LCD and menu fields, and clear fields that disappear between pages. Check RT SELECT behavior and document any unavailable data or export changes.
 3. **Firmware adaptation:** Reuse the existing control and display code where practical and add the C-130J mappings. The amount of reusable code depends on the module’s behavior and available data.
 4. **Menu system:** Adapt the pages and display values and test the complete menu system against the aircraft.
 5. **Bench-testing app:** Add C-130J ARC-210 mappings and simulated data to my modified debug app so the panel can be tested independently.

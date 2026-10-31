@@ -2,7 +2,7 @@
 
 # Items that need to be completed
 
-**Last updated: October 30, 2026 at 10:03 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 10:07 PM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -12,4 +12,4 @@
 4. Test the manufactured boards and run an extended reliability test.
 5. Document how builders can source components from independent suppliers, order PCBs from a manufacturer, print the STL parts, and program their own Teensy. I share the project files and build guidance; I’d prefer to keep this a DIY project rather than sell parts, kits, or completed panels. That said, a few people have already asked for help, so if you’re stuck and need a hand, feel free to reach out—I’d be happy to discuss what might be possible.
 6. Design and print a USB cable strain-relief support to protect the Teensy's Micro-B connector from cable pulls.
-7. Add [C-130J support](C-130J-Support.md) using the existing ARC-210 hardware: verify the existing DCS-BIOS controls and frequency export; inspect live display data and add the missing LCD/menu exports for menu text, active preset, selected RT, modulation, and other required screen fields; check RT SELECT behavior; and complete firmware and menu changes, debug-app support, testing, and documentation. Document any unavailable display data.
+7. Add [C-130J support](C-130J-Support.md) using the existing ARC-210 hardware: verify the existing DCS-BIOS controls and frequency export; follow the [Helios-based LCD export plan](C-130J-Support.md#helios-findings-and-lcd-export-plan), starting by verifying indicator 44 in the installed module, capturing live indications, parsing them once per export cycle, adding named string outputs for the LCD/menu fields, and clearing fields that disappear between pages; check RT SELECT behavior; and complete firmware and menu changes, debug-app support, testing, and documentation. Document any unavailable display data.
