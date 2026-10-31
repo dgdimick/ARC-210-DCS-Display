@@ -54,6 +54,10 @@ All STL files are intended to be print-ready for FDM printers using a 0.4 mm noz
 - Uses DCS-BIOS for communication with DCS
 - I keep the firmware and test files in this repository
 
+### DCS-BIOS connections
+
+I use [TekConnect](https://github.com/tekcreations/TekConnect) to manage my DCS-BIOS USB serial connections. It provides connection status and an option to connect ports automatically. Download the Windows application from the [TekConnect releases page](https://github.com/tekcreations/TekConnect/releases).
+
 ## Why I had to use a Teensy
 
 [Read why I chose the Teensy 4.1](Why-Teensy.md) for the GPIO requirements, display performance, programming workflow, and cost comparison.

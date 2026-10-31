@@ -10,6 +10,8 @@ When I started the ARC-210 project, I rewired my SIMPIT. **I currently run all 1
 
 ## Why I’m staying with USB
 
+I use [TekConnect](https://github.com/tekcreations/TekConnect) to manage my DCS-BIOS USB serial connections. It shows connection status and offers automatic port connection. The Windows application is available on the [TekConnect releases page](https://github.com/tekcreations/TekConnect/releases).
+
 RS-485 can let several panel controllers share one connection to the PC, reducing USB ports and COM ports. It also adds transceivers, bus wiring, termination, addressing, and a master interface. My existing cockpit devices would still need USB, so I don’t see enough benefit to add that complexity for these radios.
 
 USB also leaves the Teensy’s header GPIO pins available for controls and displays. A typical half-duplex RS-485 connection would use **three pins: TX, RX, and direction control**. For the Teensy 4.1’s 42 readily accessible I/O pins, that leaves **42 with USB versus 39 after allocating three to RS-485**, before connecting the panel hardware.
