@@ -38,7 +38,7 @@ The master downloads include **all required printed parts for one panel**, at **
 - [Download the complete master STL](ARC-210-Complete-Print-Set-All-17.stl)
 - [Download the complete master 3MF with 17 separate objects](ARC-210-Complete-Print-Set-All-17.3mf)
 
-**I have printed all of these parts at 100% scale, and all passed their test fit**, including the display bracket and both spacer designs. The complete nine-knob layout has also been printed and test-fitted. This expanded 17-part arrangement is new; I have not printed all 17 parts together in this arrangement yet.
+**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting.** I consider the current STL designs final. Please keep checking [Project Updates](../Docs/Project-Updates.md) for changes.
 
 The master layout measures approximately **187 × 117 mm**, with at least **8 mm clearance** between parts. It preserves each source part’s geometry and orientation and places every part on Z=0. Print one complete set at **100% scale**. Check your sliced preview, bed size, support needs, and space for brims or skirts. The 3MF uses millimeters and contains geometry only, without printer or filament settings. Individual files and the knob-only layouts remain available below.
 

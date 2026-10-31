@@ -2,14 +2,16 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 8:26 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 8:28 PM MDT (America/Denver)**
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **October 30, 2026 at 8:25 PM MDT — Complete 17-part master print set released**
 
-I’ve added **one display bracket, six rotary encoder spacers, and one SQL shaft spacer** to the nine current knobs in the new master [STL](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [3MF](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf): **17 parts total, printed at 100% scale**. **I have printed all current STL parts and the complete nine-knob layout at 100% scale, and all passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](Project-Updates.md) for any changes. The expanded 17-part arrangement has not been printed together yet. See the [master print instructions](../Supporting%20STL%27s/README.md#complete-17-part-print-set) for quantities and layout dimensions. The individual downloads and knob-only layouts remain available.
+The complete master [STL](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [3MF](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf) include **all 17 required parts: nine knobs, one display bracket, six encoder spacers, and one SQL shaft spacer**.
+
+**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](Project-Updates.md) for changes. See the [master print instructions](../Supporting%20STL%27s/README.md#complete-17-part-print-set) for quantities and layout dimensions.
 
 **October 30, 2026 at 8:15 PM MDT — Complete nine-knob layout printed and test-fitted**
 
