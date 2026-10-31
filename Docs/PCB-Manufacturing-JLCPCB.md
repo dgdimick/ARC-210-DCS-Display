@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: October 30, 2026 at 11:20 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:22 PM MDT (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -23,7 +23,9 @@ Download each ZIP to your computer and keep it zipped for upload. These are the 
 
 For the simplest ordering route, upload **one design per quote item**. You’ll have four different items in your cart. The Rotary Switch boards all use the same file; you need multiple copies of that design rather than separate designs for each switch.
 
-**Quantity means copies of that design, not complete radio sets.** If the smallest quantity offered is five and you order five of each design, you’ll receive twenty individual boards: five of each of the four designs. One radio uses only the quantities listed above, leaving spares. Check the current minimum and quantity options on each quote.
+**JLCPCB normally defaults to five copies of each PCB design.** Check the selected quantity and the available minimum on each quote before ordering. **Quantity means copies of that design, not complete radio sets.** Ordering five of each of the four designs gives you twenty individual boards; one radio uses five boards, or six with the optional SQL board, leaving spares.
+
+I’d like builders to be able to order just **one complete set for one radio**, rather than five copies of every design. I’m investigating whether a combined manufacturing panel or another ordering option can reduce the extras and delivered cost. A combined panel may still have a five-panel minimum, so putting the designs together does not automatically make a single-set order possible. I’ll document a checked ordering route before recommending it.
 
 ## 2. Upload a manufacturing ZIP
 
