@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 30, 2026 at 10:31 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 10:34 PM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -83,6 +83,14 @@ Refer to the [Button Matrix instructions and connector table](../../PCBs/Button%
 - J1 and J2 are separate four-pin row and column connectors. They connect to the Main Board's eight-pin J2 according to the project's mapping.
 - The large 12 mm opening provides SQL switch pass-through clearance.
 - After soldering, use flush cutters to trim the diode leads and pin-header pins protruding from the **front side of the PCB** so the board can sit flush behind the faceplate. Trim close to the solder joints without cutting into the joints or PCB pads, then remove the clipped pieces before mounting the board.
+
+<p align="center">
+  <a href="../../images/Button-Matrix-Front-Trimmed-Leads.jpg">
+    <img src="../../images/Button-Matrix-Front-Trimmed-Leads.jpg" width="350" alt="Front of the Button Matrix PCB after trimming the protruding diode leads and pin-header pins">
+  </a>
+</p>
+
+*Front of my Button Matrix PCB after trimming the diode leads and pin-header pins. Click the photo to view it full size.*
 
 Button positions and the final v3.1 board fit have been checked. **Pending:** photographed soldering order, manufactured-board assembly, and electrical validation.
 
