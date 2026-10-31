@@ -1,5 +1,7 @@
 # Activity timestamps
 
+Whenever `DCS-BIOS.md` changes, refresh its visible **Last updated** date and time in the same commit. Use the actual current time in `America/Denver`, including the correct MST/MDT abbreviation. Also refresh this timestamp when changing the downloadable setup files under `DCS-BIOS/`, so readers can see when the setup materials change. Keep historical release dates unchanged.
+
 When updating `Project-Updates.md` or `Remaining-Work.md`:
 
 - Refresh that page's visible **Last updated** timestamp using the actual current date and time in `America/Denver`, including the correct MST/MDT abbreviation.
