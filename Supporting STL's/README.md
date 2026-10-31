@@ -27,7 +27,7 @@ Updated October 30, 2026: frequency v10.1, Channel v4.1, and SQL v1.2 are the cu
 | Frequency | 5 | [Freq_Knob_v.10.1.stl](Freq_Knob_v.10.1.stl) | Replaces `Freq_Knob_v.10.stl`; v10 remains available for earlier shaft fits |
 | Mode | 2 | [Mode_Knob_v.4.stl](Mode_Knob_v.4.stl) | Supersedes `Mode Mesh v6.stl`, despite its higher filename number |
 | Channel | 1 | [Channel_Knob_v.4.1.stl](Channel_Knob_v.4.1.stl) | Replaces `Channel_Knob_v.4.stl` |
-| SQL ON/OFF | 1 | [SQL_Knob_v.1.2.stl](SQL_Knob_v.1.2.stl) | Same geometry as Channel v4.1 |
+| SQL ON/OFF | 1 | [SQL_Knob_v.1.2.stl](SQL_Knob_v.1.2.stl) | Same Knob as Channel |
 
 ### Complete nine-knob print layout
 
