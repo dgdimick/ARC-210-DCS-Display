@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: October 30, 2026 at 11:49 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:55 PM MDT (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -10,7 +10,7 @@ I’m not affiliated with JLCPCB. This guide follows its [ordering instructions]
 
 ## Cost comparison and why I’m staying with JLCPCB
 
-I checked the ordering options and prices on **October 30, 2026** to see whether buying exactly one radio’s set would save money. These are **bare-board fabrication estimates excluding shipping, tax, VAT, tariffs, duties, and other applicable fees**, not paid-order totals or guaranteed quotes. I’ve kept the original currencies rather than implying a fixed exchange rate.
+I checked the ordering options and prices on **October 30, 2026** to see whether buying exactly one radio’s set would save money. These are **bare-board fabrication estimates excluding shipping, handling, tax, VAT, tariffs, duties, and other applicable fees**, not paid-order totals or guaranteed quotes. I’ve kept the original currencies rather than implying a fixed exchange rate.
 
 | Manufacturer | What the order provides | Estimated fabrication cost |
 | --- | --- | ---: |
@@ -50,6 +50,19 @@ My own order for all the boards cost **about US$75**. That is an approximate tot
 My **complete six-board ARC-210 bare-PCB set is US$40, plus shipping, VAT, and any other applicable taxes, duties, or fees**. It includes one Main Board, one Button Matrix, one Rotary Encoder, and three Rotary Switch boards, including the optional SQL board. Ask in [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) about availability and a shipping quote. These are bare boards for you to populate and solder; components, the faceplate, printed parts, and assembly are not included. Assembled-board electrical testing is still pending. Compare the delivered totals for your location rather than assuming a guaranteed saving.
 
 You’re also welcome to order directly from a manufacturer using the files and steps below. I’ll keep sharing the project files and build guidance whichever route you choose.
+
+## Estimated total build cost
+
+Here is the estimated cost of the complete panel using either PCB purchasing option. Both totals use the same component estimates and include the PC Flights faceplate. **All amounts in this table are in US dollars (USD).**
+
+| PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
+| --- | ---: | ---: |
+| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$41.10 | US$250.62–US$283.62 |
+| My complete six-board bare-PCB set for one radio | US$40.00 | US$249.52–US$282.52 |
+
+**Shipping, handling, tax, and VAT are separate and are not included in either total.** Tariffs, duties, and other applicable fees are also extra. These are estimates rather than fixed kit prices; either option rounds to about **US$250–US$285** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
+
+See the [parts-cost breakdown](../parts/README.md#estimated-build-cost) for component prices and allowances. Compare the full delivered totals for your location before choosing how to buy the boards.
 
 ## 1. Choose the files and quantities
 
