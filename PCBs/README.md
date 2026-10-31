@@ -1,6 +1,6 @@
 # ARC-210 PCBs
 
-**Last updated: October 31, 2026 at 1:09 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:16 AM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -38,6 +38,8 @@ Here are both PCB purchasing options using the same component estimates. These t
 **Shipping and handling are separate and are not included in either total.** I won’t add a separate tax charge to my PCB-set price. Other suppliers or delivery authorities may apply their own taxes, VAT, tariffs, duties, or fees; those charges are outside these estimates. These are estimates rather than fixed kit prices; either option rounds to about **US$250–US$285** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
 
 See the [parts-cost breakdown](../parts/README.md#estimated-build-cost) for component prices and allowances, and the [PCB manufacturing guide](../Docs/PCB-Manufacturing-JLCPCB.md) for the JLCPCB quote details. Compare the full delivered totals for your location before choosing how to buy the boards.
+
+**SQL switch replacement pending:** The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](../Docs/Project-Updates.md) and update the [parts list](../parts/README.md).
 
 ## PCB layout — five or six boards
 

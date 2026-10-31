@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: October 31, 2026 at 1:09 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:16 AM MDT (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -85,6 +85,8 @@ Here is the estimated cost of the complete panel using either PCB purchasing opt
 **Shipping and handling are separate and are not included in either total.** I won’t add a separate tax charge to my PCB-set price. Other suppliers or delivery authorities may apply their own taxes, VAT, tariffs, duties, or fees; those charges are outside these estimates. These are estimates rather than fixed kit prices; either option rounds to about **US$250–US$285** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
 
 See the [parts-cost breakdown](../parts/README.md#estimated-build-cost) for component prices and allowances. Compare the full delivered totals for your location before choosing how to buy the boards.
+
+**SQL switch replacement pending:** The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](Project-Updates.md) and update the [parts list](../parts/README.md).
 
 ## 1. Choose the files and quantities
 
