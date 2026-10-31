@@ -36,13 +36,15 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 8:30 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 8:31 PM MDT (America/Denver)**
 
-**October 30, 2026 at 8:25 PM MDT — Complete 17-part master print set released**
+**October 30, 2026 at 8:25 PM MDT — Final 17-part STL set; all parts printed and test-fitted at 100%**
 
-The complete master [STL](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [3MF](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf) include **all 17 required parts: nine knobs, one display bracket, six encoder spacers, and one SQL shaft spacer**.
+The complete master [STL](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [3MF](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf) contain **17 parts**: **5 Frequency knobs v10.1, 2 Mode knobs v4, 1 Channel knob v4.1, 1 SQL knob v1.2, 1 display bracket v5, 6 encoder spacers v1, and 1 SQL shaft spacer v5**. The Channel and SQL knobs are the same knob design.
 
-**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](Docs/Project-Updates.md) for changes. See the [master print instructions](Supporting%20STL%27s/README.md#complete-17-part-print-set) for quantities and layout dimensions.
+**I have printed the complete 17-part layout at 100% scale, and every part passed test fitting. I consider these current STL designs final.** Print one complete set at **100% scale**; no additional scaling is needed with the current hardware.
+
+See the [STL instructions](Supporting%20STL%27s/README.md#complete-17-part-print-set) for individual downloads, the nine-knob-only layout, and slicing guidance. Please keep checking [Project Updates](Docs/Project-Updates.md) for changes.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
