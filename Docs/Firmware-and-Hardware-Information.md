@@ -2,7 +2,7 @@
 
 # Firmware and hardware information
 
-**Last updated: October 31, 2026 at 12:39 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:47 AM MDT (America/Denver)**
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.** See the [aircraft support plan](C-130J-Support.md).
 
@@ -18,7 +18,7 @@ I’ve gathered the wiring, hardware, firmware, and testing resources for my ARC
 
 ## Power and future button lighting
 
-[Read the power and lighting notes](Power-and-Lighting.md) for USB power, the TFT supply, and future button-lighting requirements. **The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign the button board and its associated power and driver circuitry to add it. I have no finished design or release date for that possible future feature.
+**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign it and the Main Board, possibly using four-layer PCBs that cost more. My aim is to reuse the encoders, rotary switches, socket-mounted Teensy, and faceplate, subject to compatibility checks. I have no finished design, confirmed upgrade price, or release date. Upgrade costs are separate from the current estimates and PCB set price. See the [power and lighting notes](Power-and-Lighting.md).
 
 ## PCB layout — five or six boards
 
