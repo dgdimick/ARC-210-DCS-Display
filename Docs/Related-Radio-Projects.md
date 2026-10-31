@@ -2,7 +2,7 @@
 
 # Related radio projects
 
-**Last updated: October 30, 2026 at 9:41 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 9:41:41 PM MDT (America/Denver)**
 
 Alongside the A-10C II ARC-210, I’m planning these radio projects for my DCS cockpit:
 
@@ -12,6 +12,8 @@ Alongside the A-10C II ARC-210, I’m planning these radio projects for my DCS c
 - **[C-130J ARC-210 radio panel](https://github.com/dgdimick/ARC-210-C-130J-DCS-Display):** I plan to reuse my existing ARC-210 faceplate, controls, display, PCBs, and printed parts. This project focuses on C-130J firmware, DCS-BIOS mappings, and the menu system; C-130J compatibility still needs testing.
 
 These projects are still under development. Follow their repositories for plans, firmware, build notes, and progress updates.
+
+**The same ARC-210 hardware should work with both the A-10C II and C-130J**, using the appropriate aircraft-specific firmware and DCS-BIOS mappings. C-130J operation still needs to be implemented and tested.
 
 ## Possible future aircraft support
 
