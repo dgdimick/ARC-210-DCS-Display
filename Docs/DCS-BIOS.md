@@ -14,6 +14,24 @@ The project I use is [DCS-Skunkworks DCS-BIOS](https://github.com/DCS-Skunkworks
 
 Follow the project's installation instructions for your DCS Saved Games folder. Back up existing export files before changing them.
 
+## My Export.lua
+
+My `Export.lua` loads WWT, DCS-BIOS, and SRS. DCS-BIOS is already enabled by the `BIOS.lua` line below.
+
+[Download my Export.lua](https://raw.githubusercontent.com/dgdimick/ARC-210-DCS-Display/master/Docs/DCS-BIOS/Export.lua) (right-click and save the link as `Export.lua`).
+
+```lua
+local wwtlfs=require('lfs')
+dofile(wwtlfs.writedir()..'Scripts/wwt/wwtExport.lua')
+dofile(lfs.writedir() .. [[Scripts\DCS-BIOS\BIOS.lua]])
+
+pcall(function() local dcsSr=require('lfs');dofile(dcsSr.writedir()..[[Mods\Services\DCS-SRS\Scripts\DCS-SimpleRadioStandalone.lua]]); end,nil)
+```
+
+The file belongs in the active DCS Saved Games profile’s `Scripts` folder. Back up your existing `Export.lua` first. This is my setup: the WWT and DCS-BIOS paths must exist, and other builders should merge the DCS-BIOS line into their own file while retaining their other integrations. Do not add the DCS-BIOS loader twice.
+
+**The ARC-210 getter changes below belong in `A-10C.lua`, not `Export.lua`.** This download preserves the loader configuration I supplied; it does not apply those module changes. Fully close and restart DCS after changing either file.
+
 ## TekConnect — the connection app I use
 
 I use [TekConnect](https://github.com/tekcreations/TekConnect) to manage my DCS-BIOS USB serial connections. It shows connection status and offers automatic port connection.
