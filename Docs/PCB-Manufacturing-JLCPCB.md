@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: October 31, 2026 at 1:16 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:28 AM MDT (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -60,6 +60,12 @@ My **complete six-board ARC-210 bare-PCB set is US$40, plus shipping and handlin
 I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price.
 
 You’re also welcome to order directly from a manufacturer using the files and steps below. I’ll keep sharing the project files and build guidance whichever route you choose.
+
+## No access to a 3D printer?
+
+If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping and any applicable VAT**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I want the lack of a printer to be one less obstacle to building your SIMPIT.
+
+Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. See the [printed-parts offer](../parts/README.md#no-access-to-a-3d-printer) for details. Shipping and any applicable VAT are not included in the US$3 price.
 
 ## Estimated total build cost
 
