@@ -65,6 +65,8 @@ I also own three other SIMPIT panels that use USB. I have used them for over **1
 
 The guide includes a [downloadable A-10C.lua with my ARC-210 changes already added](https://raw.githubusercontent.com/dgdimick/ARC-210-DCS-Display/master/Docs/DCS-BIOS/A-10C.lua) for **DCS-BIOS v0.11.8**, so users of that version can follow the replacement instructions instead of editing the code themselves.
 
+For setups without WWT or SRS, I also provide a [DCS-BIOS-only Export.lua download](https://raw.githubusercontent.com/dgdimick/ARC-210-DCS-Display/master/Docs/DCS-BIOS/DCS-BIOS-only/Export.lua). It contains only the DCS-BIOS loader line; follow the guide’s instructions and keep any existing entries for other export tools.
+
 ## Firmware and hardware information
 
 [Open Firmware and hardware information](Docs/Firmware-and-Hardware-Information.md) for wiring, power, PCB layout, parts, printable files, software, firmware loading, and testing guides.
