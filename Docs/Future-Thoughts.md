@@ -2,7 +2,7 @@
 
 # Future thoughts and plans
 
-**Last updated: October 31, 2026 at 12:24 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:27 AM MDT (America/Denver)**
 
 My current plan is to finish the **A-10C II (A-10C2) ARC-210 implementation**, then build and test the **ARC-164**, followed by the **ARC-186**. After those projects, I’ll return to additional aircraft support, starting with the **ARC-210 and C-130J**. Those aircraft extensions are later work, not the current implementation priority. I’m focusing on aircraft with a matching physical radio panel. **This order may change based on user feedback and interest.**
 
@@ -15,6 +15,10 @@ My current plan is to finish the **A-10C II (A-10C2) ARC-210 implementation**, t
 - I may revisit button lighting after completing the **ARC-164 and ARC-186 projects**. This is a future redesign, with no release date or finished Button LED PCB design. It would require suitable translucent buttons and a new Button LED PCB, plus changes to the Main Board to make room for an SCR, its associated discrete components, and a lighting connector. I would also need an external 5 V supply and the associated power-input and protection circuitry. The current USB/3.3 V Main Board does not include this lighting circuitry. I dropped button lighting from the current design because there wasn’t enough clearance with the TFT display, so I would need to resolve that mechanical clearance before adding it.
 
 - I’ve asked PJRC about replacing Micro-USB with USB-C on a future Teensy 4.1 revision and posted on their forum to see what other builders think. A reversible connector would make cable connections behind the radio panels easier. This is a request and community discussion; no connector change has been confirmed.
+
+## Other SIMPIT panels
+
+Once I’ve finished the radio panels, I plan to build other panels for my SIMPIT, including the **SAS and emergency trim panels**. I’ll share those projects as they develop. These are future plans, and my priorities may change based on user feedback and interest.
 
 ## Using DCS trials for future aircraft support
 
