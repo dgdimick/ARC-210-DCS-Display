@@ -2,7 +2,7 @@
 
 # Related radio projects
 
-**Last updated: October 31, 2026 at 12:27 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:32 AM MDT (America/Denver)**
 
 My current plan is to finish the **A-10C II (A-10C2) ARC-210 implementation**, then build and test the **ARC-164**, followed by the **ARC-186**. After those projects, I’ll return to additional aircraft support, starting with the **ARC-210 and C-130J**. Those aircraft extensions are later work, not the current implementation priority. I’m focusing on aircraft with a matching physical radio panel. **This order may change based on user feedback and interest.**
 
@@ -24,6 +24,12 @@ Once I’ve finished the radio panels, I plan to build other panels for my SIMPI
 ## Possible future aircraft support
 
 [View possible future aircraft support](Possible-Future-Aircraft-Support.md) for physical-panel candidates, investigation priorities, and separate DCS-BIOS mapping requirements.
+
+## A central directory for SIMPIT builders
+
+I’d love to see a central GitHub directory linking to projects from SIMPIT builders like me—a place to find panels, code, PCB designs, printable parts, and build guides for SIMPITs of every size. It could link back to each builder’s own repository so the files, updates, and credit stay with the original project. This is an idea I’d like to see happen, rather than a project I’ve committed to building myself.
+
+[Read more about the directory idea](Future-Thoughts.md#a-central-directory-for-simpit-builders). If you know of one or would like to discuss it, let me know in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions).
 
 ## Why I keep using Teensy 4.1s
 
