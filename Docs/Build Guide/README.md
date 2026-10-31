@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 31, 2026 at 1:26 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:27 AM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -54,7 +54,7 @@ The PCBs require mounting stand-offs. Use the [Vibit M3 nylon stand-off kit](htt
 
 ## 2. Print and check the mechanical parts
 
-If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping and any applicable VAT**. The parts will be printed in **gray PETG**. I want the lack of a printer to be one less obstacle to building your SIMPIT.
+If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping and any applicable VAT**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I want the lack of a printer to be one less obstacle to building your SIMPIT.
 
 Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. See the [parts-list offer](../../parts/README.md#no-access-to-a-3d-printer) for details. If you receive a printed set from me, continue with the fit checks below; you don’t need to print another set.
 
