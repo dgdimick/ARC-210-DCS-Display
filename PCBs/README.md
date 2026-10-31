@@ -1,6 +1,6 @@
 # ARC-210 PCBs
 
-**Last updated: October 31, 2026 at 12:41 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:42 AM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -120,6 +120,8 @@ The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.
 **The current Button Matrix PCB v3.2 does not support LED backlighting and would need to be redesigned.** I would need to design a new button board with LED support (Button LED PCB), use suitable light-transmitting buttons, and redesign the power and driver circuitry with the necessary Main Board changes. The current Main Board has no external lighting-power circuit. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished design or release date. The TFT display backlight is separate from this future button-lighting option.
 
 I may need to use **four-layer PCBs for both the replacement Main Board and button board**, which could increase the cost of both replacement boards. I haven’t confirmed the layer requirements or priced that redesign yet. This possible extra cost is not included in the current build estimates or my US$40 bare-PCB set price.
+
+I recommend using **male pin headers on the Teensy and matching female socket strips on the Main Board** so the controller can be unplugged. If I release a compatible replacement Main Board, you could move your existing Teensy to it rather than buy another controller, saving some money. Soldering the Teensy’s header pins directly into the Main Board does not provide that removable connection.
 
 ## Optional SQL On/Off PCB
 
