@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: October 31, 2026 at 1:22 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:34 AM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -24,17 +24,17 @@ Download the [v0.1.1 preview](../Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.
 
 **October 30, 2026 at 11:50 PM MDT — Updated estimated build cost: US$250–US$285**
 
-My estimated parts cost is now **US$250–US$285, including the PC Flights faceplate**. All amounts are in **US dollars (USD)** and **exclude shipping, handling, tax, VAT, and other applicable fees**.
+My estimated parts cost is now **US$250–US$285, including the PC Flights faceplate**. All amounts are in **US dollars (USD)** and **exclude shipping, handling, tax, VAT, and other applicable fees**. For my own sales, if I’m not required to collect VAT, I won’t.
 
 This estimate uses **US$41.10 for JLCPCB fabrication**: five copies of each of the four PCB designs, or **20 bare boards total**, with spare boards after building one panel. Supplier prices and final PCB quotes can change. This replaces the earlier US$120 PCB allowance and US$320–US$365 build estimate.
 
-Using my **US$40 complete six-board bare-PCB set**, the estimated total parts cost is **US$249.52–US$282.52**, compared with **US$250.62–US$283.62** using JLCPCB. Both include the faceplate and use the same component estimates; either rounds to about **US$250–US$285** for budgeting. **Shipping, handling, tax, and VAT are separate**, as are any other applicable fees. All figures are in **US dollars (USD)**.
+Using my **US$40 complete six-board bare-PCB set**, the estimated total parts cost is **US$249.52–US$282.52**, compared with **US$250.62–US$283.62** using JLCPCB. Both include the faceplate and use the same component estimates; either rounds to about **US$250–US$285** for budgeting. **Shipping, handling, tax, and VAT are separate**, as are any other applicable fees. All figures are in **US dollars (USD)**. For my own sales, if I’m not required to collect VAT, I won’t.
 
 See the [parts-cost breakdown](../parts/README.md#estimated-build-cost) and [JLCPCB cost comparison](PCB-Manufacturing-JLCPCB.md).
 
 **October 30, 2026 at 11:46 PM MDT — Complete bare-PCB set available for US$40**
 
-I offer a **complete six-board ARC-210 bare-PCB set for US$40, plus shipping, VAT, and any other applicable taxes, tariffs, duties, or fees**. The set includes **one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards**, including the optional SQL On/Off board.
+I offer a **complete six-board ARC-210 bare-PCB set for US$40, plus shipping, VAT, and any other applicable taxes, tariffs, duties, or fees**. The set includes **one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards**, including the optional SQL On/Off board. For my own sales, if I’m not required to collect VAT, I won’t.
 
 This is a convenient set for one radio, without ordering the manufacturer’s minimum quantity of every design. Any savings depend on the full delivered cost for your location. You’ll supply the components and solder the boards yourself; the price does not include electronics, the faceplate, printed parts, or assembly. Assembled-board electrical testing is still pending.
 
