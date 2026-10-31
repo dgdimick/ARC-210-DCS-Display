@@ -2,7 +2,7 @@
 
 # Possible future aircraft support
 
-**Last updated: October 31, 2026 at 12:22 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:24 AM MDT (America/Denver)**
 
 My current plan is to finish the **A-10C II (A-10C2) ARC-210 implementation**, then build and test the **ARC-164**, followed by the **ARC-186**. After those projects, I’ll return to additional aircraft support, starting with the **ARC-210 and C-130J**. Those aircraft extensions are later work, not the current implementation priority. I’m focusing on aircraft with a matching physical radio panel. **This order may change based on user feedback and interest.**
 
@@ -11,6 +11,14 @@ I’m focusing future support on aircraft with **physical radio control panels**
 ## C-130J ARC-210 — part of the main project
 
 I’m developing **[C-130J ARC-210 support](C-130J-Support.md)** in this repository, reusing the existing panel hardware and one shared code base with aircraft-specific DCS-BIOS mappings and menus. I’m developing automatic aircraft selection so switching between supported aircraft will not require reflashing the Teensy—just fly the aircraft. This support is still being developed and needs implementation and testing. See the [main work list](Remaining-Work.md) for remaining tasks.
+
+## Using DCS trials for future aircraft support
+
+For aircraft I don’t own, I plan to use the [DCS two-week trial program](https://www.digitalcombatsimulator.com/en/include/trial.php), where the module is eligible, to develop and test panel support. That could save me the cost of buying an aircraft just for development. I’ll check trial availability and prepare the mappings, shared firmware, and test plan before activating each trial so I can make the most of the time.
+
+At about four hours a night, a two-week trial would give me roughly **56 hours**. I hope that will be enough for straightforward changes, but missing display exports or other complications could take longer. This is a development plan, not a promise that every aircraft can be finished within one trial.
+
+I’ll also ask owners of those aircraft to help with ongoing testing, particularly after DCS or DCS-BIOS updates, and to report issues once my trial ends. If you own a candidate aircraft and would like to help, let me know in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). My focus remains aircraft with a matching physical radio panel, and priorities may change based on user feedback and interest.
 
 ## Other aircraft to investigate
 
