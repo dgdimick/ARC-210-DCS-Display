@@ -88,6 +88,8 @@ The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **requir
 
 ## Channel and SQL knobs
 
+**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for changes.
+
 [Channel knob v4.1](../Supporting%20STL%27s/Channel_Knob_v.4.1.stl) · [SQL knob v1.2](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl)
 
 **The Channel and SQL knobs are the same knob design.** Channel v4.1 and SQL v1.2 contain identical geometry; I’ve kept separate filenames to make their uses clear. Print **two copies of either file at 100% scale** for one panel: one Channel and one SQL. I printed SQL v1.2 at 100% and checked its fit. The small side hole remains unchanged. Check the fit on each shaft before final assembly.

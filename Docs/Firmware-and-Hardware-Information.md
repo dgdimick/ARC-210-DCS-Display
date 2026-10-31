@@ -38,11 +38,9 @@ See the [parts directory](../parts/) for the [component list (BOM)](../parts/BOM
 
 ## Supporting STL Files
 
-The `Supporting STL's` directory includes:
+**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](Project-Updates.md) for changes.
 
-- Knobs for rotary encoders and rotary switches
-- Mounting hardware for the TFT screen and PCBs
-- Brackets for panel alignment
+The [complete master STL and 3MF](../Supporting%20STL%27s/README.md#complete-17-part-print-set) contain **nine knobs, one display bracket, six encoder spacers, and one SQL shaft spacer**. Print one set at **100% scale**. Individual files remain available.
 
 The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether using the optional switch PCB or wiring directly to the switch’s solder lugs.
 

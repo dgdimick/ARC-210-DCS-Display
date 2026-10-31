@@ -108,3 +108,7 @@ Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discu
 ## Current PCB versions and a friendly starting point
 
 Use Main Board **v1.1**, Button Matrix **v3.2**, Rotary Encoder **v1.4**, and Rotary Switch **v2.0**. The [PCB downloads](../PCBs/README.md#gerber-and-drill-downloads) link to their current manufacturing files. Start with the [build guide](Build%20Guide/README.md), take it one step at a time, and ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) whenever you need a hand. Progress photos and questions are welcome!
+
+## Printed parts
+
+**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** The set includes nine knobs, one display bracket, six encoder spacers, and one SQL shaft spacer. Use the [master print files and quantities](../Supporting%20STL%27s/README.md#complete-17-part-print-set) and keep checking [Project Updates](Project-Updates.md) for changes.

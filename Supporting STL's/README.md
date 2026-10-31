@@ -2,7 +2,7 @@
 
 **Last updated: October 30, 2026**
 
-**The current STL designs are final.** I have printed all current parts and the complete nine-knob layout at **100% scale**, and all passed test fitting. Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
+**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
 **Current STL files — October 30, 2026:** Frequency knob **v10.1** is now available with a larger shaft socket and a successful physical fit test. The other published STL versions remain as listed below. The shaft spacer is **v.5**. Channel **v4.1** and SQL **v1.2** are now available and use the same tested geometry, printed at **100%**.
 

@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 8:28 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 8:30 PM MDT (America/Denver)**
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
@@ -29,23 +29,23 @@ The [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) and [c
 
 I printed **SQL knob v1.2 at 100% scale** and checked its fit. Its shaft socket now matches the Mode v4 socket’s diameter and D-flat dimensions, with the existing SQL socket depth. The outside dimensions and small side hole are unchanged. I’m publishing the same geometry as **Channel v4.1**; the Channel and SQL files are identical.
 
-Download [SQL v1.2](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl) or [Channel v4.1](../Supporting%20STL%27s/Channel_Knob_v.4.1.stl). The updated [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) and [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf) contain **5 Frequency v10.1, 2 Mode v4, 1 Channel v4.1, and 1 SQL v1.2**. Print one complete set at **100% scale** and check each shaft fit. I haven’t physically print-tested the complete combined layout yet.
+Download [SQL v1.2](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl) or [Channel v4.1](../Supporting%20STL%27s/Channel_Knob_v.4.1.stl). The updated [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) and [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf) contain **5 Frequency v10.1, 2 Mode v4, 1 Channel v4.1, and 1 SQL v1.2**. Print one complete set at **100% scale** and check each shaft fit. At the time of this entry, I had not printed the complete combined layout. The current 17-part layout has since been printed at 100%, passed test fitting, and is considered final.
 
 **October 30, 2026 at 6:38 PM MDT — Complete nine-knob STL and 3MF released**
 
-The combined print files now include **all nine knobs: 5 Frequency v10.1, 2 Mode v4, 1 Channel v4, and 1 SQL v1.1**. Download the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf) and print **one complete set at 100% scale**. The 3MF contains nine separate objects. Channel and SQL use identical knob geometry; no extra SQL print is needed with this set. I haven’t physically print-tested the complete combined layout yet.
+The combined print files now include **all nine knobs: 5 Frequency v10.1, 2 Mode v4, 1 Channel v4, and 1 SQL v1.1**. Download the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf) and print **one complete set at 100% scale**. The 3MF contains nine separate objects. Channel and SQL use identical knob geometry; no extra SQL print is needed with this set. At the time of this entry, I had not printed the complete combined layout. The current 17-part layout has since been printed at 100%, passed test fitting, and is considered final.
 
 **October 30, 2026 at 11:39 AM MDT — Updated Channel and SQL knobs released**
 
 I printed the corrected SQL knob at **100% scale** and checked its fit. I’m publishing it as **Channel knob v4** and **SQL knob v1.1**. **They are the same knob design with identical geometry: print two copies of either file, one for each control.**
 
-Only the shaft socket is enlarged to **107% of the original XY dimensions**; the outside diameter, height, and small radial hole retain their original dimensions. Download [Channel v4](../Supporting%20STL%27s/Channel_Knob_v.4.stl) or [SQL v1.1](../Supporting%20STL%27s/SQL_Knob_v.1.1.stl) and print at **100%**. Check the fit on each shaft. I’ve updated the combined eight-knob STL and 3MF with Channel v4; print one additional Channel/SQL knob separately for SQL. I haven’t physically print-tested the complete combined layout yet.
+Only the shaft socket is enlarged to **107% of the original XY dimensions**; the outside diameter, height, and small radial hole retain their original dimensions. Download [Channel v4](../Supporting%20STL%27s/Channel_Knob_v.4.stl) or [SQL v1.1](../Supporting%20STL%27s/SQL_Knob_v.1.1.stl) and print at **100%**. Check the fit on each shaft. I’ve updated the combined eight-knob STL and 3MF with Channel v4; print one additional Channel/SQL knob separately for SQL. At the time of this entry, I had not printed the complete combined layout. The current 17-part layout has since been printed at 100%, passed test fitting, and is considered final.
 
 **October 30, 2026 at 10:24 AM MDT — Frequency knob v10.1 released; shaft fit tested**
 
 I’ve printed **frequency knob v10.1** and checked that it fits my encoder shaft. I enlarged only the shaft socket to **102% of v10’s original XY size**, keeping the outside dimensions and height unchanged. **Print v10.1 at 100% slicer scale.**
 
-Download [Freq_Knob_v.10.1.stl](../Supporting%20STL%27s/Freq_Knob_v.10.1.stl). I’ve also updated the combined eight-knob STL and 3MF to include five v10.1 frequency knobs, along with the existing two mode knobs and one channel knob. I recommend printing one knob to check the shaft fit before printing all five. The individual knob’s fit is tested; I haven’t physically print-tested the complete combined layout yet. The older v10 file remains available for earlier shaft fits.
+Download [Freq_Knob_v.10.1.stl](../Supporting%20STL%27s/Freq_Knob_v.10.1.stl). I’ve also updated the combined eight-knob STL and 3MF to include five v10.1 frequency knobs, along with the existing two mode knobs and one channel knob. I recommend printing one knob to check the shaft fit before printing all five. The individual knob’s fit is tested; At the time of this entry, I had not printed the complete combined layout. The current 17-part layout has since been printed at 100%, passed test fitting, and is considered final. The older v10 file remains available for earlier shaft fits.
 
 **October 30, 2026 at 3:25 AM MDT — Button Matrix v3.2 manufacturing release**
 

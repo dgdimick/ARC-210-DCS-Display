@@ -12,7 +12,7 @@ This guide covers the ARC-210 panel using one Teensy 4.1, a 3.5-inch ILI9488 SPI
 | Rotary Encoder PCB v1.4 | Final design; physical fit confirmed; manufacturing files published |
 | Rotary Switch PCB v2.0 | Final design; physical fit confirmed; manufacturing files published |
 | Main Board v1.1 | Gerber/drill files published; October 29 ERC/DRC and parity checks pass under saved settings; physical fit confirmed October 29, 2026; final review, current verification and assembled-board testing pending |
-| Printed parts | Published knobs, bracket, and spacers available; Channel v4.1 and SQL v1.2 available; same knob design, print at 100% |
+| Printed parts | All 17 current STL parts printed at 100%, passed test fitting, and considered final |
 | Electrical testing | Combined breadboard hardware test confirmed; assembled manufactured-board testing pending |
 | Radio firmware | Menu/display preview available; complete physical-control integration and final in-DCS validation pending |
 
@@ -35,13 +35,15 @@ The PCBs require mounting stand-offs. Use the [Vibit M3 nylon stand-off kit](htt
 
 ## 2. Print and check the mechanical parts
 
-Use the [Supporting STL instructions](../../Supporting%20STL%27s/README.md) for revision and fit notes.
+**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](../Project-Updates.md) for changes.
+
+Use the [Supporting STL instructions](../../Supporting%20STL%27s/README.md#complete-17-part-print-set) for the complete master STL/3MF, revision details, and fit notes.
 
 | Part | Quantity / action |
 | --- | --- |
-| [Frequency knob v.10.1](../../Supporting%20STL%27s/Freq_Knob_v.10.1.stl) | Print for the frequency controls; confirm fit on each shaft |
-| [Mode knob v.4](../../Supporting%20STL%27s/Mode_Knob_v.4.stl) | Print for the Mode control |
-| [Channel knob v.4.1](../../Supporting%20STL%27s/Channel_Knob_v.4.1.stl) | Print for the Channel control |
+| [Frequency knob v.10.1](../../Supporting%20STL%27s/Freq_Knob_v.10.1.stl) | Print five at 100%; confirm fit on each shaft |
+| [Mode knob v.4](../../Supporting%20STL%27s/Mode_Knob_v.4.stl) | Print two at 100% |
+| [Channel knob v.4.1](../../Supporting%20STL%27s/Channel_Knob_v.4.1.stl) | Print one at 100% |
 | [TFT bracket v.5](../../Supporting%20STL%27s/Deep_Bracket_v.5.stl) | Print one |
 | [Rotary Encoder spacer v.1](../../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl) | **Print six**, one per encoder, to center the threads in the faceplate holes |
 | [SQL shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) | **Print one; required in all installations** to support the longer SQL On/Off switch shaft |
@@ -51,7 +53,7 @@ The SQL shaft spacer is required whether using the optional SQL PCB or wiring di
 
 **The Channel and SQL knobs are the same knob design.** Channel v4.1 and SQL v1.2 contain identical geometry; I’ve kept separate filenames to make their uses clear. Print **two copies of either file at 100% scale** for one panel: one Channel and one SQL. I printed SQL v1.2 at 100% and checked its fit. The small side hole remains unchanged. Check the fit on each shaft before final assembly.
 
-Dry-fit printed parts before permanent assembly. The Supporting STL README records earlier knob-scaling experience; printer tolerances and current revisions need their own fit check. **Pending:** illustrated printing settings and a complete knob-to-control installation chart.
+Dry-fit printed parts before permanent assembly. All current files print at 100% with the current hardware. Printer tolerances and shaft sizes vary, so check the fit on your own hardware. **Pending:** illustrated printing settings and a complete knob-to-control installation chart.
 
 ## 3. Order the finalized control PCBs
 
