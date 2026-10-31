@@ -2,11 +2,19 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 11:46 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:50 PM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
+
+**October 30, 2026 at 11:50 PM MDT — Updated estimated build cost: US$250–US$285**
+
+My estimated parts cost is now **US$250–US$285, including the PC Flights faceplate**. All amounts are in **US dollars (USD)** and **exclude shipping, handling, tax, VAT, and other applicable fees**.
+
+This estimate uses **US$41.10 for JLCPCB fabrication**: five copies of each of the four PCB designs, or **20 bare boards total**, with spare boards after building one panel. Supplier prices and final PCB quotes can change. This replaces the earlier US$120 PCB allowance and US$320–US$365 build estimate.
+
+See the [parts-cost breakdown](../parts/README.md#estimated-build-cost) and [JLCPCB cost comparison](PCB-Manufacturing-JLCPCB.md).
 
 **October 30, 2026 at 11:46 PM MDT — Complete bare-PCB set available for US$40**
 

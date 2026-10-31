@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — October 30, 2026
 
-**Last updated: October 30, 2026 at 11:49 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:50 PM MDT (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -38,15 +38,15 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 11:46 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:50 PM MDT (America/Denver)**
 
-**October 30, 2026 at 11:46 PM MDT — Complete bare-PCB set available for US$40**
+**October 30, 2026 at 11:50 PM MDT — Updated estimated build cost: US$250–US$285**
 
-I offer a **complete six-board ARC-210 bare-PCB set for US$40, plus shipping, VAT, and any other applicable taxes, tariffs, duties, or fees**. The set includes **one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards**, including the optional SQL On/Off board.
+My estimated parts cost is now **US$250–US$285, including the PC Flights faceplate**. All amounts are in **US dollars (USD)** and **exclude shipping, handling, tax, VAT, and other applicable fees**.
 
-This is a convenient set for one radio, without ordering the manufacturer’s minimum quantity of every design. Any savings depend on the full delivered cost for your location. You’ll supply the components and solder the boards yourself; the price does not include electronics, the faceplate, printed parts, or assembly. Assembled-board electrical testing is still pending.
+This estimate uses **US$41.10 for JLCPCB fabrication**: five copies of each of the four PCB designs, or **20 bare boards total**, with spare boards after building one panel. Supplier prices and final PCB quotes can change. This replaces the earlier US$120 PCB allowance and US$320–US$365 build estimate.
 
-[Contact me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to check availability and shipping. See the [PCB purchasing and manufacturing guide](Docs/PCB-Manufacturing-JLCPCB.md) for the options and cost comparison.
+See the [parts-cost breakdown](parts/README.md#estimated-build-cost) and [JLCPCB cost comparison](Docs/PCB-Manufacturing-JLCPCB.md).
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
