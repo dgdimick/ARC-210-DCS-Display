@@ -1,6 +1,6 @@
 # ARC-210 Documentation
 
-**Last updated: October 31, 2026 at 12:20 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:36 AM MDT (America/Denver)**
 
 These notes explain the choices behind my ARC-210 build and help you find your way around the wiring and hardware. If something is unclear, feel free to ask in Discussions.
 
@@ -91,7 +91,7 @@ The painted buttons supplied with the PC Flights panel used for this build are o
 
 The Teensy is powered by USB, and TFT VCC connects directly to the Teensy's 3.3 V supply. The external protected 5 V input, Main Board JP1 power selector, and C5/C6 TFT supply capacitors have been removed. C1/C2 and R1/R2 remain as rotary-input filters. The TFT backlight uses GPIO 4. Use a USB Micro-B data cable for power, programming, and USB communications.
 
-Future button lighting would require suitable light-transmitting buttons, a separate power and driver design, a revised Main Board, and a new Button LED PCB. I’m leaving this for later and prioritizing the other radio projects. Button-lighting LEDs are not part of the current build or parts estimate.
+**The current Button Matrix PCB v3.2 does not support LED backlighting and would need to be redesigned.** Adding button lighting would require a new button board with LED support (Button LED PCB), suitable light-transmitting buttons, and a separate power and driver design with the necessary Main Board changes. The current Main Board has no external lighting-power circuit. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished design or release date. The TFT display backlight is separate from this future button-lighting option. Button-lighting LEDs are not part of the current build or parts estimate.
 
 ## Optional SQL On/Off PCB
 

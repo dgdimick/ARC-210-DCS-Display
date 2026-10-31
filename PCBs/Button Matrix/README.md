@@ -1,6 +1,6 @@
 # ARC-210 Button Matrix PCB
 
-**Last updated: October 31, 2026 at 12:35 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:36 AM MDT (America/Denver)**
 
 **October 30, 2026 — v3.2 released:** Removed the duplicate approximately 13.38 mm Edge.Cuts circle at H3; the intended opening remains a **12.0 mm non-plated hole**. Board and schematic revisions and the silkscreen are now **3.2**. I moved H3’s reference label clear of the hole’s solder-mask opening. There are no electrical changes. Gerbers and drills were freshly exported with KiCad 10.0.7; fresh ERC/DRC checks report zero violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. Use the [v3.2 manufacturing ZIP](Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) for new orders.
 
@@ -100,7 +100,7 @@ KiCad 10.0.7 checks run October 27, 2026 reported **zero ERC violations, zero DR
 
 The PC Flights panel buttons used for this build are painted and opaque, so light will not pass through them to illuminate their legends. This design has no button-lighting LEDs.
 
-A future lighting option would need suitable light-transmitting replacement buttons, a new Button LED PCB, and a revised Master PCB. It would require a separately designed power supply and driver circuit; the current USB/3.3 V Main Board no longer includes the former protected 5 V input. The ARC-164 and ARC-186 projects will be completed before that option is revisited.
+**The current Button Matrix PCB v3.2 does not support LED backlighting and would need to be redesigned.** Adding button lighting would require a new button board with LED support (Button LED PCB), suitable light-transmitting buttons, and a separate power and driver design with the necessary Main Board changes. The current Main Board has no external lighting-power circuit. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished design or release date. The TFT display backlight is separate from this future button-lighting option.
 
 ## Build cost and community
 
