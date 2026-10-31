@@ -72,6 +72,19 @@ I also own three other SIMPIT panels that use USB. I have used them for over **1
 
 Follow the guide before replacing files.
 
+## Estimated total build cost
+
+Both options include the PC Flights faceplate and use the same component estimates. **All amounts are in US dollars (USD).**
+
+| PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
+| --- | ---: | ---: |
+| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$41.10 | US$250.62–US$283.62 |
+| My complete six-board bare-PCB set for one radio | US$40.00 | US$249.52–US$282.52 |
+
+**Shipping, handling, tax, and VAT are separate and are not included in either total.** Tariffs, duties, and other applicable fees are also extra. These are estimates rather than fixed kit prices; either option rounds to about **US$250–US$285** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
+
+See the [parts-cost breakdown](parts/README.md#estimated-build-cost) for component prices and allowances, and the [PCB manufacturing guide](Docs/PCB-Manufacturing-JLCPCB.md) for quote details. Compare the full delivered totals for your location.
+
 ## Buy a complete set of bare PCBs
 
 I offer a **complete six-board ARC-210 bare-PCB set for US$40, plus shipping, VAT, and any other applicable taxes, duties, or fees**. The set includes **one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards**, including the optional SQL On/Off board.
