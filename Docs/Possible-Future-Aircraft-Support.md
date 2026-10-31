@@ -2,13 +2,13 @@
 
 # Possible future aircraft support
 
-**Last updated: October 30, 2026 at 11:14 PM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:10 AM MDT (America/Denver)**
 
 I’m focusing future support on aircraft with **physical radio control panels** that match my hardware, so the panel will be useful to builders flying those aircraft. I’ll compare the controls and displays as well as the radio model before deciding which aircraft to support.
 
 ## C-130J ARC-210 — part of the main project
 
-I’m developing **[C-130J ARC-210 support](C-130J-Support.md)** in this repository, reusing the existing panel hardware with aircraft-specific firmware, DCS-BIOS mappings, and menus. Implementation and testing remain pending; see the [main work list](Remaining-Work.md) for remaining tasks.
+I’m developing **[C-130J ARC-210 support](C-130J-Support.md)** in this repository, reusing the existing panel hardware and one shared code base with aircraft-specific DCS-BIOS mappings and menus. I’m developing automatic aircraft selection so switching between supported aircraft will not require reflashing the Teensy—just fly the aircraft. This support is still being developed and needs implementation and testing. See the [main work list](Remaining-Work.md) for remaining tasks.
 
 ## Other aircraft to investigate
 

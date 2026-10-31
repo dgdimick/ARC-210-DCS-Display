@@ -2,7 +2,7 @@
 
 # DCS-BIOS setup — step by step
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:10 AM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use the actual current America/Denver date and time, including MST or MDT. -->
 
@@ -214,4 +214,4 @@ For testing without DCS, see my [bench-testing guide](Bench-Testing-App.md). Dis
 
 Updates may replace `A-10C.lua`. Back up your files, install the update, and check the two blocks from Step 4 again. If you move beyond v0.11.8, use the manual edits on the new version’s file rather than copying my v0.11.8 replacement over it. Make only the needed `return`-line changes, then fully restart DCS and retest.
 
-Each aircraft and radio instance needs the correct DCS-BIOS mappings and compatible firmware. These instructions do not establish support for additional aircraft or complete the planned ARC-164 and ARC-186 builds.
+Each aircraft and radio instance needs the correct DCS-BIOS mappings. For the ARC-210, I’m developing one shared code base that will automatically select the mappings for the aircraft you fly, without reflashing the Teensy when switching between supported aircraft. This support is still being developed and tested; these instructions do not make it available yet or complete the planned ARC-164 and ARC-186 builds.
