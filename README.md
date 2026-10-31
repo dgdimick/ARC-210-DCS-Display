@@ -24,7 +24,7 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Items that need to be completed
 
-**Last updated: October 31, 2026 at 1:22 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:37 AM MDT (America/Denver)**
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
@@ -107,7 +107,7 @@ Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Displ
 
 I offer a **complete six-board ARC-210 bare-PCB set for US$40, plus shipping and handling**. The set includes **one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards**, including the optional SQL On/Off board.
 
-I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price.
+I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. For VAT on my PCB sets, I’ll only collect it if required. If I’m not required to collect VAT, I won’t. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price.
 
 I’m offering this as a **convenient complete set for one radio**: you get the boards you need without managing four separate PCB design uploads or ordering the manufacturer’s minimum quantity of every design. **Any savings depend on your location, shipping, handling, tax, VAT, tariffs, and other applicable fees**, so compare the full delivered totals. I’m not promising that my set will always be cheaper than ordering directly. **You’ll supply the components and solder the boards yourself**; the price is for bare PCBs, not an assembled radio, electronics, faceplate, or printed parts. Assembled-board electrical testing is still pending. For my own sales, if I’m not required to collect VAT, I won’t.
 

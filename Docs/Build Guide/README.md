@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 31, 2026 at 1:34 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:37 AM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -82,7 +82,7 @@ Dry-fit printed parts before permanent assembly. All current files print at 100%
 
 **You can buy a complete six-board set of bare PCBs from me for US$40, plus shipping and handling.** The set includes one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards, including the optional SQL board. You’ll supply the components and solder the boards yourself; the price does not include electronics, the faceplate, printed parts, or assembly. [Contact me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to check availability and shipping. You’re also welcome to order directly from JLCPCB using the steps below.
 
-I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price.
+I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. For VAT on my PCB sets, I’ll only collect it if required. If I’m not required to collect VAT, I won’t. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price.
 
 I’m offering this as a **convenient complete set for one radio**: you get the boards you need without managing four separate PCB design uploads or ordering the manufacturer’s minimum quantity of every design. **Any savings depend on your location, shipping, handling, tax, VAT, tariffs, and other applicable fees**, so compare the full delivered totals. I’m not promising that my set will always be cheaper than ordering directly. For my own sales, if I’m not required to collect VAT, I won’t.
 
