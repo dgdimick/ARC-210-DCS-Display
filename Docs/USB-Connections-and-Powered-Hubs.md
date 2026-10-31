@@ -10,7 +10,7 @@ When I started the ARC-210 project, I rewired my SIMPIT. **I currently run all 1
 
 ## Why I’m staying with USB
 
-I use [TekConnect](https://github.com/tekcreations/TekConnect) to manage my DCS-BIOS USB serial connections. It shows connection status and offers automatic port connection. The Windows application is available on the [TekConnect releases page](https://github.com/tekcreations/TekConnect/releases).
+See my [DCS-BIOS setup and connection guide](DCS-BIOS.md) for the connection software I use, TekConnect downloads, and radio export requirements.
 
 RS-485 can let several panel controllers share one connection to the PC, reducing USB ports and COM ports. It also adds transceivers, bus wiring, termination, addressing, and a master interface. My existing cockpit devices would still need USB, so I don’t see enough benefit to add that complexity for these radios.
 

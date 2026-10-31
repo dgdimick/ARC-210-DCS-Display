@@ -56,7 +56,7 @@ All STL files are intended to be print-ready for FDM printers using a 0.4 mm noz
 
 ### DCS-BIOS connections
 
-I use [TekConnect](https://github.com/tekcreations/TekConnect) to manage my DCS-BIOS USB serial connections. It provides connection status and an option to connect ports automatically. Download the Windows application from the [TekConnect releases page](https://github.com/tekcreations/TekConnect/releases).
+[Read my DCS-BIOS setup and connection guide](DCS-BIOS.md) for the DCS-Skunkworks project, TekConnect downloads, and the ARC-210 export changes.
 
 ## Why I had to use a Teensy
 
