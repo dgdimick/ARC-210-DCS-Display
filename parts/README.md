@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: October 31, 2026 at 1:24 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:26 AM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -182,9 +182,9 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
 
 ## No access to a 3D printer?
 
-If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$1 (one US dollar), plus shipping and any applicable VAT**. The parts will be printed in **gray PETG**. I want the lack of a printer to be one less obstacle to building your SIMPIT.
+If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping and any applicable VAT**. The parts will be printed in **gray PETG**. I want the lack of a printer to be one less obstacle to building your SIMPIT.
 
-Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. This is an alternative to printing the parts yourself; shipping and any applicable VAT are not included in the US$1 price. The build-cost table above uses a filament allowance for self-printing.
+Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. This is an alternative to printing the parts yourself; shipping and any applicable VAT are not included in the US$3 price. The build-cost table above uses a filament allowance for self-printing.
 
 ## Complete master print set
 

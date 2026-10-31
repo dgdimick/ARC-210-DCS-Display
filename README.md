@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — October 31, 2026
 
-**Last updated: October 31, 2026 at 1:24 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:26 AM MDT (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -94,6 +94,12 @@ Both options include the PC Flights faceplate and use the same component estimat
 **Shipping and handling are separate and are not included in either total.** I won’t add a separate tax charge to my PCB-set price. Other suppliers or delivery authorities may apply their own taxes, VAT, tariffs, duties, or fees; those charges are outside these estimates. These are estimates rather than fixed kit prices; either option rounds to about **US$250–US$285** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
 
 See the [parts-cost breakdown](parts/README.md#estimated-build-cost) for component prices and allowances, and the [PCB manufacturing guide](Docs/PCB-Manufacturing-JLCPCB.md) for quote details. Compare the full delivered totals for your location.
+
+## No access to a 3D printer?
+
+If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping and any applicable VAT**. The parts will be printed in **gray PETG**. I want the lack of a printer to be one less obstacle to building your SIMPIT.
+
+Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. See the [printed-parts offer](parts/README.md#no-access-to-a-3d-printer) for details.
 
 ## Buy a complete set of bare PCBs
 

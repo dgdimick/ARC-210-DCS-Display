@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 31, 2026 at 1:18 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:26 AM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -53,6 +53,10 @@ The PCBs require mounting stand-offs. Use the [Vibit M3 nylon stand-off kit](htt
 **SQL switch replacement pending:** The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](../Project-Updates.md) and update the [parts list](../../parts/README.md).
 
 ## 2. Print and check the mechanical parts
+
+If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping and any applicable VAT**. The parts will be printed in **gray PETG**. I want the lack of a printer to be one less obstacle to building your SIMPIT.
+
+Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. See the [parts-list offer](../../parts/README.md#no-access-to-a-3d-printer) for details. If you receive a printed set from me, continue with the fit checks below; you don’t need to print another set.
 
 **The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Project-Updates.md) for changes.
 
