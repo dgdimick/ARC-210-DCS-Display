@@ -1,8 +1,14 @@
 # ARC-210 firmware source
 
-**Last updated: October 31, 2026 at 12:20 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:49 AM MDT (America/Denver)**
 
 I’ve included my Master_Program source and ARC210_Display library snapshot here so the startup information and radio display code can be built together. The current build is **v0.1.1 Preview**, for **A-10C2 only**. C-130J and automatic aircraft switching are still in development.
+
+## Sharing code and improvements
+
+My main firmware code is shared under the [MIT License](../../../Docs/LICENSE-MIT.txt), and I’m happy to provide it to anyone who asks. If you adapt it or add improvements, I’d love to work with you and bring useful changes back into this project so other builders—and my other panel projects—can benefit too.
+
+Please share your changes through a pull request or get in touch in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). Contributing changes back is welcome, but it isn’t an extra condition of the MIT License. Third-party code keeps its own license.
 
 ## Version and startup labels
 
