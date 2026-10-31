@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: October 30, 2026 at 11:02 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:12 PM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -150,6 +150,8 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
 **The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
 The [master STL](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [master 3MF](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf) contain **17 parts**: all nine knobs, **one display bracket, six encoder spacers, and one SQL shaft spacer**. Print one set at **100% scale**. I have printed the complete 17-part layout at **100% scale**, and all parts passed test fitting. See the [master layout notes](../Supporting%20STL%27s/README.md#complete-17-part-print-set) for dimensions and slicing guidance.
+
+**Master downloads checked — October 30, 2026:** I checked the master STL and 3MF and confirmed that both include **Channel v4.2 and SQL v1.2, with all 17 parts at 100% scale**. The knob geometry matches the individual STL downloads, the 3MF uses millimeter units with no scaling applied, and the master STL matches the 17-part 3MF geometry. This is a file check; the replacement Channel v4.2 was physically test-fitted separately from the earlier complete-layout print.
 
 ## Required 3D-printed knobs
 
