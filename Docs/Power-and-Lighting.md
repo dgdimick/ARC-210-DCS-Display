@@ -2,7 +2,7 @@
 
 # Power and future button lighting
 
-**Last updated: October 31, 2026 at 12:47 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:52 AM MDT (America/Denver)**
 
 The painted buttons supplied with the PC Flights panel used for this build are opaque: light will not pass through them, so LEDs behind them would not illuminate their legends. Future backlighting would also require suitable light-transmitting replacement buttons.
 
@@ -10,6 +10,6 @@ The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.
 
 **The current Button Matrix PCB v3.2 does not support LED backlighting and would need to be redesigned.** I would need to design a new button board with LED support (Button LED PCB), use suitable light-transmitting buttons, and redesign the power and driver circuitry with the necessary Main Board changes. The current Main Board has no external lighting-power circuit. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished design or release date. The TFT display backlight is separate from this future button-lighting option.
 
-I may need **four-layer PCBs for both the replacement Main Board and button board**, increasing their cost. I haven’t confirmed the layer requirements or pricing; any upgrade costs are separate from the current build estimates and my US$40 bare-PCB set.
+I may need **four-layer PCBs for both the replacement Main Board and button board**, increasing their cost. I haven’t confirmed the layer requirements or pricing; any upgrade costs are separate from the current build estimates and my current bare-PCB set.
 
 My aim is to reuse the **rotary encoders, rotary switches, socket-mounted Teensy, faceplate, and other compatible parts outside the two replacement boards**. I still need to check compatibility during the redesign. Male Teensy headers and matching Main Board sockets would let you move the controller to a compatible replacement board. Illuminated legends would need suitable light-transmitting buttons.

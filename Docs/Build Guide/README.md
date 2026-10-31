@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 31, 2026 at 1:45 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:52 AM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -54,9 +54,9 @@ The PCBs require mounting stand-offs. Use the [Vibit M3 nylon stand-off kit](htt
 
 ## 2. Print and check the mechanical parts
 
-If you don’t have access to a 3D printer and that is stopping you from building my ARC-210 panel, I’ll send you **one complete 17-part ARC-210 printed set for US$3 (three US dollars), plus shipping**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. I want the lack of a printer to be one less obstacle to building your SIMPIT. Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
+I’m offering a printed ARC-210 set to help builders who don’t have access to a 3D printer. See [ARC-210 parts offers](../ARC-210-Parts-Offers.md#printed-parts) for the current price, colors, availability, and shipping/VAT/import-charge terms.
 
-Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. See the [ARC-210 parts-list offer](../../parts/README.md#no-access-to-a-3d-printer) for details. If you receive a printed set from me, continue with the fit checks below; you don’t need to print another set.
+If you receive a printed set from me, continue with the fit checks below; you don’t need to print another set.
 
 **The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Project-Updates.md) for changes.
 
@@ -80,15 +80,9 @@ Dry-fit printed parts before permanent assembly. All current files print at 100%
 
 ## 3. Order the PCBs
 
-**You can buy a complete six-board ARC-210 set of bare PCBs from me for US$40, plus shipping and handling.** The set includes one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards, including the optional SQL board. You’ll supply the components and solder the boards yourself; the price does not include electronics, the faceplate, printed parts, or assembly. [Contact me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to check availability and shipping. You’re also welcome to order directly from JLCPCB using the steps below.
+You can get a complete bare-PCB set from me or order directly from a manufacturer. See [ARC-210 parts offers](../ARC-210-Parts-Offers.md#bare-pcb-set) for current pricing, contents, and terms. The manufacturing steps below explain the direct-order option.
 
-I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price. Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
-
-I’m offering this as a **convenient complete set for one radio**: you get the boards you need without managing four separate PCB design uploads or ordering the manufacturer’s minimum quantity of every design. **Any savings depend on your location, shipping, handling, tax, VAT, tariffs, and other applicable fees**, so compare the full delivered totals. I’m not promising that my set will always be cheaper than ordering directly. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t.
-
-My own order for all the boards cost **about US$75**. That is an approximate total for my board order, not the manufacturing cost of a single six-board set or a guaranteed quote for another builder. My complete-set price remains **US$40 plus shipping and handling**.
-
-**JLCPCB’s prices shown in my comparison and demo are fabrication prices only. They do not include shipping, handling, tax, VAT, tariffs, duties, or other applicable fees.** Check the full delivered total before comparing a manufacturer order with a board set from me. Assembled-board electrical testing is still pending. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t.
+**JLCPCB’s prices shown in my comparison and demo are fabrication prices only. They do not include shipping, handling, tax, VAT, tariffs, duties, or other applicable fees.** Check the full delivered total before comparing a manufacturer order with a board set from me. Assembled-board electrical testing is still pending.
 
 ### Estimated total build cost
 
@@ -104,14 +98,15 @@ One thing I’m very pleased about is that I’m developing the same ARC-210 pan
 
 I’ll label radio HEX downloads with the aircraft they support and a version number, increasing the version whenever I publish updated firmware so you can tell releases apart. Each new aircraft-support release will retain support for the previously supported aircraft. Adding an aircraft will require loading the updated HEX once, using the same Teensy Loader procedure as the first flash while the panel is connected by USB. After that, switching between aircraft included in that version will not require reflashing. **This cumulative aircraft support and automatic selection are still being developed and tested.**
 
-To help you budget, here are both PCB purchasing options using the same component estimates, including the PC Flights faceplate. **All amounts are in US dollars (USD).**
+To help you budget, here is the JLCPCB option using the component estimates, including the PC Flights faceplate. **All amounts are in US dollars (USD).**
 
 | PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
 | --- | ---: | ---: |
 | JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$41.10 | US$250.62–US$283.62 |
-| My complete six-board ARC-210 bare-PCB set | US$40.00 | US$249.52–US$282.52 |
 
-**Shipping and handling are separate and are not included in either total.** I won’t add a separate tax charge to my PCB-set price. Other suppliers or delivery authorities may apply their own taxes, VAT, tariffs, duties, or fees; those charges are outside these estimates. These are estimates rather than fixed kit prices; either option rounds to about **US$250–US$285** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t.
+For the price and total build estimate using my PCB set, see [ARC-210 parts offers](../ARC-210-Parts-Offers.md#estimated-build-cost-using-my-pcb-set).
+
+**Shipping and handling are separate and are not included in this total.** Other suppliers or delivery authorities may apply their own taxes, VAT, tariffs, duties, or fees; those charges are outside these estimates. These are estimates rather than fixed kit prices; the JLCPCB option rounds to about **US$250–US$285** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
 
 See the [parts-cost breakdown](../../parts/README.md#estimated-build-cost) for the component prices and allowances. Compare the full delivered totals for your location before choosing how to buy the boards.
 
@@ -134,7 +129,7 @@ Review the manufacturer's preview against the project outline and drill informat
 
 **The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign the button board with LED support, use suitable light-transmitting buttons, and make the required Main Board, power, and driver changes. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished backlit button-board design or release date yet. See [Future Thoughts](../Future-Thoughts.md) for the lighting redesign plan.
 
-I may need to use **four-layer PCBs for both the replacement Main Board and button board**, which could increase the cost of both replacement boards. I haven’t confirmed the layer requirements or priced that redesign yet. This possible extra cost is not included in the current build estimates or my US$40 bare-PCB set price.
+I may need to use **four-layer PCBs for both the replacement Main Board and button board**, which could increase the cost of both replacement boards. I haven’t confirmed the layer requirements or priced that redesign yet. This possible extra cost is not included in the current build estimates or my current bare-PCB set price.
 
 I recommend using **male pin headers on the Teensy and matching female socket strips on the Main Board** so the controller can be unplugged. If I release a compatible replacement Main Board, you could move your existing Teensy to it rather than buy another controller, saving some money. Soldering the Teensy’s header pins directly into the Main Board does not provide that removable connection.
 

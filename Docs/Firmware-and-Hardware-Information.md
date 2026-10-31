@@ -2,7 +2,7 @@
 
 # Firmware and hardware information
 
-**Last updated: October 31, 2026 at 1:48 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:52 AM MDT (America/Denver)**
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.** See the [aircraft support plan](C-130J-Support.md).
 
@@ -28,9 +28,7 @@ I’ve gathered the wiring, hardware, firmware, and testing resources for my ARC
 
 ## Parts offers for the ARC-210
 
-If you’re building my ARC-210 panel, I offer a [complete six-board ARC-210 bare-PCB set for US$40](../README.md#buy-a-complete-set-of-bare-pcbs) and a [complete 17-part ARC-210 printed set for US$3](../parts/README.md#no-access-to-a-3d-printer) for builders whose lack of printer access is preventing their build. I’ll print the mounting bracket in black PETG and the remaining parts in gray PETG.
-
-**Both offers are for the ARC-210 only. I don’t currently offer PCB or printed-parts sets for the ARC-164 or ARC-186.** Shipping is separate, with handling also separate for the PCB set. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. Buyers may still owe import VAT, customs duties, or carrier fees, which aren’t included in my prices. Follow the links for current details and contact information.
+See my [ARC-210 PCB and printed-parts offers](ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.**
 
 ## Loading the HEX File onto a Teensy 4.1
 
