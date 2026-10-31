@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: October 31, 2026 at 1:52 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:54 AM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -39,10 +39,6 @@ See the [parts-cost breakdown](../parts/README.md#estimated-build-cost) and [JLC
 **October 30, 2026 at 11:46 PM MDT — Complete bare-PCB set available**
 
 I’m offering a complete bare-PCB set for one ARC-210 panel. See [ARC-210 parts offers](ARC-210-Parts-Offers.md#bare-pcb-set) for the current price, board contents, availability, and shipping/VAT/import-charge terms.
-
-This is a convenient set for one radio, without ordering the manufacturer’s minimum quantity of every design. Any savings depend on the full delivered cost for your location. You’ll supply the components and solder the boards yourself; the price does not include electronics, the faceplate, printed parts, or assembly. Assembled-board electrical testing is still pending.
-
-[Contact me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to check availability and shipping. See the [PCB purchasing and manufacturing guide](PCB-Manufacturing-JLCPCB.md) for the options and cost comparison.
 
 **October 30, 2026 at 10:37 PM MDT — Channel knob v4.2 released; fit confirmed at 100%**
 
