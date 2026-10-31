@@ -1,6 +1,6 @@
 # ARC-210 PCBs
 
-**Last updated: October 31, 2026 at 12:26 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:34 AM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -78,6 +78,8 @@ Each ZIP includes copper, solder-mask, silkscreen, and board-outline Gerbers, a 
 Review the manufacturer's preview before ordering. The Button Matrix's printed fit check confirmed button alignment, and its slightly long edges were shortened for final v3.1. Manufactured-board testing remains pending for all four designs. Existing check exclusions and disabled categories are documented in the individual project READMEs and reports.
 
 ## Button Matrix PCB — version 3.2
+
+**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to design a new button board with LED support, along with suitable light-transmitting buttons and the required Main Board, power, and driver changes. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished backlit button-board design or release date yet. See [Future Thoughts](../Docs/Future-Thoughts.md) for the lighting redesign plan.
 
 **October 30, 2026:** v3.2 removes the duplicate SQL hole outline, retains the 12 mm NPTH, updates revision markings, and moves H3’s reference clear of the mask opening. Fresh KiCad exports and ERC/DRC checks pass under saved settings. No electrical changes; manufactured-board testing remains pending. The v3.1 notes below record the earlier outline and physical-fit work.
 
