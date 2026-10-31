@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: October 31, 2026 at 12:50 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:06 AM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -36,11 +36,13 @@ I’ll label radio HEX downloads with the aircraft they support and a version nu
 
 To help you plan your build, I’ve put together an estimated parts budget of **US$250–US$285 before shipping, handling, tax, VAT, and other applicable fees**, including the PC Flights faceplate. All prices in this parts-cost table are in **US dollars (USD)** so you can convert them to your local currency. The links below point to independent suppliers; the figures are a budgeting guide rather than a kit price.
 
-This is primarily a DIY project. I share the files and build notes to help you make your own panel. You can purchase components from the linked suppliers and print the STL parts yourself or use a printing service. **Contact me in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) about buying one complete set of bare PCBs from me**, as a convenient way to get the boards for one radio without ordering extra copies of every design. The **complete six-board set is US$40, plus shipping, handling, tax, VAT, and any other applicable tariffs, duties, or fees**: one Main Board, one Button Matrix, one Rotary Encoder, and three Rotary Switch boards, including the optional SQL board. Components and assembly are not included. Contact me to confirm availability and shipping. You can also order the boards directly using my [PCB manufacturing guide](../Docs/PCB-Manufacturing-JLCPCB.md). If you’re stuck, I’m happy to help where I can.
+This is primarily a DIY project. I share the files and build notes to help you make your own panel. You can purchase components from the linked suppliers and print the STL parts yourself or use a printing service. **Contact me in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) about buying one complete set of bare PCBs from me**, as a convenient way to get the boards for one radio without ordering extra copies of every design. The **complete six-board set is US$40, plus shipping and handling**: one Main Board, one Button Matrix, one Rotary Encoder, and three Rotary Switch boards, including the optional SQL board. Components and assembly are not included. Contact me to confirm availability and shipping. You can also order the boards directly using my [PCB manufacturing guide](../Docs/PCB-Manufacturing-JLCPCB.md). If you’re stuck, I’m happy to help where I can.
+
+I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price.
 
 I’m offering this as a **convenient complete set for one radio**: you get the boards you need without managing four separate PCB design uploads or ordering the manufacturer’s minimum quantity of every design. **Any savings depend on your location, shipping, handling, tax, VAT, tariffs, and other applicable fees**, so compare the full delivered totals. I’m not promising that my set will always be cheaper than ordering directly.
 
-My own order for all the boards cost **about US$75**. That is an approximate total for my board order, not the manufacturing cost of a single six-board set or a guaranteed quote for another builder. My complete-set price remains **US$40 plus shipping, handling, tax, VAT, and other applicable fees**.
+My own order for all the boards cost **about US$75**. That is an approximate total for my board order, not the manufacturing cost of a single six-board set or a guaranteed quote for another builder. My complete-set price remains **US$40 plus shipping and handling**.
 
 Prices checked October 22, 2026, except the recommended Teensy with headers (October 29) and the JLCPCB fabrication estimate (October 30). The PCB cost uses the **US$41.10 JLCPCB estimate** from my [manufacturing cost comparison](../Docs/PCB-Manufacturing-JLCPCB.md). It covers five copies of each of the four designs—**20 bare boards total**, enough for one panel with spare boards. Small hardware costs remain allowances, and supplier prices can change.
 
@@ -68,7 +70,7 @@ Both options use the same component estimates and include the PC Flights facepla
 | JLCPCB: five copies of each of four designs (20 bare boards) | US$41.10 | US$250.62–US$283.62 |
 | My complete six-board bare-PCB set for one radio | US$40.00 | US$249.52–US$282.52 |
 
-**Shipping, handling, tax, and VAT are separate and are not included in either total.** Tariffs, duties, and other applicable fees are also extra. Compare the delivered totals for your location.
+**Shipping and handling are separate and are not included in either total.** I won’t add a separate tax charge to my PCB-set price. Other suppliers or delivery authorities may apply their own taxes, VAT, tariffs, duties, or fees; those charges are outside these estimates. Compare the delivered totals for your location.
 
 Use a **USB Micro-B data cable** for powering and programming the **Teensy 4.1**. The cable must carry data as well as power; a charge-only cable cannot program the Teensy or carry the panel’s USB communications.
 
