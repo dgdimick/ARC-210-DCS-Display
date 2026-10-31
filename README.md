@@ -57,11 +57,11 @@ See the [STL instructions](Supporting%20STL%27s/README.md#complete-17-part-print
 [Read about the USB connection plan and purchased powered hubs](Docs/USB-Connections-and-Powered-Hubs.md) for why I am using USB instead of RS-485;<br>
 GPIO availability, sharing a Teensy across smaller panels, and expansion using my existing cockpit USB setup.
 
-### DCS-BIOS connections
+I also own three other SIMPIT panels that use USB. I have used them for over **1,000 hours in the past year without any issues**.
+
+## DCS-BIOS
 
 [Read my DCS-BIOS setup and connection guide](Docs/DCS-BIOS.md) for the DCS-Skunkworks project, TekConnect—the app I use to manage my connections—and the ARC-210 export changes.
-
-I also own three other SIMPIT panels that use USB. I have used them for over **1,000 hours in the past year without any issues**.
 
 ## Firmware and hardware information
 
