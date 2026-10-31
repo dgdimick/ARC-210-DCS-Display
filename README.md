@@ -61,11 +61,12 @@ I also own three other SIMPIT panels that use USB. I have used them for over **1
 
 ## DCS-BIOS
 
-[Read my step-by-step DCS-BIOS setup guide](Docs/DCS-BIOS.md) for installation, the required `Export.lua` and ARC-210 `A-10C.lua` file changes, firmware loading, and TekConnect—the app I use to manage my USB serial connections. It also covers testing and troubleshooting.
+[My step-by-step setup guide](Docs/DCS-BIOS.md) covers installation, file changes, and TekConnect—the app I use to manage my connections.
 
-The guide includes a [downloadable A-10C.lua with my ARC-210 changes already added](https://raw.githubusercontent.com/dgdimick/ARC-210-DCS-Display/master/Docs/DCS-BIOS/A-10C.lua) for **DCS-BIOS v0.11.8**, so users of that version can follow the replacement instructions instead of editing the code themselves.
+- [Patched A-10C.lua](https://raw.githubusercontent.com/dgdimick/ARC-210-DCS-Display/master/Docs/DCS-BIOS/A-10C.lua) — ARC-210 changes included; for **DCS-BIOS v0.11.8**.
+- [DCS-BIOS-only Export.lua](https://raw.githubusercontent.com/dgdimick/ARC-210-DCS-Display/master/Docs/DCS-BIOS/DCS-BIOS-only/Export.lua) — for setups without WWT or SRS.
 
-For setups without WWT or SRS, I also provide a [DCS-BIOS-only Export.lua download](https://raw.githubusercontent.com/dgdimick/ARC-210-DCS-Display/master/Docs/DCS-BIOS/DCS-BIOS-only/Export.lua). It contains only the DCS-BIOS loader line; follow the guide’s instructions and keep any existing entries for other export tools.
+Follow the guide before replacing files.
 
 ## Firmware and hardware information
 
