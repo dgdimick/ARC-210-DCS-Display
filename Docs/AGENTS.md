@@ -1,5 +1,7 @@
 # Activity timestamps
 
+Whenever `Firmware-and-Hardware-Information.md` changes, refresh its visible **Last updated** date and time in the same commit. Use the actual current time in `America/Denver`, including the correct MST/MDT abbreviation. Keep historical release and test dates unchanged.
+
 Whenever `Bench-Testing-App.md` changes, refresh its visible **Last updated** date and time in the same commit. Use the actual current time in `America/Denver`, including the correct MST/MDT abbreviation. Keep historical release and test dates unchanged.
 
 Whenever `DCS-BIOS.md` changes, refresh its visible **Last updated** date and time in the same commit. Use the actual current time in `America/Denver`, including the correct MST/MDT abbreviation. Also refresh this timestamp when changing the downloadable setup files under `DCS-BIOS/`, so readers can see when the setup materials change. Keep historical release dates unchanged.
