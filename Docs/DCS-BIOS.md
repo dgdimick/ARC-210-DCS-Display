@@ -2,7 +2,7 @@
 
 # DCS-BIOS setup — step by step
 
-**Last updated: October 31, 2026 at 12:13 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:14 AM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use the actual current America/Denver date and time, including MST or MDT. -->
 
@@ -17,10 +17,10 @@ I use [DCS-Skunkworks DCS-BIOS](https://github.com/DCS-Skunkworks/dcs-bios) to s
 | DCS-BIOS folder | Gets cockpit data from DCS and accepts control commands | Install it in the Saved Games folder used by your copy of DCS |
 | `Scripts/Export.lua` | Tells DCS to start DCS-BIOS and your other export tools | Add one DCS-BIOS loader line, keeping your existing integrations |
 | `DCS-BIOS/lib/modules/aircraft_modules/A-10C.lua` | Defines the A-10 radio data exported by DCS-BIOS | Install my patched v0.11.8 file, or make the two edits yourself |
-| `ARC210_A-10C2_Preview.hex` | Runs the ARC-210 display/menu firmware on the Teensy | Load it with Teensy Loader |
+| `ARC210_A-10C2_v0.1.0_Preview.hex` | Runs the ARC-210 display/menu firmware on the Teensy | Load it with Teensy Loader |
 | TekConnect | Connects DCS-BIOS to the panel's USB COM port—the numbered connection Windows assigns to it | Select and connect the panel's port |
 
-I’ll label radio HEX downloads with the aircraft they support. Each new aircraft-support release will retain support for the previously supported aircraft. Adding an aircraft will require loading the updated HEX once, using the same Teensy Loader procedure as the first flash while the panel is connected by USB. After that, switching between aircraft included in that version will not require reflashing. **This cumulative aircraft support and automatic selection are still being developed and tested.**
+I’ll label radio HEX downloads with the aircraft they support and a version number, increasing the version whenever I publish updated firmware so you can tell releases apart. Each new aircraft-support release will retain support for the previously supported aircraft. Adding an aircraft will require loading the updated HEX once, using the same Teensy Loader procedure as the first flash while the panel is connected by USB. After that, switching between aircraft included in that version will not require reflashing. **This cumulative aircraft support and automatic selection are still being developed and tested.**
 
 **You do not need to edit `BIOS.lua`, change DCS installation files, or put the ARC-210 changes into `Export.lua`.**
 
@@ -176,7 +176,7 @@ Save `A-10C.lua`. Both changes only read the game's display data. The hexadecima
 
 ## 5. Load the ARC-210 firmware
 
-1. Download [ARC210_A-10C2_Preview.hex](../Firmware/Master%20Hex%20Files/ARC210_A-10C2_Preview.hex).
+1. Download [ARC210_A-10C2_v0.1.0_Preview.hex](../Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.1.0_Preview.hex).
 2. Follow the [Teensy Loader instructions](Loading-HEX-Files.md) to put it on the Teensy 4.1.
 3. Read the [firmware notes](../Firmware/Master%20Hex%20Files/README.md) for the current features and limitations.
 
