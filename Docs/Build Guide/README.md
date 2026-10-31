@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 30, 2026 at 11:40 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:42 PM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -75,6 +75,10 @@ Dry-fit printed parts before permanent assembly. All current files print at 100%
 ## 3. Order the PCBs
 
 **You can buy a complete six-board set of bare PCBs from me for US$45, plus shipping, VAT, and any other applicable taxes, tariffs, duties, or fees.** The set includes one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards, including the optional SQL board. You’ll supply the components and solder the boards yourself; the price does not include electronics, the faceplate, printed parts, or assembly. [Contact me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to check availability and shipping. You’re also welcome to order directly from JLCPCB using the steps below.
+
+I’m offering this as a **convenient complete set for one radio**: you get the boards you need without managing four separate PCB design uploads or ordering the manufacturer’s minimum quantity of every design. **Any savings depend on your location, shipping, VAT, tariffs, and other applicable fees**, so compare the full delivered totals. I’m not promising that my set will always be cheaper than ordering directly.
+
+My own order for all the boards cost **about US$75**. That is an approximate total for my board order, not the manufacturing cost of a single six-board set or a guaranteed quote for another builder. My complete-set price remains **US$45 plus shipping, VAT, and other applicable fees**.
 
 **JLCPCB’s prices shown in my comparison and demo are fabrication prices only. They do not include shipping, tax, VAT, tariffs, duties, or other applicable fees.** Check the full delivered total before comparing a manufacturer order with a board set from me. Assembled-board electrical testing is still pending.
 
