@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 31, 2026 at 12:52 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:04 AM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -255,7 +255,7 @@ The current radio HEX is a **display/menu preview**; physical controls do not ye
 
 If you get stuck, tell me which step you’re on, the board version, and what you’re seeing in [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). A clear photo can help me understand the problem. Questions and progress photos are welcome, even if this is your first panel.
 
-I welcome bug reports from anyone using the project—**even tiny bugs are worth reporting**. If something doesn’t work as expected, please let me know in [Issues](https://github.com/dgdimick/ARC-210-DCS-Display/issues) or [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). Tell me which firmware version and board revision you’re using, if applicable, what you did, what you expected, and what happened. Reports about the build instructions are welcome too. Your reports help me improve the project for everyone.
+I welcome bug reports from anyone using the project—**even tiny bugs are worth reporting**. If something doesn’t work as expected, please let me know in the [Bugs discussion section](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/categories/bugs). Tell me which firmware version and board revision you’re using, if applicable, what you did, what you expected, and what happened. Reports about the build instructions are welcome too. Your reports help me improve the project for everyone.
 
 ## Sharing code and improvements
 
