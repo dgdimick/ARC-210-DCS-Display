@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: October 31, 2026 at 1:40 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:45 AM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -36,7 +36,7 @@ I’ll label radio HEX downloads with the aircraft they support and a version nu
 
 To help you plan your build, I’ve put together an estimated parts budget of **US$250–US$285 before shipping, handling, tax, VAT, and other applicable fees**, including the PC Flights faceplate. All prices in this parts-cost table are in **US dollars (USD)** so you can convert them to your local currency. The links below point to independent suppliers; the figures are a budgeting guide rather than a kit price. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t.
 
-This is primarily a DIY project. I share the files and build notes to help you make your own panel. You can purchase components from the linked suppliers and print the STL parts yourself or use a printing service. **Contact me in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) about buying one complete set of bare PCBs from me**, as a convenient way to get the boards for one radio without ordering extra copies of every design. The **complete six-board set is US$40, plus shipping and handling**: one Main Board, one Button Matrix, one Rotary Encoder, and three Rotary Switch boards, including the optional SQL board. Components and assembly are not included. Contact me to confirm availability and shipping. You can also order the boards directly using my [PCB manufacturing guide](../Docs/PCB-Manufacturing-JLCPCB.md). If you’re stuck, I’m happy to help where I can.
+This is primarily a DIY project. I share the files and build notes to help you make your own panel. You can purchase components from the linked suppliers and print the STL parts yourself or use a printing service. **Contact me in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) about buying one complete set of bare PCBs from me**, as a convenient way to get the boards for one radio without ordering extra copies of every design. The **complete six-board ARC-210 set is US$40, plus shipping and handling**: one Main Board, one Button Matrix, one Rotary Encoder, and three Rotary Switch boards, including the optional SQL board. Components and assembly are not included. Contact me to confirm availability and shipping. You can also order the boards directly using my [PCB manufacturing guide](../Docs/PCB-Manufacturing-JLCPCB.md). If you’re stuck, I’m happy to help where I can.
 
 I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price. Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
 
@@ -72,7 +72,7 @@ Both options use the same component estimates and include the PC Flights facepla
 | PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
 | --- | ---: | ---: |
 | JLCPCB: five copies of each of four designs (20 bare boards) | US$41.10 | US$250.62–US$283.62 |
-| My complete six-board bare-PCB set for one radio | US$40.00 | US$249.52–US$282.52 |
+| My complete six-board ARC-210 bare-PCB set | US$40.00 | US$249.52–US$282.52 |
 
 **Shipping and handling are separate and are not included in either total.** I won’t add a separate tax charge to my PCB-set price. Other suppliers or delivery authorities may apply their own taxes, VAT, tariffs, duties, or fees; those charges are outside these estimates. Compare the delivered totals for your location. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t.
 
@@ -184,7 +184,7 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
 
 ## No access to a 3D printer?
 
-If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. I want the lack of a printer to be one less obstacle to building your SIMPIT. Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
+If you don’t have access to a 3D printer and that is stopping you from building my ARC-210 panel, I’ll send you **one complete 17-part ARC-210 printed set for US$3 (three US dollars), plus shipping**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. I want the lack of a printer to be one less obstacle to building your SIMPIT. Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
 
 Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. This is an alternative to printing the parts yourself; shipping and any applicable VAT are not included in the US$3 price. The build-cost table above uses a filament allowance for self-printing. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t.
 
