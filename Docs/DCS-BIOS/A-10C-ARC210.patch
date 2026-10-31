@@ -1,0 +1,29 @@
+--- DCS-BIOS-v0.11.8/A-10C.lua
++++ ARC-210-patched/A-10C.lua
+@@ -1,3 +1,8 @@
++-- Modified October 30, 2026 by Denis Dimick for ARC-210 display support.
++-- Based on DCS-Skunkworks DCS-BIOS v0.11.8; GNU GPL version 3.
++-- Changes: ARC210_VERIFY_WOD_ACTIVE_CHANNEL and ARC210_SELECTED_RT getters.
++-- See README.md and LICENSE-DCS-BIOS.txt accompanying this download.
++
+ module("A_10C", package.seeall)
+ 
+ local A_10C_CDU = require("Scripts.DCS-BIOS.lib.modules.displays.A_10C_CDU")
+@@ -1193,7 +1198,7 @@
+ 	return Functions.coerce_nil_to_string(arc_210_data["modulation_label"])
+ end, 2, "ARC-210 Display", "Modulation (AM/FM)")
+ A_10C:defineString("ARC210_SELECTED_RT", function()
+-	return Functions.coerce_nil_to_string(arc_210_data["txt_RT"])
++	return Functions.coerce_nil_to_string(arc_210_data["txt_RT"] or (arc_210_data["POWER UP LOADER"] and "PWR"))
+ end, 3, "ARC-210 Display", "Selected RT")
+ A_10C:defineString("ARC210_FREQ_KHZ", function()
+ 	return Functions.coerce_nil_to_string(arc_210_data["freq_label_khz"])
+@@ -1208,7 +1213,7 @@
+ 	return Functions.coerce_nil_to_string(arc_210_data["active_channel"])
+ end, 2, "ARC-210 Display", "Active Channel")
+ A_10C:defineString("ARC210_VERIFY_WOD_ACTIVE_CHANNEL", function()
+-	return Functions.coerce_nil_to_string(arc_210_data["active_channel"])
++	return Functions.coerce_nil_to_string(arc_210_data["WOD_segment"] or arc_210_data["HQII_segment"] or arc_210_data["active_oper_date"] or arc_210_data["active_channel"])
+ end, 2, "ARC-210 Display", "Active Channel (WOD Page)")
+ A_10C:defineString("ARC210_TR_PRSET_ACTIVE_CHANNEL", function()
+ 	return Functions.coerce_nil_to_string(arc_210_data["active_channel"])

@@ -12,7 +12,7 @@ I use [DCS-Skunkworks DCS-BIOS](https://github.com/DCS-Skunkworks/dcs-bios) to s
 | --- | --- | --- |
 | DCS-BIOS folder | Gets cockpit data from DCS and accepts control commands | Install it in the Saved Games folder used by your copy of DCS |
 | `Scripts/Export.lua` | Tells DCS to start DCS-BIOS and your other export tools | Add one DCS-BIOS loader line, keeping your existing integrations |
-| `DCS-BIOS/lib/modules/aircraft_modules/A-10C.lua` | Defines the A-10 radio data exported by DCS-BIOS | Replace two existing `return` lines for this ARC-210 firmware |
+| `DCS-BIOS/lib/modules/aircraft_modules/A-10C.lua` | Defines the A-10 radio data exported by DCS-BIOS | Install my patched v0.11.8 file, or make the two edits yourself |
 | `Master_Program.ino.hex` | Runs the ARC-210 display/menu firmware on the Teensy | Load it with Teensy Loader |
 | TekConnect | Connects DCS-BIOS to the panel's USB COM port—the numbered connection Windows assigns to it | Select and connect the panel's port |
 
@@ -37,10 +37,10 @@ Before changing an existing file, copy it somewhere safe outside the DCS-BIOS fo
 
 ## 2. Install DCS-Skunkworks DCS-BIOS
 
-I use [DCS-Skunkworks DCS-BIOS](https://github.com/DCS-Skunkworks/dcs-bios).
+Download [DCS-Skunkworks DCS-BIOS](https://github.com/DCS-Skunkworks/dcs-bios). My ready-to-use `A-10C.lua` download below is based on **v0.11.8**, so use that release if you want to copy the file without editing it.
 
-1. Open the [DCS-BIOS releases page](https://github.com/DCS-Skunkworks/dcs-bios/releases).
-2. Download the `DCS-BIOS_x.y.z.zip` release package and extract it.
+1. Open the [DCS-BIOS v0.11.8 release page](https://github.com/DCS-Skunkworks/dcs-bios/releases/tag/v0.11.8).
+2. Download `DCS-BIOS_v0.11.8.zip` under **Assets** and extract it. For a different version, use its own aircraft file and follow the manual edits in Step 4 instead of copying my complete replacement.
 3. Copy its `DCS-BIOS` folder into your active profile's `Scripts` folder.
 4. Check that this file exists:
 
@@ -80,7 +80,21 @@ You only need the DCS-BIOS loader line for this project. Do not replace your exi
 
 <a id="arc-210-changes-to-the-dcs-bios-export"></a>
 
-## 4. Change two lines in A-10C.lua
+## 4. Add the ARC-210 changes to A-10C.lua
+
+### Option A — download the file with both changes already added
+
+For **DCS-BIOS v0.11.8**, I’ve prepared an `A-10C.lua` containing the two changes below. You don’t need to edit the code yourself.
+
+1. Back up your installed `A-10C.lua` outside the DCS-BIOS folder while DCS is closed.
+2. [Download the patched A-10C.lua](https://raw.githubusercontent.com/dgdimick/ARC-210-DCS-Display/master/Docs/DCS-BIOS/A-10C.lua). Right-click the link and choose **Save link as**, keeping the filename `A-10C.lua`.
+3. Copy it into `Scripts\DCS-BIOS\lib\modules\aircraft_modules\` in your active Saved Games profile, replacing the existing file.
+4. Check that the filename is **A-10C.lua**, not `A-10C.lua.txt`.
+5. Skip the manual edits below and continue to **Step 5**. Fully restart DCS before testing in Step 7.
+
+This replacement is for **v0.11.8**. It will overwrite any other local changes in your existing aircraft file, so use Option B if you have a different version or other customizations to keep. I’ve checked that only the two intended lines differ from the official v0.11.8 module and that its output addresses match the firmware. **This newly packaged replacement has not yet been tested in a live DCS session.** See the [file details, exact patch, and license](DCS-BIOS/README.md).
+
+### Option B — make the two edits yourself
 
 Open this file inside the DCS-BIOS folder you installed:
 
@@ -94,7 +108,7 @@ These edits let my firmware read additional HQ/WOD and power-up display informat
 
 If your file already contains the replacement line, that change is already done. If you can’t find one of the blocks, check your DCS-BIOS version or ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) before editing further.
 
-### A. WOD/HQ display value
+#### A. WOD/HQ display value
 
 Press **Ctrl+F**, search for `ARC210_VERIFY_WOD_ACTIVE_CHANNEL`, and find this block:
 
@@ -112,7 +126,7 @@ return Functions.coerce_nil_to_string(arc_210_data["WOD_segment"] or arc_210_dat
 
 Leave the opening definition and closing `end, 2, ...` line unchanged. This is the two-character output used at address `0x1338` in my tested setup.
 
-### B. Power-up display value
+#### B. Power-up display value
 
 Search for `ARC210_SELECTED_RT` and find this block:
 
@@ -142,7 +156,7 @@ The HEX goes onto the Teensy; it does not belong in the DCS `Scripts` folder. If
 
 ## 6. Connect the panel with TekConnect
 
-I use [TekConnect](https://github.com/tekcreations/TekConnect) to manage my DCS-BIOS USB serial connections. It shows connection status and offers automatic port connection.
+Download [TekConnect](https://github.com/tekcreations/TekConnect), the app I use to manage my DCS-BIOS USB serial connections. It shows connection status and offers automatic port connection.
 
 1. Download `TekConnect.exe` from the [TekConnect releases page](https://github.com/tekcreations/TekConnect/releases) and run it on Windows.
 2. Connect the Teensy using a USB **data** cable.
@@ -172,6 +186,6 @@ For testing without DCS, see my [bench-testing guide](Bench-Testing-App.md). Dis
 
 ## After a DCS-BIOS update
 
-Updates may replace `A-10C.lua`. Back up your files, install the update, and check the two blocks from Step 4 again. Make only the needed `return`-line changes in the new file; don’t replace it with an old copy of the whole file. Then fully restart DCS and retest.
+Updates may replace `A-10C.lua`. Back up your files, install the update, and check the two blocks from Step 4 again. If you move beyond v0.11.8, use the manual edits on the new version’s file rather than copying my v0.11.8 replacement over it. Make only the needed `return`-line changes, then fully restart DCS and retest.
 
 Each aircraft and radio instance needs the correct DCS-BIOS mappings and compatible firmware. These instructions do not establish support for additional aircraft or complete the planned ARC-164 and ARC-186 builds.
