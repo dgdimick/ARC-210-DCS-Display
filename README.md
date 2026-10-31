@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — October 30, 2026
 
-**Last updated: October 30, 2026 at 11:29 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:35 PM MDT (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -24,7 +24,7 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Items that need to be completed
 
-**Last updated: October 30, 2026 at 11:29 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:35 PM MDT (America/Denver)**
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
@@ -67,6 +67,14 @@ I also own three other SIMPIT panels that use USB. I have used them for over **1
 - [DCS-BIOS-only Export.lua](https://raw.githubusercontent.com/dgdimick/ARC-210-DCS-Display/master/Docs/DCS-BIOS/DCS-BIOS-only/Export.lua) — for setups without WWT or SRS.
 
 Follow the guide before replacing files.
+
+## Buy a complete set of bare PCBs
+
+I offer a **complete six-board ARC-210 bare-PCB set for US$45, plus shipping, VAT, and any other applicable taxes, duties, or fees**. The set includes **one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards**, including the optional SQL On/Off board.
+
+Buying one set from me means you get the boards for one radio without ordering the manufacturer’s minimum quantity of every design. **You’ll supply the components and solder the boards yourself**; the price is for bare PCBs, not an assembled radio, electronics, faceplate, or printed parts. Assembled-board electrical testing is still pending.
+
+[Contact me in GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to check availability and arrange a shipping quote. You can also [order the boards directly from JLCPCB](Docs/PCB-Manufacturing-JLCPCB.md) using the shared files.
 
 ## Firmware and hardware information
 
