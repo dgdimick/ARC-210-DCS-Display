@@ -36,13 +36,11 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 11:39 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 6:38 PM MDT (America/Denver)**
 
-**October 30, 2026 at 11:39 AM MDT — Updated Channel and SQL knobs released**
+**October 30, 2026 at 6:38 PM MDT — Complete nine-knob STL and 3MF released**
 
-I printed the corrected SQL knob at **100% scale** and checked its fit. I’m publishing it as **Channel knob v4** and **SQL knob v1.1**. **They are the same knob design with identical geometry: print two copies of either file, one for each control.**
-
-Only the shaft socket is enlarged to **107% of the original XY dimensions**; the outside diameter, height, and small radial hole retain their original dimensions. Download [Channel v4](Supporting%20STL%27s/Channel_Knob_v.4.stl) or [SQL v1.1](Supporting%20STL%27s/SQL_Knob_v.1.1.stl) and print at **100%**. Check the fit on each shaft. I’ve updated the combined eight-knob STL and 3MF with Channel v4; print one additional Channel/SQL knob separately for SQL. I haven’t physically print-tested the complete combined layout yet.
+The combined print files now include **all nine knobs: 5 Frequency v10.1, 2 Mode v4, 1 Channel v4, and 1 SQL v1.1**. Download the [combined STL](Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf) and print **one complete set at 100% scale**. The 3MF contains nine separate objects. Channel and SQL use identical knob geometry; no extra SQL print is needed with this set. I haven’t physically print-tested the complete combined layout yet.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

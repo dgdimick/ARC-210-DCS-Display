@@ -2,10 +2,14 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 11:39 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 6:38 PM MDT (America/Denver)**
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
+
+**October 30, 2026 at 6:38 PM MDT — Complete nine-knob STL and 3MF released**
+
+The combined print files now include **all nine knobs: 5 Frequency v10.1, 2 Mode v4, 1 Channel v4, and 1 SQL v1.1**. Download the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf) and print **one complete set at 100% scale**. The 3MF contains nine separate objects. Channel and SQL use identical knob geometry; no extra SQL print is needed with this set. I haven’t physically print-tested the complete combined layout yet.
 
 **October 30, 2026 at 11:39 AM MDT — Updated Channel and SQL knobs released**
 

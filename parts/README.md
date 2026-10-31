@@ -154,7 +154,7 @@ Print the following quantities for one ARC-210 panel:
 | Channel | 1 | [Channel_Knob_v.4.stl](../Supporting%20STL%27s/Channel_Knob_v.4.stl) |
 | SQL ON/OFF | 1 | [SQL_Knob_v.1.1.stl](../Supporting%20STL%27s/SQL_Knob_v.1.1.stl) |
 
-Print the eight-knob layout using the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-8.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-8.3mf). Both contain 5 Frequency, 2 Mode, and 1 Channel knob; the 3MF keeps them as separate objects. See the [combined-layout printing notes](../Supporting%20STL%27s/README.md#complete-eight-knob-print-layout) before slicing. Print the SQL knob separately, for **nine knobs total**. The Channel and SQL knobs use identical geometry.
+Print the nine-knob layout using the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf). Both contain **5 Frequency, 2 Mode, 1 Channel, and 1 SQL knob (nine total)**; the 3MF keeps them as separate objects. See the [combined-layout printing notes](../Supporting%20STL%27s/README.md#complete-nine-knob-print-layout) before slicing. Print the combined file once at **100% scale** for all nine knobs. The Channel and SQL knobs use identical geometry.
 
 ## Channel and SQL knobs
 

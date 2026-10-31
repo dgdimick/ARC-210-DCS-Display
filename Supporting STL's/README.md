@@ -16,7 +16,7 @@ I still need to **design and 3D print the USB cable strain-relief support**. Its
 
 ## Knob Set V3
 
-Updated October 30, 2026: frequency v10.1, Channel v4, and SQL v1.1 are the current knob versions. The combined eight-knob files now use Channel v4; print the SQL knob separately.
+Updated October 30, 2026: frequency v10.1, Channel v4, and SQL v1.1 are the current knob versions. The combined nine-knob files include Channel v4 and SQL v1.1.
 
 **Knob Set V3** identifies this collection. Each knob retains its own revision number; the collection number does not reset or replace those numbers.
 
@@ -29,16 +29,16 @@ Updated October 30, 2026: frequency v10.1, Channel v4, and SQL v1.1 are the curr
 | Channel | 1 | [Channel_Knob_v.4.stl](Channel_Knob_v.4.stl) | Replaces `Channel_Knob_v.3.stl` |
 | SQL ON/OFF | 1 | [SQL_Knob_v.1.1.stl](SQL_Knob_v.1.1.stl) | Same geometry as Channel v4 |
 
-### Complete eight-knob print layout
+### Complete nine-knob print layout
 
-Both downloads contain **5 Frequency knobs, 2 Mode knobs, and 1 Channel knob**, using the current files linked above:
+Both downloads contain **5 Frequency knobs, 2 Mode knobs, 1 Channel knob, and 1 SQL knob**, using the current files linked above:
 
-- [Download all eight knobs as one STL](ARC-210-Knob-Set-V3-All-8.stl)
-- [Download all eight knobs as a 3MF with eight separate objects](ARC-210-Knob-Set-V3-All-8.3mf)
+- [Download all nine knobs as one STL](ARC-210-Knob-Set-V3-All-9.stl)
+- [Download all nine knobs as a 3MF with nine separate objects](ARC-210-Knob-Set-V3-All-9.3mf)
 
-The layout occupies approximately **91 × 42 mm**, with at least **8 mm clearance** between knobs. Both files retain the source geometry at **100% scale**, preserve the original orientation, and place every knob on Z=0. STL dimensions are intended as millimeters; the 3MF explicitly uses millimeters. The 3MF contains geometry and placement only, with no printer, filament, support, or slicer settings. Check the sliced preview and allow extra bed space for brims or skirts. I haven’t physically print-tested these combined files yet.
+The layout occupies approximately **106 × 52 mm**, with at least **8 mm clearance** between knobs. Both files retain the source geometry at **100% scale**, preserve the original orientation, and place every knob on Z=0. STL dimensions are intended as millimeters; the 3MF explicitly uses millimeters. The 3MF contains geometry and placement only, with no printer, filament, support, or slicer settings. Check the sliced preview and allow extra bed space for brims or skirts. I haven’t physically print-tested these combined files yet.
 
-The SQL ON/OFF knob is **not included in the eight-knob layout**. Print one additional copy of the Channel or SQL STL for SQL, making **nine knobs total**. Individual knob STLs remain available for replacements and fit checks; see the printing and fit notes below before printing the full set.
+The SQL ON/OFF knob is included: **nine knobs total**, ready to print at **100% scale**. Individual knob STLs remain available for replacements and fit checks; see the printing and fit notes below before printing the full set.
 
 ### If you downloaded an older ZIP
 
