@@ -18,6 +18,28 @@ The SQL shaft support spacer v.5 remains required in all installations.
 
 I still need to **design and 3D print the USB cable strain-relief support**. Its finished STL is not yet included in this directory. The support should protect the Teensy's Micro-B connector from cable pulls while allowing the cable to be unplugged and the Teensy removed for service. Physical fit verification is pending.
 
+## Complete 17-part print set
+
+The master downloads include **all required printed parts for one panel**, at **100% scale**:
+
+| Part | Quantity | Version |
+| --- | ---: | --- |
+| Frequency knob | 5 | v10.1 |
+| Mode knob | 2 | v4 |
+| Channel knob | 1 | v4.1 |
+| SQL ON/OFF knob | 1 | v1.2 |
+| Display bracket | 1 | v5 |
+| Rotary encoder spacer | 6 | v1 |
+| SQL shaft support spacer | 1 | v5 |
+| **Total** | **17** | |
+
+- [Download the complete master STL](ARC-210-Complete-Print-Set-All-17.stl)
+- [Download the complete master 3MF with 17 separate objects](ARC-210-Complete-Print-Set-All-17.3mf)
+
+**I have printed all of these parts at 100% scale, and all passed their test fit**, including the display bracket and both spacer designs. The complete nine-knob layout has also been printed and test-fitted. This expanded 17-part arrangement is new; I have not printed all 17 parts together in this arrangement yet.
+
+The master layout measures approximately **187 × 117 mm**, with at least **8 mm clearance** between parts. It preserves each source part’s geometry and orientation and places every part on Z=0. Print one complete set at **100% scale**. Check your sliced preview, bed size, support needs, and space for brims or skirts. The 3MF uses millimeters and contains geometry only, without printer or filament settings. Individual files and the knob-only layouts remain available below.
+
 ## Knob Set V3
 
 Updated October 30, 2026: frequency v10.1, Channel v4.1, and SQL v1.2 are the current knob versions. The combined nine-knob files include Channel v4.1 and SQL v1.2.
@@ -58,17 +80,17 @@ Printer tolerances and shaft sizes vary, so check the fit on your own hardware. 
 
 The shaft-fit adjustments are already built into the current STL files. The earlier 102%, 103%, and 107% settings discussed during development **do not apply to the current files**. Both combined downloads also print at **100% scale**.
 
-## Other required STLs
+## Other required STLs — included in the master print set
 
-| Part | Current STL | Purpose |
-| --- | --- | --- |
-| Display bracket | [Deep_Bracket_v.5.stl](Deep_Bracket_v.5.stl) | Mounts the TFT display; replaces `3.5-SPI-Display-Bracket-v3.stl`. |
-| Rotary encoder spacer | [Rotary_Encoder_Spacer_v.1.stl](Rotary_Encoder_Spacer_v.1.stl) | Centers the rotary encoders in the faceplate holes. Print six. |
-| SQL On/Off rotary switch shaft support | [Shaft_Spacer_v.5.stl](Shaft_Spacer_v.5.stl) | Supports the longer shaft used by the SQL On/Off rotary switch; required in all installations. |
+| Part | Quantity to print | Current STL | Purpose |
+| --- | ---: | --- | --- |
+| Display bracket | 1 | [Deep_Bracket_v.5.stl](Deep_Bracket_v.5.stl) | Mounts the TFT display; replaces `3.5-SPI-Display-Bracket-v3.stl`. |
+| Rotary encoder spacer | 6 | [Rotary_Encoder_Spacer_v.1.stl](Rotary_Encoder_Spacer_v.1.stl) | Centers the rotary encoders in the faceplate holes. Print six. |
+| SQL On/Off rotary switch shaft support | 1 | [Shaft_Spacer_v.5.stl](Shaft_Spacer_v.5.stl) | Supports the longer shaft used by the SQL On/Off rotary switch; required in all installations. |
 
 ## Display bracket
 
-Updated October 30, 2026.
+Updated October 30, 2026. I have printed this bracket at **100% scale**, and it passed its test fit.
 
 The current display bracket is [Deep_Bracket_v.5.stl](Deep_Bracket_v.5.stl). This file replaces `3.5-SPI-Display-Bracket-v3.stl`, which has been removed from the current branch. Use this replacement for new downloads; the older bracket remains available in repository history.
 
@@ -80,11 +102,13 @@ Added October 11, 2026. Updated October 30, 2026.
 
 [Rotary_Encoder_Spacer_v.1.stl](Rotary_Encoder_Spacer_v.1.stl)
 
-I use this spacer around the rotary encoder's threaded mounting section because the PC Flights ARC-210 faceplate has 10 mm holes, which are larger than the encoder threads. The spacer fills the gap and centers each encoder in its faceplate hole. Six of these spacers are needed.
+I use this spacer around the rotary encoder's threaded mounting section because the PC Flights ARC-210 faceplate has 10 mm holes, which are larger than the encoder threads. The spacer fills the gap and centers each encoder in its faceplate hole. Six of these spacers are needed. I have printed and test-fitted them at **100% scale**.
 
 PC Flights has supplied me with a drawing file to assist with the Button PCB layout.
 
 ## SQL On/Off rotary switch support spacer v.5
+
+I have printed this spacer at **100% scale**, and it passed its test fit.
 
 [Shaft_Spacer_v.5.stl](Shaft_Spacer_v.5.stl)
 

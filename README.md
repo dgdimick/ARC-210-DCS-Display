@@ -36,13 +36,11 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 8:15 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 8:25 PM MDT (America/Denver)**
 
-**October 30, 2026 at 8:15 PM MDT — Complete nine-knob layout printed and test-fitted**
+**October 30, 2026 at 8:25 PM MDT — Complete 17-part master print set released**
 
-I have printed the **complete nine-knob layout**, and **all nine knobs passed their test fit**: 5 Frequency v10.1, 2 Mode v4, 1 Channel v4.1, and 1 SQL v1.2. The complete layout is now print-tested as well as the individual knob designs. I am happy with the fit and do not expect these knob designs to change again.
-
-Download the [combined STL](Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf). Print one complete set at **100% scale**. Printer tolerances and shaft sizes vary, so check the fit on your own hardware.
+I’ve added **one display bracket, six rotary encoder spacers, and one SQL shaft spacer** to the nine current knobs in the new master [STL](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [3MF](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf): **17 parts total, printed at 100% scale**. I have printed every part, including the bracket and spacers, and all passed their test fit. The nine-knob layout is also print-tested; the expanded 17-part arrangement has not been printed together yet. See the [master print instructions](Supporting%20STL%27s/README.md#complete-17-part-print-set) for quantities and layout dimensions. The individual downloads and knob-only layouts remain available.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
