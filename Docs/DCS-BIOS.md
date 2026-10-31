@@ -76,6 +76,17 @@ pcall(function() local dcsSr=require('lfs');dofile(dcsSr.writedir()..[[Mods\Serv
 
 [Download my Export.lua](https://raw.githubusercontent.com/dgdimick/ARC-210-DCS-Display/master/Docs/DCS-BIOS/Export.lua) by right-clicking the link and saving it as `Export.lua`.
 
+Here is what each line does:
+
+| Line | What it does | Do you need it? |
+| --- | --- | --- |
+| `local wwtlfs=require('lfs')` | Loads Lua’s file-system helper and gives it the local name `wwtlfs`. The next line uses it to find your DCS Saved Games folder. | Keep it with the WWT line if you use WWT. The DCS-BIOS line below does not depend on this local name. |
+| `dofile(wwtlfs.writedir()..'Scripts/wwt/wwtExport.lua')` | Starts the WWT export script from your Saved Games folder. | Only if you use WWT and have that script installed. Omit both WWT lines if you don’t use it. |
+| `dofile(lfs.writedir() .. [[Scripts\DCS-BIOS\BIOS.lua]])` | Starts DCS-BIOS so it can exchange cockpit data and commands with external hardware and software. | **Yes, for this radio project.** Include it once, with DCS-BIOS installed in the matching folder. |
+| The final line beginning with `pcall(function()` | Finds your Saved Games folder and starts the DCS SimpleRadio Standalone (SRS) script. `pcall` catches an error in this call so it does not stop the rest of this file from running. | Only if you use SRS. Keep the complete line together. It is separate from the radio panel’s DCS-BIOS connection. |
+
+**If you only need DCS-BIOS, the single DCS-BIOS `dofile` line shown above is enough.** If you already use WWT, SRS, or other export tools, keep their installed loader lines as well. Blank lines only make the file easier to read; they do not start anything.
+
 You only need the DCS-BIOS loader line for this project. Do not replace your existing file with my example unless it matches your installed tools: my WWT line needs `Scripts/wwt/wwtExport.lua` to exist. The download does not apply the two radio changes in the next step.
 
 <a id="arc-210-changes-to-the-dcs-bios-export"></a>
