@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 10:41 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:02 PM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -16,7 +16,7 @@ Download [Channel v4.2](../Supporting%20STL%27s/Channel_Knob_v.4.2.stl). Both th
 
 **October 30, 2026 at 8:25 PM MDT — Final 17-part STL set; all parts printed and test-fitted at 100%**
 
-The complete master [STL](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [3MF](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf) contain **17 parts**: **5 Frequency knobs v10.1, 2 Mode knobs v4, 1 Channel knob v4.1, 1 SQL knob v1.2, 1 display bracket v5, 6 encoder spacers v1, and 1 SQL shaft spacer v5**. The Channel and SQL knobs are the same knob design.
+The complete master [STL](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [3MF](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf) contain **17 parts**: **5 Frequency knobs v10.1, 2 Mode knobs v4, 1 Channel knob v4.1, 1 SQL knob v1.2, 1 display bracket v5, 6 encoder spacers v1, and 1 SQL shaft spacer v5**. At this release, Channel v4.1 and SQL v1.2 used identical geometry. **Current version note:** Channel v4.2 and SQL v1.2 retain the same outside size and small side hole, but have different shaft holes; see the newer Channel v4.2 entry above.
 
 **I have printed the complete 17-part layout at 100% scale, and every part passed test fitting. I consider these current STL designs final.** Print one complete set at **100% scale**; no additional scaling is needed with the current hardware.
 

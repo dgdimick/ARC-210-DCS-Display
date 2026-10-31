@@ -1,10 +1,10 @@
 # ARC-210 Supporting 3D Files — October 30, 2026
 
-**Last updated: October 30, 2026 at 10:40 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:02 PM MDT (America/Denver)**
 
 **The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
-**Current STL files — October 30, 2026:** Frequency knob **v10.1** is now available with a larger shaft socket and a successful physical fit test. The other published STL versions remain as listed below. The shaft spacer is **v.5**. Channel **v4.2** and SQL **v1.2** are available with different shaft sockets; both have passed test fitting at **100%**.
+**Current STL files — October 30, 2026:** Frequency knob **v10.1** is now available with a larger shaft socket and a successful physical fit test. The other published STL versions remain as listed below. The shaft spacer is **v.5**. Channel **v4.2** and SQL **v1.2** have the same outside size and small side hole, with different shaft holes; both have passed test fitting at **100%**.
 
 **All current knobs reprinted and test-fitted:** I’ve reprinted all nine knobs in their current versions—**5 Frequency v10.1, 2 Mode v4, 1 Channel v4.2, and 1 SQL v1.2—and all passed their test fit.** I’m happy with the fit, and **I don’t expect these knob designs to change again**. Print at **100% scale**. Printer tolerances and shaft sizes vary, so check the fit on your own hardware.
 
@@ -55,7 +55,7 @@ Updated October 30, 2026: frequency v10.1, Channel v4.2, and SQL v1.2 are the cu
 | Frequency | 5 | [Freq_Knob_v.10.1.stl](Freq_Knob_v.10.1.stl) | Replaces `Freq_Knob_v.10.stl`; v10 remains available for earlier shaft fits |
 | Mode | 2 | [Mode_Knob_v.4.stl](Mode_Knob_v.4.stl) | Supersedes `Mode Mesh v6.stl`, despite its higher filename number |
 | Channel | 1 | [Channel_Knob_v.4.2.stl](Channel_Knob_v.4.2.stl) | Replaces `Channel_Knob_v.4.1.stl` |
-| SQL ON/OFF | 1 | [SQL_Knob_v.1.2.stl](SQL_Knob_v.1.2.stl) | Original larger shaft socket; differs from Channel v4.2 |
+| SQL ON/OFF | 1 | [SQL_Knob_v.1.2.stl](SQL_Knob_v.1.2.stl) | Same outside size and side hole as Channel; larger shaft hole |
 
 ### Complete nine-knob print layout
 

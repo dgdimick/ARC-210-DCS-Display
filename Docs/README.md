@@ -1,6 +1,6 @@
 # ARC-210 Documentation
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:02 PM MDT (America/Denver)**
 
 These notes explain the choices behind my ARC-210 build and help you find your way around the wiring and hardware. If something is unclear, feel free to ask in Discussions.
 
@@ -113,4 +113,4 @@ Use Main Board **v1.1**, Button Matrix **v3.2**, Rotary Encoder **v1.4**, and Ro
 
 ## Printed parts
 
-**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** The set includes nine knobs, one display bracket, six encoder spacers, and one SQL shaft spacer. Use the [master print files and quantities](../Supporting%20STL%27s/README.md#complete-17-part-print-set) and keep checking [Project Updates](Project-Updates.md) for changes.
+**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** The set includes nine knobs, one display bracket, six encoder spacers, and one SQL shaft spacer. **Channel v4.2 and SQL v1.2 are the same outside size, with the same small side hole; only their shaft holes differ.** Channel has the smaller shaft hole. Print one of each at 100%. Use the [master print files and quantities](../Supporting%20STL%27s/README.md#complete-17-part-print-set) and keep checking [Project Updates](Project-Updates.md) for changes.

@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: October 30, 2026 at 10:40 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:02 PM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -164,7 +164,7 @@ Print the following quantities for one ARC-210 panel:
 | Channel | 1 | [Channel_Knob_v.4.2.stl](../Supporting%20STL%27s/Channel_Knob_v.4.2.stl) |
 | SQL ON/OFF | 1 | [SQL_Knob_v.1.2.stl](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl) |
 
-Print the nine-knob layout using the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf). Both contain **5 Frequency, 2 Mode, 1 Channel, and 1 SQL knob (nine total)**; the 3MF keeps them as separate objects. See the [combined-layout printing notes](../Supporting%20STL%27s/README.md#complete-nine-knob-print-layout) before slicing. Print the combined file once at **100% scale** for all nine knobs. Channel v4.2 has a smaller shaft socket than SQL v1.2.
+Print the nine-knob layout using the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf). Both contain **5 Frequency, 2 Mode, 1 Channel, and 1 SQL knob (nine total)**; the 3MF keeps them as separate objects. See the [combined-layout printing notes](../Supporting%20STL%27s/README.md#complete-nine-knob-print-layout) before slicing. Print the combined file once at **100% scale** for all nine knobs. Channel v4.2 and SQL v1.2 have the same outside size and small side hole; Channel has the smaller shaft hole.
 
 ## Channel and SQL knobs
 
