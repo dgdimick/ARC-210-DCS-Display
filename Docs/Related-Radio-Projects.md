@@ -2,6 +2,8 @@
 
 # Related radio projects
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 Alongside the ARC-210, I’m planning two more physical radio panels for my DCS cockpit:
 
 - **[ARC-164 UHF radio panel](https://github.com/dgdimick/ARC-164-DCS-Display):** I’ll use a dedicated Teensy 4.1 to operate the panel through DCS-BIOS. I plan to put all five frequency encoders and the preset-channel encoder on one PCB, assuming there is enough room behind the faceplate.

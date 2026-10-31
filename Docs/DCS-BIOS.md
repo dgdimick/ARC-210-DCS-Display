@@ -2,7 +2,8 @@
 
 # DCS-BIOS setup — step by step
 
-**Last updated: October 30, 2026 at 9:11 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 <!-- Refresh this timestamp whenever this page changes; use the actual current America/Denver date and time, including MST or MDT. -->
 
 I use [DCS-Skunkworks DCS-BIOS](https://github.com/DCS-Skunkworks/dcs-bios) to send radio information between DCS and my panels, and [TekConnect](https://github.com/tekcreations/TekConnect) to manage their USB connections. I’ve put the setup steps here so you can follow along, even if you haven’t used DCS-BIOS before. I’ll show you where the files go, which two lines to change for my ARC-210 firmware, and how to connect and test the panel.

@@ -1,5 +1,7 @@
 # ARC-210 Main Board v1.1 and schematic
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 Updated October 29, 2026: USB-powered design with TFT VCC supplied directly from the Teensy's 3.3 V rail.
 
 ## Download and open

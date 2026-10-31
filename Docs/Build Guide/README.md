@@ -1,5 +1,7 @@
 # ARC-210 Build Guide
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 Draft started October 29, 2026.
 
 This guide covers the ARC-210 panel using one Teensy 4.1, a 3.5-inch ILI9488 SPI TFT, and the published control boards. I’m still writing it. **Pending** means the step still needs final design work, assembly validation, measurements, or photographs; it is not a confirmed assembly procedure.

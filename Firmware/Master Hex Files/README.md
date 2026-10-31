@@ -1,6 +1,6 @@
 # ARC-210 menu-system preview
 
-README last updated: **October 30, 2026 at 3:11 AM MDT (America/Denver)**.
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
 
 `Master_Program.ino.hex` is the current Teensy 4.1 / ILI9488 480 × 320 display firmware, published for menu-screen and navigation testing. It is not a complete implementation of every radio function.
 

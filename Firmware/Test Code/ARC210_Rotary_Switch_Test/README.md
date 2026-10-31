@@ -1,5 +1,7 @@
 # ARC-210 seven-position rotary switch test
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 Current Main Board version: **1.1**.
 
 Use this standalone test to check your Teensy 4.1 and six-resistor rotary switch PCB. The ILI9488 TFT shows the switch position, raw ADC reading, and approximate voltage, so you can see how each position behaves. USB Serial provides the same readings if you’d like another way to check them. You can run this test without DCS or DCS-BIOS.

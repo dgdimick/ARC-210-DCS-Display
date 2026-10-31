@@ -1,5 +1,7 @@
 # ARC-210 Teensy Firmware and Boot Loader Files
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 Ready to try the ARC-210 firmware? This folder contains precompiled files for the Teensy 4.1, so you can load them without compiling the Arduino source code. The steps below will walk you through the upload tools.
 
 The firmware files use the `.hex` extension.

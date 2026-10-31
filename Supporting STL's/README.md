@@ -1,6 +1,6 @@
 # ARC-210 Supporting 3D Files — October 30, 2026
 
-**Last updated: October 30, 2026**
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
 
 **I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 

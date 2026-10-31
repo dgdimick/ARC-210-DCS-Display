@@ -2,6 +2,8 @@
 
 # Future thoughts and plans
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 - I’ll probably redesign the display bracket after the PCBs are built. I still don’t like the current mounting method.
 
 - I'm considering reworking the Main Board to carry the rotary-switch resistor ladders, allowing the switches to mount directly to the panel and be wired like the SQL On/Off switch. This would reduce the number of PCBs, but each seven-position switch would need roughly eight wires back to the Main Board, adding soldering and making the project harder for people to build. The likely cost savings would not justify the added build difficulty, so this is a low-priority idea. If I do decide to rework the Main Board, I may add LED backlighting at the same time, including the separate power and driver circuitry and suitable light-transmitting buttons described below. 🟢 **The current rotary-switch PCB design remains the build approach.**

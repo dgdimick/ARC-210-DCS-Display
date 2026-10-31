@@ -2,6 +2,8 @@
 
 # Teensy GPIO labels and KiCad pin numbers
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 **Use the numbers printed on the Teensy (or the matching GPIO labels on your breakout adapter) when following the firmware and wiring instructions.** KiCad uses a separate set of pin/pad numbers for the Teensy symbol and its matching `teensy:Teensy41` footprint. These include power and ground connections, so they are not the same as GPIO numbers.
 
 | Teensy printed label / firmware GPIO | KiCad U1 pin / footprint pad |

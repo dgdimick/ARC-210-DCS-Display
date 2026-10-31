@@ -1,5 +1,7 @@
 # Project images and media
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 Here are some photos and videos from my build, including the buttons, encoders, and menus in action. I’d enjoy seeing yours too—share your progress in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)!
 
 [Additional project media (Google Drive)](https://drive.google.com/file/d/1D4GuG0yuVBumasEVbqX7CI54fbOVu1nT/view?usp=sharing)

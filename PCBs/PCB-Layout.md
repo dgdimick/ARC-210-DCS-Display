@@ -2,6 +2,8 @@
 
 # PCB layout — five or six boards
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 <p align="center">
   <a href="../images/arc-210-pcb-layout-mockup.jpg">
     <img src="../images/arc-210-pcb-layout-mockup.jpg" width="300" alt="ARC-210 PCB layout mockup showing board spacing and clearance behind the faceplate">

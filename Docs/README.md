@@ -1,5 +1,7 @@
 # ARC-210 Documentation
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 These notes explain the choices behind my ARC-210 build and help you find your way around the wiring and hardware. If something is unclear, feel free to ask in Discussions.
 
 ## Build guide

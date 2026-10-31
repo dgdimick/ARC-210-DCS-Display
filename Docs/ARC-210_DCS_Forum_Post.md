@@ -1,3 +1,7 @@
+# ARC-210 DCS forum post
+
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 > Historical forum-post draft. For current PCB releases, wiring, power, and firmware status, use the [main README](../README.md) and [parts documentation](../parts/README.md). The control-board manufacturing packages are now published; Main Board v1.1 fabrication files are also published; physical validation is pending.
 
 I’m starting a **DCS-BIOS ARC-210 project**.

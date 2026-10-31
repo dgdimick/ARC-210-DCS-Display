@@ -1,5 +1,7 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — October 30, 2026
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
 > **Disclaimer:** This hobby flight-simulation project is provided without warranty, subject to its licenses. Read the [full disclaimer](#disclaimer) before building or using it.
@@ -22,7 +24,7 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Items that need to be completed
 
-**Last updated: October 30, 2026 at 11:39 AM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
@@ -36,7 +38,7 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 8:31 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
 
 **October 30, 2026 at 8:25 PM MDT — Final 17-part STL set; all parts printed and test-fitted at 100%**
 

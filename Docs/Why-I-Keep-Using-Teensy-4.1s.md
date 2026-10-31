@@ -2,6 +2,8 @@
 
 # Why I keep using Teensy 4.1s
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 I’m using a Teensy 4.1 in each radio to keep the controller hardware and programming workflow consistent across the ARC-210, ARC-164, and ARC-186 projects. Each panel gets its own controller and USB connection, so it can be built and operated independently. Pin assignments and firmware will still be specific to each radio.
 
 The Teensy 4.1 offers 42 readily accessible I/O pins and a 600 MHz processor, leaving room for controls, display updates, and future additions. Classic Arduino Uno and Mega boards run at 16 MHz. See [why I chose the Teensy 4.1](Why-Teensy.md) for the detailed comparison; clock speed alone does not determine display refresh performance.

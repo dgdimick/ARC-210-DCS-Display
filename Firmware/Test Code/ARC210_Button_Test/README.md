@@ -1,5 +1,7 @@
 # ARC-210 final combined hardware test
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 Current Main Board version: **1.1**.
 
 **Final hardware test HEX — October 10, 2026.** I’ve confirmed all the controls listed below working together on my panel. You can use this test to check your own wiring and controls before moving on to the radio firmware.

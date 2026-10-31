@@ -1,5 +1,7 @@
 # Current ARC-210 display font
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 I copied `SwanseaFontSimple.cpp` and `SwanseaFontSimple.h` from the working ARC210_Display library for the current menu-preview firmware. These replace the older FreeSans headers previously stored here.
 
 The renderer uses the Swansea28 bitmap glyph table with fractional scaling:

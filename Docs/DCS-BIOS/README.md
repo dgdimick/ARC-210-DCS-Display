@@ -1,5 +1,7 @@
 # Downloadable DCS-BIOS files
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 ## ARC-210 patched A-10C.lua
 
 Based on [DCS-Skunkworks DCS-BIOS v0.11.8](https://github.com/DCS-Skunkworks/dcs-bios/releases/tag/v0.11.8), extracted from its official release package. [Original source](https://github.com/DCS-Skunkworks/dcs-bios/blob/v0.11.8/Scripts/DCS-BIOS/lib/modules/aircraft_modules/A-10C.lua).

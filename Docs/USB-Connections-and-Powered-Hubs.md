@@ -2,6 +2,8 @@
 
 # USB connections and powered hubs
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 I’m keeping **a dedicated Teensy 4.1 and USB connection to DCS-BIOS for each radio: the ARC-210, ARC-164, and ARC-186**. Three connections are manageable, and I can build, test, update, and troubleshoot each radio independently.
 
 USB is already part of my SIMPIT. I use it for my MFCDs, button boxes, keyboard, HOTAS, and flight stick. I also own **three other SIMPIT panels that use USB**, and I have used them for **over 1,000 hours in the past year without any issues**.

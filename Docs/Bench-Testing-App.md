@@ -2,7 +2,8 @@
 
 # ARC-210 Bench Testing App
 
-**Last updated: October 30, 2026 at 9:14 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 <!-- Refresh this timestamp whenever this page changes; use the actual current America/Denver date and time, including MST or MDT. -->
 
 For installation, Lua file changes, and connecting the panel to DCS with TekConnect, use the [DCS-BIOS setup guide](DCS-BIOS.md). This page covers testing with simulated data.

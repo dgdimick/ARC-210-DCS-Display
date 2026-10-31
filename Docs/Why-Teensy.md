@@ -2,6 +2,8 @@
 
 # Why I had to use a Teensy
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 The ARC-210 panel needs a lot of GPIO (general-purpose input/output) pins. It is not just driving a display: the same controller also has to read the knobs and switches, scan the buttons, and control the TFT backlight.
 
 - Each rotary encoder needs two input pins to detect movement and direction.

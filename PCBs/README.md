@@ -1,5 +1,7 @@
 # ARC-210 PCBs
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 Updated October 29, 2026.
 
 ## PCB layout — five or six boards

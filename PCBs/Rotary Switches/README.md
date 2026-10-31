@@ -1,5 +1,7 @@
 # ARC-210 Rotary Switch PCB — Version 2.0 — Final PCB design
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 Updated October 12, 2026.
 
 Version **2.0 is the final PCB design and has been physically test-fitted**, confirmed October 12, 2026.

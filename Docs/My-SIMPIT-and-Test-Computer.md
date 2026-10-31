@@ -2,6 +2,8 @@
 
 # My SIMPIT and test computer
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 ## Copy into a new chat
 
 I can copy and paste this message into a new chat to provide my computer specs and cockpit setup:

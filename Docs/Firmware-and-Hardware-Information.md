@@ -2,7 +2,8 @@
 
 # Firmware and hardware information
 
-**Last updated: October 30, 2026 at 9:14 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 <!-- Refresh this timestamp whenever this page changes; use the actual current America/Denver date and time, including MST or MDT. -->
 
 I’ve gathered the wiring, hardware, firmware, and testing resources for my ARC-210 panel here.

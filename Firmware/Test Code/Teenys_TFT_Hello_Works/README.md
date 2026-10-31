@@ -1,5 +1,7 @@
 # Teensy TFT hello test
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 Start here to check your build environment and get a first message on the TFT. Seeing that first screen is a useful milestone!
 
 I have intentionally **not provided a precompiled HEX file for this test**. I want you to compile the [sketch](Teenys_TFT_Hello_Works.ino) yourself so you can confirm that your Teensy build environment, board support and required libraries are installed and working correctly before moving on to the rest of the project.

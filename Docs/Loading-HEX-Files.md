@@ -2,6 +2,8 @@
 
 # Loading the HEX File onto a Teensy 4.1
 
+**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+
 For the complete radio connection setup, file changes, and TekConnect instructions, follow the [DCS-BIOS setup guide](DCS-BIOS.md). The steps below cover programming the Teensy only.
 
 1. Install and open **Teensy Loader**.
