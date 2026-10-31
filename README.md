@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — October 31, 2026
 
-**Last updated: October 31, 2026 at 1:34 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:37 AM MDT (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -42,11 +42,13 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 31, 2026 at 1:34 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:37 AM MDT (America/Denver)**
 
-**October 31, 2026 at 1:19 AM MDT — SQL switch replacement needed**
+**October 31, 2026 at 1:37 AM MDT — US$3 printed-parts offer for builders without a 3D printer**
 
-The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](Docs/Project-Updates.md) and update the [parts list](parts/README.md). I haven’t selected or tested a replacement yet.
+If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. For my own sales, if I’m not required to collect VAT, I won’t; I’ll only collect it if required. I want the lack of a printer to be one less obstacle to building your SIMPIT.
+
+Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. See the [printed-parts offer](parts/README.md#no-access-to-a-3d-printer) for details.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

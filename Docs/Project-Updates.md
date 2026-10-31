@@ -2,13 +2,19 @@
 
 # Project updates
 
-**Last updated: October 31, 2026 at 1:34 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:37 AM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current PCB-set sale terms:** I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price. Earlier dated entries may describe previous terms; see the [current parts list](../parts/README.md#estimated-build-cost).
+
+**October 31, 2026 at 1:37 AM MDT — US$3 printed-parts offer for builders without a 3D printer**
+
+If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. For my own sales, if I’m not required to collect VAT, I won’t; I’ll only collect it if required. I want the lack of a printer to be one less obstacle to building your SIMPIT.
+
+Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. See the [printed-parts offer](../parts/README.md#no-access-to-a-3d-printer) for details.
 
 **October 31, 2026 at 1:19 AM MDT — SQL switch replacement needed**
 
