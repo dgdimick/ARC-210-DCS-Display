@@ -145,6 +145,8 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
 
 ## Complete master print set
 
+**The current STL designs are final.** I have printed all current parts and the complete nine-knob layout at **100% scale**, and all passed test fitting. Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
+
 The [master STL](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [master 3MF](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf) contain **17 parts**: all nine knobs, **one display bracket, six encoder spacers, and one SQL shaft spacer**. Print one set at **100% scale**. I have printed every part and all passed their test fit at 100%. See the [master layout notes](../Supporting%20STL%27s/README.md#complete-17-part-print-set) for dimensions and slicing guidance.
 
 ## Required 3D-printed knobs
