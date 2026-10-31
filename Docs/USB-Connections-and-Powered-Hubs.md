@@ -2,6 +2,8 @@
 
 # USB connections and powered hubs
 
+I also own three other SIMPIT panels that use USB.
+
 I’ll use a **dedicated Teensy 4.1 and USB connection to DCS-BIOS for each radio: the ARC-210, ARC-164, and ARC-186**. Three USB connections are manageable, and each radio can be built, tested, updated, and troubleshot independently.
 
 RS-485 can reduce USB ports and COM-port connections when many cockpit panels share a communication bus, but it adds transceiver hardware, bus wiring, termination, addressing, and a master interface. For these three radios, separate USB connections keep assembly and setup simpler. **I plan to keep USB for each radio.**
