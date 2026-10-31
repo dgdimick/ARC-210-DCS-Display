@@ -1,6 +1,6 @@
 # ARC-210 PCBs
 
-**Last updated: October 30, 2026 at 10:40 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:20 PM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -28,6 +28,8 @@ I’ve confirmed the mechanical fit of these designs. Testing an assembled, manu
 Print **six [Rotary Encoder spacers v.1](../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl)**, one for each encoder, to center the encoder threads in the faceplate holes.
 
 ## Gerber and drill downloads
+
+**Ordering for the first time?** My [JLCPCB manufacturing guide](../Docs/PCB-Manufacturing-JLCPCB.md) walks through ordering the bare boards from the manufacturer I use, including quantities, settings, and preview checks.
 
 Button Matrix v3.2 manufacturing files generated October 30, 2026; other control-board files generated October 27, 2026; Main Board v1.1 files updated October 29, 2026:
 

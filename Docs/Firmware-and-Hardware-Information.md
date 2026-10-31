@@ -2,7 +2,7 @@
 
 # Firmware and hardware information
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:20 PM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use the actual current America/Denver date and time, including MST or MDT. -->
 
@@ -17,6 +17,8 @@ I’ve gathered the wiring, hardware, firmware, and testing resources for my ARC
 [Read the power and lighting notes](Power-and-Lighting.md) for USB power, the TFT supply, and future button-lighting requirements.
 
 ## PCB layout — five or six boards
+
+[Order the PCBs through JLCPCB](PCB-Manufacturing-JLCPCB.md) using my step-by-step guide to the manufacturing ZIPs, quantities, settings, and preview checks.
 
 [View the PCB layout page](../PCBs/PCB-Layout.md) for the mockup photo, board descriptions, and optional SQL On/Off direct-wiring details.
 

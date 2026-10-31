@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 30, 2026 at 11:17 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:20 PM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -73,6 +73,8 @@ The SQL shaft spacer is required whether using the optional SQL PCB or wiring di
 Dry-fit printed parts before permanent assembly. All current files print at 100% with the current hardware. Printer tolerances and shaft sizes vary, so check the fit on your own hardware. **Pending:** illustrated printing settings and a complete knob-to-control installation chart.
 
 ## 3. Order the PCBs
+
+I use **JLCPCB** for PCB manufacturing. Follow my [step-by-step JLCPCB ordering guide](../PCB-Manufacturing-JLCPCB.md) for the ZIP files, board quantities, quote settings, preview checks, and engineering questions.
 
 Download the manufacturing packages from the [Gerber and drill table](../../PCBs/README.md#gerber-and-drill-downloads). Gerber files describe the board layers, and drill files describe the holes. Each manufacturing ZIP keeps those files together for uploading to a PCB manufacturer; keep it zipped for that upload.
 
