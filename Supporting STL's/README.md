@@ -1,6 +1,6 @@
 # ARC-210 Supporting 3D Files — October 30, 2026
 
-**Last updated: October 30, 2026 at 10:37 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 10:40 PM MDT (America/Denver)**
 
 **The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
@@ -12,7 +12,7 @@
 
 [Channel knob v4.2](Channel_Knob_v.4.2.stl) · [SQL knob v1.2](SQL_Knob_v.1.2.stl)
 
-**The Channel and SQL knobs have different shaft sockets.** Channel v4.2 uses the Frequency v10.1 shaft-hole profile (approximately 6.375 mm round diameter), with the Channel socket depth, outside dimensions, and small side hole unchanged. I printed Channel v4.2 at **100% scale** and confirmed the fit. SQL remains v1.2 with its previously tested socket. Print **one Channel v4.2 and one SQL v1.2**, each at 100%; these files are no longer interchangeable.
+**The Channel and SQL knobs are the same outside size, with the same small side hole; only the shaft holes differ.** Channel v4.2 has the smaller shaft hole; SQL v1.2 retains the larger shaft hole. Channel v4.2 uses the Frequency v10.1 shaft-hole profile (approximately 6.375 mm round diameter), with the Channel socket depth, outside dimensions, and small side hole unchanged. I printed Channel v4.2 at **100% scale** and confirmed the fit. SQL remains v1.2 with its previously tested socket. Print **one Channel v4.2 and one SQL v1.2**, each at 100%; these files are no longer interchangeable.
 
 The SQL shaft support spacer v.5 remains required in all installations.
 
