@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — October 31, 2026
 
-**Last updated: October 31, 2026 at 1:18 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:19 AM MDT (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -42,15 +42,11 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 31, 2026 at 1:06 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:19 AM MDT (America/Denver)**
 
-**October 31, 2026 at 12:20 AM MDT — v0.1.1 preview adds firmware and aircraft startup labels**
+**October 31, 2026 at 1:19 AM MDT — SQL switch replacement needed**
 
-I’ve built **v0.1.1 Preview** with **VERSION 0.1.1 PREVIEW** and **AIRCRAFT: A-10C2** on the radio-switch startup information screen. The labels come from one shared firmware definition, and the release filename matches. C-130J support and automatic aircraft selection are still being developed; this preview does not add them.
-
-Compilation and font-layout checks passed. **Physical-panel and in-DCS testing of this build are still pending.** The existing startup timing and powered-radio requirement remain. I’ve kept v0.1.0 available for rollback and included the source used for the new build.
-
-Download the [v0.1.1 preview](Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.1.1_Preview.hex) and read the [firmware notes](Firmware/Master%20Hex%20Files/README.md).
+The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](Docs/Project-Updates.md) and update the [parts list](parts/README.md). I haven’t selected or tested a replacement yet.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
