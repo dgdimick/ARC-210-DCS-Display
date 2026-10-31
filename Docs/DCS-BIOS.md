@@ -2,7 +2,7 @@
 
 # DCS-BIOS setup — step by step
 
-I use DCS-BIOS to send radio information between DCS and my panels, and TekConnect to manage their USB connections. This guide explains the PC files and the two changes needed by my current ARC-210 firmware.
+I use [DCS-Skunkworks DCS-BIOS](https://github.com/DCS-Skunkworks/dcs-bios) to send radio information between DCS and my panels, and [TekConnect](https://github.com/tekcreations/TekConnect) to manage their USB connections. I’ve put the setup steps here so you can follow along, even if you haven’t used DCS-BIOS before. I’ll show you where the files go, which two lines to change for my ARC-210 firmware, and how to connect and test the panel.
 
 **Current status:** The published ARC-210 firmware is a display/menu preview. Complete physical-control integration and final in-DCS validation are still pending. The ARC-164 and ARC-186 are planned builds; these ARC-210 edits do not add firmware support for those radios.
 
@@ -10,11 +10,11 @@ I use DCS-BIOS to send radio information between DCS and my panels, and TekConne
 
 | File or app | What it does | What you need to do |
 | --- | --- | --- |
-| DCS-BIOS folder | Gets cockpit data from DCS and accepts control commands | Install it in your active DCS Saved Games profile |
+| DCS-BIOS folder | Gets cockpit data from DCS and accepts control commands | Install it in the Saved Games folder used by your copy of DCS |
 | `Scripts/Export.lua` | Tells DCS to start DCS-BIOS and your other export tools | Add one DCS-BIOS loader line, keeping your existing integrations |
 | `DCS-BIOS/lib/modules/aircraft_modules/A-10C.lua` | Defines the A-10 radio data exported by DCS-BIOS | Replace two existing `return` lines for this ARC-210 firmware |
 | `Master_Program.ino.hex` | Runs the ARC-210 display/menu firmware on the Teensy | Load it with Teensy Loader |
-| TekConnect | Connects DCS-BIOS to the panel's USB COM port | Select and connect the panel's port |
+| TekConnect | Connects DCS-BIOS to the panel's USB COM port—the numbered connection Windows assigns to it | Select and connect the panel's port |
 
 **You do not need to edit `BIOS.lua`, change DCS installation files, or put the ARC-210 changes into `Export.lua`.**
 
@@ -22,7 +22,7 @@ I use DCS-BIOS to send radio information between DCS and my panels, and TekConne
 
 Fully close DCS before editing these files.
 
-Open your Windows **Saved Games** folder and find the profile used by your DCS installation. Common locations are:
+Open your Windows **Saved Games** folder and find the folder used by your copy of DCS. Common locations are shown below; replace `YOURNAME` with your Windows user name:
 
 ```text
 C:\Users\YOURNAME\Saved Games\DCS\Scripts
@@ -48,7 +48,7 @@ I use [DCS-Skunkworks DCS-BIOS](https://github.com/DCS-Skunkworks/dcs-bios).
 Saved Games\DCS\Scripts\DCS-BIOS\BIOS.lua
 ```
 
-Avoid an extra nested folder such as `DCS-BIOS\DCS-BIOS\BIOS.lua`. For the current upstream procedure, see the [official installation instructions](https://github.com/DCS-Skunkworks/dcs-bios#installation) and [documentation](https://github.com/DCS-Skunkworks/dcs-bios/wiki).
+Make sure you haven’t accidentally put one `DCS-BIOS` folder inside another, such as `DCS-BIOS\DCS-BIOS\BIOS.lua`. The [official installation instructions](https://github.com/DCS-Skunkworks/dcs-bios#installation) and [documentation](https://github.com/DCS-Skunkworks/dcs-bios/wiki) are there if you need more help.
 
 ## 3. Tell DCS to load DCS-BIOS
 
@@ -60,7 +60,7 @@ Look for a line loading `DCS-BIOS\BIOS.lua`. If it is already there, leave it in
 dofile(lfs.writedir() .. [[Scripts\DCS-BIOS\BIOS.lua]])
 ```
 
-**Add the loader only once. Keep the existing lines for your other tools.** Save the file and check that its name is not `Export.lua.txt`.
+**Add this line only once, and keep the existing lines for your other tools.** This line tells DCS to start DCS-BIOS. Save the file and check that its name is not `Export.lua.txt`.
 
 ### My Export.lua example
 
@@ -88,9 +88,11 @@ Open this file inside the DCS-BIOS folder you installed:
 Scripts\DCS-BIOS\lib\modules\aircraft_modules\A-10C.lua
 ```
 
-These edits let my firmware read additional HQ/WOD and power-up display information. **Change only the two existing `return` lines shown below. Do not paste in extra copies of the definitions, move them, or change their string lengths.** Their position and lengths affect the output addresses used by the firmware.
+These edits let my firmware read additional HQ/WOD and power-up display information. You don’t need to understand the Lua code to make these changes: find each named block, then replace just the line starting with `return`.
 
-If your file already contains the replacement line, no further change is needed. If the named definition or expected code is missing, check your DCS-BIOS version before proceeding rather than adding a new definition.
+**Leave the rest of each block exactly as it is.** Don’t add another copy or change the `2` or `3` on its closing line. Those numbers set how much text is sent, and changing them or moving the blocks can change where the firmware expects to find the data.
+
+If your file already contains the replacement line, that change is already done. If you can’t find one of the blocks, check your DCS-BIOS version or ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) before editing further.
 
 ### A. WOD/HQ display value
 
@@ -128,7 +130,7 @@ return Functions.coerce_nil_to_string(arc_210_data["txt_RT"] or (arc_210_data["P
 
 Leave the opening definition and closing `end, 3, ...` line unchanged. This is the three-character output used at address `0x1320` in my tested setup.
 
-Save `A-10C.lua`. Both changes only read the game's display data. If your DCS-BIOS version assigns different output addresses, the firmware must be checked against that version; changing these return values does not relocate the outputs.
+Save `A-10C.lua`. Both changes only read the game's display data. The hexadecimal addresses above are reference details for my tested setup; you do not need to type them into either file. If a different DCS-BIOS version puts the data at different addresses, I’ll need to check the firmware against that version.
 
 ## 5. Load the ARC-210 firmware
 
@@ -145,7 +147,7 @@ I use [TekConnect](https://github.com/tekcreations/TekConnect) to manage my DCS-
 1. Download `TekConnect.exe` from the [TekConnect releases page](https://github.com/tekcreations/TekConnect/releases) and run it on Windows.
 2. Connect the Teensy using a USB **data** cable.
 3. Open Windows **Device Manager → Ports (COM & LPT)** and identify its COM port. If unsure, unplug and reconnect it to see which port disappears and returns.
-4. Select that port in TekConnect and connect it. Use serial settings appropriate to the panel firmware; this guide does not assume a baud rate for every controller.
+4. Select that port in TekConnect and connect it. If it asks for a baud rate (connection speed), use the setting required by that panel’s firmware. I haven’t listed one setting for every controller here.
 5. Once the connection works, use TekConnect's automatic connection option if you want it to connect the port for you.
 
 Only one application should use a panel's COM port at a time. Close Serial Monitor, other serial bridges, or the bench-testing app before connecting it in TekConnect. TekConnect manages the connection; it does not install DCS-BIOS, patch the Lua files, or program the Teensy.
@@ -170,6 +172,6 @@ For testing without DCS, see my [bench-testing guide](Bench-Testing-App.md). Dis
 
 ## After a DCS-BIOS update
 
-Updates may replace `A-10C.lua`. Back up your files, install the update, and check the two getters again. Reapply only the needed return-line changes to the new version rather than replacing the entire updated module with an older file. Then fully restart DCS and retest.
+Updates may replace `A-10C.lua`. Back up your files, install the update, and check the two blocks from Step 4 again. Make only the needed `return`-line changes in the new file; don’t replace it with an old copy of the whole file. Then fully restart DCS and retest.
 
 Each aircraft and radio instance needs the correct DCS-BIOS mappings and compatible firmware. These instructions do not establish support for additional aircraft or complete the planned ARC-164 and ARC-186 builds.
