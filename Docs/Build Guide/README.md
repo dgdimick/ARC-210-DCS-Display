@@ -1,6 +1,8 @@
 # ARC-210 Build Guide
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 10:29 PM MDT (America/Denver)**
+
+While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
 Draft started October 29, 2026.
 
