@@ -36,11 +36,11 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 8:25 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 8:26 PM MDT (America/Denver)**
 
 **October 30, 2026 at 8:25 PM MDT — Complete 17-part master print set released**
 
-I’ve added **one display bracket, six rotary encoder spacers, and one SQL shaft spacer** to the nine current knobs in the new master [STL](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [3MF](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf): **17 parts total, printed at 100% scale**. I have printed every part, including the bracket and spacers, and all passed their test fit. The nine-knob layout is also print-tested; the expanded 17-part arrangement has not been printed together yet. See the [master print instructions](Supporting%20STL%27s/README.md#complete-17-part-print-set) for quantities and layout dimensions. The individual downloads and knob-only layouts remain available.
+I’ve added **one display bracket, six rotary encoder spacers, and one SQL shaft spacer** to the nine current knobs in the new master [STL](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [3MF](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf): **17 parts total, printed at 100% scale**. **I have printed all current STL parts and the complete nine-knob layout at 100% scale, and all passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](Docs/Project-Updates.md) for any changes. The expanded 17-part arrangement has not been printed together yet. See the [master print instructions](Supporting%20STL%27s/README.md#complete-17-part-print-set) for quantities and layout dimensions. The individual downloads and knob-only layouts remain available.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
