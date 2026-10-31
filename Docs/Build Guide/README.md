@@ -12,7 +12,7 @@ This guide covers the ARC-210 panel using one Teensy 4.1, a 3.5-inch ILI9488 SPI
 | Rotary Encoder PCB v1.4 | Final design; physical fit confirmed; manufacturing files published |
 | Rotary Switch PCB v2.0 | Final design; physical fit confirmed; manufacturing files published |
 | Main Board v1.1 | Gerber/drill files published; October 29 ERC/DRC and parity checks pass under saved settings; physical fit confirmed October 29, 2026; final review, current verification and assembled-board testing pending |
-| Printed parts | Published knobs, bracket, and spacers available; Channel v4 and SQL v1.1 available; same knob design, print at 100% |
+| Printed parts | Published knobs, bracket, and spacers available; Channel v4.1 and SQL v1.2 available; same knob design, print at 100% |
 | Electrical testing | Combined breadboard hardware test confirmed; assembled manufactured-board testing pending |
 | Radio firmware | Menu/display preview available; complete physical-control integration and final in-DCS validation pending |
 
@@ -41,15 +41,15 @@ Use the [Supporting STL instructions](../../Supporting%20STL%27s/README.md) for 
 | --- | --- |
 | [Frequency knob v.10.1](../../Supporting%20STL%27s/Freq_Knob_v.10.1.stl) | Print for the frequency controls; confirm fit on each shaft |
 | [Mode knob v.4](../../Supporting%20STL%27s/Mode_Knob_v.4.stl) | Print for the Mode control |
-| [Channel knob v.4](../../Supporting%20STL%27s/Channel_Knob_v.4.stl) | Print for the Channel control |
+| [Channel knob v.4.1](../../Supporting%20STL%27s/Channel_Knob_v.4.1.stl) | Print for the Channel control |
 | [TFT bracket v.5](../../Supporting%20STL%27s/Deep_Bracket_v.5.stl) | Print one |
 | [Rotary Encoder spacer v.1](../../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl) | **Print six**, one per encoder, to center the threads in the faceplate holes |
 | [SQL shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) | **Print one; required in all installations** to support the longer SQL On/Off switch shaft |
-| [SQL knob v1.1](../../Supporting%20STL%27s/SQL_Knob_v.1.1.stl) | Print one at 100%; identical to Channel v4 |
+| [SQL knob v1.2](../../Supporting%20STL%27s/SQL_Knob_v.1.2.stl) | Print one at 100%; identical to Channel v4.1 |
 
 The SQL shaft spacer is required whether using the optional SQL PCB or wiring directly to the switch's solder lugs. It is a separate part from the SQL knob.
 
-**The Channel and SQL knobs are the same knob design.** Channel v4 and SQL v1.1 contain identical geometry; I’ve kept separate filenames to make their uses clear. Print **two copies of either file at 100% scale** for one panel: one Channel and one SQL. I printed the corrected SQL knob at 100% and checked its fit. Check the fit on each shaft before final assembly.
+**The Channel and SQL knobs are the same knob design.** Channel v4.1 and SQL v1.2 contain identical geometry; I’ve kept separate filenames to make their uses clear. Print **two copies of either file at 100% scale** for one panel: one Channel and one SQL. I printed SQL v1.2 at 100% and checked its fit. The small side hole remains unchanged. Check the fit on each shaft before final assembly.
 
 Dry-fit printed parts before permanent assembly. The Supporting STL README records earlier knob-scaling experience; printer tolerances and current revisions need their own fit check. **Pending:** illustrated printing settings and a complete knob-to-control installation chart.
 

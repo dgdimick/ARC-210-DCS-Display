@@ -151,16 +151,16 @@ Print the following quantities for one ARC-210 panel:
 | --- | ---: | --- |
 | Frequency | 5 | [Freq_Knob_v.10.1.stl](../Supporting%20STL%27s/Freq_Knob_v.10.1.stl) |
 | Mode | 2 | [Mode_Knob_v.4.stl](../Supporting%20STL%27s/Mode_Knob_v.4.stl) |
-| Channel | 1 | [Channel_Knob_v.4.stl](../Supporting%20STL%27s/Channel_Knob_v.4.stl) |
-| SQL ON/OFF | 1 | [SQL_Knob_v.1.1.stl](../Supporting%20STL%27s/SQL_Knob_v.1.1.stl) |
+| Channel | 1 | [Channel_Knob_v.4.1.stl](../Supporting%20STL%27s/Channel_Knob_v.4.1.stl) |
+| SQL ON/OFF | 1 | [SQL_Knob_v.1.2.stl](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl) |
 
 Print the nine-knob layout using the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf). Both contain **5 Frequency, 2 Mode, 1 Channel, and 1 SQL knob (nine total)**; the 3MF keeps them as separate objects. See the [combined-layout printing notes](../Supporting%20STL%27s/README.md#complete-nine-knob-print-layout) before slicing. Print the combined file once at **100% scale** for all nine knobs. The Channel and SQL knobs use identical geometry.
 
 ## Channel and SQL knobs
 
-[Channel knob v4](../Supporting%20STL%27s/Channel_Knob_v.4.stl) · [SQL knob v1.1](../Supporting%20STL%27s/SQL_Knob_v.1.1.stl)
+[Channel knob v4.1](../Supporting%20STL%27s/Channel_Knob_v.4.1.stl) · [SQL knob v1.2](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl)
 
-**The Channel and SQL knobs are the same knob design.** Channel v4 and SQL v1.1 contain identical geometry; I’ve kept separate filenames to make their uses clear. Print **two copies of either file at 100% scale** for one panel: one Channel and one SQL. I printed the corrected SQL knob at 100% and checked its fit. Check the fit on each shaft before final assembly.
+**The Channel and SQL knobs are the same knob design.** Channel v4.1 and SQL v1.2 contain identical geometry; I’ve kept separate filenames to make their uses clear. Print **two copies of either file at 100% scale** for one panel: one Channel and one SQL. I printed SQL v1.2 at 100% and checked its fit. The small side hole remains unchanged. Check the fit on each shaft before final assembly.
 
 The SQL shaft support spacer v.5 remains required in all installations.
 
