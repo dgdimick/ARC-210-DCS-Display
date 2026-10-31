@@ -1,6 +1,6 @@
 # ARC-210 PCBs
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 10:37 PM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -90,11 +90,11 @@ The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **requir
 
 ## Channel and SQL knobs
 
-**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for changes.
+**The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for changes.
 
-[Channel knob v4.1](../Supporting%20STL%27s/Channel_Knob_v.4.1.stl) · [SQL knob v1.2](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl)
+[Channel knob v4.2](../Supporting%20STL%27s/Channel_Knob_v.4.2.stl) · [SQL knob v1.2](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl)
 
-**The Channel and SQL knobs are the same knob design.** Channel v4.1 and SQL v1.2 contain identical geometry; I’ve kept separate filenames to make their uses clear. Print **two copies of either file at 100% scale** for one panel: one Channel and one SQL. I printed SQL v1.2 at 100% and checked its fit. The small side hole remains unchanged. Check the fit on each shaft before final assembly.
+**The Channel and SQL knobs have different shaft sockets.** Channel v4.2 uses the Frequency v10.1 shaft-hole profile (approximately 6.375 mm round diameter), with the Channel socket depth, outside dimensions, and small side hole unchanged. I printed Channel v4.2 at **100% scale** and confirmed the fit. SQL remains v1.2 with its previously tested socket. Print **one Channel v4.2 and one SQL v1.2**, each at 100%; these files are no longer interchangeable.
 
 The SQL shaft support spacer v.5 remains required in all installations.
 

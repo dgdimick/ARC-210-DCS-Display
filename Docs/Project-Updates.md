@@ -2,11 +2,17 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 10:37 PM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
+
+**October 30, 2026 at 10:37 PM MDT — Channel knob v4.2 released; fit confirmed at 100%**
+
+I printed Channel v4.2 at **100% scale** and confirmed the shaft fit. It uses the Frequency v10.1 shaft-hole profile, retaining the Channel knob's outside dimensions, 14 mm socket depth, and small side hole. **SQL remains v1.2** with its larger shaft socket; the Channel and SQL files are no longer interchangeable.
+
+Download [Channel v4.2](../Supporting%20STL%27s/Channel_Knob_v.4.2.stl). Both the **master 17-part** [STL](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) / [3MF](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf) and the **nine-knob** [STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) / [3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf) now include Channel v4.2. Quantities are unchanged. The replacement knob was tested separately; the revised combined layouts have not been reprinted as complete sets.
 
 **October 30, 2026 at 8:25 PM MDT — Final 17-part STL set; all parts printed and test-fitted at 100%**
 

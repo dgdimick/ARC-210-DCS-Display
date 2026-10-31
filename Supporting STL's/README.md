@@ -1,18 +1,18 @@
 # ARC-210 Supporting 3D Files — October 30, 2026
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 10:37 PM MDT (America/Denver)**
 
-**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
+**The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
-**Current STL files — October 30, 2026:** Frequency knob **v10.1** is now available with a larger shaft socket and a successful physical fit test. The other published STL versions remain as listed below. The shaft spacer is **v.5**. Channel **v4.1** and SQL **v1.2** are now available and use the same tested geometry, printed at **100%**.
+**Current STL files — October 30, 2026:** Frequency knob **v10.1** is now available with a larger shaft socket and a successful physical fit test. The other published STL versions remain as listed below. The shaft spacer is **v.5**. Channel **v4.2** and SQL **v1.2** are available with different shaft sockets; both have passed test fitting at **100%**.
 
-**All current knobs reprinted and test-fitted:** I’ve reprinted all nine knobs in their current versions—**5 Frequency v10.1, 2 Mode v4, 1 Channel v4.1, and 1 SQL v1.2—and all passed their test fit.** I’m happy with the fit, and **I don’t expect these knob designs to change again**. Print at **100% scale**. Printer tolerances and shaft sizes vary, so check the fit on your own hardware.
+**All current knobs reprinted and test-fitted:** I’ve reprinted all nine knobs in their current versions—**5 Frequency v10.1, 2 Mode v4, 1 Channel v4.2, and 1 SQL v1.2—and all passed their test fit.** I’m happy with the fit, and **I don’t expect these knob designs to change again**. Print at **100% scale**. Printer tolerances and shaft sizes vary, so check the fit on your own hardware.
 
 ## Channel and SQL knobs
 
-[Channel knob v4.1](Channel_Knob_v.4.1.stl) · [SQL knob v1.2](SQL_Knob_v.1.2.stl)
+[Channel knob v4.2](Channel_Knob_v.4.2.stl) · [SQL knob v1.2](SQL_Knob_v.1.2.stl)
 
-**The Channel and SQL knobs are the same knob design.** Channel v4.1 and SQL v1.2 contain identical geometry; I’ve kept separate filenames to make their uses clear. Print **two copies of either file at 100% scale** for one panel: one Channel and one SQL. I printed SQL v1.2 at 100% and checked its fit. The small side hole remains unchanged. Check the fit on each shaft before final assembly.
+**The Channel and SQL knobs have different shaft sockets.** Channel v4.2 uses the Frequency v10.1 shaft-hole profile (approximately 6.375 mm round diameter), with the Channel socket depth, outside dimensions, and small side hole unchanged. I printed Channel v4.2 at **100% scale** and confirmed the fit. SQL remains v1.2 with its previously tested socket. Print **one Channel v4.2 and one SQL v1.2**, each at 100%; these files are no longer interchangeable.
 
 The SQL shaft support spacer v.5 remains required in all installations.
 
@@ -28,7 +28,7 @@ The master downloads include **all required printed parts for one panel**, at **
 | --- | ---: | --- |
 | Frequency knob | 5 | v10.1 |
 | Mode knob | 2 | v4 |
-| Channel knob | 1 | v4.1 |
+| Channel knob | 1 | v4.2 |
 | SQL ON/OFF knob | 1 | v1.2 |
 | Display bracket | 1 | v5 |
 | Rotary encoder spacer | 6 | v1 |
@@ -44,7 +44,7 @@ The master layout measures approximately **187 × 117 mm**, with at least **8 mm
 
 ## Knob Set V3
 
-Updated October 30, 2026: frequency v10.1, Channel v4.1, and SQL v1.2 are the current knob versions. The combined nine-knob files include Channel v4.1 and SQL v1.2.
+Updated October 30, 2026: frequency v10.1, Channel v4.2, and SQL v1.2 are the current knob versions. The combined nine-knob files include Channel v4.2 and SQL v1.2.
 
 **Knob Set V3** identifies this collection. Each knob retains its own revision number; the collection number does not reset or replace those numbers.
 
@@ -54,8 +54,8 @@ Updated October 30, 2026: frequency v10.1, Channel v4.1, and SQL v1.2 are the cu
 | --- | ---: | --- | --- |
 | Frequency | 5 | [Freq_Knob_v.10.1.stl](Freq_Knob_v.10.1.stl) | Replaces `Freq_Knob_v.10.stl`; v10 remains available for earlier shaft fits |
 | Mode | 2 | [Mode_Knob_v.4.stl](Mode_Knob_v.4.stl) | Supersedes `Mode Mesh v6.stl`, despite its higher filename number |
-| Channel | 1 | [Channel_Knob_v.4.1.stl](Channel_Knob_v.4.1.stl) | Replaces `Channel_Knob_v.4.stl` |
-| SQL ON/OFF | 1 | [SQL_Knob_v.1.2.stl](SQL_Knob_v.1.2.stl) | Same Knob as Channel |
+| Channel | 1 | [Channel_Knob_v.4.2.stl](Channel_Knob_v.4.2.stl) | Replaces `Channel_Knob_v.4.1.stl` |
+| SQL ON/OFF | 1 | [SQL_Knob_v.1.2.stl](SQL_Knob_v.1.2.stl) | Original larger shaft socket; differs from Channel v4.2 |
 
 ### Complete nine-knob print layout
 
@@ -64,7 +64,7 @@ Both downloads contain **5 Frequency knobs, 2 Mode knobs, 1 Channel knob, and 1 
 - [Download all nine knobs as one STL](ARC-210-Knob-Set-V3-All-9.stl)
 - [Download all nine knobs as a 3MF with nine separate objects](ARC-210-Knob-Set-V3-All-9.3mf)
 
-The layout occupies approximately **106 × 52 mm**, with at least **8 mm clearance** between knobs. Both files retain the source geometry at **100% scale**, preserve the original orientation, and place every knob on Z=0. STL dimensions are intended as millimeters; the 3MF explicitly uses millimeters. The 3MF contains geometry and placement only, with no printer, filament, support, or slicer settings. Check the sliced preview and allow extra bed space for brims or skirts. I have printed the complete nine-knob layout, and all nine knobs passed their test fit.
+The layout occupies approximately **106 × 52 mm**, with at least **8 mm clearance** between knobs. Both files retain the source geometry at **100% scale**, preserve the original orientation, and place every knob on Z=0. STL dimensions are intended as millimeters; the 3MF explicitly uses millimeters. The 3MF contains geometry and placement only, with no printer, filament, support, or slicer settings. Check the sliced preview and allow extra bed space for brims or skirts. The previous complete nine-knob layout passed test fitting, and I separately printed and test-fitted the replacement Channel v4.2 at 100%.
 
 The SQL ON/OFF knob is included: **nine knobs total**, ready to print at **100% scale**. Individual knob STLs remain available for replacements and fit checks; see the printing and fit notes below before printing the full set.
 
@@ -72,11 +72,11 @@ The SQL ON/OFF knob is included: **nine knobs total**, ready to print at **100% 
 
 If you downloaded an earlier ZIP, please grab the current knob files from the table above. These files are intended to be used together as Knob Set V3. Some revision numbers look lower than the older filenames, so the table is the best guide to which files to print. Older files may still appear in previously downloaded ZIPs or repository history.
 
-`Channel_Knob_v.4.1.stl` replaces v4. Earlier files remain available for earlier shaft fits.
+`Channel_Knob_v.4.2.stl` replaces v4.1. Earlier files remain available for earlier shaft fits.
 
 ### Printing and fit — all current knobs print at 100% with the current hardware
 
-**Print all current knobs at 100% slicer scale:** Frequency v10.1, Mode v4, Channel v4.1, and SQL v1.2. They fit the current hardware listed in the [parts list](../parts/README.md). I have printed the complete nine-knob layout, and all nine knobs passed their test fit.
+**Print all current knobs at 100% slicer scale:** Frequency v10.1, Mode v4, Channel v4.2, and SQL v1.2. They fit the current hardware listed in the [parts list](../parts/README.md). The previous complete nine-knob layout passed test fitting, and I separately printed and test-fitted the replacement Channel v4.2 at 100%.
 
 Printer tolerances and shaft sizes vary, so check the fit on your own hardware. I recommend printing **one frequency knob first** before printing all five.
 

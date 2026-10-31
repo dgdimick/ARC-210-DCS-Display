@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 10:37 PM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -147,13 +147,13 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
 
 ## Complete master print set
 
-**I have printed the complete 17-part layout at 100% scale, and all parts passed test fitting. I consider the current STL designs final.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
+**The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
 The [master STL](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) and [master 3MF](../Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf) contain **17 parts**: all nine knobs, **one display bracket, six encoder spacers, and one SQL shaft spacer**. Print one set at **100% scale**. I have printed the complete 17-part layout at **100% scale**, and all parts passed test fitting. See the [master layout notes](../Supporting%20STL%27s/README.md#complete-17-part-print-set) for dimensions and slicing guidance.
 
 ## Required 3D-printed knobs
 
-**All current knobs print at 100% slicer scale with the current hardware:** Frequency v10.1, Mode v4, Channel v4.1, and SQL v1.2. The shaft-fit adjustments are already built into these files; no additional scaling is needed.
+**All current knobs print at 100% slicer scale with the current hardware:** Frequency v10.1, Mode v4, Channel v4.2, and SQL v1.2. The shaft-fit adjustments are already built into these files; no additional scaling is needed.
 
 Print the following quantities for one ARC-210 panel:
 
@@ -161,16 +161,16 @@ Print the following quantities for one ARC-210 panel:
 | --- | ---: | --- |
 | Frequency | 5 | [Freq_Knob_v.10.1.stl](../Supporting%20STL%27s/Freq_Knob_v.10.1.stl) |
 | Mode | 2 | [Mode_Knob_v.4.stl](../Supporting%20STL%27s/Mode_Knob_v.4.stl) |
-| Channel | 1 | [Channel_Knob_v.4.1.stl](../Supporting%20STL%27s/Channel_Knob_v.4.1.stl) |
+| Channel | 1 | [Channel_Knob_v.4.2.stl](../Supporting%20STL%27s/Channel_Knob_v.4.2.stl) |
 | SQL ON/OFF | 1 | [SQL_Knob_v.1.2.stl](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl) |
 
-Print the nine-knob layout using the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf). Both contain **5 Frequency, 2 Mode, 1 Channel, and 1 SQL knob (nine total)**; the 3MF keeps them as separate objects. See the [combined-layout printing notes](../Supporting%20STL%27s/README.md#complete-nine-knob-print-layout) before slicing. Print the combined file once at **100% scale** for all nine knobs. The Channel and SQL knobs use identical geometry.
+Print the nine-knob layout using the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf). Both contain **5 Frequency, 2 Mode, 1 Channel, and 1 SQL knob (nine total)**; the 3MF keeps them as separate objects. See the [combined-layout printing notes](../Supporting%20STL%27s/README.md#complete-nine-knob-print-layout) before slicing. Print the combined file once at **100% scale** for all nine knobs. Channel v4.2 has a smaller shaft socket than SQL v1.2.
 
 ## Channel and SQL knobs
 
-[Channel knob v4.1](../Supporting%20STL%27s/Channel_Knob_v.4.1.stl) · [SQL knob v1.2](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl)
+[Channel knob v4.2](../Supporting%20STL%27s/Channel_Knob_v.4.2.stl) · [SQL knob v1.2](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl)
 
-**The Channel and SQL knobs are the same knob design.** Channel v4.1 and SQL v1.2 contain identical geometry; I’ve kept separate filenames to make their uses clear. Print **two copies of either file at 100% scale** for one panel: one Channel and one SQL. I printed SQL v1.2 at 100% and checked its fit. The small side hole remains unchanged. Check the fit on each shaft before final assembly.
+**The Channel and SQL knobs have different shaft sockets.** Channel v4.2 uses the Frequency v10.1 shaft-hole profile (approximately 6.375 mm round diameter), with the Channel socket depth, outside dimensions, and small side hole unchanged. I printed Channel v4.2 at **100% scale** and confirmed the fit. SQL remains v1.2 with its previously tested socket. Print **one Channel v4.2 and one SQL v1.2**, each at 100%; these files are no longer interchangeable.
 
 The SQL shaft support spacer v.5 remains required in all installations.
 
