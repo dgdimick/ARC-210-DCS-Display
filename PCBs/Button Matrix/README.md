@@ -1,6 +1,6 @@
 # ARC-210 Button Matrix PCB
 
-**Last updated: October 30, 2026 at 11:17 PM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:35 AM MDT (America/Denver)**
 
 **October 30, 2026 — v3.2 released:** Removed the duplicate approximately 13.38 mm Edge.Cuts circle at H3; the intended opening remains a **12.0 mm non-plated hole**. Board and schematic revisions and the silkscreen are now **3.2**. I moved H3’s reference label clear of the hole’s solder-mask opening. There are no electrical changes. Gerbers and drills were freshly exported with KiCad 10.0.7; fresh ERC/DRC checks report zero violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. Use the [v3.2 manufacturing ZIP](Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) for new orders.
 
@@ -11,7 +11,9 @@ PCB version **3.2 — SQL clearance-hole correction**. The outer outline and but
 
 Updated October 30, 2026. The current PCB, schematic, project settings, and project-local footprint library are included in this folder.
 
-This is the current **unlit 16-button, 4 × 4 matrix**. It is separate from the proposed future Button LED PCB, which is not currently planned.
+This is the current **unlit 16-button, 4 × 4 matrix**.
+
+**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to design a new button board with LED support, along with suitable light-transmitting buttons and the required Main Board, power, and driver changes. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished backlit button-board design or release date yet. See [Future Thoughts](../../Docs/Future-Thoughts.md) for the lighting redesign plan.
 
 ## Download and open
 
