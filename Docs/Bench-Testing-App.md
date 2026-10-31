@@ -2,6 +2,9 @@
 
 # ARC-210 Bench Testing App
 
+**Last updated: October 30, 2026 at 9:14 PM MDT (America/Denver)**
+<!-- Refresh this timestamp whenever this page changes; use the actual current America/Denver date and time, including MST or MDT. -->
+
 For installation, Lua file changes, and connecting the panel to DCS with TekConnect, use the [DCS-BIOS setup guide](DCS-BIOS.md). This page covers testing with simulated data.
 
 I use a [modified version of dcsBiosDebug](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working), based on [tldBear’s original, unmodified app](https://github.com/tldBear/dcsBiosDebug). I modified my version to provide better support for the ARC-210, adding buttons for menu testing and separate Frequency, Secondary, and Master controls. These controls send simulated DCS-BIOS data to the Teensy so I can test the panel without running DCS.
