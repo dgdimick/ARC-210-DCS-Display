@@ -50,13 +50,13 @@ If you downloaded an earlier ZIP, please grab the current knob files from the ta
 
 `Channel_Knob_v.4.1.stl` replaces v4. Earlier files remain available for earlier shaft fits.
 
-### Printing and fit
+### Printing and fit — all current knobs print at 100% with the current hardware
 
-Use the hardware listed on the main project page. **I’ve printed frequency knob v10.1 and checked that it fits my encoder shaft. Print v10.1 at 100% slicer scale.** I enlarged only the shaft socket to 102% of v10’s original XY size; the outside dimensions and height remain unchanged. The nominal round socket diameter is now approximately **6.375 mm**, up from **6.25 mm**, with the same **8 mm socket depth**.
+**Print all current knobs at 100% slicer scale:** Frequency v10.1, Mode v4, Channel v4.1, and SQL v1.2. They fit the current hardware listed in the [parts list](../parts/README.md). I have printed the complete nine-knob layout, and all nine knobs passed their test fit.
 
-I recommend printing **one frequency knob first and checking its shaft fit** before printing all five. Printer tolerances and shaft sizes vary. For the older [v10 STL](Freq_Knob_v.10.stl), I found **103% whole-knob scaling** gave the best fit; that enlarges both the socket and the outside of the knob. That older setting does not apply to v10.1.
+Printer tolerances and shaft sizes vary, so check the fit on your own hardware. I recommend printing **one frequency knob first** before printing all five.
 
-The combined STL and 3MF now contain **five v10.1 frequency knobs** at 100% scale. I have printed the complete nine-knob layout, and all nine knobs passed their test fit. The mode knobs remain v4. Channel v4.1 and SQL v1.2 print at 100%; the shaft socket now matches the Mode v4 socket cross-section (approximately 7.30 mm round diameter, with its D-flat), retaining the SQL socket’s 14 mm depth. The outside diameter, height, and small radial hole retain their original dimensions.
+The shaft-fit adjustments are already built into the current STL files. The earlier 102%, 103%, and 107% settings discussed during development **do not apply to the current files**. Both combined downloads also print at **100% scale**.
 
 ## Other required STLs
 
