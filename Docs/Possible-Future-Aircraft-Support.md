@@ -2,13 +2,13 @@
 
 # Possible future aircraft support
 
-**Last updated: October 30, 2026 at 9:43 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 9:48 PM MDT (America/Denver)**
 
 I’ll focus future support on aircraft with **physical radio control panels** that my hardware can reasonably represent. Sharing the radio's transceiver model alone is not enough.
 
-## C-130J ARC-210 — now a separate project
+## C-130J ARC-210 — part of the main project
 
-The **[C-130J ARC-210 project](https://github.com/dgdimick/ARC-210-C-130J-DCS-Display)** now has its own repository. I plan to reuse the existing ARC-210 panel hardware for both the A-10C II and C-130J, with aircraft-specific firmware, DCS-BIOS mappings, and menus. C-130J implementation and testing are still pending; follow the new repository for its work list and progress.
+I’m developing **[C-130J ARC-210 support](C-130J-Support.md)** in this repository, reusing the existing panel hardware with aircraft-specific firmware, DCS-BIOS mappings, and menus. Implementation and testing remain pending; see the [main work list](Remaining-Work.md) for remaining tasks.
 
 ## Other aircraft to investigate
 
