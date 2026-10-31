@@ -160,7 +160,7 @@ Loading a test HEX replaces the firmware currently on the Teensy. The standalone
 
 ## 10. Load the radio firmware and configure DCS-BIOS
 
-Follow the [firmware README](../../Firmware/Master%20Hex%20Files/README.md) for the current HEX, Teensy Loader steps, startup behavior, and required DCS-BIOS export changes. Back up the existing export file before applying the documented changes.
+Follow the [DCS-BIOS setup guide](../DCS-BIOS.md) for installation, the downloadable Lua files or manual edits, firmware loading, TekConnect, and connection checks. The [firmware README](../../Firmware/Master%20Hex%20Files/README.md) lists the current HEX and its features and limitations.
 
 The current radio HEX is a **display/menu preview**; physical controls do not yet provide complete in-game radio operation. The screen can remain blank until powered-radio data arrives. For offline testing, use the [ARC-210 dcsBiosDebug instructions](https://github.com/dgdimick/dcsBiosDebug/blob/arc210-working/ARC210_TESTING.md).
 

@@ -65,7 +65,7 @@ All STL files are intended to be print-ready for FDM printers using a 0.4 mm noz
 ## Loading the current working HEX file
 
 1. Download [Master_Program.ino.hex](../Firmware/Master%20Hex%20Files/Master_Program.ino.hex), the current radio display/menu firmware.
-2. Read the [firmware preview notes and required DCS-BIOS export changes](../Firmware/Master%20Hex%20Files/README.md).
+2. Read the [firmware preview notes](../Firmware/Master%20Hex%20Files/README.md) and follow the [DCS-BIOS setup guide](DCS-BIOS.md) for installation, file changes, and TekConnect.
 3. Follow the [HEX loading instructions](Loading-HEX-Files.md) to program the Teensy 4.1. This replaces any hardware-test firmware.
 4. Reconnect the DCS-BIOS serial bridge after programming and supply powered-radio data from DCS, or use the [ARC-210 Bench Testing App](Bench-Testing-App.md). A blank screen before powered-radio data arrives is expected.
 
@@ -77,7 +77,7 @@ The current `Master_Program.ino.hex` works with DCS-BIOS while running DCS, but 
 
 The HQ MORE loop and detail screens are implemented. LOAD WOD has been tested against DCS: the displayed number matches, follows MLSK changes, and resets to 20 on re-entry in the tested session. MENU exits from the opening screen listing HQ MENUS / COMSEC / RADIO SETTINGS and is inactive on deeper pages.
 
-Download [Master_Program.ino.hex](../Firmware/Master%20Hex%20Files/Master_Program.ino.hex). Read the [preview notes and required DCS-BIOS export changes](../Firmware/Master%20Hex%20Files/README.md) before testing. The display starts blank until it receives powered-radio data from DCS-BIOS.
+Download [Master_Program.ino.hex](../Firmware/Master%20Hex%20Files/Master_Program.ino.hex). Read the [firmware preview notes](../Firmware/Master%20Hex%20Files/README.md) and complete the [DCS-BIOS setup guide](DCS-BIOS.md) before testing. The display starts blank until it receives powered-radio data from DCS-BIOS.
 
 ## Firmware and hardware testing
 

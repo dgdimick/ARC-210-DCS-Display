@@ -2,6 +2,8 @@
 
 # ARC-210 Bench Testing App
 
+For installation, Lua file changes, and connecting the panel to DCS with TekConnect, use the [DCS-BIOS setup guide](DCS-BIOS.md). This page covers testing with simulated data.
+
 I keep the [working ARC-210 version of dcsBiosDebug](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working) in a separate repository. It provides buttons for menu testing and separate Frequency, Secondary, and Master controls for sending simulated DCS-BIOS data to your Teensy without running DCS.
 
 Download the **arc210-working** branch using **Code → Download ZIP**, extract it, and keep its `icons` folder beside the Python script. With Python 3 and Tkinter installed, open a terminal in that folder and run:
