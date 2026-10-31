@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: October 30, 2026 at 11:44 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:49 PM MDT (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -27,7 +27,7 @@ The OSH Park figure is calculated from the four designs’ rectangular dimension
 
 **I’m sticking with JLCPCB because the estimated fabrication cost is much lower, even though I get extra boards.** Ordering exactly the number I need would reduce leftovers, but the single-set option I checked costs considerably more. The extras also give me spare boards if I need to replace one or make a mistake during assembly. I already use JLCPCB, so keeping the same ordering process makes the build easier to document and repeat.
 
-I’ll still compare the **delivered total**, including shipping and any applicable tax or import charges, before ordering. The US$41.10 figure does not replace the broader provisional PCB budget in the parts list. A combined manufacturing panel might offer another saving, but I haven’t quoted a verified combined package here, and it would not automatically remove the five-copy minimum.
+I’ll still compare the **delivered total**, including shipping and any applicable tax or import charges, before ordering. The [parts-cost estimate](../parts/README.md#estimated-build-cost) uses this US$41.10 fabrication subtotal, with shipping, handling, tax, VAT, and other applicable fees excluded. A combined manufacturing panel might offer another saving, but I haven’t quoted a verified combined package here, and it would not automatically remove the five-copy minimum.
 
 ### JLCPCB Button Matrix demo quote
 

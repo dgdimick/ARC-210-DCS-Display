@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: October 30, 2026 at 11:44 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:49 PM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -16,7 +16,7 @@ Future button lighting would require a separate power and driver design, suitabl
 
 ## Estimated build cost
 
-To help you plan your build, I’ve put together an estimated parts budget of **$320–$365 USD before shipping and tax**, including the PC Flights faceplate. The links below point to independent suppliers; the figures are a budgeting guide rather than a kit price.
+To help you plan your build, I’ve put together an estimated parts budget of **US$250–US$285 before shipping, handling, tax, VAT, and other applicable fees**, including the PC Flights faceplate. All prices in this parts-cost table are in **US dollars (USD)** so you can convert them to your local currency. The links below point to independent suppliers; the figures are a budgeting guide rather than a kit price.
 
 This is primarily a DIY project. I share the files and build notes to help you make your own panel. You can purchase components from the linked suppliers and print the STL parts yourself or use a printing service. **Contact me in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) about buying one complete set of bare PCBs from me**, as a convenient way to get the boards for one radio without ordering extra copies of every design. The **complete six-board set is US$40, plus shipping, VAT, and any other applicable taxes, duties, or fees**: one Main Board, one Button Matrix, one Rotary Encoder, and three Rotary Switch boards, including the optional SQL board. Components and assembly are not included. Contact me to confirm availability and shipping. You can also order the boards directly using my [PCB manufacturing guide](../Docs/PCB-Manufacturing-JLCPCB.md). If you’re stuck, I’m happy to help where I can.
 
@@ -24,9 +24,9 @@ I’m offering this as a **convenient complete set for one radio**: you get the 
 
 My own order for all the boards cost **about US$75**. That is an approximate total for my board order, not the manufacturing cost of a single six-board set or a guaranteed quote for another builder. My complete-set price remains **US$40 plus shipping, VAT, and other applicable fees**.
 
-Prices checked October 22, 2026, except the recommended Teensy with headers and PCB budget allowance, updated October 29, 2026. The PCB allowance is now approximately **$120** to reflect increased fabrication costs. The overall range remains a provisional budget; small hardware and PCB costs are allowances rather than supplier quotes.
+Prices checked October 22, 2026, except the recommended Teensy with headers (October 29) and the JLCPCB fabrication estimate (October 30). The PCB cost uses the **US$41.10 JLCPCB estimate** from my [manufacturing cost comparison](../Docs/PCB-Manufacturing-JLCPCB.md). It covers five copies of each of the four designs—**20 bare boards total**, enough for one panel with spare boards. Small hardware costs remain allowances, and supplier prices can change.
 
-| Part / sourcing reference | Quantity needed | Estimated builder cost |
+| Part / sourcing reference | Quantity needed | Estimated builder cost (USD) |
 | --- | ---: | ---: |
 | [PC Flights faceplate with painted buttons](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/) | 1 | $51.00 |
 | [Teensy 4.1 with headers — recommended](https://www.sparkfun.com/teensy-4-1-headers.html) | 1 | $35.95 (checked October 29, 2026) |
@@ -39,17 +39,17 @@ Prices checked October 22, 2026, except the recommended Teensy with headers and 
 | [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Parts needed for one build | $15–$25 |
 | [Required PCB standoff kit and screws](https://www.amazon.com/dp/B0H1QS5Q6N) | 1 kit | $10 |
 | [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
-| [Bare PCBs](../PCBs/README.md) | Five required boards; six with the optional SQL On/Off PCB | Approximately $120 budget allowance |
+| [Bare PCBs from JLCPCB](../Docs/PCB-Manufacturing-JLCPCB.md) | Five copies of each of four designs: 20 boards total; one panel uses five or six | US$41.10 fabrication estimate; excludes shipping, handling, tax, and VAT |
 | USB Micro-B data cable — for powering and programming the Teensy 4.1 | 1 | $3–$6 |
-| **Estimated DIY purchasing cost** | | **$320–$365** |
+| **Estimated DIY purchasing cost** | | **US$250–US$285** |
 
 Use a **USB Micro-B data cable** for powering and programming the **Teensy 4.1**. The cable must carry data as well as power; a charge-only cable cannot program the Teensy or carry the panel’s USB communications.
 
 The current Main Board is USB-powered and does not use an external 5 V adapter. A future button-lighting redesign would need its own power arrangement, which is outside the current build estimate.
 
-This estimate excludes tools, labor, cockpit mounting fasteners, shipping, tax and tariffs. Buying component assortments or minimum PCB quantities may increase the initial purchase cost and leave spare parts.
+This estimate excludes tools, labor, cockpit mounting fasteners, **shipping, handling, tax, VAT**, tariffs, duties, and other applicable fees. The JLCPCB minimum quantities are included in the PCB row and leave spare boards. Buying component assortments may increase the initial purchase cost and leave spare components.
 
-**PCB pricing is provisional:** fabrication costs depend on your manufacturer, order quantity and shipping. Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 manufacturing files are published. See the component details and wiring requirements below.
+**PCB pricing is an estimate:** the US$41.10 fabrication subtotal depends on the quoted settings and quantities; check the current price and all extra charges before ordering. Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 manufacturing files are published. See the component details and wiring requirements below.
 
 <a id="six-pcb-layout"></a>
 
