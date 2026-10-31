@@ -1,6 +1,6 @@
 # ARC-210 Supporting 3D Files — October 30, 2026
 
-**Last updated: October 30, 2026 at 11:02 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:12 PM MDT (America/Denver)**
 
 **The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
@@ -21,6 +21,8 @@ The SQL shaft support spacer v.5 remains required in all installations.
 I still need to **design and 3D print the USB cable strain-relief support**. Its finished STL is not yet included in this directory. The support should protect the Teensy's Micro-B connector from cable pulls while allowing the cable to be unplugged and the Teensy removed for service. Physical fit verification is pending.
 
 ## Complete 17-part print set
+
+**Master downloads checked — October 30, 2026:** I checked the master STL and 3MF and confirmed that both include **Channel v4.2 and SQL v1.2, with all 17 parts at 100% scale**. The knob geometry matches the individual STL downloads, the 3MF uses millimeter units with no scaling applied, and the master STL matches the 17-part 3MF geometry. This is a file check; the replacement Channel v4.2 was physically test-fitted separately from the earlier complete-layout print.
 
 The master downloads include **all required printed parts for one panel**, at **100% scale**:
 
