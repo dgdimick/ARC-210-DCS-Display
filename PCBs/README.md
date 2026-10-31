@@ -1,6 +1,6 @@
 # ARC-210 PCBs
 
-**Last updated: October 31, 2026 at 12:06 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:08 AM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -19,6 +19,8 @@ I’m distressed by the total cost of this project, and I worry it may put the b
 I’ve spent about two months working on the code, averaging four hours a night—roughly **240 hours**. I’m sharing the source code for free so other builders don’t have to do all that development work themselves. The parts still cost money, but I hope the time and effort this saves helps make the project worthwhile.
 
 I’ve also spent about **US$500 on extra parts during development**. Buying more parts as I work toward a finished project adds up. That is my development expense; it is not an extra charge to builders or part of the estimated cost to build one panel. I’m still very happy to share this project with others. We all enjoy adding to our SIMPITs, no matter how big or small they are.
+
+One thing I’m very pleased about is that I’m developing the same ARC-210 panel hardware for every aircraft I’ve planned to support, including the A-10C II and C-130J. I’m designing a shared code base that will automatically use the appropriate controls and display data for the aircraft you’re flying, so you won’t need to reflash the Teensy when switching between supported aircraft—just fly the aircraft. **This automatic aircraft support is still being developed and tested; it is not a completed feature yet.** Aircraft-specific DCS-BIOS mappings will be handled within that shared setup.
 
 Here are both PCB purchasing options using the same component estimates. These totals cover the panel’s parts, including the PC Flights faceplate, rather than just the bare boards. **All amounts are in US dollars (USD).**
 
