@@ -102,7 +102,12 @@ Open this file inside the DCS-BIOS folder you installed:
 Scripts\DCS-BIOS\lib\modules\aircraft_modules\A-10C.lua
 ```
 
-These edits let my firmware read additional HQ/WOD and power-up display information. You don’t need to understand the Lua code to make these changes: find each named block, then replace just the line starting with `return`.
+These two lines tell DCS-BIOS which display information to send to my ARC-210 firmware:
+
+- **WOD/HQ line:** Checks the WOD segment, HQ II segment, operating date, and active channel in that order, and sends the first available value. This lets the panel show the value supplied for the current radio page.
+- **Power-up line:** Sends the radio’s `txt_RT` display value when it is available. Otherwise, if the power-up loader is active, it sends `PWR` so my firmware can recognize that startup state.
+
+For each change below, find the named block and replace only the line starting with `return`. The surrounding lines stay the same.
 
 **Leave the rest of each block exactly as it is.** Don’t add another copy or change the `2` or `3` on its closing line. Those numbers set how much text is sent, and changing them or moving the blocks can change where the firmware expects to find the data.
 
