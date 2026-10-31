@@ -145,6 +145,8 @@ The selected generic footprint is `Button_Switch_THT:SW_PUSH-6mm`. Confirm the p
 
 ## Required 3D-printed knobs
 
+**All current knobs print at 100% slicer scale with the current hardware:** Frequency v10.1, Mode v4, Channel v4.1, and SQL v1.2. The shaft-fit adjustments are already built into these files; no additional scaling is needed.
+
 Print the following quantities for one ARC-210 panel:
 
 | Knob | Quantity to print | STL |
