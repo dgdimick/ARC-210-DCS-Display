@@ -61,7 +61,7 @@ I also own three other SIMPIT panels that use USB. I have used them for over **1
 
 ## DCS-BIOS
 
-[Read my DCS-BIOS setup and connection guide](Docs/DCS-BIOS.md) for the DCS-Skunkworks project, TekConnect—the app I use to manage my connections—and the ARC-210 export changes.
+[Read my step-by-step DCS-BIOS setup guide](Docs/DCS-BIOS.md) for installation, the required `Export.lua` and ARC-210 `A-10C.lua` file changes, firmware loading, and TekConnect—the app I use to manage my USB serial connections. It also covers testing and troubleshooting.
 
 ## Firmware and hardware information
 
