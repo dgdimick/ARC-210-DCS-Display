@@ -1,5 +1,7 @@
 # ARC-210 Supporting 3D Files
 
+**Last updated: October 30, 2026**
+
 **Current STL files — October 30, 2026:** Frequency knob **v10.1** is now available with a larger shaft socket and a successful physical fit test. The other published STL versions remain as listed below. The shaft spacer is **v.5**. Channel **v4.1** and SQL **v1.2** are now available and use the same tested geometry, printed at **100%**.
 
 **All current knobs reprinted and test-fitted:** I’ve reprinted all nine knobs in their current versions—**5 Frequency v10.1, 2 Mode v4, 1 Channel v4.1, and 1 SQL v1.2—and all passed their test fit.** I’m happy with the fit, and **I don’t expect these knob designs to change again**. Print at **100% scale**. Printer tolerances and shaft sizes vary, so check the fit on your own hardware.
@@ -66,7 +68,7 @@ The combined STL and 3MF now contain **five v10.1 frequency knobs** at 100% scal
 
 ## Display bracket
 
-Updated October 12, 2026.
+Updated October 30, 2026.
 
 The current display bracket is [Deep_Bracket_v.5.stl](Deep_Bracket_v.5.stl). This file replaces `3.5-SPI-Display-Bracket-v3.stl`, which has been removed from the current branch. Use this replacement for new downloads; the older bracket remains available in repository history.
 
@@ -74,7 +76,7 @@ The current display bracket is [Deep_Bracket_v.5.stl](Deep_Bracket_v.5.stl). Thi
 
 ## Rotary encoder spacer
 
-Added October 11, 2026.
+Added October 11, 2026. Updated October 30, 2026.
 
 [Rotary_Encoder_Spacer_v.1.stl](Rotary_Encoder_Spacer_v.1.stl)
 
