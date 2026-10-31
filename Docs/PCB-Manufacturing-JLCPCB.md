@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: October 30, 2026 at 11:55 PM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:04 AM MDT (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -52,6 +52,10 @@ My **complete six-board ARC-210 bare-PCB set is US$40, plus shipping, VAT, and a
 You’re also welcome to order directly from a manufacturer using the files and steps below. I’ll keep sharing the project files and build guidance whichever route you choose.
 
 ## Estimated total build cost
+
+I’ve spent about two months working on the code, averaging four hours a night—roughly 240 hours. I’m sharing that source code for free so other builders can use my work without having to develop everything themselves. The parts still cost money, but I hope the time and effort this saves helps make the project worthwhile.
+
+I’ve also spent about **US$500 on extra parts during development**. Having to keep buying parts as I work toward a finished project adds up. That is my development expense, separate from the estimated parts cost for building one panel. Still, I’m very happy to offer this project to others. We all enjoy adding to our SIMPITs, no matter how big or small they are.
 
 Here is the estimated cost of the complete panel using either PCB purchasing option. Both totals use the same component estimates and include the PC Flights faceplate. **All amounts in this table are in US dollars (USD).**
 

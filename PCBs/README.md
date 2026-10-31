@@ -1,6 +1,6 @@
 # ARC-210 PCBs
 
-**Last updated: October 30, 2026 at 11:57 PM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:04 AM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -13,6 +13,10 @@ I’m offering this as a **convenient complete set for one radio**: you get the 
 These are bare boards for you to populate and solder. Components, the faceplate, printed parts, and assembly are not included; assembled-board electrical testing is still pending. [Contact me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to check availability and shipping. You can also [order directly from JLCPCB](../Docs/PCB-Manufacturing-JLCPCB.md) using the manufacturing downloads below.
 
 ## Estimated total build cost
+
+I’ve spent about two months working on the code, averaging four hours a night—roughly 240 hours. I’m sharing that source code for free so other builders can use my work without having to develop everything themselves. The parts still cost money, but I hope the time and effort this saves helps make the project worthwhile.
+
+I’ve also spent about **US$500 on extra parts during development**. Having to keep buying parts as I work toward a finished project adds up. That is my development expense, separate from the estimated parts cost for building one panel. Still, I’m very happy to offer this project to others. We all enjoy adding to our SIMPITs, no matter how big or small they are.
 
 Here are both PCB purchasing options using the same component estimates. These totals cover the panel’s parts, including the PC Flights faceplate, rather than just the bare boards. **All amounts are in US dollars (USD).**
 
