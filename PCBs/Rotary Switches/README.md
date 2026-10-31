@@ -1,6 +1,6 @@
 # ARC-210 Rotary Switch PCB — Version 2.0 — Final PCB design
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:18 AM MDT (America/Denver)**
 
 Updated October 12, 2026.
 
@@ -22,20 +22,22 @@ The Main Board schematic shows a 220 Ω series resistor and 100 nF capacitor nea
 
 ## SQL On/Off option added in version 1.2
 
+**SQL switch replacement pending:** The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](../../Docs/Project-Updates.md) and update the [parts list](../../parts/README.md).
+
 The **SQL On/Off PCB is optional**: use it for the switch wiring, or omit it and wire directly to the switch’s solder lugs as described below. The panel uses five required boards, or six with this optional SQL board.
 
 The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether or not the optional PCB is fitted.
 
 I modified the PCB so it can also be used with the SQL On/Off switch. **JP1**, marked **ON/OFF** on the back of the PCB near R2, is an open solder jumper between GND and the R1–R2 junction: R2 pad 1, also connected to switch terminal 2.
 
-- **SQL On/Off:** omit all six resistors R1–R6 and bridge JP1 with solder. Connect J1 pin 2 (switch common A1) to a Teensy input configured with a pull-up, and J1 pin 3 to GND. Selecting terminal 2 pulls the input LOW; an ungrounded contact reads HIGH. J1 pin 1 is not needed for this configuration. Set the switch travel and contact selection to match the panel markings.
+- **SQL On/Off:** omit all six resistors R1–R6 and bridge JP1 with solder. Connect J1 pin 2 (switch common A1) to a Teensy input configured with a pull-up, and J1 pin 3 to GND. Selecting terminal 2 pulls the input LOW; an ungrounded contact reads HIGH. J1 pin 1 is not needed for this configuration. Choose the contact for the intended electrical ON/OFF states; this does not correct the current SQL switch’s mechanical travel mismatch.
 - **Resistor ladder:** fit all six resistors R1–R6 and leave JP1 open. Use the three J1 connections listed above.
 
 The solder-lug A12515RNZQ still requires mechanical support and wires to the corresponding PCB connections; it does not fit the PCB-pin footprint directly.
 
 Validation for version 2.0: KiCad PCB DRC, with zones refilled, reported zero non-excluded violations and zero unconnected pads under the saved project settings. The project contains 15 specific PTH-inside-switch-courtyard exclusions for the rear-side resistors and connector; their lead and solder-joint clearance to the switch body still requires physical verification. Several other check categories are disabled in the project. Fresh electrical schematic and PCB checks, including schematic parity, were run October 27, 2026; see the manufacturing files section. I’ve confirmed the mechanical fit. Testing the electrical operation of an assembled, manufactured board is still on my list; the check results above describe what has been verified so far.
 
-**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Main Board’s SQL signal (GPIO 41) and GND connections. Select the contact to match the panel’s SQL On/Off positions and configure GPIO 41 with a pull-up. No resistor ladder is needed for this option. The Main Board v1.1 now includes TP1 (SQL signal, GPIO 41 / U1 pad 33) and TP2 (GND) for direct solder-wire connections. The optional SQL1 header remains; the current Main Board v1.1 is routed with zero unconnected items; physical fit is confirmed for Main Board v1.1; final routing review and assembly checks remain pending.
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Main Board’s SQL signal (GPIO 41) and GND connections. Configure GPIO 41 with a pull-up and choose the contact for the intended electrical ON/OFF states; this wiring does not correct the current switch’s mechanical travel mismatch. No resistor ladder is needed for this option. The Main Board v1.1 now includes TP1 (SQL signal, GPIO 41 / U1 pad 33) and TP2 (GND) for direct solder-wire connections. The optional SQL1 header remains; the current Main Board v1.1 is routed with zero unconnected items; physical fit is confirmed for Main Board v1.1; final routing review and assembly checks remain pending.
 
 ## Manufacturing files
 

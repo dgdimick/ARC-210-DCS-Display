@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 31, 2026 at 1:15 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:18 AM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -177,9 +177,9 @@ Refer to the [Rotary Switch instructions](../../PCBs/Rotary%20Switches/README.md
 
 For each of the two seven-position controls, use the C&K **A12505RNCQ PCB-terminal switch**, fit all six 1 kΩ resistors R1–R6, and leave JP1 open. J1 pin 1 is 3.3 V, pin 2 is the signal, and pin 3 is GND. Set the travel stops and knob orientation to suit the faceplate.
 
-The SQL On/Off switch is the **A12515RNZQ solder-lug version with the longer shaft**. It does not fit directly into the PCB-terminal footprint.
+The SQL On/Off switch is the **A12515RNZQ solder-lug version with the longer shaft**. It does not fit directly into the PCB-terminal footprint. **Its arc of movement does not match the panel.** When I find a suitable replacement, I’ll announce it in [Project Updates](../Project-Updates.md) and update the [parts list](../../parts/README.md).
 
-- **Direct wiring:** connect the switch common to the Main Board SQL signal and the selected contact to GND. Select the contact and travel stops to match the panel's ON/OFF positions.
+- **Direct wiring:** connect the switch common to the Main Board SQL signal and the selected contact to GND. Choose the contact for the intended electrical ON/OFF states. This wiring does not correct the current switch’s mechanical travel mismatch.
 - **Optional SQL PCB:** use wires from the solder-lug switch to the corresponding board connections. Leave R1–R6 unpopulated and bridge the board's JP1 ON/OFF solder jumper. Bridging means joining the jumper’s two pads with a small amount of solder. Follow its README for the contact and connector mapping.
 - Fit **shaft spacer v.5 in either configuration**.
 
