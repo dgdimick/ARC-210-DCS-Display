@@ -36,13 +36,13 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 8:13 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 8:15 PM MDT (America/Denver)**
 
-**October 30, 2026 at 8:13 PM MDT — Updated knobs reprinted and test-fitted**
+**October 30, 2026 at 8:15 PM MDT — Complete nine-knob layout printed and test-fitted**
 
-I’ve updated the knobs again and **reprinted all nine knobs in their current versions: 5 Frequency v10.1, 2 Mode v4, 1 Channel v4.1, and 1 SQL v1.2. All passed their test fit.** The Channel and SQL knobs are the same knob. I’m happy with the fit, and **I don’t expect these knob designs to change again**.
+I have printed the **complete nine-knob layout**, and **all nine knobs passed their test fit**: 5 Frequency v10.1, 2 Mode v4, 1 Channel v4.1, and 1 SQL v1.2. The complete layout is now print-tested as well as the individual knob designs. I am happy with the fit and do not expect these knob designs to change again.
 
-The [combined STL](Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) and [combined 3MF](Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf) include all nine current knobs. Print at **100% scale**. See the [STL instructions](Supporting%20STL%27s/README.md) for individual downloads and print quantities. Printer tolerances and shaft sizes vary, so check the fit on your own hardware.
+Download the [combined STL](Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf). Print one complete set at **100% scale**. Printer tolerances and shaft sizes vary, so check the fit on your own hardware.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

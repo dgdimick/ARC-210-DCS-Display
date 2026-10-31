@@ -2,10 +2,16 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 8:13 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 8:15 PM MDT (America/Denver)**
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
+
+**October 30, 2026 at 8:15 PM MDT — Complete nine-knob layout printed and test-fitted**
+
+I have printed the **complete nine-knob layout**, and **all nine knobs passed their test fit**: 5 Frequency v10.1, 2 Mode v4, 1 Channel v4.1, and 1 SQL v1.2. The complete layout is now print-tested as well as the individual knob designs. I am happy with the fit and do not expect these knob designs to change again.
+
+Download the [combined STL](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) or [combined 3MF](../Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf). Print one complete set at **100% scale**. Printer tolerances and shaft sizes vary, so check the fit on your own hardware.
 
 **October 30, 2026 at 8:13 PM MDT — Updated knobs reprinted and test-fitted**
 

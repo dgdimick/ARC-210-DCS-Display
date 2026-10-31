@@ -38,7 +38,7 @@ Both downloads contain **5 Frequency knobs, 2 Mode knobs, 1 Channel knob, and 1 
 - [Download all nine knobs as one STL](ARC-210-Knob-Set-V3-All-9.stl)
 - [Download all nine knobs as a 3MF with nine separate objects](ARC-210-Knob-Set-V3-All-9.3mf)
 
-The layout occupies approximately **106 × 52 mm**, with at least **8 mm clearance** between knobs. Both files retain the source geometry at **100% scale**, preserve the original orientation, and place every knob on Z=0. STL dimensions are intended as millimeters; the 3MF explicitly uses millimeters. The 3MF contains geometry and placement only, with no printer, filament, support, or slicer settings. Check the sliced preview and allow extra bed space for brims or skirts. I haven’t physically print-tested these combined files yet.
+The layout occupies approximately **106 × 52 mm**, with at least **8 mm clearance** between knobs. Both files retain the source geometry at **100% scale**, preserve the original orientation, and place every knob on Z=0. STL dimensions are intended as millimeters; the 3MF explicitly uses millimeters. The 3MF contains geometry and placement only, with no printer, filament, support, or slicer settings. Check the sliced preview and allow extra bed space for brims or skirts. I have printed the complete nine-knob layout, and all nine knobs passed their test fit.
 
 The SQL ON/OFF knob is included: **nine knobs total**, ready to print at **100% scale**. Individual knob STLs remain available for replacements and fit checks; see the printing and fit notes below before printing the full set.
 
@@ -54,7 +54,7 @@ Use the hardware listed on the main project page. **I’ve printed frequency kno
 
 I recommend printing **one frequency knob first and checking its shaft fit** before printing all five. Printer tolerances and shaft sizes vary. For the older [v10 STL](Freq_Knob_v.10.stl), I found **103% whole-knob scaling** gave the best fit; that enlarges both the socket and the outside of the knob. That older setting does not apply to v10.1.
 
-The combined STL and 3MF now contain **five v10.1 frequency knobs** at 100% scale. I haven’t physically print-tested the complete combined layout yet. The mode knobs remain v4. Channel v4.1 and SQL v1.2 print at 100%; the shaft socket now matches the Mode v4 socket cross-section (approximately 7.30 mm round diameter, with its D-flat), retaining the SQL socket’s 14 mm depth. The outside diameter, height, and small radial hole retain their original dimensions.
+The combined STL and 3MF now contain **five v10.1 frequency knobs** at 100% scale. I have printed the complete nine-knob layout, and all nine knobs passed their test fit. The mode knobs remain v4. Channel v4.1 and SQL v1.2 print at 100%; the shaft socket now matches the Mode v4 socket cross-section (approximately 7.30 mm round diameter, with its D-flat), retaining the SQL socket’s 14 mm depth. The outside diameter, height, and small radial hole retain their original dimensions.
 
 ## Other required STLs
 
