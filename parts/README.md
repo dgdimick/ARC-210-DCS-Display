@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: October 30, 2026 at 11:51 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:59 PM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -15,6 +15,8 @@ The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.
 Future button lighting would require a separate power and driver design, suitable light-transmitting buttons, and a new Button LED PCB. The current Main Board has no external lighting-power circuit. I’m leaving this lighting redesign for later and prioritizing the other radio projects.
 
 ## Estimated build cost
+
+I’m distressed by the total cost of this project, and I worry it may put the build beyond some people’s budgets. I want to be open about that so you can decide whether it fits your budget before buying parts. Considering the controls, display, and functionality the panel is designed to provide, I still feel it’s worth the cost.
 
 To help you plan your build, I’ve put together an estimated parts budget of **US$250–US$285 before shipping, handling, tax, VAT, and other applicable fees**, including the PC Flights faceplate. All prices in this parts-cost table are in **US dollars (USD)** so you can convert them to your local currency. The links below point to independent suppliers; the figures are a budgeting guide rather than a kit price.
 

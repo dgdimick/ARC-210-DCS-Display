@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 30, 2026 at 11:54 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:59 PM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -83,6 +83,8 @@ My own order for all the boards cost **about US$75**. That is an approximate tot
 **JLCPCB’s prices shown in my comparison and demo are fabrication prices only. They do not include shipping, handling, tax, VAT, tariffs, duties, or other applicable fees.** Check the full delivered total before comparing a manufacturer order with a board set from me. Assembled-board electrical testing is still pending.
 
 ### Estimated total build cost
+
+I’m distressed by the total cost of this project, and I worry it may put the build beyond some people’s budgets. I want to be open about that so you can decide whether it fits your budget before buying parts. Considering the controls, display, and functionality the panel is designed to provide, I still feel it’s worth the cost.
 
 To help you budget, here are both PCB purchasing options using the same component estimates, including the PC Flights faceplate. **All amounts are in US dollars (USD).**
 
