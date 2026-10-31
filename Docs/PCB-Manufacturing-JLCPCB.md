@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: October 31, 2026 at 12:04 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:06 AM MDT (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -43,19 +43,21 @@ I uploaded **Button Matrix v3.2** and checked the bare-board settings. JLCPCB de
 
 ## Buying a complete PCB set from me
 
-**Before placing your own manufacturing order, contact me about buying a complete set of bare PCBs for one radio.** I’m offering this as a **convenient complete set for one radio**: you get the boards you need without managing four separate PCB design uploads or ordering the manufacturer’s minimum quantity of every design. **Any savings depend on your location, shipping, VAT, tariffs, and other applicable fees**, so compare the full delivered totals. I’m not promising that my set will always be cheaper than ordering directly.
+**Before placing your own manufacturing order, contact me about buying a complete set of bare PCBs for one radio.** I’m offering this as a **convenient complete set for one radio**: you get the boards you need without managing four separate PCB design uploads or ordering the manufacturer’s minimum quantity of every design. **Any savings depend on your location, shipping, handling, tax, VAT, tariffs, and other applicable fees**, so compare the full delivered totals. I’m not promising that my set will always be cheaper than ordering directly.
 
-My own order for all the boards cost **about US$75**. That is an approximate total for my board order, not the manufacturing cost of a single six-board set or a guaranteed quote for another builder. My complete-set price remains **US$40 plus shipping, VAT, and other applicable fees**.
+My own order for all the boards cost **about US$75**. That is an approximate total for my board order, not the manufacturing cost of a single six-board set or a guaranteed quote for another builder. My complete-set price remains **US$40 plus shipping, handling, tax, VAT, and other applicable fees**.
 
-My **complete six-board ARC-210 bare-PCB set is US$40, plus shipping, VAT, and any other applicable taxes, duties, or fees**. It includes one Main Board, one Button Matrix, one Rotary Encoder, and three Rotary Switch boards, including the optional SQL board. Ask in [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) about availability and a shipping quote. These are bare boards for you to populate and solder; components, the faceplate, printed parts, and assembly are not included. Assembled-board electrical testing is still pending. Compare the delivered totals for your location rather than assuming a guaranteed saving.
+My **complete six-board ARC-210 bare-PCB set is US$40, plus shipping, handling, tax, VAT, and any other applicable tariffs, duties, or fees**. It includes one Main Board, one Button Matrix, one Rotary Encoder, and three Rotary Switch boards, including the optional SQL board. Ask in [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) about availability and a shipping quote. These are bare boards for you to populate and solder; components, the faceplate, printed parts, and assembly are not included. Assembled-board electrical testing is still pending. Compare the delivered totals for your location rather than assuming a guaranteed saving.
 
 You’re also welcome to order directly from a manufacturer using the files and steps below. I’ll keep sharing the project files and build guidance whichever route you choose.
 
 ## Estimated total build cost
 
-I’ve spent about two months working on the code, averaging four hours a night—roughly 240 hours. I’m sharing that source code for free so other builders can use my work without having to develop everything themselves. The parts still cost money, but I hope the time and effort this saves helps make the project worthwhile.
+I’m distressed by the total cost of this project, and I worry it may put the build beyond some people’s budgets. I want to be open about that so you can decide whether it fits your budget before buying parts. Considering the controls, display, and functionality the panel is designed to provide, I still feel it’s worth the cost.
 
-I’ve also spent about **US$500 on extra parts during development**. Having to keep buying parts as I work toward a finished project adds up. That is my development expense, separate from the estimated parts cost for building one panel. Still, I’m very happy to offer this project to others. We all enjoy adding to our SIMPITs, no matter how big or small they are.
+I’ve spent about two months working on the code, averaging four hours a night—roughly **240 hours**. I’m sharing the source code for free so other builders don’t have to do all that development work themselves. The parts still cost money, but I hope the time and effort this saves helps make the project worthwhile.
+
+I’ve also spent about **US$500 on extra parts during development**. Buying more parts as I work toward a finished project adds up. That is my development expense; it is not an extra charge to builders or part of the estimated cost to build one panel. I’m still very happy to share this project with others. We all enjoy adding to our SIMPITs, no matter how big or small they are.
 
 Here is the estimated cost of the complete panel using either PCB purchasing option. Both totals use the same component estimates and include the PC Flights faceplate. **All amounts in this table are in US dollars (USD).**
 
@@ -116,7 +118,7 @@ You don’t need to upload the schematic, STL files, firmware, component shoppin
 
 The Gerber job file’s finish entry is `None`, meaning the project has not specified a finish there. It is not an instruction to order bare, unfinished copper. Review the actual finish selected in the quote.
 
-You can leave unrelated extra services unselected unless you specifically need them. Compare the full total, including shipping and tax; a low advertised board price is not the complete delivered cost. The [parts list](../parts/README.md#estimated-build-cost) has my build-cost estimates.
+You can leave unrelated extra services unselected unless you specifically need them. Compare the full total, including shipping, handling, tax, VAT, and other applicable fees; a low advertised board price is not the complete delivered cost. The [parts list](../parts/README.md#estimated-build-cost) has my build-cost estimates.
 
 ## 4. Inspect the preview before checkout
 
