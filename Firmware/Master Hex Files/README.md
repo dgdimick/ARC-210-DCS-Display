@@ -1,8 +1,21 @@
 # ARC-210 menu-system preview
 
-**Last updated: October 30, 2026 at 11:14 PM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:13 AM MDT (America/Denver)**
 
-`Master_Program.ino.hex` is the current Teensy 4.1 / ILI9488 480 × 320 display firmware, published for menu-screen and navigation testing. It is not a complete implementation of every radio function.
+`ARC210_A-10C2_Preview.hex` is the current Teensy 4.1 / ILI9488 480 × 320 display firmware, published for menu-screen and navigation testing. It is not a complete implementation of every radio function.
+
+## Aircraft labels and cumulative releases
+
+| HEX filename | Aircraft coverage and release status |
+| --- | --- |
+| [ARC210_A-10C2_Preview.hex](ARC210_A-10C2_Preview.hex) | Current A-10C II (A-10C2) display/menu preview; full radio-control integration remains incomplete |
+| `ARC210_A-10C2_C-130J.hex` | Planned cumulative release for both A-10C2 and C-130J; not available yet |
+
+I’ll label radio HEX downloads with the aircraft they support. Each new aircraft-support release will retain support for the previously supported aircraft. Adding an aircraft will require loading the updated HEX once, using the same Teensy Loader procedure as the first flash while the panel is connected by USB. After that, switching between aircraft included in that version will not require reflashing. **This cumulative aircraft support and automatic selection are still being developed and tested.**
+
+Later release filenames will list the additional aircraft while retaining the earlier aircraft labels. A filename describes the aircraft covered by that release; the preview label and release notes describe any unfinished functions. The C-130J entry above is a naming plan, not a download or a claim of completed support.
+
+The current preview was renamed from `Master_Program.ino.hex` to make its aircraft and preview status clear. Its compiled contents have not changed.
 
 ## What to test
 
@@ -27,7 +40,7 @@ Open this HEX in Teensy Loader, enable Auto, and press the Teensy's programming 
 
 Use the maintained [ARC-210 working branch of dcsBiosDebug](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working) to send simulated DCS-BIOS updates to the Teensy over USB serial. This lets you exercise the firmware's menu screens and navigation without launching DCS or loading a mission. See the [ARC-210 testing instructions](https://github.com/dgdimick/dcsBiosDebug/blob/arc210-working/ARC210_TESTING.md) for installation and the ARC-210 controls. The original executable does not contain those controls; use the Python script from the arc210-working branch. The manual JSON/Active Indicators procedure below describes the earlier generic workflow.
 
-1. Load `Master_Program.ino.hex` onto the Teensy and connect the display hardware.
+1. Load `ARC210_A-10C2_Preview.hex` onto the Teensy and connect the display hardware.
 2. Close the DCS-BIOS serial bridge and any Serial Monitor using the Teensy's COM port.
 3. In dcsBiosDebug, click **Find Serial Ports**, select the Teensy's COM port, and click **Connect**.
 4. Load the matching A-10C aircraft JSON definition from your DCS-BIOS `doc/json` directory. Its output addresses and masks must match this firmware.

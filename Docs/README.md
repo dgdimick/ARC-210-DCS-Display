@@ -1,6 +1,6 @@
 # ARC-210 Documentation
 
-**Last updated: October 30, 2026 at 11:02 PM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:13 AM MDT (America/Denver)**
 
 These notes explain the choices behind my ARC-210 build and help you find your way around the wiring and hardware. If something is unclear, feel free to ask in Discussions.
 
@@ -50,7 +50,7 @@ Display response speed was another major factor in my choice. Compared with clas
 
 The Teensy is programmed using the same **Arduino IDE** and **`.ino` sketches** used for Arduino boards. The familiar editor, C++ sketch structure, and `setup()` / `loop()` workflow remain the same, so there is no need to learn a different programming environment for this project.
 
-Install [Teensy board support](https://www.pjrc.com/teensy/td_download.html) and select Teensy 4.1 in the IDE. [Teensy Loader](https://www.pjrc.com/teensy/loader.html) handles uploading the compiled firmware and is integrated with the Arduino upload workflow. To use the precompiled `Master_Program.ino.hex` supplied here, simply open it in Teensy Loader and program the board; you do not need to compile the sketch yourself.
+Install [Teensy board support](https://www.pjrc.com/teensy/td_download.html) and select Teensy 4.1 in the IDE. [Teensy Loader](https://www.pjrc.com/teensy/loader.html) handles uploading the compiled firmware and is integrated with the Arduino upload workflow. To use the precompiled `ARC210_A-10C2_Preview.hex` supplied here, simply open it in Teensy Loader and program the board; you do not need to compile the sketch yourself.
 
 The programming workflow is familiar, although pin assignments and hardware-specific libraries still need to match the Teensy rather than an Uno or Mega.
 
