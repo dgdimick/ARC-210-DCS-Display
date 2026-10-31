@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: October 30, 2026 at 11:12 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:29 PM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -18,7 +18,7 @@ Future button lighting would require a separate power and driver design, suitabl
 
 To help you plan your build, I’ve put together an estimated parts budget of **$320–$365 USD before shipping and tax**, including the PC Flights faceplate. The links below point to independent suppliers; the figures are a budgeting guide rather than a kit price.
 
-This is primarily a DIY project. I share the files and build notes to help you make your own panel. You’ll purchase components from the linked suppliers, arrange PCB fabrication with a manufacturer, and print the STL parts yourself or use a printing service. If you’re stuck and need a hand, feel free to ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)—I’m happy to help where I can.
+This is primarily a DIY project. I share the files and build notes to help you make your own panel. You can purchase components from the linked suppliers and print the STL parts yourself or use a printing service. **Contact me in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) about buying one complete set of bare PCBs from me**, which may cost less than ordering the manufacturer’s minimum quantity of each design. Ask for pricing and availability, including shipping; no selling price or guaranteed savings is published yet. You can also order the boards directly using my [PCB manufacturing guide](../Docs/PCB-Manufacturing-JLCPCB.md). If you’re stuck, I’m happy to help where I can.
 
 Prices checked October 22, 2026, except the recommended Teensy with headers and PCB budget allowance, updated October 29, 2026. The PCB allowance is now approximately **$120** to reflect increased fabrication costs. The overall range remains a provisional budget; small hardware and PCB costs are allowances rather than supplier quotes.
 

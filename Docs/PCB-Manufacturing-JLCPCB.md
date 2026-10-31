@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: October 30, 2026 at 11:28 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:29 PM MDT (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -41,6 +41,14 @@ I uploaded **Button Matrix v3.2** and checked the bare-board settings. JLCPCB de
 
 *My Button Matrix quote demonstration. Click the picture to enlarge it. The screenshot also shows a shipping estimate and a separate desktop-app promotional price; the comparison above uses the web fabrication price only. Nothing was added to the cart or ordered during the demo.*
 
+## Buying a complete PCB set from me
+
+**Before placing your own manufacturing order, contact me about buying a complete set of bare PCBs for one radio.** I’d like to help builders save the cost of ordering the manufacturer’s minimum quantity of every design. Buying just the boards you need from me may be a cheaper way to get started, without a pile of extra copies.
+
+Ask in [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) about **board-set pricing and availability**. We can confirm whether you need the five-board set or the six-board set with the optional SQL PCB, then compare the price including shipping. I haven’t published a selling price or guaranteed savings yet. These are bare boards for you to populate and solder, rather than assembled or tested radio panels; assembled-board electrical testing is still pending.
+
+You’re also welcome to order directly from a manufacturer using the files and steps below. I’ll keep sharing the project files and build guidance whichever route you choose.
+
 ## 1. Choose the files and quantities
 
 There are **four different PCB designs**, but one radio panel uses **five boards**, or **six with the optional SQL board**:
@@ -54,7 +62,7 @@ There are **four different PCB designs**, but one radio panel uses **five boards
 
 Download each ZIP to your computer and keep it zipped for upload. These are the manufacturing ZIPs, rather than GitHub’s whole-project **Code → Download ZIP** file. Each contains the board layers and drill data JLCPCB needs.
 
-For the simplest ordering route, upload **one design per quote item**. You’ll have four different items in your cart. The Rotary Switch boards all use the same file; you need multiple copies of that design rather than separate designs for each switch.
+**You need a separate order item for each of the four PCB designs:** Main Board, Button Matrix, Rotary Encoder, and Rotary Switch. Upload each design’s ZIP and configure its quantity separately. You can put all four items in the same cart and checkout together; you don’t need four separate payments or shipments. The Rotary Switch boards all use the same file, so order enough copies of that design for the two required switches, or three with the optional SQL board.
 
 **JLCPCB normally defaults to five copies of each PCB design.** Check the selected quantity and the available minimum on each quote before ordering. **Quantity means copies of that design, not complete radio sets.** Ordering five of each of the four designs gives you twenty individual boards; one radio uses five boards, or six with the optional SQL board, leaving spares.
 
