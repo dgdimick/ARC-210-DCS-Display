@@ -39,21 +39,7 @@ This is a bench test of the firmware's response to supplied data. dcsBiosDebug d
 
 ## DCS-BIOS export requirements
 
-This build was tested with local changes to the A-10C DCS-BIOS export. Stock exports do not provide all the values used by these HQ screens. Back up your installed `Saved Games/DCS/Scripts/DCS-BIOS/lib/modules/aircraft_modules/A-10C.lua` before adapting the two existing getters below. Keep their existing lengths, ordering, and addresses; do not add duplicate definitions.
-
-For `ARC210_VERIFY_WOD_ACTIVE_CHANNEL` (two characters, address `0x1338`), use:
-
-```lua
-return Functions.coerce_nil_to_string(arc_210_data["WOD_segment"] or arc_210_data["HQII_segment"] or arc_210_data["active_oper_date"] or arc_210_data["active_channel"])
-```
-
-For `ARC210_SELECTED_RT` (three characters, address `0x1320`), use:
-
-```lua
-return Functions.coerce_nil_to_string(arc_210_data["txt_RT"] or (arc_210_data["POWER UP LOADER"] and "PWR"))
-```
-
-Fully close and restart DCS after these changes. Reloading a mission or flashing the Teensy does not reload the Lua export. DCS-BIOS updates may overwrite these customizations. These getters only read the game's display data.
+This firmware was tested with two local changes to the A-10C DCS-BIOS export. See the [dedicated DCS-BIOS page](../../Docs/DCS-BIOS.md#arc-210-changes-to-the-dcs-bios-export) for the required getters, backup and restart instructions, and TekConnect links.
 
 ## File verification
 
