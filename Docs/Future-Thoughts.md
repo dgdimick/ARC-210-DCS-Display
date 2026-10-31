@@ -2,7 +2,7 @@
 
 # Future thoughts and plans
 
-**Last updated: October 31, 2026 at 12:42 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:44 AM MDT (America/Denver)**
 
 My current plan is to finish the **A-10C II (A-10C2) ARC-210 implementation**, then build and test the **ARC-164**, followed by the **ARC-186**. After those projects, I’ll return to additional aircraft support, starting with the **ARC-210 and C-130J**. Those aircraft extensions are later work, not the current implementation priority. I’m focusing on aircraft with a matching physical radio panel. **This order may change based on user feedback and interest.**
 
@@ -15,6 +15,8 @@ My current plan is to finish the **A-10C II (A-10C2) ARC-210 implementation**, t
 - I may revisit button lighting after completing the **ARC-164 and ARC-186 projects**. I have no finished Button LED PCB design or release date for this possible future redesign. I would need to redesign the button board to support LED backlighting; the current Button Matrix PCB v3.2 does not support it. The redesign would require suitable translucent buttons and a new button board with LED support (Button LED PCB), plus changes to the Main Board to make room for an SCR, its associated discrete components, and a lighting connector. I would also need an external 5 V supply and the associated power-input and protection circuitry. The current USB/3.3 V Main Board does not include this lighting circuitry. I may need to use four-layer PCBs for the replacement Main Board and button board, which could increase the cost of both replacement boards. I haven’t confirmed the layer requirements or priced that redesign yet; this possible extra cost is not included in the current build estimate or bare-PCB set price. I dropped button lighting from the current design because there wasn’t enough clearance with the TFT display, so I would need to resolve that mechanical clearance before adding it.
 
 I recommend using **male pin headers on the Teensy and matching female socket strips on the Main Board** so the controller can be unplugged. If I release a compatible replacement Main Board, you could move your existing Teensy to it rather than buy another controller, saving some money. Soldering the Teensy’s header pins directly into the Main Board does not provide that removable connection.
+
+My aim would be to reuse the **rotary encoders, rotary switches, socket-mounted Teensy, faceplate, and other parts that aren’t mounted on the Main Board or Button Matrix PCB**, so upgrading would not mean buying a whole new panel. I still need to confirm compatibility as I develop the redesign. The current opaque buttons would need suitable light-transmitting replacements for illuminated legends.
 
 - I’ve asked PJRC about replacing Micro-USB with USB-C on a future Teensy 4.1 revision and posted on their forum to see what other builders think. A reversible connector would make cable connections behind the radio panels easier. This is a request and community discussion; no connector change has been confirmed.
 
