@@ -1,6 +1,6 @@
 # ARC-210 Button Matrix PCB
 
-**Last updated: October 30, 2026 at 11:16 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:17 PM MDT (America/Denver)**
 
 **October 30, 2026 — v3.2 released:** Removed the duplicate approximately 13.38 mm Edge.Cuts circle at H3; the intended opening remains a **12.0 mm non-plated hole**. Board and schematic revisions and the silkscreen are now **3.2**. I moved H3’s reference label clear of the hole’s solder-mask opening. There are no electrical changes. Gerbers and drills were freshly exported with KiCad 10.0.7; fresh ERC/DRC checks report zero violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. Use the [v3.2 manufacturing ZIP](Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) for new orders.
 
@@ -48,6 +48,8 @@ These front and back pictures show the earlier **v3.0** layout. The current v3.2
 ![Button Matrix PCB back view showing the diodes, row and column connectors, and routing](../../images/Button-Matrix-PCB-Back-3D.png)
 
 **The switches go on the front side of the PCB, facing the faceplate. The diodes and pin connectors go on the opposite (back) side.** The silkscreen markings show which side each component belongs on, so check those markings before soldering.
+
+**Photo reminder for my next assembly:** Once the manufactured PCBs arrive and I start building, I’ll add front-and-back photos here showing the switches on the front and the diodes and pin connectors on the back, with the silkscreen markings visible.
 
 ## Trim front-side leads before mounting
 
