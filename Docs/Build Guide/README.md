@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 30, 2026 at 11:44 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:54 PM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -80,7 +80,20 @@ I’m offering this as a **convenient complete set for one radio**: you get the 
 
 My own order for all the boards cost **about US$75**. That is an approximate total for my board order, not the manufacturing cost of a single six-board set or a guaranteed quote for another builder. My complete-set price remains **US$40 plus shipping, VAT, and other applicable fees**.
 
-**JLCPCB’s prices shown in my comparison and demo are fabrication prices only. They do not include shipping, tax, VAT, tariffs, duties, or other applicable fees.** Check the full delivered total before comparing a manufacturer order with a board set from me. Assembled-board electrical testing is still pending.
+**JLCPCB’s prices shown in my comparison and demo are fabrication prices only. They do not include shipping, handling, tax, VAT, tariffs, duties, or other applicable fees.** Check the full delivered total before comparing a manufacturer order with a board set from me. Assembled-board electrical testing is still pending.
+
+### Estimated total build cost
+
+To help you budget, here are both PCB purchasing options using the same component estimates, including the PC Flights faceplate. **All amounts are in US dollars (USD).**
+
+| PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
+| --- | ---: | ---: |
+| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$41.10 | US$250.62–US$283.62 |
+| My complete six-board bare-PCB set for one radio | US$40.00 | US$249.52–US$282.52 |
+
+**Shipping, handling, tax, and VAT are separate and are not included in either total.** Tariffs, duties, and other applicable fees are also extra. These are estimates rather than fixed kit prices; either option rounds to about **US$250–US$285** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
+
+See the [parts-cost breakdown](../../parts/README.md#estimated-build-cost) for the component prices and allowances. Compare the full delivered totals for your location before choosing how to buy the boards.
 
 I use **JLCPCB** for PCB manufacturing. Follow my [step-by-step JLCPCB ordering guide](../PCB-Manufacturing-JLCPCB.md) for the ZIP files, board quantities, quote settings, preview checks, and engineering questions.
 
