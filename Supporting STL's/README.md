@@ -70,6 +70,8 @@ Updated October 12, 2026.
 
 The current display bracket is [Deep_Bracket_v.5.stl](Deep_Bracket_v.5.stl). This file replaces `3.5-SPI-Display-Bracket-v3.stl`, which has been removed from the current branch. Use this replacement for new downloads; the older bracket remains available in repository history.
 
+**Note:** I’ll probably redesign the display bracket after the PCBs are built. I still don’t like the current mounting method.
+
 ## Rotary encoder spacer
 
 Added October 11, 2026.
