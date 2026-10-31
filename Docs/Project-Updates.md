@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: October 31, 2026 at 1:19 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:22 AM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -12,7 +12,7 @@ I use this page to share hardware and firmware changes, releases, testing milest
 
 **October 31, 2026 at 1:19 AM MDT — SQL switch replacement needed**
 
-The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it here in Project Updates and update the [parts list](../parts/README.md). I haven’t selected or tested a replacement yet.
+The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](Project-Updates.md) and update the [parts list](../parts/README.md). I haven’t selected or tested a replacement yet.
 
 **October 31, 2026 at 12:20 AM MDT — v0.1.1 preview adds firmware and aircraft startup labels**
 
