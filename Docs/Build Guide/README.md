@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 31, 2026 at 12:34 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:39 AM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -124,7 +124,7 @@ Review the manufacturer's preview against the project outline and drill informat
 
 ## 4. Assemble the Button Matrix PCB
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to design a new button board with LED support, along with suitable light-transmitting buttons and the required Main Board, power, and driver changes. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished backlit button-board design or release date yet. See [Future Thoughts](../Future-Thoughts.md) for the lighting redesign plan.
+**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign the button board with LED support, use suitable light-transmitting buttons, and make the required Main Board, power, and driver changes. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished backlit button-board design or release date yet. See [Future Thoughts](../Future-Thoughts.md) for the lighting redesign plan.
 
 Start with the [Button Matrix instructions and connector table](../../PCBs/Button%20Matrix/README.md). This board holds the sixteen front-panel buttons. Compare the front and back pictures there before fitting parts.
 

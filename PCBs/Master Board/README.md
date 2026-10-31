@@ -1,6 +1,6 @@
 # ARC-210 Main Board v1.1 and schematic
 
-**Last updated: October 31, 2026 at 12:36 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:39 AM MDT (America/Denver)**
 
 Updated October 29, 2026: USB-powered design with TFT VCC supplied directly from the Teensy's 3.3 V rail.
 
@@ -65,7 +65,7 @@ Removed from the schematic and PCB: **J3, F2, D1, D2, D3, Q2, R15, R16, R17, JP1
 
 C5 (470 µF) and C6 (0.1 µF) have been removed from the schematic, PCB, and BOM to match the tested direct TFT wiring. No additional TFT supply capacitors are fitted on this Main Board. C1/C2 and R1/R2 remain as the rotary-input filters. The TFT backlight-control signal remains connected to GPIO 4.
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting and would need to be redesigned.** Adding button lighting would require a new button board with LED support (Button LED PCB), suitable light-transmitting buttons, and a separate power and driver design with the necessary Main Board changes. The current Main Board has no external lighting-power circuit. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished design or release date. The TFT display backlight is separate from this future button-lighting option.
+**The current Button Matrix PCB v3.2 does not support LED backlighting and would need to be redesigned.** I would need to design a new button board with LED support (Button LED PCB), use suitable light-transmitting buttons, and redesign the power and driver circuitry with the necessary Main Board changes. The current Main Board has no external lighting-power circuit. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished design or release date. The TFT display backlight is separate from this future button-lighting option.
 
 ## Rotary-switch test wiring
 
