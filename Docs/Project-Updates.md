@@ -2,17 +2,17 @@
 
 # Project updates
 
-**Last updated: October 31, 2026 at 1:38 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:40 AM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
-**Current PCB-set sale terms:** I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price. Earlier dated entries may describe previous terms; see the [current parts list](../parts/README.md#estimated-build-cost).
+**Current PCB-set sale terms:** I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price. Earlier dated entries may describe previous terms; see the [current parts list](../parts/README.md#estimated-build-cost). Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
 
 **October 31, 2026 at 1:37 AM MDT — US$3 printed-parts offer for builders without a 3D printer**
 
-If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. I want the lack of a printer to be one less obstacle to building your SIMPIT.
+If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. I want the lack of a printer to be one less obstacle to building your SIMPIT. Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
 
 Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. See the [printed-parts offer](../parts/README.md#no-access-to-a-3d-printer) for details.
 
@@ -40,7 +40,7 @@ See the [parts-cost breakdown](../parts/README.md#estimated-build-cost) and [JLC
 
 **October 30, 2026 at 11:46 PM MDT — Complete bare-PCB set available for US$40**
 
-I offer a **complete six-board ARC-210 bare-PCB set for US$40, plus shipping, VAT, and any other applicable taxes, tariffs, duties, or fees**. The set includes **one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards**, including the optional SQL On/Off board. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t.
+I offer a **complete six-board ARC-210 bare-PCB set for US$40, plus shipping, VAT, and any other applicable taxes, tariffs, duties, or fees**. The set includes **one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards**, including the optional SQL On/Off board. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
 
 This is a convenient set for one radio, without ordering the manufacturer’s minimum quantity of every design. Any savings depend on the full delivered cost for your location. You’ll supply the components and solder the boards yourself; the price does not include electronics, the faceplate, printed parts, or assembly. Assembled-board electrical testing is still pending.
 

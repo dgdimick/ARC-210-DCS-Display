@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: October 31, 2026 at 1:38 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:40 AM MDT (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -54,7 +54,7 @@ The PCBs require mounting stand-offs. Use the [Vibit M3 nylon stand-off kit](htt
 
 ## 2. Print and check the mechanical parts
 
-If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. I want the lack of a printer to be one less obstacle to building your SIMPIT.
+If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. I want the lack of a printer to be one less obstacle to building your SIMPIT. Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
 
 Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. See the [parts-list offer](../../parts/README.md#no-access-to-a-3d-printer) for details. If you receive a printed set from me, continue with the fit checks below; you don’t need to print another set.
 
@@ -82,7 +82,7 @@ Dry-fit printed parts before permanent assembly. All current files print at 100%
 
 **You can buy a complete six-board set of bare PCBs from me for US$40, plus shipping and handling.** The set includes one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards, including the optional SQL board. You’ll supply the components and solder the boards yourself; the price does not include electronics, the faceplate, printed parts, or assembly. [Contact me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to check availability and shipping. You’re also welcome to order directly from JLCPCB using the steps below.
 
-I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price.
+I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price. Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
 
 I’m offering this as a **convenient complete set for one radio**: you get the boards you need without managing four separate PCB design uploads or ordering the manufacturer’s minimum quantity of every design. **Any savings depend on your location, shipping, handling, tax, VAT, tariffs, and other applicable fees**, so compare the full delivered totals. I’m not promising that my set will always be cheaper than ordering directly. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t.
 

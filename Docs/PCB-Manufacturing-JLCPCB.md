@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: October 31, 2026 at 1:38 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:40 AM MDT (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -57,13 +57,13 @@ My own order for all the boards cost **about US$75**. That is an approximate tot
 
 My **complete six-board ARC-210 bare-PCB set is US$40, plus shipping and handling**. It includes one Main Board, one Button Matrix, one Rotary Encoder, and three Rotary Switch boards, including the optional SQL board. Ask in [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) about availability and a shipping quote. These are bare boards for you to populate and solder; components, the faceplate, printed parts, and assembly are not included. Assembled-board electrical testing is still pending. Compare the delivered totals for your location rather than assuming a guaranteed saving.
 
-I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price.
+I won’t add a separate tax charge to my **US$40 PCB-set price**. I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. Shipping and handling are separate. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. Any charges imposed by a carrier, customs authority, or other supplier are outside my PCB-set price. Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
 
 You’re also welcome to order directly from a manufacturer using the files and steps below. I’ll keep sharing the project files and build guidance whichever route you choose.
 
 ## No access to a 3D printer?
 
-If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. I want the lack of a printer to be one less obstacle to building your SIMPIT.
+If you don’t have access to a 3D printer and that is stopping you from building the panel, I’ll send you **one complete 17-part printed set for US$3 (three US dollars), plus shipping**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t. I want the lack of a printer to be one less obstacle to building your SIMPIT. Even if I’m not required to collect VAT, you may still have to pay import VAT, customs duties, or carrier clearance fees in your country. I don’t control those charges, and they aren’t included in my prices.
 
 Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can arrange the set and shipping. See the [printed-parts offer](../parts/README.md#no-access-to-a-3d-printer) for details. Shipping and any applicable VAT are not included in the US$3 price. I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t.
 
