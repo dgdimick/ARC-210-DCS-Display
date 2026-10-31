@@ -2,57 +2,57 @@
 
 # USB connections and powered hubs
 
-I also own three other SIMPIT panels that use USB. I have used them for over **1,000 hours in the past year without any issues**.
+I’m keeping **a dedicated Teensy 4.1 and USB connection to DCS-BIOS for each radio: the ARC-210, ARC-164, and ARC-186**. Three connections are manageable, and I can build, test, update, and troubleshoot each radio independently.
 
-I’ll use a **dedicated Teensy 4.1 and USB connection to DCS-BIOS for each radio: the ARC-210, ARC-164, and ARC-186**. Three USB connections are manageable, and each radio can be built, tested, updated, and troubleshot independently.
+USB is already part of my SIMPIT. I use it for my MFCDs, button boxes, keyboard, HOTAS, and flight stick. I also own **three other SIMPIT panels that use USB**, and I have used them for **over 1,000 hours in the past year without any issues**.
 
-RS-485 can reduce USB ports and COM-port connections when many cockpit panels share a communication bus, but it adds transceiver hardware, bus wiring, termination, addressing, and a master interface. For these three radios, separate USB connections keep assembly and setup simpler. **I plan to keep USB for each radio.**
+When I started the ARC-210 project, I rewired my SIMPIT. **I currently run all 12 USB devices through one hub without any issues.** I’ll build on that setup, adding the radio controllers and future panels one at a time and testing everything together as I go.
 
-**I’m using powered USB hubs to expand my cockpit.** I already use USB for my MFCDs, button boxes, keyboard, HOTAS, and flight stick, so the radio panels will use the same USB setup. **I currently run all 12 USB devices through a single USB hub without any issues, after rewiring my SIMPIT when I started the ARC-210 project.** That experience supports my plan to keep using USB and add the radio controllers one at a time. I’ll check power requirements and test the setup as I connect new panels. RS-485 would consolidate the panel-controller connections, but those existing devices would still need USB. Building on the powered-hub setup already in use keeps the radios consistent with the rest of my cockpit. Powered hubs allow multiple Teensy controllers to share the PC's USB connections, preserve header GPIO pins, and work with the planned USB DCS-BIOS firmware. Each controller can still be tested, updated, and troubleshot independently, without adding RS-485 transceivers, bus termination, addressing, or a master interface. One Teensy can serve several smaller panels, so the number of cockpit panels or DCS-BIOS categories does not determine the number of USB devices.
+## Why I’m staying with USB
 
-Where practical, connect several powered hubs directly to the PC and keep any hub daisy-chaining short. Choose hubs and power supplies with enough capacity for the connected controllers and displays; higher-current lighting and other loads may need separate power.
+RS-485 can let several panel controllers share one connection to the PC, reducing USB ports and COM ports. It also adds transceivers, bus wiring, termination, addressing, and a master interface. My existing cockpit devices would still need USB, so I don’t see enough benefit to add that complexity for these radios.
 
-**RS-485 would normally use three GPIO pins per controller: hardware-serial TX, RX, and a transmit/receive direction-control pin. USB uses no header GPIO pins, leaving those connections available for controls and displays.** On a Teensy 4.1, that means 42 readily accessible I/O pins remain available with USB, compared with 39 after allocating three pins to RS-485, before accounting for the panel's other connections.
+USB also leaves the Teensy’s header GPIO pins available for controls and displays. A typical half-duplex RS-485 connection would use **three pins: TX, RX, and direction control**. For the Teensy 4.1’s 42 readily accessible I/O pins, that leaves **42 with USB versus 39 after allocating three to RS-485**, before connecting the panel hardware.
 
-**One Teensy can also run multiple smaller panels through a single USB connection**, provided their combined pin count, processing needs, and power requirements fit within the controller's limits. Nearby panels can share a controller when the wiring is practical, so future expansion does not require a separate USB connection for every panel. I’m keeping a dedicated Teensy 4.1 for each of the three radios.
+**One Teensy can run several smaller panels through a single USB connection**, provided their combined pin count, processing needs, and power requirements fit. I may use that approach for nearby panels where the wiring is practical. I’m still keeping a separate Teensy for each radio, so the number of cockpit panels or DCS-BIOS categories does not determine how many USB connections I’ll need.
 
-### USB hubs purchased for this cockpit
+## USB hubs I’ve purchased
 
-I have purchased the following powered USB hubs and plan to use them for the **ARC-210, ARC-164, and ARC-186 radio panels, along with future cockpit panels**:
+I purchased these powered hubs for the **three radio panels and future cockpit panels**:
 
 - [RSHTECH RSH-ST10C-6 powered 10-port USB hub](https://www.amazon.com/dp/B0DX6KR79L) — six USB-C ports and four USB-A ports, with a listed 60 W power adapter.
 - [ACASIS powered 16-port USB hub](https://www.amazon.com/dp/B07G8S324L) — with a listed 96 W power adapter.
 
-Where practical, I’ll connect each hub directly to my PC. The connected controllers and displays will share each hub's available power; I still need to check the completed panels’ current draw and test them together. These are the hubs I have purchased for my build, rather than required purchases for other builders.
+These are my choices for this build; other builders don’t need to buy the same hubs. Where practical, I’ll connect each hub directly to the PC and keep any daisy-chaining short. Controllers and displays share the hub’s available power, so I’ll check the completed panels’ current draw and test them together. Lighting and other larger loads may need separate power.
 
 ## Electronic noise and a full cockpit
 
-**USB remains a reasonable choice even if I build all of the cockpit controls.** Adding RS-485 solely to prevent possible electrical noise would add hardware and firmware complexity without an established need. I’ll check this choice as I expand the cockpit; I haven’t tested every planned panel together yet.
+**I plan to keep USB even if I build all of the cockpit controls.** My current setup has been reliable, and I haven’t found a noise problem that would justify switching to RS-485. I haven’t tested every planned panel together yet, so I’ll keep checking as the cockpit grows.
 
-The number of switches and panels is not the main source of interference. Motors, solenoids, force-feedback equipment, and high-current lighting drivers are more significant potential noise sources. USB already uses differential signaling to help reject interference. RS-485 also uses differential signaling, but an ordinary, non-isolated RS-485 transceiver does not provide electrical isolation or automatically eliminate ground loops. See [Analog Devices' explanation of differential USB communication and ground-loop isolation](https://www.analog.com/en/resources/technical-articles/breaking-ground-loops-with-functional-isolation.html).
+Motors, solenoids, force-feedback equipment, and high-current lighting drivers are more likely noise sources than the number of switches and panels. USB and RS-485 both use differential signaling to help reject interference. An ordinary, non-isolated RS-485 transceiver does not provide electrical isolation or automatically eliminate ground loops. See [Analog Devices’ explanation of USB signaling and ground-loop isolation](https://www.analog.com/en/resources/technical-articles/breaking-ground-loops-with-functional-isolation.html).
 
-For my full cockpit, I plan to:
+For my cockpit, I’ll:
 
-- Keep controllers close to their panels and keep switch and encoder wiring short.
+- Keep controllers near their panels and switch and encoder wiring short.
 - Use good USB data cables and keep hub chains short.
-- Route signal cables away from motor wiring and high-current power wiring.
-- Provide suitable separate power for motors and larger loads instead of drawing it through the Teensy or its USB supply; see [PJRC's servo-power guidance](https://www.pjrc.com/teensy/td_libs_Servo.html).
-- Check power budgets and test panels together as the cockpit grows.
+- Route signal cables away from motor and high-current power wiring.
+- Give motors and larger loads suitable separate power rather than drawing it through the Teensy or USB supply; see [PJRC’s servo-power guidance](https://www.pjrc.com/teensy/td_libs_Servo.html).
+- Check power budgets and test the panels together as I add them.
 
-RS-485 would change the communication link between controllers; it would not fix noisy switch wiring, unstable display power, or overloaded USB hubs. **I’ll continue with powered USB hubs and revisit the communication system only if testing reveals a persistent problem that appropriate wiring and power distribution do not resolve.**
+RS-485 would change the link between controllers; it would not fix noisy switch wiring, unstable display power, or overloaded hubs. I’ll revisit the communication system if testing reveals a persistent problem that suitable wiring and power distribution cannot resolve.
 
 ### Optional clip-on ferrite chokes
 
-If testing reveals high-frequency interference on USB or power cables, **clip-on ferrite chokes (also called ferrite cores or clamp filters) can be added as a troubleshooting measure**. They clamp around the whole cable without cutting it and suppress common-mode noise. Their effectiveness depends on the ferrite material, noise frequency, and placement; locations near the controller, hub, or identified noise source can be evaluated. See [TDK's explanation of snap-on clamp filters](https://www.tdk.com/en/tech-mag/noise/09).
+If I encounter high-frequency interference on a USB or power cable, I can try **clip-on ferrite chokes**, also called ferrite cores or clamp filters. They fit around the whole cable without cutting it and suppress common-mode noise. The material, noise frequency, and placement affect how well they work; I can try them near the controller, hub, or identified noise source. See [TDK’s explanation of snap-on clamp filters](https://www.tdk.com/en/tech-mag/noise/09).
 
-Ferrite chokes will not fix insufficient power, loose connections, mechanical switch bounce, or every grounding problem. **They can be added later if needed; possible noise alone is not a reason to change the USB plan.**
+Ferrites won’t fix insufficient power, loose connections, switch bounce, or every grounding problem. I can add them later if needed; I don’t need to change the USB plan because of possible noise alone.
 
 ## Motherboard connections and USB speed
 
-My DCS computer uses an **ASUS ROG STRIX X870E-E GAMING WIFI** motherboard. Its rear connections include **ten USB 10 Gbps ports (nine USB-A and one USB-C), one USB 20 Gbps USB-C port, and two USB4 40 Gbps USB-C ports**, providing several options for connecting the powered hubs directly to the PC. See the [ASUS motherboard specifications](https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi/spec/?config=90MB1IB0-MVAAY0).
+My DCS computer has an **ASUS ROG STRIX X870E-E GAMING WIFI** motherboard. Its rear connections include **ten USB 10 Gbps ports (nine USB-A and one USB-C), one USB 20 Gbps USB-C port, and two USB4 40 Gbps USB-C ports**. That gives me several places to connect the hubs directly. See the [ASUS motherboard specifications](https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi/spec/?config=90MB1IB0-MVAAY0).
 
-**USB bandwidth is not expected to be the limiting factor for the cockpit controls and three radio panels.** Switch, encoder, and DCS-BIOS radio data traffic is small compared with storage transfers, cameras, or USB video. The Teensy 4.1 uses a **USB 2.0 high-speed connection at up to 480 Mbps**; connecting it to a USB 3 port does not increase that signaling rate. The 480 Mbps figure is the interface signaling rate, not a measured application transfer rate. See the [PJRC Teensy 4.1 specifications](https://www.pjrc.com/store/teensy41.html).
+**I don’t expect USB bandwidth to limit the cockpit controls or radio panels.** Switch, encoder, and DCS-BIOS data traffic is small compared with storage transfers, cameras, or USB video. The Teensy 4.1 uses **USB 2.0 high speed at up to 480 Mbps**. A USB 3 port won’t make that connection faster, and 480 Mbps is the signaling rate rather than a measured application transfer rate. See the [PJRC Teensy 4.1 specifications](https://www.pjrc.com/store/teensy41.html).
 
-Devices on a hub share its upstream connection, and separate motherboard sockets may still share internal controller resources. USB 2.0 devices also remain subject to the USB 2.0 side of the hub rather than gaining the full advertised USB 3 bandwidth. Powered hubs add connections and supply power, but do not increase the host controller's device or endpoint capacity.
+Devices on a hub share its upstream connection. USB 2.0 devices use the hub’s USB 2.0 connection rather than gaining its advertised USB 3 bandwidth, and separate motherboard sockets may still share controller resources. Powered hubs provide connections and power; they don’t increase the host controller’s device or endpoint capacity.
 
-For this setup, power budgets, controller resource limits, cable reliability, and hub depth are more likely constraints than the radio panels' bandwidth needs. I’ll connect each powered hub directly to the motherboard where practical and add panels incrementally. If used, higher-bandwidth devices such as **Quest Link, USB cameras, and external SSDs** should connect directly to the PC where practical. The existing 12-device setup runs reliably through one hub; I’ll keep testing everything together as I add panels.
+For my setup, I expect **power, controller resources, cable reliability, and hub depth** to matter more than the radios’ bandwidth needs. Where practical, I’ll connect higher-bandwidth devices such as Quest Link, USB cameras, and external SSDs directly to the PC. My current 12-device setup works through one hub, and I’ll keep testing everything together as I expand it.
