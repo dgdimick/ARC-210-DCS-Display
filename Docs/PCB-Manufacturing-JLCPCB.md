@@ -2,13 +2,15 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: October 31, 2026 at 12:39 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:41 AM MDT (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
 I’m not affiliated with JLCPCB. This guide follows its [ordering instructions](https://jlcpcb.com/help/article/instructions-for-ordering), checked October 30, 2026. Website labels, available quantities, prices, and delivery options may change. The board specifications below come from this project’s files; suggested choices are not a record of every option on my previous order.
 
 **The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign the button board and make the associated power and driver changes to add it. I have no finished design or release date for that possible future feature. The manufacturing downloads in this guide are for the current unlit board. See [Future Thoughts](Future-Thoughts.md) for the possible lighting redesign.
+
+I may need to use **four-layer PCBs for both the replacement Main Board and button board**, which could increase the cost of both replacement boards. I haven’t confirmed the layer requirements or priced that redesign yet. This possible extra cost is not included in the current build estimates or my US$40 bare-PCB set price.
 
 ## Cost comparison and why I’m staying with JLCPCB
 
