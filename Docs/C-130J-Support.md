@@ -2,7 +2,9 @@
 
 # C-130J ARC-210 support
 
-**Last updated: October 31, 2026 at 12:14 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:21 AM MDT (America/Denver)**
+
+My development order is to finish the **A-10C II (A-10C2) ARC-210 implementation**, then build and test the **ARC-164**, followed by the **ARC-186**. After those projects, I’ll return to additional aircraft support, starting with the **ARC-210 and C-130J**. Those aircraft extensions are later work, not the current implementation priority. I’m focusing on aircraft with a matching physical radio panel.
 
 I’m planning C-130J support as part of this ARC-210 project. After comparing the panel, I plan to reuse the same faceplate, controls, display, PCBs, and printed parts as my A-10C II build. Keeping the hardware and software work in one repository gives builders one place for files, questions, and updates.
 

@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — October 31, 2026
 
-**Last updated: October 31, 2026 at 12:14 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:21 AM MDT (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -24,7 +24,7 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Items that need to be completed
 
-**Last updated: October 31, 2026 at 12:10 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:21 AM MDT (America/Denver)**
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
@@ -38,17 +38,15 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 11:51 PM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:20 AM MDT (America/Denver)**
 
-**October 30, 2026 at 11:50 PM MDT — Updated estimated build cost: US$250–US$285**
+**October 31, 2026 at 12:20 AM MDT — v0.1.1 preview adds firmware and aircraft startup labels**
 
-My estimated parts cost is now **US$250–US$285, including the PC Flights faceplate**. All amounts are in **US dollars (USD)** and **exclude shipping, handling, tax, VAT, and other applicable fees**.
+I’ve built **v0.1.1 Preview** with **VERSION 0.1.1 PREVIEW** and **AIRCRAFT: A-10C2** on the radio-switch startup information screen. The labels come from one shared firmware definition, and the release filename matches. C-130J support and automatic aircraft selection are still being developed; this preview does not add them.
 
-This estimate uses **US$41.10 for JLCPCB fabrication**: five copies of each of the four PCB designs, or **20 bare boards total**, with spare boards after building one panel. Supplier prices and final PCB quotes can change. This replaces the earlier US$120 PCB allowance and US$320–US$365 build estimate.
+Compilation and font-layout checks passed. **Physical-panel and in-DCS testing of this build are still pending.** The existing startup timing and powered-radio requirement remain. I’ve kept v0.1.0 available for rollback and included the source used for the new build.
 
-Using my **US$40 complete six-board bare-PCB set**, the estimated total parts cost is **US$249.52–US$282.52**, compared with **US$250.62–US$283.62** using JLCPCB. Both include the faceplate and use the same component estimates; either rounds to about **US$250–US$285** for budgeting. **Shipping, handling, tax, and VAT are separate**, as are any other applicable fees. All figures are in **US dollars (USD)**.
-
-See the [parts-cost breakdown](parts/README.md#estimated-build-cost) and [JLCPCB cost comparison](Docs/PCB-Manufacturing-JLCPCB.md).
+Download the [v0.1.1 preview](Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.1.1_Preview.hex) and read the [firmware notes](Firmware/Master%20Hex%20Files/README.md).
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
@@ -120,6 +118,8 @@ I’m sharing the files and build notes to help you make your own panel, with pa
 <a id="related-radio-project"></a>
 
 ## Related radio projects
+
+My development order is to finish the **A-10C II (A-10C2) ARC-210 implementation**, then build and test the **ARC-164**, followed by the **ARC-186**. After those projects, I’ll return to additional aircraft support, starting with the **ARC-210 and C-130J**. Those aircraft extensions are later work, not the current implementation priority. I’m focusing on aircraft with a matching physical radio panel.
 
 I’m developing [C-130J ARC-210 support](Docs/C-130J-Support.md) here in the main project. The same ARC-210 hardware should work with both the **A-10C II and C-130J**, through a shared code base with automatic aircraft selection and aircraft-specific DCS-BIOS mappings, without reflashing the Teensy when switching aircraft. This support, including C-130J operation, still needs to be implemented and tested.
 

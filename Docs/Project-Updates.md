@@ -2,11 +2,19 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 11:51 PM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 12:20 AM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
+
+**October 31, 2026 at 12:20 AM MDT — v0.1.1 preview adds firmware and aircraft startup labels**
+
+I’ve built **v0.1.1 Preview** with **VERSION 0.1.1 PREVIEW** and **AIRCRAFT: A-10C2** on the radio-switch startup information screen. The labels come from one shared firmware definition, and the release filename matches. C-130J support and automatic aircraft selection are still being developed; this preview does not add them.
+
+Compilation and font-layout checks passed. **Physical-panel and in-DCS testing of this build are still pending.** The existing startup timing and powered-radio requirement remain. I’ve kept v0.1.0 available for rollback and included the source used for the new build.
+
+Download the [v0.1.1 preview](../Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.1.1_Preview.hex) and read the [firmware notes](../Firmware/Master%20Hex%20Files/README.md).
 
 **October 30, 2026 at 11:50 PM MDT — Updated estimated build cost: US$250–US$285**
 
