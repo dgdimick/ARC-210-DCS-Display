@@ -2,6 +2,8 @@
 
 **Current STL files — October 30, 2026:** Frequency knob **v10.1** is now available with a larger shaft socket and a successful physical fit test. The other published STL versions remain as listed below. The shaft spacer is **v.5**. Channel **v4.1** and SQL **v1.2** are now available and use the same tested geometry, printed at **100%**.
 
+**All current knobs reprinted and test-fitted:** I’ve reprinted all nine knobs in their current versions—**5 Frequency v10.1, 2 Mode v4, 1 Channel v4.1, and 1 SQL v1.2—and all passed their test fit.** I’m happy with the fit, and **I don’t expect these knob designs to change again**. Print at **100% scale**. Printer tolerances and shaft sizes vary, so check the fit on your own hardware.
+
 ## Channel and SQL knobs
 
 [Channel knob v4.1](Channel_Knob_v.4.1.stl) · [SQL knob v1.2](SQL_Knob_v.1.2.stl)
