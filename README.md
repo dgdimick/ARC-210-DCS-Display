@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — October 30, 2026
 
-**Last updated: October 30, 2026 at 11:50 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:51 PM MDT (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -38,13 +38,15 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 11:50 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:51 PM MDT (America/Denver)**
 
 **October 30, 2026 at 11:50 PM MDT — Updated estimated build cost: US$250–US$285**
 
 My estimated parts cost is now **US$250–US$285, including the PC Flights faceplate**. All amounts are in **US dollars (USD)** and **exclude shipping, handling, tax, VAT, and other applicable fees**.
 
 This estimate uses **US$41.10 for JLCPCB fabrication**: five copies of each of the four PCB designs, or **20 bare boards total**, with spare boards after building one panel. Supplier prices and final PCB quotes can change. This replaces the earlier US$120 PCB allowance and US$320–US$365 build estimate.
+
+Using my **US$40 complete six-board bare-PCB set**, the estimated total parts cost is **US$249.52–US$282.52**, compared with **US$250.62–US$283.62** using JLCPCB. Both include the faceplate and use the same component estimates; either rounds to about **US$250–US$285** for budgeting. **Shipping, handling, tax, and VAT are separate**, as are any other applicable fees. All figures are in **US dollars (USD)**.
 
 See the [parts-cost breakdown](parts/README.md#estimated-build-cost) and [JLCPCB cost comparison](Docs/PCB-Manufacturing-JLCPCB.md).
 

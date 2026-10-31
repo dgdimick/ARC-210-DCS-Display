@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: October 30, 2026 at 11:49 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:51 PM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -41,7 +41,16 @@ Prices checked October 22, 2026, except the recommended Teensy with headers (Oct
 | [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
 | [Bare PCBs from JLCPCB](../Docs/PCB-Manufacturing-JLCPCB.md) | Five copies of each of four designs: 20 boards total; one panel uses five or six | US$41.10 fabrication estimate; excludes shipping, handling, tax, and VAT |
 | USB Micro-B data cable — for powering and programming the Teensy 4.1 | 1 | $3–$6 |
-| **Estimated DIY purchasing cost** | | **US$250–US$285** |
+| **Estimated DIY purchasing cost using JLCPCB (rounded)** | | **US$250–US$285** |
+
+Both options use the same component estimates and include the PC Flights faceplate. These calculated totals are estimates, not fixed kit prices; rounded for budgeting, either option is about **US$250–US$285**.
+
+| PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
+| --- | ---: | ---: |
+| JLCPCB: five copies of each of four designs (20 bare boards) | US$41.10 | US$250.62–US$283.62 |
+| My complete six-board bare-PCB set for one radio | US$40.00 | US$249.52–US$282.52 |
+
+**Shipping, handling, tax, and VAT are separate and are not included in either total.** Tariffs, duties, and other applicable fees are also extra. Compare the delivered totals for your location.
 
 Use a **USB Micro-B data cable** for powering and programming the **Teensy 4.1**. The cable must carry data as well as power; a charge-only cable cannot program the Teensy or carry the panel’s USB communications.
 
