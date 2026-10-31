@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — October 30, 2026
 
-**Last updated: October 30, 2026 at 11:44 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:46 PM MDT (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -38,13 +38,15 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 30, 2026 at 11:02 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:46 PM MDT (America/Denver)**
 
-**October 30, 2026 at 10:37 PM MDT — Channel knob v4.2 released; fit confirmed at 100%**
+**October 30, 2026 at 11:46 PM MDT — Complete bare-PCB set available for US$40**
 
-I printed Channel v4.2 at **100% scale** and confirmed the shaft fit. It uses the Frequency v10.1 shaft-hole profile, retaining the Channel knob's outside dimensions, 14 mm socket depth, and small side hole. **The Channel and SQL knobs are the same outside size, with the same small side hole; only the shaft holes differ.** Channel v4.2 has the smaller shaft hole. **SQL remains v1.2** with its larger shaft hole, so the files are no longer interchangeable.
+I offer a **complete six-board ARC-210 bare-PCB set for US$40, plus shipping, VAT, and any other applicable taxes, tariffs, duties, or fees**. The set includes **one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards**, including the optional SQL On/Off board.
 
-Download [Channel v4.2](Supporting%20STL%27s/Channel_Knob_v.4.2.stl). Both the **master 17-part** [STL](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.stl) / [3MF](Supporting%20STL%27s/ARC-210-Complete-Print-Set-All-17.3mf) and the **nine-knob** [STL](Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.stl) / [3MF](Supporting%20STL%27s/ARC-210-Knob-Set-V3-All-9.3mf) now include Channel v4.2. Quantities are unchanged. The replacement knob was tested separately; the revised combined layouts have not been reprinted as complete sets.
+This is a convenient set for one radio, without ordering the manufacturer’s minimum quantity of every design. Any savings depend on the full delivered cost for your location. You’ll supply the components and solder the boards yourself; the price does not include electronics, the faceplate, printed parts, or assembly. Assembled-board electrical testing is still pending.
+
+[Contact me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to check availability and shipping. See the [PCB purchasing and manufacturing guide](Docs/PCB-Manufacturing-JLCPCB.md) for the options and cost comparison.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

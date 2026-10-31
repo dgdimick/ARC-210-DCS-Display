@@ -2,11 +2,19 @@
 
 # Project updates
 
-**Last updated: October 30, 2026 at 11:02 PM MDT (America/Denver)**
+**Last updated: October 30, 2026 at 11:46 PM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
+
+**October 30, 2026 at 11:46 PM MDT — Complete bare-PCB set available for US$40**
+
+I offer a **complete six-board ARC-210 bare-PCB set for US$40, plus shipping, VAT, and any other applicable taxes, tariffs, duties, or fees**. The set includes **one Main Board, one Button Matrix board, one Rotary Encoder board, and three Rotary Switch boards**, including the optional SQL On/Off board.
+
+This is a convenient set for one radio, without ordering the manufacturer’s minimum quantity of every design. Any savings depend on the full delivered cost for your location. You’ll supply the components and solder the boards yourself; the price does not include electronics, the faceplate, printed parts, or assembly. Assembled-board electrical testing is still pending.
+
+[Contact me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to check availability and shipping. See the [PCB purchasing and manufacturing guide](PCB-Manufacturing-JLCPCB.md) for the options and cost comparison.
 
 **October 30, 2026 at 10:37 PM MDT — Channel knob v4.2 released; fit confirmed at 100%**
 
