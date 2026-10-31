@@ -16,4 +16,6 @@ Checks verify the two changes and the release’s reference addresses, not opera
 
 ## Export.lua
 
+For a setup that only needs DCS-BIOS, use [DCS-BIOS-only/Export.lua](DCS-BIOS-only/Export.lua). It contains only the DCS-BIOS loader line. Install DCS-BIOS first, then save the file as `Export.lua` in the active profile’s `Scripts` folder. Keep existing loader entries if you use other export tools.
+
 `Export.lua` is Denis’s supplied loader example for WWT, DCS-BIOS, and SRS. It does not patch the aircraft module. Keep your existing integrations and follow the setup guide before copying it.

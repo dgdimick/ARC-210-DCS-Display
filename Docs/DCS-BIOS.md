@@ -62,6 +62,12 @@ dofile(lfs.writedir() .. [[Scripts\DCS-BIOS\BIOS.lua]])
 
 **Add this line only once, and keep the existing lines for your other tools.** This line tells DCS to start DCS-BIOS. Save the file and check that its name is not `Export.lua.txt`.
 
+### Download a DCS-BIOS-only Export.lua
+
+If you don’t use WWT, SRS, or any other export tools, [download this Export.lua with just the DCS-BIOS line](https://raw.githubusercontent.com/dgdimick/ARC-210-DCS-Display/master/Docs/DCS-BIOS/DCS-BIOS-only/Export.lua). Right-click the link, choose **Save link as**, and save it as `Export.lua` in your active DCS Saved Games profile’s `Scripts` folder. DCS-BIOS must already be installed as described in Step 2.
+
+If you already have an `Export.lua`, back it up first. If it contains entries for other tools, add the single DCS-BIOS line to your existing file instead of replacing it with this download.
+
 ### My Export.lua example
 
 My file also starts WWT and SRS. This is an example of several integrations sharing one file:
