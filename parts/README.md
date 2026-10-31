@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: October 31, 2026 at 1:09 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 1:14 AM MDT (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -44,6 +44,8 @@ I’m offering this as a **convenient complete set for one radio**: you get the 
 
 My own order for all the boards cost **about US$75**. That is an approximate total for my board order, not the manufacturing cost of a single six-board set or a guaranteed quote for another builder. My complete-set price remains **US$40 plus shipping and handling**.
 
+**SQL switch travel:** The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m still looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](../Docs/Project-Updates.md) and update this parts list. The current switch listing and cost are provisional; I haven’t selected or tested a replacement yet.
+
 Prices checked October 22, 2026, except the recommended Teensy with headers (October 29) and the JLCPCB fabrication estimate (October 30). The PCB cost uses the **US$41.10 JLCPCB estimate** from my [manufacturing cost comparison](../Docs/PCB-Manufacturing-JLCPCB.md). It covers five copies of each of the four designs—**20 bare boards total**, enough for one panel with spare boards. Small hardware costs remain allowances, and supplier prices can change.
 
 | Part / sourcing reference | Quantity needed | Estimated builder cost (USD) |
@@ -53,7 +55,7 @@ Prices checked October 22, 2026, except the recommended Teensy with headers (Oct
 | [Hosyond 3.5-inch ILI9488 SPI TFT display](https://www.amazon.com/dp/B0BWJHK4M6) | 1 | About $18 |
 | [Bourns PEC11H-4220F-S0024 rotary encoders](https://www.mouser.com/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D) | 6 | $19.74 |
 | [C&K A12505RNCQ multi-position rotary switches](https://www.digikey.com/en/products/detail/c-k/A12505RNCQ/2043159) | 2 | $26.82 |
-| [C&K A12515RNZQ SQL On/Off rotary switch](https://www.digikey.com/en/products/detail/c-k/A12515RNZQ/678340) | 1 | $12.01 |
+| [C&K A12515RNZQ SQL On/Off rotary switch — replacement pending](https://www.digikey.com/en/products/detail/c-k/A12515RNZQ/678340) | 1 | $12.01 |
 | [6 × 6 × 5 mm tactile button switches](https://www.amazon.com/dp/B01CGMP9GY) and [matrix diodes](#hardware-selection-and-supplier-links) | 16 each | $5–$10 |
 | [Resistors, capacitors and remaining electronics](BOM.csv) | Allowance pending an updated full-panel parts estimate; removed power/protection parts are excluded | $10–$20 |
 | [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Parts needed for one build | $15–$25 |
@@ -238,7 +240,7 @@ I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFu
 - **Multi-position rotary switches:** Two C&K **A12505RNCQ**, with 1/2-inch (12.7 mm) shafts, 45-degree indexing and **C PCB-pin terminals**. These replace the solder-lug versions for the two resistor-ladder PCBs. The circuit uses seven positions of each eight-position switch; verify the corrected wiring and stop-ring setting against the panel.
   [Mouser — 611-A12505RNCQ](https://www.mouser.com/en/ProductDetail/CK/A12505RNCQ?qs=h7H1bHRqGz9AS0MdXl06Aw%3D%3D) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
 
-- **SQL On/Off switch:** One C&K **A12515RNZQ**, with a 1-1/2-inch (38.1 mm) shaft, 45-degree indexing and **Z solder-lug terminals**. Mount it in a bracket, fit the [required shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) to support its longer shaft in all installations, and wire its contacts to the Teensy input. It does not mount directly in the PCB-pin footprint and does not need a resistor ladder. The panel's ON and OFF markings are two clicks (90 degrees) apart; confirm the contact selection and travel stops against those markings.
+- **SQL On/Off switch:** One C&K **A12515RNZQ**, with a 1-1/2-inch (38.1 mm) shaft, 45-degree indexing and **Z solder-lug terminals**. Mount it in a bracket, fit the [required shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) to support its longer shaft in all installations, and wire its contacts to the Teensy input. It does not mount directly in the PCB-pin footprint and does not need a resistor ladder. **Its current arc of movement does not match the panel.** I’m looking for a replacement and will announce it in [Project Updates](../Docs/Project-Updates.md) and update this list when I find one.
   [Mouser](https://www.mouser.com/ProductDetail/CK/A12515RNZQ) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
 
 - **Faceplate:** A-10C "Thunderbolt" / "Warthog" VHF/UHF cockpit panel
