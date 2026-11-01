@@ -1,8 +1,10 @@
 # Test Code
 
-**Last updated: November 1, 2026 at 5:03 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:12 AM MST (America/Denver)**
 
 All five hardware-test HEX downloads are now labeled **V1.0**. This establishes their release filenames; it does not change the radio Preview or Diagnostic firmware versions. The TFT Hello World, combined hardware, and dual-switch tests now show **V1.0 on screen**. The two legacy HEX-only tests retain their original screens. The earlier button/encoder and encoder-only HEX files are preserved byte-for-byte; their matching source is not included. The rebuilt tests compiled successfully; their updated screens and the dual-switch operation still need checking on my physical panel.
+
+**Older button and encoder tests:** `ARC210_Button_Test_v1.0_Teensy41.hex` and `ARC210_Encoder_Check_v1.0_Teensy41.hex` have **V1.0 in the filename only**. Their screens do not show the matching version yet. I’ll fix the on-screen version numbers later; this is tracked in [Things that need to be completed](../../Docs/Remaining-Work.md).
 
 [Download TFT Hello World V1.0](Teenys_TFT_Hello_Works/ARC210_TFT_Hello_World_v1.0_Teensy41.hex), using backlight GPIO 4.
 
