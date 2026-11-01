@@ -1,6 +1,8 @@
 # ARC-210 seven-position rotary switch test
 
-**Last updated: November 1, 2026 at 5:19 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:21 AM MST (America/Denver)**
+
+**Latest switch tester: V1.1 — [Download the current HEX](ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex).** Includes Master, Secondary, and SQL ON/OFF. V1.0 remains available only as an older version.
 
 Current Main Board version: **1.1**.
 
