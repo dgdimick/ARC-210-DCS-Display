@@ -1,6 +1,6 @@
 # ARC-210 menu-system preview
 
-**Last updated: November 1, 2026 at 4:21 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 4:26 AM MST (America/Denver)**
 
 `ARC210_A-10C2_v0.1.2_Preview.hex` is the current Teensy 4.1 / ILI9488 480 × 320 display firmware, published for menu-screen and navigation testing. It is not a complete implementation of every radio function.
 
@@ -48,7 +48,14 @@ Some detail-page actions remain unimplemented, including the WOD erase YES outco
 
 ## Loading and first startup
 
-Open this HEX in Teensy Loader, enable Auto, and press the Teensy's programming button. Reconnect the panel in TekConnect after flashing if needed. The display starts blank until it receives powered-radio data; a blank screen without powered-radio updates from DCS-BIOS is expected. The Loader's “1% used” is memory usage, not upload progress.
+Open this HEX in Teensy Loader, enable Auto, and press the Teensy's programming button. Reconnect the panel in TekConnect after flashing if needed. The Loader's “1% used” is memory usage, not upload progress.
+
+**What to expect while waiting for DCS-BIOS data:**
+
+- **v0.1.3 Diagnostic HEX:** The display stays on the splash screen while waiting for radio data.
+- **v0.1.2 Preview HEX:** The display stays blank until DCS-BIOS sends powered-radio data.
+
+Both are normal waiting states and do not, by themselves, mean the Teensy has frozen or programming failed. Connecting USB alone does not supply the radio state. Follow the DCS-BIOS setup guide, connect the panel in TekConnect, and power the aircraft and radio in DCS.
 
 ## DCS-BIOS export requirements
 

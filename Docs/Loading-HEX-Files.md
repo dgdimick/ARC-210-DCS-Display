@@ -2,7 +2,7 @@
 
 # Loading the HEX File onto a Teensy 4.1
 
-**Last updated: November 1, 2026 at 12:23 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 4:26 AM MST (America/Denver)**
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.** See the [aircraft support plan](C-130J-Support.md).
 
@@ -16,5 +16,13 @@ For the complete radio connection setup, file changes, and TekConnect instructio
 4. Press the button on the Teensy if it does not enter programming mode automatically.
 5. Click **Program** in Teensy Loader.
 6. Reboot the Teensy.
+
+**What to expect while waiting for DCS-BIOS data:**
+
+- **v0.1.3 Diagnostic HEX:** The display stays on the splash screen while waiting for radio data.
+- **v0.1.2 Preview HEX:** The display stays blank until DCS-BIOS sends powered-radio data.
+
+Both are normal waiting states and do not, by themselves, mean the Teensy has frozen or programming failed. Connecting USB alone does not supply the radio state. Follow the [DCS-BIOS setup guide](DCS-BIOS.md), connect the panel in TekConnect, and power the aircraft and radio in DCS.
+
 
 The current v0.1.2 preview shows its version and **A-10C2** aircraft label during the radio-switch startup information screen, after powered-radio data arrives. This new build still needs physical-panel and in-DCS testing; see the [release notes](../Firmware/Master%20Hex%20Files/README.md).
