@@ -1,6 +1,6 @@
 # ARC-210 DCS forum post
 
-**Last updated: November 1, 2026 at 5:41 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:44 AM MST (America/Denver)**
 
 > Historical forum-post draft. For current PCB releases, wiring, power, and firmware status, use the [main README](../README.md) and [parts documentation](../parts/README.md). The control-board manufacturing packages are now published; Main Board v1.1 fabrication files are also published; physical validation is pending.
 
@@ -21,7 +21,7 @@ I also plan to release the firmware as a **HEX file**, so someone who isn’t a 
 
 Because this project will handle all **16 buttons**, the rotary encoders, rotary switches, TFT display, and the other ARC-210 controls, I’m using a **Teensy 4.1** as the controller.
 
-The current DIY purchasing estimate is **US$331–US$364**, including the faceplate and a **US$121.46 JLCPCB checkout allowance** with the quoted board shipping and import-related charges for New Mexico, USA; delivery and fees for other components remain separate. See the [parts estimate](../parts/README.md#estimated-build-cost) for the dated figures and exclusions.
+The current DIY purchasing estimate is **US$268–US$301**, including the faceplate and a **US$58.20 JLCPCB checkout allowance** with the displayed board shipping and coupon; applicable import charges may still be extra; delivery and fees for other components remain separate. See the [parts estimate](../parts/README.md#estimated-build-cost) for the dated figures and exclusions.
 
 I’ve also set up a GitHub repository where I’ll post project updates and files as the build progresses. There is already some test firmware available, including a basic TFT test that displays “Hello World” so you can verify that the Teensy and SPI TFT display are wired and working correctly.
 

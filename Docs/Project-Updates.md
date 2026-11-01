@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: November 1, 2026 at 5:41 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:44 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -10,9 +10,15 @@ I use this page to share hardware and firmware changes, releases, testing milest
 
 **Current parts offers:** See [ARC-210 parts offers](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details.
 
-**November 1, 2026 at 5:41 AM MST — Revised PCB purchasing and panel build estimates**
+**November 1, 2026 at 5:44 AM MST — Use the US$58.20 PCB cart estimate**
 
-I uploaded all four current manufacturing ZIPs and added five boards of each design to one JLCPCB cart. Fabrication was **US$41.10**, but the checkout estimate for New Mexico, USA was **US$121.46 before discounts**, including shipping and the quoted customs duties/taxes and disbursement fee. I’m now using that checkout figure for the PCB purchasing allowance so builders don’t mistake fabrication for the full cost.
+I’m using **US$58.20** for the JLCPCB order in my build budget: **US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon**. This is for five copies of each of the four designs, or 20 bare boards. Shipping shown in that cart is included; coupon availability, shipping, and any additional duties or fees can vary. I did not submit or pay for an order.
+
+The panel parts estimate, including the faceplate, is now **US$267.72–US$300.72**, or about **US$268–US$301**. Delivery for other components and any additional applicable fees remain separate. See the [current quote breakdown](PCB-Manufacturing-JLCPCB.md#uploaded-file-checkout-estimate--november-1-2026) and [parts list](../parts/README.md#estimated-build-cost). This supersedes the US$121.46 allowance below.
+
+**November 1, 2026 at 5:41 AM MST — Earlier checkout estimate (superseded)**
+
+**Superseded by the US$58.20 cart allowance above.** I uploaded all four current manufacturing ZIPs and added five boards of each design to one JLCPCB cart. Fabrication was **US$41.10**, but the checkout estimate for New Mexico, USA was **US$121.46 before discounts**, including shipping and the quoted customs duties/taxes and disbursement fee. I’m now using that checkout figure for the PCB purchasing allowance so builders don’t mistake fabrication for the full cost.
 
 The estimated panel parts budget, including the faceplate, is now **US$330.98–US$363.98**, or about **US$331–US$364**. This includes the quoted JLCPCB delivery and import-related charges; shipping and fees for the other components remain separate. Your own delivered total may differ. I did not submit or pay for an order. See the [quote breakdown and limitations](PCB-Manufacturing-JLCPCB.md#uploaded-file-checkout-estimate--november-1-2026) and [parts list](../parts/README.md#estimated-build-cost).
 
@@ -162,7 +168,7 @@ The **SQL On/Off PCB is optional** when using the solder-lug switch: wires can b
 
 **October 22, 2026 — Build cost estimate and button-switch update**
 
-I added the initial DIY parts purchasing estimate, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a provisional PCB allowance. **The original figures have been superseded:** use the [current parts estimate](../parts/README.md#estimated-build-cost), now **US$330.98–US$363.98** with the **US$121.46 JLCPCB checkout allowance**; delivery and fees for other components remain separate. I’ve now published manufacturing files for all four PCB designs. The button switches are specified as **6 × 6 × 5 mm**, with 16 required per panel. See the [parts documentation and supplier link](../parts/README.md#current-button-switches) and [BOM](../parts/BOM.csv).
+I added the initial DIY parts purchasing estimate, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a provisional PCB allowance. **The original figures have been superseded:** use the [current parts estimate](../parts/README.md#estimated-build-cost), now **US$267.72–US$300.72** with the **US$58.20 JLCPCB cart allowance**; delivery and fees for other components remain separate. I’ve now published manufacturing files for all four PCB designs. The button switches are specified as **6 × 6 × 5 mm**, with 16 required per panel. See the [parts documentation and supplier link](../parts/README.md#current-button-switches) and [BOM](../parts/BOM.csv).
 
 **October 22, 2026 — Shaft spacer v.5 clearance fix**
 

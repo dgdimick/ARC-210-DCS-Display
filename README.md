@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 1, 2026
 
-**Last updated: November 1, 2026 at 5:41 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:44 AM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -59,13 +59,13 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: November 1, 2026 at 5:41 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:44 AM MST (America/Denver)**
 
-**November 1, 2026 at 5:41 AM MST — Revised PCB purchasing and panel build estimates**
+**November 1, 2026 at 5:44 AM MST — Use the US$58.20 PCB cart estimate**
 
-I uploaded all four current manufacturing ZIPs and added five boards of each design to one JLCPCB cart. Fabrication was **US$41.10**, but the checkout estimate for New Mexico, USA was **US$121.46 before discounts**, including shipping and the quoted customs duties/taxes and disbursement fee. I’m now using that checkout figure for the PCB purchasing allowance so builders don’t mistake fabrication for the full cost.
+I’m using **US$58.20** for the JLCPCB order in my build budget: **US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon**. This is for five copies of each of the four designs, or 20 bare boards. Shipping shown in that cart is included; coupon availability, shipping, and any additional duties or fees can vary. I did not submit or pay for an order.
 
-The estimated panel parts budget, including the faceplate, is now **US$330.98–US$363.98**, or about **US$331–US$364**. This includes the quoted JLCPCB delivery and import-related charges; shipping and fees for the other components remain separate. Your own delivered total may differ. I did not submit or pay for an order. See the [quote breakdown and limitations](Docs/PCB-Manufacturing-JLCPCB.md#uploaded-file-checkout-estimate--november-1-2026) and [parts list](parts/README.md#estimated-build-cost).
+The panel parts estimate, including the faceplate, is now **US$267.72–US$300.72**, or about **US$268–US$301**. Delivery for other components and any additional applicable fees remain separate. See the [current quote breakdown](Docs/PCB-Manufacturing-JLCPCB.md#uploaded-file-checkout-estimate--november-1-2026) and [parts list](parts/README.md#estimated-build-cost).
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
@@ -107,11 +107,11 @@ The JLCPCB estimate below includes the PC Flights faceplate. **All amounts are i
 
 | PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
 | --- | ---: | ---: |
-| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$121.46 delivered estimate | US$330.98–US$363.98 |
+| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$58.20 cart estimate | US$267.72–US$300.72 |
 
 For the price and total build estimate using my PCB set, see [ARC-210 parts offers](Docs/ARC-210-Parts-Offers.md#estimated-build-cost-using-my-pcb-set).
 
-**The US$121.46 PCB allowance includes the JLCPCB shipping, customs duties/taxes, and disbursement fee shown in my November 1, 2026 checkout estimate for New Mexico, USA, before discounts.** Don’t add those same JLCPCB charges again. Shipping, handling, taxes, VAT, and import fees for the other components remain separate. Your destination, shipping method, final file review, and available discounts can change the PCB total. These are estimates rather than fixed kit prices; the updated JLCPCB option rounds to about **US$331–US$364** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
+**The US$58.20 PCB allowance uses the November 1, 2026 cart estimate: US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon.** Shipping shown in that cart is already included; don’t add it twice. Coupon eligibility and shipping vary. Any duties, taxes, VAT, carrier fees, or other charges not included in that cart subtotal may still apply, as may delivery charges for the other components. Check your own final checkout total before ordering. These are estimates rather than fixed kit prices; the updated JLCPCB option rounds to about **US$268–US$301** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
 
 See the [parts-cost breakdown](parts/README.md#estimated-build-cost) for component prices and allowances, and the [PCB manufacturing guide](Docs/PCB-Manufacturing-JLCPCB.md) for quote details. Compare the full delivered totals for your location.
 
