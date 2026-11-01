@@ -2,7 +2,7 @@
 
 # ARC-210 Bench Testing App
 
-**Last updated: November 1, 2026 at 3:54 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 4:01 AM MST (America/Denver)**
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.** See the [aircraft support plan](C-130J-Support.md).
 
@@ -22,6 +22,12 @@ python dcsBiosDebug.py
 Use the Python script, including the `.py` extension; the original bundled executable does not include the ARC-210 controls. Select your Teensy's serial port and click **Connect**. Choose **2 - TR** and click **Set Master** for the normal radio switch position, or **0 - OFF** to test power off.
 
 See the [full testing instructions and compatibility notes](https://github.com/dgdimick/dcsBiosDebug/blob/arc210-working/ARC210_TESTING.md). The shortcuts use fixed A-10C II addresses and send data to the hardware, not commands to DCS. Some firmware states require additional exports through the normal instrument controls.
+
+## V1.5.4 — OFF → ON display-power fix
+
+I tested an OFF → ON sequence with my physical panel and found that it completed initialization but then went blank. The bridge was sending the MASTER selector without the separate RT/display-power indication that DCS normally exports. **V1.5.4 fixes Set Master** to send a blank RT indication for OFF and restore RT for powered positions, while preserving the other selector bits sharing that address.
+
+I confirmed the corrected sequence works with the existing **v0.1.3 Diagnostic HEX**; this bridge fix does not require reflashing the Teensy. To test it, choose **0 - OFF** and click **Set Master**, then choose **1 - TR-G** or **2 - TR** and click **Set Master** again. After initialization, the radio display should remain on. Live DCS testing is still pending.
 
 ## V1.5.3 — complete power-state shortcut and serial recovery
 
