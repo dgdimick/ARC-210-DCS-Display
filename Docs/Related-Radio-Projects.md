@@ -2,7 +2,7 @@
 
 # Related radio projects
 
-**Last updated: October 31, 2026 at 1:52 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 5:53 AM MST (America/Denver)**
 
 My current plan is to finish the **A-10C II (A-10C2) ARC-210 implementation**, then build and test the **ARC-164**, followed by the **ARC-186**. After those projects, I’ll return to additional aircraft support, starting with the **ARC-210 and C-130J**. Those aircraft extensions are later work, not the current implementation priority. I’m focusing on aircraft with a matching physical radio panel. **This order may change based on user feedback and interest.**
 
@@ -17,9 +17,9 @@ The ARC-164 and ARC-186 have their own repositories. C-130J support is tracked h
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.**
 
-## Parts offers for the ARC-210
+## Bare PCB offer for the ARC-210
 
-See my [ARC-210 PCB and printed-parts offers](ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.**
+See my [ARC-210 PCB and printed-parts offers](ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.** **My PCB offer contains bare boards only, not electronic components or a complete panel kit.** Buy the Teensy, display, controls, faceplate, wiring, and other components separately. Optional 3D-printing help is a separate arrangement.
 
 ## Other SIMPIT panels
 

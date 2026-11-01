@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 1, 2026 at 5:52 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:53 AM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -54,7 +54,7 @@ The PCBs require mounting stand-offs. Use the [Vibit M3 nylon stand-off kit](htt
 
 ## 2. Print and check the mechanical parts
 
-I’m offering a printed ARC-210 set to help builders who don’t have access to a 3D printer. See [ARC-210 parts offers](../ARC-210-Parts-Offers.md#printed-parts) for the current price, colors, availability, and shipping/VAT/import-charge terms.
+I’m offering a printed ARC-210 set to help builders who don’t have access to a 3D printer. See [ARC-210 3D-printing help](../ARC-210-Parts-Offers.md#printed-parts) for the current price, colors, availability, and shipping/VAT/import-charge terms.
 
 If you receive a printed set from me, continue with the fit checks below; you don’t need to print another set.
 
@@ -80,7 +80,7 @@ Dry-fit printed parts before permanent assembly. All current files print at 100%
 
 ## 3. Order the PCBs
 
-You can get a complete bare-PCB set from me or order directly from a manufacturer. See [ARC-210 parts offers](../ARC-210-Parts-Offers.md#bare-pcb-set) for current pricing, contents, and terms. The manufacturing steps below explain the direct-order option.
+You can get a complete bare-PCB set from me or order directly from a manufacturer. See [ARC-210 bare PCB offer](../ARC-210-Parts-Offers.md#bare-pcb-set) for current pricing, contents, and terms. The manufacturing steps below explain the direct-order option.
 
 **JLCPCB’s prices shown in my comparison and demo are fabrication prices only. They do not include shipping, handling, tax, VAT, tariffs, duties, or other applicable fees.** Check the full delivered total before comparing a manufacturer order with a board set from me. Assembled-board electrical testing is still pending.
 
@@ -107,7 +107,7 @@ To help you budget, here are both PCB options using the same component estimates
 | JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$58.20 cart estimate | US$267.72–US$300.72 |
 | [My six bare PCBs only (no components)](../ARC-210-Parts-Offers.md#bare-pcb-set) | **US$40.00**, plus shipping and handling | **US$249.52–US$282.52**, before shipping, handling, and applicable fees |
 
-For availability, what’s included in my set, and shipping/VAT/import-fee details, see [ARC-210 parts offers](../ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
+For availability, what’s included in my set, and shipping/VAT/import-fee details, see [ARC-210 bare PCB offer and separate 3D-printing help](../ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
 
 **My PCB-set option:** Shipping and handling are separate. I’ll only collect VAT if I’m required to; buyers may still owe import VAT, customs duties, or carrier fees even if I don’t collect VAT. Delivery and applicable fees for the other components are also separate. Compare the final delivered totals for your location.
 

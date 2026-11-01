@@ -2,13 +2,13 @@
 
 # Project updates
 
-**Last updated: November 1, 2026 at 5:46 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:54 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
-**Current parts offers:** See [ARC-210 parts offers](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details.
+**Current bare PCB offer and separate 3D-printing help:** See [ARC-210 bare PCB offer and separate 3D-printing help](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details.
 
 **November 1, 2026 at 5:44 AM MST — Use the US$58.20 PCB cart estimate**
 

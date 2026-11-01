@@ -1,6 +1,6 @@
 # ARC-210 DCS forum post
 
-**Last updated: November 1, 2026 at 5:46 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:53 AM MST (America/Denver)**
 
 > Historical forum-post draft. For current PCB releases, wiring, power, and firmware status, use the [main README](../README.md) and [parts documentation](../parts/README.md). The control-board manufacturing packages are now published; Main Board v1.1 fabrication files are also published; physical validation is pending.
 
@@ -20,6 +20,8 @@ My plan is to release everything needed for someone to build their own unit, inc
 I also plan to release the firmware as a **HEX file**, so someone who isn’t a programmer should still be able to flash the Teensy without having to compile the source code.
 
 Because this project will handle all **16 buttons**, the rotary encoders, rotary switches, TFT display, and the other ARC-210 controls, I’m using a **Teensy 4.1** as the controller.
+
+My PCB offer is **bare boards only**, not a complete parts kit. Builders buy the Teensy, display, controls, faceplate, wiring, and other components separately.
 
 The current JLCPCB-based parts estimate is **US$267.72–US$300.72** (about **US$268–US$301**), including the faceplate and the **US$58.20 PCB cart allowance** with displayed shipping and a US$15.00 coupon. Without that coupon, add US$15.00. Delivery for other components and any additional applicable duties, taxes, VAT, or carrier fees remain separate. See the [parts estimate](../parts/README.md#estimated-build-cost) and [both PCB purchasing options](ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
 

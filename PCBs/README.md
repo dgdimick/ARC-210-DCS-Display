@@ -1,16 +1,16 @@
 # ARC-210 PCBs
 
-**Last updated: November 1, 2026 at 5:52 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:53 AM MST (America/Denver)**
 
 Updated October 29, 2026.
 
 ## Buy a complete set of bare PCBs
 
-See my [ARC-210 PCB and printed-parts offers](../Docs/ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.**
+See my [ARC-210 bare PCB offer and separate 3D-printing help](../Docs/ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.**
 
 ## No access to a 3D printer?
 
-I offer a printed ARC-210 set for builders whose lack of printer access is preventing their build. See [ARC-210 parts offers](../Docs/ARC-210-Parts-Offers.md#printed-parts) for the current price, PETG colors, availability, shipping, VAT, and import-charge details.
+I offer separate 3D-printing help for builders whose lack of printer access is preventing their build. This supplies printed plastic only, not electronic components or a complete kit; buy the other components separately. See [ARC-210 3D-printing help](../Docs/ARC-210-Parts-Offers.md#printed-parts) for the current price, PETG colors, availability, shipping, VAT, and import-charge details.
 
 ## Estimated total build cost
 
@@ -35,7 +35,7 @@ Here are both PCB options using the same component estimates. These totals cover
 | JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$58.20 cart estimate | US$267.72–US$300.72 |
 | [My six bare PCBs only (no components)](../Docs/ARC-210-Parts-Offers.md#bare-pcb-set) | **US$40.00**, plus shipping and handling | **US$249.52–US$282.52**, before shipping, handling, and applicable fees |
 
-For availability, what’s included in my set, and shipping/VAT/import-fee details, see [ARC-210 parts offers](../Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
+For availability, what’s included in my set, and shipping/VAT/import-fee details, see [ARC-210 bare PCB offer and separate 3D-printing help](../Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
 
 **My PCB-set option:** Shipping and handling are separate. I’ll only collect VAT if I’m required to; buyers may still owe import VAT, customs duties, or carrier fees even if I don’t collect VAT. Delivery and applicable fees for the other components are also separate. Compare the final delivered totals for your location.
 

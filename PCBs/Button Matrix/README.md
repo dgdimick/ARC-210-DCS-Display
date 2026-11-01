@@ -1,6 +1,6 @@
 # ARC-210 Button Matrix PCB
 
-**Last updated: October 31, 2026 at 1:52 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 5:53 AM MST (America/Denver)**
 
 **October 30, 2026 — v3.2 released:** Removed the duplicate approximately 13.38 mm Edge.Cuts circle at H3; the intended opening remains a **12.0 mm non-plated hole**. Board and schematic revisions and the silkscreen are now **3.2**. I moved H3’s reference label clear of the hole’s solder-mask opening. There are no electrical changes. Gerbers and drills were freshly exported with KiCad 10.0.7; fresh ERC/DRC checks report zero violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. Use the [v3.2 manufacturing ZIP](Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) for new orders.
 
@@ -110,7 +110,7 @@ My aim for a future LED upgrade is to let builders reuse the **rotary encoders, 
 
 ## No access to a 3D printer?
 
-I offer a printed ARC-210 set for builders whose lack of printer access is preventing their build. See [ARC-210 parts offers](../../Docs/ARC-210-Parts-Offers.md#printed-parts) for the current price, PETG colors, availability, shipping, VAT, and import-charge details.
+I offer separate 3D-printing help for builders whose lack of printer access is preventing their build. This supplies printed plastic only, not electronic components or a complete kit; buy the other components separately. See [ARC-210 3D-printing help](../../Docs/ARC-210-Parts-Offers.md#printed-parts) for the current price, PETG colors, availability, shipping, VAT, and import-charge details.
 
 ## Build cost and community
 
