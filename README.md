@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 1, 2026
 
-**Last updated: November 1, 2026 at 4:26 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:03 AM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -57,13 +57,13 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: November 1, 2026 at 4:21 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:03 AM MST (America/Denver)**
 
-**November 1, 2026 at 12:23 AM MDT — Backlight fix and display bench test**
+**November 1, 2026 at 5:03 AM MST — V1.0 hardware-test downloads**
 
-I added GPIO 4 backlight initialization in **v0.1.2 Preview** and built **v0.1.3 Diagnostic** with an immediate startup display and USB status messages. The hardware test displayed correctly; the diagnostic build also displayed correctly and received simulated radio updates, including MASTER = TR and frequency 133.123.
+I’ve labeled all five hardware-test downloads **V1.0** and added a precompiled TFT Hello World test using backlight GPIO 4. The updated standalone rotary-switch test now checks **Master on GPIO 14/A0** and **Secondary on GPIO 15/A1** side by side, showing each position, ADC reading, and approximate voltage without DCS. It also uses buffered screen updates to address clear-and-redraw flicker. Compilation passed; testing this two-switch build and the rebuilt screen labels on my physical panel is still pending.
 
-Both firmware binaries and their source are published. **Live DCS testing and complete physical-control integration are still pending.** The diagnostic is for bench testing and emits USB diagnostic text; the clean preview does not. See the [firmware downloads](Firmware/Master%20Hex%20Files/README.md).
+The TFT Hello World, combined hardware, and dual-switch tests now show **V1.0 on screen**. The two older HEX-only tests keep their existing contents and screen labels; V1.0 is their download release label. The radio Preview and Diagnostic firmware retain their existing versions. See the [hardware-test downloads](Firmware/Test%20Code/README.md).
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

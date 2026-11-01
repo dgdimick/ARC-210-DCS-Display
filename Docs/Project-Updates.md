@@ -2,13 +2,19 @@
 
 # Project updates
 
-**Last updated: November 1, 2026 at 4:21 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:03 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current parts offers:** See [ARC-210 parts offers](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details.
+
+**November 1, 2026 at 5:03 AM MST — V1.0 hardware-test downloads**
+
+I’ve labeled all five hardware-test downloads **V1.0** and added a precompiled TFT Hello World test using backlight GPIO 4. The updated standalone rotary-switch test now checks **Master on GPIO 14/A0** and **Secondary on GPIO 15/A1** side by side, showing each position, ADC reading, and approximate voltage without DCS. It also uses buffered screen updates to address clear-and-redraw flicker. Compilation passed; testing this two-switch build and the rebuilt screen labels on my physical panel is still pending.
+
+The TFT Hello World, combined hardware, and dual-switch tests now show **V1.0 on screen**. The two older HEX-only tests keep their existing contents and screen labels; V1.0 is their download release label. The radio Preview and Diagnostic firmware retain their existing versions. See the [hardware-test downloads](../Firmware/Test%20Code/README.md).
 
 **November 1, 2026 at 12:23 AM MDT — Backlight fix and display bench test**
 
@@ -168,7 +174,7 @@ The [Rotary Encoder PCB version 1.4](../PCBs/Rotary%20Encoders/) and [Rotary Swi
 
 **October 10, 2026 — Final hardware test HEX**
 
-The [final hardware test HEX](../Firmware/Test%20Code/ARC210_Final_Hardware_Test_Teensy41.hex) is now available for Teensy 4.1. This combined TFT test checks all 16 buttons, six rotary encoders, brightness controls, and both seven-position rotary switches on GPIO 14 and 15. All of these functions worked together when I tested them on the panel. See the [test instructions](../Firmware/Test%20Code/ARC210_Button_Test/README.md).
+The [final hardware test HEX](../Firmware/Test%20Code/ARC210_Final_Hardware_Test_v1.0_Teensy41.hex) is now available for Teensy 4.1. This combined TFT test checks all 16 buttons, six rotary encoders, brightness controls, and both seven-position rotary switches on GPIO 14 and 15. All of these functions worked together when I tested them on the panel. See the [test instructions](../Firmware/Test%20Code/ARC210_Button_Test/README.md).
 
 **October 10, 2026 — Two PCBs remaining**
 

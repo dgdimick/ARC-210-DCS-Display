@@ -1,6 +1,6 @@
 # ARC-210 Rotary Encoder PCB
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 5:03 AM MST (America/Denver)**
 
 Version **1.4 — Final PCB design**, updated October 12, 2026. KiCad 10 project.
 
@@ -54,7 +54,7 @@ The STEP model is optional; missing 3D models do not prevent opening or manufact
 | 13 | GND (encoder commons and mounting tabs) |
 | 14 | GND (encoder commons and mounting tabs) |
 
-The tested GPIO pairs, identified by the labels printed on the Teensy, are: SW1 = 16/17, SW2 = 28/29, SW3 = 20/21, SW4 = 22/23, SW5 = 24/25 and SW6 = 26/27. Ensure all encoder commons share Teensy GND. The final [combined hardware test HEX](../../Firmware/Test%20Code/ARC210_Final_Hardware_Test_Teensy41.hex) provides counts and A/B diagnostics.
+The tested GPIO pairs, identified by the labels printed on the Teensy, are: SW1 = 16/17, SW2 = 28/29, SW3 = 20/21, SW4 = 22/23, SW5 = 24/25 and SW6 = 26/27. Ensure all encoder commons share Teensy GND. The final [combined hardware test HEX](../../Firmware/Test%20Code/ARC210_Final_Hardware_Test_v1.0_Teensy41.hex) provides counts and A/B diagnostics.
 
 ## Manufacturing files
 

@@ -6,7 +6,7 @@
 #define TFT_MOSI  11
 #define TFT_SCK   13
 #define TFT_MISO  12
-#define TFT_BL     6
+#define TFT_BL     4
 
 ILI9488_t3 tft(
   TFT_CS,
@@ -31,6 +31,9 @@ void setup() {
 
   tft.setCursor(70, 130);
   tft.print("HELLO WORLD");
+  tft.setTextSize(2);
+  tft.setCursor(70, 180);
+  tft.print("TFT TEST V1.0");
 }
 
 void loop() {

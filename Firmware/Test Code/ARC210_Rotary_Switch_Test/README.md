@@ -1,26 +1,27 @@
 # ARC-210 seven-position rotary switch test
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 5:03 AM MST (America/Denver)**
 
 Current Main Board version: **1.1**.
 
-Use this standalone test to check your Teensy 4.1 and six-resistor rotary switch PCB. The ILI9488 TFT shows the switch position, raw ADC reading, and approximate voltage, so you can see how each position behaves. USB Serial provides the same readings if you’d like another way to check them. You can run this test without DCS or DCS-BIOS.
+Release **V1.0** checks both seven-position switches simultaneously: **Master on GPIO 14/A0** and **Secondary on GPIO 15/A1**. The ILI9488 TFT shows each switch in its own column with its position, raw ADC reading, and approximate voltage. USB Serial provides the same readings if you’d like another way to check them. You can run this test without DCS or DCS-BIOS.
 
 ## Wiring
 
 | Rotary switch PCB | Teensy 4.1 |
 | --- | --- |
 | J1 pin 1 | 3.3V |
-| J1 pin 2 | GPIO 14 / A0 (label printed on the Teensy) |
+| Master J1 pin 2 | GPIO 14 / A0 (label printed on the Teensy) |
+| Secondary J1 pin 2 | GPIO 15 / A1 (label printed on the Teensy) |
 | J1 pin 3 | GND |
 
-Fit all six 1k resistors R1-R6 and leave JP1 open. Use the Teensy's 3.3V rail, not 5V. **Tested wiring:** I tested both seven-position rotary switches, and they worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. I saw some fluctuation in the TFT voltage readings, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the Main Board schematic were not part of that test.
+On each switch PCB, fit all six 1k resistors R1-R6 and leave JP1 open. Use the Teensy's 3.3V rail, not 5V. **Tested wiring:** I tested both seven-position rotary switches, and they worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. I saw some fluctuation in the TFT voltage readings, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the Main Board schematic were not part of that test.
 
 ## Run
 
-1. Open the supplied `ARC210_Rotary_Switch_Test.ino.hex` in Teensy Loader, connect the Teensy 4.1 and program it. This replaces the currently running firmware.
-2. The TFT should immediately show `ARC-210 ROTARY SWITCH TEST`, even without the switch connected.
-3. Rotate through all seven positions and watch the position, ADC and voltage readings on the TFT.
+1. Open the supplied `ARC210_Master_Secondary_Switch_Test_v1.0_Teensy41.hex` in Teensy Loader, connect the Teensy 4.1 and program it. This replaces the currently running firmware.
+2. The TFT should immediately show `ARC-210 SWITCH TEST V1.0`, even without the switch connected.
+3. Rotate each switch through all seven positions and watch its own position, ADC and voltage readings on the TFT. Both inputs use independent 75 ms settling timers.
 4. Optionally open Serial Monitor at 115200 baud for text readings.
 
 To build from source, open `ARC210_Rotary_Switch_Test.ino` in the Arduino IDE, select Teensy 4.1 and USB Type **Serial**, then upload. It requires the `ILI9488_t3` library included in the Teensy installation used for this build.
@@ -41,7 +42,7 @@ The sketch averages ADC readings and requires a position to remain stable for 75
 
 Uses the Teensy core's 12-bit ADC configuration and averaging: https://www.pjrc.com/store/teensy41.html and https://github.com/PaulStoffregen/cores/blob/master/teensy4/analog.c.
 
-Compiled for Teensy 4.1 with Teensy core 1.62.0 and its bundled ILI9488_t3 library. Hardware operation still needs checking on the actual panel.
+Compiled for Teensy 4.1 with Teensy core 1.62.0 and its bundled ILI9488_t3 library. The V1.0 build compiled successfully. It uses a framebuffer to draw updates in memory before sending them to the TFT, addressing the visible clear-and-redraw flicker in the earlier test. I still need to check both switch inputs and the smoother display on my physical panel.
 
 ## Teensy GPIO labels and KiCad pin numbers
 

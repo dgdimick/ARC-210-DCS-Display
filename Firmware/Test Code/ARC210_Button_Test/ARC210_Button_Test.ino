@@ -191,7 +191,7 @@ void setup() {
   buffered=tft.useFrameBuffer(true)!=0;
   tft.fillScreen(ILI9488_BLACK);
   tft.setTextSize(2); tft.setTextColor(ILI9488_GREEN);
-  tft.setCursor(8,5); tft.print("ARC-210 CONTROLS TEST");
+  tft.setCursor(8,5); tft.print("ARC-210 CONTROLS TEST V1.0");
   tft.setTextSize(1); tft.setTextColor(ILI9488_WHITE);
   
   drawStatus();
