@@ -1,6 +1,6 @@
 # ARC-210 PCB and printed-parts offers
 
-**Last updated: November 1, 2026 at 5:45 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:46 AM MST (America/Denver)**
 
 I offer these parts to help other builders complete my ARC-210 panel. **These offers are for the ARC-210 only. I don’t currently offer PCB or printed-parts sets for the ARC-164 or ARC-186.** All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
 
@@ -48,11 +48,11 @@ These totals use the same **US$209.52–US$242.52** component and self-printing 
 | JLCPCB: five copies of each of four designs (20 boards) | US$58.20 cart estimate | **US$267.72–US$300.72** |
 | My complete six-board bare PCB set | US$40.00, plus shipping and handling | **US$249.52–US$282.52** |
 
-The JLCPCB figure includes the displayed shipping and a US$15.00 coupon; coupon eligibility and any additional fees can vary. My set’s shipping and handling are separate. Delivery charges and any applicable taxes, VAT, or import fees not already included remain extra for both options. These are parts estimates, not assembled-kit prices or guaranteed delivered totals.
+The JLCPCB allowance is **US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon = US$58.20**. Without that coupon, add **US$15.00** to the JLCPCB-based build total. Coupon eligibility, shipping, and any additional fees can vary. My set’s shipping and handling are separate. Delivery charges and any applicable taxes, VAT, or import fees not already included remain extra for both options. These are parts estimates, not assembled-kit prices or guaranteed delivered totals.
 
 My set-based total stays the same because my PCB-set price and the other component allowances haven’t changed. The JLCPCB-based total now uses the US$58.20 cart estimate.
 
-The JLCPCB option and component allowances remain in the [parts-cost breakdown](../parts/README.md#estimated-build-cost). Compare the full delivered totals before choosing how to get the boards. The printed-parts assistance offer is an alternative to self-printing, not an extra set you need to buy.
+The component allowances and JLCPCB option are also shown in the [parts-cost breakdown](../parts/README.md#estimated-build-cost). Compare the full delivered totals before choosing how to get the boards. The printed-parts assistance offer is an alternative to self-printing, not an extra set you need to buy.
 
 ## Get in touch
 

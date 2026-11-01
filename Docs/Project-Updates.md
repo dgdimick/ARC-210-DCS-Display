@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: November 1, 2026 at 5:44 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:46 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -18,9 +18,9 @@ The panel parts estimate, including the faceplate, is now **US$267.72–US$300.7
 
 **November 1, 2026 at 5:41 AM MST — Earlier checkout estimate (superseded)**
 
-**Superseded by the US$58.20 cart allowance above.** I uploaded all four current manufacturing ZIPs and added five boards of each design to one JLCPCB cart. Fabrication was **US$41.10**, but the checkout estimate for New Mexico, USA was **US$121.46 before discounts**, including shipping and the quoted customs duties/taxes and disbursement fee. I’m now using that checkout figure for the PCB purchasing allowance so builders don’t mistake fabrication for the full cost.
+**Superseded by the US$58.20 cart allowance above.** I uploaded all four current manufacturing ZIPs and added five boards of each design to one JLCPCB cart. Fabrication was **US$41.10**, but the checkout estimate for New Mexico, USA was **US$121.46 before discounts**, including shipping and the quoted customs duties/taxes and disbursement fee. At that stage, I used that checkout figure for the PCB purchasing allowance so builders don’t mistake fabrication for the full cost.
 
-The estimated panel parts budget, including the faceplate, is now **US$330.98–US$363.98**, or about **US$331–US$364**. This includes the quoted JLCPCB delivery and import-related charges; shipping and fees for the other components remain separate. Your own delivered total may differ. I did not submit or pay for an order. See the [quote breakdown and limitations](PCB-Manufacturing-JLCPCB.md#uploaded-file-checkout-estimate--november-1-2026) and [parts list](../parts/README.md#estimated-build-cost).
+At that stage, the estimated panel parts budget, including the faceplate, was **US$330.98–US$363.98**, or about **US$331–US$364**. This includes the quoted JLCPCB delivery and import-related charges; shipping and fees for the other components remain separate. Your own delivered total may differ. I did not submit or pay for an order. See the [quote breakdown and limitations](PCB-Manufacturing-JLCPCB.md#uploaded-file-checkout-estimate--november-1-2026) and [parts list](../parts/README.md#estimated-build-cost).
 
 **November 1, 2026 at 5:19 AM MST — Switch tester V1.1 adds SQL ON/OFF**
 
@@ -62,7 +62,7 @@ Download the [v0.1.1 preview](../Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.
 
 This estimate uses **US$41.10 for JLCPCB fabrication**: five copies of each of the four PCB designs, or **20 bare boards total**, with spare boards after building one panel. Supplier prices and final PCB quotes can change. This replaces the earlier US$120 PCB allowance and US$320–US$365 build estimate.
 
-See the [current build estimate using my PCB set](ARC-210-Parts-Offers.md#estimated-build-cost-using-my-pcb-set). The parts list retains the JLCPCB option and component allowances.
+See the [current build estimate using my PCB set](ARC-210-Parts-Offers.md#both-pcb-purchasing-options). The parts list retains the JLCPCB option and component allowances.
 
 See the [parts-cost breakdown](../parts/README.md#estimated-build-cost) and [JLCPCB cost comparison](PCB-Manufacturing-JLCPCB.md).
 

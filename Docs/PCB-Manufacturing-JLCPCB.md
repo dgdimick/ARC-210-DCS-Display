@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: November 1, 2026 at 5:44 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:46 AM MST (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -33,7 +33,7 @@ Eurocircuits’ calculator estimates used its standard **PCB proto** service wit
 
 The OSH Park figure is calculated from the four designs’ rectangular dimensions and its published **US$5 per square inch for three copies**. It is an area-based estimate, not a Gerber-reviewed quote. Its standard service specifies 1.6 mm boards, 1 oz copper, purple mask, and ENIG finish, so the finish and color differ from the JLCPCB comparison.
 
-**I’m sticking with JLCPCB, but I want builders to budget for the delivered cost, not just fabrication.** My cart estimate I’m using is **US$58.20 after the displayed US$15.00 coupon**. The manufacturer table above compares fabrication only; I haven’t checked equivalent delivered quotes from the other suppliers. The extras also give me spare boards if I need to replace one or make a mistake during assembly. I already use JLCPCB, so keeping the same ordering process makes the build easier to document and repeat.
+**I’m sticking with JLCPCB, but I want builders to budget for the delivered cost, not just fabrication.** The cart estimate I’m using is **US$58.20 after the displayed US$15.00 coupon**. The manufacturer table above compares fabrication only; I haven’t checked equivalent delivered quotes from the other suppliers. The extras also give me spare boards if I need to replace one or make a mistake during assembly. I already use JLCPCB, so keeping the same ordering process makes the build easier to document and repeat.
 
 I’ll still compare the **delivered total**, including shipping and any applicable tax or import charges, before ordering. The [parts-cost estimate](../parts/README.md#estimated-build-cost) now uses **US$58.20 for the JLCPCB order**, including the displayed shipping and coupon; other component delivery and any additional import-related charges remain separate. A combined manufacturing panel might offer another saving, but I haven’t quoted a verified combined package here, and it would not automatically remove the five-copy minimum.
 
@@ -52,7 +52,7 @@ I uploaded **all four manufacturing ZIPs** and added five copies of each design 
 | Applied coupon | −US$15.00 |
 | **Cart estimate used in the build budget** | **US$58.20** |
 
-This is an **estimate, not a paid order or a guaranteed delivered price**. I did not submit or pay for an order. Coupon eligibility and shipping costs depend on the account, destination, and selected service. Any duties, taxes, VAT, carrier fees, or other charges not included in this cart subtotal may still apply at checkout or delivery. Check your own final checkout total; don’t add the shipping already included in this estimate twice.
+This is an **estimate, not a paid order or a guaranteed delivered price**. I did not submit or pay for an order. Coupon eligibility and shipping costs depend on the account, destination, and selected service. Without the US$15.00 coupon, the same fabrication and shipping would be US$73.20, so add US$15.00 to the JLCPCB-based build budget. Any duties, taxes, VAT, carrier fees, or other charges not included in this cart subtotal may still apply at checkout or delivery. Check your own final checkout total; don’t add the shipping already included in this estimate twice.
 
 The current JLCPCB-based panel budget is **US$267.72–US$300.72**, or about **US$268–US$301**, including this PCB cart estimate and the faceplate. Delivery charges for the other components and any additional applicable fees remain separate.
 
@@ -98,9 +98,9 @@ Here is the estimated cost of the complete panel using JLCPCB, including the PC 
 | --- | ---: | ---: |
 | JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$58.20 cart estimate | US$267.72–US$300.72 |
 
-For the price and total build estimate using my PCB set, see [ARC-210 parts offers](ARC-210-Parts-Offers.md#estimated-build-cost-using-my-pcb-set).
+For both build totals side by side, including my PCB-set option, see [ARC-210 parts offers](ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
 
-**The US$58.20 PCB allowance uses the November 1, 2026 cart estimate: US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon.** Shipping shown in that cart is already included; don’t add it twice. Coupon eligibility and shipping vary. Any duties, taxes, VAT, carrier fees, or other charges not included in that cart subtotal may still apply, as may delivery charges for the other components. Check your own final checkout total before ordering. These are estimates rather than fixed kit prices; the updated JLCPCB option rounds to about **US$268–US$301** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
+**The US$58.20 PCB allowance uses the November 1, 2026 cart estimate: US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon.** Shipping shown in that cart is already included; don’t add it twice. Coupon eligibility and shipping vary. If the US$15.00 coupon is unavailable, add US$15.00 to the JLCPCB-based estimate. Any duties, taxes, VAT, carrier fees, or other charges not included in that cart subtotal may still apply, as may delivery charges for the other components. Check your own final checkout total before ordering. These are estimates rather than fixed kit prices; the updated JLCPCB option rounds to about **US$268–US$301** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
 
 See the [parts-cost breakdown](../parts/README.md#estimated-build-cost) for component prices and allowances. Compare the full delivered totals for your location before choosing how to buy the boards.
 

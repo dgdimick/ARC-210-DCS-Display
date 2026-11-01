@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 1, 2026 at 5:44 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:46 AM MST (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -34,13 +34,13 @@ One thing I’m very pleased about is that I’m developing the same ARC-210 pan
 
 I’ll label radio HEX downloads with the aircraft they support and a version number, increasing the version whenever I publish updated firmware so you can tell releases apart. Each new aircraft-support release will retain support for the previously supported aircraft. Adding an aircraft will require loading the updated HEX once, using the same Teensy Loader procedure as the first flash while the panel is connected by USB. After that, switching between aircraft included in that version will not require reflashing. **This cumulative aircraft support and automatic selection are still being developed and tested.**
 
-To help you plan your build, I’ve put together an estimated parts budget of **US$268–US$301, including the displayed JLCPCB shipping and applied coupon; other delivery and applicable fees remain separate**, including the PC Flights faceplate. All prices in this parts-cost table are in **US dollars (USD)** so you can convert them to your local currency. The links below point to independent suppliers; the figures are a budgeting guide rather than a kit price.
+To help you plan your build, my current JLCPCB-based parts budget is **US$267.72–US$300.72** (about **US$268–US$301**), including the PC Flights faceplate, the displayed PCB shipping, and the applied coupon. Delivery charges for other components and any additional applicable fees remain separate. All prices are in **US dollars (USD)**. The [side-by-side comparison](../Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options) also shows the total using my bare-PCB set. These are budgeting estimates, not assembled-kit or guaranteed delivered prices.
 
 This is primarily a DIY project. I share the files and build notes so you can make your own panel. See [ARC-210 parts offers](../Docs/ARC-210-Parts-Offers.md) if you’d like a complete bare-PCB set or need help getting printed parts. You can also [order the boards directly](../Docs/PCB-Manufacturing-JLCPCB.md) and print the STL files yourself.
 
 **SQL switch replacement pending:** The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](../Docs/Project-Updates.md) and update the [parts list](#estimated-build-cost). The current switch listing and cost are provisional; I haven’t selected or tested a replacement yet.
 
-Prices checked October 22, 2026, except the recommended Teensy with headers (October 29) and the uploaded-file JLCPCB checkout estimate (November 1). The PCB cost uses the **US$58.20 JLCPCB checkout estimate** from my [manufacturing cost comparison](../Docs/PCB-Manufacturing-JLCPCB.md). It covers five copies of each of the four designs—**20 bare boards total**, enough for one panel with spare boards. Small hardware costs remain allowances, and supplier prices can change.
+Prices checked October 22, 2026, except the recommended Teensy with headers (October 29) and the uploaded-file JLCPCB cart estimate (November 1). The PCB cost uses the **US$58.20 JLCPCB cart estimate** from my [manufacturing cost comparison](../Docs/PCB-Manufacturing-JLCPCB.md). It covers five copies of each of the four designs—**20 bare boards total**, enough for one panel with spare boards. Small hardware costs remain allowances, and supplier prices can change.
 
 | Part / sourcing reference | Quantity needed | Estimated builder cost (USD) |
 | --- | ---: | ---: |
@@ -65,17 +65,17 @@ The JLCPCB estimate below includes the PC Flights faceplate. This calculated tot
 | --- | ---: | ---: |
 | JLCPCB: five copies of each of four designs (20 bare boards) | US$58.20 cart estimate | US$267.72–US$300.72 |
 
-For the price and total build estimate using my PCB set, see [ARC-210 parts offers](../Docs/ARC-210-Parts-Offers.md#estimated-build-cost-using-my-pcb-set).
+For both build totals side by side, including my PCB-set option, see [ARC-210 parts offers](../Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
 
-**The US$58.20 PCB allowance uses the November 1, 2026 cart estimate: US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon.** Shipping shown in that cart is already included; don’t add it twice. Coupon eligibility and shipping vary. Any duties, taxes, VAT, carrier fees, or other charges not included in that cart subtotal may still apply, as may delivery charges for the other components. Check your own final checkout total before ordering. Compare the delivered totals for your location.
+**The US$58.20 PCB allowance uses the November 1, 2026 cart estimate: US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon.** Shipping shown in that cart is already included; don’t add it twice. Coupon eligibility and shipping vary. If the US$15.00 coupon is unavailable, add US$15.00 to the JLCPCB-based estimate. Any duties, taxes, VAT, carrier fees, or other charges not included in that cart subtotal may still apply, as may delivery charges for the other components. Check your own final checkout total before ordering. Compare the delivered totals for your location.
 
 Use a **USB Micro-B data cable** for powering and programming the **Teensy 4.1**. The cable must carry data as well as power; a charge-only cable cannot program the Teensy or carry the panel’s USB communications.
 
 The current Main Board is USB-powered and does not use an external 5 V adapter. A future button-lighting redesign would need its own power arrangement, which is outside the current build estimate.
 
-This estimate excludes tools, labor, cockpit mounting fasteners, and delivery or import-related charges for components other than the JLCPCB boards. The displayed JLCPCB shipping and coupon are already included in the PCB allowance. The JLCPCB minimum quantities are included in the PCB row and leave spare boards. Buying component assortments may increase the initial purchase cost and leave spare components.
+This estimate excludes tools, labor, cockpit mounting fasteners, delivery charges for other components, and any duties, taxes, VAT, or carrier fees not already included in the PCB cart subtotal. The displayed JLCPCB shipping and coupon are already included in the PCB allowance. The JLCPCB minimum quantities are included in the PCB row and leave spare boards. Buying component assortments may increase the initial purchase cost and leave spare components.
 
-**PCB pricing is an estimate:** the US$58.20 checkout figure is for my destination and includes a US$41.10 fabrication subtotal plus displayed shipping, less the applied US$15.00 coupon; final duties or fees may still apply. Check the delivered total for your own destination before ordering. Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 manufacturing files are published. See the component details and wiring requirements below.
+**PCB pricing is an estimate:** the US$58.20 cart figure is for my destination and includes a US$41.10 fabrication subtotal plus displayed shipping, less the applied US$15.00 coupon; final duties or fees may still apply. Check the delivered total for your own destination before ordering. Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 manufacturing files are published. See the component details and wiring requirements below.
 
 <a id="six-pcb-layout"></a>
 

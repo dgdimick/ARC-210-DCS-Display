@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 1, 2026 at 5:44 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:46 AM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -104,9 +104,9 @@ To help you budget, here is the JLCPCB option using the component estimates, inc
 | --- | ---: | ---: |
 | JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$58.20 cart estimate | US$267.72–US$300.72 |
 
-For the price and total build estimate using my PCB set, see [ARC-210 parts offers](../ARC-210-Parts-Offers.md#estimated-build-cost-using-my-pcb-set).
+For both build totals side by side, including my PCB-set option, see [ARC-210 parts offers](../ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
 
-**The US$58.20 PCB allowance uses the November 1, 2026 cart estimate: US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon.** Shipping shown in that cart is already included; don’t add it twice. Coupon eligibility and shipping vary. Any duties, taxes, VAT, carrier fees, or other charges not included in that cart subtotal may still apply, as may delivery charges for the other components. Check your own final checkout total before ordering. These are estimates rather than fixed kit prices; the updated JLCPCB option rounds to about **US$268–US$301** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
+**The US$58.20 PCB allowance uses the November 1, 2026 cart estimate: US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon.** Shipping shown in that cart is already included; don’t add it twice. Coupon eligibility and shipping vary. If the US$15.00 coupon is unavailable, add US$15.00 to the JLCPCB-based estimate. Any duties, taxes, VAT, carrier fees, or other charges not included in that cart subtotal may still apply, as may delivery charges for the other components. Check your own final checkout total before ordering. These are estimates rather than fixed kit prices; the updated JLCPCB option rounds to about **US$268–US$301** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
 
 See the [parts-cost breakdown](../../parts/README.md#estimated-build-cost) for the component prices and allowances. Compare the full delivered totals for your location before choosing how to buy the boards.
 
