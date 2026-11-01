@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: October 31, 2026 at 1:52 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 5:41 AM MST (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -18,7 +18,7 @@ My aim would be to reuse the **rotary encoders, rotary switches, socket-mounted 
 
 ## Cost comparison and why I’m staying with JLCPCB
 
-I checked the ordering options and prices on **October 30, 2026** to see whether buying exactly one radio’s set would save money. These are **bare-board fabrication estimates excluding shipping, handling, tax, VAT, tariffs, duties, and other applicable fees**, not paid-order totals or guaranteed quotes. I’ve kept the original currencies rather than implying a fixed exchange rate.
+I checked the manufacturer comparison on **October 30, 2026** and rechecked JLCPCB by uploading all four current manufacturing ZIPs on **November 1, 2026** to see whether buying exactly one radio’s set would save money. These are **bare-board fabrication estimates excluding shipping, handling, tax, VAT, tariffs, duties, and other applicable fees**, not paid-order totals or guaranteed quotes. I’ve kept the original currencies rather than implying a fixed exchange rate.
 
 | Manufacturer | What the order provides | Estimated fabrication cost |
 | --- | --- | ---: |
@@ -27,15 +27,37 @@ I checked the ordering options and prices on **October 30, 2026** to see whether
 | Eurocircuits PCB proto | One six-board set, adding the optional SQL Rotary Switch board | **About €245** |
 | [OSH Park two-layer prototype service](https://docs.oshpark.com/services/two-layer/) | Three copies of each of the four designs: **12 boards total** | **About US$319** |
 
-The JLCPCB estimate adds the four online calculator prices: **US$13.80 Main Board + US$14.50 Button Matrix + US$7.60 Rotary Encoder + US$5.20 Rotary Switch**, each for five copies. The demo used the actual Button Matrix v3.2 manufacturing ZIP; the other estimates used the project’s board dimensions. Settings were two layers, 1.6 mm FR-4, green mask, white silkscreen, 1 oz copper, and lead-free HASL. The small Rotary Switch quote also included a US$0.10 edge-rounding charge. File review, quote settings, and order-specific charges can change these figures. Five Rotary Switch copies cover either the two required boards or all three including SQL, so that optional board does not require another design order in this comparison.
+The uploaded-file JLCPCB fabrication quotes add up to: **US$13.80 Main Board + US$14.50 Button Matrix + US$7.60 Rotary Encoder + US$5.20 Rotary Switch**, each for five copies. I uploaded Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 separately, then added all four to one signed-in cart. The cart confirmed **US$41.10 for fabrication**. This supersedes the earlier estimate that uploaded only the Button Matrix ZIP and used dimensions for the other boards. Settings were two layers, 1.6 mm FR-4, green mask, white silkscreen, 1 oz copper, and lead-free HASL. The small Rotary Switch quote also included a US$0.10 edge-rounding charge. File review, quote settings, and order-specific charges can change these figures. Five Rotary Switch copies cover either the two required boards or all three including SQL, so that optional board does not require another design order in this comparison.
 
 Eurocircuits’ calculator estimates used its standard **PCB proto** service with a three-working-day lead time. The approximate five-board total was **€68.94 Main + €71.17 Button Matrix + €47.06 Encoder + €53.54 for two Rotary Switch boards**; three Rotary Switch boards were €57.66. The Main Board estimate used rounded-up 133 × 130 mm dimensions. Its standard **1.55 mm board thickness** differs from this project’s 1.6 mm specification, so mechanical and manufacturing compatibility still needs review before treating it as a replacement ordering route. Shipping requires a destination/account quote; the displayed 21% VAT-inclusive prices were not used here.
 
 The OSH Park figure is calculated from the four designs’ rectangular dimensions and its published **US$5 per square inch for three copies**. It is an area-based estimate, not a Gerber-reviewed quote. Its standard service specifies 1.6 mm boards, 1 oz copper, purple mask, and ENIG finish, so the finish and color differ from the JLCPCB comparison.
 
-**I’m sticking with JLCPCB because the estimated fabrication cost is much lower, even though I get extra boards.** Ordering exactly the number I need would reduce leftovers, but the single-set option I checked costs considerably more. The extras also give me spare boards if I need to replace one or make a mistake during assembly. I already use JLCPCB, so keeping the same ordering process makes the build easier to document and repeat.
+**I’m sticking with JLCPCB, but I want builders to budget for the delivered cost, not just fabrication.** My checkout estimate was **US$121.46 before discounts**. The manufacturer table above compares fabrication only; I haven’t checked equivalent delivered quotes from the other suppliers. The extras also give me spare boards if I need to replace one or make a mistake during assembly. I already use JLCPCB, so keeping the same ordering process makes the build easier to document and repeat.
 
-I’ll still compare the **delivered total**, including shipping and any applicable tax or import charges, before ordering. The [parts-cost estimate](../parts/README.md#estimated-build-cost) uses this US$41.10 fabrication subtotal, with shipping, handling, tax, VAT, and other applicable fees excluded. A combined manufacturing panel might offer another saving, but I haven’t quoted a verified combined package here, and it would not automatically remove the five-copy minimum.
+I’ll still compare the **delivered total**, including shipping and any applicable tax or import charges, before ordering. The [parts-cost estimate](../parts/README.md#estimated-build-cost) now uses **US$121.46 for the JLCPCB order**, including the quoted delivery and import-related charges for my destination; those charges are still separate for other components. A combined manufacturing panel might offer another saving, but I haven’t quoted a verified combined package here, and it would not automatically remove the five-copy minimum.
+
+### Uploaded-file checkout estimate — November 1, 2026
+
+I uploaded **all four manufacturing ZIPs** and added five copies of each design to **one cart**: 20 bare boards, with spares after building one radio. The checkout estimate for my saved destination in **New Mexico, USA** showed:
+
+| Charge | Amount (USD) |
+| --- | ---: |
+| Main Board v1.1, five boards | US$13.80 |
+| Button Matrix v3.2, five boards | US$14.50 |
+| Rotary Encoder v1.4, five boards | US$7.60 |
+| Rotary Switch v2.0, five boards | US$5.20 |
+| **Fabrication subtotal** | **US$41.10** |
+| Shipping estimate | US$61.52 |
+| Customs duties and taxes | US$14.39 |
+| Duty and tax disbursement fee | US$4.45 |
+| **Checkout total before discounts** | **US$121.46** |
+
+This is a **checkout estimate, not a paid order or a guaranteed price**. I did not submit or pay for an order. The browser session reset before I could compare the other shipping methods, so this is not a claim that the displayed shipping was the cheapest option. Discounts were not included in this budgeting figure. Check the final shipping method, destination, duties, and fees before ordering; do not add the quoted JLCPCB charges twice.
+
+I previously used the US$41.10 fabrication subtotal in the build budget. That understated the purchasing cost for my destination by **US$80.36**. The current JLCPCB-based panel budget is **US$330.98–US$363.98**, including this PCB checkout estimate and the faceplate, before delivery and import-related charges on the other components.
+
+Uploaded-file quote screenshots: [Main Board](../images/JLCPCB-Main-v1.1-Quote-2026-11-01.jpg), [Button Matrix](../images/JLCPCB-Button-v3.2-Quote-2026-11-01.jpg), [Rotary Encoder](../images/JLCPCB-Encoder-v1.4-Quote-2026-11-01.jpg), [Rotary Switch](../images/JLCPCB-Switch-v2.0-Quote-2026-11-01.jpg). These capture the fabrication quotes; the checkout breakdown above includes shipping and import-related charges as well.
 
 ### JLCPCB Button Matrix demo quote
 
@@ -75,11 +97,11 @@ Here is the estimated cost of the complete panel using JLCPCB, including the PC 
 
 | PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
 | --- | ---: | ---: |
-| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$41.10 | US$250.62–US$283.62 |
+| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$121.46 delivered estimate | US$330.98–US$363.98 |
 
 For the price and total build estimate using my PCB set, see [ARC-210 parts offers](ARC-210-Parts-Offers.md#estimated-build-cost-using-my-pcb-set).
 
-**Shipping and handling are separate and are not included in this total.** Other suppliers or delivery authorities may apply their own taxes, VAT, tariffs, duties, or fees; those charges are outside these estimates. These are estimates rather than fixed kit prices; the JLCPCB option rounds to about **US$250–US$285** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
+**The US$121.46 PCB allowance includes the JLCPCB shipping, customs duties/taxes, and disbursement fee shown in my November 1, 2026 checkout estimate for New Mexico, USA, before discounts.** Don’t add those same JLCPCB charges again. Shipping, handling, taxes, VAT, and import fees for the other components remain separate. Your destination, shipping method, final file review, and available discounts can change the PCB total. These are estimates rather than fixed kit prices; the updated JLCPCB option rounds to about **US$331–US$364** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
 
 See the [parts-cost breakdown](../parts/README.md#estimated-build-cost) for component prices and allowances. Compare the full delivered totals for your location before choosing how to buy the boards.
 

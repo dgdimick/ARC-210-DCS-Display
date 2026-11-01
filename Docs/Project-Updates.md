@@ -2,13 +2,19 @@
 
 # Project updates
 
-**Last updated: November 1, 2026 at 5:21 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:41 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current parts offers:** See [ARC-210 parts offers](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details.
+
+**November 1, 2026 at 5:41 AM MST — Revised PCB purchasing and panel build estimates**
+
+I uploaded all four current manufacturing ZIPs and added five boards of each design to one JLCPCB cart. Fabrication was **US$41.10**, but the checkout estimate for New Mexico, USA was **US$121.46 before discounts**, including shipping and the quoted customs duties/taxes and disbursement fee. I’m now using that checkout figure for the PCB purchasing allowance so builders don’t mistake fabrication for the full cost.
+
+The estimated panel parts budget, including the faceplate, is now **US$330.98–US$363.98**, or about **US$331–US$364**. This includes the quoted JLCPCB delivery and import-related charges; shipping and fees for the other components remain separate. Your own delivered total may differ. I did not submit or pay for an order. See the [quote breakdown and limitations](PCB-Manufacturing-JLCPCB.md#uploaded-file-checkout-estimate--november-1-2026) and [parts list](../parts/README.md#estimated-build-cost).
 
 **November 1, 2026 at 5:19 AM MST — Switch tester V1.1 adds SQL ON/OFF**
 
@@ -44,9 +50,9 @@ Compilation and font-layout checks passed. **Physical-panel and in-DCS testing o
 
 Download the [v0.1.1 preview](../Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.1.1_Preview.hex) and read the [firmware notes](../Firmware/Master%20Hex%20Files/README.md).
 
-**October 30, 2026 at 11:50 PM MDT — Updated estimated build cost: US$250–US$285**
+**October 30, 2026 at 11:50 PM MDT — Earlier estimated build cost: US$250–US$285 (superseded)**
 
-My estimated parts cost is now **US$250–US$285, including the PC Flights faceplate**. All amounts are in **US dollars (USD)** and **exclude shipping, handling, tax, VAT, and other applicable fees**.
+**Superseded by the November 1 checkout estimate above.** At this earlier stage, my estimated parts cost was **US$250–US$285, including the PC Flights faceplate**. All amounts are in **US dollars (USD)** and **exclude shipping, handling, tax, VAT, and other applicable fees**.
 
 This estimate uses **US$41.10 for JLCPCB fabrication**: five copies of each of the four PCB designs, or **20 bare boards total**, with spare boards after building one panel. Supplier prices and final PCB quotes can change. This replaces the earlier US$120 PCB allowance and US$320–US$365 build estimate.
 
@@ -86,7 +92,7 @@ I kept the 12.0 mm drill definition and verified that all manufacturing ZIP entr
 
 **October 29, 2026 — PCB budget updated**
 
-I’ve increased the PCB budget allowance to approximately **$120** to reflect fabrication costs. The [estimated DIY purchasing cost](../parts/README.md#estimated-build-cost) is now **$320–$365 USD before shipping and tax**, including the faceplate. Earlier cost figures in the dated history below are superseded by this estimate.
+**Historical estimate, superseded by the November 1 checkout figures above:** At this stage, I increased the PCB allowance to approximately **US$120** and estimated the build at **US$320–US$365 before shipping and tax**, including the faceplate. Use the [current parts estimate](../parts/README.md#estimated-build-cost) for today’s budget.
 
 **October 29, 2026 — Main Board v1.1 physical fit confirmed**
 
@@ -156,7 +162,7 @@ The **SQL On/Off PCB is optional** when using the solder-lug switch: wires can b
 
 **October 22, 2026 — Build cost estimate and button-switch update**
 
-I added the initial DIY parts purchasing estimate, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a provisional PCB allowance. **The original figures have been superseded:** use the [current parts estimate](../parts/README.md#estimated-build-cost), with an approximately **$120 PCB allowance** and **$320–$365 USD total before shipping and tax**. I’ve now published manufacturing files for all four PCB designs. The button switches are specified as **6 × 6 × 5 mm**, with 16 required per panel. See the [parts documentation and supplier link](../parts/README.md#current-button-switches) and [BOM](../parts/BOM.csv).
+I added the initial DIY parts purchasing estimate, including the PC Flights faceplate, the correct 3.5-inch ILI9488 TFT display, and a provisional PCB allowance. **The original figures have been superseded:** use the [current parts estimate](../parts/README.md#estimated-build-cost), now **US$330.98–US$363.98** with the **US$121.46 JLCPCB checkout allowance**; delivery and fees for other components remain separate. I’ve now published manufacturing files for all four PCB designs. The button switches are specified as **6 × 6 × 5 mm**, with 16 required per panel. See the [parts documentation and supplier link](../parts/README.md#current-button-switches) and [BOM](../parts/BOM.csv).
 
 **October 22, 2026 — Shaft spacer v.5 clearance fix**
 

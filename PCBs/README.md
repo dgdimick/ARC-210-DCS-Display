@@ -1,6 +1,6 @@
 # ARC-210 PCBs
 
-**Last updated: October 31, 2026 at 1:52 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 5:41 AM MST (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -30,11 +30,11 @@ Here is the JLCPCB option using the component estimates. These totals cover the 
 
 | PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
 | --- | ---: | ---: |
-| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$41.10 | US$250.62–US$283.62 |
+| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$121.46 delivered estimate | US$330.98–US$363.98 |
 
 For the price and total build estimate using my PCB set, see [ARC-210 parts offers](../Docs/ARC-210-Parts-Offers.md#estimated-build-cost-using-my-pcb-set).
 
-**Shipping and handling are separate and are not included in this total.** Other suppliers or delivery authorities may apply their own taxes, VAT, tariffs, duties, or fees; those charges are outside these estimates. These are estimates rather than fixed kit prices; the JLCPCB option rounds to about **US$250–US$285** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
+**The US$121.46 PCB allowance includes the JLCPCB shipping, customs duties/taxes, and disbursement fee shown in my November 1, 2026 checkout estimate for New Mexico, USA, before discounts.** Don’t add those same JLCPCB charges again. Shipping, handling, taxes, VAT, and import fees for the other components remain separate. Your destination, shipping method, final file review, and available discounts can change the PCB total. These are estimates rather than fixed kit prices; the updated JLCPCB option rounds to about **US$331–US$364** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
 
 See the [parts-cost breakdown](../parts/README.md#estimated-build-cost) for component prices and allowances, and the [PCB manufacturing guide](../Docs/PCB-Manufacturing-JLCPCB.md) for the JLCPCB quote details. Compare the full delivered totals for your location before choosing how to buy the boards.
 

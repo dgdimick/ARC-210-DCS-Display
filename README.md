@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 1, 2026
 
-**Last updated: November 1, 2026 at 5:21 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:41 AM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -59,13 +59,13 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: November 1, 2026 at 5:21 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:41 AM MST (America/Denver)**
 
-**November 1, 2026 at 5:19 AM MST — Switch tester V1.1 adds SQL ON/OFF**
+**November 1, 2026 at 5:41 AM MST — Revised PCB purchasing and panel build estimates**
 
-I added the SQL ON/OFF indication in **V1.1** to make the SQL switch test clearer, replacing the standalone tester’s JP1 reminder with the actual **SQL: ON/OFF** input state on **GPIO 41**. Grounded reads ON; an open input, including when no SQL switch is installed, reads OFF. Master and Secondary remain on GPIO 14 and 15, and buffered screen updates remain included. The screen and HEX filename now show **V1.1**. Compilation passed; physical checking of the SQL indication is still pending.
+I uploaded all four current manufacturing ZIPs and added five boards of each design to one JLCPCB cart. Fabrication was **US$41.10**, but the checkout estimate for New Mexico, USA was **US$121.46 before discounts**, including shipping and the quoted customs duties/taxes and disbursement fee. I’m now using that checkout figure for the PCB purchasing allowance so builders don’t mistake fabrication for the full cost.
 
-Download the [V1.1 switch test](Firmware/Test%20Code/ARC210_Rotary_Switch_Test/ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex) and read the [wiring instructions](Firmware/Test%20Code/ARC210_Rotary_Switch_Test/README.md). The other hardware tests retain V1.0.
+The estimated panel parts budget, including the faceplate, is now **US$330.98–US$363.98**, or about **US$331–US$364**. This includes the quoted JLCPCB delivery and import-related charges; shipping and fees for the other components remain separate. Your own delivered total may differ. I did not submit or pay for an order. See the [quote breakdown and limitations](Docs/PCB-Manufacturing-JLCPCB.md#uploaded-file-checkout-estimate--november-1-2026) and [parts list](parts/README.md#estimated-build-cost).
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
@@ -107,11 +107,11 @@ The JLCPCB estimate below includes the PC Flights faceplate. **All amounts are i
 
 | PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
 | --- | ---: | ---: |
-| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$41.10 | US$250.62–US$283.62 |
+| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$121.46 delivered estimate | US$330.98–US$363.98 |
 
 For the price and total build estimate using my PCB set, see [ARC-210 parts offers](Docs/ARC-210-Parts-Offers.md#estimated-build-cost-using-my-pcb-set).
 
-**Shipping and handling are separate and are not included in this total.** Other suppliers or delivery authorities may apply their own taxes, VAT, tariffs, duties, or fees; those charges are outside these estimates. These are estimates rather than fixed kit prices; the JLCPCB option rounds to about **US$250–US$285** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
+**The US$121.46 PCB allowance includes the JLCPCB shipping, customs duties/taxes, and disbursement fee shown in my November 1, 2026 checkout estimate for New Mexico, USA, before discounts.** Don’t add those same JLCPCB charges again. Shipping, handling, taxes, VAT, and import fees for the other components remain separate. Your destination, shipping method, final file review, and available discounts can change the PCB total. These are estimates rather than fixed kit prices; the updated JLCPCB option rounds to about **US$331–US$364** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
 
 See the [parts-cost breakdown](parts/README.md#estimated-build-cost) for component prices and allowances, and the [PCB manufacturing guide](Docs/PCB-Manufacturing-JLCPCB.md) for quote details. Compare the full delivered totals for your location.
 
