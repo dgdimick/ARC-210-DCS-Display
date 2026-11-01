@@ -1,8 +1,10 @@
 # ARC-210 seven-position rotary switch test
 
-**Last updated: November 1, 2026 at 5:03 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:16 AM MST (America/Denver)**
 
 Current Main Board version: **1.1**.
+
+**Optional troubleshooting test:** You don’t need to run this standalone switch test during normal assembly. Use the [Final Hardware Test](../ARC210_Button_Test/README.md) for the assembly check; use this test if you need to isolate a Master or Secondary switch problem.
 
 Release **V1.0** checks both seven-position switches simultaneously: **Master on GPIO 14/A0** and **Secondary on GPIO 15/A1**. The ILI9488 TFT shows each switch in its own column with its position, raw ADC reading, and approximate voltage. USB Serial provides the same readings if you’d like another way to check them. You can run this test without DCS or DCS-BIOS.
 

@@ -1,6 +1,6 @@
 # Test Code
 
-**Last updated: November 1, 2026 at 5:14 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:16 AM MST (America/Denver)**
 
 All five hardware-test HEX downloads are now labeled **V1.0**. This establishes their release filenames; it does not change the radio Preview or Diagnostic firmware versions. The TFT Hello World, combined hardware, and dual-switch tests now show **V1.0 on screen**. The two legacy HEX-only tests retain their original screens. The earlier button/encoder and encoder-only HEX files are preserved byte-for-byte; their matching source is not included. The rebuilt tests compiled successfully; their updated screens and the dual-switch operation still need checking on my physical panel.
 
@@ -21,6 +21,8 @@ Current Main Board version: **1.1**.
 I have confirmed that all 16 buttons, six rotary encoders, TFT brightness controls and both seven-position rotary switches work together on my panel. I use GPIO14/A0 (label printed on the Teensy) and GPIO15/A1 for the switch inputs, and GPIO4 for the TFT backlight. The TFT shows encoder counts and A/B readings, button states and rotary positions, ADC readings, voltage and test coverage. No DCS connection is required.
 
 See the [combined test instructions and source](ARC210_Button_Test/). Programming this test replaces the running firmware. I have kept the earlier individual tests below for troubleshooting.
+
+## Optional display and encoder troubleshooting
 
 **If you need to troubleshoot the display or encoders,** start with the TFT hello test so you know the display is working before checking the encoders. The encoder test uses the screen to show counts, direction, and input states. If the screen stays blank, the wiring notes are a good place to start. You’re welcome to ask for help in Discussions.
 

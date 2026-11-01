@@ -1,8 +1,10 @@
 # ARC-210 final combined hardware test
 
-**Last updated: November 1, 2026 at 5:03 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:16 AM MST (America/Denver)**
 
 Current Main Board version: **1.1**.
+
+**This is the Final Hardware Test used during normal assembly.** You don’t need to run the individual TFT, button, encoder, or switch tests as well. I keep those [optional tests](../README.md) for troubleshooting when a display or control does not work as expected.
 
 **V1.0 release — November 1, 2026.** This build adds V1.0 to the screen; I still need to check the rebuilt file on my panel. The original combined test was completed on October 10, 2026. I’ve confirmed all the controls listed below working together on my panel. You can use this test to check your own wiring and controls before moving on to the radio firmware.
 

@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 1, 2026 at 5:14 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:16 AM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -224,7 +224,7 @@ Use the **GPIO labels printed on the Teensy** for wiring instructions; they are 
 
 **Pending:** final Main Board fabrication and assembly, full-panel current verification, cable lengths and routing, and photographed continuity checks.
 
-## 9. Test the hardware in stages
+## 9. Run the Final Hardware Test
 
 I tested the existing test firmware on my development hardware. **Validation of the assembled manufactured boards remains pending.**
 
