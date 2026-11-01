@@ -59,11 +59,11 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: November 1, 2026 at 5:19 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:21 AM MST (America/Denver)**
 
 **November 1, 2026 at 5:19 AM MST — Switch tester V1.1 adds SQL ON/OFF**
 
-I replaced the standalone switch tester’s JP1 reminder with the actual **SQL: ON/OFF** input state on **GPIO 41**. Grounded reads ON; an open input, including when no SQL switch is installed, reads OFF. Master and Secondary remain on GPIO 14 and 15, and buffered screen updates remain included. The screen and HEX filename now show **V1.1**. Compilation passed; physical checking of the SQL indication is still pending.
+I added the SQL ON/OFF indication in **V1.1** to make the SQL switch test clearer, replacing the standalone tester’s JP1 reminder with the actual **SQL: ON/OFF** input state on **GPIO 41**. Grounded reads ON; an open input, including when no SQL switch is installed, reads OFF. Master and Secondary remain on GPIO 14 and 15, and buffered screen updates remain included. The screen and HEX filename now show **V1.1**. Compilation passed; physical checking of the SQL indication is still pending.
 
 Download the [V1.1 switch test](Firmware/Test%20Code/ARC210_Rotary_Switch_Test/ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex) and read the [wiring instructions](Firmware/Test%20Code/ARC210_Rotary_Switch_Test/README.md). The other hardware tests retain V1.0.
 

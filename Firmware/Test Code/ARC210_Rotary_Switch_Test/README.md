@@ -12,7 +12,7 @@ Release **V1.1** checks both seven-position switches simultaneously: **Master on
 
 ## SQL ON/OFF indication — V1.1
 
-The bottom line now shows **SQL: ON** or **SQL: OFF** instead of the JP1 reminder. It reads **GPIO 41** with an internal pull-up: a switch contact to GND reads ON; an open contact reads OFF. With no SQL switch installed, it should read OFF. This electrical indication depends on which switch contact is wired; check it against the faceplate markings. The input is debounced for 30 ms, and its state is also printed over USB Serial.
+I added the SQL ON/OFF indication in **V1.1** to make the SQL switch test clearer. The bottom line now shows **SQL: ON** or **SQL: OFF** instead of the JP1 reminder. It reads **GPIO 41** with an internal pull-up: a switch contact to GND reads ON; an open contact reads OFF. With no SQL switch installed, it should read OFF. This electrical indication depends on which switch contact is wired; check it against the faceplate markings. The input is debounced for 30 ms, and its state is also printed over USB Serial.
 
 Master and Secondary still use their six-resistor ladders with **JP1 open**. The SQL direct-wiring option needs no resistor ladder; if using its optional PCB, omit the six resistors and close JP1. V1.1 compiled successfully; the new SQL indication still needs checking on the panel.
 

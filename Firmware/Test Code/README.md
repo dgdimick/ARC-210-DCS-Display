@@ -2,7 +2,7 @@
 
 **Last updated: November 1, 2026 at 5:21 AM MST (America/Denver)**
 
-**Latest switch tester: V1.1 — [Download the current HEX](ARC210_Rotary_Switch_Test/ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex).** Includes Master, Secondary, and SQL ON/OFF; it supersedes switch tester V1.0.
+**Latest switch tester: V1.1 — [Download the current HEX](ARC210_Rotary_Switch_Test/ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex).** Includes Master, Secondary, and SQL ON/OFF; it supersedes switch tester V1.0. I added the SQL ON/OFF indication to make the SQL switch test clearer.
 
 The current standalone switch test is **V1.1**; the other four hardware tests remain **V1.0**. These test versions do not change the radio Preview or Diagnostic firmware versions. The TFT Hello World, combined hardware tests show **V1.0 on screen**; the switch test shows **V1.1**. The two legacy HEX-only tests retain their original screens. The earlier button/encoder and encoder-only HEX files are preserved byte-for-byte; their matching source is not included. The rebuilt tests compiled successfully; their updated screens and the dual-switch operation still need checking on my physical panel.
 
