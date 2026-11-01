@@ -1,6 +1,6 @@
-# ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — October 31, 2026
+# ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 1, 2026
 
-**Last updated: October 31, 2026 at 10:43 PM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 12:23 AM MDT (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -48,11 +48,13 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: October 31, 2026 at 1:54 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 12:23 AM MDT (America/Denver)**
 
-**October 31, 2026 at 1:37 AM MDT — Printed-parts offer for builders without a 3D printer**
+**November 1, 2026 at 12:23 AM MDT — Backlight fix and working bridge bench test**
 
-I’m offering a printed ARC-210 set to help builders who don’t have access to a 3D printer. See [ARC-210 parts offers](Docs/ARC-210-Parts-Offers.md#printed-parts) for the current price, colors, availability, and shipping/VAT/import-charge terms.
+I added GPIO 4 backlight initialization in **v0.1.2 Preview** and built **v0.1.3 Diagnostic** with an immediate startup display and USB status messages. The hardware test displayed correctly; the diagnostic build then displayed correctly and received simulated radio updates from my corrected **V1.5.3 bridge**, including MASTER = TR and frequency 133.123. The bridge now has a **Power On / Send All** button, preserves selector bits beside string fields, and recovers its receive loop after a USB disconnect.
+
+Both firmware binaries and their source are published. **Live DCS testing and complete physical-control integration are still pending.** The diagnostic is for bench testing and emits USB diagnostic text; the clean preview does not. See the [firmware downloads](Firmware/Master%20Hex%20Files/README.md) and [bench-testing instructions](Docs/Bench-Testing-App.md).
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

@@ -178,6 +178,11 @@ void flushDisplay()
 // ==================================================
 void initializeDisplay()
 {
+    // Match the tested board wiring: TFT backlight is driven by GPIO 4.
+    pinMode(4, OUTPUT);
+    analogWriteResolution(8);
+    analogWriteFrequency(4, 1000);
+    analogWrite(4, 255);
     tft.begin();
     tft.setRotation(1);
     displayFrameBufferEnabled = (tft.useFrameBuffer(true) != 0);

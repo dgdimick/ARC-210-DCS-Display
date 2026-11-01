@@ -2,13 +2,19 @@
 
 # Project updates
 
-**Last updated: October 31, 2026 at 1:54 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 12:23 AM MDT (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current parts offers:** See [ARC-210 parts offers](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details.
+
+**November 1, 2026 at 12:23 AM MDT — Backlight fix and working bridge bench test**
+
+I added GPIO 4 backlight initialization in **v0.1.2 Preview** and built **v0.1.3 Diagnostic** with an immediate startup display and USB status messages. The hardware test displayed correctly; the diagnostic build then displayed correctly and received simulated radio updates from my corrected **V1.5.3 bridge**, including MASTER = TR and frequency 133.123. The bridge now has a **Power On / Send All** button, preserves selector bits beside string fields, and recovers its receive loop after a USB disconnect.
+
+Both firmware binaries and their source are published. **Live DCS testing and complete physical-control integration are still pending.** The diagnostic is for bench testing and emits USB diagnostic text; the clean preview does not. See the [firmware downloads](../Firmware/Master%20Hex%20Files/README.md) and [bench-testing instructions](Bench-Testing-App.md).
 
 **October 31, 2026 at 1:37 AM MDT — Printed-parts offer for builders without a 3D printer**
 
