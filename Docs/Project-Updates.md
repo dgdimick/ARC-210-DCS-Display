@@ -2,13 +2,19 @@
 
 # Project updates
 
-**Last updated: November 1, 2026 at 12:23 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 4:02 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current parts offers:** See [ARC-210 parts offers](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details.
+
+**November 1, 2026 at 4:02 AM MST — V1.5.4 bridge fixes the OFF → ON blank screen**
+
+I fixed the bench-testing bridge so **Set Master** sends the separate RT/display-power indication along with the MASTER selector. Previously, switching OFF and then ON could run through initialization and leave the screen blank because the display-power indication was missing.
+
+I tested **V1.5.4** on my physical ARC-210 panel with the existing **v0.1.3 Diagnostic HEX**, and the display now stays on after initialization. **No HEX update or Teensy reflash is needed for this bridge fix.** Download the [updated bridge](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working) and see the [bench-testing instructions](Bench-Testing-App.md). **Live DCS testing is still pending.**
 
 **November 1, 2026 at 12:23 AM MDT — Backlight fix and working bridge bench test**
 
