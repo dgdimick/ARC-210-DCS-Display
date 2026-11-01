@@ -2,7 +2,7 @@
 
 # Firmware and hardware information
 
-**Last updated: November 1, 2026 at 5:14 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:19 AM MST (America/Denver)**
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.** See the [aircraft support plan](C-130J-Support.md).
 
@@ -98,7 +98,7 @@ For normal assembly, use the **Final Hardware Test** to check the controls toget
 | TFT hello / display setup | [HEX V1.0](../Firmware/Test%20Code/Teenys_TFT_Hello_Works/ARC210_TFT_Hello_World_v1.0_Teensy41.hex) · [Sketch](../Firmware/Test%20Code/Teenys_TFT_Hello_Works/Teenys_TFT_Hello_Works.ino) | [Display setup and compile instructions](../Firmware/Test%20Code/Teenys_TFT_Hello_Works/README.md) |
 | Six rotary encoders | [ARC210_Encoder_Check_v1.0_Teensy41.hex](../Firmware/Test%20Code/ARC210_Encoder_Check_v1.0_Teensy41.hex) | [Encoder test instructions](../Firmware/Test%20Code/README.md) |
 | Earlier button-matrix test | [ARC210_Button_Test_v1.0_Teensy41.hex](../Firmware/Test%20Code/ARC210_Button_Test_v1.0_Teensy41.hex) | [Current button and combined-test documentation](../Firmware/Test%20Code/ARC210_Button_Test/README.md) |
-| Seven-position rotary switch | [HEX](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/ARC210_Master_Secondary_Switch_Test_v1.0_Teensy41.hex) · [Sketch](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/ARC210_Rotary_Switch_Test.ino) | [Rotary-switch instructions](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/README.md) |
+| Seven-position rotary switch | [HEX](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex) · [Sketch](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/ARC210_Rotary_Switch_Test.ino) | [Rotary-switch instructions](../Firmware/Test%20Code/ARC210_Rotary_Switch_Test/README.md) |
 | Final combined hardware test: 16 buttons, six encoders, TFT brightness, and two seven-position switches | [ARC210_Final_Hardware_Test_v1.0_Teensy41.hex](../Firmware/Test%20Code/ARC210_Final_Hardware_Test_v1.0_Teensy41.hex) · [Current combined-test sketch](../Firmware/Test%20Code/ARC210_Button_Test/ARC210_Button_Test.ino) | [Combined-test instructions](../Firmware/Test%20Code/ARC210_Button_Test/README.md) |
 
 The button-test folder now documents the combined test; its current sketch is not presented as the source for the earlier button-only HEX. See the [complete test-code directory](../Firmware/Test%20Code/) for all published test files and the [pin layout](ARC-210%20Teensy%204.1%20Pin%20layout.txt) for wiring. The encoder test displays raw counts, direction, and A/B states on the TFT, so confirm the display works first.

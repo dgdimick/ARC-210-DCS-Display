@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 1, 2026
 
-**Last updated: November 1, 2026 at 5:16 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:19 AM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -59,13 +59,13 @@ It is intended for use with a physical control panel powered by a Teensy 4.1.
 
 ## Project updates
 
-**Last updated: November 1, 2026 at 5:03 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:19 AM MST (America/Denver)**
 
-**November 1, 2026 at 5:03 AM MST — V1.0 hardware-test downloads**
+**November 1, 2026 at 5:19 AM MST — Switch tester V1.1 adds SQL ON/OFF**
 
-I’ve labeled all five hardware-test downloads **V1.0** and added a precompiled TFT Hello World test using backlight GPIO 4. The updated standalone rotary-switch test now checks **Master on GPIO 14/A0** and **Secondary on GPIO 15/A1** side by side, showing each position, ADC reading, and approximate voltage without DCS. It also uses buffered screen updates to address clear-and-redraw flicker. Compilation passed; testing this two-switch build and the rebuilt screen labels on my physical panel is still pending.
+I replaced the standalone switch tester’s JP1 reminder with the actual **SQL: ON/OFF** input state on **GPIO 41**. Grounded reads ON; an open input, including when no SQL switch is installed, reads OFF. Master and Secondary remain on GPIO 14 and 15, and buffered screen updates remain included. The screen and HEX filename now show **V1.1**. Compilation passed; physical checking of the SQL indication is still pending.
 
-The TFT Hello World, combined hardware, and dual-switch tests now show **V1.0 on screen**. The two older HEX-only tests keep their existing contents and screen labels; V1.0 is their download release label. The radio Preview and Diagnostic firmware retain their existing versions. See the [hardware-test downloads](Firmware/Test%20Code/README.md).
+Download the [V1.1 switch test](Firmware/Test%20Code/ARC210_Rotary_Switch_Test/ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex) and read the [wiring instructions](Firmware/Test%20Code/ARC210_Rotary_Switch_Test/README.md). The other hardware tests retain V1.0.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

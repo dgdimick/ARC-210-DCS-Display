@@ -1,12 +1,18 @@
 # ARC-210 seven-position rotary switch test
 
-**Last updated: November 1, 2026 at 5:16 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:19 AM MST (America/Denver)**
 
 Current Main Board version: **1.1**.
 
 **Optional troubleshooting test:** You don’t need to run this standalone switch test during normal assembly. Use the [Final Hardware Test](../ARC210_Button_Test/README.md) for the assembly check; use this test if you need to isolate a Master or Secondary switch problem.
 
-Release **V1.0** checks both seven-position switches simultaneously: **Master on GPIO 14/A0** and **Secondary on GPIO 15/A1**. The ILI9488 TFT shows each switch in its own column with its position, raw ADC reading, and approximate voltage. USB Serial provides the same readings if you’d like another way to check them. You can run this test without DCS or DCS-BIOS.
+Release **V1.1** checks both seven-position switches simultaneously: **Master on GPIO 14/A0** and **Secondary on GPIO 15/A1**. The ILI9488 TFT shows each switch in its own column with its position, raw ADC reading, and approximate voltage. USB Serial provides the same readings if you’d like another way to check them. You can run this test without DCS or DCS-BIOS.
+
+## SQL ON/OFF indication — V1.1
+
+The bottom line now shows **SQL: ON** or **SQL: OFF** instead of the JP1 reminder. It reads **GPIO 41** with an internal pull-up: a switch contact to GND reads ON; an open contact reads OFF. With no SQL switch installed, it should read OFF. This electrical indication depends on which switch contact is wired; check it against the faceplate markings. The input is debounced for 30 ms, and its state is also printed over USB Serial.
+
+Master and Secondary still use their six-resistor ladders with **JP1 open**. The SQL direct-wiring option needs no resistor ladder; if using its optional PCB, omit the six resistors and close JP1. V1.1 compiled successfully; the new SQL indication still needs checking on the panel.
 
 ## Wiring
 
@@ -21,8 +27,8 @@ On each switch PCB, fit all six 1k resistors R1-R6 and leave JP1 open. Use the T
 
 ## Run
 
-1. Open the supplied `ARC210_Master_Secondary_Switch_Test_v1.0_Teensy41.hex` in Teensy Loader, connect the Teensy 4.1 and program it. This replaces the currently running firmware.
-2. The TFT should immediately show `ARC-210 SWITCH TEST V1.0`, even without the switch connected.
+1. Open the supplied `ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex` in Teensy Loader, connect the Teensy 4.1 and program it. This replaces the currently running firmware.
+2. The TFT should immediately show `ARC-210 SWITCH TEST V1.1`, even without the switch connected.
 3. Rotate each switch through all seven positions and watch its own position, ADC and voltage readings on the TFT. Both inputs use independent 75 ms settling timers.
 4. Optionally open Serial Monitor at 115200 baud for text readings.
 
@@ -44,7 +50,7 @@ The sketch averages ADC readings and requires a position to remain stable for 75
 
 Uses the Teensy core's 12-bit ADC configuration and averaging: https://www.pjrc.com/store/teensy41.html and https://github.com/PaulStoffregen/cores/blob/master/teensy4/analog.c.
 
-Compiled for Teensy 4.1 with Teensy core 1.62.0 and its bundled ILI9488_t3 library. The V1.0 build compiled successfully. It uses a framebuffer to draw updates in memory before sending them to the TFT, addressing the visible clear-and-redraw flicker in the earlier test. I still need to check both switch inputs and the smoother display on my physical panel.
+Compiled for Teensy 4.1 with Teensy core 1.62.0 and its bundled ILI9488_t3 library. The V1.1 build compiled successfully. It uses a framebuffer to draw updates in memory before sending them to the TFT, addressing the visible clear-and-redraw flicker in the earlier test. I still need to check both switch inputs and the smoother display on my physical panel.
 
 ## Teensy GPIO labels and KiCad pin numbers
 

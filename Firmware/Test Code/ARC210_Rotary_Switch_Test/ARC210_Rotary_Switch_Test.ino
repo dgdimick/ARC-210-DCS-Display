@@ -1,4 +1,4 @@
-// ARC-210 dual seven-position resistor-ladder test V1.0 for Teensy 4.1.
+// ARC-210 dual seven-position resistor-ladder test V1.1 for Teensy 4.1.
 // Each J1: 1 -> 3.3V, 2 -> GPIO 14/A0 (Master) or 15/A1 (Secondary), 3 -> GND.
 // Fit R1-R6 (six 1k resistors); leave JP1 OPEN.
 // Select Teensy 4.1 and USB Type: Serial in the Arduino IDE.
@@ -12,6 +12,11 @@ constexpr uint8_t TFT_BL = 4; // Confirmed physical GPIO, not KiCad terminal 6.
 ILI9488_t3 tft(TFT_CS, TFT_DC, TFT_RST, TFT_MOSI, TFT_SCK, TFT_MISO);
 uint32_t lastDisplay = 0;
 bool buffered = false;
+constexpr uint8_t SQL_PIN = 41;
+bool sqlCandidate = false;
+bool sqlOn = false;
+uint32_t sqlChangedAt = 0;
+uint32_t sqlLastReport = 0;
 
 constexpr uint8_t SWITCH_PINS[2] = {14, 15};
 const char* const SWITCH_NAMES[2] = {"MASTER", "SECONDARY"};
@@ -71,6 +76,12 @@ void printReading(uint8_t index) {
 }
 
 void updateDisplay() {
+  tft.fillRect(12, 282, 456, 24, ILI9488_BLACK);
+  tft.setTextSize(2);
+  tft.setTextColor(sqlOn ? ILI9488_GREEN : ILI9488_WHITE, ILI9488_BLACK);
+  tft.setCursor(12, 282);
+  tft.print("SQL: "); tft.print(sqlOn ? "ON" : "OFF");
+  tft.print("  GPIO 41");
   for (uint8_t i = 0; i < 2; ++i) {
     const SwitchState& state = switches[i];
     const int x = 12 + i * 240;
@@ -107,7 +118,7 @@ void setup() {
   tft.fillScreen(ILI9488_BLACK);
   tft.setTextColor(ILI9488_CYAN, ILI9488_BLACK);
   tft.setTextSize(2);
-  tft.setCursor(12, 15); tft.print("ARC-210 SWITCH TEST V1.0");
+  tft.setCursor(12, 15); tft.print("ARC-210 SWITCH TEST V1.1");
   tft.drawFastVLine(239, 65, 200, ILI9488_CYAN);
   for (uint8_t i = 0; i < 2; ++i) {
     const int x = 12 + i * 240;
@@ -115,11 +126,13 @@ void setup() {
     tft.setCursor(x, 80); tft.print("GPIO "); tft.print(SWITCH_PINS[i]);
     pinMode(SWITCH_PINS[i], INPUT); // No pull-ups on resistor ladders.
   }
-  tft.setCursor(12, 282); tft.print("Each: six 1k resistors; JP1 OPEN");
+  pinMode(SQL_PIN, INPUT_PULLUP);
+  sqlCandidate = sqlOn = digitalRead(SQL_PIN) == LOW;
+  updateDisplay();
   analogReadResolution(12);
   analogReadAveraging(16);
   Serial.begin(115200);
-  Serial.println("ARC-210 dual rotary switch test V1.0");
+  Serial.println("ARC-210 dual rotary switch test V1.1");
   Serial.println("MASTER: GPIO14/A0; SECONDARY: GPIO15/A1. 3.3V ladders only.");
   Serial.println("An unplugged/floating input cannot be reliably detected by this test.");
   if (buffered) tft.updateScreen();
@@ -130,6 +143,19 @@ void loop() {
   if (now - lastSample < SAMPLE_MS) return;
   lastSample = now;
   bool anyChanged = false;
+  const bool sqlReading = digitalRead(SQL_PIN) == LOW;
+  if (sqlReading != sqlCandidate) {
+    sqlCandidate = sqlReading;
+    sqlChangedAt = now;
+  }
+  if (sqlOn != sqlCandidate && now - sqlChangedAt >= 30) {
+    sqlOn = sqlCandidate;
+    anyChanged = true;
+  }
+  if (Serial && (anyChanged || now - sqlLastReport >= REPORT_MS)) {
+    Serial.print("SQL GPIO41: "); Serial.println(sqlOn ? "ON" : "OFF");
+    sqlLastReport = now;
+  }
   for (uint8_t i = 0; i < 2; ++i) {
     SwitchState& state = switches[i];
     state.raw = analogRead(SWITCH_PINS[i]);

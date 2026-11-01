@@ -1,8 +1,8 @@
 # Test Code
 
-**Last updated: November 1, 2026 at 5:16 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:19 AM MST (America/Denver)**
 
-All five hardware-test HEX downloads are now labeled **V1.0**. This establishes their release filenames; it does not change the radio Preview or Diagnostic firmware versions. The TFT Hello World, combined hardware, and dual-switch tests now show **V1.0 on screen**. The two legacy HEX-only tests retain their original screens. The earlier button/encoder and encoder-only HEX files are preserved byte-for-byte; their matching source is not included. The rebuilt tests compiled successfully; their updated screens and the dual-switch operation still need checking on my physical panel.
+The current standalone switch test is **V1.1**; the other four hardware tests remain **V1.0**. These test versions do not change the radio Preview or Diagnostic firmware versions. The TFT Hello World, combined hardware tests show **V1.0 on screen**; the switch test shows **V1.1**. The two legacy HEX-only tests retain their original screens. The earlier button/encoder and encoder-only HEX files are preserved byte-for-byte; their matching source is not included. The rebuilt tests compiled successfully; their updated screens and the dual-switch operation still need checking on my physical panel.
 
 **Older button and encoder tests:** `ARC210_Button_Test_v1.0_Teensy41.hex` and `ARC210_Encoder_Check_v1.0_Teensy41.hex` have **V1.0 in the filename only**. Their screens do not show the matching version yet. I’ll fix the on-screen version numbers later; this is tracked in [Things that need to be completed](../../Docs/Remaining-Work.md).
 
@@ -37,9 +37,9 @@ Passing the hello test confirms the display is ready; it does not install a depe
 
 **Tested wiring:** I tested both seven-position rotary switches, and they worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. I saw some fluctuation in the TFT voltage readings, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the Main Board schematic were not part of that test.
 
-I also included a standalone [rotary switch test](ARC210_Rotary_Switch_Test/) that displays position 1–7, raw ADC reading and approximate voltage on the TFT. Release **V1.0** tests **Master on GPIO 14/A0** and **Secondary on GPIO 15/A1** together in separate columns. Connect each switch PCB's J1 pin 2 to its input, fit all six resistors on each board and leave both JP1 jumpers open. J1 pin 1 goes to 3.3V and pin 3 to GND.
+I also included a standalone [rotary switch test](ARC210_Rotary_Switch_Test/) that displays position 1–7, raw ADC reading and approximate voltage on the TFT. Release **V1.1** tests **Master on GPIO 14/A0** and **Secondary on GPIO 15/A1** together in separate columns, plus SQL ON/OFF on GPIO 41. Connect each switch PCB's J1 pin 2 to its input, fit all six resistors on each board and leave both JP1 jumpers open. J1 pin 1 goes to 3.3V and pin 3 to GND.
 
-Download [ARC210_Master_Secondary_Switch_Test_v1.0_Teensy41.hex](ARC210_Rotary_Switch_Test/ARC210_Master_Secondary_Switch_Test_v1.0_Teensy41.hex) for Teensy Loader, or build the [sketch](ARC210_Rotary_Switch_Test/ARC210_Rotary_Switch_Test.ino). This test uses backlight **GPIO 4** and runs without DCS or an open Serial Monitor. See its [instructions](ARC210_Rotary_Switch_Test/README.md). Programming the HEX replaces the firmware on the Teensy.
+Download [ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex](ARC210_Rotary_Switch_Test/ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex) for Teensy Loader, or build the [sketch](ARC210_Rotary_Switch_Test/ARC210_Rotary_Switch_Test.ino). This test uses backlight **GPIO 4** and runs without DCS or an open Serial Monitor. See its [instructions](ARC210_Rotary_Switch_Test/README.md). Programming the HEX replaces the firmware on the Teensy.
 
 ## Teensy GPIO labels and KiCad pin numbers
 
