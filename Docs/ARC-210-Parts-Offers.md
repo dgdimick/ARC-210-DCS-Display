@@ -1,6 +1,6 @@
 # ARC-210 bare PCB offer and optional 3D-printing help
 
-**Last updated: November 1, 2026 at 5:57 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 6:16 AM MST (America/Denver)**
 
 I can provide bare PCBs to help other builders complete my ARC-210 panel. I also offer separate 3D-printing help for builders without a printer. **These offers are for the ARC-210 only. I don’t currently offer PCB or printed-parts sets for the ARC-164 or ARC-186.** All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
 
@@ -25,7 +25,7 @@ My own order for all the boards cost about US$75. That was my approximate whole-
 
 **Price: US$3 (three US dollars), plus shipping.**
 
-If you don’t have access to a 3D printer and that is stopping you from building my ARC-210 panel, I’ll send you **one complete 17-part printed set**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I want the lack of a printer to be one less obstacle to building your SIMPIT.
+If you don’t have access to a 3D printer and that is stopping you from building my ARC-210 panel, I’ll send you **one complete 17-part printed set**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I don't want the lack of a 3d printer to be an obstacle preventing someone from building your SIMPIT.
 
 The set contains nine knobs, one display mounting bracket, six encoder spacers, and one SQL shaft spacer, matching the [current master print set](../Supporting%20STL%27s/README.md#complete-17-part-print-set). These are printed parts only; boards, electronics, and the faceplate are not included. If you can print your own parts, the [STL and 3MF downloads](../Supporting%20STL%27s/README.md) remain available.
 
