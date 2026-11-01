@@ -1,8 +1,14 @@
 # ARC-210 Main Board v1.1 and schematic
 
-**Last updated: October 31, 2026 at 1:52 AM MDT (America/Denver)**
+**Last updated: October 31, 2026 at 10:38 PM MDT (America/Denver)**
 
 Updated October 29, 2026: USB-powered design with TFT VCC supplied directly from the Teensy's 3.3 V rail.
+
+## Full main-board schematic
+
+<a href="../../images/ARC-210-Main-Board-Schematic-v1.1.png"><img src="../../images/ARC-210-Main-Board-Schematic-v1.1.png" width="350" alt="Full ARC-210 Main Board v1.1 schematic showing the Teensy, display, encoders, button matrix, and switch connections"></a>
+
+*Click the image to view the full-size Main Board v1.1 schematic. I exported this image from the published KiCad schematic.*
 
 ## Download and open
 
