@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 1, 2026
 
-**Last updated: November 1, 2026 at 5:46 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:48 AM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -103,13 +103,14 @@ One thing I’m very pleased about is that I’m developing the same ARC-210 pan
 
 I’ll label radio HEX downloads with the aircraft they support and a version number, increasing the version whenever I publish updated firmware so you can tell releases apart. Each new aircraft-support release will retain support for the previously supported aircraft. Adding an aircraft will require loading the updated HEX once, using the same Teensy Loader procedure as the first flash while the panel is connected by USB. After that, switching between aircraft included in that version will not require reflashing. **This cumulative aircraft support and automatic selection are still being developed and tested.**
 
-The JLCPCB estimate below includes the PC Flights faceplate. **All amounts are in US dollars (USD).**
+Both build estimates below include the PC Flights faceplate. **All amounts are in US dollars (USD).**
 
 | PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
 | --- | ---: | ---: |
 | JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$58.20 cart estimate | US$267.72–US$300.72 |
+| [My complete six-board bare PCB set](Docs/ARC-210-Parts-Offers.md#bare-pcb-set) | **US$40.00**, plus shipping and handling | **US$249.52–US$282.52**, before shipping, handling, and applicable fees |
 
-For both build totals side by side, including my PCB-set option, see [ARC-210 parts offers](Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
+For availability, what’s included in my set, and shipping/VAT/import-fee details, see [ARC-210 parts offers](Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
 
 **The US$58.20 PCB allowance uses the November 1, 2026 cart estimate: US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon.** Shipping shown in that cart is already included; don’t add it twice. Coupon eligibility and shipping vary. If the US$15.00 coupon is unavailable, add US$15.00 to the JLCPCB-based estimate. Any duties, taxes, VAT, carrier fees, or other charges not included in that cart subtotal may still apply, as may delivery charges for the other components. Check your own final checkout total before ordering. These are estimates rather than fixed kit prices; the updated JLCPCB option rounds to about **US$268–US$301** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
 
