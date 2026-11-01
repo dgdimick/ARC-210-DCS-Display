@@ -1,6 +1,6 @@
 # Test Code
 
-**Last updated: November 1, 2026 at 5:12 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:14 AM MST (America/Denver)**
 
 All five hardware-test HEX downloads are now labeled **V1.0**. This establishes their release filenames; it does not change the radio Preview or Diagnostic firmware versions. The TFT Hello World, combined hardware, and dual-switch tests now show **V1.0 on screen**. The two legacy HEX-only tests retain their original screens. The earlier button/encoder and encoder-only HEX files are preserved byte-for-byte; their matching source is not included. The rebuilt tests compiled successfully; their updated screens and the dual-switch operation still need checking on my physical panel.
 
@@ -10,6 +10,10 @@ All five hardware-test HEX downloads are now labeled **V1.0**. This establishes 
 
 Current Main Board version: **1.1**.
 
+## Which test should I run?
+
+**For normal ARC-210 assembly, use the Final Hardware Test to check the controls together. You don’t need to run every individual test.** I keep the TFT Hello World, button, encoder, and standalone switch tests here as optional troubleshooting tools when something isn’t working. Use the relevant test to help narrow down a display, control, or wiring problem.
+
 ## Final hardware test HEX — October 10, 2026
 
 **I have completed the final combined hardware test HEX file.** Download [ARC210_Final_Hardware_Test_v1.0_Teensy41.hex](ARC210_Final_Hardware_Test_v1.0_Teensy41.hex) and program it with Teensy Loader.
@@ -18,7 +22,7 @@ I have confirmed that all 16 buttons, six rotary encoders, TFT brightness contro
 
 See the [combined test instructions and source](ARC210_Button_Test/). Programming this test replaces the running firmware. I have kept the earlier individual tests below for troubleshooting.
 
-**Start with the TFT hello test** so you know the display is working before checking the encoders. The encoder test uses the screen to show counts, direction, and input states. If the screen stays blank, the wiring notes are a good place to start. You’re welcome to ask for help in Discussions.
+**If you need to troubleshoot the display or encoders,** start with the TFT hello test so you know the display is working before checking the encoders. The encoder test uses the screen to show counts, direction, and input states. If the screen stays blank, the wiring notes are a good place to start. You’re welcome to ask for help in Discussions.
 
 1. Load the [TFT hello test and compile instructions](Teenys_TFT_Hello_Works/README.md) and confirm that its output appears correctly on the TFT. (The existing folder and sketch are named `Teenys_TFT_Hello_Works`.)
 2. If the display stays blank, work through the display wiring and setup first. Feel free to ask in Discussions if you get stuck.

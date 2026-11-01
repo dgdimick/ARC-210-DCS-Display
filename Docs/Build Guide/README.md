@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 1, 2026 at 5:03 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:14 AM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -228,11 +228,10 @@ Use the **GPIO labels printed on the Teensy** for wiring instructions; they are 
 
 I tested the existing test firmware on my development hardware. **Validation of the assembled manufactured boards remains pending.**
 
-1. Start with the [TFT hello test and test-code instructions](../../Firmware/Test%20Code/README.md). Confirm that the display works.
-2. Use the standalone encoder and rotary-switch tests there if a control needs troubleshooting.
-3. Load the [final combined hardware test HEX](../../Firmware/Test%20Code/ARC210_Final_Hardware_Test_v1.0_Teensy41.hex) and follow the [combined-test instructions](../../Firmware/Test%20Code/ARC210_Button_Test/README.md).
-4. Check all sixteen buttons, six encoders in both directions, both seven-position switches, and TFT brightness control.
-5. **Pending:** a documented end-to-end SQL On/Off test and complete manufactured-panel acceptance checklist. I still need to document SQL testing separately; the combined test alone does not confirm its operation.
+1. Load the [Final Hardware Test HEX](../../Firmware/Test%20Code/ARC210_Final_Hardware_Test_v1.0_Teensy41.hex) and follow the [combined-test instructions](../../Firmware/Test%20Code/ARC210_Button_Test/README.md). This is the normal assembly test; you don’t need to run every individual test.
+2. Check all sixteen buttons, six encoders in both directions, both seven-position switches, and TFT brightness control.
+3. If something does not work, use the relevant [individual hardware test](../../Firmware/Test%20Code/README.md) to help isolate the problem. These tests are optional troubleshooting tools.
+4. **Pending:** a documented end-to-end SQL On/Off test and complete manufactured-panel acceptance checklist. I still need to document SQL testing separately; the combined test alone does not confirm its operation.
 
 Loading a test HEX replaces the firmware currently on the Teensy. The standalone tests do not require DCS. Disconnect USB before changing wiring.
 

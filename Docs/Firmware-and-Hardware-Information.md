@@ -2,7 +2,7 @@
 
 # Firmware and hardware information
 
-**Last updated: November 1, 2026 at 5:03 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:14 AM MST (America/Denver)**
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.** See the [aircraft support plan](C-130J-Support.md).
 
@@ -91,7 +91,7 @@ Download [ARC210_A-10C2_v0.1.2_Preview.hex](../Firmware/Master%20Hex%20Files/ARC
 
 ## Firmware and hardware testing
 
-Start with the TFT hello test, then use the individual tests to troubleshoot or the combined test to check the controls together. These hardware tests run without DCS. Loading a test replaces the firmware currently on the Teensy.
+For normal assembly, use the **Final Hardware Test** to check the controls together. The individual TFT, button, encoder, and switch tests are optional troubleshooting tools; you don’t need to run them unless there is a hardware problem to investigate. These hardware tests run without DCS. Loading a test replaces the firmware currently on the Teensy.
 
 | Test | Files | Instructions |
 | --- | --- | --- |
