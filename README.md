@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 1, 2026
 
-**Last updated: November 1, 2026 at 5:51 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:52 AM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -17,9 +17,9 @@ I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy
 
 <a id="buy-a-complete-set-of-bare-pcbs"></a>
 
-## PCB and printed-parts offers
+## Bare PCB offer
 
-See my [ARC-210 PCB and printed-parts offers](Docs/ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.**
+I can provide **bare PCBs only**, not a kit of electronic components or an assembled panel. See my [ARC-210 bare PCB offer](Docs/ARC-210-Parts-Offers.md#bare-pcb-set) for the boards included, availability, shipping, and fees. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.**
 
 > **Disclaimer:** This hobby flight-simulation project is provided without warranty, subject to its licenses. Read the [full disclaimer](#disclaimer) before building or using it.
 
@@ -105,10 +105,12 @@ I’ll label radio HEX downloads with the aircraft they support and a version nu
 
 Both build estimates below include the PC Flights faceplate. **All amounts are in US dollars (USD).**
 
-| PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
+**My offer is for bare PCBs only—not a component kit or an assembled panel.** I don’t supply the Teensy, display, encoders, switches, buttons, faceplate, wiring, or other electronic components with the boards. You buy those separately from the suppliers in the parts list. The full-build totals below combine those separate purchases with the PCB cost; they are not prices for a kit I sell. Printed parts are not included in the PCB set; the optional 3D-printing help is a separate arrangement.
+
+| PCB purchasing option | PCB cost (USD) | Estimated full DIY build cost (USD) |
 | --- | ---: | ---: |
 | JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$58.20 cart estimate | US$267.72–US$300.72 |
-| [My complete six-board bare PCB set](Docs/ARC-210-Parts-Offers.md#bare-pcb-set) | **US$40.00**, plus shipping and handling | **US$249.52–US$282.52**, before shipping, handling, and applicable fees |
+| [My six bare PCBs only (no components)](Docs/ARC-210-Parts-Offers.md#bare-pcb-set) | **US$40.00**, plus shipping and handling | **US$249.52–US$282.52**, before shipping, handling, and applicable fees |
 
 For availability, what’s included in my set, and shipping/VAT/import-fee details, see [ARC-210 parts offers](Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
 

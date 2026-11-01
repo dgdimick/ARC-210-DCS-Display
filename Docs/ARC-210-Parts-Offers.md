@@ -1,10 +1,12 @@
-# ARC-210 PCB and printed-parts offers
+# ARC-210 bare PCB offer and optional 3D-printing help
 
-**Last updated: November 1, 2026 at 5:46 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:52 AM MST (America/Denver)**
 
-I offer these parts to help other builders complete my ARC-210 panel. **These offers are for the ARC-210 only. I don’t currently offer PCB or printed-parts sets for the ARC-164 or ARC-186.** All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
+I can provide bare PCBs to help other builders complete my ARC-210 panel. I also offer separate 3D-printing help for builders without a printer. **These offers are for the ARC-210 only. I don’t currently offer PCB or printed-parts sets for the ARC-164 or ARC-186.** All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
 
 ## Bare PCB set
+
+**My offer is for bare PCBs only—not a component kit or an assembled panel.** I don’t supply the Teensy, display, encoders, switches, buttons, faceplate, wiring, or other electronic components with the boards. You buy those separately from the suppliers in the parts list. The full-build totals below combine those separate purchases with the PCB cost; they are not prices for a kit I sell. Printed parts are not included in the PCB set; the optional 3D-printing help is a separate arrangement.
 
 **Price: US$40, plus shipping and handling.**
 
@@ -43,10 +45,10 @@ Using my current PCB-set price and the [component estimates in the parts list](.
 
 These totals use the same **US$209.52–US$242.52** component and self-printing allowance, including the PC Flights faceplate:
 
-| PCB option | PCB allowance (USD) | Estimated total panel parts cost (USD) |
+| PCB option | PCB allowance (USD) | Estimated full DIY build cost (USD) |
 | --- | ---: | ---: |
 | JLCPCB: five copies of each of four designs (20 boards) | US$58.20 cart estimate | **US$267.72–US$300.72** |
-| My complete six-board bare PCB set | US$40.00, plus shipping and handling | **US$249.52–US$282.52** |
+| My six bare PCBs only (no components) | US$40.00, plus shipping and handling | **US$249.52–US$282.52** |
 
 The JLCPCB allowance is **US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon = US$58.20**. Without that coupon, add **US$15.00** to the JLCPCB-based build total. Coupon eligibility, shipping, and any additional fees can vary. My set’s shipping and handling are separate. Delivery charges and any applicable taxes, VAT, or import fees not already included remain extra for both options. These are parts estimates, not assembled-kit prices or guaranteed delivered totals.
 

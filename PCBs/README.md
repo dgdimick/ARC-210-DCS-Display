@@ -1,6 +1,6 @@
 # ARC-210 PCBs
 
-**Last updated: November 1, 2026 at 5:51 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:52 AM MST (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -28,10 +28,12 @@ I’ll label radio HEX downloads with the aircraft they support and a version nu
 
 Here are both PCB options using the same component estimates. These totals cover the panel’s parts, including the PC Flights faceplate, rather than just the bare boards. **All amounts are in US dollars (USD).**
 
-| PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
+**My offer is for bare PCBs only—not a component kit or an assembled panel.** I don’t supply the Teensy, display, encoders, switches, buttons, faceplate, wiring, or other electronic components with the boards. You buy those separately from the suppliers in the parts list. The full-build totals below combine those separate purchases with the PCB cost; they are not prices for a kit I sell. Printed parts are not included in the PCB set; the optional 3D-printing help is a separate arrangement.
+
+| PCB purchasing option | PCB cost (USD) | Estimated full DIY build cost (USD) |
 | --- | ---: | ---: |
 | JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$58.20 cart estimate | US$267.72–US$300.72 |
-| [My complete six-board bare PCB set](../Docs/ARC-210-Parts-Offers.md#bare-pcb-set) | **US$40.00**, plus shipping and handling | **US$249.52–US$282.52**, before shipping, handling, and applicable fees |
+| [My six bare PCBs only (no components)](../Docs/ARC-210-Parts-Offers.md#bare-pcb-set) | **US$40.00**, plus shipping and handling | **US$249.52–US$282.52**, before shipping, handling, and applicable fees |
 
 For availability, what’s included in my set, and shipping/VAT/import-fee details, see [ARC-210 parts offers](../Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
 
