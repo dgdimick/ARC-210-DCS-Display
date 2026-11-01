@@ -1,6 +1,6 @@
 # ARC-210 firmware source
 
-**Last updated: November 1, 2026 at 12:23 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 4:21 AM MST (America/Denver)**
 
 I’ve included my Master_Program source and ARC210_Display library snapshot here so the startup information and radio display code can be built together. The current build is **v0.1.2 Preview**, for **A-10C2 only**. C-130J and automatic aircraft switching are still in development.
 
@@ -24,4 +24,4 @@ I compiled this preview with Arduino CLI, Teensy platform **1.62.0**, DCS-BIOS *
 arduino-cli compile --fqbn teensy:avr:teensy41 --libraries dependencies --output-dir build .
 ```
 
-The compiler produces `Master_Program.ino.hex`. For publication, label it `ARC210_A-10C2_v0.1.2_Preview.hex`, matching `FirmwareInfo.h`. This source is a preview: compilation succeeded, but I still need to check the new build on my physical panel and in DCS. The backlight initialization matches the working hardware test (GPIO 4, 8-bit PWM at 1 kHz, full brightness). This clean preview compiled successfully; the physical display and bridge were confirmed with the separate v0.1.3 diagnostic build. Live DCS testing and full physical-control integration remain pending.
+The compiler produces `Master_Program.ino.hex`. For publication, label it `ARC210_A-10C2_v0.1.2_Preview.hex`, matching `FirmwareInfo.h`. This source is a preview: compilation succeeded, but I still need to check the new build on my physical panel and in DCS. The backlight initialization matches the working hardware test (GPIO 4, 8-bit PWM at 1 kHz, full brightness). This clean preview compiled successfully; the physical display and simulated radio-data updates were confirmed with the separate v0.1.3 diagnostic build. Live DCS testing and full physical-control integration remain pending.

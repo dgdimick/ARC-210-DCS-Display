@@ -2,7 +2,7 @@
 
 # DCS-BIOS setup — step by step
 
-**Last updated: November 1, 2026 at 12:23 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 4:21 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use the actual current America/Denver date and time, including MST or MDT. -->
 
@@ -192,7 +192,7 @@ Download [TekConnect](https://github.com/tekcreations/TekConnect), the app I use
 4. Select that port in TekConnect and connect it. If it asks for a baud rate (connection speed), use the setting required by that panel’s firmware. I haven’t listed one setting for every controller here.
 5. Once the connection works, use TekConnect's automatic connection option if you want it to connect the port for you.
 
-Only one application should use a panel's COM port at a time. Close Serial Monitor, other serial bridges, or the bench-testing app before connecting it in TekConnect. TekConnect manages the connection; it does not install DCS-BIOS, patch the Lua files, or program the Teensy.
+Only one application should use a panel's COM port at a time. Close Serial Monitor or other applications using that COM port before connecting it in TekConnect. TekConnect manages the connection; it does not install DCS-BIOS, patch the Lua files, or program the Teensy.
 
 ## 7. Restart DCS and check the display
 
@@ -210,7 +210,7 @@ Load an A-10C II mission, power the aircraft and ARC-210, and check that the phy
 
 If an edit causes problems, close DCS, restore your backup, and restart it. For more detail, check `Logs\dcs.log` in the same Saved Games profile for Lua/export errors.
 
-For testing without DCS, see my [bench-testing guide](Bench-Testing-App.md). Disconnect TekConnect from that panel before starting the bench app, and reconnect it afterward. For cables, hubs, and my USB setup, see [USB connections and powered hubs](USB-Connections-and-Powered-Hubs.md).
+For cables, hubs, and my USB setup, see [USB connections and powered hubs](USB-Connections-and-Powered-Hubs.md).
 
 ## After a DCS-BIOS update
 

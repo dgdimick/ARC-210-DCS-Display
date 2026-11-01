@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: November 1, 2026 at 4:02 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 4:21 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -10,17 +10,11 @@ I use this page to share hardware and firmware changes, releases, testing milest
 
 **Current parts offers:** See [ARC-210 parts offers](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details.
 
-**November 1, 2026 at 4:02 AM MST — V1.5.4 bridge fixes the OFF → ON blank screen**
+**November 1, 2026 at 12:23 AM MDT — Backlight fix and display bench test**
 
-I fixed the bench-testing bridge so **Set Master** sends the separate RT/display-power indication along with the MASTER selector. Previously, switching OFF and then ON could run through initialization and leave the screen blank because the display-power indication was missing.
+I added GPIO 4 backlight initialization in **v0.1.2 Preview** and built **v0.1.3 Diagnostic** with an immediate startup display and USB status messages. The hardware test displayed correctly; the diagnostic build also displayed correctly and received simulated radio updates, including MASTER = TR and frequency 133.123.
 
-I tested **V1.5.4** on my physical ARC-210 panel with the existing **v0.1.3 Diagnostic HEX**, and the display now stays on after initialization. **No HEX update or Teensy reflash is needed for this bridge fix.** Download the [updated bridge](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working) and see the [bench-testing instructions](Bench-Testing-App.md). **Live DCS testing is still pending.**
-
-**November 1, 2026 at 12:23 AM MDT — Backlight fix and working bridge bench test**
-
-I added GPIO 4 backlight initialization in **v0.1.2 Preview** and built **v0.1.3 Diagnostic** with an immediate startup display and USB status messages. The hardware test displayed correctly; the diagnostic build then displayed correctly and received simulated radio updates from my corrected **V1.5.3 bridge**, including MASTER = TR and frequency 133.123. The bridge now has a **Power On / Send All** button, preserves selector bits beside string fields, and recovers its receive loop after a USB disconnect.
-
-Both firmware binaries and their source are published. **Live DCS testing and complete physical-control integration are still pending.** The diagnostic is for bench testing and emits USB diagnostic text; the clean preview does not. See the [firmware downloads](../Firmware/Master%20Hex%20Files/README.md) and [bench-testing instructions](Bench-Testing-App.md).
+Both firmware binaries and their source are published. **Live DCS testing and complete physical-control integration are still pending.** The diagnostic is for bench testing and emits USB diagnostic text; the clean preview does not. See the [firmware downloads](../Firmware/Master%20Hex%20Files/README.md).
 
 **October 31, 2026 at 1:37 AM MDT — Printed-parts offer for builders without a 3D printer**
 

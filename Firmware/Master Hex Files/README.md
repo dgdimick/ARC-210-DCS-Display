@@ -1,16 +1,14 @@
 # ARC-210 menu-system preview
 
-**Last updated: November 1, 2026 at 12:23 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 4:21 AM MST (America/Denver)**
 
 `ARC210_A-10C2_v0.1.2_Preview.hex` is the current Teensy 4.1 / ILI9488 480 × 320 display firmware, published for menu-screen and navigation testing. It is not a complete implementation of every radio function.
 
 ## Bench diagnostic build — v0.1.3
 
-[Download ARC210_A-10C2_v0.1.3_Diagnostic.hex](ARC210_A-10C2_v0.1.3_Diagnostic.hex) if the display stays black or you need to trace bridge communication. It turns on the GPIO 4 backlight, shows its information screen immediately, and prints USB diagnostics once a second. Those messages show received bytes, MASTER, radio/display power, and frequency.
+[Download ARC210_A-10C2_v0.1.3_Diagnostic.hex](ARC210_A-10C2_v0.1.3_Diagnostic.hex) if the display stays black or you need to trace USB communication. It turns on the GPIO 4 backlight, shows its information screen immediately, and prints USB diagnostics once a second. Those messages show received bytes, MASTER, radio/display power, and frequency.
 
-**Use this diagnostic for bench testing. Use the clean v0.1.2 preview for the upcoming live DCS test; that test is still pending.** I verified that the diagnostic display appeared and the corrected bridge delivered TR, powered-radio status, and frequency changes. [Diagnostic source](../Source/Diagnostics/Master_Program/README.md) is included. Nothing here adds full physical-control integration.
-
-For bridge testing, load the aircraft JSON to populate categories, select the Teensy's COM port, click Connect, and click **Power On / Send All** in [V1.5.3 of my modified tester](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working). This sends RT status, MAN mode, MASTER = TR, and the selected frequency. Loading a JSON file alone does not send radio power.
+**Use this diagnostic for bench testing. Use the clean v0.1.2 preview for the upcoming live DCS test; that test is still pending.** I verified that the diagnostic display appeared and the panel received TR, powered-radio status, and frequency changes. [Diagnostic source](../Source/Diagnostics/Master_Program/README.md) is included. Nothing here adds full physical-control integration.
 
 ## Aircraft labels and cumulative releases
 
@@ -50,21 +48,7 @@ Some detail-page actions remain unimplemented, including the WOD erase YES outco
 
 ## Loading and first startup
 
-Open this HEX in Teensy Loader, enable Auto, and press the Teensy's programming button. Reconnect your DCS-BIOS serial bridge after flashing if needed. The display starts blank until it receives powered-radio data; a blank screen without powered-radio updates from DCS-BIOS or dcsBiosDebug is expected. The Loader's “1% used” is memory usage, not upload progress.
-
-## Test the menu system without running DCS
-
-Use the maintained [ARC-210 working branch of dcsBiosDebug](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working) to send simulated DCS-BIOS updates to the Teensy over USB serial. This lets you exercise the firmware's menu screens and navigation without launching DCS or loading a mission. See the [ARC-210 testing instructions](https://github.com/dgdimick/dcsBiosDebug/blob/arc210-working/ARC210_TESTING.md) for installation and the ARC-210 controls. The original executable does not contain those controls; use the Python script from the arc210-working branch. The manual JSON/Active Indicators procedure below describes the earlier generic workflow.
-
-1. Load `ARC210_A-10C2_v0.1.2_Preview.hex` onto the Teensy and connect the display hardware.
-2. Close the DCS-BIOS serial bridge and any Serial Monitor using the Teensy's COM port.
-3. In dcsBiosDebug, click **Find Serial Ports**, select the Teensy's COM port, and click **Connect**.
-4. Load the matching A-10C aircraft JSON definition from your DCS-BIOS `doc/json` directory. Its output addresses and masks must match this firmware.
-5. Add the ARC-210 power/master-switch and display-state outputs to **Active Indicators**. Send powered-radio values, including valid frequency/display data, and allow startup to finish. Connecting alone does not turn on the simulated radio; the screen can remain blank until the required data arrives.
-6. Add the ARC-210 MENU, upper/middle/lower line-select key, and XMT/RCV button outputs. Simulate each press as **0 -> 1 -> 0**, allowing each state to be transmitted before changing it again. The firmware acts on the transition to 1, so release the button before testing another press.
-7. Use these simulated updates to check the menu sequence, labels, layout, and navigation described above. Text outputs can be edited and sent with the **>** button; integer outputs can be changed with their sliders.
-
-This is a bench test of the firmware's response to supplied data. dcsBiosDebug does not simulate DCS's radio logic or automatically provide the game's responses to hardware commands. Features such as WOD synchronization and game-dependent settings still need an in-DCS test. Disconnect dcsBiosDebug before reconnecting the normal DCS-BIOS serial bridge.
+Open this HEX in Teensy Loader, enable Auto, and press the Teensy's programming button. Reconnect the panel in TekConnect after flashing if needed. The display starts blank until it receives powered-radio data; a blank screen without powered-radio updates from DCS-BIOS is expected. The Loader's “1% used” is memory usage, not upload progress.
 
 ## DCS-BIOS export requirements
 
@@ -72,7 +56,7 @@ The earlier preview was tested with two local changes to the A-10C DCS-BIOS expo
 
 ## File verification
 
-Both new builds compiled successfully for Teensy 4.1 using Teensy platform 1.62.0, DCS-BIOS 0.3.13, and ILI9488_t3 1.0. The clean v0.1.2 preview includes backlight initialization but still needs a live DCS test. I confirmed the physical display and USB radio-data updates with v0.1.3 Diagnostic and the V1.5.3 bridge. This is not proof that all menus or physical controls work in DCS.
+Both new builds compiled successfully for Teensy 4.1 using Teensy platform 1.62.0, DCS-BIOS 0.3.13, and ILI9488_t3 1.0. The clean v0.1.2 preview includes backlight initialization but still needs a live DCS test. I confirmed the physical display and USB radio-data updates with v0.1.3 Diagnostic. This is not proof that all menus or physical controls work in DCS.
 
 SHA-256:
 

@@ -2,7 +2,7 @@
 
 # Firmware and hardware information
 
-**Last updated: November 1, 2026 at 12:23 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 4:21 AM MST (America/Denver)**
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.** See the [aircraft support plan](C-130J-Support.md).
 
@@ -33,10 +33,6 @@ See my [ARC-210 PCB and printed-parts offers](ARC-210-Parts-Offers.md) for curre
 ## Loading the HEX File onto a Teensy 4.1
 
 [Read the HEX loading instructions](Loading-HEX-Files.md) to program the Teensy 4.1.
-
-## ARC-210 Bench Testing App
-
-[View the ARC-210 Bench Testing App guide](Bench-Testing-App.md) to test the panel with simulated DCS-BIOS data without running DCS.
 
 ## Tools needed
 
@@ -81,7 +77,7 @@ All STL files are intended to be print-ready for FDM printers using a 0.4 mm noz
 1. Download [ARC210_A-10C2_v0.1.2_Preview.hex](../Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.1.2_Preview.hex), the current radio display/menu firmware.
 2. Read the [firmware preview notes](../Firmware/Master%20Hex%20Files/README.md) and follow the [DCS-BIOS setup guide](DCS-BIOS.md) for installation, file changes, and TekConnect.
 3. Follow the [HEX loading instructions](Loading-HEX-Files.md) to program the Teensy 4.1. This replaces any hardware-test firmware.
-4. Reconnect the DCS-BIOS serial bridge after programming and supply powered-radio data from DCS, or use the [ARC-210 Bench Testing App](Bench-Testing-App.md). A blank screen before powered-radio data arrives is expected.
+4. Reconnect the panel in TekConnect after programming and supply powered-radio data from DCS. A blank screen before powered-radio data arrives is expected.
 
 ### Current firmware capabilities and limitations
 

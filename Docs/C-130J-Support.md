@@ -2,7 +2,7 @@
 
 # C-130J ARC-210 support
 
-**Last updated: October 31, 2026 at 12:22 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 4:21 AM MST (America/Denver)**
 
 My current plan is to finish the **A-10C II (A-10C2) ARC-210 implementation**, then build and test the **ARC-164**, followed by the **ARC-186**. After those projects, I’ll return to additional aircraft support, starting with the **ARC-210 and C-130J**. Those aircraft extensions are later work, not the current implementation priority. I’m focusing on aircraft with a matching physical radio panel. **This order may change based on user feedback and interest.**
 
@@ -91,15 +91,12 @@ The main [Things that need to be completed list](Remaining-Work.md) tracks C-130
 2. **DCS-BIOS mappings and missing LCD exports:** Verify the existing panel controls and `RADIO_ARC210` frequency export in DCS. Follow the [LCD export plan](#helios-findings-and-lcd-export-plan): verify indicator 44 against the installed module, capture and parse live indications, add named string outputs for the required LCD and menu fields, and clear fields that disappear between pages. Check RT SELECT behavior and document any unavailable data or export changes.
 3. **Shared firmware and automatic aircraft selection:** Add the C-130J mappings and menu behavior to the same code base as the A-10C II. Detect the aircraft automatically and switch mappings without requiring users to reflash the Teensy. Implement and test aircraft changes, including clearing stale controls and display data. This is planned work, not a completed feature.
 4. **Menu system:** Adapt the pages and display values and test the complete menu system against the aircraft.
-5. **Bench-testing app:** Add C-130J ARC-210 mappings and simulated data to my modified debug app so the panel can be tested independently.
-6. **Testing in DCS:** Check controls, display updates, power changes, reconnection, and extended reliability, including operation with the other USB devices connected.
-7. **Documentation:** Publish firmware loading, aircraft setup, DCS-BIOS changes, and troubleshooting instructions, linking to the shared hardware guides where they apply.
+5. **Testing in DCS:** Check controls, display updates, power changes, reconnection, and extended reliability, including operation with the other USB devices connected.
+6. **Documentation:** Publish firmware loading, aircraft setup, DCS-BIOS changes, and troubleshooting instructions, linking to the shared hardware guides where they apply.
 
-## DCS-BIOS and bench testing
+## DCS-BIOS setup
 
 My [step-by-step DCS-BIOS guide](DCS-BIOS.md) covers installation and TekConnect, the app I use to manage USB serial connections. **Its patched A-10C.lua is for the A-10C ARC-210 and does not configure the C-130J.** I’ll document any C-130J-specific changes here after checking them.
-
-I use a [modified version of dcsBiosDebug](https://github.com/dgdimick/dcsBiosDebug/tree/arc210-working), based on [tldBear’s original app](https://github.com/tldBear/dcsBiosDebug). The existing A-10 shortcuts do not establish C-130J support. See the [bench-testing guide](Bench-Testing-App.md) for the current app.
 
 ## Shared setup and questions
 
