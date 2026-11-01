@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 1, 2026 at 5:46 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:51 AM MST (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -59,13 +59,16 @@ Prices checked October 22, 2026, except the recommended Teensy with headers (Oct
 | USB Micro-B data cable — for powering and programming the Teensy 4.1 | 1 | $3–$6 |
 | **Estimated DIY purchasing cost using JLCPCB (rounded)** | | **US$268–US$301** |
 
-The JLCPCB estimate below includes the PC Flights faceplate. This calculated total is an estimate rather than a fixed kit price; rounded for budgeting, the JLCPCB option is about **US$268–US$301**.
+Both build estimates below include the PC Flights faceplate. This calculated total is an estimate rather than a fixed kit price; rounded for budgeting, the JLCPCB option is about **US$268–US$301**.
 
 | PCB purchasing option | PCB cost (USD) | Estimated total parts cost (USD) |
 | --- | ---: | ---: |
 | JLCPCB: five copies of each of four designs (20 bare boards) | US$58.20 cart estimate | US$267.72–US$300.72 |
+| [My complete six-board bare PCB set](../Docs/ARC-210-Parts-Offers.md#bare-pcb-set) | **US$40.00**, plus shipping and handling | **US$249.52–US$282.52**, before shipping, handling, and applicable fees |
 
-For both build totals side by side, including my PCB-set option, see [ARC-210 parts offers](../Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
+For availability, what’s included in my set, and shipping/VAT/import-fee details, see [ARC-210 parts offers](../Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
+
+**My PCB-set option:** Shipping and handling are separate. I’ll only collect VAT if I’m required to; buyers may still owe import VAT, customs duties, or carrier fees even if I don’t collect VAT. Delivery and applicable fees for the other components are also separate. Compare the final delivered totals for your location.
 
 **The US$58.20 PCB allowance uses the November 1, 2026 cart estimate: US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon.** Shipping shown in that cart is already included; don’t add it twice. Coupon eligibility and shipping vary. If the US$15.00 coupon is unavailable, add US$15.00 to the JLCPCB-based estimate. Any duties, taxes, VAT, carrier fees, or other charges not included in that cart subtotal may still apply, as may delivery charges for the other components. Check your own final checkout total before ordering. Compare the delivered totals for your location.
 
