@@ -1,6 +1,6 @@
 # ARC-210 bare PCB offer and optional 3D-printing help
 
-**Last updated: November 1, 2026 at 6:17 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 6:20 AM MST (America/Denver)**
 
 I can provide bare PCBs to help other builders complete my ARC-210 panel. I also offer separate 3D-printing help for builders without a printer. **These offers are for the ARC-210 only. I don’t currently offer PCB or printed-parts sets for the ARC-164 or ARC-186.** All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
 
@@ -31,7 +31,7 @@ The set contains nine knobs, one display mounting bracket, six encoder spacers, 
 
 ## Shipping, VAT, and import charges
 
-Shipping is separate for both offers, and handling is also separate for the PCB set. Contact me for availability and a shipping quote before arranging a set.
+Shipping is separate for both offers, and handling is also separate for the PCB set. I’ll combine shipping and handling when I can if the PCBs and 3D-printed parts are shipped together. Contact me for availability and a shipping quote before arranging a set.
 
 I’ve already paid tax on my board order, and I’m offering these sets as part of my personal SIMPIT project rather than a commercial venture. I don’t plan to add a separate sales-tax charge to my PCB-set price. **I’ll only collect VAT if I’m required to. If I’m not required to collect it, I won’t.**
 
