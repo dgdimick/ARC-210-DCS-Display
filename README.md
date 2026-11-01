@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 1, 2026
 
-**Last updated: November 1, 2026 at 5:57 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 6:10 AM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -14,12 +14,6 @@ I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy
 
 - **v0.1.3 Diagnostic HEX:** The display stays on the splash screen while waiting for radio data. This is expected and does not mean the Teensy has frozen.
 - **v0.1.2 Preview HEX:** The display stays blank until DCS-BIOS sends powered-radio data.
-
-<a id="buy-a-complete-set-of-bare-pcbs"></a>
-
-## Bare PCB offer
-
-I can provide **bare PCBs only**, not a kit of electronic components or an assembled panel. See my [ARC-210 bare PCB offer](Docs/ARC-210-Parts-Offers.md#bare-pcb-set) for the boards included, availability, shipping, and fees. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.**
 
 > **Disclaimer:** This hobby flight-simulation project is provided without warranty, subject to its licenses. Read the [full disclaimer](#disclaimer) before building or using it.
 
@@ -68,6 +62,12 @@ I’m using **US$58.20** for the JLCPCB order in my build budget: **US$41.10 fab
 The panel parts estimate, including the faceplate, is now **US$267.72–US$300.72**, or about **US$268–US$301**. Delivery for other components and any additional applicable fees remain separate. See the [current quote breakdown](Docs/PCB-Manufacturing-JLCPCB.md#uploaded-file-checkout-estimate--november-1-2026) and [parts list](parts/README.md#estimated-build-cost).
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
+
+<a id="buy-a-complete-set-of-bare-pcbs"></a>
+
+## Bare PCB offer
+
+I can provide **bare PCBs only**, not a kit of electronic components or an assembled panel. See my [ARC-210 bare PCB offer](Docs/ARC-210-Parts-Offers.md#bare-pcb-set) for the boards included, availability, shipping, and fees. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.**
 
 ## My SIMPIT and test computer
 
