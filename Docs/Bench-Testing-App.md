@@ -2,7 +2,7 @@
 
 # ARC-210 Bench Testing App
 
-**Last updated: November 1, 2026 at 12:23 AM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 3:54 AM MST (America/Denver)**
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.** See the [aircraft support plan](C-130J-Support.md).
 
@@ -30,5 +30,13 @@ I tested the corrected bridge with v0.1.3 Diagnostic on my physical panel. The d
 Click **Find Serial Ports**, select the Teensy's port from the adjacent dropdown, then click **Connect**. Finding ports does not select one automatically. Load your DCS-BIOS `doc/json/A-10C.json` through **Choose DCSBios JSON file** to populate the categories; the JSON is not bundled and no DCS installation is needed to send simulated data.
 
 Click **Power On / Send All** to send RT status, MAN mode, MASTER = TR, and the frequency. Then use **Set FREQ**, **Set Secondary**, **Set Master**, or the menu buttons to test individual updates. The shortcut does not emulate every game response or menu field.
+
+### After unplugging, resetting, or reflashing the Teensy
+
+After reconnecting the Teensy, select its serial port and click **Connect**, then click **Power On / Send All**. The bridge’s displayed settings do not automatically restore the complete radio state after the Teensy restarts. The diagnostic build can stay on its boot screen until it receives that state, even when the bridge already shows a powered-on MASTER setting.
+
+I checked this on my panel: sending the complete state changed the Teensy’s diagnostic output from `master=0`, `radioOn=0`, and `freq=---.---` to `master=2`, `radioOn=1`, and a valid frequency, and the display left the boot screen. Simply closing and reopening the serial connection without restarting the Teensy may retain the existing state; that is different from unplugging its USB power.
+
+The **Power On / Send All** shortcut sets **MAN** and **2 - TR** and sends the frequency shown in the bridge. Use **Set Secondary** or **Set Master** afterward if you want to test other positions.
 
 V1.5.3 preserves neighboring selector bits when sending odd-length string fields such as RT and keeps the receive loop running after a USB disconnect. Reconnect the COM port after flashing. Use the [diagnostic HEX](../Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.1.3_Diagnostic.hex) for serial feedback; use the [clean preview](../Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.1.2_Preview.hex) for the planned live DCS test.
