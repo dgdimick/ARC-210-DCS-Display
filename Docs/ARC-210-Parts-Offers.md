@@ -1,6 +1,6 @@
 # ARC-210 bare PCB offer and optional 3D-printing help
 
-**Last updated: November 1, 2026 at 5:52 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 5:57 AM MST (America/Denver)**
 
 I can provide bare PCBs to help other builders complete my ARC-210 panel. I also offer separate 3D-printing help for builders without a printer. **These offers are for the ARC-210 only. I don’t currently offer PCB or printed-parts sets for the ARC-164 or ARC-186.** All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
 
@@ -57,6 +57,8 @@ My set-based total stays the same because my PCB-set price and the other compone
 The component allowances and JLCPCB option are also shown in the [parts-cost breakdown](../parts/README.md#estimated-build-cost). Compare the full delivered totals before choosing how to get the boards. The printed-parts assistance offer is an alternative to self-printing, not an extra set you need to buy.
 
 ## Get in touch
+
+If you’d like to build an ARC-210 but aren’t able to assemble it yourself, get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I’d be happy to talk about your situation and see how I can help.
 
 Please contact me through [ARC-210 Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to check availability and arrange shipping. If you’re local to me in **New Mexico, USA**, I’d also be happy to meet up and provide whatever help I can with your SIMPIT.
 
