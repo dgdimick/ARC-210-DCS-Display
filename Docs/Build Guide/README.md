@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 1, 2026 at 8:52 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 9:02 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -86,7 +86,7 @@ You can get a complete bare-PCB set from me or order directly from a manufacture
 
 ### Estimated total build cost
 
-I know the build cost may stretch some budgets. I’ve shared [my thoughts on the cost and development work](../../parts/README.md#estimated-total-build-cost) in the parts list, including roughly 480 hours working on the code, hardware design, PCB design, and testing (about 8 hours a day) and US$500 in extra development parts. My development-time estimate includes work I did before I started using ChatGPT, as well as over 120 hours using ChatGPT and Codex to help with some of the more complex code.
+I know the build cost may stretch some budgets. I’ve shared [my thoughts on the cost and development work](../../parts/README.md#estimated-total-build-cost) in the parts list, including roughly 480 hours working on the code, hardware design, PCB design, and testing (about 8 hours a day) and US$500 in extra development parts. My development-time estimate includes work I did before I started using ChatGPT, as well as over 120 hours using ChatGPT and Codex to help with some of the more complex code. I’m sure my dog [Cody](../Cody%20not%20happy.jpg) isn’t happy about this.
 
 My PCBs are designed around the faceplate and layout I’m using, so they may not fit someone else’s custom panel. I’m sharing the [source code](../../Firmware/Source/Master_Program/README.md) so other builders can reuse it or adapt it to their own controls, displays, and wiring. Some changes may be needed, but I hope it gives people a useful starting point and saves them development time.
 
