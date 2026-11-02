@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 1, 2026 at 6:54 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 6:56 PM MST (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -217,7 +217,7 @@ Print the nine-knob layout using the [combined STL](../Supporting%20STL%27s/ARC-
 
 The SQL shaft support spacer v.5 remains required in all installations.
 
-## USB cable strain-relief support — design pending
+## USB cable strain-relief support — design pending (waiting on PCBs to arrive)
 
 I still need to **design and 3D print the USB cable strain-relief support**. It should secure the cable to the Main Board mounting structure or panel so cable pulls do not load the Teensy's Micro-B connector, while leaving enough slack to unplug the cable and remove the Teensy. Its finished STL and physical fit verification are pending.
 
