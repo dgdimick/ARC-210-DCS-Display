@@ -2,7 +2,7 @@
 
 # C-130J ARC-210 support
 
-**Last updated: November 1, 2026 at 7:17 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:37 PM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
@@ -20,8 +20,6 @@ The plan uses the existing **Teensy 4.1, 3.5-inch LCD display, buttons, switches
 - [PCB files and manufacturing downloads](../PCBs/README.md)
 - [Final 17-part STL and 3MF print set](../Supporting%20STL%27s/README.md#complete-17-part-print-set)
 - [Assembly guide](Build%20Guide/README.md)
-
-I have printed the complete 17-part set at 100% scale, and all parts passed test fitting. C-130J software compatibility still needs testing, and manufactured-board assembly and electrical testing remain on the main work list.
 
 ## DCS-BIOS code findings
 
