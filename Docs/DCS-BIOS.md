@@ -2,13 +2,13 @@
 
 # DCS-BIOS setup — step by step
 
-**Last updated: November 1, 2026 at 7:00 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:41 PM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use the actual current America/Denver date and time, including MST or MDT. -->
 
 I use [DCS-Skunkworks DCS-BIOS](https://github.com/DCS-Skunkworks/dcs-bios) to send radio information between DCS and my panels, and [TekConnect](https://github.com/tekcreations/TekConnect) to manage their USB connections. I’ve put the setup steps here so you can follow along, even if you haven’t used DCS-BIOS before. I’ll show you where the files go, which two lines to change for my ARC-210 firmware, and how to connect and test the panel.
 
-**Current status:** The published ARC-210 firmware is a display/menu preview. Complete physical-control integration and final in-DCS validation are still pending. The ARC-164 and ARC-186 are planned builds; these ARC-210 edits do not add firmware support for those radios.
+**Current status:** My published ARC-210 firmware is a display/menu preview. Complete physical-control integration and final in-DCS validation are still pending. The ARC-164 and ARC-186 are planned builds; these ARC-210 edits do not add firmware support for those radios.
 
 ## What each file does
 
@@ -115,7 +115,7 @@ For **DCS-BIOS v0.11.8**, I’ve prepared an `A-10C.lua` containing the two chan
 4. Check that the filename is **A-10C.lua**, not `A-10C.lua.txt`.
 5. Skip the manual edits below and continue to **Step 5**. Fully restart DCS before testing in Step 7.
 
-This replacement is for **v0.11.8**. It will overwrite any other local changes in your existing aircraft file, so use Option B if you have a different version or other customizations to keep. I’ve checked that only the two intended lines differ from the official v0.11.8 module and that its output addresses match the firmware. **This newly packaged replacement has not yet been tested in a live DCS session.** See the [file details, exact patch, and license](DCS-BIOS/README.md).
+This replacement is for **v0.11.8**. It will overwrite any other local changes in your existing aircraft file, so use Option B if you have a different version or other customizations to keep. I’ve checked that only the two intended lines differ from the official v0.11.8 module and that its output addresses match the firmware. **I haven’t yet tested this newly packaged replacement in a live DCS session.** See the [file details, exact patch, and license](DCS-BIOS/README.md).
 
 ### Option B — make the two edits yourself
 
