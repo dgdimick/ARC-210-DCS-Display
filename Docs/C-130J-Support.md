@@ -2,7 +2,7 @@
 
 # C-130J ARC-210 support
 
-**Last updated: November 1, 2026 at 7:15 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:17 PM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
@@ -105,5 +105,3 @@ My [step-by-step DCS-BIOS guide](DCS-BIOS.md) covers installation and TekConnect
 - [Related radio projects](Related-Radio-Projects.md)
 
 **Planning a build?** You’re welcome to ask questions or share ideas in [the main ARC-210 Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions), even if you haven’t started yet.
-
-This is a hobby flight-simulation project; the shared files retain the licenses stated in the main repository.
