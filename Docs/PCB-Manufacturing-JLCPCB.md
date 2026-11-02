@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: November 1, 2026 at 8:38 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 8:39 PM MST (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -78,7 +78,7 @@ I offer separate 3D-printing help for builders whose lack of printer access is p
 
 ## Estimated total build cost
 
-I know the build cost may stretch some budgets. I’ve shared [my thoughts on the cost and development work](../parts/README.md#estimated-total-build-cost) in the parts list, including roughly 240 hours working on the code, hardware design, and PCB design and US$500 in extra development parts. My development-time estimate includes work I did before I started using ChatGPT.
+I know the build cost may stretch some budgets. I’ve shared [my thoughts on the cost and development work](../parts/README.md#estimated-total-build-cost) in the parts list, including roughly 420 hours working on the code, hardware design, and PCB design (7 hours a night over about 60 nights) and US$500 in extra development parts. My development-time estimate includes work I did before I started using ChatGPT.
 
 My PCBs are designed around the faceplate and layout I’m using, so they may not fit someone else’s custom panel. I’m sharing the [source code](../Firmware/Source/Master_Program/README.md) so other builders can reuse it or adapt it to their own controls, displays, and wiring. Some changes may be needed, but I hope it gives people a useful starting point and saves them development time.
 
