@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 1, 2026 at 7:00 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:12 PM MST (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -20,9 +20,17 @@ I recommend using **male pin headers on the Teensy and matching female socket st
 
 I hope to reuse the controls, socket-mounted Teensy, and faceplate in a future lighting upgrade, subject to compatibility checks. Replacement boards may need four layers and cost more; I have no finished design or release date. See [Future Thoughts](../Docs/Future-Thoughts.md).
 
-## Estimated build cost
+<a id="estimated-build-cost"></a>
 
-I know the build cost may stretch some budgets. I’ve shared [my thoughts on the cost and development work](../README.md#estimated-total-build-cost) in the main README, including the roughly 240 hours of coding and US$500 in extra development parts I’ve put into sharing this project.
+## Estimated total build cost
+
+I’m distressed by the total cost of this project, and I worry it may put the build beyond some people’s budgets. I want to be open about that so you can decide whether it fits your budget before buying parts. Considering the controls, display, and functionality the panel is designed to provide, I still feel it’s worth the cost.
+
+I’ve spent about two months working on the code, averaging four hours a night—roughly **240 hours**. I’m sharing the source code for free so other builders don’t have to do all that development work themselves. The parts still cost money, but I hope the time and effort this saves helps make the project worthwhile.
+
+I’ve also spent about **US$500 on extra parts during development**. Buying more parts as I work toward a finished project adds up. That is my development expense; it is not an extra charge to builders or part of the estimated cost to build one panel. I’m still very happy to share this project with others. We all enjoy adding to our SIMPITs, no matter how big or small they are.
+
+One thing I’m very pleased about is that I’m developing the same ARC-210 panel hardware for every aircraft I’ve planned to support, including the A-10C II and C-130J. I’m designing a shared code base that will automatically use the appropriate controls and display data for the aircraft you’re flying, so you won’t need to reflash the Teensy when switching between supported aircraft—just fly the aircraft. **This automatic aircraft support is still being developed and tested; it is not a completed feature yet.** Aircraft-specific DCS-BIOS mappings will be handled within that shared setup.
 
 My PCBs are designed around the faceplate and layout I’m using, so they may not fit someone else’s custom panel. I’m sharing the [source code](../Firmware/Source/Master_Program/README.md) so other builders can reuse it or adapt it to their own controls, displays, and wiring. Some changes may be needed, but I hope it gives people a useful starting point and saves them development time.
 

@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 1, 2026
 
-**Last updated: November 1, 2026 at 7:09 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:12 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -86,34 +86,7 @@ I also own three other SIMPIT panels that use USB. I have used them for over **1
 
 Follow the guide before replacing files.
 
-## Estimated total build cost
-
-I’m distressed by the total cost of this project, and I worry it may put the build beyond some people’s budgets. I want to be open about that so you can decide whether it fits your budget before buying parts. Considering the controls, display, and functionality the panel is designed to provide, I still feel it’s worth the cost.
-
-I’ve spent about two months working on the code, averaging four hours a night—roughly **240 hours**. I’m sharing the source code for free so other builders don’t have to do all that development work themselves. The parts still cost money, but I hope the time and effort this saves helps make the project worthwhile.
-
-My PCBs are designed around the faceplate and layout I’m using, so they may not fit someone else’s custom panel. I’m sharing the [source code](Firmware/Source/Master_Program/README.md) so other builders can reuse it or adapt it to their own controls, displays, and wiring. Some changes may be needed, but I hope it gives people a useful starting point and saves them development time.
-
-I’ve also spent about **US$500 on extra parts during development**. Buying more parts as I work toward a finished project adds up. That is my development expense; it is not an extra charge to builders or part of the estimated cost to build one panel. I’m still very happy to share this project with others. We all enjoy adding to our SIMPITs, no matter how big or small they are.
-
-One thing I’m very pleased about is that I’m developing the same ARC-210 panel hardware for every aircraft I’ve planned to support, including the A-10C II and C-130J. I’m designing a shared code base that will automatically use the appropriate controls and display data for the aircraft you’re flying, so you won’t need to reflash the Teensy when switching between supported aircraft—just fly the aircraft. **This automatic aircraft support is still being developed and tested; it is not a completed feature yet.** Aircraft-specific DCS-BIOS mappings will be handled within that shared setup.
-
-New aircraft support will require loading an updated HEX once; after that, I plan to switch between aircraft supported by that version without reflashing. This is still in development. See the [firmware version and aircraft-support plan](Firmware/Master%20Hex%20Files/README.md).
-
-Both build estimates below include the PC Flights faceplate. **All amounts are in US dollars (USD).**
-
-**My PCB offer is for bare boards only.** Buy the electronic components, faceplate, and wiring separately; printed parts are a separate option. See [what’s included and the shipping and fee details](Docs/ARC-210-Parts-Offers.md). The build totals below cover separate DIY purchases, not a kit I sell.
-
-| PCB purchasing option | PCB cost (USD) | Estimated full DIY build cost (USD) |
-| --- | ---: | ---: |
-| JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$58.20 cart estimate | US$267.72–US$300.72 |
-| [My six bare PCBs only (no components)](Docs/ARC-210-Parts-Offers.md#bare-pcb-set) | **US$40.00**, plus shipping and handling | **US$249.52–US$282.52**, before shipping, handling, and applicable fees |
-
-For availability, what’s included in my set, and shipping/VAT/import-fee details, see [ARC-210 bare PCB offer and separate 3D-printing help](Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
-
-**The US$58.20 PCB allowance uses the November 1, 2026 cart estimate: US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon.** Shipping shown in that cart is already included; don’t add it twice. Coupon eligibility and shipping vary. If the US$15.00 coupon is unavailable, add US$15.00 to the JLCPCB-based estimate. Any duties, taxes, VAT, carrier fees, or other charges not included in that cart subtotal may still apply, as may delivery charges for the other components. Check your own final checkout total before ordering. These are estimates rather than fixed kit prices; the updated JLCPCB option rounds to about **US$268–US$301** for budgeting. Tools, labor, and cockpit mounting fasteners are excluded.
-
-See the [parts-cost breakdown](parts/README.md#estimated-build-cost) for component prices and allowances, and the [PCB manufacturing guide](Docs/PCB-Manufacturing-JLCPCB.md) for quote details. Compare the full delivered totals for your location.
+## [Estimated total build cost](parts/README.md#estimated-total-build-cost)
 
 ## Firmware and hardware information
 
