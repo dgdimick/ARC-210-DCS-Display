@@ -1,12 +1,12 @@
 # ARC-210 Development Log
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 8:27 PM MST (America/Denver)**
 
 ## 2026-09-17
 
 ### Teensy 4.1 TFT and DCS-BIOS Milestone
 
-I got the ARC-210 TFT display working with the Teensy 4.1.
+ARC-210 TFT display working with the Teensy 4.1.
 
 Confirmed working display:
 - 3.5-inch 480x320 SPI TFT
