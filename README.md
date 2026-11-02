@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 1, 2026
 
-**Last updated: November 1, 2026 at 7:20 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -47,7 +47,7 @@ I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy
 
 ## Project updates
 
-**Last updated: November 1, 2026 at 5:54 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
 
 **November 1, 2026 at 5:44 AM MST — Use the US$58.20 PCB cart estimate**
 
@@ -61,7 +61,7 @@ The panel parts estimate, including the faceplate, is now **US$267.72–US$300.7
 
 ## Bare PCB offer
 
-I can provide **bare PCBs only**, not a kit of electronic components or an assembled panel. See my [ARC-210 bare PCB offer](Docs/ARC-210-Parts-Offers.md#bare-pcb-set) for the boards included, availability, shipping, and fees. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.**
+I can provide **bare PCBs only**, not a kit of electronic components or an assembled panel. See my [ARC-210 bare PCB offer](Docs/ARC-210-Parts-Offers.md#bare-pcb-set) for the boards included, availability, shipping, and fees. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.** If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
 
 ## No access to a 3D printer?
 

@@ -1,12 +1,12 @@
 # ARC-210 bare PCB offer and optional 3D-printing help
 
-**Last updated: November 1, 2026 at 6:20 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
 
 I can provide bare PCBs to help other builders complete my ARC-210 panel. I also offer separate 3D-printing help for builders without a printer. **These offers are for the ARC-210 only. I don’t currently offer PCB or printed-parts sets for the ARC-164 or ARC-186.** All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
 
 ## Bare PCB set
 
-**My offer is for bare PCBs only—not a component kit or an assembled panel.** I don’t supply the Teensy, display, encoders, switches, buttons, faceplate, wiring, or other electronic components with the boards. You buy those separately from the suppliers in the parts list. The full-build totals below combine those separate purchases with the PCB cost; they are not prices for a kit I sell. Printed parts are not included in the PCB set; the optional 3D-printing help is a separate arrangement.
+**My offer is for bare PCBs only—not a component kit or an assembled panel.** I don’t supply the Teensy, display, encoders, switches, buttons, faceplate, wiring, or other electronic components with the boards. You buy those separately from the suppliers in the parts list. The full-build totals below combine those separate purchases with the PCB cost; they are not prices for a kit I sell. If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
 
 **Price: US$40, plus shipping and handling.**
 
@@ -17,13 +17,13 @@ The complete set contains **six bare boards** for one ARC-210 panel:
 - One Rotary Encoder PCB v1.4
 - Three Rotary Switch PCBs v2.0, including the optional SQL On/Off board
 
-This is a convenient way to get the boards for one radio without managing four design uploads or ordering extra copies of each design. You’ll supply the electronics, faceplate, printed parts, and assembly. Assembled-board electrical testing is still pending. The current Button Matrix PCB does not support LED backlighting; see [Future Thoughts](Future-Thoughts.md) for the possible redesign.
+This is a convenient way to get the boards for one radio without managing four design uploads or ordering extra copies of each design. You’ll supply the electronics, faceplate, and assembly. You can print the plastic parts yourself or request the free printed set with my PCB set. Assembled-board electrical testing is still pending. The current Button Matrix PCB does not support LED backlighting; see [Future Thoughts](Future-Thoughts.md) for the possible redesign.
 
 My own order for all the boards cost about US$75. That was my approximate whole-order cost, not the manufacturing cost of one six-board set or a quote for another builder. Whether my set saves you money depends on the full delivered cost for your location; I’m offering convenience rather than a guaranteed saving. You can also [order the boards directly from JLCPCB](PCB-Manufacturing-JLCPCB.md).
 
 ## Printed parts
 
-**Price: US$3 (three US dollars), plus shipping.**
+**Free on request with my PCB set; US$3 (three US dollars), plus shipping, when requested separately.**
 
 If you don’t have access to a 3D printer and that is stopping you from building my ARC-210 panel, I’ll send you **one complete 17-part printed set**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I don't want the lack of a 3d printer to be an obstacle preventing someone from building their SIMPIT.
 
@@ -52,7 +52,7 @@ These totals use the same **US$209.52–US$242.52** component and self-printing 
 
 The JLCPCB allowance is **US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon = US$58.20**. Without that coupon, add **US$15.00** to the JLCPCB-based build total. Coupon eligibility, shipping, and any additional fees can vary. My set’s shipping and handling are separate. Delivery charges and any applicable taxes, VAT, or import fees not already included remain extra for both options. These are parts estimates, not assembled-kit prices or guaranteed delivered totals.
 
-My set-based total stays the same because my PCB-set price and the other component allowances haven’t changed. The JLCPCB-based total now uses the US$58.20 cart estimate.
+The estimates retain the self-printing allowance for comparison. If you request the free printed set with my PCBs, you won’t need the US$3–US$8 filament allowance, so subtract that allowance from the applicable estimate. The JLCPCB-based total now uses the US$58.20 cart estimate.
 
 The component allowances and JLCPCB option are also shown in the [parts-cost breakdown](../parts/README.md#estimated-build-cost). Compare the full delivered totals before choosing how to get the boards. The printed-parts assistance offer is an alternative to self-printing, not an extra set you need to buy.
 

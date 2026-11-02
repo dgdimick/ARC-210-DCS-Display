@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: November 1, 2026 at 7:12 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -70,7 +70,7 @@ I uploaded **Button Matrix v3.2** and checked the bare-board settings. JLCPCB de
 
 ## Buying a complete PCB set from me
 
-See my [ARC-210 PCB and printed-parts offers](ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.**
+See my [ARC-210 PCB and printed-parts offers](ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.** If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
 
 ## No access to a 3D printer?
 
@@ -86,7 +86,7 @@ New aircraft support will require loading an updated HEX once; after that, I pla
 
 Here are both estimated panel parts costs, including the PC Flights faceplate. **All amounts in this table are in US dollars (USD).**
 
-**My PCB offer is for bare boards only.** Buy the electronic components, faceplate, and wiring separately; printed parts are a separate option. See [what’s included and the shipping and fee details](ARC-210-Parts-Offers.md). The build totals below cover separate DIY purchases, not a kit I sell.
+**My PCB offer is for bare boards only.** Buy the electronic components, faceplate, and wiring separately; I’ll include the complete printed set free on request with my PCB set; shipping and handling remain separate. See [what’s included and the shipping and fee details](ARC-210-Parts-Offers.md). The build totals below cover separate DIY purchases, not a kit I sell.
 
 | PCB purchasing option | PCB cost (USD) | Estimated full DIY build cost (USD) |
 | --- | ---: | ---: |

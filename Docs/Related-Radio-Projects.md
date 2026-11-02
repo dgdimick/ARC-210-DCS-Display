@@ -2,7 +2,7 @@
 
 # Related radio projects
 
-**Last updated: November 1, 2026 at 5:53 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
 
 My current plan is to finish the **A-10C II (A-10C2) ARC-210 implementation**, then build and test the **ARC-164**, followed by the **ARC-186**. After those projects, I’ll return to additional aircraft support, starting with the **ARC-210 and C-130J**. Those aircraft extensions are later work, not the current implementation priority. I’m focusing on aircraft with a matching physical radio panel. **This order may change based on user feedback and interest.**
 
@@ -19,7 +19,7 @@ I’m developing one shared ARC-210 code base for the planned aircraft, starting
 
 ## Bare PCB offer for the ARC-210
 
-See my [ARC-210 PCB and printed-parts offers](ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.** **My PCB offer contains bare boards only, not electronic components or a complete panel kit.** Buy the Teensy, display, controls, faceplate, wiring, and other components separately. Optional 3D-printing help is a separate arrangement.
+See my [ARC-210 PCB and printed-parts offers](ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.** **My PCB offer contains bare boards only, not electronic components or a complete panel kit.** Buy the Teensy, display, controls, faceplate, wiring, and other components separately. If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
 
 ## Other SIMPIT panels
 

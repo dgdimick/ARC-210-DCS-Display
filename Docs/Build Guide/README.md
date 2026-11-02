@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 1, 2026 at 7:19 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -80,7 +80,7 @@ Dry-fit printed parts before permanent assembly. All current files print at 100%
 
 ## 3. Order the PCBs
 
-You can get a complete bare-PCB set from me or order directly from a manufacturer. See [ARC-210 bare PCB offer](../ARC-210-Parts-Offers.md#bare-pcb-set) for current pricing, contents, and terms. The manufacturing steps below explain the direct-order option.
+You can get a complete bare-PCB set from me or order directly from a manufacturer. See [ARC-210 bare PCB offer](../ARC-210-Parts-Offers.md#bare-pcb-set) for current pricing, contents, and terms. The manufacturing steps below explain the direct-order option. If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
 
 **JLCPCB’s prices shown in my comparison and demo are fabrication prices only. They do not include shipping, handling, tax, VAT, tariffs, duties, or other applicable fees.** Check the full delivered total before comparing a manufacturer order with a board set from me. Assembled-board electrical testing is still pending.
 
@@ -94,14 +94,14 @@ New aircraft support will require loading an updated HEX once; after that, I pla
 
 To help you budget, here are both PCB options using the same component estimates, including the PC Flights faceplate. **All amounts are in US dollars (USD).**
 
-**My PCB offer is for bare boards only.** Buy the electronic components, faceplate, and wiring separately; printed parts are a separate option. See [what’s included and the shipping and fee details](../ARC-210-Parts-Offers.md). The build totals below cover separate DIY purchases, not a kit I sell.
+**My PCB offer is for bare boards only.** Buy the electronic components, faceplate, and wiring separately; I’ll include the complete printed set free on request with my PCB set; shipping and handling remain separate. See [what’s included and the shipping and fee details](../ARC-210-Parts-Offers.md). The build totals below cover separate DIY purchases, not a kit I sell.
 
 | PCB purchasing option | PCB cost (USD) | Estimated full DIY build cost (USD) |
 | --- | ---: | ---: |
 | JLCPCB: five copies of each of four designs (20 bare boards, including spares) | US$58.20 cart estimate | US$267.72–US$300.72 |
 | [My six bare PCBs only (no components)](../ARC-210-Parts-Offers.md#bare-pcb-set) | **US$40.00**, plus shipping and handling | **US$249.52–US$282.52**, before shipping, handling, and applicable fees |
 
-For availability, what’s included in my set, and shipping/VAT/import-fee details, see [ARC-210 bare PCB offer and separate 3D-printing help](../ARC-210-Parts-Offers.md#both-pcb-purchasing-options).
+For availability, what’s included in my set, and shipping/VAT/import-fee details, see [ARC-210 bare PCB offer and separate 3D-printing help](../ARC-210-Parts-Offers.md#both-pcb-purchasing-options). If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
 
 **My PCB-set option:** Shipping and handling are separate. I’ll only collect VAT if I’m required to; buyers may still owe import VAT, customs duties, or carrier fees even if I don’t collect VAT. Delivery and applicable fees for the other components are also separate. Compare the final delivered totals for your location.
 
