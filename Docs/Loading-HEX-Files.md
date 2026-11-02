@@ -2,7 +2,7 @@
 
 # Loading the HEX File onto a Teensy 4.1
 
-**Last updated: November 1, 2026 at 8:07 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 8:09 PM MST (America/Denver)**
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.** See the [aircraft support plan](C-130J-Support.md).
 
@@ -11,6 +11,8 @@ New aircraft support will require loading an updated HEX once; after that, I pla
 For the complete radio connection setup, file changes, and TekConnect instructions, follow the [DCS-BIOS setup guide](DCS-BIOS.md). The steps below cover programming the Teensy only.
 
 For assembly checks, use the [Final Hardware Test](../Firmware/Test%20Code/ARC210_Button_Test/README.md). The individual TFT, button, encoder, and switch tests are optional troubleshooting tools, not additional required assembly steps.
+
+## Ready to load the HEX file? Here's how you do it
 
 1. Install and open **Teensy Loader**.
 2. Open the supplied `ARC210_A-10C2_v0.1.2_Preview.hex` file.
