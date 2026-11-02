@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 1, 2026 at 6:56 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:00 PM MST (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -14,27 +14,19 @@ I chose the listed component suppliers because I’m aiming for better-quality p
 
 The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). I’ve tested the TFT at 3.3 V and found the brightness satisfactory. I removed the external protected 5 V input and Main Board JP1 power selector. I removed C5 (470 µF) and C6 (0.1 µF) to match the direct Teensy-to-TFT wiring I tested. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting and would need to be redesigned.** I would need to design a new button board with LED support (Button LED PCB), use suitable light-transmitting buttons, and redesign the power and driver circuitry with the necessary Main Board changes. The current Main Board has no external lighting-power circuit. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished design or release date. The TFT display backlight is separate from this future button-lighting option.
-
-I may need to use **four-layer PCBs for both the replacement Main Board and button board**, which could increase the cost of both replacement boards. I haven’t confirmed the layer requirements or priced that redesign yet. This possible extra cost is not included in the current build estimates or my current bare-PCB set price.
+**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign it and the Main Board and use light-transmitting buttons. There is no finished design or release date. The TFT backlight is separate; see [Future Thoughts](../Docs/Future-Thoughts.md) for clearance, power, possible four-layer costs, and reusable-part plans.
 
 I recommend using **male pin headers on the Teensy and matching female socket strips on the Main Board** so the controller can be unplugged. If I release a compatible replacement Main Board, you could move your existing Teensy to it rather than buy another controller, saving some money. Soldering the Teensy’s header pins directly into the Main Board does not provide that removable connection.
 
-My aim would be to reuse the **rotary encoders, rotary switches, socket-mounted Teensy, faceplate, and other parts that aren’t mounted on the Main Board or Button Matrix PCB**, so upgrading would not mean buying a whole new panel. I still need to confirm compatibility as I develop the redesign. The current opaque buttons would need suitable light-transmitting replacements for illuminated legends.
+I hope to reuse the controls, socket-mounted Teensy, and faceplate in a future lighting upgrade, subject to compatibility checks. Replacement boards may need four layers and cost more; I have no finished design or release date. See [Future Thoughts](../Docs/Future-Thoughts.md).
 
 ## Estimated build cost
 
-I’m distressed by the total cost of this project, and I worry it may put the build beyond some people’s budgets. I want to be open about that so you can decide whether it fits your budget before buying parts. Considering the controls, display, and functionality the panel is designed to provide, I still feel it’s worth the cost.
-
-I’ve spent about two months working on the code, averaging four hours a night—roughly **240 hours**. I’m sharing the source code for free so other builders don’t have to do all that development work themselves. The parts still cost money, but I hope the time and effort this saves helps make the project worthwhile.
+I know the build cost may stretch some budgets. I’ve shared [my thoughts on the cost and development work](../README.md#estimated-total-build-cost) in the main README, including the roughly 240 hours of coding and US$500 in extra development parts I’ve put into sharing this project.
 
 My PCBs are designed around the faceplate and layout I’m using, so they may not fit someone else’s custom panel. I’m sharing the [source code](../Firmware/Source/Master_Program/README.md) so other builders can reuse it or adapt it to their own controls, displays, and wiring. Some changes may be needed, but I hope it gives people a useful starting point and saves them development time.
 
-I’ve also spent about **US$500 on extra parts during development**. Buying more parts as I work toward a finished project adds up. That is my development expense; it is not an extra charge to builders or part of the estimated cost to build one panel. I’m still very happy to share this project with others. We all enjoy adding to our SIMPITs, no matter how big or small they are.
-
-One thing I’m very pleased about is that I’m developing the same ARC-210 panel hardware for every aircraft I’ve planned to support, including the A-10C II and C-130J. I’m designing a shared code base that will automatically use the appropriate controls and display data for the aircraft you’re flying, so you won’t need to reflash the Teensy when switching between supported aircraft—just fly the aircraft. **This automatic aircraft support is still being developed and tested; it is not a completed feature yet.** Aircraft-specific DCS-BIOS mappings will be handled within that shared setup.
-
-I’ll label radio HEX downloads with the aircraft they support and a version number, increasing the version whenever I publish updated firmware so you can tell releases apart. Each new aircraft-support release will retain support for the previously supported aircraft. Adding an aircraft will require loading the updated HEX once, using the same Teensy Loader procedure as the first flash while the panel is connected by USB. After that, switching between aircraft included in that version will not require reflashing. **This cumulative aircraft support and automatic selection are still being developed and tested.**
+New aircraft support will require loading an updated HEX once; after that, I plan to switch between aircraft supported by that version without reflashing. This is still in development. See the [firmware version and aircraft-support plan](../Firmware/Master%20Hex%20Files/README.md).
 
 To help you plan your build, my current JLCPCB-based parts budget is **US$267.72–US$300.72** (about **US$268–US$301**), including the PC Flights faceplate, the displayed PCB shipping, and the applied coupon. Delivery charges for other components and any additional applicable fees remain separate. All prices are in **US dollars (USD)**. The [side-by-side comparison](../Docs/ARC-210-Parts-Offers.md#both-pcb-purchasing-options) also shows the total using my bare-PCB set. These are budgeting estimates, not assembled-kit or guaranteed delivered prices.
 
@@ -63,7 +55,7 @@ Prices checked October 22, 2026, except the recommended Teensy with headers (Oct
 
 Both build estimates below include the PC Flights faceplate. This calculated total is an estimate rather than a fixed kit price; rounded for budgeting, the JLCPCB option is about **US$268–US$301**.
 
-**My offer is for bare PCBs only—not a component kit or an assembled panel.** I don’t supply the Teensy, display, encoders, switches, buttons, faceplate, wiring, or other electronic components with the boards. You buy those separately from the suppliers in the parts list. The full-build totals below combine those separate purchases with the PCB cost; they are not prices for a kit I sell. Printed parts are not included in the PCB set; the optional 3D-printing help is a separate arrangement.
+**My PCB offer is for bare boards only.** Buy the electronic components, faceplate, and wiring separately; printed parts are a separate option. See [what’s included and the shipping and fee details](../Docs/ARC-210-Parts-Offers.md). The build totals below cover separate DIY purchases, not a kit I sell.
 
 | PCB purchasing option | PCB cost (USD) | Estimated full DIY build cost (USD) |
 | --- | ---: | ---: |
@@ -116,7 +108,7 @@ This update changes the documentation and parts list only; existing schematic dr
 
 ## Main Board direct TFT power
 
-The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). I’ve tested the TFT at 3.3 V and found the brightness satisfactory. I removed the external protected 5 V input and Main Board JP1 power selector. I removed C5 (470 µF) and C6 (0.1 µF) to match the direct Teensy-to-TFT wiring I tested. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
+See [Power and future button lighting plans](#power-and-future-button-lighting-plans) above for the tested 3.3 V TFT supply connection and current limits.
 
 C5 (470 µF) and C6 (0.1 µF) are no longer fitted or required purchases. The Main Board has no added TFT supply capacitors; its TFT connections match the tested direct Teensy wiring.
 
@@ -213,7 +205,7 @@ Print the nine-knob layout using the [combined STL](../Supporting%20STL%27s/ARC-
 
 [Channel knob v4.2](../Supporting%20STL%27s/Channel_Knob_v.4.2.stl) · [SQL knob v1.2](../Supporting%20STL%27s/SQL_Knob_v.1.2.stl)
 
-**The Channel and SQL knobs are the same outside size, with the same small side hole; only the shaft holes differ.** Channel v4.2 has the smaller shaft hole; SQL v1.2 retains the larger shaft hole. Channel v4.2 uses the Frequency v10.1 shaft-hole profile (approximately 6.375 mm round diameter), with the Channel socket depth, outside dimensions, and small side hole unchanged. I printed Channel v4.2 at **100% scale** and confirmed the fit. SQL remains v1.2 with its previously tested socket. Print **one Channel v4.2 and one SQL v1.2**, each at 100%; these files are no longer interchangeable.
+**Channel v4.2 and SQL v1.2 have the same outside size and small side hole, but different shaft holes.** Print one of each at 100% scale. I’ve test-fitted both; see the [STL README](../Supporting%20STL%27s/README.md) for the socket details and current downloads.
 
 The SQL shaft support spacer v.5 remains required in all installations.
 

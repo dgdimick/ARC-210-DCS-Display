@@ -2,7 +2,7 @@
 
 # DCS-BIOS setup — step by step
 
-**Last updated: November 1, 2026 at 4:21 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:00 PM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use the actual current America/Denver date and time, including MST or MDT. -->
 
@@ -20,7 +20,7 @@ I use [DCS-Skunkworks DCS-BIOS](https://github.com/DCS-Skunkworks/dcs-bios) to s
 | `ARC210_A-10C2_v0.1.2_Preview.hex` | Runs the ARC-210 display/menu firmware on the Teensy | Load it with Teensy Loader |
 | TekConnect | Connects DCS-BIOS to the panel's USB COM port—the numbered connection Windows assigns to it | Select and connect the panel's port |
 
-I’ll label radio HEX downloads with the aircraft they support and a version number, increasing the version whenever I publish updated firmware so you can tell releases apart. Each new aircraft-support release will retain support for the previously supported aircraft. Adding an aircraft will require loading the updated HEX once, using the same Teensy Loader procedure as the first flash while the panel is connected by USB. After that, switching between aircraft included in that version will not require reflashing. **This cumulative aircraft support and automatic selection are still being developed and tested.**
+New aircraft support will require loading an updated HEX once; after that, I plan to switch between aircraft supported by that version without reflashing. This is still in development. See the [firmware version and aircraft-support plan](../Firmware/Master%20Hex%20Files/README.md).
 
 **You do not need to edit `BIOS.lua`, change DCS installation files, or put the ARC-210 changes into `Export.lua`.**
 
