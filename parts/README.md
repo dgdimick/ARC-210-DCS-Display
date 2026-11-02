@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 1, 2026 at 6:49 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 6:54 PM MST (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -10,7 +10,7 @@ The BOM lists schematic references, values, footprints, quantities, and do-not-p
 
 I chose the listed component suppliers because I’m aiming for better-quality parts than I generally expect from generic Amazon listings, even if they cost a little more. Parts from Amazon may work, and I use some myself, but substitutes may have different dimensions or pin spacing and may not fit the PCBs I designed for this project. Please compare the exact part specifications and PCB footprint before buying a substitute.
 
-## Power and future button lighting
+## Power and future button lighting plans
 
 The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). I’ve tested the TFT at 3.3 V and found the brightness satisfactory. I removed the external protected 5 V input and Main Board JP1 power selector. I removed C5 (470 µF) and C6 (0.1 µF) to match the direct Teensy-to-TFT wiring I tested. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
 
