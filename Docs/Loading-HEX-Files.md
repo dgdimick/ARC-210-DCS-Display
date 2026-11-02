@@ -2,7 +2,7 @@
 
 # Loading the HEX File onto a Teensy 4.1
 
-**Last updated: November 1, 2026 at 8:05 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 8:07 PM MST (America/Denver)**
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.** See the [aircraft support plan](C-130J-Support.md).
 
@@ -15,9 +15,9 @@ For assembly checks, use the [Final Hardware Test](../Firmware/Test%20Code/ARC21
 1. Install and open **Teensy Loader**.
 2. Open the supplied `ARC210_A-10C2_v0.1.2_Preview.hex` file.
 3. Connect the Teensy 4.1 to your computer by USB.
-4. Press the button on the Teensy if it does not enter programming mode automatically.
-5. Click **Program** in Teensy Loader.
-6. Reboot the Teensy.
+4. Click **Auto** in Teensy Loader to enable automatic programming and rebooting.
+5. Press the button on the Teensy if it does not enter programming mode automatically.
+6. Wait for Teensy Loader to finish programming and reboot the Teensy. If you’re programming manually instead, click **Program**, then **Reboot**.
 
 **What to expect while waiting for DCS-BIOS data:**
 
