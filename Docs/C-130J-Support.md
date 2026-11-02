@@ -2,19 +2,17 @@
 
 # C-130J ARC-210 support
 
-**Last updated: November 1, 2026 at 7:37 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:40 PM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
-I’m planning C-130J support as part of this ARC-210 project. After comparing the panel, I plan to reuse the same faceplate, controls, display, PCBs, and printed parts as my A-10C II build. Keeping the hardware and software work in one repository gives builders one place for files, questions, and updates.
+I’m planning C-130J support within this ARC-210 project so builders have one place for files, questions, and updates.
 
-I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.**
-
-New aircraft support will require loading an updated HEX once; after that, I plan to switch between aircraft supported by that version without reflashing. This is still in development. See the [firmware version and aircraft-support plan](../Firmware/Master%20Hex%20Files/README.md).
+I’m developing shared firmware that will select the aircraft automatically using aircraft-specific DCS-BIOS mappings. Adding C-130J support will require loading an updated HEX once; switching between aircraft supported by that version won’t require reflashing. **This support is still planned work, not a completed or tested feature.** See the [firmware version and aircraft-support plan](../Firmware/Master%20Hex%20Files/README.md).
 
 ## Shared hardware
 
-The plan uses the existing **Teensy 4.1, 3.5-inch LCD display, buttons, switches, and encoders**. I haven’t identified a need for a separate PCB design.
+I plan to reuse the same faceplate, PCBs, printed parts, **Teensy 4.1, 3.5-inch LCD display, buttons, switches, and encoders** as my A-10C II build. I haven’t identified a need for a separate PCB design.
 
 - [Parts list and hardware choices](../parts/README.md)
 - [PCB files and manufacturing downloads](../PCBs/README.md)
@@ -49,7 +47,7 @@ See the [ARC-210 panel definitions](https://github.com/DCS-Skunkworks/dcs-bios/b
 
 **The main gap is the LCD and menu exports.** I found no ARC-210 exports for menu text, active preset, selected RT, modulation label, or the other screen fields in this C-130J source. The [A-10C implementation](https://github.com/DCS-Skunkworks/dcs-bios/blob/85e3ba6b2e58fb9b1f7b1234b3e937db6ad47564/Scripts/DCS-BIOS/lib/modules/aircraft_modules/A-10C.lua#L1141) parses its ARC-210 display and exports those fields individually. Its indicator number and field names cannot simply be assumed to apply to the C-130J.
 
-The existing controls and frequency export give me a useful starting point. For full LCD support, I need to inspect the C-130J's live display indications and available parameters, identify the missing fields, add the necessary DCS-BIOS exports, and test them against the cockpit. If some data is unavailable, I will document that limitation. Full support will require more than changing the A-10's control names and addresses.
+The controls and frequency export give me a starting point. The [LCD export plan below](#helios-findings-and-lcd-export-plan) covers the missing display and menu data; full support will require more than changing the A-10’s control names and addresses.
 
 ## Helios findings and LCD export plan
 
@@ -86,8 +84,8 @@ My implementation plan is to:
 The main [Things that need to be completed list](Remaining-Work.md) tracks C-130J support. The work includes:
 
 1. **Compare operation:** Check the aircraft’s current ARC-210 functions, controls, display pages, startup behavior, and menus against my existing panel.
-2. **DCS-BIOS mappings and missing LCD exports:** Verify the existing panel controls and `RADIO_ARC210` frequency export in DCS. Follow the [LCD export plan](#helios-findings-and-lcd-export-plan): verify indicator 44 against the installed module, capture and parse live indications, add named string outputs for the required LCD and menu fields, and clear fields that disappear between pages. Check RT SELECT behavior and document any unavailable data or export changes.
-3. **Shared firmware and automatic aircraft selection:** Add the C-130J mappings and menu behavior to the same code base as the A-10C II. Detect the aircraft automatically and switch mappings without requiring users to reflash the Teensy. Implement and test aircraft changes, including clearing stale controls and display data. This is planned work, not a completed feature.
+2. **DCS-BIOS mappings and missing LCD exports:** Verify the existing controls and frequency export, complete the [LCD export plan above](#helios-findings-and-lcd-export-plan), and document any limitations.
+3. **Shared firmware and automatic aircraft selection:** Implement C-130J mappings and menu behavior in the shared A-10C II code base, including clearing stale controls and display data when aircraft change.
 4. **Menu system:** Adapt the pages and display values and test the complete menu system against the aircraft.
 5. **Testing in DCS:** Check controls, display updates, power changes, reconnection, and extended reliability, including operation with the other USB devices connected.
 6. **Documentation:** Publish firmware loading, aircraft setup, DCS-BIOS changes, and troubleshooting instructions, linking to the shared hardware guides where they apply.
@@ -102,4 +100,4 @@ My [step-by-step DCS-BIOS guide](DCS-BIOS.md) covers installation and TekConnect
 - [My SIMPIT and test computer](My-SIMPIT-and-Test-Computer.md) — my setup, not minimum requirements.
 - [Related radio projects](Related-Radio-Projects.md)
 
-**Planning a build?** You’re welcome to ask questions or share ideas in [the main ARC-210 Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions), even if you haven’t started yet.
+- [ARC-210 Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)
