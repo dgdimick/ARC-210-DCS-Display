@@ -1,12 +1,12 @@
 # Downloadable DCS-BIOS files
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: November 1, 2026 at 7:40 PM MST (America/Denver)**
 
 ## ARC-210 patched A-10C.lua
 
 Based on [DCS-Skunkworks DCS-BIOS v0.11.8](https://github.com/DCS-Skunkworks/dcs-bios/releases/tag/v0.11.8), extracted from its official release package. [Original source](https://github.com/DCS-Skunkworks/dcs-bios/blob/v0.11.8/Scripts/DCS-BIOS/lib/modules/aircraft_modules/A-10C.lua).
 
-Modified October 30, 2026 for Denis Dimick’s ARC-210 project. Changes are a modification notice at the top and two existing getter return lines: `ARC210_VERIFY_WOD_ACTIVE_CHANNEL` and `ARC210_SELECTED_RT`. Definitions, lengths, and ordering are unchanged. The packaged reference confirms addresses 0x1338 (2 characters) and 0x1320 (3 characters). A reverse replacement check confirms every other byte after the modification notice matches the release module. [Exact changes](A-10C-ARC210.patch).
+Modified October 30, 2026 for my ARC-210 project. Changes are a modification notice at the top and two existing getter return lines: `ARC210_VERIFY_WOD_ACTIVE_CHANNEL` and `ARC210_SELECTED_RT`. Definitions, lengths, and ordering are unchanged. The packaged reference confirms addresses 0x1338 (2 characters) and 0x1320 (3 characters). A reverse replacement check confirms every other byte after the modification notice matches the release module. [Exact changes](A-10C-ARC210.patch).
 
 This file is distributed under the upstream GNU GPL version 3; see [LICENSE-DCS-BIOS.txt](LICENSE-DCS-BIOS.txt). Upstream authorship and notices are retained. The license for this Lua module is separate from the ARC-210 documentation and firmware licenses.
 
