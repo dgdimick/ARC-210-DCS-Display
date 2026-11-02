@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 1, 2026 at 8:35 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 8:37 PM MST (America/Denver)**
 
 <a id="estimated-build-cost"></a>
 
@@ -8,7 +8,7 @@
 
 I’m distressed by the total cost of this project, and I worry it may put the build beyond some people’s budgets. I want to be open about that so you can decide whether it fits your budget before buying parts. Considering the controls, display, and functionality the panel is designed to provide, I still feel it’s worth the cost.
 
-I started this project about 18 months ago. In just the past two months, I’ve spent roughly **240 hours** working on the code, averaging four hours a night. That estimate includes work I did before I started using ChatGPT. I’m sharing the source code for free so other builders don’t have to do all that development work themselves. The parts still cost money, but I hope the time and effort this saves helps make the project worthwhile.
+I started this project about 18 months ago. In just the past two months, I’ve spent roughly **240 hours** working on the code, hardware design, and PCB design, averaging four hours a night. That estimate includes work I did before I started using ChatGPT. I’m sharing the source code for free so other builders don’t have to do all that development work themselves. The parts still cost money, but I hope the time and effort this saves helps make the project worthwhile.
 
 I’ve also spent about **US$500 on extra parts during development**. Buying more parts as I work toward a finished project adds up. That is my development expense; it is not an extra charge to builders or part of the estimated cost to build one panel. I’m still very happy to share this project with others. We all enjoy adding to our SIMPITs, no matter how big or small they are.
 
