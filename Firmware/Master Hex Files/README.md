@@ -1,6 +1,6 @@
 # ARC-210 menu-system preview
 
-**Last updated: November 1, 2026 at 4:26 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:19 PM MST (America/Denver)**
 
 `ARC210_A-10C2_v0.1.2_Preview.hex` is the current Teensy 4.1 / ILI9488 480 × 320 display firmware, published for menu-screen and navigation testing. It is not a complete implementation of every radio function.
 
@@ -77,7 +77,5 @@ d8267d7d2fb09f721ca710171a5b4c64c2f819f585cb17723d73561f7359acb9  ARC210_A-10C2_
 Thinking about building one? The [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
 
 ## Questions and community builds
-
-**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

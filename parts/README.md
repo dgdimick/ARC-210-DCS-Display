@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 1, 2026 at 7:12 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:19 PM MST (America/Denver)**
 
 Updated October 29, 2026.
 
@@ -251,7 +251,6 @@ I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFu
 
 - **Faceplate:** A-10C "Thunderbolt" / "Warthog" VHF/UHF cockpit panel
   [PC Flights](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/)<br>
-  PC Flights has supplied me with a drawing file to assist with the Button PCB layout.
 
 - **Button switches:** 16 per panel, 6 × 6 × 5 mm SPST momentary tactile push-button switches, four-pin through-hole
   [Amazon](https://www.amazon.com/dp/B01CGMP9GY)
@@ -275,9 +274,5 @@ My main firmware code is shared under the [MIT License](../Docs/LICENSE-MIT.txt)
 Please share your changes through a pull request or get in touch in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). Contributing changes back is welcome, but it isn’t an extra condition of the MIT License. Third-party code keeps its own license. The PCB designs retain their separate hardware license.
 
 ## Questions and community builds
-
-If you’re local to me in **New Mexico, USA**, I’d be happy to meet up and provide whatever help I can with your SIMPIT. Get in touch through [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) so we can talk about your build and arrange a time.
-
-**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.

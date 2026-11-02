@@ -1,6 +1,6 @@
 # ARC-210 Supporting 3D Files — November 1, 2026
 
-**Last updated: November 1, 2026 at 5:53 AM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:19 PM MST (America/Denver)**
 
 **The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
@@ -112,8 +112,6 @@ Added October 11, 2026. Updated October 30, 2026.
 
 I use this spacer around the rotary encoder's threaded mounting section because the PC Flights ARC-210 faceplate has 10 mm holes, which are larger than the encoder threads. The spacer fills the gap and centers each encoder in its faceplate hole. Six of these spacers are needed. I have printed and test-fitted them at **100% scale**.
 
-PC Flights has supplied me with a drawing file to assist with the Button PCB layout.
-
 ## SQL On/Off rotary switch support spacer v.5
 
 I have printed this spacer at **100% scale**, and it passed its test fit.
@@ -129,7 +127,5 @@ Use this spacer in **all installations** to support the **longer shaft used by t
 Thinking about building one? The [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
 
 ## Questions and community builds
-
-**Building your own panel, or just looking around?** [Introduce yourself in the welcome discussion](https://github.com/dgdimick/ARC-210-DCS-Display/discussions/1) and tell us what you fly. Questions, ideas, and progress photos are all welcome—even if you’re only getting started.
 
 Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
