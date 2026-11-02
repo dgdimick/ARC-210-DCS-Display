@@ -1,24 +1,6 @@
 # Parts
 
-**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
-
-Updated October 29, 2026.
-
-[View the component list (BOM.csv)](BOM.csv)
-
-The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 Main Board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. I checked the connector entries against the October 12 Main Board schematic and final control-board projects. The Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 design and manufacturing files are published. I’ll keep improving the parts list as I assemble and test the manufactured boards. I still need to check a few component details and footprints, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
-
-I chose the listed component suppliers because I’m aiming for better-quality parts than I generally expect from generic Amazon listings, even if they cost a little more. Parts from Amazon may work, and I use some myself, but substitutes may have different dimensions or pin spacing and may not fit the PCBs I designed for this project. Please compare the exact part specifications and PCB footprint before buying a substitute.
-
-## Power and future button lighting plans
-
-The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). I’ve tested the TFT at 3.3 V and found the brightness satisfactory. I removed the external protected 5 V input and Main Board JP1 power selector. I removed C5 (470 µF) and C6 (0.1 µF) to match the direct Teensy-to-TFT wiring I tested. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
-
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign it and the Main Board and use light-transmitting buttons. There is no finished design or release date. The TFT backlight is separate; see [Future Thoughts](../Docs/Future-Thoughts.md) for clearance, power, possible four-layer costs, and reusable-part plans.
-
-I recommend using **male pin headers on the Teensy and matching female socket strips on the Main Board** so the controller can be unplugged. If I release a compatible replacement Main Board, you could move your existing Teensy to it rather than buy another controller, saving some money. Soldering the Teensy’s header pins directly into the Main Board does not provide that removable connection.
-
-I hope to reuse the controls, socket-mounted Teensy, and faceplate in a future lighting upgrade, subject to compatibility checks. Replacement boards may need four layers and cost more; I have no finished design or release date. See [Future Thoughts](../Docs/Future-Thoughts.md).
+**Last updated: November 1, 2026 at 7:28 PM MST (America/Denver)**
 
 <a id="estimated-build-cost"></a>
 
@@ -85,6 +67,24 @@ This estimate excludes tools, labor, cockpit mounting fasteners, delivery charge
 **PCB pricing is an estimate:** the US$58.20 cart figure is for my destination and includes a US$41.10 fabrication subtotal plus displayed shipping, less the applied US$15.00 coupon; final duties or fees may still apply. Check the delivered total for your own destination before ordering. Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 manufacturing files are published. See the component details and wiring requirements below.
 
 <a id="six-pcb-layout"></a>
+
+Updated October 29, 2026.
+
+[View the component list (BOM.csv)](BOM.csv)
+
+The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 Main Board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. I checked the connector entries against the October 12 Main Board schematic and final control-board projects. The Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 design and manufacturing files are published. I’ll keep improving the parts list as I assemble and test the manufactured boards. I still need to check a few component details and footprints, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
+
+I chose the listed component suppliers because I’m aiming for better-quality parts than I generally expect from generic Amazon listings, even if they cost a little more. Parts from Amazon may work, and I use some myself, but substitutes may have different dimensions or pin spacing and may not fit the PCBs I designed for this project. Please compare the exact part specifications and PCB footprint before buying a substitute.
+
+## Power and future button lighting plans
+
+The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). I’ve tested the TFT at 3.3 V and found the brightness satisfactory. I removed the external protected 5 V input and Main Board JP1 power selector. I removed C5 (470 µF) and C6 (0.1 µF) to match the direct Teensy-to-TFT wiring I tested. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
+
+**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign it and the Main Board and use light-transmitting buttons. There is no finished design or release date. The TFT backlight is separate; see [Future Thoughts](../Docs/Future-Thoughts.md) for clearance, power, possible four-layer costs, and reusable-part plans.
+
+I recommend using **male pin headers on the Teensy and matching female socket strips on the Main Board** so the controller can be unplugged. If I release a compatible replacement Main Board, you could move your existing Teensy to it rather than buy another controller, saving some money. Soldering the Teensy’s header pins directly into the Main Board does not provide that removable connection.
+
+I hope to reuse the controls, socket-mounted Teensy, and faceplate in a future lighting upgrade, subject to compatibility checks. Replacement boards may need four layers and cost more; I have no finished design or release date. See [Future Thoughts](../Docs/Future-Thoughts.md).
 
 ## PCB layout — five or six boards
 
