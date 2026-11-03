@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 1, 2026 at 9:02 PM MST (America/Denver)**
+**Last updated: November 2, 2026 at 10:43 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -170,6 +170,8 @@ I’ve checked the PCB’s physical fit, and all six encoders worked in my combi
 ## 6. Assemble the Rotary Switch boards and SQL switch
 
 Refer to the [Rotary Switch instructions](../../PCBs/Rotary%20Switches/README.md).
+
+I use a **13 mm deep socket** to tighten the **rotary-switch shaft mounting nuts**. The deep socket provides clearance over the shafts while reaching the nuts.
 
 For each of the two seven-position controls, use the C&K **A12505RNCQ PCB-terminal switch**, fit all six 1 kΩ resistors R1–R6, and leave JP1 open. J1 pin 1 is 3.3 V, pin 2 is the signal, and pin 3 is GND. Set the travel stops and knob orientation to suit the faceplate.
 
