@@ -29,9 +29,9 @@ If you don’t have access to a 3D printer and that is stopping you from buildin
 
 The set contains nine knobs, one display mounting bracket, six encoder spacers, and one SQL shaft spacer, matching the [current master print set](../Supporting%20STL%27s/README.md#complete-17-part-print-set). These are printed parts only; boards, electronics, and the faceplate are not included. If you can print your own parts, the [STL and 3MF downloads](../Supporting%20STL%27s/README.md) remain available.
 
-## Proposed Version 1-to-Version 2 upgrade
+## Proposed Version 2 builder offer
 
-The possible ARC-210 frequency rotary-switch redesign is **low priority and has no release date**. It is not available yet. If I finish and release this Version 2 hardware, I plan to offer builders upgrading from **Version 1 a replacement bare-PCB set for US$30**, to help offset the upgrade cost. I’ll also include **any required replacement 3D-printed knobs free of charge**.
+The possible ARC-210 frequency rotary-switch redesign is **low priority and has no release date**. It is not available yet. If I finish and release this Version 2 hardware, I plan to offer **Version 2 builders a bare-PCB set for US$30**, to help offset the upgrade cost. I’ll also include **any required replacement 3D-printed knobs free of charge**.
 
 This proposed offer covers the replacement bare PCBs and required printed knobs, not switches, other electronic components, or an assembled panel. Shipping and handling would be separate, with the VAT and import-charge policy below applying. I still need to finalize and test the redesign and confirm which existing parts can be reused. See [Future Thoughts](Future-Thoughts.md) for the planned hardware changes.
 
