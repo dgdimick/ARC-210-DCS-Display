@@ -2,9 +2,11 @@
 
 # Future thoughts and plans
 
-**Last updated: November 1, 2026 at 7:00 PM MST (America/Denver)**
+**Last updated: November 2, 2026 at 8:39 PM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
+
+- **Frequency controls using rotary switches:** I plan to investigate replacing the ARC-210 frequency encoders with rotary switches to match the limited-travel controls I checked in DCS. This would require a **new Button PCB, Main Board, and Rotary Switch Board**, but the proposed arrangement would eliminate **three separate PCBs** from the current assembly. I still need to select switches with the correct position counts and travel, check their footprints and mechanical clearances, design the revised resistor ladders and wiring, and update and test the firmware. This is a future redesign with no release date; the current published hardware remains the build approach.
 
 - **SQL switch replacement:** The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find a suitable replacement, I’ll announce it in [Project Updates](Project-Updates.md) and update the [parts list](../parts/README.md). I haven’t selected or tested a replacement yet.
 
