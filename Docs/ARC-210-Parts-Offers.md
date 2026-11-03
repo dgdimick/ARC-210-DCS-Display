@@ -1,6 +1,6 @@
 # ARC-210 bare PCB offer and optional 3D-printing help
 
-**Last updated: November 2, 2026 at 8:42 PM MST (America/Denver)**
+**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
 
 I can provide bare PCBs to help other builders complete my ARC-210 panel. I also offer separate 3D-printing help for builders without a printer. **These offers are for the ARC-210 only. I don’t currently offer PCB or printed-parts sets for the ARC-164 or ARC-186.** All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
 
@@ -28,12 +28,6 @@ My own order for all the boards cost about US$75. That was my approximate whole-
 If you don’t have access to a 3D printer and that is stopping you from building my ARC-210 panel, I’ll send you **one complete 17-part printed set**. I’ll print the **mounting bracket in black PETG** and the **remaining parts in gray PETG**. I don't want the lack of a 3d printer to be an obstacle preventing someone from building their SIMPIT.
 
 The set contains nine knobs, one display mounting bracket, six encoder spacers, and one SQL shaft spacer, matching the [current master print set](../Supporting%20STL%27s/README.md#complete-17-part-print-set). These are printed parts only; boards, electronics, and the faceplate are not included. If you can print your own parts, the [STL and 3MF downloads](../Supporting%20STL%27s/README.md) remain available.
-
-## Proposed Version 2 builder offer
-
-The possible ARC-210 frequency rotary-switch redesign is **low priority and has no release date**. It is not available yet. If I finish and release this Version 2 hardware, I plan to offer **Version 2 builders a bare-PCB set for US$30**, to help offset the upgrade cost. I’ll also include **any required replacement 3D-printed knobs free of charge**.
-
-This proposed offer covers the replacement bare PCBs and required printed knobs, not switches, other electronic components, or an assembled panel. Shipping and handling would be separate, with the VAT and import-charge policy below applying. I still need to finalize and test the redesign and confirm which existing parts can be reused. See [Future Thoughts](Future-Thoughts.md) for the planned hardware changes.
 
 ## Shipping, VAT, and import charges
 
