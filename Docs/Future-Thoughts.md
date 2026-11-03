@@ -2,7 +2,7 @@
 
 # Future thoughts and plans
 
-**Last updated: November 3, 2026 at 12:46 AM MST (America/Denver)**
+**Last updated: November 3, 2026 at 12:49 AM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
@@ -10,7 +10,9 @@ I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before
 
 - I’ll probably redesign the display bracket after the PCBs are built. I still don’t like the current mounting method.
 
-- I'm considering reworking the Main Board to carry the rotary-switch resistor ladders, allowing the switches to mount directly to the panel and be wired like the SQL On/Off switch. This would reduce the number of PCBs, but each seven-position switch would need roughly eight wires back to the Main Board, adding soldering and making the project harder for people to build. The likely cost savings would not justify the added build difficulty, so this is a low-priority idea. If I do decide to rework the Main Board, I may add LED backlighting at the same time. I would also need to redesign the current Button Matrix PCB, which does not support LED backlighting, and add the power and driver circuitry and suitable light-transmitting buttons described below. I have no finished lighting design or release date. 🟢 **The current rotary-switch PCB design remains the build approach.**
+- **Version 2 — Main Board and optional switch PCBs:** I’m considering putting the **rotary-switch resistor ladders and labeled solder points on the Main Board**. Builders could wire panel-mounted switches directly to those points, making the **separate rotary-switch PCBs optional**. This would reduce the board count but add hand wiring and soldering, so I’ll check the wire routing and strain relief. Where clearance allows, I’d prefer to mount the switches directly on a **single PCB**: fewer wires and board-to-board connections should make the assembly more robust. The mounting nuts and alignment features would secure the switches so turning the knobs does not strain the solder joints. I still need to work out the layout and test the mounting arrangement.
+
+  This remains a low-priority future redesign with no release date. I may revisit LED backlighting at the same time, which would also require a redesigned Button Matrix PCB and the lighting circuitry described below. 🟢 **The current rotary-switch PCB design remains the build approach for Version 1.**
 
 - I plan to add [C-130J ARC-210 support](C-130J-Support.md) within this repository using the existing hardware. I’m developing a shared code base that will select the aircraft automatically, without reflashing the Teensy when switching supported aircraft. This support is still in development. Shared firmware, DCS-BIOS mappings, menus, testing, and documentation are tracked in the [main work list](Remaining-Work.md). When I return to additional aircraft support, the C-130J will be my first ARC-210 candidate because I own it. Other aircraft would need their own investigation.
 
