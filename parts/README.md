@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 1, 2026 at 8:54 PM MST (America/Denver)**
+**Last updated: November 2, 2026 at 10:59 PM MST (America/Denver)**
 
 <a id="estimated-build-cost"></a>
 
@@ -75,6 +75,12 @@ Updated October 29, 2026.
 The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 Main Board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. I checked the connector entries against the October 12 Main Board schematic and final control-board projects. The Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 design and manufacturing files are published. I’ll keep improving the parts list as I assemble and test the manufactured boards. I still need to check a few component details and footprints, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
 
 I chose the listed component suppliers because I’m aiming for better-quality parts than I generally expect from generic Amazon listings, even if they cost a little more. Parts from Amazon may work, and I use some myself, but substitutes may have different dimensions or pin spacing and may not fit the PCBs I designed for this project. Please compare the exact part specifications and PCB footprint before buying a substitute.
+
+## Shaft lengths
+
+For my ARC-210, I’m using **38.1 mm shafts for all controls except SQL, which uses a 42 mm shaft**. I won’t use 12.7 mm shafts; they’re too short. These are the required shaft lengths, not 3D-model Z offsets.
+
+The older part numbers, supplier links, and published CAD models below do not all match this shaft-length plan. I still need to reconcile the exact parts and models before treating those entries as an ordering list for these lengths. In particular, the older A12505RNCQ is 12.7 mm and the A12515RNZQ is 38.1 mm; neither describes the required 42 mm SQL shaft.
 
 ## Power and future button lighting plans
 
@@ -243,10 +249,10 @@ I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFu
 - **Encoders:** Six Bourns **PEC11H-4220F-S0024**, matching the current encoder PCB. These have PCB terminals and an integrated push switch. The older seven-encoder quantity and 4215 shaft-option links are superseded.
   [Mouser — 652-PEC11H4220FS0024](https://www.mouser.com/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D)
 
-- **Multi-position rotary switches:** Two C&K **A12505RNCQ**, with 1/2-inch (12.7 mm) shafts, 45-degree indexing and **C PCB-pin terminals**. These replace the solder-lug versions for the two resistor-ladder PCBs. The circuit uses seven positions of each eight-position switch; verify the corrected wiring and stop-ring setting against the panel.
+- **Multi-position rotary switches:** Two C&K **A12505RNCQ**, listed previously with 1/2-inch (12.7 mm) shafts; this short-shaft selection is superseded by the **38.1 mm requirement** above. The older parts have 45-degree indexing and **C PCB-pin terminals**. These replace the solder-lug versions for the two resistor-ladder PCBs. The circuit uses seven positions of each eight-position switch; verify the corrected wiring and stop-ring setting against the panel.
   [Mouser — 611-A12505RNCQ](https://www.mouser.com/en/ProductDetail/CK/A12505RNCQ?qs=h7H1bHRqGz9AS0MdXl06Aw%3D%3D) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
 
-- **SQL On/Off switch:** One C&K **A12515RNZQ**, with a 1-1/2-inch (38.1 mm) shaft, 45-degree indexing and **Z solder-lug terminals**. Mount it in a bracket, fit the [required shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) to support its longer shaft in all installations, and wire its contacts to the Teensy input. It does not mount directly in the PCB-pin footprint and does not need a resistor ladder. **Its current arc of movement does not match the panel.** When I find a suitable replacement, I’ll announce it in [Project Updates](../Docs/Project-Updates.md) and update the [parts list](#estimated-build-cost).
+- **SQL On/Off switch:** One C&K **A12515RNZQ**, listed previously with a 1-1/2-inch (38.1 mm) shaft; this selection is superseded by the **42 mm SQL requirement** above. The older part has 45-degree indexing and **Z solder-lug terminals**. Mount it in a bracket, fit the [required shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) to support its longer shaft in all installations, and wire its contacts to the Teensy input. It does not mount directly in the PCB-pin footprint and does not need a resistor ladder. **Its current arc of movement does not match the panel.** When I find a suitable replacement, I’ll announce it in [Project Updates](../Docs/Project-Updates.md) and update the [parts list](#estimated-build-cost).
   [Mouser](https://www.mouser.com/ProductDetail/CK/A12515RNZQ) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
 
 - **Faceplate:** A-10C "Thunderbolt" / "Warthog" VHF/UHF cockpit panel

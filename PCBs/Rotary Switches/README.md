@@ -1,6 +1,6 @@
 # ARC-210 Rotary Switch PCB — Version 2.0 — Final PCB design
 
-**Last updated: November 1, 2026 at 7:19 PM MST (America/Denver)**
+**Last updated: November 2, 2026 at 10:59 PM MST (America/Denver)**
 
 Updated October 12, 2026.
 
@@ -12,7 +12,7 @@ Version 2.0 uses a 27.99 mm circular PCB outline, approximately 1 mm outside the
 
 Open `Rotary Switches.kicad_pro`. The project includes its custom symbol and A12505RNCQ footprint, with relative library paths so they work after downloading.
 
-- SW1: C&K A12505RNCQ, PCB terminals, 12.7 mm shaft, 45° indexing.
+- SW1: The published files reference C&K A12505RNCQ, PCB terminals, 12.7 mm shaft, 45° indexing. **That short shaft is superseded:** my ARC-210 shaft lengths are **38.1 mm except SQL at 42 mm**. The part/model references still need updating; see the [shaft-length notes](../../parts/README.md#shaft-lengths).
 - R1–R6: **six resistors**, each 1 kΩ, 1%, 1/8 W.
 - J1: pin 1 = 3.3 V; pin 2 = analog output; pin 3 = GND.
 

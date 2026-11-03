@@ -1,8 +1,12 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 2, 2026
 
-**Last updated: November 2, 2026 at 10:43 PM MST (America/Denver)**
+**Last updated: November 2, 2026 at 10:59 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
+
+## Shaft lengths
+
+My ARC-210 shaft-length plan is **38.1 mm for all controls except SQL, which uses a 42 mm shaft**. See the [parts-list shaft notes](parts/README.md#shaft-lengths) before ordering; older component and model references still need to be reconciled with these lengths.
 
 ## Current testing status
 
