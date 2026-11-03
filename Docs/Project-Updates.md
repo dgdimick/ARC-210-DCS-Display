@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
+**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -43,10 +43,6 @@ Both firmware binaries and their source are published. **Live DCS testing and co
 **October 31, 2026 at 1:37 AM MDT — Printed-parts offer for builders without a 3D printer**
 
 I’m offering a printed ARC-210 set to help builders who don’t have access to a 3D printer. See [ARC-210 parts offers](ARC-210-Parts-Offers.md#printed-parts) for the current price, colors, availability, and shipping/VAT/import-charge terms.
-
-**October 31, 2026 at 1:19 AM MDT — SQL switch replacement needed**
-
-The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](Project-Updates.md) and update the [parts list](../parts/README.md). I haven’t selected or tested a replacement yet.
 
 **October 31, 2026 at 12:20 AM MDT — v0.1.1 preview adds firmware and aircraft startup labels**
 

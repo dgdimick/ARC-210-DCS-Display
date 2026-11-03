@@ -1,6 +1,6 @@
 # ARC-210 Button Matrix PCB
 
-**Last updated: November 1, 2026 at 7:19 PM MST (America/Denver)**
+**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
 
 **October 30, 2026 — v3.2 released:** Removed the duplicate approximately 13.38 mm Edge.Cuts circle at H3; the intended opening remains a **12.0 mm non-plated hole**. Board and schematic revisions and the silkscreen are now **3.2**. I moved H3’s reference label clear of the hole’s solder-mask opening. There are no electrical changes. Gerbers and drills were freshly exported with KiCad 10.0.7; fresh ERC/DRC checks report zero violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. Use the [v3.2 manufacturing ZIP](Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) for new orders.
 
@@ -15,7 +15,7 @@ This is the current **unlit 16-button, 4 × 4 matrix**.
 
 **The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign the button board with LED support, use suitable light-transmitting buttons, and make the required Main Board, power, and driver changes. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished backlit button-board design or release date yet. See [Future Thoughts](../../Docs/Future-Thoughts.md) for the lighting redesign plan.
 
-**SQL switch replacement pending:** The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](../../Docs/Project-Updates.md) and update the [parts list](../../parts/README.md).
+**SQL On/Off:** I use the **C&K A12515RNZQ solder-lug rotary switch**, with its stop ring set to **two positions for 45° total travel**. Align the knob with the panel’s ON/OFF markings. See the [parts list](../../parts/README.md) for shaft-length and mounting details.
 
 ## Download and open
 

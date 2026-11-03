@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 1, 2026 at 8:54 PM MST (America/Denver)**
+**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
 
 <a id="estimated-build-cost"></a>
 
@@ -22,7 +22,7 @@ To help you plan your build, my current JLCPCB-based parts budget is **US$267.72
 
 This is primarily a DIY project. I share the files and build notes so you can make your own panel. See [ARC-210 bare PCB offer and separate 3D-printing help](../Docs/ARC-210-Parts-Offers.md) if you’d like a complete bare-PCB set or need help getting printed parts. You can also [order the boards directly](../Docs/PCB-Manufacturing-JLCPCB.md) and print the STL files yourself. If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
 
-**SQL switch replacement pending:** The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](../Docs/Project-Updates.md) and update the [parts list](#estimated-build-cost). The current switch listing and cost are provisional; I haven’t selected or tested a replacement yet.
+**SQL On/Off:** I use the **C&K A12515RNZQ solder-lug rotary switch**, with its stop ring set to **two positions for 45° total travel**. Align the knob with the panel’s ON/OFF markings. See the [parts list](#component-selection-notes) for shaft-length and mounting details.
 
 Prices checked October 22, 2026, except the recommended Teensy with headers (October 29) and the uploaded-file JLCPCB cart estimate (November 1). The PCB cost uses the **US$58.20 JLCPCB cart estimate** from my [manufacturing cost comparison](../Docs/PCB-Manufacturing-JLCPCB.md). It covers five copies of each of the four designs—**20 bare boards total**, enough for one panel with spare boards. Small hardware costs remain allowances, and supplier prices can change.
 
@@ -33,7 +33,7 @@ Prices checked October 22, 2026, except the recommended Teensy with headers (Oct
 | [Hosyond 3.5-inch ILI9488 SPI TFT display](https://www.amazon.com/dp/B0BWJHK4M6) | 1 | About $18 |
 | [Bourns PEC11H-4220F-S0024 rotary encoders](https://www.mouser.com/ProductDetail/Bourns/PEC11H-4220F-S0024?qs=7MVldsJ5UayW2mw8xYm74g%3D%3D) | 6 | $19.74 |
 | [C&K A12505RNCQ multi-position rotary switches](https://www.digikey.com/en/products/detail/c-k/A12505RNCQ/2043159) | 2 | $26.82 |
-| [C&K A12515RNZQ SQL On/Off rotary switch — replacement pending](https://www.digikey.com/en/products/detail/c-k/A12515RNZQ/678340) | 1 | $12.01 |
+| [C&K A12515RNZQ SQL On/Off solder-lug rotary switch — two positions, 45° total travel](https://www.digikey.com/en/products/detail/c-k/A12515RNZQ/678340) | 1 | $12.01 |
 | [6 × 6 × 5 mm tactile button switches](https://www.amazon.com/dp/B01CGMP9GY) and [matrix diodes](#hardware-selection-and-supplier-links) | 16 each | $5–$10 |
 | [Resistors, capacitors and remaining electronics](BOM.csv) | Allowance pending an updated full-panel parts estimate; removed power/protection parts are excluded | $10–$20 |
 | [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Parts needed for one build | $15–$25 |
@@ -96,7 +96,7 @@ All boards are controlled by one Teensy 4.1. The estimate above allows for all s
 
 The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. When using the optional SQL On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
 
-**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Main Board’s SQL signal (GPIO 41) and GND connections. Configure GPIO 41 with a pull-up and choose the contact for the intended electrical ON/OFF states; this wiring does not correct the current switch’s mechanical travel mismatch. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; I’ve checked the physical fit of Main Board v1.1; I still need to check the assembled board.
+**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Main Board’s SQL signal (GPIO 41) and GND connections. Configure GPIO 41 with a pull-up and choose the contact for the intended electrical ON/OFF states. Set the stop ring to **two positions with 45° total travel**. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; I’ve checked the physical fit of Main Board v1.1; I still need to check the assembled board.
 
 ## Rotary-switch test wiring
 
@@ -246,8 +246,10 @@ I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFu
 - **Multi-position rotary switches:** Two C&K **A12505RNCQ**, with 1/2-inch (12.7 mm) shafts, 45-degree indexing and **C PCB-pin terminals**. These replace the solder-lug versions for the two resistor-ladder PCBs. The circuit uses seven positions of each eight-position switch; verify the corrected wiring and stop-ring setting against the panel.
   [Mouser — 611-A12505RNCQ](https://www.mouser.com/en/ProductDetail/CK/A12505RNCQ?qs=h7H1bHRqGz9AS0MdXl06Aw%3D%3D) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
 
-- **SQL On/Off switch:** One C&K **A12515RNZQ**, with a 1-1/2-inch (38.1 mm) shaft, 45-degree indexing and **Z solder-lug terminals**. Mount it in a bracket, fit the [required shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) to support its longer shaft in all installations, and wire its contacts to the Teensy input. It does not mount directly in the PCB-pin footprint and does not need a resistor ladder. **Its current arc of movement does not match the panel.** When I find a suitable replacement, I’ll announce it in [Project Updates](../Docs/Project-Updates.md) and update the [parts list](#estimated-build-cost).
+- **SQL On/Off switch:** One C&K **A12515RNZQ**, with a 1-1/2-inch (38.1 mm) shaft, 45-degree indexing and **Z solder-lug terminals**. Mount it in a bracket, fit the [required shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) to support its longer shaft in all installations, and wire its contacts to the Teensy input. It does not mount directly in the PCB-pin footprint and does not need a resistor ladder. **Set the stop ring to two positions for 45° total travel between SQL ON and OFF.**
   [Mouser](https://www.mouser.com/ProductDetail/CK/A12515RNZQ) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
+
+  **Shaft-length check:** The linked A12515RNZQ has a **38.1 mm shaft**. I previously specified 42 mm for SQL, so I still need to resolve that length requirement before recommending a different part; I haven’t verified a purchasable 42 mm equivalent. The linked switch provides the required 45° indexing.
 
 - **Faceplate:** A-10C "Thunderbolt" / "Warthog" VHF/UHF cockpit panel
   [PC Flights](https://pcflights.com/a-10c-thunderbolt-warthog-vhf-uhf-panel/)<br>

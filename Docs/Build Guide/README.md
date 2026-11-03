@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 2, 2026 at 11:06 PM MST (America/Denver)**
+**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -50,7 +50,7 @@ The build uses **five required boards**: one Main Board, one Button Matrix, one 
 
 The PCBs require mounting stand-offs. Use the [Vibit M3 nylon stand-off kit](https://www.amazon.com/dp/B0H1QS5Q6N), budgeted at **$10 per kit** in the BOM. Choose the total stand-off height by the clearance your build needs: approximately **22–26 mm**, depending on the SQL ON/OFF rotary switch shaft length. Dry-fit the boards, switch and faceplate, then select the height that provides the required clearance and correct shaft position before tightening the mounting hardware. The number of individual stand-offs remains pending.
 
-**SQL switch replacement pending:** The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](../Project-Updates.md) and update the [parts list](../../parts/README.md).
+**SQL On/Off:** I use the **C&K A12515RNZQ solder-lug rotary switch**, with its stop ring set to **two positions for 45° total travel**. Align the knob with the panel’s ON/OFF markings. See the [parts list](../../parts/README.md) for shaft-length and mounting details.
 
 ## 2. Print and check the mechanical parts
 
@@ -175,9 +175,9 @@ I use **10 mm and 13 mm deep-well sockets** to tighten the **mounting nuts on th
 
 For each of the two seven-position controls, use the C&K **A12505RNCQ PCB-terminal switch**, fit all six 1 kΩ resistors R1–R6, and leave JP1 open. J1 pin 1 is 3.3 V, pin 2 is the signal, and pin 3 is GND. Set the travel stops and knob orientation to suit the faceplate.
 
-The SQL On/Off switch is the **A12515RNZQ solder-lug version with the longer shaft**. It does not fit directly into the PCB-terminal footprint. **Its arc of movement does not match the panel.** When I find a suitable replacement, I’ll announce it in [Project Updates](../Project-Updates.md) and update the [parts list](../../parts/README.md).
+The SQL On/Off switch is the **A12515RNZQ solder-lug version with the longer shaft**. It does not fit directly into the PCB-terminal footprint. **Set the stop ring to two positions for 45° total travel between SQL ON and OFF.**
 
-- **Direct wiring:** connect the switch common to the Main Board SQL signal and the selected contact to GND. Choose the contact for the intended electrical ON/OFF states. This wiring does not correct the current switch’s mechanical travel mismatch.
+- **Direct wiring:** connect the switch common to the Main Board SQL signal and the selected contact to GND. Choose the contact for the intended electrical ON/OFF states. Set the stop ring to **two positions with 45° total travel**.
 - **Optional SQL PCB:** use wires from the solder-lug switch to the corresponding board connections. Leave R1–R6 unpopulated and bridge the board's JP1 ON/OFF solder jumper. Bridging means joining the jumper’s two pads with a small amount of solder. Follow its README for the contact and connector mapping.
 - Fit **shaft spacer v.5 in either configuration**.
 

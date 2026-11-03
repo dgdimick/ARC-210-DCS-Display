@@ -2,7 +2,7 @@
 
 # Items that need to be completed
 
-**Last updated: November 1, 2026 at 7:00 PM MST (America/Denver)**
+**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -16,5 +16,4 @@ I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before
 6. Design and print a USB cable strain-relief support to protect the Teensy's Micro-B connector from cable pulls.
 7. Add [C-130J support](C-130J-Support.md) using the existing ARC-210 hardware and one shared code base: implement automatic aircraft selection so users can switch between supported aircraft without reflashing the Teensy, and test that switching behavior; verify the existing DCS-BIOS controls and frequency export; follow the [Helios-based LCD export plan](C-130J-Support.md#helios-findings-and-lcd-export-plan), starting by verifying indicator 44 in the installed module, capturing live indications, parsing them once per export cycle, adding named string outputs for the LCD/menu fields, and clearing fields that disappear between pages; check RT SELECT behavior; and complete firmware and menu changes, testing, and documentation. Document any unavailable display data.
 8. **Assembly pictures:** When the manufactured PCBs arrive and I start building, take pictures throughout assembly for the Build Guide, including component placement, soldering, wiring, and mounting. Include clear photos of both sides of the Button Matrix PCB, showing the switches on the front and the diodes and pin connectors on the back, with the silkscreen markings visible. Add those photos to the Button Matrix PCB README too.
-9. **SQL switch replacement pending:** I need to find and test a replacement because the SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. When I find a suitable replacement, I’ll announce it in [Project Updates](Project-Updates.md), update the [parts list](../parts/README.md), and revise any affected mounting or wiring notes.
 10. **On-screen test versions:** Add visible **V1.0** labels to the earlier button/encoder test and the standalone encoder test. Their current V1.0 filenames do not change the existing screen labels. I need to recover their matching source or recreate the tests, rebuild and check them on the panel, then update the HEX downloads and instructions so the on-screen version matches the filename.

@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 3, 2026
 
-**Last updated: November 3, 2026 at 12:37 AM MST (America/Denver)**
+**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -31,11 +31,11 @@ I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy
 
 ## Items that need to be completed
 
-**Last updated: November 1, 2026 at 7:00 PM MST (America/Denver)**
+**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
-**SQL switch replacement pending:** The SQL On/Off switch I’m currently using does not have the correct arc of movement for the panel. I’m looking for a suitable replacement. When I find one, I’ll announce it in [Project Updates](Docs/Project-Updates.md) and update the [parts list](parts/README.md).
+**SQL On/Off:** I use the **C&K A12515RNZQ solder-lug rotary switch**, with its stop ring set to **two positions for 45° total travel**. Align the knob with the panel’s ON/OFF markings. See the [parts list](parts/README.md) for shaft-length and mounting details.
 
 ## Tools needed
 
@@ -49,7 +49,7 @@ I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy
 
 ## Project updates
 
-**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
+**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
 
 **November 1, 2026 at 5:44 AM MST — Use the US$58.20 PCB cart estimate**
 
