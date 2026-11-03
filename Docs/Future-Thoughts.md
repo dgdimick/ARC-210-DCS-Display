@@ -2,9 +2,11 @@
 
 # Future thoughts and plans
 
-**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
+**Last updated: November 3, 2026 at 12:46 AM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
+
+- **Version 2 — correct frequency switches:** I plan to replace the frequency rotary encoders with the correct **ten-position rotary switches**, following the mounting and resistor-ladder approach I’m developing for the ARC-164. This will require PCB and firmware changes, revised knob shaft holes, and clearance and fit testing. This is a future redesign, with no release date; the current ARC-210 design remains available for builders.
 
 - I’ll probably redesign the display bracket after the PCBs are built. I still don’t like the current mounting method.
 
