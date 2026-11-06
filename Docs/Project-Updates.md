@@ -2,13 +2,21 @@
 
 # Project updates
 
-**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
+**Last updated: November 6, 2026 at 1:37 PM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current bare PCB offer and separate 3D-printing help:** See [ARC-210 bare PCB offer and separate 3D-printing help](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details. If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
+
+**November 6, 2026 — ARC-210 connected to DCS**
+
+[Watch the ARC-210 panel working with DCS](https://drive.google.com/file/d/1jLG8JLaTQ1RpAE6FKkDZAUxiwgUSQEKu/view?usp=drivesdk). This video shows my panel connected to DCS and working with the simulator.
+
+I’m still waiting for the manufactured PCBs, which are **expected by the end of November 2026**. Once they arrive, I’ll assemble and test the boards; this demonstration does not yet validate the manufactured PCB assembly.
+
+**November marks 16 months of work on this project.** It’s great to see the panel working with DCS after all that development and testing!
 
 **November 1, 2026 at 5:44 AM MST — Use the US$58.20 PCB cart estimate**
 
