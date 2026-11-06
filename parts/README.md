@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
+**Last updated: November 6, 2026 (America/Denver)**
 
 <a id="estimated-build-cost"></a>
 
@@ -40,7 +40,7 @@ Prices checked October 22, 2026, except the recommended Teensy with headers (Oct
 | [Required PCB standoff kit and screws](https://www.amazon.com/dp/B0H1QS5Q6N) | 1 kit | $10 |
 | [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
 | [Bare PCBs from JLCPCB](../Docs/PCB-Manufacturing-JLCPCB.md) | Five copies of each of four designs: 20 boards total; one panel uses five or six | US$58.20 cart estimate, including displayed shipping and a US$15.00 coupon; other applicable charges may be extra |
-| USB Micro-B data cable — for powering and programming the Teensy 4.1 | 1 | $3–$6 |
+| USB Micro-B data cable — for powering and programming the Teensy 4.1; [USB-C-to-Micro-B adapter cable option](https://www.amazon.com/dp/B0BD36TZBK) | 1 cable total | $3–$6 allowance; check the linked option’s current price |
 | **Estimated DIY purchasing cost using JLCPCB (rounded)** | | **US$268–US$301** |
 
 Both build estimates below include the PC Flights faceplate. This calculated total is an estimate rather than a fixed kit price; rounded for budgeting, the JLCPCB option is about **US$268–US$301**.
@@ -236,6 +236,9 @@ Both spacer quantities are included in the [BOM](BOM.csv).
   [SparkFun](https://www.sparkfun.com/teensy-4-1-headers.html) · [Amazon example](https://www.amazon.com/PJRC-Teensy-4-1-with-Pins/dp/B08CTM3279)
 
 I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFun Teensy 4.1 (Headers)](https://www.sparkfun.com/teensy-4-1-headers.html), or this [Amazon Teensy 4.1 with Pins listing](https://www.amazon.com/PJRC-Teensy-4-1-with-Pins/dp/B08CTM3279) as an alternative example. The pre-fitted pins avoid having to solder the two long header rows yourself. The Main Board's two 1 × 24 female sockets are separate parts; they are optional but recommended for removing the Teensy during board upgrades or replacement.
+
+- **USB-C-to-Micro-B adapter cable:** One data-capable cable for connecting the Teensy 4.1’s Micro-B device port to a computer’s USB-C port. This is an alternative to the standard USB Micro-B data cable, not an additional required cable. The linked listing is a 1 ft (30.5 cm) male-to-male cable supporting data and power. Choose the length needed for your installation; the Teensy’s connector remains Micro-B.
+  [Amazon — USB-C-to-Micro-B data cable](https://www.amazon.com/dp/B0BD36TZBK)
 
 - **Display:** ILI9488 SPI TFT, 3.5-inch
   [Amazon](https://www.amazon.com/dp/B0BWJHK4M6)
