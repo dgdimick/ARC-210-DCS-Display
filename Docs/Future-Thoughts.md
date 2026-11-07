@@ -2,7 +2,7 @@
 
 # Future thoughts and plans
 
-**Last updated: November 7, 2026 at 2:55 PM MST (America/Denver)**
+**Last updated: November 7, 2026 at 2:57 PM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
@@ -30,7 +30,7 @@ My aim is to reuse the existing Main Board, socket-mounted Teensy, faceplate, an
 
 I checked the published Main Board's J4 encoder connector against its Teensy connections. **The existing Main Board has the signal connections needed for five rotary-switch resistor ladders and two independent backlight controls**, so I can plan around reusing it instead of replacing it solely to add these functions.
 
-**Signal-pin count:** The five encoders being replaced use **ten signal connections**, two per encoder. Five rotary switches using resistor ladders need **five analog-input pins**, and one backlight dimmer needs **one PWM pin**. That uses **6 of those 10 connections and leaves 4 spare**, while retaining the separate sixth encoder on its own two connections. If I add a second independent backlight dimmer, the total becomes **7 used and 3 spare**. Ground and supply connections are separate from this signal-pin count.
+**Signal-pin count:** The five encoders being replaced use **ten signal connections**, two per encoder. Five rotary switches using resistor ladders need **five analog-input pins**, and one backlight dimming circuit needs **one PWM control pin**. **Five switch inputs + one dimming-circuit control output = 6 signal pins used, leaving 4 spare** out of those ten connections. The dimming circuit’s control pin is already included in the six; it is not an additional seventh pin. This retains the separate sixth encoder on its own two connections. If I add a second independent backlight dimmer, the total becomes **7 used and 3 spare**. Ground and supply connections are separate from this signal-pin count.
 
 This is a proposed Version 2 assignment. GPIO numbers below are the labels on the Teensy, not KiCad symbol pad numbers.
 
