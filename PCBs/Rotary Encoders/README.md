@@ -1,8 +1,8 @@
 # ARC-210 Rotary Encoder PCB
 
-**Last updated: November 1, 2026 at 7:19 PM MST (America/Denver)**
+**Last updated: November 7, 2026 at 1:05 PM MST (America/Denver)**
 
-Version **1.4 — Final PCB design**, updated October 12, 2026. KiCad 10 project.
+Version **1.4 — Final PCB design**, updated October 12, 2026.
 
 I finalized **PCB version 1.4 and checked its physical fit** on October 12, 2026.
 
