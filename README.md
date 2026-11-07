@@ -1,10 +1,10 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 7, 2026
 
-**Last updated: November 7, 2026 at 2:57 PM MST (America/Denver)**
+**Last updated: November 7, 2026 at 2:58 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
-**Frequency controls:** I use **rotary encoders** for the frequency controls in this build, rather than the **ten-position rotary switches used in the real ARC-210**. **For Version 2, I plan to replace those encoders with rotary switches and a new frequency-control PCB, while trying to reuse the existing Main Board.** See [Future thoughts and plans](Docs/Future-Thoughts.md) for the planned redesign; there is no release date yet.
+**Frequency controls:** I use **rotary encoders** for the frequency controls in this build, rather than the **ten-position rotary switches used in the real ARC-210**. **For Version 2, I plan to replace those encoders with rotary switches and two new frequency-control PCBs, while trying to reuse the existing Main Board.** See [Future thoughts and plans](Docs/Future-Thoughts.md) for the planned redesign; there is no release date yet.
 
 ## Current testing status
 
@@ -47,7 +47,7 @@ I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy
 
 [View Future thoughts and plans](Docs/Future-Thoughts.md) for possible redesigns, lighting, and support for other aircraft.
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** My Version 2 plan is a new frequency rotary-switch PCB, a new Button LED PCB, and a daughterboard for external regulated 5 V lighting power and control. The existing Main Board has enough suitable J4 connections for five rotary-switch resistor ladders and two backlight PWM controls; the proposed pin assignment is in [Future Thoughts](Docs/Future-Thoughts.md#proposed-reuse-of-the-existing-main-board). Reusing it still requires new control and lighting boards, updated wiring and firmware, and assembly testing. **Version 2 is a long way off, so please don't wait for it if you want to build the ARC-210.** I have no finished redesign, confirmed upgrade price, or release date. See [Future Thoughts](Docs/Future-Thoughts.md) for the details.
+**The current Button Matrix PCB v3.2 does not support LED backlighting.** My Version 2 plan requires **four new PCBs: one Button Matrix board with LED support, two frequency rotary-switch boards, and one power/dimming board for external regulated 5 V lighting power and control**. The existing Main Board has enough suitable J4 connections for five rotary-switch resistor ladders and two backlight PWM controls; the proposed pin assignment is in [Future Thoughts](Docs/Future-Thoughts.md#proposed-reuse-of-the-existing-main-board). Reusing it still requires new control and lighting boards, updated wiring and firmware, and assembly testing. **Version 2 is a long way off, so please don't wait for it if you want to build the ARC-210.** I have no finished redesign, confirmed upgrade price, or release date. See [Future Thoughts](Docs/Future-Thoughts.md) for the details.
 
 ## Project updates
 
