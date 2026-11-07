@@ -2,7 +2,7 @@
 
 # Future thoughts and plans
 
-**Last updated: November 7, 2026 at 2:53 PM MST (America/Denver)**
+**Last updated: November 7, 2026 at 2:55 PM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
@@ -30,6 +30,8 @@ My aim is to reuse the existing Main Board, socket-mounted Teensy, faceplate, an
 
 I checked the published Main Board's J4 encoder connector against its Teensy connections. **The existing Main Board has the signal connections needed for five rotary-switch resistor ladders and two independent backlight controls**, so I can plan around reusing it instead of replacing it solely to add these functions.
 
+**Signal-pin count:** The five encoders being replaced use **ten signal connections**, two per encoder. Five rotary switches using resistor ladders need **five analog-input pins**, and one backlight dimmer needs **one PWM pin**. That uses **6 of those 10 connections and leaves 4 spare**, while retaining the separate sixth encoder on its own two connections. If I add a second independent backlight dimmer, the total becomes **7 used and 3 spare**. Ground and supply connections are separate from this signal-pin count.
+
 This is a proposed Version 2 assignment. GPIO numbers below are the labels on the Teensy, not KiCad symbol pad numbers.
 
 | Proposed function | Main Board J4 pin | Teensy GPIO | Capability |
@@ -44,7 +46,7 @@ This is a proposed Version 2 assignment. GPIO numbers below are the labels on th
 | Remaining encoder A/B | 2 / 1 | 16 / 17 | Digital inputs |
 | Shared ground | 13 / 14 | GND | Ground |
 
-J4 pins 3 and 4 (GPIO 28 and 29) and pin 9 (GPIO 25) remain available in this proposal. See the [PJRC Teensy 4.1 reference](https://www.pjrc.com/store/teensy41.html) for analog and PWM capabilities.
+The table shows the two-dimmer option: J4 pins 3 and 4 (GPIO 28 and 29) and pin 9 (GPIO 25) remain available. With just one dimmer, J4 pin 8 (GPIO 23) is also spare, giving four spare signal connections. Spare connections must still be assigned according to each GPIO’s analog, digital, or PWM capabilities. See the [PJRC Teensy 4.1 reference](https://www.pjrc.com/store/teensy41.html) for analog and PWM capabilities.
 
 The five resistor ladders must use **3.3 V**, keeping their outputs within the Teensy's input range. The two PWM signals would control **MOSFET lighting drivers on the daughterboard**; the LEDs would get power from an **external regulated 5 V supply**, with a shared ground. The Teensy pins would not supply LED power.
 
