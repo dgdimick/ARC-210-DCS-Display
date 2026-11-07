@@ -1,6 +1,6 @@
 # ARC-210 Rotary Switch PCB — Version 2.0 — Final PCB design
 
-**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
+**Last updated: November 7, 2026 at 1:14 PM MST (America/Denver)**
 
 Updated October 12, 2026.
 
@@ -8,7 +8,7 @@ Version **2.0 is the final PCB design and has been physically test-fitted**, con
 
 ![Rotary-switch PCB version 2.0 with the A12505RNCQ through-hole switch and rear-mounted resistors](../../images/Rotary-Switch-PCB-3D.png)
 
-Version 2.0 uses a 27.99 mm circular PCB outline, approximately 1 mm outside the switch body, with the resistors and connector repositioned inside the outline. The PCB silkscreen and board revision identify version 2.0. This KiCad 10 project replaces the previously published board. Switch terminal 1 is used for position 1. The resistor ladder uses **six resistors (R1–R6)** to provide seven switch-position voltages. The switch contacts used are 1, 2, 4, 5, 7, 8 and 10; terminal 11 is unused. A1 is the common contact and analog output.
+Version 2.0 uses a 27.99 mm circular PCB outline, approximately 1 mm outside the switch body, with the resistors and connector repositioned inside the outline. The PCB silkscreen and board revision identify version 2.0. This project replaces the previously published board. Switch terminal 1 is used for position 1. The resistor ladder uses **six resistors (R1–R6)** to provide seven switch-position voltages. The switch contacts used are 1, 2, 4, 5, 7, 8 and 10; terminal 11 is unused. A1 is the common contact and analog output.
 
 Open `Rotary Switches.kicad_pro`. The project includes its custom symbol and A12505RNCQ footprint, with relative library paths so they work after downloading.
 
