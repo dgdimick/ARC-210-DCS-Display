@@ -2,33 +2,33 @@
 
 # Future thoughts and plans
 
-**Last updated: November 7, 2026 at 11:43 AM MST (America/Denver)**
+**Last updated: November 7, 2026 at 2:48 PM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
 **Future upgrades:** It may be as long as **two years** before I return to this project with upgrades or a new version. Please treat future-version ideas as long-term plans, with no promised release date.
 
-- **Version 2 — correct frequency switches:** I plan to replace the frequency rotary encoders with the correct **ten-position rotary switches**, following the mounting and resistor-ladder approach I’m developing for the ARC-164. This will require PCB and firmware changes, revised knob shaft holes, and clearance and fit testing. This is a future redesign, with no release date; the current ARC-210 design remains available for builders.
+- **Version 2 — frequency rotary switches:** I plan to replace the frequency rotary encoders with **rotary switches like those used in the real A-10's ARC-210**. This will require a **new frequency-control PCB to replace the current Rotary Encoder PCB**, along with firmware changes and mechanical fit checks. Using resistor ladders should free up Teensy signal pins compared with the encoders, so I may be able to **reuse the existing Main Board** and use the available connections for the new controls and lighting. I still need to verify the pin assignments, wiring, and compatibility.
+
+- **Version 2 — lighting daughterboard:** I plan to make a **separate daughterboard to distribute the external regulated 5 V power needed for the LEDs**, with the lighting control and protection circuitry worked out during design. This is the proposed way to add lighting while trying to keep the existing Main Board. The daughterboard would not generate 5 V from the Teensy's 3.3 V supply; it would need an external regulated 5 V supply.
+
+**Version 2 is a long way off.** I plan to finish the ARC-164 and ARC-186, then take a break to catch up on other things. It may be as long as two years before I return to ARC-210 upgrades, and I have no release date. **If you want to build an ARC-210, please don't wait for Version 2.**
 
 - I’ll probably redesign the display bracket after the PCBs are built. I still don’t like the current mounting method.
 
-- **Version 2 — Main Board and optional switch PCBs:** I’m considering putting the **rotary-switch resistor ladders and labeled solder points on the Main Board**. Builders could wire panel-mounted switches directly to those points, making the **separate rotary-switch PCBs optional**. This would reduce the board count but add hand wiring and soldering, so I’ll check the wire routing and strain relief. Where clearance allows, I’d prefer to mount the switches directly on a **single PCB**: fewer wires and board-to-board connections should make the assembly more robust. The mounting nuts and alignment features would secure the switches so turning the knobs does not strain the solder joints. I still need to work out the layout and test the mounting arrangement.
-
-  This remains a low-priority future redesign with no release date. I may revisit LED backlighting at the same time, which would also require a redesigned Button Matrix PCB and the lighting circuitry described below. 🟢 **The current rotary-switch PCB design remains the build approach for Version 1.**
-
 - I plan to add [C-130J ARC-210 support](C-130J-Support.md) within this repository using the existing hardware. I’m developing a shared code base that will select the aircraft automatically, without reflashing the Teensy when switching supported aircraft. This support is still in development. Shared firmware, DCS-BIOS mappings, menus, testing, and documentation are tracked in the [main work list](Remaining-Work.md). When I return to additional aircraft support, the C-130J will be my first ARC-210 candidate because I own it. Other aircraft would need their own investigation.
 
-- I may revisit button lighting after completing the **ARC-164 and ARC-186 projects**. I have no finished Button LED PCB design or release date for this possible future redesign. I would need to redesign the button board to support LED backlighting; the current Button Matrix PCB v3.2 does not support it. The redesign would require suitable translucent buttons and a new button board with LED support (Button LED PCB), plus changes to the Main Board to make room for an SCR, its associated discrete components, and a lighting connector. I would also need an external 5 V supply and the associated power-input and protection circuitry. The current USB/3.3 V Main Board does not include this lighting circuitry. I may need to use four-layer PCBs for the replacement Main Board and button board, which could increase the cost of both replacement boards. I haven’t confirmed the layer requirements or priced that redesign yet; this possible extra cost is not included in the current build estimate or bare-PCB set price. I dropped button lighting from the current design because there wasn’t enough clearance with the TFT display, so I would need to resolve that mechanical clearance before adding it.
+- **Button lighting:** The current Button Matrix PCB v3.2 does not support LED backlighting. Version 2 lighting would still need a **new Button LED PCB**, suitable light-transmitting buttons, and clearance checks around the TFT display. My current plan is to put the external 5 V lighting power and control circuitry on the daughterboard rather than assume the Main Board must be replaced. Main Board reuse is a goal, not a confirmed compatibility claim. I have not finalized the board layout, layer count, lighting circuit, or upgrade cost. These future parts are not included in the current build estimate or PCB set price.
 
 I recommend using **male pin headers on the Teensy and matching female socket strips on the Main Board** so the controller can be unplugged. If I release a compatible replacement Main Board, you could move your existing Teensy to it rather than buy another controller, saving some money. Soldering the Teensy’s header pins directly into the Main Board does not provide that removable connection.
 
-My aim would be to reuse the **rotary encoders, rotary switches, socket-mounted Teensy, faceplate, and other parts that aren’t mounted on the Main Board or Button Matrix PCB**, so upgrading would not mean buying a whole new panel. I still need to confirm compatibility as I develop the redesign. The current opaque buttons would need suitable light-transmitting replacements for illuminated legends.
+My aim is to reuse the existing Main Board, socket-mounted Teensy, faceplate, and other compatible parts where possible. The frequency encoders and their PCB would be replaced for the rotary-switch version. Illuminated buttons would also need suitable light-transmitting replacements. Compatibility still needs to be checked as the redesign develops.
 
 - I’ve asked PJRC about replacing Micro-USB with USB-C on a future Teensy 4.1 revision and posted on their forum to see what other builders think. A reversible connector would make cable connections behind the radio panels easier. This is a request and community discussion; no connector change has been confirmed.
 
 ## Other SIMPIT panels
 
-Once I’ve finished the radio panels, I plan to build other panels for my SIMPIT, including the **SAS and emergency trim panels**. I’ll share those projects as they develop. These are future plans, and my priorities may change based on user feedback and interest.
+After finishing the radio panels and taking the planned break, I would like to build other panels for my SIMPIT, including the **SAS and emergency trim panels**. I’ll share those projects as they develop. These are future plans, and my priorities may change based on user feedback and interest.
 
 ## Using DCS trials for future aircraft support
 

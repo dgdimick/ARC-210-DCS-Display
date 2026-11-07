@@ -1,10 +1,10 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 7, 2026
 
-**Last updated: November 7, 2026 at 1:14 PM MST (America/Denver)**
+**Last updated: November 7, 2026 at 2:48 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
-**Frequency controls:** I use **rotary encoders** for the frequency controls in this build, rather than the **ten-position rotary switches used in the real ARC-210**. **Version 2 will use the correct frequency rotary switches.** See [Future thoughts and plans](Docs/Future-Thoughts.md) for the planned redesign; there is no release date yet.
+**Frequency controls:** I use **rotary encoders** for the frequency controls in this build, rather than the **ten-position rotary switches used in the real ARC-210**. **For Version 2, I plan to replace those encoders with rotary switches and a new frequency-control PCB, while trying to reuse the existing Main Board.** See [Future thoughts and plans](Docs/Future-Thoughts.md) for the planned redesign; there is no release date yet.
 
 ## Current testing status
 
@@ -47,7 +47,7 @@ I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy
 
 [View Future thoughts and plans](Docs/Future-Thoughts.md) for possible redesigns, lighting, and support for other aircraft.
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign it and the Main Board, possibly using four-layer PCBs that cost more. My aim is to reuse the encoders, rotary switches, socket-mounted Teensy, and faceplate, subject to compatibility checks. I have no finished design, confirmed upgrade price, or release date. Upgrade costs are separate from the current estimates and PCB set price. See [Future Thoughts](Docs/Future-Thoughts.md) for the details.
+**The current Button Matrix PCB v3.2 does not support LED backlighting.** My Version 2 plan is a new frequency rotary-switch PCB, a new Button LED PCB, and a daughterboard for external regulated 5 V lighting power and control. I may be able to reuse the existing Main Board and socket-mounted Teensy, using connections freed up by the switch redesign; this still needs checking. **Version 2 is a long way off, so please don't wait for it if you want to build the ARC-210.** I have no finished redesign, confirmed upgrade price, or release date. See [Future Thoughts](Docs/Future-Thoughts.md) for the details.
 
 ## Project updates
 
