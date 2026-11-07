@@ -2,13 +2,13 @@
 
 # Future thoughts and plans
 
-**Last updated: November 7, 2026 at 2:48 PM MST (America/Denver)**
+**Last updated: November 7, 2026 at 2:53 PM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
 **Future upgrades:** It may be as long as **two years** before I return to this project with upgrades or a new version. Please treat future-version ideas as long-term plans, with no promised release date.
 
-- **Version 2 — frequency rotary switches:** I plan to replace the frequency rotary encoders with **rotary switches like those used in the real A-10's ARC-210**. This will require a **new frequency-control PCB to replace the current Rotary Encoder PCB**, along with firmware changes and mechanical fit checks. Using resistor ladders should free up Teensy signal pins compared with the encoders, so I may be able to **reuse the existing Main Board** and use the available connections for the new controls and lighting. I still need to verify the pin assignments, wiring, and compatibility.
+- **Version 2 — frequency rotary switches:** I plan to replace the frequency rotary encoders with **rotary switches like those used in the real A-10's ARC-210**. This will require a **new frequency-control PCB to replace the current Rotary Encoder PCB**, along with firmware changes and mechanical fit checks. Using resistor ladders should free up Teensy signal pins compared with the encoders, and I checked that J4 provides enough analog inputs and PWM outputs to **reuse the existing Main Board for five rotary switches and two backlight controls**. See the proposed pin assignment below. I still need to verify the pin assignments, wiring, and compatibility.
 
 - **Version 2 — lighting daughterboard:** I plan to make a **separate daughterboard to distribute the external regulated 5 V power needed for the LEDs**, with the lighting control and protection circuitry worked out during design. This is the proposed way to add lighting while trying to keep the existing Main Board. The daughterboard would not generate 5 V from the Teensy's 3.3 V supply; it would need an external regulated 5 V supply.
 
@@ -25,6 +25,30 @@ I recommend using **male pin headers on the Teensy and matching female socket st
 My aim is to reuse the existing Main Board, socket-mounted Teensy, faceplate, and other compatible parts where possible. The frequency encoders and their PCB would be replaced for the rotary-switch version. Illuminated buttons would also need suitable light-transmitting replacements. Compatibility still needs to be checked as the redesign develops.
 
 - I’ve asked PJRC about replacing Micro-USB with USB-C on a future Teensy 4.1 revision and posted on their forum to see what other builders think. A reversible connector would make cable connections behind the radio panels easier. This is a request and community discussion; no connector change has been confirmed.
+
+### Proposed reuse of the existing Main Board
+
+I checked the published Main Board's J4 encoder connector against its Teensy connections. **The existing Main Board has the signal connections needed for five rotary-switch resistor ladders and two independent backlight controls**, so I can plan around reusing it instead of replacing it solely to add these functions.
+
+This is a proposed Version 2 assignment. GPIO numbers below are the labels on the Teensy, not KiCad symbol pad numbers.
+
+| Proposed function | Main Board J4 pin | Teensy GPIO | Capability |
+| --- | ---: | --- | --- |
+| Frequency rotary switch 1 | 6 | 20 / A6 | Analog input |
+| Frequency rotary switch 2 | 5 | 21 / A7 | Analog input |
+| Frequency rotary switch 3 | 10 | 24 / A10 | Analog input |
+| Frequency rotary switch 4 | 12 | 26 / A12 | Analog input |
+| Frequency rotary switch 5 | 11 | 27 / A13 | Analog input |
+| Backlight control 1 | 7 | 22 | PWM output |
+| Backlight control 2 | 8 | 23 | PWM output |
+| Remaining encoder A/B | 2 / 1 | 16 / 17 | Digital inputs |
+| Shared ground | 13 / 14 | GND | Ground |
+
+J4 pins 3 and 4 (GPIO 28 and 29) and pin 9 (GPIO 25) remain available in this proposal. See the [PJRC Teensy 4.1 reference](https://www.pjrc.com/store/teensy41.html) for analog and PWM capabilities.
+
+The five resistor ladders must use **3.3 V**, keeping their outputs within the Teensy's input range. The two PWM signals would control **MOSFET lighting drivers on the daughterboard**; the LEDs would get power from an **external regulated 5 V supply**, with a shared ground. The Teensy pins would not supply LED power.
+
+This confirms the required signal capability on the existing Main Board, not a completed or tested Version 2 design. I still need to design the replacement frequency-control PCB and lighting daughterboard, finalize the wiring and remaining encoder assignment, update the firmware, and test the full assembly. The current encoder board cannot simply be plugged in unchanged under this new assignment.
 
 ## Other SIMPIT panels
 
