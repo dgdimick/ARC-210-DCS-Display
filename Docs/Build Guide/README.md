@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 3, 2026 at 12:42 AM MST (America/Denver)**
+**Last updated: November 8, 2026 at 7:47 AM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -9,6 +9,8 @@ Draft started October 29, 2026.
 I’m putting this guide together to help you build your own ARC-210 panel using a Teensy 4.1, a 3.5-inch ILI9488 LCD display connected by SPI, and my control boards. If this is your first panel, start by reading through the guide, then take the build one board at a time. You’re welcome to ask questions in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)—I’m happy to help where I can.
 
 **This guide is still a work in progress.** I mark unfinished details as **Pending** so you can see where I still need to finish the design, check an assembled board, take measurements, or add photographs. Check those notes before ordering parts or making a permanent connection; I’ll fill them in as I complete the build.
+
+I spend about **8 hours a day on my SIMPIT projects**, including working on the code, PCB design, assembly, and test fitting.
 
 ## Before you begin
 
@@ -86,7 +88,7 @@ You can get a complete bare-PCB set from me or order directly from a manufacture
 
 ### Estimated total build cost
 
-I know the build cost may stretch some budgets. I’ve shared [my thoughts on the cost and development work](../../parts/README.md#estimated-total-build-cost) in the parts list, including roughly 480 hours working on the code, hardware design, PCB design, and testing (about 8 hours a day) and US$500 in extra development parts. My development-time estimate includes work I did before I started using ChatGPT, as well as over 120 hours using ChatGPT and Codex to help with some of the more complex code. I’m sure my dog [Cody](../Cody%20not%20happy.jpg) isn’t happy about this.
+I know the build cost may stretch some budgets. I’ve shared [my thoughts on the cost and development work](../../parts/README.md#estimated-total-build-cost) in the parts list, including roughly 480 hours working on the code, hardware design, PCB design, and testing and US$500 in extra development parts. My development-time estimate includes work I did before I started using ChatGPT, as well as over 120 hours using ChatGPT and Codex to help with some of the more complex code. I’m sure my dog [Cody](../Cody%20not%20happy.jpg) isn’t happy about this.
 
 My PCBs are designed around the faceplate and layout I’m using, so they may not fit someone else’s custom panel. I’m sharing the [source code](../../Firmware/Source/Master_Program/README.md) so other builders can reuse it or adapt it to their own controls, displays, and wiring. Some changes may be needed, but I hope it gives people a useful starting point and saves them development time.
 
