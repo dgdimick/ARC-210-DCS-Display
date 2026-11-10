@@ -2,14 +2,14 @@
 
 # Related radio projects
 
-**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
+**Last updated: November 9, 2026 at 10:18 PM MST (America/Denver)**
 
 My current plan is to finish the **A-10C II (A-10C2) ARC-210 implementation**, then build and test the **ARC-164**, followed by the **ARC-186**. After those projects, I’ll return to additional aircraft support, starting with the **ARC-210 and C-130J**. Those aircraft extensions are later work, not the current implementation priority. I’m focusing on aircraft with a matching physical radio panel. **This order may change based on user feedback and interest.**
 
 Alongside the A-10C II ARC-210, I’m planning these radio projects for my DCS cockpit:
 
 - **[ARC-164 UHF radio panel](https://github.com/dgdimick/ARC-164-DCS-Display):** I’ll use a dedicated Teensy 4.1 to operate the panel through DCS-BIOS. I plan to put all five frequency encoders and the preset-channel encoder on one PCB, assuming there is enough room behind the faceplate.
-- **[ARC-186 COMM-VHF radio panel](https://github.com/dgdimick/ARC-186-DCS-Display):** I’ll also give this panel its own Teensy 4.1 and USB connection to DCS-BIOS, so it can be built and operated independently of the ARC-164.
+- **[ARC-186 COMM-VHF radio panel](https://github.com/dgdimick/ARC-186-DCS-Display):** I’m keeping my **existing panel with its smaller holes**, rather than buying a replacement with larger holes. I’m considering a **multilevel rotary-switch setup**, with switches and PCBs mounted at different depths. **Shaft/bushing fit, shaft reach, knob fit and clearances still need checking before I finalize the layout.** This is a tentative mounting plan. The panel will have its own USB connection to DCS-BIOS so it can be built and operated independently of the ARC-164; see its README for the current controller plan.
 
 - **[C-130J ARC-210 support](C-130J-Support.md):** I plan to reuse my existing ARC-210 faceplate, controls, display, PCBs, and printed parts. I’m keeping this work in the main ARC-210 repository, planning C-130J mappings and menu behavior for the shared ARC-210 code base; implementation and compatibility testing are later work.
 
