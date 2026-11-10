@@ -2,9 +2,9 @@
 
 # Related radio projects
 
-**Last updated: November 9, 2026 at 10:18 PM MST (America/Denver)**
+**Last updated: November 9, 2026 at 11:10 PM MST (America/Denver)**
 
-My current plan is to finish the **A-10C II (A-10C2) ARC-210 implementation**, then build and test the **ARC-164**, followed by the **ARC-186**. After those projects, I’ll return to additional aircraft support, starting with the **ARC-210 and C-130J**. Those aircraft extensions are later work, not the current implementation priority. I’m focusing on aircraft with a matching physical radio panel. **This order may change based on user feedback and interest.**
+I’ll **finish the ARC-164 PCBs**, then **take a break from design work and go back to testing the ARC-210**. **The ARC-186 and Version 2 plans can wait.** I haven’t set a date to return to those designs or additional aircraft support. I’m focusing any future aircraft extensions on aircraft with a matching physical radio panel. **Priorities may change based on feedback and interest; these are not fixed release dates.**
 
 Alongside the A-10C II ARC-210, I’m planning these radio projects for my DCS cockpit:
 
