@@ -1,6 +1,6 @@
-# ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 8, 2026
+# ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 9, 2026
 
-**Last updated: November 8, 2026 at 7:47 AM MST (America/Denver)**
+**Last updated: November 9, 2026 at 9:44 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -90,6 +90,8 @@ I offer separate 3D-printing help for builders who can’t build the panel becau
 [Read about the USB connection plan and purchased powered hubs](Docs/USB-Connections-and-Powered-Hubs.md) for why I am using USB instead of RS-485.
 
 I also own three other SIMPIT panels that use USB. I have used them for over **1,000 hours in the past year without any issues**.
+
+I plan to use this [Veeloon Micro-USB male to USB-C female adapter cable](https://www.amazon.com/dp/B0G5YZJLVZ?th=1) with the Teensy 4.1 to provide an accessible USB-C connection. The listing specifies a **0.6 ft (about 183 mm)** cable and **480 Mbps data transfer**. **I still need to test the actual adapter for Teensy programming, DCS-BIOS communication, and reliable operation.**
 
 ## DCS-BIOS
 
