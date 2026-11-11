@@ -2,7 +2,7 @@
 
 # USB connections and powered hubs
 
-**Last updated: November 10, 2026 at 8:26 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:30 PM MST (America/Denver)**
 
 I’m keeping **a dedicated Teensy 4.1 and USB connection to DCS-BIOS for each radio: the ARC-210, ARC-164, and ARC-186**. Three connections are manageable, and I can build, test, update, and troubleshoot each radio independently.
 
@@ -64,6 +64,12 @@ Ferrites won’t fix insufficient power, loose connections, switch bounce, or ev
 My DCS computer has an **ASUS ROG STRIX X870E-E GAMING WIFI** motherboard. Its rear connections include **ten USB 10 Gbps ports (nine USB-A and one USB-C), one USB 20 Gbps USB-C port, and two USB4 40 Gbps USB-C ports**. That gives me several places to connect the hubs directly. See the [ASUS motherboard specifications](https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi/spec/?config=90MB1IB0-MVAAY0).
 
 **I don’t expect USB bandwidth to limit the cockpit controls or radio panels.** Switch, encoder, and DCS-BIOS data traffic is small compared with storage transfers, cameras, or USB video. The Teensy 4.1 uses **USB 2.0 high speed at up to 480 Mbps**. A USB 3 port won’t make that connection faster, and 480 Mbps is the signaling rate rather than a measured application transfer rate. See the [PJRC Teensy 4.1 specifications](https://www.pjrc.com/store/teensy41.html).
+
+A hardware listing for this motherboard reports **six USB host controllers**. Three are on the Ryzen CPU, two are on the X870E chipset, and one is on the ASMedia ASM4242, which also exposes a USB4 router. I still need to verify which controllers are active on my DCS computer. [Motherboard hardware listing](https://iommu.info/mainboard/?board_name=ROG+STRIX+X870E-E+GAMING+WIFI&board_vendor=ASUSTeK+COMPUTER+INC.)
+
+With my 10-port and 16-port powered hubs plugged directly into two rear ports, I have **37 sockets available for devices**, with 26 on the hubs and 11 on the rear panel. Another 16-port hub plugged into a third rear port would bring that to **52 sockets**. Simultaneous device capacity depends on the host controllers the hubs use, the devices and endpoints each controller must handle, and the available bandwidth and power.
+
+On my DCS PC, I can open **Device Manager → View → Devices by connection**, expand the USB host controller and root hub branches, and trace each powered hub to its host controller. If the hubs have similar names, I can unplug and reconnect them one at a time to identify each entry. I can try another rear port and check the tree again to spread the hubs across controllers. [Microsoft USBView and Device Manager guidance](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/usbview)
 
 Devices on a hub share its upstream connection. USB 2.0 devices use the hub’s USB 2.0 connection rather than gaining its advertised USB 3 bandwidth, and separate motherboard sockets may still share controller resources. Powered hubs provide connections and power; they don’t increase the host controller’s device or endpoint capacity.
 
