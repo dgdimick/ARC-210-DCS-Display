@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 10, 2026
 
-**Last updated: November 10, 2026 at 8:15 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:16 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -93,6 +93,8 @@ The v0.1.6 Control Test for Teensy 4.1 adds the **ARC-210** USB product name to 
 I verified that the ARC-210 USB name test HEX reports **ARC-210** as its USB product name. In Device Manager, open **Ports (COM & LPT)**, right-click the panel's COM port, and select **Properties → Details → Bus reported device description** to see it.
 
 The registry change below is optional. Without it, Device Manager will typically list the panel as **USB Serial Device (COM5)** under **Ports (COM & LPT)**, using whichever COM number Windows assigns. With the v0.1.6 HEX loaded, **Properties → Details → Bus reported device description** will show **ARC-210**. The registry change makes the Ports list show **ARC-210 (COM5)**. Teensy programming and DCS-BIOS communication work with either display name.
+
+If I move the panel to another computer, Windows may assign it a different COM number. Select the new port in TekConnect. With firmware that reports **ARC-210**, the USB product name stays on the Teensy, and its hardware serial number normally stays the same. The custom Device Manager label is saved on each Windows computer, so renaming the port again is **optional**. The panel can be programmed and used with DCS-BIOS using the default Windows label.
 
 I set the Windows display name to **ARC-210 (COM5)** on my PC. To do the same, open **Windows PowerShell** with **Run as administrator** and run the commands below. If your panel is on a different port, change `COM5` in the first line. The commands check that the connected device reports **ARC-210** before renaming it.
 
