@@ -1,12 +1,16 @@
 # ARC-210 menu-system preview
 
-**Last updated: November 10, 2026 at 8:03 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:07 PM MST (America/Denver)**
 
 `ARC210_A-10C2_v0.1.2_Preview.hex` is the current Teensy 4.1 / ILI9488 480 × 320 display firmware, published for menu-screen and navigation testing. It is not a complete implementation of every radio function.
 
 ## USB name test build
 
 [Download the ARC-210 USB name test HEX](ARC210_A-10C2_USB-Name_Test.hex) to check the USB product name on a Teensy 4.1. I verified that Windows reads **ARC-210**. See the [Device Manager instructions](../../README.md#arc-210-usb-name-in-windows).
+
+## Control Test v0.1.6
+
+This Teensy 4.1 build adds the **ARC-210** USB product name to the v0.1.5 Control Test and shows **0.1.6** at startup. It compiled successfully. Panel and live DCS testing are pending. [Download the v0.1.6 Control Test HEX](ARC210_A-10C2_v0.1.6_Control_Test_Teensy41.hex).
 
 ## Bench diagnostic build — v0.1.3
 
