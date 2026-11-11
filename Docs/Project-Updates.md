@@ -2,13 +2,17 @@
 
 # Project updates
 
-**Last updated: November 6, 2026 at 1:37 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:01 PM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current bare PCB offer and separate 3D-printing help:** See [ARC-210 bare PCB offer and separate 3D-printing help](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details. If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
+
+**November 10, 2026 at 8:01 PM MST — ARC-210 USB name verified in Windows**
+
+I flashed the USB name test HEX and verified that Windows reads **ARC-210** as the USB product name. I also set the Windows display name to **ARC-210 (COM5)** on my PC using administrator permissions. [See the Device Manager instructions](../README.md#arc-210-usb-name-in-windows).
 
 **November 6, 2026 — ARC-210 connected to DCS**
 

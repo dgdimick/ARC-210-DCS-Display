@@ -2,7 +2,7 @@
 
 # Items that need to be completed
 
-**Last updated: November 10, 2026 at 7:42 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:01 PM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -18,4 +18,4 @@ I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before
 8. **Assembly pictures:** When the manufactured PCBs arrive and I start building, take pictures throughout assembly for the Build Guide, including component placement, soldering, wiring, and mounting. Include clear photos of both sides of the Button Matrix PCB, showing the switches on the front and the diodes and pin connectors on the back, with the silkscreen markings visible. Add those photos to the Button Matrix PCB README too.
 9. **On-screen test versions:** Add visible **V1.0** labels to the earlier button/encoder test and the standalone encoder test. Their current V1.0 filenames do not change the existing screen labels. I need to recover their matching source or recreate the tests, rebuild and check them on the panel, then update the HEX downloads and instructions so the on-screen version matches the filename.
 10. **USB-C adapter testing:** I confirmed DCSBridge panel control and Teensy programming on my ARC-210. I still need to check live DCS operation and reliable reconnection after unplugging the adapter.
-11. **USB product name:** Set the Teensy firmware to report **ARC-210** as its USB product name. Verify the reported name and confirm that the serial connection still works in Windows. Windows may still show a generic COM-port label in Device Manager.
+11. **USB product name:** I verified that the test HEX reports **ARC-210** in Windows. I still need to verify DCS-BIOS communication with this build and carry the USB name into the next firmware release. [See the Windows display name instructions](../README.md#arc-210-usb-name-in-windows).

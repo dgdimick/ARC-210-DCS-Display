@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 10, 2026
 
-**Last updated: November 10, 2026 at 7:42 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:01 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -33,7 +33,7 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 
 ## Items that need to be completed
 
-**Last updated: November 10, 2026 at 7:42 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:01 PM MST (America/Denver)**
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
@@ -53,21 +53,11 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 
 ## Project updates
 
-**Last updated: November 6, 2026 at 1:37 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:01 PM MST (America/Denver)**
 
-**November 6, 2026 — ARC-210 connected to DCS**
+**November 10, 2026 at 8:01 PM MST — ARC-210 USB name verified in Windows**
 
-[Watch the ARC-210 panel working with DCS](https://drive.google.com/file/d/1jLG8JLaTQ1RpAE6FKkDZAUxiwgUSQEKu/view?usp=drivesdk). This video shows my panel connected to DCS and working with the simulator.
-
-I’m still waiting for the manufactured PCBs, which are **expected by the end of November 2026**. Once they arrive, I’ll assemble and test the boards; this demonstration does not yet validate the manufactured PCB assembly.
-
-**November marks 16 months of work on this project.** It’s great to see the panel working with DCS after all that development and testing!
-
-**November 1, 2026 at 5:44 AM MST — Use the US$58.20 PCB cart estimate**
-
-I’m using **US$58.20** for the JLCPCB order in my build budget: **US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon**. This is for five copies of each of the four designs, or 20 bare boards. Shipping shown in that cart is included; coupon availability, shipping, and any additional duties or fees can vary. I did not submit or pay for an order.
-
-The panel parts estimate, including the faceplate, is now **US$267.72–US$300.72**, or about **US$268–US$301**. Delivery for other components and any additional applicable fees remain separate. See the [current quote breakdown](Docs/PCB-Manufacturing-JLCPCB.md#uploaded-file-checkout-estimate--november-1-2026) and [parts list](parts/README.md#estimated-build-cost).
+I flashed the USB name test HEX and verified that Windows reads **ARC-210** as the USB product name. I also set the Windows display name to **ARC-210 (COM5)** on my PC using administrator permissions. [See the Device Manager instructions](#arc-210-usb-name-in-windows).
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
@@ -92,6 +82,34 @@ I offer separate 3D-printing help for builders who can’t build the panel becau
 I also own three other SIMPIT panels that use USB. I have used them for over **1,000 hours in the past year without any issues**.
 
 I plan to use this [Veeloon Micro-USB male to USB-C female adapter cable](https://www.amazon.com/dp/B0G5YZJLVZ?th=1) with the Teensy 4.1 to provide an accessible USB-C connection. The listing specifies a **0.6 ft (about 183 mm)** cable and **480 Mbps data transfer**. **On my ARC-210, I used this adapter to control the panel through DCSBridge and successfully program the Teensy.** I still need to test it in live DCS and verify that it reconnects reliably after unplugging it.
+
+
+### ARC-210 USB name in Windows
+
+I verified that the ARC-210 USB name test HEX reports **ARC-210** as its USB product name. In Device Manager, open **Ports (COM & LPT)**, right-click the panel's COM port, and select **Properties → Details → Bus reported device description** to see it.
+
+I set the Windows display name to **ARC-210 (COM5)** on my PC. To do the same, open **Windows PowerShell** with **Run as administrator** and run the commands below. If your panel is on a different port, change `COM5` in the first line. The commands check that the connected device reports **ARC-210** before renaming it.
+
+```powershell
+$port = 'COM5'
+$devices = @(Get-PnpDevice -PresentOnly -Class Ports -ErrorAction Stop |
+    Where-Object {
+        $_.FriendlyName -like "*($port)" -and
+        $_.InstanceId -like 'USB\VID_16C0*'
+    })
+if ($devices.Count -ne 1) { throw "Expected one Teensy on $port." }
+
+$device = $devices[0]
+$product = Get-PnpDeviceProperty -InstanceId $device.InstanceId `
+    -KeyName DEVPKEY_Device_BusReportedDeviceDesc -ErrorAction Stop
+if ($product.Data -ne 'ARC-210') { throw "$port does not report ARC-210." }
+
+$key = 'HKLM:\SYSTEM\CurrentControlSet\Enum\' + $device.InstanceId
+Set-ItemProperty -LiteralPath $key -Name FriendlyName -Value "ARC-210 ($port)" -ErrorAction Stop
+Get-PnpDevice -InstanceId $device.InstanceId | Select-Object FriendlyName, Status
+```
+
+Reopen Device Manager if it still shows the old label. The display name applies to that device instance on the Windows PC where you ran the commands.
 
 ## DCS-BIOS
 
