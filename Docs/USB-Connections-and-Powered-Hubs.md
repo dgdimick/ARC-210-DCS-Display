@@ -2,7 +2,7 @@
 
 # USB connections and powered hubs
 
-**Last updated: November 10, 2026 at 8:31 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:33 PM MST (America/Denver)**
 
 I’m keeping **a dedicated Teensy 4.1 and USB connection to DCS-BIOS for each radio: the ARC-210, ARC-164, and ARC-186**. Three connections are manageable, and I can build, test, update, and troubleshoot each radio independently.
 
@@ -78,6 +78,27 @@ For my setup, I expect **power, controller resources, cable reliability, and hub
 ### Example layout for 256 USB devices
 
 I could connect **16 powered 16-port hubs** to get **256 downstream sockets**. One possible layout would put **four hubs on each of four independent USB host controllers**, giving each controller 64 peripherals plus the hubs and any devices already on that controller.
+
+```mermaid
+flowchart LR
+    PC["DCS PC"] --> A["USB controller 1"]
+    PC --> B["USB controller 2"]
+    PC --> C["USB controller 3"]
+    PC --> D["USB controller 4"]
+
+    A --> H1["Hubs 1–4<br/>4 × 16 ports"]
+    B --> H2["Hubs 5–8<br/>4 × 16 ports"]
+    C --> H3["Hubs 9–12<br/>4 × 16 ports"]
+    D --> H4["Hubs 13–16<br/>4 × 16 ports"]
+
+    H1 --> P1["64 USB device sockets"]
+    H2 --> P2["64 USB device sockets"]
+    H3 --> P3["64 USB device sockets"]
+    H4 --> P4["64 USB device sockets"]
+
+    classDef controller fill:#1d4ed8,color:#fff,stroke:#1e3a8a
+    class A,B,C,D controller
+```
 
 My motherboard has 13 rear USB ports. Connecting all 16 hubs directly would require at least three more connections from front-panel ports, internal headers brought out to a bracket, or a PCIe USB card. A card with its own host controller can also add controller capacity. I would check each hub in **Device Manager → View → Devices by connection** to verify which controller it uses. [ASUS port specifications](https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi/spec/#usb) · [Microsoft USBView](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/usbview)
 
