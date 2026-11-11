@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 10, 2026
 
-**Last updated: November 10, 2026 at 8:03 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:05 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -112,6 +112,8 @@ Get-PnpDevice -InstanceId $device.InstanceId | Select-Object FriendlyName, Statu
 ```
 
 Reopen Device Manager if it still shows the old label. The display name applies to that device instance on the Windows PC where you ran the commands.
+
+![Device Manager Ports list showing ARC-210 (COM5)](images/ARC-210-Device-Manager-COM5.png)
 
 ## DCS-BIOS
 
