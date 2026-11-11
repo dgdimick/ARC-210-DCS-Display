@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: November 10, 2026 at 8:11 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:15 PM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -16,7 +16,7 @@ I published the v0.1.6 Control Test for Teensy 4.1. It reports **ARC-210** as it
 
 **November 10, 2026 at 8:01 PM MST — ARC-210 USB name verified in Windows**
 
-I flashed the USB name test HEX and verified that Windows reads **ARC-210** as the USB product name. I also set the Windows display name to **ARC-210 (COM5)** on my PC using administrator permissions. [See the Device Manager instructions](../README.md#arc-210-usb-name-in-windows).
+I flashed the USB name test HEX and verified that Windows reads **ARC-210** as the USB product name. I also set the Windows display name to **ARC-210 (COM5)** on my PC using administrator permissions. That registry change is optional. Teensy programming and DCS-BIOS communication work with the default Windows port label too. [See the optional Device Manager instructions](../README.md#arc-210-usb-name-in-windows).
 
 **November 6, 2026 — ARC-210 connected to DCS**
 

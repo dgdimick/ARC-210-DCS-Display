@@ -2,7 +2,7 @@
 
 # DCS-BIOS setup — step by step
 
-**Last updated: November 1, 2026 at 7:41 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:15 PM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use the actual current America/Denver date and time, including MST or MDT. -->
 
@@ -191,6 +191,8 @@ Download [TekConnect](https://github.com/tekcreations/TekConnect), the app I use
 3. Open Windows **Device Manager → Ports (COM & LPT)** and identify its COM port. If unsure, unplug and reconnect it to see which port disappears and returns.
 4. Select that port in TekConnect and connect it. If it asks for a baud rate (connection speed), use the setting required by that panel’s firmware. I haven’t listed one setting for every controller here.
 5. Once the connection works, use TekConnect's automatic connection option if you want it to connect the port for you.
+
+Renaming the COM port in the Windows registry is **optional**. I can program the Teensy and use the panel with DCS-BIOS while Windows shows **USB Serial Device (COMx)**. Select the assigned COM port in TekConnect. [See the optional Windows display name instructions](../README.md#arc-210-usb-name-in-windows).
 
 Only one application should use a panel's COM port at a time. Close Serial Monitor or other applications using that COM port before connecting it in TekConnect. TekConnect manages the connection; it does not install DCS-BIOS, patch the Lua files, or program the Teensy.
 
