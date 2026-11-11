@@ -2,7 +2,7 @@
 
 # USB connections and powered hubs
 
-**Last updated: November 10, 2026 at 8:40 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:46 PM MST (America/Denver)**
 
 I’m keeping **a dedicated Teensy 4.1 and USB connection to DCS-BIOS for each radio: the ARC-210, ARC-164, and ARC-186**. Three connections are manageable, and I can build, test, update, and troubleshoot each radio independently.
 
@@ -29,7 +29,9 @@ I purchased these powered hubs for the **three radio panels and future cockpit p
 
 These are my choices for this build; other builders don’t need to buy the same hubs. Where practical, I’ll connect each hub directly to the PC and keep any daisy-chaining short. Controllers and displays share the hub’s available power, so I’ll check the completed panels’ current draw and test them together. Lighting and other larger loads may need separate power.
 
-I plan to buy a **Sipolar A-812 30-port powered USB 2.0 data hub** only if I need more ports as my cockpit grows. [Sipolar A-812 on Amazon](https://www.amazon.com/dp/B07MBSL3CR)
+## Optional hub upgrade
+
+I have yet to buy the **Sipolar A-812 30-port powered USB 2.0 data hub**. I will buy it only if I need more USB ports. [Sipolar A-812 on Amazon](https://www.amazon.com/dp/B07MBSL3CR)
 
 ## USB device limits as my cockpit grows
 
