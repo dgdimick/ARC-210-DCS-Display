@@ -2,7 +2,7 @@
 
 # USB connections and powered hubs
 
-**Last updated: October 30, 2026 at 9:15 PM MDT (America/Denver)**
+**Last updated: November 10, 2026 at 8:26 PM MST (America/Denver)**
 
 I’m keeping **a dedicated Teensy 4.1 and USB connection to DCS-BIOS for each radio: the ARC-210, ARC-164, and ARC-186**. Three connections are manageable, and I can build, test, update, and troubleshoot each radio independently.
 
@@ -28,6 +28,14 @@ I purchased these powered hubs for the **three radio panels and future cockpit p
 - [ACASIS powered 16-port USB hub](https://www.amazon.com/dp/B07G8S324L) — with a listed 96 W power adapter.
 
 These are my choices for this build; other builders don’t need to buy the same hubs. Where practical, I’ll connect each hub directly to the PC and keep any daisy-chaining short. Controllers and displays share the hub’s available power, so I’ll check the completed panels’ current draw and test them together. Lighting and other larger loads may need separate power.
+
+## USB device limits as my cockpit grows
+
+My **12 existing USB devices plus the three planned radio panels would make 15 connected devices**, before counting the hubs and any devices built into them. That is a reasonable expansion target, and I will test the complete setup as I add each radio.
+
+USB 2.0 allows up to **127 addressed devices per bus, including hubs**. Several motherboard sockets may share the same bus or controller. The practical limit can be lower because devices also use controller device slots and endpoints, share bandwidth, and need suitable power. The 127-device figure is a theoretical bus limit rather than a guaranteed capacity for my PC. See the [USB 2.0 overview](https://support.hp.com/hr-en/document/c01208644) and [Microsoft USB controller documentation](https://learn.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-3-0-driver-stack-architecture).
+
+Powered hubs give me more connections and power, while the attached devices still share the host controller resources. Additional USB controllers can provide more resources. I would need to check how my motherboard routes its ports across controllers to establish its practical capacity. My current 12-device setup has been reliable, and testing all 15 together will confirm how the expanded setup performs.
 
 ## Electronic noise and a full cockpit
 
