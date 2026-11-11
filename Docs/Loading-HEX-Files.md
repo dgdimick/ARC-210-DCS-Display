@@ -2,7 +2,7 @@
 
 # Loading the HEX File onto a Teensy 4.1
 
-**Last updated: November 10, 2026 at 7:39 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:13 PM MST (America/Denver)**
 
 I’m developing one shared ARC-210 code base for the planned aircraft, starting with the A-10C II and C-130J. It will automatically select the appropriate controls and display data for the aircraft you fly, using aircraft-specific DCS-BIOS mappings. **The plan is to switch between supported aircraft without reflashing the Teensy—just fly the aircraft. This support is still being developed and tested and is not available as a completed feature yet.** See the [aircraft support plan](C-130J-Support.md).
 
@@ -11,6 +11,8 @@ New aircraft support will require loading an updated HEX once; after that, I pla
 For the complete radio connection setup, file changes, and TekConnect instructions, follow the [DCS-BIOS setup guide](DCS-BIOS.md). The steps below cover programming the Teensy only.
 
 For assembly checks, use the [Final Hardware Test](../Firmware/Test%20Code/ARC210_Button_Test/README.md). The individual TFT, button, encoder, and switch tests are optional troubleshooting tools, not additional required assembly steps.
+
+Changing the Windows registry to rename the COM port is **optional**. The panel can be programmed and used with DCS-BIOS without that change. Windows will typically show **USB Serial Device (COMx)** in the Ports list. With the v0.1.6 Control Test or USB name test HEX loaded, **Properties → Details → Bus reported device description** shows **ARC-210**. Renaming the port only changes its label in the Ports list. [See the optional Device Manager renaming instructions](../README.md#arc-210-usb-name-in-windows).
 
 ## Ready to load the HEX file? Here's how you do it
 
