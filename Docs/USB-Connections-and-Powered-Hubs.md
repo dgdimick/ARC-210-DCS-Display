@@ -2,7 +2,7 @@
 
 # USB connections and powered hubs
 
-**Last updated: November 10, 2026 at 8:30 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:31 PM MST (America/Denver)**
 
 I’m keeping **a dedicated Teensy 4.1 and USB connection to DCS-BIOS for each radio: the ARC-210, ARC-164, and ARC-186**. Three connections are manageable, and I can build, test, update, and troubleshoot each radio independently.
 
@@ -74,3 +74,11 @@ On my DCS PC, I can open **Device Manager → View → Devices by connection**, 
 Devices on a hub share its upstream connection. USB 2.0 devices use the hub’s USB 2.0 connection rather than gaining its advertised USB 3 bandwidth, and separate motherboard sockets may still share controller resources. Powered hubs provide connections and power; they don’t increase the host controller’s device or endpoint capacity.
 
 For my setup, I expect **power, controller resources, cable reliability, and hub depth** to matter more than the radios’ bandwidth needs. Where practical, I’ll connect higher-bandwidth devices such as Quest Link, USB cameras, and external SSDs directly to the PC. My current 12-device setup works through one hub, and I’ll keep testing everything together as I expand it.
+
+### Example layout for 256 USB devices
+
+I could connect **16 powered 16-port hubs** to get **256 downstream sockets**. One possible layout would put **four hubs on each of four independent USB host controllers**, giving each controller 64 peripherals plus the hubs and any devices already on that controller.
+
+My motherboard has 13 rear USB ports. Connecting all 16 hubs directly would require at least three more connections from front-panel ports, internal headers brought out to a bracket, or a PCIe USB card. A card with its own host controller can also add controller capacity. I would check each hub in **Device Manager → View → Devices by connection** to verify which controller it uses. [ASUS port specifications](https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi/spec/#usb) · [Microsoft USBView](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/usbview)
+
+**I have not tested 256 devices together.** I would add hubs and devices in stages and test the actual peripherals together to see whether the controllers have enough device slots, endpoints, and bandwidth, and whether each hub can supply enough power. [USB host controller specification](https://cdrdv2-public.intel.com/625472/625472_xHCI_Rev1_2b.pdf)
