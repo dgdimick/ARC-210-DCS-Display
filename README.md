@@ -1,6 +1,6 @@
-# ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 9, 2026
+# ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 10, 2026
 
-**Last updated: November 9, 2026 at 11:10 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 7:33 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -33,7 +33,7 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 
 ## Items that need to be completed
 
-**Last updated: November 9, 2026 at 9:52 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 7:33 PM MST (America/Denver)**
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
@@ -91,7 +91,7 @@ I offer separate 3D-printing help for builders who can’t build the panel becau
 
 I also own three other SIMPIT panels that use USB. I have used them for over **1,000 hours in the past year without any issues**.
 
-I plan to use this [Veeloon Micro-USB male to USB-C female adapter cable](https://www.amazon.com/dp/B0G5YZJLVZ?th=1) with the Teensy 4.1 to provide an accessible USB-C connection. The listing specifies a **0.6 ft (about 183 mm)** cable and **480 Mbps data transfer**. **I still need to test the actual adapter for Teensy programming, DCS-BIOS communication, and reliable operation.**
+I plan to use this [Veeloon Micro-USB male to USB-C female adapter cable](https://www.amazon.com/dp/B0G5YZJLVZ?th=1) with the Teensy 4.1 to provide an accessible USB-C connection. The listing specifies a **0.6 ft (about 183 mm)** cable and **480 Mbps data transfer**. **On my ARC-210, I used this adapter to control the panel through DCSBridge and successfully program the Teensy.** I still need to test it in live DCS and verify that it reconnects reliably after unplugging it.
 
 ## DCS-BIOS
 
