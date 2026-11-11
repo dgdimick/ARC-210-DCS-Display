@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 10, 2026
 
-**Last updated: November 10, 2026 at 8:07 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:11 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -53,11 +53,11 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 
 ## Project updates
 
-**Last updated: November 10, 2026 at 8:01 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:11 PM MST (America/Denver)**
 
-**November 10, 2026 at 8:01 PM MST — ARC-210 USB name verified in Windows**
+**November 10, 2026 at 8:07 PM MST — ARC-210 Control Test v0.1.6**
 
-I flashed the USB name test HEX and verified that Windows reads **ARC-210** as the USB product name. I also set the Windows display name to **ARC-210 (COM5)** on my PC using administrator permissions. [See the Device Manager instructions](#arc-210-usb-name-in-windows).
+I published the v0.1.6 Control Test for Teensy 4.1. It reports **ARC-210** as its USB product name. I still need to test this build on the panel and in live DCS. [Download the v0.1.6 Control Test HEX](Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.1.6_Control_Test_Teensy41.hex).
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

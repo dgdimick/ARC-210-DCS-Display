@@ -2,13 +2,17 @@
 
 # Project updates
 
-**Last updated: November 10, 2026 at 8:01 PM MST (America/Denver)**
+**Last updated: November 10, 2026 at 8:11 PM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current bare PCB offer and separate 3D-printing help:** See [ARC-210 bare PCB offer and separate 3D-printing help](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details. If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
+
+**November 10, 2026 at 8:07 PM MST — ARC-210 Control Test v0.1.6**
+
+I published the v0.1.6 Control Test for Teensy 4.1. It reports **ARC-210** as its USB product name. I still need to test this build on the panel and in live DCS. [Download the v0.1.6 Control Test HEX](../Firmware/Master%20Hex%20Files/ARC210_A-10C2_v0.1.6_Control_Test_Teensy41.hex).
 
 **November 10, 2026 at 8:01 PM MST — ARC-210 USB name verified in Windows**
 
