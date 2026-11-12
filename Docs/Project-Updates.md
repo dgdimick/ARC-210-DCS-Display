@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: November 12, 2026 at 2:24 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 2:28 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -12,7 +12,7 @@ I use this page to share hardware and firmware changes, releases, testing milest
 
 **November 12, 2026 at 2:22 AM MST — TFT display bracket v.6**
 
-I published the v.6 TFT bracket after checking the fit with the display and a printed Button Matrix board. I redesigned the mount so the TFT screws right into the bracket. Use **four M3 × 6 mm screws** (M3 × 0.5 thread) and snug them up just enough to hold the display. **Don’t overtighten them.** It’s easy to strip the printed threads. The bracket is a tight fit on the Button Matrix PCB, but you’ll still need a little hot glue or silicone adhesive to secure the bracket to the board. [Download the v.6 STL](../Supporting%20STL%27s/Deep_Bracket_v.6.stl).
+I published the v.6 TFT bracket after checking the fit with the display and a printed Button Matrix board. I redesigned the mount so the TFT screws right into the bracket. Use **four M3 × 6 mm screws** (M3 × 0.5 thread) and snug them up just enough to hold the display. **Don’t overtighten them.** It’s easy to strip the printed threads. The bracket is a tight fit on the Button Matrix PCB, but you’ll still need a little hot glue or silicone adhesive to secure the bracket to the board. [Download the v.6 STL](../Supporting%20STL%27s/Deep_Bracket_v.6.stl). Both [master print sets](../Supporting%20STL%27s/README.md#complete-17-part-print-set) now include the v.6 bracket.
 
 **November 10, 2026 at 8:07 PM MST — ARC-210 Control Test v0.1.6**
 
