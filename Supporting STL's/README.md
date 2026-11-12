@@ -1,6 +1,6 @@
 # ARC-210 Supporting 3D Files — November 12, 2026
 
-**Last updated: November 12, 2026 at 2:28 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 2:29 AM MST (America/Denver)**
 
 **Both master downloads include the v.6 TFT bracket and the v4.2 Channel knob.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
@@ -48,7 +48,7 @@ I printed and fit-tested the earlier 17-part layout at 100% scale. I checked the
 
 The master layout measures approximately **187 × 127 mm**, with at least **8 mm clearance** between parts. It preserves each source part’s geometry and orientation and places every part on Z=0. Print one complete set at **100% scale**. Check your sliced preview, bed size, support needs, and space for brims or skirts. The 3MF uses millimeters and contains geometry only, without printer or filament settings. Individual files and the knob-only layouts remain available below.
 
-**Print settings:** Use a **0.20 mm or finer layer height** for the ARC-210 parts. The knobs print **without supports** in the supplied orientation. The **TFT display mount needs supports**. Check the sliced preview for support needs on the remaining parts. The shaft adapters will be hidden, but **black filament is preferred** if you have it available.
+**Print settings:** Use a **0.20 mm or finer layer height** for the ARC-210 parts. The knobs print **without supports** in the supplied orientation. The **TFT display mount needs supports**. Check the sliced preview for support needs on the remaining parts. Print the TFT bracket and any other black parts in **flat black (matte) filament**. The shaft adapters will be hidden, but I’d use matte black for those too if you have it handy.
 
 ## Knob Set V3
 
