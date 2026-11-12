@@ -1,6 +1,6 @@
 # ARC-210 Supporting 3D Files — November 12, 2026
 
-**Last updated: November 12, 2026 at 2:22 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 2:23 AM MST (America/Denver)**
 
 **The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
@@ -104,7 +104,7 @@ Updated October 30, 2026. I have printed this bracket at **100% scale**, and it 
 
 The current TFT display bracket is [Deep_Bracket_v.6.stl](Deep_Bracket_v.6.stl). I test-fitted it with the TFT and a printed Button Matrix board. Print at **100% scale with supports**. Use a **0.10 mm layer height** for the printed threads.
 
-Use **four M3 × 6 mm screws** (M3 × 0.5 thread). Tighten just until the TFT is secure. **Do not overtighten.** The printed threads can strip.
+I redesigned the TFT mount so four screws secure the display in the bracket without hot glue or silicone adhesive. Use **four M3 × 6 mm screws** (M3 × 0.5 thread). Tighten just until the TFT is secure. **Do not overtighten.** The printed threads can strip.
 
 The bracket is 14 mm tall with a 59 × 80 mm upper profile.
 

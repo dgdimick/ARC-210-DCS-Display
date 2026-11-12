@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 2:22 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 2:23 AM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -187,7 +187,7 @@ The SQL On/Off switch is the **A12515RNZQ solder-lug version with the longer sha
 
 ## 7. Dry-fit the faceplate, TFT, and boards
 
-Use the current TFT bracket, encoder spacers, switch shaft spacer, and faceplate. Use **four M3 × 6 mm screws** (M3 × 0.5 thread). Tighten just until the TFT is secure. **Do not overtighten.** The printed threads can strip. Check button movement and shaft alignment before soldering or fastening makes adjustment difficult.
+Use the current TFT bracket, encoder spacers, switch shaft spacer, and faceplate. I redesigned the TFT mount so four screws secure the display in the bracket without hot glue or silicone adhesive. Use **four M3 × 6 mm screws** (M3 × 0.5 thread). Tighten just until the TFT is secure. **Do not overtighten.** The printed threads can strip. Check button movement and shaft alignment before soldering or fastening makes adjustment difficult.
 
 The Main Board component bodies face **away from the faceplate**, on the back of the board. Version 1.1 includes the switch shaft and anti-rotation openings and four 3.5 mm mounting holes.
 
