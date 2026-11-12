@@ -2,13 +2,17 @@
 
 # Project updates
 
-**Last updated: November 10, 2026 at 8:15 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 2:22 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current bare PCB offer and separate 3D-printing help:** See [ARC-210 bare PCB offer and separate 3D-printing help](ARC-210-Parts-Offers.md) for current PCB and printed-set prices, availability, shipping, VAT, and import-charge details. If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
+
+**November 12, 2026 at 2:22 AM MST — TFT display bracket v.6**
+
+I published the v.6 TFT bracket after checking the fit with the display and a printed Button Matrix board. Use **four M3 × 6 mm screws** (M3 × 0.5 thread). Tighten just until the TFT is secure. **Do not overtighten.** The printed threads can strip. [Download the v.6 STL](../Supporting%20STL%27s/Deep_Bracket_v.6.stl).
 
 **November 10, 2026 at 8:07 PM MST — ARC-210 Control Test v0.1.6**
 

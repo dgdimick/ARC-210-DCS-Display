@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 8, 2026 at 7:47 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 2:22 AM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -69,7 +69,7 @@ The easiest starting point is the [master STL or 3MF download](../../Supporting%
 | [Frequency knob v.10.1](../../Supporting%20STL%27s/Freq_Knob_v.10.1.stl) | Print five at 100%; confirm fit on each shaft |
 | [Mode knob v.4](../../Supporting%20STL%27s/Mode_Knob_v.4.stl) | Print two at 100% |
 | [Channel knob v.4.2](../../Supporting%20STL%27s/Channel_Knob_v.4.2.stl) | Print one at 100% |
-| [TFT bracket v.5](../../Supporting%20STL%27s/Deep_Bracket_v.5.stl) | Print one at 100% |
+| [TFT bracket v.6](../../Supporting%20STL%27s/Deep_Bracket_v.6.stl) | Print one at 100% with supports |
 | [Rotary Encoder spacer v.1](../../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl) | **Print six**, one per encoder, to center the threads in the faceplate holes |
 | [SQL shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) | **Print one; required in all installations** to support the longer SQL On/Off switch shaft |
 | [SQL knob v1.2](../../Supporting%20STL%27s/SQL_Knob_v.1.2.stl) | Print one at 100%; retains the larger SQL socket |
@@ -187,7 +187,7 @@ The SQL On/Off switch is the **A12515RNZQ solder-lug version with the longer sha
 
 ## 7. Dry-fit the faceplate, TFT, and boards
 
-Use the current TFT bracket, encoder spacers, switch shaft spacer, and faceplate. Check button movement and shaft alignment before soldering or fastening makes adjustment difficult.
+Use the current TFT bracket, encoder spacers, switch shaft spacer, and faceplate. Use **four M3 × 6 mm screws** (M3 × 0.5 thread). Tighten just until the TFT is secure. **Do not overtighten.** The printed threads can strip. Check button movement and shaft alignment before soldering or fastening makes adjustment difficult.
 
 The Main Board component bodies face **away from the faceplate**, on the back of the board. Version 1.1 includes the switch shaft and anti-rotation openings and four 3.5 mm mounting holes.
 
