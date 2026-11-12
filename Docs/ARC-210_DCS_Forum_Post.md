@@ -1,6 +1,6 @@
 # ARC-210 DCS forum post
 
-**Last updated: November 1, 2026 at 7:25 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 2:52 AM MST (America/Denver)**
 
 > Historical forum-post draft. For current PCB releases, wiring, power, and firmware status, use the [main README](../README.md) and [parts documentation](../parts/README.md). The control-board manufacturing packages are now published; Main Board v1.1 fabrication files are also published; physical validation is pending.
 
@@ -23,7 +23,7 @@ Because this project will handle all **16 buttons**, the rotary encoders, rotary
 
 My PCB offer is **bare boards only**, not a complete parts kit. Builders buy the Teensy, display, controls, faceplate, wiring, and other components separately.
 
-The current JLCPCB-based parts estimate is **US$267.72–US$300.72** (about **US$268–US$301**), including the faceplate and the **US$58.20 PCB cart allowance** with displayed shipping and a US$15.00 coupon. Without that coupon, add US$15.00. Delivery for other components and any additional applicable duties, taxes, VAT, or carrier fees remain separate. See the [parts estimate](../parts/README.md#estimated-build-cost) and [both PCB purchasing options](ARC-210-Parts-Offers.md#both-pcb-purchasing-options). If you request them with my ARC-210 PCB set, I’ll include the complete 3D-printed parts set free of charge. Shipping and handling remain separate.
+The current JLCPCB-based parts estimate is **US$267.72–US$300.72** (about **US$268–US$301**), including the faceplate and the **US$58.20 PCB cart allowance** with displayed shipping and a US$15.00 coupon. Without that coupon, add US$15.00. Delivery for other components and any additional applicable duties, taxes, VAT, or carrier fees remain separate. See the [parts estimate](../parts/README.md#estimated-build-cost) and [both PCB purchasing options](ARC-210-Parts-Offers.md#both-pcb-purchasing-options). I’m happy to provide a free printed set whether you get your PCBs from me or elsewhere. Just cover shipping.
 
 I’ve also set up a GitHub repository where I’ll post project updates and files as the build progresses. There is already some test firmware available, including a basic TFT test that displays “Hello World” so you can verify that the Teensy and SPI TFT display are wired and working correctly.
 
