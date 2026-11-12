@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 3:31 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 6:26 AM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -69,7 +69,7 @@ The easiest starting point is the [master STL or 3MF download](../../Supporting%
 | [Frequency knob v.10.1](../../Supporting%20STL%27s/Freq_Knob_v.10.1.stl) | Print five at 100%; confirm fit on each shaft |
 | [Mode knob v.4](../../Supporting%20STL%27s/Mode_Knob_v.4.stl) | Print two at 100% |
 | [Channel knob v.4.2](../../Supporting%20STL%27s/Channel_Knob_v.4.2.stl) | Print one at 100% |
-| [TFT bracket v.6](../../Supporting%20STL%27s/Deep_Bracket_v.6.stl) | Print one at 100% in flat black (matte) filament with supports |
+| [TFT bracket v6.1](../../Supporting%20STL%27s/Deep_Bracket_v.6.1.stl) | Print one at 100% in flat black (matte) filament with supports |
 | [Rotary Encoder spacer v.1](../../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl) | **Print six**, one per encoder, to center the threads in the faceplate holes |
 | [SQL shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) | **Print one; required in all installations** to support the longer SQL On/Off switch shaft |
 | [SQL knob v1.2](../../Supporting%20STL%27s/SQL_Knob_v.1.2.stl) | Print one at 100%; retains the larger SQL socket |

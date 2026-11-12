@@ -1,6 +1,6 @@
 # ARC-210 Supporting 3D Files — November 12, 2026
 
-**Last updated: November 12, 2026 at 3:31 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 6:26 AM MST (America/Denver)**
 
 **Both master downloads include the v.6 TFT bracket and the v4.2 Channel knob.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
@@ -44,7 +44,7 @@ The master downloads include **all required printed parts for one panel**, at **
 - [Download the complete master STL](ARC-210-Complete-Print-Set-All-17.stl)
 - [Download the complete master 3MF with 17 separate objects](ARC-210-Complete-Print-Set-All-17.3mf)
 
-I printed and fit-tested the earlier 17-part layout at 100% scale. I checked the [v.6 TFT bracket](Deep_Bracket_v.6.stl) separately with the display and a printed Button Matrix board. Both master files now include v.6, and I checked that they contain the same 17 parts.
+I printed and fit-tested the earlier 17-part layout at 100% scale. I checked the [v.6 TFT bracket](Deep_Bracket_v.6.stl) separately with the display and a printed Button Matrix board. Both master files include v.6 and contain the same 17 parts. For clearance around the SQL shaft support spacer, swap in the [standalone v6.1 bracket](Deep_Bracket_v.6.1.stl).
 
 The master layout measures approximately **187 × 127 mm**, with at least **8 mm clearance** between parts. It preserves each source part’s geometry and orientation and places every part on Z=0. Print one complete set at **100% scale**. Check your sliced preview, bed size, support needs, and space for brims or skirts. The 3MF uses millimeters and contains geometry only, without printer or filament settings. Individual files and the knob-only layouts remain available below.
 
@@ -94,7 +94,7 @@ The shaft-fit adjustments are already built into the current STL files. The earl
 
 | Part | Quantity to print | Current STL | Purpose |
 | --- | ---: | --- | --- |
-| TFT display bracket | 1 | [Deep_Bracket_v.6.stl](Deep_Bracket_v.6.stl) | Fit-tested bracket with four printed M3 threads. |
+| TFT display bracket | 1 | [Deep_Bracket_v.6.1.stl](Deep_Bracket_v.6.1.stl) | Fit-tested bracket with four printed M3 threads. |
 | Rotary encoder spacer | 6 | [Rotary_Encoder_Spacer_v.1.stl](Rotary_Encoder_Spacer_v.1.stl) | Centers the rotary encoders in the faceplate holes. Print six. |
 | SQL On/Off rotary switch shaft support | 1 | [Shaft_Spacer_v.5.stl](Shaft_Spacer_v.5.stl) | Supports the longer shaft used by the SQL On/Off rotary switch; required in all installations. |
 
@@ -102,7 +102,7 @@ The shaft-fit adjustments are already built into the current STL files. The earl
 
 Updated October 30, 2026. I have printed this bracket at **100% scale**, and it passed its test fit.
 
-The current TFT display bracket is [Deep_Bracket_v.6.stl](Deep_Bracket_v.6.stl). I test-fitted it with the TFT and a printed Button Matrix board. Print at **100% scale with supports**. Use a **0.10 mm layer height** for the printed threads.
+The current TFT display bracket is [v6.1](Deep_Bracket_v.6.1.stl). I test-printed it and confirmed that it clears the SQL shaft support spacer and all four M3 × 6 mm screws fit. Print at **100% scale with supports**. Use a **0.10 mm layer height** for the printed threads.
 
 **Mount the TFT module upside down (rotated 180°)** so it clears the SQL shaft support spacer. The firmware rotates the image so it reads right side up from the front of the panel.
 
