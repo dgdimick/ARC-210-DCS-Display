@@ -1,8 +1,8 @@
 # ARC-210 Supporting 3D Files — November 12, 2026
 
-**Last updated: November 12, 2026 at 6:26 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 4:34 PM MST (America/Denver)**
 
-**Both master downloads include the v.6 TFT bracket and the v4.2 Channel knob.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
+**Both master downloads include the v6.1 TFT bracket and the v4.2 Channel knob.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
 **Current STL files — October 30, 2026:** Frequency knob **v10.1** is now available with a larger shaft socket and a successful physical fit test. The other published STL versions remain as listed below. The shaft spacer is **v.5**. Channel **v4.2** and SQL **v1.2** have the same outside size and small side hole, with different shaft holes; both have passed test fitting at **100%**.
 
@@ -36,7 +36,7 @@ The master downloads include **all required printed parts for one panel**, at **
 | Mode knob | 2 | v4 |
 | Channel knob | 1 | v4.2 |
 | SQL ON/OFF knob | 1 | v1.2 |
-| TFT display bracket | 1 | v.6 |
+| TFT display bracket | 1 | v6.1 |
 | Rotary encoder spacer | 6 | v1 |
 | SQL shaft support spacer | 1 | v5 |
 | **Total** | **17** | |
@@ -44,7 +44,7 @@ The master downloads include **all required printed parts for one panel**, at **
 - [Download the complete master STL](ARC-210-Complete-Print-Set-All-17.stl)
 - [Download the complete master 3MF with 17 separate objects](ARC-210-Complete-Print-Set-All-17.3mf)
 
-I printed and fit-tested the earlier 17-part layout at 100% scale. I checked the [v.6 TFT bracket](Deep_Bracket_v.6.stl) separately with the display and a printed Button Matrix board. Both master files include v.6 and contain the same 17 parts. For clearance around the SQL shaft support spacer, swap in the [standalone v6.1 bracket](Deep_Bracket_v.6.1.stl).
+I printed and fit-tested the earlier 17-part layout at 100% scale. I test-printed the [v6.1 TFT bracket](Deep_Bracket_v.6.1.stl) separately and confirmed it clears the SQL shaft support spacer and all four M3 × 6 mm screws fit. Both master downloads now include that bracket.
 
 The master layout measures approximately **187 × 127 mm**, with at least **8 mm clearance** between parts. It preserves each source part’s geometry and orientation and places every part on Z=0. Print one complete set at **100% scale**. Check your sliced preview, bed size, support needs, and space for brims or skirts. The 3MF uses millimeters and contains geometry only, without printer or filament settings. Individual files and the knob-only layouts remain available below.
 

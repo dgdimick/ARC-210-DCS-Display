@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 12, 2026
 
-**Last updated: November 12, 2026 at 6:26 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 4:34 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -53,11 +53,11 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 
 ## Project updates
 
-**Last updated: November 12, 2026 at 6:26 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 4:34 PM MST (America/Denver)**
 
 **November 12, 2026 at 6:26 AM MST — TFT display bracket v6.1**
 
-I test-printed v6.1 and confirmed that it clears the SQL shaft support spacer and all four M3 × 6 mm screws fit. I trimmed 3 mm from the inside edge and 2 mm from the top edge along Y on the X/Y 0/1 tab. [Download the v6.1 STL](Supporting%20STL%27s/Deep_Bracket_v.6.1.stl).
+I test-printed v6.1 and confirmed that it clears the SQL shaft support spacer and all four M3 × 6 mm screws fit. I trimmed 3 mm from the inside edge and 2 mm from the top edge along Y on the X/Y 0/1 tab. [Download the v6.1 STL](Supporting%20STL%27s/Deep_Bracket_v.6.1.stl). Both [master print sets](Supporting%20STL%27s/README.md#complete-17-part-print-set) now include v6.1.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

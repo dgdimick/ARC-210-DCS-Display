@@ -2,7 +2,7 @@
 
 # Project updates
 
-**Last updated: November 12, 2026 at 6:26 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 4:34 PM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -12,7 +12,7 @@ I use this page to share hardware and firmware changes, releases, testing milest
 
 **November 12, 2026 at 6:26 AM MST — TFT display bracket v6.1**
 
-I test-printed v6.1 and confirmed that it clears the SQL shaft support spacer and all four M3 × 6 mm screws fit. I trimmed 3 mm from the inside edge and 2 mm from the top edge along Y on the X/Y 0/1 tab. [Download the v6.1 STL](../Supporting%20STL%27s/Deep_Bracket_v.6.1.stl).
+I test-printed v6.1 and confirmed that it clears the SQL shaft support spacer and all four M3 × 6 mm screws fit. I trimmed 3 mm from the inside edge and 2 mm from the top edge along Y on the X/Y 0/1 tab. [Download the v6.1 STL](../Supporting%20STL%27s/Deep_Bracket_v.6.1.stl). Both [master print sets](../Supporting%20STL%27s/README.md#complete-17-part-print-set) now include v6.1.
 
 **November 12, 2026 at 2:22 AM MST — TFT display bracket v.6**
 
