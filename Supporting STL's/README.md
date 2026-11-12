@@ -48,7 +48,7 @@ The master downloads include **all required printed parts for one panel**, at **
 
 The master layout measures approximately **187 × 117 mm**, with at least **8 mm clearance** between parts. It preserves each source part’s geometry and orientation and places every part on Z=0. Print one complete set at **100% scale**. Check your sliced preview, bed size, support needs, and space for brims or skirts. The 3MF uses millimeters and contains geometry only, without printer or filament settings. Individual files and the knob-only layouts remain available below.
 
-**Print settings:** Use a **0.20 mm or finer layer height** for the ARC-210 parts. The knobs print **without supports** in the supplied orientation. The **TFT display mount needs supports**. Check the sliced preview for support needs on the remaining parts. Print all shaft adapters in **black filament**.
+**Print settings:** Use a **0.20 mm or finer layer height** for the ARC-210 parts. The knobs print **without supports** in the supplied orientation. The **TFT display mount needs supports**. Check the sliced preview for support needs on the remaining parts. The shaft adapters will be hidden, but **black filament is preferred** if you have it available.
 
 ## Knob Set V3
 
