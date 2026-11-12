@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 12, 2026
 
-**Last updated: November 12, 2026 at 2:23 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 2:24 AM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -53,11 +53,11 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 
 ## Project updates
 
-**Last updated: November 12, 2026 at 2:23 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 2:24 AM MST (America/Denver)**
 
 **November 12, 2026 at 2:22 AM MST — TFT display bracket v.6**
 
-I published the v.6 TFT bracket after checking the fit with the display and a printed Button Matrix board. I redesigned the TFT mount so four screws secure the display in the bracket without hot glue or silicone adhesive. Use **four M3 × 6 mm screws** (M3 × 0.5 thread). Tighten just until the TFT is secure. **Do not overtighten.** The printed threads can strip. [Download the v.6 STL](Supporting%20STL%27s/Deep_Bracket_v.6.stl).
+I published the v.6 TFT bracket after checking the fit with the display and a printed Button Matrix board. I redesigned the mount so the TFT screws right into the bracket. Use **four M3 × 6 mm screws** (M3 × 0.5 thread) and snug them up just enough to hold the display. **Don’t overtighten them.** It’s easy to strip the printed threads. The bracket is a tight fit on the Button Matrix PCB, but you’ll still need a little hot glue or silicone adhesive to secure the bracket to the board. [Download the v.6 STL](Supporting%20STL%27s/Deep_Bracket_v.6.stl).
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
