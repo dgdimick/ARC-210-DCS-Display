@@ -1,6 +1,6 @@
 # ARC-210 Supporting 3D Files — November 12, 2026
 
-**Last updated: November 12, 2026 at 2:29 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 3:31 AM MST (America/Denver)**
 
 **Both master downloads include the v.6 TFT bracket and the v4.2 Channel knob.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
@@ -103,6 +103,8 @@ The shaft-fit adjustments are already built into the current STL files. The earl
 Updated October 30, 2026. I have printed this bracket at **100% scale**, and it passed its test fit.
 
 The current TFT display bracket is [Deep_Bracket_v.6.stl](Deep_Bracket_v.6.stl). I test-fitted it with the TFT and a printed Button Matrix board. Print at **100% scale with supports**. Use a **0.10 mm layer height** for the printed threads.
+
+**Mount the TFT module upside down (rotated 180°)** so it clears the SQL shaft support spacer. The firmware rotates the image so it reads right side up from the front of the panel.
 
 I redesigned the mount so the TFT screws right into the bracket. Use **four M3 × 6 mm screws** (M3 × 0.5 thread) and snug them up just enough to hold the display. **Don’t overtighten them.** It’s easy to strip the printed threads. The bracket is a tight fit on the Button Matrix PCB, but you’ll still need a little hot glue or silicone adhesive to secure the bracket to the board.
 
