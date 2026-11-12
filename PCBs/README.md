@@ -1,12 +1,12 @@
 # ARC-210 PCBs
 
-**Last updated: November 12, 2026 at 2:52 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 3:11 AM MST (America/Denver)**
 
 Updated October 29, 2026.
 
 ## Buy a complete set of bare PCBs
 
-See my [ARC-210 bare PCB offer and separate 3D-printing help](../Docs/ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.** I’m happy to provide a free printed set whether you get your PCBs from me or elsewhere. Just cover shipping.
+See my [ARC-210 bare PCB offer and separate 3D-printing help](../Docs/ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. My bare PCB offer covers the ARC-210. I’ll offer printing help for the ARC-164 and ARC-186 once their printed parts are finalized. I’m happy to provide a free printed set whether you get your PCBs from me or elsewhere. Just cover shipping.
 
 ## No access to a 3D printer?
 

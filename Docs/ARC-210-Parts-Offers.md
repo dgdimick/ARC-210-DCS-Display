@@ -1,8 +1,8 @@
 # ARC-210 bare PCB offer and optional 3D-printing help
 
-**Last updated: November 12, 2026 at 3:05 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 3:11 AM MST (America/Denver)**
 
-I can provide bare PCBs to help other builders complete my ARC-210 panel. I also offer separate 3D-printing help for builders without a printer. **These offers are for the ARC-210 only. I don’t currently offer PCB or printed-parts sets for the ARC-164 or ARC-186.** All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
+I can provide bare PCBs to help other builders complete my ARC-210 panel. I also offer separate 3D-printing help for builders without a printer. This page covers the ARC-210. For planned printing help on the other radios, see the [ARC-164 offer](https://github.com/dgdimick/ARC-164-DCS-Display#free-3d-printed-parts) and [ARC-186 offer](https://github.com/dgdimick/ARC-186-DCS-Display#free-3d-printed-parts). All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
 
 ## Bare PCB set
 

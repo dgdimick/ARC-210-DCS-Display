@@ -2,7 +2,7 @@
 
 # Ordering the ARC-210 PCBs from JLCPCB
 
-**Last updated: November 12, 2026 at 2:52 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 3:11 AM MST (America/Denver)**
 
 I use [JLCPCB](https://jlcpcb.com/) to manufacture my PCBs. I’ve put these steps together so you can order the bare boards and solder the components yourself, even if this is your first panel. You don’t need to edit the KiCad designs or generate manufacturing files: use the ZIP downloads below.
 
@@ -70,7 +70,7 @@ I uploaded **Button Matrix v3.2** and checked the bare-board settings. JLCPCB de
 
 ## Buying a complete PCB set from me
 
-See my [ARC-210 PCB and printed-parts offers](ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. **These offers are for the ARC-210 only; ARC-164 and ARC-186 sets are not available yet.** I’m happy to provide a free printed set whether you get your PCBs from me or elsewhere. Just cover shipping.
+See my [ARC-210 PCB and printed-parts offers](ARC-210-Parts-Offers.md) for current prices, what’s included, materials, availability, shipping, VAT, and import charges. My bare PCB offer covers the ARC-210. I’ll offer printing help for the ARC-164 and ARC-186 once their printed parts are finalized. I’m happy to provide a free printed set whether you get your PCBs from me or elsewhere. Just cover shipping.
 
 ## No access to a 3D printer?
 
