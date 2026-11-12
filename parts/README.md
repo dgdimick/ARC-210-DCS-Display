@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 12, 2026 at 2:52 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 3:09 AM MST (America/Denver)**
 
 <a id="estimated-build-cost"></a>
 
@@ -25,6 +25,8 @@ This is primarily a DIY project. I share the files and build notes so you can ma
 **SQL On/Off:** I use the **C&K A12515RNZQ solder-lug rotary switch**, with its stop ring set to **two positions for 45° total travel**. Align the knob with the panel’s ON/OFF markings. See the [parts list](#component-selection-notes) for shaft-length and mounting details.
 
 Prices checked October 22, 2026, except the recommended Teensy with headers (October 29) and the uploaded-file JLCPCB cart estimate (November 1). The PCB cost uses the **US$58.20 JLCPCB cart estimate** from my [manufacturing cost comparison](../Docs/PCB-Manufacturing-JLCPCB.md). It covers five copies of each of the four designs—**20 bare boards total**, enough for one panel with spare boards. Small hardware costs remain allowances, and supplier prices can change.
+
+I bought most of my parts from DigiKey or Mouser Electronics. You can use lower-cost substitutes, but your mileage may vary.
 
 | Part / sourcing reference | Quantity needed | Estimated builder cost (USD) |
 | --- | ---: | ---: |
