@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 12, 2026
 
-**Last updated: November 12, 2026 at 4:34 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 4:41 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -10,7 +10,7 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 
 ## Current testing status
 
-**The panel is now working connected to DCS.** [Watch the demonstration video](https://drive.google.com/file/d/1jLG8JLaTQ1RpAE6FKkDZAUxiwgUSQEKu/view?usp=drivesdk). I’m still waiting for the manufactured PCBs, expected by the end of November 2026; assembly and electrical testing of those boards are still to come.
+**The panel is now working connected to DCS.** [Watch the demonstration video](https://drive.google.com/file/d/1jLG8JLaTQ1RpAE6FKkDZAUxiwgUSQEKu/view?usp=drivesdk). The manufactured PCBs have arrived. Assembly and electrical testing are next.
 
 **Assembly testing:** Use the [Final Hardware Test](Firmware/Test%20Code/ARC210_Button_Test/README.md). The individual TFT, button, encoder, and switch tests are optional troubleshooting tools; you don’t need to run them during normal assembly.
 
@@ -53,11 +53,11 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 
 ## Project updates
 
-**Last updated: November 12, 2026 at 4:34 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 4:41 PM MST (America/Denver)**
 
-**November 12, 2026 at 6:26 AM MST — TFT display bracket v6.1**
+**November 12, 2026 at 4:41 PM MST — Manufactured PCBs arrived**
 
-I test-printed v6.1 and confirmed that it clears the SQL shaft support spacer and all four M3 × 6 mm screws fit. I trimmed 3 mm from the inside edge and 2 mm from the top edge along Y on the X/Y 0/1 tab. [Download the v6.1 STL](Supporting%20STL%27s/Deep_Bracket_v.6.1.stl). Both [master print sets](Supporting%20STL%27s/README.md#complete-17-part-print-set) now include v6.1.
+The manufactured ARC-210 PCBs have arrived. Next I’ll assemble the boards and test them on the bench and with DCS.
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

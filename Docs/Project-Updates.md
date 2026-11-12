@@ -2,13 +2,17 @@
 
 # Project updates
 
-**Last updated: November 12, 2026 at 4:34 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 4:41 PM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current bare PCB offer and separate 3D-printing help:** See [ARC-210 bare PCB offer and separate 3D-printing help](ARC-210-Parts-Offers.md) for current PCB pricing, availability, shipping, VAT, and import-charge details. I’m happy to provide a free printed set whether you get your PCBs from me or elsewhere. Just cover shipping.
+
+**November 12, 2026 at 4:41 PM MST — Manufactured PCBs arrived**
+
+The manufactured ARC-210 PCBs have arrived. Next I’ll assemble the boards and test them on the bench and with DCS.
 
 **November 12, 2026 at 6:26 AM MST — TFT display bracket v6.1**
 
