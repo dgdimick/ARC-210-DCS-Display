@@ -1,6 +1,6 @@
 # ARC-210 bare PCB offer and optional 3D-printing help
 
-**Last updated: November 12, 2026 at 2:53 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 2:55 AM MST (America/Denver)**
 
 I can provide bare PCBs to help other builders complete my ARC-210 panel. I also offer separate 3D-printing help for builders without a printer. **These offers are for the ARC-210 only. I don’t currently offer PCB or printed-parts sets for the ARC-164 or ARC-186.** All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
 
@@ -52,7 +52,7 @@ These totals use the same **US$209.52–US$242.52** component and self-printing 
 
 The JLCPCB allowance is **US$41.10 fabrication + US$32.10 estimated shipping − a US$15.00 coupon = US$58.20**. Without that coupon, add **US$15.00** to the JLCPCB-based build total. Coupon eligibility, shipping, and any additional fees can vary. My set’s shipping and handling are separate. Delivery charges and any applicable taxes, VAT, or import fees not already included remain extra for both options. These are parts estimates, not assembled-kit prices or guaranteed delivered totals.
 
-On my own JLCPCB order, I paid **US$5.16 in tax** and **US$20.33 for shipping**. Your charges may vary by location.
+On my own JLCPCB order, I paid **US$5.16 in tax** and **US$20.33 for shipping**. Based on past orders, I’d budget **US$10.12 for shipping a single board order** and about **US$3.30 for shipping the small Rotary Switch PCBs if ordered separately**. Check your cart for the shipping charge to your address.
 
 The estimates retain the self-printing allowance for comparison. If you request the free printed set, you won’t need the US$3–US$8 filament allowance, so subtract that allowance from the applicable estimate. The JLCPCB-based total now uses the US$58.20 cart estimate.
 
