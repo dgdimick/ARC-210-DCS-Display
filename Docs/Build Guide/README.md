@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 10:14 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 11:06 PM MST (America/Denver)**
 
 **Soldering irons are HOT.** Handle the iron with care and wear eye protection while soldering or trimming leads.
 
@@ -213,7 +213,7 @@ For each seven-position rotary switch (MAIN and MOD):
 
 J1 pin 1 is 3.3 V, pin 2 is the signal, and pin 3 is GND.
 
-The SQL On/Off switch is the **A12515RNZQ solder-lug version with the longer shaft**. It does not fit directly into the PCB-terminal footprint. **Set the stop ring to two positions for 45° total travel between SQL ON and OFF.**
+The SQL On/Off switch is the **A12515RNZQ**, an **eight-position** switch with solder lugs and the longer shaft. Wire the solder lugs as described below. **Set the stop ring to two positions** so the switch moves just one click (45°) between OFF and ON.
 
 - **Direct wiring:** connect the switch common to the Main Board SQL signal and the selected contact to GND. Choose the contact for the intended electrical ON/OFF states. Set the stop ring to **two positions with 45° total travel**.
 - **Optional SQL PCB:** use wires from the solder-lug switch to the corresponding board connections. Leave R1–R6 unpopulated and bridge the board's JP1 ON/OFF solder jumper. Bridging means joining the jumper’s two pads with a small amount of solder. Follow its README for the contact and connector mapping.
