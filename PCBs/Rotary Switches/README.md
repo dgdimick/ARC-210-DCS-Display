@@ -1,6 +1,6 @@
 # ARC-210 Rotary Switch PCB — Version 2.0 — Final PCB design
 
-**Last updated: November 12, 2026 at 8:23 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 8:32 PM MST (America/Denver)**
 
 Updated October 12, 2026.
 
@@ -35,7 +35,9 @@ I modified the PCB so it can also be used with the SQL On/Off switch. **JP1**, m
 
 ### Check the resistor ladder before installing the switch
 
-With the PCB disconnected from power and the switch still off the board, set your VOM or multimeter to resistance (Ω). Touch one probe to each pad marked **Test Here**. With all six 1 kΩ resistors installed and JP1 open, you should read **close to 6 kΩ**. That checks the solder connections through all six resistors in series.
+1. Solder all six 1 kΩ resistors (R1–R6) and the J1 pin header first. Leave JP1 open.
+2. With the PCB disconnected from power, set your VOM or multimeter to resistance (Ω) and touch one probe to each pad marked **Test Here**. A reading **close to 6 kΩ** checks the solder connections through all six resistors in series.
+3. Once the board passes the test, solder on the rotary switch.
 
 ![Rotary Switch PCB with Test Here arrows pointing to the square pad and the lower-left round pad](Rotary-Switch-Resistor-Ladder-Test.png)
 

@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 8:24 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 8:32 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -181,9 +181,13 @@ Refer to the [Rotary Switch instructions](../../PCBs/Rotary%20Switches/README.md
 
 I use **10 mm and 13 mm deep-well sockets** to tighten the **mounting nuts on the rotary switches and encoders**. Use whichever socket fits each nut; the deep well provides clearance over the shaft.
 
-For each of the two seven-position controls, use the C&K **A12505RNCQ PCB-terminal switch**, fit all six 1 kΩ resistors R1–R6, and leave JP1 open. J1 pin 1 is 3.3 V, pin 2 is the signal, and pin 3 is GND. Set the travel stops and knob orientation to suit the faceplate.
+For each of the two seven-position controls:
 
-Before installing the switch, disconnect the board from power and measure between the two pads marked **Test Here** in the [resistor ladder test photo](../../PCBs/Rotary%20Switches/README.md#check-the-resistor-ladder-before-installing-the-switch). You should read **close to 6 kΩ** with all six resistors installed and JP1 open.
+1. Solder all six 1 kΩ resistors (R1–R6) and the J1 pin header first. Leave JP1 open.
+2. With the board disconnected from power, measure between the two pads marked **Test Here** in the [resistor ladder test photo](../../PCBs/Rotary%20Switches/README.md#check-the-resistor-ladder-before-installing-the-switch). The meter should read **close to 6 kΩ**.
+3. Once the board passes the test, solder on the C&K **A12505RNCQ PCB-terminal switch**. Set the travel stops and knob orientation to suit the faceplate.
+
+J1 pin 1 is 3.3 V, pin 2 is the signal, and pin 3 is GND.
 
 The SQL On/Off switch is the **A12515RNZQ solder-lug version with the longer shaft**. It does not fit directly into the PCB-terminal footprint. **Set the stop ring to two positions for 45° total travel between SQL ON and OFF.**
 
