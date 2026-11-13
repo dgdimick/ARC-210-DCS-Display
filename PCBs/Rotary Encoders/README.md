@@ -1,6 +1,6 @@
 # ARC-210 Rotary Encoder PCB
 
-**Last updated: November 7, 2026 at 1:05 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 8:32 PM MST (America/Denver)**
 
 Version **1.4 — Final PCB design**, updated October 12, 2026.
 
@@ -13,6 +13,10 @@ Version 1.4 publishes the latest saved PCB layout and project settings, includin
 For version 1.3, I checked this six-encoder PCB against its schematic. The electrical check reported zero errors and warnings; the PCB check reported zero violations, zero unconnected pads and zero schematic parity issues under the project's saved check settings. Courtyard and certain footprint checks are disabled in those settings.
 
 I printed the rotary-encoder STL and confirmed that it fits, and all six encoders worked together in the combined hardware test. Testing an assembled, manufactured PCB is still on my list. The check results above explain what has been verified so far.
+
+## Assembly order
+
+**Solder the 14-pin J1 header on the back of the PCB first.** The rotary encoders will block access to the header’s solder pads once they’re installed. Install and solder the encoders after the header is in place.
 
 ## Open the project
 
