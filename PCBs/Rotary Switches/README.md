@@ -1,6 +1,6 @@
 # ARC-210 Rotary Switch PCB — Version 2.0 — Final PCB design
 
-**Last updated: November 7, 2026 at 1:14 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 8:23 PM MST (America/Denver)**
 
 Updated October 12, 2026.
 
@@ -32,6 +32,12 @@ I modified the PCB so it can also be used with the SQL On/Off switch. **JP1**, m
 
 - **SQL On/Off:** omit all six resistors R1–R6 and bridge JP1 with solder. Connect J1 pin 2 (switch common A1) to a Teensy input configured with a pull-up, and J1 pin 3 to GND. Selecting terminal 2 pulls the input LOW; an ungrounded contact reads HIGH. J1 pin 1 is not needed for this configuration. Choose the contact for the intended electrical ON/OFF states. Set the stop ring to **two positions with 45° total travel**.
 - **Resistor ladder:** fit all six resistors R1–R6 and leave JP1 open. Use the three J1 connections listed above.
+
+### Check the resistor ladder before installing the switch
+
+With the PCB disconnected from power and the switch still off the board, set your VOM or multimeter to resistance (Ω). Touch one probe to each pad marked **Test Here**. With all six 1 kΩ resistors installed and JP1 open, you should read **close to 6 kΩ**. That checks the solder connections through all six resistors in series.
+
+![Rotary Switch PCB with Test Here arrows pointing to the square pad and the lower-left round pad](Rotary-Switch-Resistor-Ladder-Test.png)
 
 The solder-lug A12515RNZQ still requires mechanical support and wires to the corresponding PCB connections; it does not fit the PCB-pin footprint directly.
 
