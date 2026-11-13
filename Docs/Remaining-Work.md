@@ -2,7 +2,7 @@
 
 # Items that need to be completed
 
-**Last updated: November 13, 2026 at 1:27 AM MST (America/Denver)**
+**Last updated: November 13, 2026 at 1:53 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
@@ -16,4 +16,4 @@ I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before
 6. **Assembly pictures:** When the manufactured PCBs arrive and I start building, take pictures throughout assembly for the Build Guide, including component placement, soldering, wiring, and mounting. Include clear photos of both sides of the Button Matrix PCB, showing the switches on the front and the diodes and pin connectors on the back, with the silkscreen markings visible. Add those photos to the Button Matrix PCB README too.
 7. **On-screen test versions:** Add visible **V1.0** labels to the earlier button/encoder test and the standalone encoder test. Their current V1.0 filenames do not change the existing screen labels. I need to recover their matching source or recreate the tests, rebuild and check them on the panel, then update the HEX downloads and instructions so the on-screen version matches the filename.
 8. **USB-C adapter testing:** I confirmed DCSBridge panel control and Teensy programming on my ARC-210. I still need to check live DCS operation and reliable reconnection after unplugging the adapter.
-9. **Optional Windows USB display name utility:** Verify that Teensy Loader and DCS-BIOS still work after applying and undoing the display name change on the panel. [Utility and instructions](../Tools/README.md).
+9. **Optional Windows USB display name utility:** Rename and restore passed on COM5. On the flight sim PC, use the utility with the assigned COM port and verify Teensy Loader and live DCS-BIOS with both labels. [Utility and instructions](../Tools/README.md).
