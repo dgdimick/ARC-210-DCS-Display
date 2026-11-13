@@ -24,7 +24,13 @@ The SQL shaft support spacer v.5 remains required in all installations.
 
 [Download Header USB Support v.1.0](Header_USB_Support_v.1.0.stl)
 
-This optional cradle supports the USB plug when the Teensy is mounted in female headers. It is 21 mm long with a 10 mm cradle floor and zip-tie slots spaced 15.24 mm apart to match the Main Board. Print it flat at 100% scale. With the plug fully seated, check that it rests in the cradle before tightening the tie. The STL is a separate download from the 17-part master print sets.
+This optional cradle supports the USB plug when the Teensy is mounted in female headers. It is 21 mm long with a 10 mm cradle floor and zip-tie slots spaced 15.24 mm apart to match the Main Board. Print it flat at 100% scale. With the plug fully seated, check that it rests in the cradle before tightening the tie. Put the zip-tie locking head on the opposite side of the Main Board from the cradle so the cradle can sit flat against the PCB. The STL is a separate download from the 17-part master print sets.
+
+## Direct-Solder USB Support v.1.0
+
+[Download Direct-Solder USB Support v.1.0](Direct_Solder_USB_Support_v.1.0.stl)
+
+Use this optional cradle when the Teensy is soldered directly to the Main Board. It has a 20 × 21 mm footprint, a 2 mm cradle floor, and zip-tie slots spaced 15.24 mm apart. Print it flat at 100% scale. Put the zip-tie locking head on the opposite side of the Main Board so the cradle sits flat. This STL is a separate download from the 17-part master print sets.
 
 ## Complete 17-part print set
 
