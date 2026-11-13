@@ -1,8 +1,10 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 6:26 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 8:13 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
+
+**Check both sides after soldering.** These are two-layer PCBs with plated through-holes. Heat the pad and the pin together so the solder flows through the hole. Check that you can see solder around the pin on both sides of the board wherever the joint is visible. Use just enough to make the joint and check for bridges between adjacent pads.
 
 Draft started October 29, 2026.
 
