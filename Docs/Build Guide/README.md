@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 9:23 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:24 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -176,7 +176,7 @@ Button positions and the final v3.1 board fit have been checked. **Pending:** ph
 
 Start with the [Rotary Encoder instructions](../../PCBs/Rotary%20Encoders/README.md). This board holds the five frequency encoders and the channel encoder. An encoder reports which way you turn it; it is different from the fixed-position rotary switches in step 6.
 
-**Solder the 14-pin J1 header on the back of the PCB first.** The rotary encoders will block access to the header’s solder pads once they’re installed. Install and solder the encoders after the header is in place.
+**Solder the 14-pin J1 header on the back of the PCB first.** The rotary encoders will block access to the header’s solder pads once they’re installed. Install and solder the encoders after the header is in place. **Line up all the encoder pins with their holes before pressing the encoder into the PCB.** The pins bend easily and can break if forced.
 
 - Use six Bourns **PEC11H-4220F-S0024** encoders.
 - Fit the 14-pin connector using the board orientation shown in its project. J1 pins 13 and 14 are GND.

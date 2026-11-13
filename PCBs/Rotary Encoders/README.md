@@ -1,6 +1,6 @@
 # ARC-210 Rotary Encoder PCB
 
-**Last updated: November 12, 2026 at 8:32 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:24 PM MST (America/Denver)**
 
 Version **1.4 — Final PCB design**, updated October 12, 2026.
 
@@ -16,7 +16,7 @@ I printed the rotary-encoder STL and confirmed that it fits, and all six encoder
 
 ## Assembly order
 
-**Solder the 14-pin J1 header on the back of the PCB first.** The rotary encoders will block access to the header’s solder pads once they’re installed. Install and solder the encoders after the header is in place.
+**Solder the 14-pin J1 header on the back of the PCB first.** The rotary encoders will block access to the header’s solder pads once they’re installed. Install and solder the encoders after the header is in place. **Line up all the encoder pins with their holes before pressing the encoder into the PCB.** The pins bend easily and can break if forced.
 
 ## Open the project
 
