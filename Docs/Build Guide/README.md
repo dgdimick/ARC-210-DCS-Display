@@ -1,6 +1,8 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 9:43 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:44 PM MST (America/Denver)**
+
+If you need any help or my instructions aren't clear, please contact me via [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I'm happy to help where I can.
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
