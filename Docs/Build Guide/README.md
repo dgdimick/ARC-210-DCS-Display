@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 10:00 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 10:14 PM MST (America/Denver)**
 
 **Soldering irons are HOT.** Handle the iron with care and wear eye protection while soldering or trimming leads.
 
@@ -192,7 +192,7 @@ Start with the [Rotary Encoder instructions](../../PCBs/Rotary%20Encoders/README
 
 **Solder the 14-pin J1 header on the back of the PCB first.** The rotary encoders will block access to the header’s solder pads once they’re installed. Install and solder the encoders after the header is in place. **Line up all the encoder pins with their holes before pressing the encoder into the PCB.** The pins bend easily and can break if forced.
 
-- Use six Bourns **PEC11H-4220F-S0024** encoders.
+- Use six Bourns **PEC11H-4220F-S0024** encoders. The shaft measures **20 mm** from the front of the encoder body to the tip. The threaded bushing is **7 mm** long, leaving **13 mm** beyond the threads before you install the washer, nut, or faceplate. The flat is **10 mm** long. [Bourns datasheet, page 2](https://www.bourns.com/docs/Product-Datasheets/PEC11H.pdf#page=2)
 - Fit the 14-pin connector using the board orientation shown in its project. J1 pins 13 and 14 are GND.
 - The encoders' push-switch contacts are unused in this design.
 - Fit the **six printed encoder spacers**, one at each encoder's threaded faceplate mounting section.
