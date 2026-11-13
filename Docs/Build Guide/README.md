@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 9:10 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:13 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -150,13 +150,13 @@ Start with the [Button Matrix instructions and connector table](../../PCBs/Butto
 
 **Photo reminder for my next assembly:** Once the manufactured PCBs arrive and I start building, I’ll add front-and-back photos here showing the switches on the front and the diodes and pin connectors on the back, with the silkscreen markings visible.
 
-- Fit sixteen **6 × 6 × 5 mm** SPST momentary tactile switches on the front.
-- Fit D5–D20, the sixteen 1N4148 diodes, and the row/column connectors on the back. Follow the schematic and polarity markings; the diode cathodes connect to the row lines. The band on a 1N4148 diode marks its cathode end—check that it matches the board marking before soldering.
-- J1 and J2 are separate four-pin row and column connectors. They connect to the Main Board's eight-pin J2 according to the project's mapping.
-- The large 12 mm opening provides SQL switch pass-through clearance.
-- After soldering, use flush cutters to trim the diode leads and pin-header pins protruding from the **front side of the PCB** so the board can sit flush behind the faceplate. Trim close to the solder joints without cutting into the joints or PCB pads, then remove the clipped pieces before mounting the board.
+**Solder the diodes first.** Install the sixteen 1N4148 diodes (D5–D20) on the back of the PCB. Match each diode’s band (cathode) to the silkscreen before soldering.
 
-After trimming, I went back and added a small amount of solder to the diode holes to ensure a good connection. Keep the solder low enough for the PCB to sit flush behind the faceplate.
+On the front, use flush cutters to trim the diode leads as close to the PCB as you can without cutting into the pads. If a joint needs a touch-up after trimming, briefly touch it with a clean soldering iron tip to reflow the existing solder. It should leave a small, low bead around the lead so the PCB can sit flush behind the faceplate.
+
+Install the row and column pin headers on the back and the sixteen **6 × 6 × 5 mm** momentary tactile switches on the front. Trim any protruding header pins on the front and clear away the clippings before mounting the PCB.
+
+J1 and J2 are separate four-pin row and column connectors. They connect to the Main Board’s eight-pin J2 according to the project’s mapping. The 12 mm opening provides SQL switch pass-through clearance.
 
 <p align="center">
   <a href="../../images/Button-Matrix-Front-Trimmed-Leads.jpg">

@@ -1,6 +1,6 @@
 # ARC-210 Button Matrix PCB
 
-**Last updated: November 7, 2026 at 1:05 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:13 PM MST (America/Denver)**
 
 **October 30, 2026 — v3.2 released:** Removed the duplicate approximately 13.38 mm Edge.Cuts circle at H3; the intended opening remains a **12.0 mm non-plated hole**. Board and schematic revisions and the silkscreen are now **3.2**. I moved H3’s reference label clear of the hole’s solder-mask opening. There are no electrical changes. Gerbers and drills were freshly exported with KiCad 10.0.7; fresh ERC/DRC checks report zero violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. Use the [v3.2 manufacturing ZIP](Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) for new orders.
 
@@ -57,9 +57,11 @@ These front and back pictures show the earlier **v3.0** layout. The current v3.2
 
 ## Trim front-side leads before mounting
 
-After soldering the back-mounted diodes and pin headers, use **flush cutters** to trim the diode leads and pin-header pins protruding from the **front side of the PCB** so the board can sit flush behind the faceplate. Trim close to the solder joints without cutting into the joints or PCB pads, then remove the clipped pieces before mounting the board.
+**Solder the diodes first.** Install the sixteen 1N4148 diodes (D5–D20) on the back of the PCB. Match each diode’s band (cathode) to the silkscreen before soldering.
 
-After trimming, I went back and added a small amount of solder to the diode holes to ensure a good connection. Keep the solder low enough for the PCB to sit flush behind the faceplate.
+On the front, use flush cutters to trim the diode leads as close to the PCB as you can without cutting into the pads. If a joint needs a touch-up after trimming, briefly touch it with a clean soldering iron tip to reflow the existing solder. It should leave a small, low bead around the lead so the PCB can sit flush behind the faceplate.
+
+Install the row and column pin headers on the back and the tactile switches on the front. Trim any protruding header pins on the front and clear away the clippings before mounting the PCB.
 
 <p align="center">
   <a href="../../images/Button-Matrix-Front-Trimmed-Leads.jpg">
