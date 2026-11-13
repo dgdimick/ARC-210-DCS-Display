@@ -1,12 +1,12 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 9:27 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:28 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
 **New to soldering?** There are plenty of YouTube videos that show how to solder through-hole parts. A soldering practice kit is also a great way to get comfortable with the iron before you start on the radio boards. [Find soldering practice kits on Amazon](https://www.amazon.com/s?k=learn+soldering).
 
-If your hands are shaking while you solder, try cutting back on caffeine, taking a break, or setting the project aside for a while. Remember, this project should be fun.
+If your hands are shaking while you solder, try cutting back on caffeine, taking a break, or setting the project aside for a while. I’ve found that if I drink too much coffee, my hands shake when I solder. Remember, this project should be fun.
 
 **Optional cleanup before soldering.** The PCBs usually arrive clean. If you see any residue from manufacturing, wipe it off with a clean, lint-free cloth lightly dampened with isopropyl rubbing alcohol. Let the board dry completely before soldering.
 
