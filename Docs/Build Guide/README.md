@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 9:24 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:25 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -12,7 +12,7 @@ While I could have used surface-mount (SMD) parts to make the boards smaller, I 
 
 **Rotary encoder mounting tabs.** Use the largest soldering iron tip you have. Heat the tab and pad together, add solder, and lift the iron. Let the joint cool for a few seconds between passes, then repeat as needed until the solder wets both the tab and the pad.
 
-**Check both sides after soldering.** These are two-layer PCBs with plated through-holes. Heat the pad and the pin together so the solder flows through the hole. Check that you can see solder around the pin on both sides of the board wherever the joint is visible. Use just enough to make the joint and check for bridges between adjacent pads.
+**Check both sides after soldering.** These are two-layer PCBs with plated through-holes. Heat the pad and the pin together so the solder flows through the hole. Check that you can see solder around the pin on both sides of the board wherever the joint is visible. Use just enough to make the joint and check for bridges between adjacent pads. Inspect each solder joint before trimming the excess leads. Resolder any poor joints before cutting the leads.
 
 <img src="Through-Hole-Solder-Example.jpg" alt="Solder visible around a resistor lead on the component side of the PCB" width="360">
 
