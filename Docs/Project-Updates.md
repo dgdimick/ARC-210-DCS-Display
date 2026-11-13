@@ -2,13 +2,17 @@
 
 # Project updates
 
-**Last updated: November 12, 2026 at 9:10 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 1:17 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current bare PCB offer and separate 3D-printing help:** See [ARC-210 bare PCB offer and separate 3D-printing help](ARC-210-Parts-Offers.md) for current PCB pricing, availability, shipping, VAT, and import-charge details. I’m happy to provide a free printed set whether you get your PCBs from me or elsewhere. Just cover shipping.
+
+**November 13, 2026 at 1:17 AM MST — Teensy USB cable supports are available**
+
+I’ve posted two printable cradles to take strain off the Teensy’s USB connector. Use the [10 mm Header USB Support v.1.0](../Supporting%20STL%27s/Header_USB_Support_v.1.0.stl) if your Teensy plugs into female headers, or the [2 mm Direct-Solder USB Support v.1.0](../Supporting%20STL%27s/Direct_Solder_USB_Support_v.1.0.stl) if it’s soldered directly to the Main Board. Put the zip-tie locking head on the opposite side of the board so the cradle sits flat.
 
 **November 12, 2026 at 9:10 PM MST — Rotary Switch PCBs passed assembly testing**
 
