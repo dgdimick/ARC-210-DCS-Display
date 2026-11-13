@@ -1,10 +1,10 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 9:52 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:54 PM MST (America/Denver)**
 
 If you get stuck or something in this guide isn't clear, just ask me in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I once spent three hours on the phone talking a lady through installing a new garbage disposal. I'm happy to help you with your build, too.
 
-While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
+I chose through-hole parts so you can solder these boards with basic tools.
 
 **New to soldering?** There are plenty of YouTube videos that show how to solder through-hole parts. A soldering practice kit is also a great way to get comfortable with the iron before you start on the radio boards. If you bought a soldering practice kit, it may already include solder. [Find soldering practice kits on Amazon](https://www.amazon.com/s?k=learn+soldering).
 
@@ -30,7 +30,7 @@ Draft started October 29, 2026.
 
 I’m putting this guide together to help you build your own ARC-210 panel using a Teensy 4.1, a 3.5-inch ILI9488 LCD display connected by SPI, and my control boards. If this is your first panel, start by reading through the guide, then take the build one board at a time. You’re welcome to ask questions in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)—I’m happy to help where I can.
 
-**This guide is still a work in progress.** I mark unfinished details as **Pending** so you can see where I still need to finish the design, check an assembled board, take measurements, or add photographs. Check those notes before ordering parts or making a permanent connection; I’ll fill them in as I complete the build.
+**This guide is still a work in progress.** When you see **Pending**, that’s something I still need to finish, test, measure, or photograph. Check those notes before ordering parts or making a permanent connection. I’ll fill in the details as I go.
 
 I spend about **8 hours a day on my SIMPIT projects**, including working on the code, PCB design, assembly, and test fitting.
 
@@ -42,7 +42,7 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 - **Front** means the side facing the faceplate; **back** means the side facing into the cockpit enclosure. Check each board’s instructions and pictures before fitting parts.
 - A **HEX file** is the compiled firmware you load onto the Teensy. The supplied HEX files let you program it without compiling the source yourself. **TFT** refers to the LCD display in the wiring and test instructions.
 - **GND** means ground, and **GPIO** means a controller input/output pin. Use the GPIO numbers printed on the Teensy when following the wiring instructions.
-- I recommend checking your work after each board rather than waiting until the whole panel is assembled. Step 9 links to the hardware tests; step 10 covers the radio firmware and DCS-BIOS setup.
+- I like to check my work one board at a time. Step 9 has the hardware tests, and step 10 walks you through the radio firmware and DCS-BIOS setup.
 
 
 ## Build status
@@ -78,9 +78,9 @@ The PCBs require mounting stand-offs. Use the [Vibit M3 nylon stand-off kit](htt
 
 ## 2. Print and check the mechanical parts
 
-I’m offering a printed ARC-210 set to help builders who don’t have access to a 3D printer. See [ARC-210 3D-printing help](../ARC-210-Parts-Offers.md#printed-parts) for the current price, colors, availability, and shipping/VAT/import-charge terms.
+I’m offering a printed ARC-210 set to help builders who don’t have access to a 3D printer. See [ARC-210 3D-printing help](../ARC-210-Parts-Offers.md#printed-parts) for materials, availability, and how to request a free set and arrange shipping.
 
-If you receive a printed set from me, continue with the fit checks below; you don’t need to print another set.
+If you get a printed set from me, skip straight to the fit checks.
 
 **The 17-part set has passed test fitting at 100% scale, with Channel v4.2 separately reprinted and confirmed after the earlier complete-layout test. The combined downloads now include that replacement.** Please keep checking [Project Updates](../Project-Updates.md) for changes.
 
@@ -135,7 +135,7 @@ See the [parts-cost breakdown](../../parts/README.md#estimated-build-cost) for t
 
 I use **JLCPCB** for PCB manufacturing. Follow my [step-by-step JLCPCB ordering guide](../PCB-Manufacturing-JLCPCB.md) for the ZIP files, board quantities, quote settings, preview checks, and engineering questions.
 
-Download the manufacturing packages from the [Gerber and drill table](../../PCBs/README.md#gerber-and-drill-downloads). Gerber files describe the board layers, and drill files describe the holes. Each manufacturing ZIP keeps those files together for uploading to a PCB manufacturer; keep it zipped for that upload.
+Download the manufacturing packages from the [Gerber and drill table](../../PCBs/README.md#gerber-and-drill-downloads). The Gerbers show the board layers, and the drill files tell the manufacturer where to make the holes. Upload the ZIP as it comes so the manufacturer gets both.
 
 | Design | Boards per panel |
 | --- | ---: |
@@ -160,13 +160,13 @@ Start with the [Button Matrix instructions and connector table](../../PCBs/Butto
 
 **The switches go on the front side of the PCB, facing the faceplate. The diodes and pin connectors go on the opposite (back) side.** The silkscreen markings show which side each component belongs on, so check those markings before soldering.
 
-**Photo reminder for my next assembly:** Once the manufactured PCBs arrive and I start building, I’ll add front-and-back photos here showing the switches on the front and the diodes and pin connectors on the back, with the silkscreen markings visible.
+I’ll add photos of both sides as I build so you can see the switches, diodes, pin connectors, and board markings on the assembled PCB.
 
 **Solder the diodes first.** Install the sixteen 1N4148 diodes (D5–D20) on the back of the PCB. Match each diode’s band (cathode) to the silkscreen before soldering.
 
 On the front, use flush cutters to trim the diode leads as close to the PCB as you can without cutting into the pads. If a joint needs a touch-up after trimming, briefly touch it with a clean soldering iron tip to reflow the existing solder. It should leave a small, low bead around the lead so the PCB can sit flush behind the faceplate.
 
-Install the row and column pin headers on the back and the sixteen **6 × 6 × 5 mm** momentary tactile switches on the front. Trim any protruding header pins on the front and clear away the clippings before mounting the PCB.
+**Solder the J1 and J2 pin headers on the back before installing the buttons.** Then solder the sixteen **6 × 6 × 5 mm** momentary tactile switches on the front. Trim any protruding header pins on the front and clear away the clippings before mounting the PCB.
 
 J1 and J2 are separate four-pin row and column connectors. They connect to the Main Board’s eight-pin J2 according to the project’s mapping. The 12 mm opening provides SQL switch pass-through clearance.
 
@@ -182,7 +182,7 @@ Button positions and the final v3.1 board fit have been checked. **Pending:** ph
 
 ## 5. Assemble the Rotary Encoder PCB
 
-Start with the [Rotary Encoder instructions](../../PCBs/Rotary%20Encoders/README.md). This board holds the five frequency encoders and the channel encoder. An encoder reports which way you turn it; it is different from the fixed-position rotary switches in step 6.
+Start with the [Rotary Encoder instructions](../../PCBs/Rotary%20Encoders/README.md). This board holds the five frequency encoders and the channel encoder. The encoders report which way you turn the knob. Step 6 covers the rotary switches with fixed positions.
 
 **Solder the 14-pin J1 header on the back of the PCB first.** The rotary encoders will block access to the header’s solder pads once they’re installed. Install and solder the encoders after the header is in place. **Line up all the encoder pins with their holes before pressing the encoder into the PCB.** The pins bend easily and can break if forced.
 
@@ -197,7 +197,7 @@ I’ve checked the PCB’s physical fit, and all six encoders worked in my combi
 
 Refer to the [Rotary Switch instructions](../../PCBs/Rotary%20Switches/README.md).
 
-I use **10 mm and 13 mm deep-well sockets** to tighten the **mounting nuts on the rotary switches and encoders**. Use whichever socket fits each nut; the deep well provides clearance over the shaft.
+I use **10 mm and 13 mm deep-well sockets** to tighten the **mounting nuts on the rotary switches and encoders**. Pick the socket that fits the nut. The deep well gives the shaft room.
 
 For each seven-position rotary switch (MAIN and MOD):
 
@@ -237,7 +237,7 @@ After checking the fit of the actual cable and boot, pass the tie through the tw
 
 ## 8. Main Board assembly and wiring — pending final validation
 
-Use the [current Main Board schematic and README](../../PCBs/Master%20Board/README.md) for the detailed connections and board pictures. This section records the v1.1 connections; I’ll add assembly photos and fit details as I test the boards.
+Use the [current Main Board schematic and README](../../PCBs/Master%20Board/README.md) for the detailed connections and board pictures. The table shows where everything connects on v1.1. I’ll add photos and fit details as I test the boards.
 
 | Main Board connection | Purpose |
 | --- | --- |
@@ -263,7 +263,7 @@ I tested the existing test firmware on my development hardware. **Validation of 
 
 1. Load the [Final Hardware Test HEX](../../Firmware/Test%20Code/ARC210_Final_Hardware_Test_v1.0_Teensy41.hex) and follow the [combined-test instructions](../../Firmware/Test%20Code/ARC210_Button_Test/README.md). This is the normal assembly test; you don’t need to run every individual test.
 2. Check all sixteen buttons, six encoders in both directions, both seven-position switches, and TFT brightness control.
-3. If something does not work, use the relevant [individual hardware test](../../Firmware/Test%20Code/README.md) to help isolate the problem. These tests are optional troubleshooting tools.
+3. If something doesn’t work, try the [individual hardware test](../../Firmware/Test%20Code/README.md) for that part of the panel. It can help you narrow down where to look.
 4. **Pending:** a documented end-to-end SQL On/Off test and complete manufactured-panel acceptance checklist. I still need to document SQL testing separately; the combined test alone does not confirm its operation.
 
 Loading a test HEX replaces the firmware currently on the Teensy. The standalone tests do not require DCS. Disconnect USB before changing wiring.
