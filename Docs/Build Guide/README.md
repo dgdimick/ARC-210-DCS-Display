@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 9:56 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:59 PM MST (America/Denver)**
 
 If you get stuck or something in this guide isn't clear, just ask me in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I once spent three hours on the phone talking a lady through installing a new garbage disposal. I'm happy to help you with your build, too.
 
@@ -17,6 +17,8 @@ If your hands are shaking while you solder, try cutting back on caffeine, taking
 **Optional cleanup before soldering.** The PCBs usually arrive clean. If you see any residue from manufacturing, wipe it off with a clean, lint-free cloth lightly dampened with isopropyl rubbing alcohol. Let the board dry completely before soldering.
 
 In most cases, I solder the shortest parts first and work my way up to the tallest. Follow the assembly order for each board where one is given.
+
+Before you flip the board over to solder, make sure the parts will stay in place. A slight bend in a component lead can help hold it. You can also steady the body of the part with a fingertip while you solder. Keep your finger clear of the iron and the heated lead to avoid burns.
 
 **Avoid overheating components.** If a joint needs more solder, such as a pin on a rotary switch connector, lift the iron and let the joint cool for a few seconds. Then reheat the pin and pad together and add the solder you need. Use this approach when soldering the rotary switches. Holding the iron on a pin too long can melt the plastic around it. A small amount of melting usually leaves the switch working. If you see any melting, check that the pin is still secure and the switch turns and works properly.
 
