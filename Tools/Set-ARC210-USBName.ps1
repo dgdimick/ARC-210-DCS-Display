@@ -34,10 +34,10 @@ if ($Undo) {
         if ($backup.HadName) {
             Set-ItemProperty -LiteralPath $path -Name FriendlyName -Value $backup.OriginalName
         } else {
-            Remove-ItemProperty -LiteralPath $path -Name FriendlyName
+            Set-ItemProperty -LiteralPath $path -Name FriendlyName -Value "USB Serial Device ($Port)"
         }
         Remove-ItemProperty -LiteralPath $path -Name $backupName
-        Write-Output 'Original display name restored. Reopen Device Manager to refresh the list.'
+        Write-Output 'Windows display name restored. Reopen Device Manager to refresh the list.'
     }
     return
 }
