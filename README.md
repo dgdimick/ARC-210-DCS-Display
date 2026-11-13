@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 13, 2026
 
-**Last updated: November 13, 2026 at 1:53 AM MST (America/Denver)**
+**Last updated: November 13, 2026 at 1:54 AM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -57,15 +57,11 @@ Have all the parts and ready to build it?
 
 ## Project updates
 
-**Last updated: November 13, 2026 at 1:17 AM MST (America/Denver)**
+**Last updated: November 13, 2026 at 1:54 AM MST (America/Denver)**
 
-**November 13, 2026 at 1:17 AM MST — Teensy USB cable supports are available**
+**November 13, 2026 at 1:54 AM MST — Windows COM port rename and restore scripts complete**
 
-I’ve posted two printable cradles to take strain off the Teensy’s USB connector. Use the [10 mm Header USB Support v.1.0](Supporting%20STL%27s/Header_USB_Support_v.1.0.stl) if your Teensy plugs into female headers, or the [2 mm Direct-Solder USB Support v.1.0](Supporting%20STL%27s/Direct_Solder_USB_Support_v.1.0.stl) if it’s soldered directly to the Main Board. Put the zip-tie locking head on the opposite side of the board so the cradle sits flat.
-
-**November 12, 2026 at 9:10 PM MST — Rotary Switch PCBs passed assembly testing**
-
-I assembled the Rotary Switch PCBs v2.0 and confirmed that they fit and work as intended. [Rotary Switch PCB instructions](PCBs/Rotary%20Switches/README.md).
+I finished the optional Windows scripts and verified that they rename and restore the display label while keeping the Teensy on COM5. I still need to check live DCS-BIOS communication after renaming the port on the flight sim PC. [USB naming how-to](Tools/README.md)
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 

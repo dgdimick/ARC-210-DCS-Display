@@ -2,13 +2,17 @@
 
 # Project updates
 
-**Last updated: November 13, 2026 at 1:17 AM MST (America/Denver)**
+**Last updated: November 13, 2026 at 1:54 AM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current bare PCB offer and separate 3D-printing help:** See [ARC-210 bare PCB offer and separate 3D-printing help](ARC-210-Parts-Offers.md) for current PCB pricing, availability, shipping, VAT, and import-charge details. I’m happy to provide a free printed set whether you get your PCBs from me or elsewhere. Just cover shipping.
+
+**November 13, 2026 at 1:54 AM MST — Windows COM port rename and restore scripts complete**
+
+I finished the optional Windows scripts and verified that they rename and restore the display label while keeping the Teensy on COM5. I still need to check live DCS-BIOS communication after renaming the port on the flight sim PC. [USB naming how-to](../Tools/README.md)
 
 **November 13, 2026 at 1:17 AM MST — Teensy USB cable supports are available**
 
