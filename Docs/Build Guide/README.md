@@ -245,6 +245,16 @@ After checking the fit of the actual cable and boot, pass the tie through the tw
 
 Use the [current Main Board schematic and README](../../PCBs/Master%20Board/README.md) for the detailed connections and board pictures. The table shows where everything connects on v1.1. I’ll add photos and fit details as I test the boards.
 
+### Install the Teensy socket headers
+
+I strongly recommend using **two single-row, 24-pin female headers (2.54 mm pitch)** so you can remove the Teensy if you ever need to.
+
+1. Temporarily plug the Teensy into both female headers to hold them straight and lined up. Seat the assembly on the **back of the Main Board, facing away from the faceplate**, with the header pins sticking through to the solder side.
+2. Tack the first and last pins of each header, then solder one pin near the middle of each row. Check that both headers are seated squarely and let the joints cool before unplugging the Teensy.
+3. Finish soldering the remaining pins with the Teensy removed. Skip around between pins and alternate rows so the plastic housings have time to cool.
+
+### Main Board connections
+
 | Main Board connection | Purpose |
 | --- | --- |
 | J1 | TFT cable; **not straight-through**—use the [TFT cable mapping](../../parts/README.md#pin-headers-and-mating-connectors--october-12-2026) |
