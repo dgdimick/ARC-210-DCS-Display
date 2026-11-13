@@ -1,8 +1,8 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 9:46 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:52 PM MST (America/Denver)**
 
-If you need any help or my instructions aren't clear, please contact me via [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I'm happy to help where I can. I once spent three hours on the phone talking a lady through installing a new garbage disposal. I'm sure I can help you.
+If you get stuck or something in this guide isn't clear, just ask me in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I once spent three hours on the phone talking a lady through installing a new garbage disposal. I'm happy to help you with your build, too.
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
