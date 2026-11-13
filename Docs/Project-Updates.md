@@ -2,13 +2,17 @@
 
 # Project updates
 
-**Last updated: November 12, 2026 at 4:41 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:10 PM MST (America/Denver)**
 
 <!-- Refresh this timestamp whenever this page changes; use America/Denver local time. -->
 
 I use this page to share hardware and firmware changes, releases, testing milestones, and build cost estimates. I keep routine documentation edits, community announcements, and future ideas elsewhere.
 
 **Current bare PCB offer and separate 3D-printing help:** See [ARC-210 bare PCB offer and separate 3D-printing help](ARC-210-Parts-Offers.md) for current PCB pricing, availability, shipping, VAT, and import-charge details. I’m happy to provide a free printed set whether you get your PCBs from me or elsewhere. Just cover shipping.
+
+**November 12, 2026 at 9:10 PM MST — Rotary Switch PCBs passed assembly testing**
+
+I assembled the Rotary Switch PCBs v2.0 and confirmed that they fit and work as intended. [Rotary Switch PCB instructions](../PCBs/Rotary%20Switches/README.md).
 
 **November 12, 2026 at 4:41 PM MST — Manufactured PCBs arrived**
 

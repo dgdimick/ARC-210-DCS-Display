@@ -1,6 +1,6 @@
 # ARC-210 bare PCB offer and optional 3D-printing help
 
-**Last updated: November 12, 2026 at 3:11 AM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:10 PM MST (America/Denver)**
 
 I can provide bare PCBs to help other builders complete my ARC-210 panel. I also offer separate 3D-printing help for builders without a printer. This page covers the ARC-210. For planned printing help on the other radios, see the [ARC-164 offer](https://github.com/dgdimick/ARC-164-DCS-Display#free-3d-printed-parts) and [ARC-186 offer](https://github.com/dgdimick/ARC-186-DCS-Display#free-3d-printed-parts). All prices below are in **US dollars (USD)**. This is the page I’ll update when my prices, availability, materials, or shipping terms change.
 
@@ -17,7 +17,7 @@ The complete set contains **six bare boards** for one ARC-210 panel:
 - One Rotary Encoder PCB v1.4
 - Three Rotary Switch PCBs v2.0, including the optional SQL On/Off board
 
-This is a convenient way to get the boards for one radio without managing four design uploads or ordering extra copies of each design. You’ll supply the electronics, faceplate, and assembly. You can print the plastic parts yourself or [ask me for a printed set](#printed-parts). Assembled-board electrical testing is still pending. The current Button Matrix PCB does not support LED backlighting; see [Future Thoughts](Future-Thoughts.md) for the possible redesign.
+This is a convenient way to get the boards for one radio without managing four design uploads or ordering extra copies of each design. You’ll supply the electronics, faceplate, and assembly. You can print the plastic parts yourself or [ask me for a printed set](#printed-parts). The assembled Rotary Switch PCBs v2.0 passed both fit and functional testing. Testing of the full assembly is still pending. The current Button Matrix PCB does not support LED backlighting; see [Future Thoughts](Future-Thoughts.md) for the possible redesign.
 
 My own order for all the boards cost about US$75. That was my approximate whole-order cost, not the manufacturing cost of one six-board set or a quote for another builder. Whether my set saves you money depends on the full delivered cost for your location; I’m offering convenience rather than a guaranteed saving. You can also [order the boards directly from JLCPCB](PCB-Manufacturing-JLCPCB.md).
 

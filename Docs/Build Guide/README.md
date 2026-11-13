@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 8:46 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:10 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -39,7 +39,7 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 | --- | --- |
 | Button Matrix PCB v3.2 | Final design; physical fit and button alignment confirmed; manufacturing files published |
 | Rotary Encoder PCB v1.4 | Final design; physical fit confirmed; manufacturing files published |
-| Rotary Switch PCB v2.0 | Final design; physical fit confirmed; manufacturing files published |
+| Rotary Switch PCB v2.0 | Assembled boards passed fit and functional testing |
 | Main Board v1.1 | Gerber/drill files published; October 29 ERC/DRC and parity checks pass under saved settings; physical fit confirmed October 29, 2026; final review, current verification and assembled-board testing pending |
 | Printed parts | All 17 parts have passed test fitting at 100%; Channel v4.2 was checked separately after the earlier complete-layout print |
 | Electrical testing | Combined breadboard hardware test confirmed; assembled manufactured-board testing pending |
@@ -94,7 +94,7 @@ Dry-fit printed parts before permanent assembly. All current files print at 100%
 
 You can get a complete bare-PCB set from me or order directly from a manufacturer. See [ARC-210 bare PCB offer](../ARC-210-Parts-Offers.md#bare-pcb-set) for current pricing, contents, and terms. The manufacturing steps below explain the direct-order option. I’m happy to provide a free printed set whether you get your PCBs from me or elsewhere. Just cover shipping.
 
-**JLCPCB’s prices shown in my comparison and demo are fabrication prices only. They do not include shipping, handling, tax, VAT, tariffs, duties, or other applicable fees.** Check the full delivered total before comparing a manufacturer order with a board set from me. Assembled-board electrical testing is still pending.
+**JLCPCB’s prices shown in my comparison and demo are fabrication prices only. They do not include shipping, handling, tax, VAT, tariffs, duties, or other applicable fees.** Check the full delivered total before comparing a manufacturer order with a board set from me. The assembled Rotary Switch PCBs v2.0 passed both fit and functional testing. Testing of the full assembly is still pending.
 
 ### Estimated total build cost
 

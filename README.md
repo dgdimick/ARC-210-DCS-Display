@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 12, 2026
 
-**Last updated: November 12, 2026 at 8:47 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:10 PM MST (America/Denver)**
 
 I’m building a working ARC-210 radio panel for the DCS A-10C II using a Teensy 4.1, a 3.5-inch ILI9488 TFT display, custom PCBs, and 3D-printed parts, with DCS-BIOS for live radio data and cockpit control. I’m sharing the files and what I learn along the way so you can build your own.
 
@@ -12,7 +12,7 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 
 ## Current testing status
 
-**The panel is now working connected to DCS.** [Watch the demonstration video](https://drive.google.com/file/d/1jLG8JLaTQ1RpAE6FKkDZAUxiwgUSQEKu/view?usp=drivesdk). The manufactured PCBs have arrived. Assembly and electrical testing are next.
+**The panel is now working connected to DCS.** [Watch the demonstration video](https://drive.google.com/file/d/1jLG8JLaTQ1RpAE6FKkDZAUxiwgUSQEKu/view?usp=drivesdk). The manufactured PCBs have arrived. The assembled Rotary Switch PCBs v2.0 passed both fit and functional testing. Assembly and testing continue on the rest of the panel.
 
 **Assembly testing:** Use the [Final Hardware Test](Firmware/Test%20Code/ARC210_Button_Test/README.md). The individual TFT, button, encoder, and switch tests are optional troubleshooting tools; you don’t need to run them during normal assembly.
 
@@ -55,11 +55,11 @@ I spend about **8 hours a day on my SIMPIT projects**, including working on the 
 
 ## Project updates
 
-**Last updated: November 12, 2026 at 4:41 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:10 PM MST (America/Denver)**
 
-**November 12, 2026 at 4:41 PM MST — Manufactured PCBs arrived**
+**November 12, 2026 at 9:10 PM MST — Rotary Switch PCBs passed assembly testing**
 
-The manufactured ARC-210 PCBs have arrived. Next I’ll assemble the boards and test them on the bench and with DCS.
+I assembled the Rotary Switch PCBs v2.0 and confirmed that they fit and work as intended. [Rotary Switch PCB instructions](PCBs/Rotary%20Switches/README.md).
 
 [Read all project updates](Docs/Project-Updates.md) for the full dated development history.
 
