@@ -2,7 +2,7 @@
 
 # Future thoughts and plans
 
-**Last updated: November 7, 2026 at 2:58 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 1:27 AM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
@@ -12,11 +12,14 @@ I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before
 
 - **Version 2 — lighting daughterboard:** I plan to make a **separate daughterboard to distribute the external regulated 5 V power needed for the LEDs**, with the lighting control and protection circuitry worked out during design. This is the proposed way to add lighting while trying to keep the existing Main Board. The daughterboard would not generate 5 V from the Teensy's 3.3 V supply; it would need an external regulated 5 V supply.
 
+- **Version 2 Main Board layout:** If I revise the Main Board, I plan to move the Teensy to the rear edge of the PCB with the USB port facing toward the center of the board. That will give me more options for routing the USB cable behind the panel. I may also add two tie-wrap locations so builders can secure the cable along the route that works best for their setup.
+
 **Version 2 is a long way off.** I plan to finish the ARC-164 and ARC-186, then take a break to catch up on other things. It may be as long as two years before I return to ARC-210 upgrades, and I have no release date. **If you want to build an ARC-210, please don't wait for Version 2.**
 
 - I’ll probably redesign the display bracket after the PCBs are built. I still don’t like the current mounting method.
 
-- I plan to add [C-130J ARC-210 support](C-130J-Support.md) within this repository using the existing hardware. I’m developing a shared code base that will select the aircraft automatically, without reflashing the Teensy when switching supported aircraft. This support is still in development. Shared firmware, DCS-BIOS mappings, menus, testing, and documentation are tracked in the [main work list](Remaining-Work.md). When I return to additional aircraft support, the C-130J will be my first ARC-210 candidate because I own it. Other aircraft would need their own investigation.
+- I plan to add [C-130J ARC-210 support](C-130J-Support.md) within this repository using the existing hardware. I’m developing a shared code base that will select the aircraft automatically, without reflashing the Teensy when switching supported aircraft. This support is still in development. The remaining implementation and test work is listed below. When I return to additional aircraft support, the C-130J will be my first ARC-210 candidate because I own it. Other aircraft would need their own investigation.
+  - Add [C-130J support](C-130J-Support.md) using the existing ARC-210 hardware and one shared code base: implement automatic aircraft selection so users can switch between supported aircraft without reflashing the Teensy, and test that switching behavior; verify the existing DCS-BIOS controls and frequency export; follow the [Helios-based LCD export plan](C-130J-Support.md#helios-findings-and-lcd-export-plan), starting by verifying indicator 44 in the installed module, capturing live indications, parsing them once per export cycle, adding named string outputs for the LCD/menu fields, and clearing fields that disappear between pages; check RT SELECT behavior; and complete firmware and menu changes, testing, and documentation. Document any unavailable display data.
 
 - **Button lighting:** The current Button Matrix PCB v3.2 does not support LED backlighting. Version 2 lighting would still need a **new Button LED PCB**, suitable light-transmitting buttons, and clearance checks around the TFT display. My current plan is to put the external 5 V lighting power and control circuitry on the daughterboard rather than assume the Main Board must be replaced. Main Board reuse is a goal, not a confirmed compatibility claim. I have not finalized the board layout, layer count, lighting circuit, or upgrade cost. These future parts are not included in the current build estimate or PCB set price.
 

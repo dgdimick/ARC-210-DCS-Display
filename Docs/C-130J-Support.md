@@ -2,7 +2,7 @@
 
 # C-130J ARC-210 support
 
-**Last updated: November 1, 2026 at 7:40 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 1:27 AM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
@@ -81,7 +81,7 @@ My implementation plan is to:
 
 ## Work needed for C-130J support
 
-The main [Things that need to be completed list](Remaining-Work.md) tracks C-130J support. The work includes:
+The [Future Thoughts page](Future-Thoughts.md) tracks C-130J support. The remaining work includes the following.
 
 1. **Compare operation:** Check the aircraft’s current ARC-210 functions, controls, display pages, startup behavior, and menus against my existing panel.
 2. **DCS-BIOS mappings and missing LCD exports:** Verify the existing controls and frequency export, complete the [LCD export plan above](#helios-findings-and-lcd-export-plan), and document any limitations.

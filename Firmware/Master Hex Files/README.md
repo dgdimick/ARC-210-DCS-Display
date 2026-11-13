@@ -1,12 +1,12 @@
 # ARC-210 menu-system preview
 
-**Last updated: November 10, 2026 at 8:13 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 1:27 AM MST (America/Denver)**
 
 `ARC210_A-10C2_v0.1.2_Preview.hex` is the current Teensy 4.1 / ILI9488 480 × 320 display firmware, published for menu-screen and navigation testing. It is not a complete implementation of every radio function.
 
 ## USB name test build
 
-[Download the ARC-210 USB name test HEX](ARC210_A-10C2_USB-Name_Test.hex) to check the USB product name on a Teensy 4.1. I verified that Windows reads **ARC-210**. See the [Device Manager instructions](../../README.md#arc-210-usb-name-in-windows).
+[Download the ARC-210 USB name test HEX v.1](ARC210_A-10C2_USB-Name_Test_v.1.hex) to check the USB product name on a Teensy 4.1. I verified that Windows reads **ARC-210**. See the [Device Manager instructions](../../README.md#arc-210-usb-name-in-windows).
 
 Changing the Windows registry to rename the COM port is **optional**. The panel can be programmed and used with DCS-BIOS without that change. Windows will typically show **USB Serial Device (COMx)** in the Ports list. With the v0.1.6 Control Test or USB name test HEX loaded, **Properties → Details → Bus reported device description** shows **ARC-210**. Renaming the port only changes its label in the Ports list. [See the optional Device Manager renaming instructions](../../README.md#arc-210-usb-name-in-windows).
 
