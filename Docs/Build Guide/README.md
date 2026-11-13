@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 9:15 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:23 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -8,7 +8,9 @@ While I could have used surface-mount (SMD) parts to make the boards smaller, I 
 
 **Optional cleanup before soldering.** The PCBs usually arrive clean. If you see any residue from manufacturing, wipe it off with a clean, lint-free cloth lightly dampened with isopropyl rubbing alcohol. Let the board dry completely before soldering.
 
-**Avoid overheating components.** If a joint needs more solder, such as a pin on a rotary switch connector, lift the iron and let the joint cool for a few seconds. Then reheat the pin and pad together and add the solder you need.
+**Avoid overheating components.** If a joint needs more solder, such as a pin on a rotary switch connector, lift the iron and let the joint cool for a few seconds. Then reheat the pin and pad together and add the solder you need. Use this approach when soldering the rotary switches. Holding the iron on a pin too long can melt the plastic around it. A small amount of melting usually leaves the switch working. If you see any melting, check that the pin is still secure and the switch turns and works properly.
+
+**Rotary encoder mounting tabs.** Use the largest soldering iron tip you have. Heat the tab and pad together, add solder, and lift the iron. Let the joint cool for a few seconds between passes, then repeat as needed until the solder wets both the tab and the pad.
 
 **Check both sides after soldering.** These are two-layer PCBs with plated through-holes. Heat the pad and the pin together so the solder flows through the hole. Check that you can see solder around the pin on both sides of the board wherever the joint is visible. Use just enough to make the joint and check for bridges between adjacent pads.
 
