@@ -1,12 +1,12 @@
 # Test Code
 
-**Last updated: November 1, 2026 at 7:19 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 2:12 AM MST (America/Denver)**
 
 **Latest switch tester: V1.1 — [Download the current HEX](ARC210_Rotary_Switch_Test/ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex).** Includes Master, Secondary, and SQL ON/OFF; it supersedes switch tester V1.0. I added the SQL ON/OFF indication to make the SQL switch test clearer.
 
-The current standalone switch test is **V1.1**; the other four hardware tests remain **V1.0**. These test versions do not change the radio Preview or Diagnostic firmware versions. The TFT Hello World, combined hardware tests show **V1.0 on screen**; the switch test shows **V1.1**. The two legacy HEX-only tests retain their original screens. The earlier button/encoder and encoder-only HEX files are preserved byte-for-byte; their matching source is not included. The rebuilt tests compiled successfully; their updated screens and the dual-switch operation still need checking on my physical panel.
+The standalone switch test is V1.1. The other hardware tests are V1.0.
 
-**Older button and encoder tests:** `ARC210_Button_Test_v1.0_Teensy41.hex` and `ARC210_Encoder_Check_v1.0_Teensy41.hex` have **V1.0 in the filename only**. Their screens do not show the matching version yet. I’ll fix the on-screen version numbers later; this is tracked in [Things that need to be completed](../../Docs/Remaining-Work.md).
+**Button and encoder troubleshooting builds:** The [button/encoder test](ARC210_Button_Test_v1.0_Teensy41.hex) and [standalone encoder test](ARC210_Encoder_Check_v1.0_Teensy41.hex) were rebuilt with V1.0 display labels. I tested both builds on my ARC-210 panel and confirmed they work. [Button/encoder source](ARC210_Button_Encoder_Check/) and [encoder source](ARC210_Encoder_Check/).
 
 [Download TFT Hello World V1.0](Teenys_TFT_Hello_Works/ARC210_TFT_Hello_World_v1.0_Teensy41.hex), using backlight GPIO 4.
 
