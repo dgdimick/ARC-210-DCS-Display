@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 8:42 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 8:46 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -187,7 +187,7 @@ Refer to the [Rotary Switch instructions](../../PCBs/Rotary%20Switches/README.md
 
 I use **10 mm and 13 mm deep-well sockets** to tighten the **mounting nuts on the rotary switches and encoders**. Use whichever socket fits each nut; the deep well provides clearance over the shaft.
 
-For each of the two seven-position controls:
+For each seven-position rotary switch (MAIN and MOD):
 
 1. Solder all six 1 kΩ resistors (R1–R6) and the J1 pin header first. Leave JP1 open. Bend one lead of each resistor back alongside its body so the resistor stands upright. Put the two leads into the pair of small holes next to each other for that resistor. Resistors have no polarity, so either lead can go in either hole of the pair. If you’re unsure which holes to use, [ask me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I’m happy to help.
 2. With the board disconnected from power, measure between the two pads marked **Test Here** in the [resistor ladder test photo](../../PCBs/Rotary%20Switches/README.md#check-the-resistor-ladder-before-installing-the-switch). The meter should read **close to 6 kΩ**.

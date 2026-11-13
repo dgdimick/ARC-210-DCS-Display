@@ -1,6 +1,6 @@
 # ARC-210 Rotary Switch PCB — Version 2.0 — Final PCB design
 
-**Last updated: November 12, 2026 at 8:42 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 8:46 PM MST (America/Denver)**
 
 Updated October 12, 2026.
 
@@ -33,6 +33,10 @@ I modified the PCB so it can also be used with the SQL On/Off switch. **JP1**, m
 - **SQL On/Off:** omit all six resistors R1–R6 and bridge JP1 with solder. Connect J1 pin 2 (switch common A1) to a Teensy input configured with a pull-up, and J1 pin 3 to GND. Selecting terminal 2 pulls the input LOW; an ungrounded contact reads HIGH. J1 pin 1 is not needed for this configuration. Choose the contact for the intended electrical ON/OFF states. Set the stop ring to **two positions with 45° total travel**.
 - **Resistor ladder:** fit all six resistors R1–R6 and leave JP1 open. Use the three J1 connections listed above.
 
+The solder-lug A12515RNZQ still requires mechanical support and wires to the corresponding PCB connections; it does not fit the PCB-pin footprint directly.
+
+## MAIN and MOD rotary switches
+
 ### Check the resistor ladder before installing the switch
 
 1. Solder all six 1 kΩ resistors (R1–R6) and the J1 pin header first. Leave JP1 open. Bend one lead of each resistor back alongside its body so the resistor stands upright. Put the two leads into the pair of small holes next to each other for that resistor. Resistors have no polarity, so either lead can go in either hole of the pair. If you’re unsure which holes to use, [ask me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I’m happy to help.
@@ -40,8 +44,6 @@ I modified the PCB so it can also be used with the SQL On/Off switch. **JP1**, m
 3. Once the board passes the test, solder on the rotary switch.
 
 ![Rotary Switch PCB with Test Here arrows pointing to the square pad and the lower-left round pad](Rotary-Switch-Resistor-Ladder-Test.png)
-
-The solder-lug A12515RNZQ still requires mechanical support and wires to the corresponding PCB connections; it does not fit the PCB-pin footprint directly.
 
 Validation for version 2.0: KiCad PCB DRC, with zones refilled, reported zero non-excluded violations and zero unconnected pads under the saved project settings. The project contains 15 specific PTH-inside-switch-courtyard exclusions for the rear-side resistors and connector; their lead and solder-joint clearance to the switch body still requires physical verification. Several other check categories are disabled in the project. Fresh electrical schematic and PCB checks, including schematic parity, were run October 27, 2026; see the manufacturing files section. I’ve confirmed the mechanical fit. Testing the electrical operation of an assembled, manufactured board is still on my list; the check results above describe what has been verified so far.
 
