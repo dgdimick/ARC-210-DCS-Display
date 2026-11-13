@@ -24,7 +24,9 @@ Before you flip the board over to solder, make sure the parts will stay in place
 
 **Avoid overheating components.** If a joint needs more solder, such as a pin on a rotary switch connector, lift the iron and let the joint cool for a few seconds. Then reheat the pin and pad together and add the solder you need. Use this approach when soldering the rotary switches. Holding the iron on a pin too long can melt the plastic around it. A small amount of melting usually leaves the switch working. If you see any melting, check that the pin is still secure and the switch turns and works properly.
 
-**Rotary encoder mounting tabs.** Use the largest soldering iron tip you have. Heat the tab and pad together, add solder, and lift the iron. Let the joint cool for a few seconds between passes, then repeat as needed until the solder wets both the tab and the pad.
+**Keep your soldering iron tip clean and tinned.** Wipe off any buildup and put a thin coat of fresh solder on the tip so it transfers heat well. A small tip works for most parts on these boards.
+
+**Rotary encoder mounting tabs.** Switch to a large tip when soldering the tabs that hold the encoders to the board. Heat the tab and pad together, add solder, and lift the iron. Let the joint cool for a few seconds between passes, then repeat as needed until the solder wets both the tab and the pad.
 
 **Check both sides after soldering.** These are two-layer PCBs with plated through-holes. Heat the pad and the pin together so the solder flows through the hole. Check that you can see solder around the pin on both sides of the board wherever the joint is visible. Use just enough to make the joint and check for bridges between adjacent pads. Inspect each solder joint before trimming the excess leads. Resolder any poor joints before cutting the leads.
 
