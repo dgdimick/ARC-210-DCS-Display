@@ -4,7 +4,7 @@
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
-**New to soldering?** There are plenty of YouTube videos that show how to solder through-hole parts. A soldering practice kit is also a great way to get comfortable with the iron before you start on the radio boards. [Find soldering practice kits on Amazon](https://www.amazon.com/s?k=learn+soldering).
+**New to soldering?** There are plenty of YouTube videos that show how to solder through-hole parts. A soldering practice kit is also a great way to get comfortable with the iron before you start on the radio boards. If you bought a soldering practice kit, it may already include solder. [Find soldering practice kits on Amazon](https://www.amazon.com/s?k=learn+soldering).
 
 If your hands are shaking while you solder, try cutting back on caffeine, taking a break, or setting the project aside for a while. I’ve found that if I drink too much coffee, my hands shake when I solder. Remember, this project should be fun.
 
