@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 9:37 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 9:43 PM MST (America/Denver)**
 
 While I could have used surface-mount (SMD) parts to make the boards smaller, I chose through-hole components to make the project easier for everyone to build and solder with basic tools.
 
@@ -9,6 +9,8 @@ While I could have used surface-mount (SMD) parts to make the boards smaller, I 
 If your hands are shaking while you solder, try cutting back on caffeine, taking a break, or setting the project aside for a while. I’ve found that if I drink too much coffee, my hands shake when I solder. Remember, this project should be fun.
 
 **Never use plumbing solder or plumbing flux on a PCB.** Acid flux used for plumbing can leave corrosive residue that damages the board and component leads over time. Use 63/37 tin-lead solder with a rosin core made for electronics. [63/37 electronics solder on Amazon](https://www.amazon.com/WYcYcW-Solder-63-37-Electronic/dp/B0FFSK6TYC/ref=sxin_17_spotlighthaul_e14_dsk_hul_core?cv_ct_cx=electronic%2Bsolder&s=bazaar)
+
+**Avoid breathing soldering fumes.** Work in a well-ventilated area and keep your face out of the rising fumes.
 
 **Optional cleanup before soldering.** The PCBs usually arrive clean. If you see any residue from manufacturing, wipe it off with a clean, lint-free cloth lightly dampened with isopropyl rubbing alcohol. Let the board dry completely before soldering.
 
