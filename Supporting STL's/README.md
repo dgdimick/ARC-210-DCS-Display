@@ -20,9 +20,11 @@ I offer separate 3D-printing help for builders whose lack of printer access is p
 
 The SQL shaft support spacer v.5 remains required in all installations.
 
-## USB cable strain-relief support — design pending
+## Header USB Support v.1.0
 
-I still need to **design and 3D print the USB cable strain-relief support**. Its finished STL is not yet included in this directory. The support should protect the Teensy's Micro-B connector from cable pulls while allowing the cable to be unplugged and the Teensy removed for service. Physical fit verification is pending.
+[Download Header USB Support v.1.0](Header_USB_Support_v.1.0.stl)
+
+This optional cradle supports the USB plug when the Teensy is mounted in female headers. It is 21 mm long with a 10 mm cradle floor and zip-tie slots spaced 15.24 mm apart to match the Main Board. Print it flat at 100% scale. With the plug fully seated, check that it rests in the cradle before tightening the tie. The STL is a separate download from the 17-part master print sets.
 
 ## Complete 17-part print set
 
