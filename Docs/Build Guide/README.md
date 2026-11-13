@@ -1,6 +1,8 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 9:59 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 10:00 PM MST (America/Denver)**
+
+**Soldering irons are HOT.** Handle the iron with care and wear eye protection while soldering or trimming leads.
 
 If you get stuck or something in this guide isn't clear, just ask me in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I once spent three hours on the phone talking a lady through installing a new garbage disposal. I'm happy to help you with your build, too.
 
