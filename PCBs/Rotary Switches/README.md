@@ -1,6 +1,6 @@
 # ARC-210 Rotary Switch PCB — Version 2.0 — Final PCB design
 
-**Last updated: November 12, 2026 at 8:32 PM MST (America/Denver)**
+**Last updated: November 12, 2026 at 8:42 PM MST (America/Denver)**
 
 Updated October 12, 2026.
 
@@ -35,7 +35,7 @@ I modified the PCB so it can also be used with the SQL On/Off switch. **JP1**, m
 
 ### Check the resistor ladder before installing the switch
 
-1. Solder all six 1 kΩ resistors (R1–R6) and the J1 pin header first. Leave JP1 open.
+1. Solder all six 1 kΩ resistors (R1–R6) and the J1 pin header first. Leave JP1 open. Bend one lead of each resistor back alongside its body so the resistor stands upright. Put the two leads into the pair of small holes next to each other for that resistor. Resistors have no polarity, so either lead can go in either hole of the pair. If you’re unsure which holes to use, [ask me in Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I’m happy to help.
 2. With the PCB disconnected from power, set your VOM or multimeter to resistance (Ω) and touch one probe to each pad marked **Test Here**. A reading **close to 6 kΩ** checks the solder connections through all six resistors in series.
 3. Once the board passes the test, solder on the rotary switch.
 
