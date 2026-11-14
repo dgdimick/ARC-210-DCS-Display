@@ -2,13 +2,11 @@
 
 # Future thoughts and plans
 
-**Last updated: November 14, 2026 at 1:20 AM MST (America/Denver)**
+**Last updated: November 14, 2026 at 1:27 AM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
 **Future upgrades:** It may be as long as **two years** before I return to this project with upgrades or a new version. Please treat future-version ideas as long-term plans, with no promised release date.
-
-- **Version 2 Main Board layout:** On the new Main Board, I plan to move the Teensy to the rear edge of the PCB with the USB port facing toward the center of the board. That will give me more options for routing the USB cable behind the panel. I may also add two tie-wrap locations so builders can secure the cable along the route that works best for their setup.
 
 **Version 2 is a long way off.** I plan to finish the ARC-164 and ARC-186, then take a break to catch up on other things. It may be as long as two years before I return to ARC-210 upgrades, and I have no release date. **If you want to build an ARC-210, please don't wait for Version 2.**
 
@@ -25,15 +23,16 @@ I recommend using **male pin headers on the Teensy and matching female socket st
 
 ### Version 2 board layout
 
-I plan to build **three new PCBs**, reuse my **Teensy 4.1**, and keep the existing TFT wiring, including VCC and backlight control.
+I plan to use **four PCBs total**. I'll reuse the existing Main Board and Teensy 4.1, mount the Main Board lower behind the faceplate, and keep the existing TFT wiring, including VCC and backlight control.
 
 | Board | What goes on it |
 | --- | --- |
-| Main Board | Existing Teensy 4.1, regulated 5 V input and distribution for the button lighting, the backlight driver, and two FREQ rotary switches |
-| Button Matrix Board | Buttons, diodes, and backlight LEDs |
-| Long Shaft Switch Board | Three FREQ rotary switches, MODE, MASTER, SQL On/Off, and the CHANNEL rotary encoder |
+| Existing Main Board | Reused Teensy 4.1 and existing TFT connections. Mount the board lower behind the faceplate to give the controls more room. |
+| New three-FREQ switch board | Three new FREQ rotary switches and one new CHANNEL rotary encoder. Reuse the existing MODE and MASTER switches here if they fit. |
+| New two-FREQ switch and power board | Two new FREQ rotary switches, SQL On/Off, the regulated 5 V input for the panel lighting, and the backlight driver. |
+| New Button Matrix Board | Buttons, diodes, and backlight LEDs. |
 
-This layout requires **eight new rotary switches** (five FREQ, MODE, MASTER, and SQL On/Off) and **one new CHANNEL rotary encoder**. I still need to check shaft reach and clearance around the TFT bracket, design the boards, update the firmware, and test the assembly.
+The planned purchases are **five new FREQ rotary switches and one new CHANNEL rotary encoder**. I still need to check whether MODE, MASTER, and SQL On/Off fit, and verify shaft reach and clearance around the TFT bracket and cables before finalizing the boards.
 
 The five FREQ resistor ladders use 3.3 V and one analog input each. The backlight driver uses one PWM control pin. That uses six of the ten pins freed by the five FREQ encoders, leaving four spare. CHANNEL still uses two signal pins.
 
