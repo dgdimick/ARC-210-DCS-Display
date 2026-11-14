@@ -12,7 +12,7 @@ I use this page to share hardware and firmware changes, releases, testing milest
 
 **November 13, 2026 at 1:54 AM MST — Windows COM port rename and restore scripts complete**
 
-I finished the optional Windows scripts and verified that they rename and restore the display label while keeping the Teensy on COM5. I still need to check live DCS-BIOS communication after renaming the port on the flight sim PC. [USB naming how-to](../Tools/README.md)
+The optional Windows scripts let you give any connected device listed under Ports (COM & LPT) a display name of your choice in Device Manager. The rename script adds the existing COM number to your label, and the restore script puts the previous label back. I tested both scripts with the Teensy on COM5 and with a Bluetooth serial device on COM3. I still need to check live DCS-BIOS communication after renaming the port on the flight sim PC. [USB naming how-to](../Tools/README.md)
 
 **November 13, 2026 at 1:17 AM MST — Teensy USB cable supports are available**
 
