@@ -1,5 +1,7 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 14, 2026
 
+**November 14, 2026 — Main Board withdrawn.** I’ve withdrawn the ARC-210 Main Board v1.1 after finding that the PCB interferes with the body of the SQL On/Off switch during assembly. Please hold off on ordering this board. I’ll repost the files after I revise the layout and verify the fit. [Main Board status](PCBs/Master%20Board/)
+
 **Last updated: November 14, 2026 at 1:36 AM MST (America/Denver)**
 
 **[Windows COM port tools](Tools/README.md)** — Download the scripts to rename a COM port in Device Manager or restore its previous display name.

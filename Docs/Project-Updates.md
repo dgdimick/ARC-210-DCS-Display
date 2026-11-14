@@ -1,5 +1,7 @@
 [Back to the main project README](../README.md)
 
+**November 14, 2026 — Main Board withdrawn.** I’ve withdrawn the ARC-210 Main Board v1.1 after finding that the PCB interferes with the body of the SQL On/Off switch during assembly. Please hold off on ordering this board. I’ll repost the files after I revise the layout and verify the fit. [Main Board status](../PCBs/Master%20Board/)
+
 # Project updates
 
 **Last updated: November 13, 2026 at 1:54 AM MST (America/Denver)**
@@ -148,7 +150,7 @@ At this stage, I had completed the PCB design and ordered the boards from JLCPCB
 
 **October 29, 2026 — PCB design completed; boards sent for manufacture**
 
-I’ve completed the PCB design, sent it to **JLCPCB** for manufacture, and placed and paid for the order. The standalone [Gerber and drill files](../PCBs/README.md#gerber-and-drill-downloads), including the [current Main Board v1.1 package](../PCBs/Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip), are available for builders. Once the boards arrive, I’ll assemble them and test the completed hardware; I’ve since checked the physical fit of Main Board v1.1.
+I’ve completed the PCB design, sent it to **JLCPCB** for manufacture, and placed and paid for the order. The standalone [Gerber and drill files](../PCBs/README.md#gerber-and-drill-downloads), are available for builders. Once the boards arrive, I’ll assemble them and test the completed hardware; I’ve since checked the physical fit of Main Board v1.1.
 
 **October 28, 2026 — Main Board placement and routing progress**
 

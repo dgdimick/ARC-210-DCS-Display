@@ -1,5 +1,7 @@
 # ARC-210 Main Board v1.1 and schematic
 
+**November 14, 2026 — Main Board v1.1 withdrawn.** I’ve withdrawn the ARC-210 Main Board v1.1 after finding that the PCB interferes with the body of the SQL On/Off switch during assembly. Please hold off on ordering this board. I’ll repost the files after I revise the layout and verify the fit.
+
 **Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 Updated October 29, 2026: USB-powered design with TFT VCC supplied directly from the Teensy's 3.3 V rail.
@@ -8,9 +10,9 @@ Updated October 29, 2026: USB-powered design with TFT VCC supplied directly from
 
 Download this repository using **Code → Download ZIP**, extract it, and keep this entire folder together. Open `ARC-210_Master_Board.kicad_pro` in **KiCad 10**, then open the schematic or PCB Editor.
 
-You can also download the [schematic](ARC-210_Master_Board.kicad_sch) and [PCB v1.1](ARC-210_Master_Board.kicad_pcb) directly. Downloading only that file does not include the project library configuration.
+The [v1.1 schematic](ARC-210_Master_Board.kicad_sch) is available as a reference for existing boards.
 
-Main Board **v1.1** includes the completed placement and routing, GND copper pours on both layers, and a [Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). Its switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes and USB zip-tie slots are retained. All 13 circuit component footprints are on B.Cu, facing away from the faceplate. ERC, DRC and schematic/PCB parity pass under the saved settings, with zero unconnected items. I’ve checked the physical fit of Main Board v1.1; current verification, assembly and manufactured-board testing are still ahead. Take your time with the build. If you get stuck, I’m happy to help in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) if you need a hand.
+
 
 ## PCB layout — five or six boards
 
@@ -121,10 +123,8 @@ Questions or build photos? Join [Discussions](https://github.com/dgdimick/ARC-21
 
 ## Standalone manufacturing files
 
-[Download Main Board Gerbers and drill files](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) — exported October 29, 2026 from the current PCB, including the USB zip-tie slots. The package is for a two-layer, 1.6 mm bare PCB and contains separate plated/nonplated drills. See [fabrication notes](Manufacturing/README.txt) and [drill report](Manufacturing/Drill-report.txt).
+
 
 These files are a **draft fabrication export**, not a validated production release. Main Board v1.1 physical fit is confirmed; final routing review, current verification, assembly and electrical testing remain pending.
 
 ## Main Board version 1.1
-
-Version 1.1 adds filled GND copper pours on F.Cu and B.Cu, with isolated islands removed. PCB and schematic revisions are 1.1; circuit connections, component placement and mechanical outlines are unchanged. Use the [v1.1 Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). I’ve checked the physical fit of Main Board v1.1; current verification and manufactured-board testing remain pending. The previously submitted manufacturing order is unchanged.

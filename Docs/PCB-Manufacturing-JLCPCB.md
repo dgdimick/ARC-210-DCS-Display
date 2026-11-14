@@ -1,5 +1,7 @@
 [Back to the Build Guide](Build%20Guide/README.md#3-order-the-pcbs) · [PCB downloads](../PCBs/README.md#gerber-and-drill-downloads)
 
+**November 14, 2026 — Main Board withdrawn.** I’ve withdrawn the ARC-210 Main Board v1.1 after finding that the PCB interferes with the body of the SQL On/Off switch during assembly. Please hold off on ordering this board. I’ll repost the files after I revise the layout and verify the fit. [Main Board status](../PCBs/Master%20Board/)
+
 # Ordering the ARC-210 PCBs from JLCPCB
 
 **Last updated: November 12, 2026 at 3:11 AM MST (America/Denver)**
@@ -109,7 +111,7 @@ There are **four different PCB designs**, but one radio panel uses **five boards
 
 | Design | Current version and manufacturing ZIP | Boards used in one radio panel |
 | --- | --- | ---: |
-| Main Board | [v1.1 ZIP](../PCBs/Master%20Board/Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip) | 1 |
+| Main Board | Withdrawn due to SQL switch clearance | Hold off |
 | Button Matrix | [v3.2 ZIP](../PCBs/Button%20Matrix/Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) | 1 |
 | Rotary Encoder | [v1.4 ZIP](../PCBs/Rotary%20Encoders/Manufacturing/Rotary-Encoder-PCB-v1.4-Gerbers-Drill.zip) | 1 |
 | Rotary Switch | [v2.0 ZIP](../PCBs/Rotary%20Switches/Manufacturing/Rotary-Switch-PCB-v2.0-Gerbers-Drill.zip) | 2, or 3 with the optional SQL board |

@@ -1,5 +1,7 @@
 # ARC-210 Documentation
 
+**November 14, 2026 — Main Board withdrawn.** I’ve withdrawn the ARC-210 Main Board v1.1 after finding that the PCB interferes with the body of the SQL On/Off switch during assembly. Please hold off on ordering this board. I’ll repost the files after I revise the layout and verify the fit. [Main Board status](../PCBs/Master%20Board/)
+
 **Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 These notes explain the choices behind my ARC-210 build and help you find your way around the wiring and hardware. If something is unclear, feel free to ask in Discussions.
@@ -109,7 +111,7 @@ If you have questions, ideas, or photos of your build, I’d love to hear from y
 
 ## Current PCB versions and a friendly starting point
 
-Use Main Board **v1.1**, Button Matrix **v3.2**, Rotary Encoder **v1.4**, and Rotary Switch **v2.0**. The [PCB downloads](../PCBs/README.md#gerber-and-drill-downloads) link to their current manufacturing files. Start with the [build guide](Build%20Guide/README.md), take it one step at a time, and ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) whenever you need a hand. Progress photos and questions are welcome!
+While the Main Board is on hold, the available designs are Button Matrix **v3.2**, Rotary Encoder **v1.4**, and Rotary Switch **v2.0**. The [PCB downloads](../PCBs/README.md#gerber-and-drill-downloads) link to their current manufacturing files. Start with the [build guide](Build%20Guide/README.md), take it one step at a time, and ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) whenever you need a hand. Progress photos and questions are welcome!
 
 ## Printed parts
 
