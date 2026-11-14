@@ -239,7 +239,7 @@ The Main Board component bodies face **away from the faceplate**, on the back of
 
 The [current Main Board PCB](../../PCBs/Master%20Board/README.md#usb-cable-zip-tie-slots) includes **two 4 × 2 mm oblong slots** below the Teensy's USB connector, aligned with its two pin rows. These are Edge.Cuts milling contours and are intended for a small **2.5 mm zip tie**.
 
-After checking the fit of the actual cable and boot, pass the tie through the two slots and around the cable so pulls are taken by the PCB support rather than the Micro-B connector. Avoid overtightening and leave enough slack to unplug the cable and remove the socketed Teensy for service.
+After checking the fit of the actual cable and boot, pass the tie through the two slots and around the cable so pulls are taken by the PCB support rather than the Micro-B connector. Put the zip-tie locking head on the opposite side of the Main Board from the cradle so the cradle can sit flat against the PCB. Avoid overtightening and leave enough slack to unplug the cable and remove the socketed Teensy for service.
 
 **Pending:** physical fit and strain-relief validation with the actual cable/tie, an installation photograph, and the design/printing of any additional cable support. The slots are included in the published Main Board v1.1 manufacturing files; physical validation remains pending.
 
@@ -253,7 +253,9 @@ I strongly recommend using **two single-row, 24-pin female headers (2.54 mm pitc
 
 1. Temporarily plug the Teensy into both female headers to hold them straight and lined up. Seat the assembly on the **back of the Main Board, facing away from the faceplate**, with the header pins sticking through to the solder side.
 2. Tack the first and last pins of each header, then solder one pin near the middle of each row. Check that both headers are seated squarely and let the joints cool before unplugging the Teensy.
-3. Finish soldering the remaining pins with the Teensy removed. Skip around between pins and alternate rows so the plastic housings have time to cool.
+3. Finish soldering the remaining pins with the Teensy removed. Skip around between pins and alternate rows so the plastic housings have time to cool. Before plugging the Teensy back in, inspect both 24-pin headers and remove any solder bridges between neighboring pins.
+
+**SQL On/Off shaft height:** Choose the Main Board standoff height based on how far you want the SQL rotary switch shaft to stick through the faceplate. Dry-fit the Main Board, switch, and faceplate, then check that the knob seats and turns freely before tightening the hardware.
 
 ### Main Board connections
 
@@ -310,7 +312,7 @@ If you get stuck, tell me which step you’re on, the board version, and what yo
 
 ## Sharing code and improvements
 
-My main firmware code is shared under the [MIT License](../../Docs/LICENSE-MIT.txt), and I’m happy to provide it to anyone who asks. You can also find the [published source here](../../Firmware/Source/Master_Program/README.md). If you adapt it or add improvements, I’d love to work with you and bring useful changes back into this project so other builders—and my other panel projects—can benefit too.
+My main firmware code is shared under the [MIT License](../../Docs/LICENSE-MIT.txt), and I’m happy to provide it to anyone who asks. If you adapt it or add improvements, I’d love to work with you and bring useful changes back into this project so other builders—and my other panel projects—can benefit too.
 
 Please share your changes through a pull request or get in touch in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). Contributing changes back is welcome, but it isn’t an extra condition of the MIT License. Third-party code keeps its own license. The PCB designs retain their separate hardware license.
 
