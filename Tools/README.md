@@ -30,6 +30,8 @@ To undo the rename, enter the device's current COM number from the same administ
 .\Restore-ARC210-USBName.ps1 -Port COM3
 ```
 
+![Windows Device Manager showing the restored Standard Serial over Bluetooth link (COM3)](Device-Manager-Restored-COM3.png)
+
 The set script saves the original registry value on the selected device instance. The restore script uses that backup to put the old label back, or uses **Serial Port (COMx)** when there was no original label (**USB Serial Device (COMx)** for a Teensy). A label already set manually before using the utility has no backup from this utility. Both scripts accept `-WhatIf` to preview the operation. Reopen Device Manager to refresh the displayed name.
 
 Run **.\Set-ARC210-USBName.ps1** with no arguments to enter the COM port and display name at the prompts. Press Enter at the name prompt to use **ARC-210**. Run **.\Restore-ARC210-USBName.ps1** with no arguments to enter just the COM port and restore its saved label. If Device Manager shows only **USB Serial Device**, check which port appears in TekConnect or DCSBridge when you plug in the Teensy.
