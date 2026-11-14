@@ -2,7 +2,7 @@
 
 # Future thoughts and plans
 
-**Last updated: November 14, 2026 at 1:27 AM MST (America/Denver)**
+**Last updated: November 14, 2026 at 1:32 AM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
@@ -23,6 +23,8 @@ I recommend using **male pin headers on the Teensy and matching female socket st
 
 ### Version 2 board layout
 
+#### Upgrade an existing ARC-210
+
 I plan to use **four PCBs total**. I'll reuse the existing Main Board and Teensy 4.1, mount the Main Board lower behind the faceplate, and keep the existing TFT wiring, including VCC and backlight control.
 
 | Board | What goes on it |
@@ -35,6 +37,18 @@ I plan to use **four PCBs total**. I'll reuse the existing Main Board and Teensy
 The planned purchases are **five new FREQ rotary switches and one new CHANNEL rotary encoder**. I still need to check whether MODE, MASTER, and SQL On/Off fit, and verify shaft reach and clearance around the TFT bracket and cables before finalizing the boards.
 
 The five FREQ resistor ladders use 3.3 V and one analog input each. The backlight driver uses one PWM control pin. That uses six of the ten pins freed by the five FREQ encoders, leaving four spare. CHANNEL still uses two signal pins.
+
+#### New V2 build from scratch
+
+For a new V2 build, I plan **three PCBs**. The redesigned Main Board combines the two-FREQ power board with the Main Board.
+
+| Board | What goes on it |
+| --- | --- |
+| Three-FREQ switch board | Three FREQ switches, the CHANNEL rotary encoder, and the MASTER and MODE switches |
+| Redesigned Main Board | Two FREQ switches, SQL On/Off, Teensy 4.1, regulated 5 V lighting power input, and the backlight driver |
+| Button Matrix Board | Buttons, diodes, and backlight LEDs |
+
+This build calls for **five 10-position FREQ switches**, **three 8-position switches** (MASTER, MODE, and SQL On/Off), **one CHANNEL rotary encoder**, and **one Teensy 4.1**. I plan to keep the existing TFT wiring.
 
 ## Other SIMPIT panels
 
