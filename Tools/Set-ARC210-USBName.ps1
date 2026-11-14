@@ -48,6 +48,31 @@ if ($isTeensy) {
     $defaultName = 'USB Serial Device'
 }
 
+$backupPaths = @($path)
+if ($Undo) {
+    $instanceId = $devices[0].InstanceId
+    $hardware = $instanceId.Substring(0, $instanceId.LastIndexOf('\'))
+    $container = (Get-PnpDeviceProperty -InstanceId $instanceId -KeyName DEVPKEY_Device_ContainerId -ErrorAction SilentlyContinue).Data
+    if ($container -and $container -ne [guid]::Empty -and $container -ne [guid]'00000000-0000-0000-ffff-ffffffffffff') {
+        $oldPaths = @(Get-PnpDevice -Class Ports | Where-Object {
+            $_.Present -eq $false -and $_.InstanceId.StartsWith($hardware + '\', [StringComparison]::OrdinalIgnoreCase)
+        } | ForEach-Object {
+            $oldPath = 'HKLM:\SYSTEM\CurrentControlSet\Enum\' + $_.InstanceId
+            $oldKey = Get-Item -LiteralPath $oldPath -ErrorAction SilentlyContinue
+            if ($oldKey -and $oldKey.GetValueNames() -contains $backupName) {
+                $oldContainer = (Get-PnpDeviceProperty -InstanceId $_.InstanceId -KeyName DEVPKEY_Device_ContainerId -ErrorAction SilentlyContinue).Data
+                if ($oldContainer -eq $container) { $oldPath }
+            }
+        })
+        if ($oldPaths.Count -gt 1) {
+            throw 'More than one old device record has a matching backup. No changes were made.'
+        }
+        if ($oldPaths.Count -eq 1) {
+            $backupPaths = @($path, $oldPaths[0])
+        }
+    }
+}
+
 if ($hasBackup) {
     $backup = $key.GetValue($backupName) | ConvertFrom-Json
     $savedLabel = $backup.AppliedName -creplace ' \(COM[1-9][0-9]*\)$', " ($Port)"
@@ -57,14 +82,30 @@ if ($hasBackup) {
     }
 }
 
+if ($Undo -and $backupPaths.Count -eq 2) {
+    $oldBackup = (Get-Item -LiteralPath $backupPaths[1]).GetValue($backupName) | ConvertFrom-Json
+    $originalLabel = "$defaultName ($Port)"
+    if ($oldBackup.HadName) {
+        $originalLabel = $oldBackup.OriginalName -creplace ' \(COM[1-9][0-9]*\)$', " ($Port)"
+    }
+    if (!$hasBackup) {
+        $backup = $oldBackup
+        $savedLabel = $backup.AppliedName -creplace ' \(COM[1-9][0-9]*\)$', " ($Port)"
+    }
+}
+
 if ($Undo) {
-    if (!$hasBackup) { Write-Output 'There is no saved rename for this device.'; return }
-    if ($current -cne $backup.AppliedName -and $current -cne $savedLabel) {
+    if (!$hasBackup -and $backupPaths.Count -eq 1) { Write-Output 'There is no saved rename for this device.'; return }
+    if ($hasName -and $current -cne $backup.AppliedName -and $current -cne $savedLabel -and $current -cne $originalLabel) {
         throw 'The display name changed since the utility ran. The saved backup was kept.'
     }
     if ($PSCmdlet.ShouldProcess($target, 'Restore the saved Windows display name')) {
         New-ItemProperty -LiteralPath $path -Name FriendlyName -PropertyType String -Value $originalLabel -Force | Out-Null
-        Remove-ItemProperty -LiteralPath $path -Name $backupName
+        foreach ($backupPath in $backupPaths) {
+            if ((Get-Item -LiteralPath $backupPath).GetValueNames() -contains $backupName) {
+                Remove-ItemProperty -LiteralPath $backupPath -Name $backupName
+            }
+        }
         Write-Output 'Windows display name restored. Reopen Device Manager to refresh the list.'
     }
     return
