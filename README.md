@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 14, 2026
 
-**Last updated: November 14, 2026 at 1:32 AM MST (America/Denver)**
+**Last updated: November 14, 2026 at 1:33 AM MST (America/Denver)**
 
 **[Windows COM port tools](Tools/README.md)** — Download the scripts to rename a COM port in Device Manager or restore its previous display name.
 
@@ -55,7 +55,7 @@ Have all the parts and ready to build it?
 
 [View Future thoughts and plans](Docs/Future-Thoughts.md) for possible redesigns, lighting, and support for other aircraft.
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** For a V2 upgrade I plan four boards total: the existing Main Board mounted lower, a new three-FREQ/CHANNEL board, a new two-FREQ board with SQL On/Off and 5 V lighting power, and a new backlit Button Matrix Board. I'll reuse the Teensy 4.1 and keep the existing TFT wiring. I plan to buy five new FREQ rotary switches and one new CHANNEL encoder, and reuse MODE and MASTER if they fit. **Version 2 is a long way off, so please don't wait for it if you want to build the ARC-210.** For a new V2 build, I plan three boards by combining the two-FREQ power board with a redesigned Main Board. See [both V2 board layouts](Docs/Future-Thoughts.md#version-2-board-layout).
+**The current Button Matrix PCB v3.2 does not support LED backlighting.** For a V2 upgrade I plan four boards total: the existing Main Board mounted lower, a new three-FREQ/CHANNEL board, a new two-FREQ board with SQL On/Off and 5 V lighting power, and a new backlit Button Matrix Board. I'll reuse the Teensy 4.1 and keep the existing TFT wiring. I plan to buy five new FREQ rotary switches and one new CHANNEL encoder, and reuse MODE and MASTER if they fit. The cost of either V2 path makes it a very low priority for me. **Version 2 is a long way off, so please don't wait for it if you want to build the ARC-210.** For a new V2 build, I plan three boards by combining the two-FREQ power board with a redesigned Main Board. See [both V2 board layouts](Docs/Future-Thoughts.md#version-2-board-layout).
 
 ## Project updates
 
