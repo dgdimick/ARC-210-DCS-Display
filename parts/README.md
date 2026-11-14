@@ -1,6 +1,6 @@
 # Parts
 
-**Last updated: November 12, 2026 at 3:09 AM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 <a id="estimated-build-cost"></a>
 
@@ -74,7 +74,7 @@ Updated October 29, 2026.
 
 [View the component list (BOM.csv)](BOM.csv)
 
-The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 Main Board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. I checked the connector entries against the October 12 Main Board schematic and final control-board projects. The Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 design and manufacturing files are published. I’ll keep improving the parts list as I assemble and test the manufactured boards. I still need to check a few component details and footprints, so please check the notes before placing an order. If anything is unclear, ask in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
+The BOM lists schematic references, values, footprints, quantities, and do-not-populate flags for the ARC-210 Main Board. Its non-connector entries originate from a September 25 snapshot of the [KiCad project](../PCBs/Master%20Board/), with subsequent parts-selection updates. I checked the connector entries against the October 12 Main Board schematic and final control-board projects. The Main Board v1.1, Button Matrix v3.2, Rotary Encoder v1.4, and Rotary Switch v2.0 design and manufacturing files are published. I’ll keep improving the parts list as I assemble and test the manufactured boards. I still need to check a few component details and footprints, so please check the notes before placing an order. If you get stuck choosing parts, ask me in Discussions. Panel hardware and supplier links are listed below because the schematic BOM does not describe every mechanical part.
 
 I chose the listed component suppliers because I’m aiming for better-quality parts than I generally expect from generic Amazon listings, even if they cost a little more. Parts from Amazon may work, and I use some myself, but substitutes may have different dimensions or pin spacing and may not fit the PCBs I designed for this project. Please compare the exact part specifications and PCB footprint before buying a substitute.
 
@@ -157,7 +157,7 @@ Quantities below are for **one complete panel with the optional SQL On/Off PCB i
 | Main Board J1, TFT connection | 1x08 | 1 | One 1x08 female at master; one 1x14 female at TFT module |
 | Teensy mounting | Two 1x24 male strips on Teensy | 2 | Two 1x24 female PCB socket strips on master |
 
-Totals: **two 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 male board headers**, plus two 1x24 Teensy male strips if not already fitted. Cable housings total **three 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 female**, separate from the two 1x24 board sockets. Use at least **76 female crimp contacts**, plus spares, matched to the housing manufacturer's series. Wire lengths depend on the final panel layout. Preterminated female cables can replace housings and crimp contacts without counting both.
+Totals for the [2.54 mm male board headers](https://www.amazon.com/dp/B0H14KKZ5S): **two 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 male board headers**, plus two 1x24 Teensy male strips if not already fitted. Cable housings total **three 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 female**, separate from the two 1x24 board sockets. Use at least **76 female crimp contacts**, plus spares, matched to the housing manufacturer's series. Wire lengths depend on the final panel layout. Preterminated female cables can replace housings and crimp contacts without counting both.
 
 The TFT module normally already has its 14-pin male header. Check before purchasing an additional one. The final [Button Matrix v3.2](../PCBs/Button%20Matrix/) uses separate four-pin row and column connectors. Split the Main Board J2 eight-wire matrix cable accordingly: pins 1–4 to Button Matrix J1, and pins 5–8 to Button Matrix J2. Main J2 and J9/J10 now have 2.54 mm header footprints assigned. Check connector stack height and cable clearance when arranging the Main PCB. Unused Teensy USB-host, Ethernet and auxiliary headers are not required.
 
@@ -267,6 +267,9 @@ I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFu
 
   **Choose the stand-off height by the clearance your build needs.** Expect approximately **22–26 mm of total stand-off height**, depending on the shaft length of your SQL ON/OFF rotary switch. Dry-fit the boards, switch and faceplate, then select the height that provides the required clearance and correct shaft position before tightening the mounting hardware.
 
+- **MAIN and MOD rotary switch resistors:** 12 axial through-hole resistors, 1 kΩ, 1%, six per board. The PCB uses a vertical footprint with 1.90 mm lead spacing. Check body and lead fit before soldering.
+  [Amazon listing](https://www.amazon.com/dp/B08QRVPC8X)
+
 - **Diodes:** 16 × 1N4148 small-signal fast-switching diodes, DO-35
   The current Button Matrix PCB uses D5–D20; fit the 16 diodes as shown in its schematic.
   [Amazon](https://www.amazon.com/100-Pieces-1N4148-Switching-High-Speed/dp/B079KJ91JZ/ref=sr_1_1_sspa?s=industrial&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY)
@@ -278,8 +281,8 @@ I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFu
 
 My main firmware code is shared under the [MIT License](../Docs/LICENSE-MIT.txt), and I’m happy to provide it to anyone who asks. You can also find the [published source here](../Firmware/Source/Master_Program/README.md). If you adapt it or add improvements, I’d love to work with you and bring useful changes back into this project so other builders—and my other panel projects—can benefit too.
 
-Please share your changes through a pull request or get in touch in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). Contributing changes back is welcome, but it isn’t an extra condition of the MIT License. Third-party code keeps its own license. The PCB designs retain their separate hardware license.
+Please share your changes through a pull request or get in touch in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I welcome contributions. The linked MIT License explains the terms for using and sharing the code. Third-party code keeps its own license. The PCB designs retain their separate hardware license.
 
 ## Questions and community builds
 
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+If you have questions, ideas, or photos of your build, I’d love to hear from you. [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)

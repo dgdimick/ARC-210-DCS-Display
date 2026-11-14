@@ -1,6 +1,6 @@
 # Current ARC-210 display font
 
-**Last updated: November 1, 2026 at 7:00 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 I copied `SwanseaFontSimple.cpp` and `SwanseaFontSimple.h` from the working ARC210_Display library for the current menu-preview firmware. These replace the older FreeSans headers previously stored here.
 
@@ -15,12 +15,12 @@ The renderer uses the Swansea28 bitmap glyph table with fractional scaling:
 
 These are rendering scales, not point sizes. The files depend on Arduino and ILI9488_t3 and use the display library's global `tft` object; they are not standalone desktop font files or Adafruit GFX font headers.
 
-Using the precompiled HEX? You’re all set—the fonts are already included. These source files are only needed if you’re building or changing the firmware.
+The precompiled HEX already includes the fonts. These source files are only needed if you’re building or changing the firmware.
 
 ## Estimated build cost
 
-Thinking about building one? The [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
+If you’re thinking about building one, the [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. I’ve included the files and build notes to help you put it together.
 
 ## Questions and community builds
 
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+If you have questions, ideas, or photos of your build, I’d love to hear from you. [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)

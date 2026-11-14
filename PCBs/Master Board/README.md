@@ -1,6 +1,6 @@
 # ARC-210 Main Board v1.1 and schematic
 
-**Last updated: November 1, 2026 at 7:00 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 Updated October 29, 2026: USB-powered design with TFT VCC supplied directly from the Teensy's 3.3 V rail.
 
@@ -10,7 +10,7 @@ Download this repository using **Code → Download ZIP**, extract it, and keep t
 
 You can also download the [schematic](ARC-210_Master_Board.kicad_sch) and [PCB v1.1](ARC-210_Master_Board.kicad_pcb) directly. Downloading only that file does not include the project library configuration.
 
-Main Board **v1.1** includes the completed placement and routing, GND copper pours on both layers, and a [Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). Its switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes and USB zip-tie slots are retained. All 13 circuit component footprints are on B.Cu, facing away from the faceplate. ERC, DRC and schematic/PCB parity pass under the saved settings, with zero unconnected items. I’ve checked the physical fit of Main Board v1.1; current verification, assembly and manufactured-board testing are still ahead. Take your time with the build, and please ask in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) if you need a hand.
+Main Board **v1.1** includes the completed placement and routing, GND copper pours on both layers, and a [Gerber/drill package](Manufacturing/Main-Board-PCB-v1.1-Gerbers-Drill.zip). Its switch mounting and anti-rotation cutouts, four 3.5 mm mounting holes and USB zip-tie slots are retained. All 13 circuit component footprints are on B.Cu, facing away from the faceplate. ERC, DRC and schematic/PCB parity pass under the saved settings, with zero unconnected items. I’ve checked the physical fit of Main Board v1.1; current verification, assembly and manufactured-board testing are still ahead. Take your time with the build. If you get stuck, I’m happy to help in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) if you need a hand.
 
 ## PCB layout — five or six boards
 

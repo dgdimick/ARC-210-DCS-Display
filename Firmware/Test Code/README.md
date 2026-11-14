@@ -1,10 +1,10 @@
 # Test Code
 
-**Last updated: November 13, 2026 at 2:12 AM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 **Latest switch tester: V1.1 — [Download the current HEX](ARC210_Rotary_Switch_Test/ARC210_Master_Secondary_Switch_Test_v1.1_Teensy41.hex).** Includes Master, Secondary, and SQL ON/OFF; it supersedes switch tester V1.0. I added the SQL ON/OFF indication to make the SQL switch test clearer.
 
-The standalone switch test is V1.1. The other hardware tests are V1.0.
+Use V1.1 for the standalone switch test and V1.0 for the other hardware tests.
 
 **Button and encoder troubleshooting builds:** The [button/encoder test](ARC210_Button_Test_v1.0_Teensy41.hex) and [standalone encoder test](ARC210_Encoder_Check_v1.0_Teensy41.hex) were rebuilt with V1.0 display labels. I tested both builds on my ARC-210 panel and confirmed they work. [Button/encoder source](ARC210_Button_Encoder_Check/) and [encoder source](ARC210_Encoder_Check/).
 
@@ -59,8 +59,8 @@ For example, connect a rotary-switch signal to the Teensy connection marked **14
 
 ## Estimated build cost
 
-Thinking about building one? The [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
+If you’re thinking about building one, the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. I’ve included the files and build notes to help you put it together.
 
 ## Questions and community builds
 
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+If you have questions, ideas, or photos of your build, I’d love to hear from you. [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)

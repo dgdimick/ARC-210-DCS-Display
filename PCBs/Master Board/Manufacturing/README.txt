@@ -6,7 +6,7 @@ routed outline, Gerber job, and separate plated/nonplated metric Excellon
 drills. Absolute origin, no mirroring. USB zip-tie slots, mounting holes,
 SQL shaft hole and anti-rotation opening are retained.
 
-Generated from the current Main Board PCB in the parent directory.
+I generated these files from the Main Board PCB in the parent directory.
 The source PCB and schematic are unchanged. This is a draft export:
 Main Board v1.1 physical fit confirmed October 29, 2026. Final routing review, current verification,
 assembly and electrical testing remain pending. See the parent README

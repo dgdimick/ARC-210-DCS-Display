@@ -7,5 +7,5 @@ Fresh ERC/DRC: zero violations, zero unconnected items, zero schematic/PCB misma
 Two copper layers, 1.6 mm board thickness. Gerber X2 copper, masks, silkscreens, and Edge.Cuts.
 Metric Excellon drills: separate PTH/NPTH, absolute origin, unmirrored; same origin as Gerbers.
 Verified 130 plated holes and 5 non-plated holes, including one 12.000 mm SQL pass-through.
-Upload Button-Matrix-PCB-v3.2-Gerbers-Drill.zip and check the manufacturer's outline/drill preview.
+Upload Button-Matrix-PCB-v3.2-Gerbers-Drill.zip, then check the board outline and holes in the manufacturer's preview.
 The earlier v3.1 physical-fit check remains applicable to the unchanged outer outline and button positions. Manufactured v3.2 board assembly and electrical testing remain pending.

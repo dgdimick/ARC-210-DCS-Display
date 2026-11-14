@@ -1,12 +1,12 @@
 # ARC-210 Documentation
 
-**Last updated: November 1, 2026 at 7:00 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 These notes explain the choices behind my ARC-210 build and help you find your way around the wiring and hardware. If something is unclear, feel free to ask in Discussions.
 
 ## Build guide
 
-The [step-by-step build guide](Build%20Guide/README.md) covers parts, printing, PCB assembly, wiring, and testing. It marks unfinished steps and manufactured-board validation as **pending**.
+The [step-by-step build guide](Build%20Guide/README.md) covers parts, printing, PCB assembly, wiring, and testing. I’ve marked the steps and board tests I still need to finish as **pending**.
 
 ## Why I used a Teensy
 
@@ -101,11 +101,11 @@ The SQL On/Off PCB is optional: the panel uses five required PCBs, or six with t
 
 ## Estimated build cost
 
-Thinking about building one? The [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
+If you’re thinking about building one, the [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. I’ve included the files and build notes to help you put it together.
 
 ## Questions and community builds
 
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+If you have questions, ideas, or photos of your build, I’d love to hear from you. [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)
 
 ## Current PCB versions and a friendly starting point
 

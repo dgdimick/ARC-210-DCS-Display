@@ -1,6 +1,6 @@
 # ARC-210 Rotary Switch PCB — Version 2.0 — Final PCB design
 
-**Last updated: November 12, 2026 at 9:10 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 Updated October 12, 2026.
 
@@ -83,8 +83,8 @@ For example, connect a rotary-switch signal to the Teensy connection marked **14
 
 ## Estimated build cost
 
-Thinking about building one? The [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
+If you’re thinking about building one, the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. I’ve included the files and build notes to help you put it together.
 
 ## Questions and community builds
 
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+If you have questions, ideas, or photos of your build, I’d love to hear from you. [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)

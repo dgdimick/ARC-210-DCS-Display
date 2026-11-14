@@ -1,6 +1,6 @@
 # ARC-210 Windows USB display name utility
 
-**Last updated: November 13, 2026**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 These optional scripts set the display name for a serial device listed under **Ports (COM & LPT)** in Windows Device Manager. The default label is **ARC-210 (COMx)**. Use **-Name** or the interactive prompt to choose your own label for a Teensy, USB-to-serial adapter, or another serial device listed there. Windows keeps the assigned COM number.
 
@@ -22,7 +22,7 @@ To use a different port and label, pass your COM number and put the name in quot
 
 ![Windows Device Manager showing Dummy Test (COM3) under Ports (COM & LPT)](Device-Manager-Dummy-Test-COM3.png)
 
-The script adds the COM number for you. If you already used the script to rename this device, restore its original name before applying another label.
+The script adds the device’s COM number to the end of your label. If you already used the script to rename this device, restore its original name before applying another label.
 
 To undo the rename, enter the device's current COM number from the same administrator PowerShell window. For the COM3 example, use the command below.
 

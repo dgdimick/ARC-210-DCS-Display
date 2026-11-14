@@ -1,10 +1,10 @@
 # ARC-210 Teensy Firmware and Boot Loader Files
 
-**Last updated: November 1, 2026 at 7:00 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 Ready to try the ARC-210 firmware? This folder contains precompiled files for the Teensy 4.1, so you can load them without compiling the Arduino source code. The steps below will walk you through the upload tools.
 
-The firmware files use the `.hex` extension.
+Look for files ending in `.hex` when you’re ready to load firmware.
 
 ## TyTools
 
@@ -152,8 +152,8 @@ TyTools is released into the public domain. Refer to the [TyTools repository](ht
 
 ## Estimated build cost
 
-Thinking about building one? The [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
+If you’re thinking about building one, the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. I’ve included the files and build notes to help you put it together.
 
 ## Questions and community builds
 
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+If you have questions, ideas, or photos of your build, I’d love to hear from you. [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)

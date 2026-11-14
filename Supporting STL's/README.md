@@ -1,6 +1,6 @@
-# ARC-210 Supporting 3D Files — November 12, 2026
+# ARC-210 Supporting 3D Files — November 13, 2026
 
-**Last updated: November 12, 2026 at 4:34 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 **Both master downloads include the v6.1 TFT bracket and the v4.2 Channel knob.** Please keep checking [Project Updates](../Docs/Project-Updates.md) for any changes.
 
@@ -86,7 +86,7 @@ The SQL ON/OFF knob is included: **nine knobs total**, ready to print at **100% 
 
 ### If you downloaded an older ZIP
 
-If you downloaded an earlier ZIP, please grab the current knob files from the table above. These files are intended to be used together as Knob Set V3. Some revision numbers look lower than the older filenames, so the table is the best guide to which files to print. Older files may still appear in previously downloaded ZIPs or repository history.
+If you downloaded an older ZIP, grab the current knob files from the table above. These files are intended to be used together as Knob Set V3. Some revision numbers look lower than the older filenames, so the table is the best guide to which files to print. Older files may still appear in previously downloaded ZIPs or repository history.
 
 `Channel_Knob_v.4.2.stl` replaces v4.1. Earlier files remain available for earlier shaft fits.
 
@@ -138,8 +138,8 @@ Use this spacer in **all installations** to support the **longer shaft used by t
 
 ## Estimated build cost
 
-Thinking about building one? The [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
+If you’re thinking about building one, the [DIY parts purchasing estimate](../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. I’ve included the files and build notes to help you put it together.
 
 ## Questions and community builds
 
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+If you have questions, ideas, or photos of your build, I’d love to hear from you. [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)

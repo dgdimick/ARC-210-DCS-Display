@@ -1,6 +1,6 @@
 # ARC-210 Button Matrix PCB
 
-**Last updated: November 12, 2026 at 9:54 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 **October 30, 2026 — v3.2 released:** Removed the duplicate approximately 13.38 mm Edge.Cuts circle at H3; the intended opening remains a **12.0 mm non-plated hole**. Board and schematic revisions and the silkscreen are now **3.2**. I moved H3’s reference label clear of the hole’s solder-mask opening. There are no electrical changes. Gerbers and drills were freshly exported with KiCad 10.0.7; fresh ERC/DRC checks report zero violations, zero unconnected items, and zero schematic/PCB mismatches under the saved settings. Use the [v3.2 manufacturing ZIP](Manufacturing/Button-Matrix-PCB-v3.2-Gerbers-Drill.zip) for new orders.
 
@@ -31,7 +31,7 @@ Download [Button-Matrix-PCB-v3.2-Gerbers-Drill.zip](Manufacturing/Button-Matrix-
 
 The ZIP contains the seven Gerber X2 layers (front/back copper, solder mask, silkscreen, and board outline), a Gerber job file, separate metric Excellon PTH/NPTH drill files, and manufacturing notes. Both Gerbers and drills use the absolute origin without mirroring. The source specifies a two-layer, 1.6 mm board.
 
-The exports were checked against the source: **130 plated holes and five non-plated holes**, including four 3.5 mm mounting holes and H3’s 12 mm SQL On/Off pass-through. [Individual files, drill maps, and drill report](Manufacturing/) are also available. Check the manufacturer's preview for the board outline, central opening, and drill placement before ordering. The printed fit check confirmed button alignment; manufactured-board assembly and electrical testing remain pending.
+The exports were checked against the source: **130 plated holes and five non-plated holes**, including four 3.5 mm mounting holes and H3’s 12 mm SQL On/Off pass-through. [Individual files, drill maps, and drill report](Manufacturing/) are also available. Before you order, check the board outline, center opening, and hole placement in the manufacturer's preview. The printed fit check confirmed button alignment; manufactured-board assembly and electrical testing remain pending.
 
 **Final v3.1 design; test fit confirmed — October 27, 2026:** I physically test-fitted the revised v3.1 board, and it fits. The buttons are in the correct locations. The board edges were slightly too long and have been shortened for version **3.1**, which preceded the v3.2 hole correction. This historical fit check applies to the unchanged outer outline and button positions; use v3.2 for new orders. The obsolete v3.0 manufacturing ZIP has been removed; Git history retains earlier revisions.
 

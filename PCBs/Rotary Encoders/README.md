@@ -1,6 +1,6 @@
 # ARC-210 Rotary Encoder PCB
 
-**Last updated: November 12, 2026 at 9:24 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 Version **1.4 — Final PCB design**, updated October 12, 2026.
 
@@ -12,7 +12,7 @@ Version 1.4 publishes the latest saved PCB layout and project settings, includin
 
 For version 1.3, I checked this six-encoder PCB against its schematic. The electrical check reported zero errors and warnings; the PCB check reported zero violations, zero unconnected pads and zero schematic parity issues under the project's saved check settings. Courtyard and certain footprint checks are disabled in those settings.
 
-I printed the rotary-encoder STL and confirmed that it fits, and all six encoders worked together in the combined hardware test. Testing an assembled, manufactured PCB is still on my list. The check results above explain what has been verified so far.
+I printed the rotary-encoder STL and confirmed that it fits, and all six encoders worked together in the combined hardware test. Testing an assembled, manufactured PCB is still on my list. The checks above cover the PCB design.
 
 ## Assembly order
 
@@ -86,8 +86,8 @@ For example, connect a rotary-switch signal to the Teensy connection marked **14
 
 ## Estimated build cost
 
-Thinking about building one? The [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
+If you’re thinking about building one, the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. I’ve included the files and build notes to help you put it together.
 
 ## Questions and community builds
 
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+If you have questions, ideas, or photos of your build, I’d love to hear from you. [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)

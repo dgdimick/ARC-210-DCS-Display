@@ -1,6 +1,6 @@
 # ARC-210 Build Guide
 
-**Last updated: November 12, 2026 at 11:06 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 **Soldering irons are HOT.** Handle the iron with care and wear eye protection while soldering or trimming leads.
 
@@ -38,7 +38,7 @@ Draft started October 29, 2026.
 
 I’m putting this guide together to help you build your own ARC-210 panel using a Teensy 4.1, a 3.5-inch ILI9488 LCD display connected by SPI, and my control boards. If this is your first panel, start by reading through the guide, then take the build one board at a time. You’re welcome to ask questions in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)—I’m happy to help where I can.
 
-**This guide is still a work in progress.** When you see **Pending**, that’s something I still need to finish, test, measure, or photograph. Check those notes before ordering parts or making a permanent connection. I’ll fill in the details as I go.
+**This guide is still a work in progress.** When you see **Pending**, that’s something I still need to finish, test, measure, or photograph. Check those notes before ordering parts or making a permanent connection. I’ll add those details as I work through the build.
 
 I spend about **8 hours a day on my SIMPIT projects**, including working on the code, PCB design, assembly, and test fitting.
 
@@ -314,6 +314,6 @@ If you get stuck, tell me which step you’re on, the board version, and what yo
 
 My main firmware code is shared under the [MIT License](../../Docs/LICENSE-MIT.txt), and I’m happy to provide it to anyone who asks. If you adapt it or add improvements, I’d love to work with you and bring useful changes back into this project so other builders—and my other panel projects—can benefit too.
 
-Please share your changes through a pull request or get in touch in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). Contributing changes back is welcome, but it isn’t an extra condition of the MIT License. Third-party code keeps its own license. The PCB designs retain their separate hardware license.
+Please share your changes through a pull request or get in touch in [Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions). I welcome contributions. The linked MIT License explains the terms for using and sharing the code. Third-party code keeps its own license. The PCB designs retain their separate hardware license.
 
 [Back to documentation](../README.md) · [Back to main README](../../README.md)

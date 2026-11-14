@@ -1,12 +1,12 @@
 # ARC-210 final combined hardware test
 
-**Last updated: November 1, 2026 at 7:19 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 Current Main Board version: **1.1**.
 
 **This is the Final Hardware Test used during normal assembly.** You don’t need to run the individual TFT, button, encoder, or switch tests as well. I keep those [optional tests](../README.md) for troubleshooting when a display or control does not work as expected.
 
-**V1.0 release — November 1, 2026.** This build adds V1.0 to the screen; I still need to check the rebuilt file on my panel. The original combined test was completed on October 10, 2026. I’ve confirmed all the controls listed below working together on my panel. You can use this test to check your own wiring and controls before moving on to the radio firmware.
+**V1.0 release — November 1, 2026.** This build adds V1.0 to the screen; I still need to check the rebuilt file on my panel. The original combined test was completed on October 10, 2026. I confirmed that all the controls listed below worked together on my panel. You can use this test to check your own wiring and controls before moving on to the radio firmware.
 
 Download [ARC210_Final_Hardware_Test_v1.0_Teensy41.hex](../ARC210_Final_Hardware_Test_v1.0_Teensy41.hex) and program it with Teensy Loader.
 
@@ -39,8 +39,8 @@ For example, connect a rotary-switch signal to the Teensy connection marked **14
 
 ## Estimated build cost
 
-Thinking about building one? The [DIY parts purchasing estimate](../../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
+If you’re thinking about building one, the [DIY parts purchasing estimate](../../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. I’ve included the files and build notes to help you put it together.
 
 ## Questions and community builds
 
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+If you have questions, ideas, or photos of your build, I’d love to hear from you. [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)

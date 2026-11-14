@@ -1,6 +1,6 @@
 # ARC-210 menu-system preview
 
-**Last updated: November 13, 2026 at 1:27 AM MST (America/Denver)**
+**Last updated: November 13, 2026 at 9:41 PM MST (America/Denver)**
 
 `ARC210_A-10C2_v0.1.2_Preview.hex` is the current Teensy 4.1 / ILI9488 480 × 320 display firmware, published for menu-screen and navigation testing. It is not a complete implementation of every radio function.
 
@@ -12,7 +12,7 @@ Changing the Windows registry to rename the COM port is **optional**. The panel 
 
 ## Control Test v0.1.6
 
-This Teensy 4.1 build adds the **ARC-210** USB product name to the v0.1.5 Control Test and shows **0.1.6** at startup. It compiled successfully. Panel and live DCS testing are pending. [Download the v0.1.6 Control Test HEX](ARC210_A-10C2_v0.1.6_Control_Test_Teensy41.hex).
+This Teensy 4.1 build adds the **ARC-210** USB product name to the v0.1.5 Control Test and shows **0.1.6** at startup. I compiled this build and still need to test it on the panel and in DCS. [Download the v0.1.6 Control Test HEX](ARC210_A-10C2_v0.1.6_Control_Test_Teensy41.hex).
 
 ## Bench diagnostic build — v0.1.3
 
@@ -84,8 +84,8 @@ d8267d7d2fb09f721ca710171a5b4c64c2f819f585cb17723d73561f7359acb9  ARC210_A-10C2_
 
 ## Estimated build cost
 
-Thinking about building one? The [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. You’ll source the parts yourself, and I’m sharing the files and guidance to help along the way.
+If you’re thinking about building one, the [DIY parts purchasing estimate](../../parts/README.md#estimated-build-cost) gives you an idea of the budget, including the faceplate, display, electronics, and PCB fabrication. I’ve included the files and build notes to help you put it together.
 
 ## Questions and community builds
 
-Visit [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions) to ask questions, share ideas, and post photos of your builds.
+If you have questions, ideas, or photos of your build, I’d love to hear from you. [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions)
