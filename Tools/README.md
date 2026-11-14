@@ -1,6 +1,6 @@
 # Windows USB display name utility
 
-**Last updated: November 13, 2026 at 11:52 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 11:59 PM MST (America/Denver)**
 
 These optional scripts set the display name for a serial device listed under **Ports (COM & LPT)** in Windows Device Manager. The default label is **ARC-210 (COMx)**. Use **-Name** or the interactive prompt to choose your own label for a Teensy, USB-to-serial adapter, or another serial device listed there. Windows keeps the assigned COM number.
 
@@ -8,6 +8,23 @@ These optional scripts set the display name for a serial device listed under **P
 
 - `Set-ARC210-USBName.ps1` — MD5 `89d1e2c65d4427ac4ab343a9b79a28d5`
 - `Restore-ARC210-USBName.ps1` — MD5 `38a35af76d98421f74c55add24c219e9`
+
+## Verify your downloads
+
+Before running the scripts, open PowerShell in the folder where you saved them and run the following command.
+
+```powershell
+Get-FileHash -Algorithm SHA256 -LiteralPath .\Set-ARC210-USBName.ps1, .\Restore-ARC210-USBName.ps1
+```
+
+Compare the `Hash` shown for each file with the value below. Uppercase and lowercase letters are equivalent.
+
+| Script | Expected SHA-256 |
+|---|---|
+| `Set-ARC210-USBName.ps1` | `3f688fb8056111f118ab992cdc458ac4dbe61c54886d5920a60d8e1b829b9052` |
+| `Restore-ARC210-USBName.ps1` | `5744ea11c196f0ba82b64f3eccb732f39f8ba9cc033059e467b7257a17dd577c` |
+
+If a hash differs, download that file again and recheck it before running it. If the hash still differs, do not run the scripts. Contact me in [GitHub Discussions](https://github.com/dgdimick/ARC-210-DCS-Display/discussions).
 
 ## TLDR:
 
