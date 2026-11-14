@@ -1,6 +1,6 @@
 # ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 13, 2026
 
-**Last updated: November 13, 2026 at 11:41 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 11:47 PM MST (America/Denver)**
 
 **[Windows COM port tools](Tools/README.md)** — Download the scripts to rename a COM port in Device Manager or restore its previous display name.
 

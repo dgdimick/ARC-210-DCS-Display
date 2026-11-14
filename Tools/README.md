@@ -1,6 +1,6 @@
 # Windows USB display name utility
 
-**Last updated: November 13, 2026 at 11:41 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 11:47 PM MST (America/Denver)**
 
 These optional scripts set the display name for a serial device listed under **Ports (COM & LPT)** in Windows Device Manager. The default label is **ARC-210 (COMx)**. Use **-Name** or the interactive prompt to choose your own label for a Teensy, USB-to-serial adapter, or another serial device listed there. Windows keeps the assigned COM number.
 
@@ -85,6 +85,14 @@ The rename script saves the backup with the device record. If Windows moves the 
 
 I moved my ARC-164 to a different USB port on the same PC, and Windows still showed **ARC-164 (COM4)**. Windows used the same device record in both USB ports.
 
-Run **.\Set-ARC210-USBName.ps1** with no arguments to enter the COM port and display name at the prompts. Press Enter at the name prompt to use **ARC-210**. Run **.\Restore-ARC210-USBName.ps1** with no arguments to enter just the COM port and restore its saved label. If Device Manager shows only **USB Serial Device**, check which port appears in TekConnect or DCSBridge when you plug in the Teensy.
+If you run the rename script without arguments, you must type the device’s current COM port (for example, `COM5`) at the port prompt and press Enter. Leaving the port blank causes a validation error. At the name prompt, you can press Enter to use `ARC-210`.
+
+To supply both values directly for a device on COM5, run the following command.
+
+```powershell
+.\Set-ARC210-USBName.ps1 -Port COM5 -Name "ARC-210"
+```
+
+Run **.\Restore-ARC210-USBName.ps1** with no arguments to enter just the COM port and restore its saved label. If Device Manager shows only **USB Serial Device**, check which port appears in TekConnect or DCSBridge when you plug in the Teensy.
 
 I tested both scripts on COM5. Windows showed **ARC-210 (COM5)** after renaming and **USB Serial Device (COM5)** after restoring. I also tested the custom name on a Bluetooth serial port with the Teensy unplugged. Windows showed **Dummy Test (COM3)** and then restored **Standard Serial over Bluetooth link (COM3)**.
