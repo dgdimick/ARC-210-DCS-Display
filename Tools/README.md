@@ -1,6 +1,6 @@
 # Windows USB display name utility
 
-**Last updated: November 13, 2026 at 11:59 PM MST (America/Denver)**
+**Last updated: November 14, 2026 at 12:05 AM MST (America/Denver)**
 
 These optional scripts set the display name for a serial device listed under **Ports (COM & LPT)** in Windows Device Manager. The default label is **ARC-210 (COMx)**. Use **-Name** or the interactive prompt to choose your own label for a Teensy, USB-to-serial adapter, or another serial device listed there. Windows keeps the assigned COM number.
 
@@ -76,6 +76,14 @@ In the same administrator PowerShell window, replace `COM5` with the device’s 
 Once the restore succeeds, run the rename script again and enter the new name.
 
 ## How to rename or restore the port
+
+Use `Set-ARC210-USBName.ps1` to rename the port. Use `Restore-ARC210-USBName.ps1` to put its previous display name back.
+
+For COM5, run this command to restore the previous name. Replace `COM5` with the device’s current COM port if it uses a different number.
+
+```powershell
+.\Restore-ARC210-USBName.ps1 -Port COM5
+```
 
 1. Download [Set-ARC210-USBName.ps1](https://github.com/dgdimick/ARC-210-DCS-Display/releases/download/windows-usb-tools-v1/Set-ARC210-USBName.ps1) and [Restore-ARC210-USBName.ps1](https://github.com/dgdimick/ARC-210-DCS-Display/releases/download/windows-usb-tools-v1/Restore-ARC210-USBName.ps1) into the same folder.
 2. If you have several devices and are unsure which COM port belongs to each one, unplug them and reconnect them one at a time. Check **Device Manager → Ports (COM & LPT)** after plugging in each device. If you want to change its port number, do that in Device Manager first. For example, if you change COM4 to COM23, run the rename script using **COM23**. Then repeat for the next device. If you already know which COM port each device uses in DCS-BIOS, you can use those port numbers directly.
