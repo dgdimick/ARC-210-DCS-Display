@@ -30,6 +30,8 @@ If a hash differs, download that file again and recheck it before running it. If
 
 ## TLDR:
 
+[Set the COM port number in Device Manager](#set-the-com-port-number-in-device-manager)
+
 Download both scripts using the links above and save them in the same folder.
 
 Open **Windows PowerShell** as administrator in the folder where you saved the scripts. Replace **COM5** with the COM port you want to use and **ARC-210** with the **name** you want to use.
