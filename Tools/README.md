@@ -1,6 +1,6 @@
 # ARC-210 Windows USB display name utility
 
-**Last updated: November 13, 2026 at 10:00 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 10:02 PM MST (America/Denver)**
 
 These optional scripts set the display name for a serial device listed under **Ports (COM & LPT)** in Windows Device Manager. The default label is **ARC-210 (COMx)**. Use **-Name** or the interactive prompt to choose your own label for a Teensy, USB-to-serial adapter, or another serial device listed there. Windows keeps the assigned COM number.
 
@@ -40,6 +40,8 @@ Both scripts support COM port numbers above 9. If your device uses COM12, run th
 ```
 
 The set script saves the original registry value on the selected device instance. The restore script uses that backup to put the old label back, or uses **Serial Port (COMx)** when there was no original label (**USB Serial Device (COMx)** for a Teensy). A label already set manually before using the utility has no backup from this utility. Both scripts accept `-WhatIf` to preview the operation. Reopen Device Manager to refresh the displayed name.
+
+Windows saves the backup with the device record. If Windows moves the same device from COM5 to COM17 and resets the label, rerun the rename script on COM17 with the same name. It reapplies the label and keeps the original backup. Run Restore on COM17 to put the original label back with the current port number. After a successful restore, the script deletes the backup from that device record. If Windows creates a new device record, the old backup stays with the original record. Restore on the new record only handles backups saved there.
 
 Run **.\Set-ARC210-USBName.ps1** with no arguments to enter the COM port and display name at the prompts. Press Enter at the name prompt to use **ARC-210**. Run **.\Restore-ARC210-USBName.ps1** with no arguments to enter just the COM port and restore its saved label. If Device Manager shows only **USB Serial Device**, check which port appears in TekConnect or DCSBridge when you plug in the Teensy.
 
