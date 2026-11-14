@@ -2,13 +2,13 @@
 
 # Future thoughts and plans
 
-**Last updated: November 14, 2026 at 1:33 AM MST (America/Denver)**
+**Last updated: November 14, 2026 at 1:36 AM MST (America/Denver)**
 
 I’m finishing the A-10C II ARC-210 first, then the ARC-164 and ARC-186, before returning to additional aircraft support. [My development priorities](Related-Radio-Projects.md) may change based on feedback and interest.
 
 **Future upgrades:** It may be as long as **two years** before I return to this project with upgrades or a new version. Please treat future-version ideas as long-term plans, with no promised release date.
 
-The cost of either V2 path makes it a very low priority for me. **Version 2 is a long way off.** I plan to finish the ARC-164 and ARC-186, then take a break to catch up on other things. It may be as long as two years before I return to ARC-210 upgrades, and I have no release date. **If you want to build an ARC-210, please don't wait for Version 2.**
+The cost of either V2 path makes it a very low priority for me. I'll finish C-130J support before I even look at V2. **Version 2 is a long way off.** I plan to finish the ARC-164 and ARC-186, then take a break to catch up on other things. It may be as long as two years before I return to ARC-210 upgrades, and I have no release date. **If you want to build an ARC-210, please don't wait for Version 2.**
 
 - I’ll probably redesign the display bracket after the PCBs are built. I still don’t like the current mounting method.
 
