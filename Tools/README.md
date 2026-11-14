@@ -1,6 +1,6 @@
 # Windows USB display name utility
 
-**Last updated: November 13, 2026 at 11:47 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 11:48 PM MST (America/Denver)**
 
 These optional scripts set the display name for a serial device listed under **Ports (COM & LPT)** in Windows Device Manager. The default label is **ARC-210 (COMx)**. Use **-Name** or the interactive prompt to choose your own label for a Teensy, USB-to-serial adapter, or another serial device listed there. Windows keeps the assigned COM number.
 
@@ -27,6 +27,17 @@ Open **Windows PowerShell** as administrator in the folder where you saved the s
   - **Example:**
 
     `.\Restore-ARC210-USBName.ps1 -Port COM23`
+
+## If PowerShell blocks the scripts
+
+If PowerShell says “running scripts is disabled on this system,” open Windows PowerShell as administrator and go to the folder where you saved both scripts. After reviewing the scripts and confirming you downloaded them from the links above, run the following commands.
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+Unblock-File -LiteralPath .\Set-ARC210-USBName.ps1, .\Restore-ARC210-USBName.ps1
+```
+
+Run the rename or restore command again in that same window. The execution policy change expires when you close the window. If the scripts are still blocked, run `Get-ExecutionPolicy -List` to check whether `MachinePolicy` or `UserPolicy` is set. Those policies take precedence over the session setting. [Microsoft PowerShell execution policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies/)
 
 ## If the device already has a saved rename
 
