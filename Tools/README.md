@@ -1,6 +1,6 @@
 # Windows USB display name utility
 
-**Last updated: November 14, 2026 at 12:05 AM MST (America/Denver)**
+**Last updated: November 14, 2026 at 12:16 AM MST (America/Denver)**
 
 These optional scripts set the display name for a serial device listed under **Ports (COM & LPT)** in Windows Device Manager. The default label is **ARC-210 (COMx)**. Use **-Name** or the interactive prompt to choose your own label for a Teensy, USB-to-serial adapter, or another serial device listed there. Windows keeps the assigned COM number.
 
@@ -8,6 +8,8 @@ These optional scripts set the display name for a serial device listed under **P
 
 - `Set-ARC210-USBName.ps1` — MD5 `89d1e2c65d4427ac4ab343a9b79a28d5`
 - `Restore-ARC210-USBName.ps1` — MD5 `38a35af76d98421f74c55add24c219e9`
+
+I tested both the rename and restore scripts and the steps for running them in PowerShell as administrator. All three worked on my Windows PC.
 
 ## Verify your downloads
 
