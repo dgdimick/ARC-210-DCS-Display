@@ -42,22 +42,28 @@ $hasName = $key.GetValueNames() -contains 'FriendlyName'
 $current = $key.GetValue('FriendlyName')
 $label = "$($Name.Trim()) ($Port)"
 
+$defaultName = 'Serial Port'
+$isTeensy = $devices[0].InstanceId -match '^USB\\VID_16C0&'
+if ($isTeensy) {
+    $defaultName = 'USB Serial Device'
+}
+
+if ($hasBackup) {
+    $backup = $key.GetValue($backupName) | ConvertFrom-Json
+    $savedLabel = $backup.AppliedName -creplace ' \(COM[1-9][0-9]*\)$', " ($Port)"
+    $originalLabel = "$defaultName ($Port)"
+    if ($backup.HadName) {
+        $originalLabel = $backup.OriginalName -creplace ' \(COM[1-9][0-9]*\)$', " ($Port)"
+    }
+}
+
 if ($Undo) {
     if (!$hasBackup) { Write-Output 'There is no saved rename for this device.'; return }
-    $backup = $key.GetValue($backupName) | ConvertFrom-Json
-    if ($current -cne $backup.AppliedName) {
+    if ($current -cne $backup.AppliedName -and $current -cne $savedLabel) {
         throw 'The display name changed since the utility ran. The saved backup was kept.'
     }
     if ($PSCmdlet.ShouldProcess($target, 'Restore the saved Windows display name')) {
-        if ($backup.HadName) {
-            Set-ItemProperty -LiteralPath $path -Name FriendlyName -Value $backup.OriginalName
-        } else {
-            $defaultName = 'Serial Port'
-            if ($devices[0].InstanceId -match '^USB\\VID_16C0&') {
-                $defaultName = 'USB Serial Device'
-            }
-            Set-ItemProperty -LiteralPath $path -Name FriendlyName -Value "$defaultName ($Port)"
-        }
+        New-ItemProperty -LiteralPath $path -Name FriendlyName -PropertyType String -Value $originalLabel -Force | Out-Null
         Remove-ItemProperty -LiteralPath $path -Name $backupName
         Write-Output 'Windows display name restored. Reopen Device Manager to refresh the list.'
     }
@@ -65,11 +71,22 @@ if ($Undo) {
 }
 
 if ($current -ceq $label) { Write-Output "$Port already has that display name."; return }
-if ($hasBackup) { throw 'This device already has a saved rename. Restore it before applying a new name.' }
 if ($hasName -and $key.GetValueKind('FriendlyName') -ne 'String') {
     throw 'The current display name uses an unexpected registry type.'
 }
 if ($PSCmdlet.ShouldProcess($target, "Set the Windows display name to $label")) {
+    if ($hasBackup) {
+        # A port reassignment can reset FriendlyName while leaving the backup intact.
+        $wasReset = !$hasName -or $current -ceq $originalLabel -or
+            ($isTeensy -and $current -ceq "$defaultName ($Port)")
+        if ($label -cne $savedLabel -or !$wasReset) {
+            throw 'This device already has a saved rename. Restore it before applying a new name.'
+        }
+        New-ItemProperty -LiteralPath $path -Name FriendlyName -PropertyType String -Value $label -Force | Out-Null
+        Write-Output "Reapplied the display name $label. Reopen Device Manager to refresh the list."
+        return
+    }
+
     $backup = @{ HadName = $hasName; OriginalName = $current; AppliedName = $label } | ConvertTo-Json -Compress
     New-ItemProperty -LiteralPath $path -Name $backupName -PropertyType String -Value $backup | Out-Null
     try {
