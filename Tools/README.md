@@ -1,6 +1,6 @@
 # Windows USB display name utility
 
-**Last updated: November 13, 2026 at 11:28 PM MST (America/Denver)**
+**Last updated: November 13, 2026 at 11:41 PM MST (America/Denver)**
 
 These optional scripts set the display name for a serial device listed under **Ports (COM & LPT)** in Windows Device Manager. The default label is **ARC-210 (COMx)**. Use **-Name** or the interactive prompt to choose your own label for a Teensy, USB-to-serial adapter, or another serial device listed there. Windows keeps the assigned COM number.
 
@@ -27,6 +27,22 @@ Open **Windows PowerShell** as administrator in the folder where you saved the s
   - **Example:**
 
     `.\Restore-ARC210-USBName.ps1 -Port COM23`
+
+## If the device already has a saved rename
+
+PowerShell shows this error when the device already has a saved rename:
+
+```text
+This device already has a saved rename. Restore it before applying a new name.
+```
+
+In the same administrator PowerShell window, replace `COM5` with the device’s current COM number in Device Manager and run:
+
+```powershell
+.\Restore-ARC210-USBName.ps1 -Port COM5
+```
+
+Once the restore succeeds, run the rename script again and enter the new name.
 
 ## How to rename or restore the port
 
