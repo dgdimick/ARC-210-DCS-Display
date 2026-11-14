@@ -77,6 +77,15 @@ In the same administrator PowerShell window, replace `COM5` with the device’s 
 
 Once the restore succeeds, run the rename script again and enter the new name.
 
+## Set the COM port number in Device Manager
+
+1. Plug in the USB serial device and open **Device Manager**.
+2. Expand **Ports (COM & LPT)**, right-click your device, and select **Properties**.
+3. Open **Port Settings → Advanced**, then choose an unused **COM Port Number**, such as **COM23**. Click **OK** in both windows.
+4. Unplug the device, plug it back into the same USB socket, and check that it still shows **COM23**. Use the confirmed number in DCS-BIOS and in the rename script if you use it.
+
+Windows normally remembers the assignment for the device it recognizes. If you move a device without a unique USB serial number to a different socket, Windows may treat it as a new device and assign another COM number. Use the same socket for those devices. [Microsoft USB serial number documentation](https://learn.microsoft.com/en-us/windows-hardware/test/hlk/testref/0f2d5113-cf70-4cda-8afc-b7005d1e2739)
+
 ## How to rename or restore the port
 
 Use `Set-ARC210-USBName.ps1` to rename the port. Use `Restore-ARC210-USBName.ps1` to put its previous display name back.
