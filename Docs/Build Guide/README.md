@@ -257,7 +257,7 @@ I strongly recommend using **two single-row, 24-pin female headers (2.54 mm pitc
 2. Tack the first and last pins of each header, then solder one pin near the middle of each row. Check that both headers are seated squarely and let the joints cool before unplugging the Teensy.
 3. Finish soldering the remaining pins with the Teensy removed. Skip around between pins and alternate rows so the plastic housings have time to cool. Before plugging the Teensy back in, inspect both 24-pin headers and remove any solder bridges between neighboring pins.
 
-**SQL On/Off shaft height:** Choose the Main Board standoff height based on how far you want the SQL rotary switch shaft to stick through the faceplate. Dry-fit the Main Board, switch, and faceplate, then check that the knob seats and turns freely before tightening the hardware.
+**SQL On/Off shaft height:** On the revised Main Board, the cutout around the TFT connector lets you use taller or shorter standoffs to adjust how much of the SQL switch shaft sticks through the faceplate. Dry-fit the Main Board, switch, and faceplate, then check that the knob seats and turns freely before tightening the hardware.
 
 ### Main Board connections
 
