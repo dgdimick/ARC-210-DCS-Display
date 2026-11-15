@@ -231,6 +231,8 @@ Use the current TFT bracket, encoder spacers, switch shaft spacer, and faceplate
 
 I redesigned the mount so the TFT screws right into the bracket. Use **four M3 × 6 mm screws** (M3 × 0.5 thread) and snug them up just enough to hold the display. **Don’t overtighten them.** It’s easy to strip the printed threads. The bracket is a tight fit on the Button Matrix PCB, but you’ll still need a little hot glue or silicone adhesive to secure the bracket to the board. Check button movement and shaft alignment before soldering or fastening makes adjustment difficult.
 
+If the TFT bracket rattles, tuck a small piece of closed-cell foam between the bracket and the Main Board. Use just enough foam to take up the slack when the panel is assembled. If you want to keep the foam in place, attach it to the TFT bracket with a small dab of hot glue or silicone adhesive. I’m using silicone adhesive for mine.
+
 The Main Board component bodies face **away from the faceplate**, on the back of the board. Version 1.1 includes the switch shaft and anti-rotation openings and four 3.5 mm mounting holes.
 
 **The assembled Main Board v1.1 interferes with the SQL On/Off switch.**
