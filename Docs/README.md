@@ -93,13 +93,13 @@ The painted buttons supplied with the PC Flights panel used for this build are o
 
 The Teensy is powered by USB, and TFT VCC connects directly to the Teensy's 3.3 V supply. The external protected 5 V input, Main Board JP1 power selector, and C5/C6 TFT supply capacitors have been removed. C1/C2 and R1/R2 remain as rotary-input filters. The TFT backlight uses GPIO 4. Use a USB Micro-B data cable for power, programming, and USB communications.
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign it and the Main Board and use light-transmitting buttons. There is no finished design or release date. The TFT backlight is separate; see [Future Thoughts](Future-Thoughts.md) for clearance, power, possible four-layer costs, and reusable-part plans.
+**The current Button Matrix PCB v3.2 has unlit buttons.** The revised Main Board includes power and dimming circuitry for future LED button backlighting. My plan is to reuse that Main Board when I release a backlit Button Matrix PCB for light-transmitting buttons. There’s no release date for the button-board upgrade.
 
 My aim is to reuse the **rotary encoders, rotary switches, socket-mounted Teensy, faceplate, and other compatible parts outside the two replacement boards**. I still need to check compatibility during the redesign. Male Teensy headers and matching Main Board sockets would let you move the controller to a compatible replacement board. Illuminated legends would need suitable light-transmitting buttons.
 
-## Optional SQL On/Off PCB
+## SQL On/Off direct wiring
 
-The SQL On/Off PCB is optional: the panel uses five required PCBs, or six with this optional board. For direct wiring, use TP1 (SQL signal, GPIO 41 / U1 pad 33) and TP2 (GND), both included and routed in the current Main Board v1.1. SQL1 remains an alternative two-pin header. The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is required in all installations to support the longer SQL On/Off switch shaft, whether or not the optional PCB is fitted. See the [direct-wiring notes](../parts/README.md#six-pcb-layout). I’ve checked the physical fit of Main Board v1.1; I still need to test the assembled board.
+Mount the C&K A12515RNZQ solder-lug switch by its shaft bushing. Solder its common lug to **Main Board J13 pad 1 (SQL_ONOFF, Teensy GPIO 41)** and the contact selected in the ON position to **J13 pad 2 (GND)**. Set the stop ring to two positions for 45° of travel.
 
 ## Estimated build cost
 

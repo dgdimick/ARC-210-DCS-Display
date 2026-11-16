@@ -41,7 +41,7 @@ I bought most of my parts from DigiKey or Mouser Electronics. You can use lower-
 | [Headers, Teensy sockets, cable connectors and wire](#pin-headers-and-mating-connectors--october-12-2026) | Parts needed for one build | $15–$25 |
 | [Required PCB standoff kit and screws](https://www.amazon.com/dp/B0H1QS5Q6N) | 1 kit | $10 |
 | [3D-printed knobs, brackets and spacers](../Supporting%20STL%27s/README.md) | Filament used | $3–$8 |
-| [Bare PCBs from JLCPCB](../Docs/PCB-Manufacturing-JLCPCB.md) | Five copies of each of four designs: 20 boards total; one panel uses five or six | US$58.20 cart estimate, including displayed shipping and a US$15.00 coupon; other applicable charges may be extra |
+| [Bare PCBs from JLCPCB](../Docs/PCB-Manufacturing-JLCPCB.md) | Five copies of each of four designs: 20 boards total; one panel uses five | US$58.20 cart estimate, including displayed shipping and a US$15.00 coupon; other applicable charges may be extra |
 | USB Micro-B data cable — for powering and programming the Teensy 4.1; [USB-C-to-Micro-B adapter cable option](https://www.amazon.com/dp/B0BD36TZBK) | 1 cable total | $3–$6 allowance; check the linked option’s current price |
 | **Estimated DIY purchasing cost using JLCPCB (rounded)** | | **US$268–US$301** |
 
@@ -82,23 +82,23 @@ I chose the listed component suppliers because I’m aiming for better-quality p
 
 The Teensy is powered by USB, and **TFT VCC connects directly to the Teensy's 3.3 V rail** (`TEENSY_3V3`, U1 pad 15). I’ve tested the TFT at 3.3 V and found the brightness satisfactory. I removed the external protected 5 V input and Main Board JP1 power selector. I removed C5 (470 µF) and C6 (0.1 µF) to match the direct Teensy-to-TFT wiring I tested. C1/C2 and R1/R2 remain as the rotary-input filters. Keep total external 3.3 V consumption within PJRC's recommended 250 mA maximum; brightness confirmation is not a current measurement.
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign it and the Main Board and use light-transmitting buttons. There is no finished design or release date. The TFT backlight is separate; see [Future Thoughts](../Docs/Future-Thoughts.md) for clearance, power, possible four-layer costs, and reusable-part plans.
+**The current Button Matrix PCB v3.2 has unlit buttons.** The revised Main Board includes power and dimming circuitry for future LED button backlighting. My plan is to reuse that Main Board when I release a backlit Button Matrix PCB for light-transmitting buttons. There’s no release date for the button-board upgrade.
 
 I recommend using **male pin headers on the Teensy and matching female socket strips on the Main Board** so the controller can be unplugged. If I release a compatible replacement Main Board, you could move your existing Teensy to it rather than buy another controller, saving some money. Soldering the Teensy’s header pins directly into the Main Board does not provide that removable connection.
 
 I hope to reuse the controls, socket-mounted Teensy, and faceplate in a future lighting upgrade, subject to compatibility checks. Replacement boards may need four layers and cost more; I have no finished design or release date. See [Future Thoughts](../Docs/Future-Thoughts.md).
 
-## PCB layout — five or six boards
+## PCB layout — five boards
 
-The panel uses five required PCBs: one Main Board, one Button Matrix, one Rotary Encoder, and two multi-position Rotary Switch boards. An optional SQL On/Off switch PCB brings the total to six; it can be omitted when wiring directly to the switch’s solder lugs.
+The ARC-210 uses **five PCBs**: one Main Board, one Button Matrix, one Rotary Encoder board, and two Rotary Switch boards for MAIN and MOD.
 
-The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether or not the optional PCB is fitted.
+Fit the [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) to support the longer SQL On/Off switch shaft.
 
-All boards are controlled by one Teensy 4.1. The estimate above allows for all six boards.
+One Teensy 4.1 controls all five boards.
 
-The three rotary switch PCBs use the same design and are interchangeable. I fit six resistors on each of the two multi-position switch boards. When using the optional SQL On/Off switch board, I omit all resistors and bridge the JP1 solder pad; its solder-lug switch connects to the board with wires.
+Fit six 1 kΩ resistors on each MAIN and MOD board and leave JP1 open.
 
-**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Main Board’s SQL signal (GPIO 41) and GND connections. Configure GPIO 41 with a pull-up and choose the contact for the intended electrical ON/OFF states. Set the stop ring to **two positions with 45° total travel**. No resistor ladder is needed for this option. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; I’ve checked the physical fit of Main Board v1.1; I still need to check the assembled board.
+**SQL On/Off direct wiring.** Mount the C&K A12515RNZQ solder-lug switch by its shaft bushing. Solder its common lug to **Main Board J13 pad 1 (SQL_ONOFF, Teensy GPIO 41)** and the contact selected in the ON position to **J13 pad 2 (GND)**. Set the stop ring to two positions for 45° of travel.
 
 ## Rotary-switch test wiring
 
@@ -108,7 +108,7 @@ The three rotary switch PCBs use the same design and are interchangeable. I fit 
 
 [BOM.csv](BOM.csv) originated from the ARC-210 Main Board schematic and includes subsequent panel-hardware selections. Panel-hardware entries are explicitly labelled so their references are not confused with Main Board references. The board-specific purchasing lists are still being refined. The quantities already account for the documented build, so there’s no need to multiply them by the number of PCBs.
 
-The corrected [Rotary Switch KiCad project, version 2.0](../PCBs/Rotary%20Switches/), replaces the withdrawn initial version. Version 2.0 retains the corrected pin assignments and adds an ON/OFF solder jumper for SQL On/Off. Omit R1–R6 and bridge JP1 for SQL On/Off operation; fit the resistors and leave JP1 open for resistor-ladder operation. See the project instructions for wiring and pull-up configuration.
+Use the [Rotary Switch KiCad project v2.0](../PCBs/Rotary%20Switches/) for the two MAIN and MOD resistor-ladder boards.
 
 ## Panel illumination removed — October 6, 2026
 
@@ -124,7 +124,7 @@ C5 (470 µF) and C6 (0.1 µF) are no longer fitted or required purchases. The Ma
 
 J3, F2, D1, D2, D3, Q2, R15–R17, C5/C6, and the Main Board JP1 header/shunt are removed and are not required purchases for this revision. The [BOM](BOM.csv) has been updated to remove those entries. The obsolete Q3, R37, and R38 entries, absent from every current board schematic, have also been removed from the BOM. The matrix diode entries specify 1N4148 with the current DO-35 footprint, including corrected D8. The cost allowance still needs review before purchasing; use the current board schematics as the authority for fitted parts.
 
-The 100 nF rotary-input capacitors C1/C2 and series resistors R1/R2 are retained. SQL solder-wire pads TP1/TP2 are placed and routed in the Main Board draft; I’ve checked the physical fit of Main Board v1.1; I still need to check the assembled board.
+The Main Board retains the 100 nF rotary-input capacitors C1/C2 and series resistors R1/R2. The rerouted Main Board has J13 solder pads for SQL, and its fit test is pending.
 
 ## Teensy GPIO labels and KiCad pin numbers
 
@@ -144,7 +144,7 @@ For example, connect a rotary-switch signal to the Teensy connection marked **14
 
 ## Pin headers and mating connectors — October 27, 2026
 
-Quantities below are for **one complete panel with the optional SQL On/Off PCB installed**, including all three rotary-switch PCBs. If you wire the solder-lug SQL switch directly, omit its PCB-side header and cable connectors as appropriate for your wiring method. Dedicated **TP1 (SQL signal, GPIO 41 / U1 pad 33)** and **TP2 (GND)** solder-wire pads are now included in the Main Board schematic and PCB draft. The optional SQL1 header remains available. The pads are placed and routed in the current draft; I’ve checked the physical fit of Main Board v1.1; I still need to check the assembled board. Use single-row **2.54 mm pitch** headers and matching female cable connectors. The removed six separate encoder headers and two 9-pin rotary-switch headers are obsolete.
+Quantities cover **one complete five-board panel**. Use single-row **2.54 mm pitch** headers and matching female cable housings. The SQL switch uses two soldered wires to J13.
 
 | Location / use | Board-side male header | Quantity | Mating cable housings |
 | --- | --- | ---: | --- |
@@ -152,16 +152,14 @@ Quantities below are for **one complete panel with the optional SQL On/Off PCB i
 | Main Board J2 | 1x08 | 1 | One 1x08 female |
 | Button Matrix PCB J1/J2 | 1x04 | 2 | Two 1x04 female |
 | Main Board J9/J10 and two multi-position switch PCBs | 1x03 | 4 | Four 1x03 female |
-| Main Board SQL1 | 1x02 | 1 | One 1x02 female |
-| SQL On/Off switch PCB J1 | 1x03 | 1 | One 1x03 female; use pins 2 and 3 only |
 | Main Board J1, TFT connection | 1x08 | 1 | One 1x08 female at master; one 1x14 female at TFT module |
-| Teensy mounting | Two 1x24 male strips on Teensy | 2 | Two 1x24 female PCB socket strips on master |
+| Teensy mounting | Two 1x24 male strips on Teensy | 2 | Two 1x24, 2.54 mm female through-hole sockets on the Main Board. [Samtec SSW-124-01-T-S at Mouser](https://www.mouser.com/en/ProductDetail/Samtec/SSW-124-01-T-S?qs=iT52DjcXudvCUishYlzKnw%3D%3D) |
 
-Totals for the [2.54 mm male board headers](https://www.amazon.com/dp/B0H14KKZ5S): **two 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 male board headers**, plus two 1x24 Teensy male strips if not already fitted. Cable housings total **three 1x14, two 1x08, two 1x04, five 1x03 and one 1x02 female**, separate from the two 1x24 board sockets. Use at least **76 female crimp contacts**, plus spares, matched to the housing manufacturer's series. Wire lengths depend on the final panel layout. Preterminated female cables can replace housings and crimp contacts without counting both.
+Totals for the [2.54 mm male board headers](https://www.amazon.com/dp/B0H14KKZ5S): **two 1x14, two 1x08, two 1x04, four 1x03 male board headers**, plus two 1x24 Teensy male strips if not already fitted. Cable housings total **three 1x14, two 1x08, two 1x04, four 1x03 female**, separate from the two 1x24 board sockets. Use at least **78 female crimp contacts**, plus spares, matched to the housing manufacturer's series. Wire lengths depend on the final panel layout. Preterminated female cables can replace housings and crimp contacts without counting both.
 
 The TFT module normally already has its 14-pin male header. Check before purchasing an additional one. The final [Button Matrix v3.2](../PCBs/Button%20Matrix/) uses separate four-pin row and column connectors. Split the Main Board J2 eight-wire matrix cable accordingly: pins 1–4 to Button Matrix J1, and pins 5–8 to Button Matrix J2. Main J2 and J9/J10 now have 2.54 mm header footprints assigned. Check connector stack height and cable clearance when arranging the Main PCB. Unused Teensy USB-host, Ethernet and auxiliary headers are not required.
 
-**Cable mapping matters:** the encoder cable is pin-for-pin between the two 14-pin headers. The matrix cable uses rows on pins 1–4 and columns on pins 5–8. Multi-position switch cables use 1 = 3.3 V, 2 = signal and 3 = GND. When using the optional SQL On/Off PCB, its cable maps master SQL1 pin 1 to switch-board J1 pin 2, and SQL1 pin 2 to switch-board J1 pin 3; switch-board pin 1 stays unused.
+**Cable mapping matters:** the encoder cable is pin-for-pin between the two 14-pin headers. The matrix cable uses rows on pins 1–4 and columns on pins 5–8. Multi-position switch cables use 1 = 3.3 V, 2 = signal and 3 = GND.
 
 The TFT cable is **not straight-through**. With the current Main Board schematic and MSP3520 module manual, connect:
 
@@ -174,9 +172,11 @@ The TFT cable is **not straight-through**. With the current Main Board schematic
 | 5 | SCK / GPIO13 | 7 |
 | 6 | DC/RS / GPIO9 | 5 |
 | 7 | MOSI / GPIO11 | 6 |
-| 8 | Backlight control / GPIO4 | 8 |
+| 8 | BLK / Teensy pin 4 | 8 |
 
-TFT module pins 9–14 are unused in this connection. Use the module's printed signal labels to identify pins, and check cable continuity before power-up. When using the optional SQL On/Off PCB, its ON/OFF solder bridge needs solder only, not another shunt; direct wiring does not use this bridge.
+**TFT backlight:** Teensy pin 4 drives BLK on my working development setup. On the Main Board test setup, the display was barely readable with BLK on pin 4 and bright with BLK on the 3.3 V supply. I’m still checking what accounts for the difference. If you use 3.3 V to test the backlight, disconnect BLK from J1 pin 8 first.
+
+TFT module pins 9–14 are unused in this connection. Use the module's printed signal labels to identify pins, and check cable continuity before power-up.
 
 ## Current button switches
 
@@ -226,7 +226,7 @@ I still need to **design and 3D print the USB cable strain-relief support**. It 
 ## Required 3D-printed spacers
 
 - **Rotary Encoder spacers: print six.** Use [Rotary_Encoder_Spacer_v.1.stl](../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl), one per encoder, to center the encoder threads in the faceplate holes.
-- **SQL On/Off shaft spacer: print one.** Use [Shaft_Spacer_v.5.stl](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) in all installations to support the longer SQL switch shaft, whether or not its optional PCB is fitted.
+- **SQL On/Off shaft spacer: print one.** Use [Shaft_Spacer_v.5.stl](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) in all installations to support the longer SQL switch shaft.
 
 Both spacer quantities are included in the [BOM](BOM.csv).
 
@@ -251,7 +251,7 @@ I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFu
 - **Multi-position rotary switches:** Two C&K **A12505RNCQ**, with 1/2-inch (12.7 mm) shafts, 45-degree indexing and **C PCB-pin terminals**. These replace the solder-lug versions for the two resistor-ladder PCBs. The circuit uses seven positions of each eight-position switch; verify the corrected wiring and stop-ring setting against the panel.
   [Mouser — 611-A12505RNCQ](https://www.mouser.com/en/ProductDetail/CK/A12505RNCQ?qs=h7H1bHRqGz9AS0MdXl06Aw%3D%3D) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
 
-- **SQL On/Off switch:** One C&K **A12515RNZQ**, with a 1-1/2-inch (38.1 mm) shaft, 45-degree indexing and **Z solder-lug terminals**. Mount it in a bracket, fit the [required shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) to support its longer shaft in all installations, and wire its contacts to the Teensy input. It does not mount directly in the PCB-pin footprint and does not need a resistor ladder. **Set the stop ring to two positions for 45° total travel between SQL ON and OFF.**
+- **SQL On/Off switch:** One C&K **A12515RNZQ** with a 1-1/2-inch (38.1 mm) shaft, 45-degree indexing, and **Z solder-lug terminals**. Mount the C&K A12515RNZQ solder-lug switch by its shaft bushing. Solder its common lug to **Main Board J13 pad 1 (SQL_ONOFF, Teensy GPIO 41)** and the contact selected in the ON position to **J13 pad 2 (GND)**. Set the stop ring to two positions for 45° of travel.
   [Mouser](https://www.mouser.com/ProductDetail/CK/A12515RNZQ) · [C&K datasheet](https://www.ckswitches.com/media/1349/arotary.pdf)
 
   **Shaft-length check:** The linked A12515RNZQ has a **38.1 mm shaft**. I previously specified 42 mm for SQL, so I still need to resolve that length requirement before recommending a different part; I haven’t verified a purchasable 42 mm equivalent. The linked switch provides the required 45° indexing.

@@ -13,7 +13,7 @@ Updated October 30, 2026. The current PCB, schematic, project settings, and proj
 
 This is the current **unlit 16-button, 4 × 4 matrix**.
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign the button board with LED support, use suitable light-transmitting buttons, and make the required Main Board, power, and driver changes. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished backlit button-board design or release date yet. See [Future Thoughts](../../Docs/Future-Thoughts.md) for the lighting redesign plan.
+**The current Button Matrix PCB v3.2 has unlit buttons.** The revised Main Board includes power and dimming circuitry for future LED button backlighting. My plan is to reuse that Main Board when I release a backlit Button Matrix PCB for light-transmitting buttons. There’s no release date for the button-board upgrade.
 
 **SQL On/Off:** I use the **C&K A12515RNZQ solder-lug rotary switch**, with its stop ring set to **two positions for 45° total travel**. Align the knob with the panel’s ON/OFF markings. See the [parts list](../../parts/README.md) for shaft-length and mounting details.
 
@@ -37,7 +37,7 @@ The exports were checked against the source: **130 plated holes and five non-pla
 
 ## SQL On/Off switch shaft support
 
-The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**. Fit it whether using the optional SQL On/Off PCB or wiring directly to the switch’s solder lugs. H3’s 12 mm opening in the Button Matrix PCB provides pass-through clearance for the SQL On/Off switch.
+The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**. H3’s 12 mm opening in the Button Matrix PCB provides pass-through clearance for the SQL On/Off switch.
 
 ## Layout reference pictures
 
@@ -104,7 +104,7 @@ KiCad 10.0.7 checks run October 27, 2026 reported **zero ERC violations, zero DR
 
 The PC Flights panel buttons used for this build are painted and opaque, so light will not pass through them to illuminate their legends. This design has no button-lighting LEDs.
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign it and the Main Board and use light-transmitting buttons. There is no finished design or release date. The TFT backlight is separate; see [Future Thoughts](../../Docs/Future-Thoughts.md) for clearance, power, possible four-layer costs, and reusable-part plans.
+**The current Button Matrix PCB v3.2 has unlit buttons.** The revised Main Board includes power and dimming circuitry for future LED button backlighting. My plan is to reuse that Main Board when I release a backlit Button Matrix PCB for light-transmitting buttons. There’s no release date for the button-board upgrade.
 
 My aim for a future LED upgrade is to let builders reuse the **rotary encoders, rotary switches, socket-mounted Teensy, and faceplate**, along with other compatible parts outside the replacement Main Board and button board. I still need to confirm compatibility during the redesign. Using male headers on the Teensy and matching female sockets on the Main Board would let you move the controller to a compatible replacement board and save buying another one. See [Future Thoughts](../../Docs/Future-Thoughts.md) for the upgrade plans.
 

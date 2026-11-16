@@ -80,7 +80,7 @@ I recommend buying a **Teensy 4.1 with pre-soldered male header pins**: [SparkFu
 
 For removable mounting, use **two 1 × 24 female PCB socket strips, 2.54 mm (0.1-inch) pitch**, on the Main Board, with matching male headers on the Teensy. Each strip has one row of 24 sockets; the Teensy’s pins plug into them. **These sockets are optional but recommended.** They allow the Teensy to be removed when replacing or updating the Main Board for new features, such as future LED support, or when the Teensy itself is damaged and needs replacement. **Pending:** final socket height, header lead length, standoff lengths, fastener quantities, and cable lengths must be confirmed against the finished assembly.
 
-The build uses **five required boards**: one Main Board, one Button Matrix, one Rotary Encoder, and two Rotary Switch boards. A third Rotary Switch PCB is optional for the SQL On/Off switch, bringing the total to six.
+The ARC-210 uses **five PCBs**: one Main Board, one Button Matrix, one Rotary Encoder board, and two Rotary Switch boards for MAIN and MOD.
 
 The PCBs require mounting stand-offs. Use the [Vibit M3 nylon stand-off kit](https://www.amazon.com/dp/B0H1QS5Q6N), budgeted at **$10 per kit** in the BOM. Choose the total stand-off height by the clearance your build needs: approximately **22–26 mm**, depending on the SQL ON/OFF rotary switch shaft length. Dry-fit the boards, switch and faceplate, then select the height that provides the required clearance and correct shaft position before tightening the mounting hardware. The number of individual stand-offs remains pending.
 
@@ -106,7 +106,7 @@ The easiest starting point is the [master STL or 3MF download](../../Supporting%
 | [SQL shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) | **Print one; required in all installations** to support the longer SQL On/Off switch shaft |
 | [SQL knob v1.2](../../Supporting%20STL%27s/SQL_Knob_v.1.2.stl) | Print one at 100%; retains the larger SQL socket |
 
-The SQL shaft spacer is required whether using the optional SQL PCB or wiring directly to the switch's solder lugs. It is a separate part from the SQL knob.
+Fit the SQL shaft spacer to support the longer switch shaft. It is a separate part from the SQL knob.
 
 **Channel v4.2 and SQL v1.2 have the same outside size and small side hole, but different shaft holes.** Print one of each at 100% scale. I’ve test-fitted both; see the [STL README](../../Supporting%20STL%27s/README.md) for the socket details and current downloads.
 
@@ -152,7 +152,7 @@ Download the manufacturing packages from the [Gerber and drill table](../../PCBs
 | Main Board v1.1 | 1 |
 | Button Matrix v3.2 | 1 |
 | Rotary Encoder v1.4 | 1 |
-| Rotary Switch v2.0 | 2 required, plus 1 optional for SQL On/Off |
+| Rotary Switch v2.0 | 2 (MAIN and MOD) |
 
 Review the manufacturer's preview against the project outline and drill information. These control boards specify two layers and 1.6 mm thickness; consult each manufacturing README for details.
 
@@ -160,7 +160,7 @@ Review the manufacturer's preview against the project outline and drill informat
 
 ## 4. Assemble the Button Matrix PCB
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign the button board with LED support, use suitable light-transmitting buttons, and make the required Main Board, power, and driver changes. I may revisit this after completing the ARC-164 and ARC-186 projects; there is no finished backlit button-board design or release date yet. See [Future Thoughts](../Future-Thoughts.md) for the lighting redesign plan.
+**The current Button Matrix PCB v3.2 has unlit buttons.** The revised Main Board includes power and dimming circuitry for future LED button backlighting. My plan is to reuse that Main Board when I release a backlit Button Matrix PCB for light-transmitting buttons. There’s no release date for the button-board upgrade.
 
 I recommend using **male pin headers on the Teensy and matching female socket strips on the Main Board** so the controller can be unplugged. If I release a compatible replacement Main Board, you could move your existing Teensy to it rather than buy another controller, saving some money. Soldering the Teensy’s header pins directly into the Main Board does not provide that removable connection.
 
@@ -219,9 +219,8 @@ J1 pin 1 is 3.3 V, pin 2 is the signal, and pin 3 is GND.
 
 The SQL On/Off switch is the **A12515RNZQ**, an **eight-position** switch with solder lugs and the longer shaft. Wire the solder lugs as described below. **Set the stop ring to two positions** so the switch moves just one click (45°) between OFF and ON.
 
-- **Direct wiring:** connect the switch common to the Main Board SQL signal and the selected contact to GND. Choose the contact for the intended electrical ON/OFF states. Set the stop ring to **two positions with 45° total travel**.
-- **Optional SQL PCB:** use wires from the solder-lug switch to the corresponding board connections. Leave R1–R6 unpopulated and bridge the board's JP1 ON/OFF solder jumper. Bridging means joining the jumper’s two pads with a small amount of solder. Follow its README for the contact and connector mapping.
-- Fit **shaft spacer v.5 in either configuration**.
+- Mount the C&K A12515RNZQ solder-lug switch by its shaft bushing. Solder its common lug to **Main Board J13 pad 1 (SQL_ONOFF, Teensy GPIO 41)** and the contact selected in the ON position to **J13 pad 2 (GND)**. Set the stop ring to two positions for 45° of travel.
+- Fit **shaft spacer v.5**.
 
 **Pending:** detailed SQL mounting photographs, final stack spacing and wire routing, and manufactured-board assembly validation.
 
@@ -253,7 +252,7 @@ Use the [current Main Board schematic and README](../../PCBs/Master%20Board/READ
 
 ### Install the Teensy socket headers
 
-I strongly recommend using **two single-row, 24-pin female headers (2.54 mm pitch)** so you can remove the Teensy if you ever need to.
+I strongly recommend using **two single-row, 24-pin female through-hole sockets (2.54 mm pitch)**, one for each side of the Teensy, so you can remove it if you ever need to. [Samtec SSW-124-01-T-S at Mouser](https://www.mouser.com/en/ProductDetail/Samtec/SSW-124-01-T-S?qs=iT52DjcXudvCUishYlzKnw%3D%3D)
 
 1. Temporarily plug the Teensy into both female headers to hold them straight and lined up. Seat the assembly on the **back of the Main Board, facing away from the faceplate**, with the header pins sticking through to the solder side.
 2. Tack the first and last pins of each header, then solder one pin near the middle of each row. Check that both headers are seated squarely and let the joints cool before unplugging the Teensy.
@@ -265,15 +264,14 @@ I strongly recommend using **two single-row, 24-pin female headers (2.54 mm pitc
 
 | Main Board connection | Purpose |
 | --- | --- |
-| J1 | TFT cable; **not straight-through**—use the [TFT cable mapping](../../parts/README.md#pin-headers-and-mating-connectors--october-12-2026) |
+| J1 | Use the [TFT cable mapping and backlight test note](../../parts/README.md#pin-headers-and-mating-connectors--october-12-2026). |
 | J2 | Button Matrix cable; split into the two four-pin board connectors as documented |
 | J4 | Rotary Encoder board; 14-pin cable, pin-for-pin |
 | J9 — MODE | Signal on pin 2 to GPIO 15 / A1 through R2 |
 | J10 — MASTER | Signal on pin 2 to GPIO 14 / A0 through R1 |
-| SQL1 | Pin 1 SQL signal / GPIO 41; pin 2 GND |
-| TP1 / TP2 | Alternative SQL solder-wire connections: TP1 signal, TP2 GND |
+| J13 | SQL wire solder pads. Pad 1 is SQL_ONOFF (GPIO 41) and pad 2 is GND. |
 
-J9 and J10 each use pin 1 = 3.3 V, pin 2 = signal, pin 3 = GND. For the optional SQL switch-board cable, follow the specific SQL mapping in the parts README; do not assume all three-pin cables have identical use.
+J9 and J10 each use pin 1 for 3.3 V, pin 2 for signal, and pin 3 for GND.
 
 The Teensy is USB-powered. TFT VCC comes directly from **Teensy 3.3 V**. The removed protected 5 V circuit, Main Board JP1 selector, and C5/C6 are not fitted. C1/C2 and R1/R2 remain as rotary-input filters. The separate Rotary Switch PCB's JP1 is still used as described in step 6.
 
@@ -305,7 +303,7 @@ The current radio HEX is a **display/menu preview**; physical controls do not ye
 | Symptom | First check |
 | --- | --- |
 | Teensy cannot be programmed or no USB data | Use a Micro-B data cable and the Teensy's programming button; follow the firmware loading instructions |
-| TFT blank during a hardware test | Start with the hello test; verify J1's non-straight-through mapping and backlight GPIO 4 |
+| TFT blank or dim during a hardware test | Run the Hello World test, verify the J1 cable mapping, and measure TFT pin 8 (BLK) to TFT pin 2 (GND) with the display connected. |
 | TFT blank with radio firmware | Confirm powered-radio updates are being received, as explained in the firmware README |
 | Encoder or matrix input missing | Check the connector mapping, continuity, diode polarity, and standalone test results |
 | Rotary-switch readings wrong | Check 3.3 V/signal/GND, resistor population, JP1 configuration, and travel stops |

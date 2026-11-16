@@ -18,13 +18,13 @@ I’ve gathered the wiring, hardware, firmware, and testing resources for my ARC
 
 ## Power and future button lighting
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign it and the Main Board, possibly using four-layer PCBs that cost more. My aim is to reuse the encoders, rotary switches, socket-mounted Teensy, and faceplate, subject to compatibility checks. I have no finished design, confirmed upgrade price, or release date. Upgrade costs are separate from the current estimates and PCB set price. See the [power and lighting notes](Power-and-Lighting.md).
+**The current Button Matrix PCB v3.2 has unlit buttons.** The revised Main Board includes power and dimming circuitry for future LED button backlighting. My plan is to reuse that Main Board when I release a backlit Button Matrix PCB for light-transmitting buttons. There’s no release date for the button-board upgrade.
 
-## PCB layout — five or six boards
+## PCB layout — five boards
 
 [Order the PCBs through JLCPCB](PCB-Manufacturing-JLCPCB.md) using my step-by-step guide to the manufacturing ZIPs, quantities, settings, and preview checks.
 
-[View the PCB layout page](../PCBs/PCB-Layout.md) for the mockup photo, board descriptions, and optional SQL On/Off direct-wiring details.
+[View the PCB layout page](../PCBs/PCB-Layout.md) for the mockup photo, board descriptions, and SQL On/Off direct-wiring details.
 
 ## Bare PCB offer for the ARC-210
 
@@ -52,7 +52,7 @@ See the [parts directory](../parts/) for the [component list (BOM)](../parts/BOM
 
 The [complete master STL and 3MF](../Supporting%20STL%27s/README.md#complete-17-part-print-set) contain **nine knobs, one display bracket, six encoder spacers, and one SQL shaft spacer**. Print one set at **100% scale**. Individual files remain available.
 
-The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether using the optional switch PCB or wiring directly to the switch’s solder lugs.
+The [shaft spacer v.5](../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**.
 
 Print **six [Rotary Encoder spacers v.1](../Supporting%20STL%27s/Rotary_Encoder_Spacer_v.1.stl)**, one for each encoder, to center the encoder threads in the faceplate holes.
 

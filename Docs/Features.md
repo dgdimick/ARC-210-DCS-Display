@@ -11,4 +11,4 @@
 
 - **Planned aircraft support, still in development:** I’m building a shared ARC-210 code base with automatic aircraft selection, so switching supported aircraft will not require reflashing the Teensy. See the [support plan](C-130J-Support.md).
 
-**The current Button Matrix PCB v3.2 does not support LED backlighting.** I would need to redesign it and the Main Board, possibly using four-layer PCBs that cost more. My aim is to reuse the encoders, rotary switches, socket-mounted Teensy, and faceplate, subject to compatibility checks. I have no finished design, confirmed upgrade price, or release date. Upgrade costs are separate from the current estimates and PCB set price. See the [power and lighting notes](Power-and-Lighting.md).
+**The current Button Matrix PCB v3.2 has unlit buttons.** The revised Main Board includes power and dimming circuitry for future LED button backlighting. My plan is to reuse that Main Board when I release a backlit Button Matrix PCB for light-transmitting buttons. There’s no release date for the button-board upgrade.

@@ -1,8 +1,14 @@
-# ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 14, 2026
+# ARC-210 Radio Control Panel for DCS A-10C II using a 3.5" SPI TFT display and DCS-BIOS — November 16, 2026
 
 **November 14, 2026 — Main Board withdrawn.** I’ve withdrawn the ARC-210 Main Board v1.1 after finding that the PCB interferes with the body of the SQL On/Off switch during assembly. Please hold off on ordering this board. I’ll repost the files after I revise the layout and verify the fit. [Main Board status](PCBs/Master%20Board/)
 
-**Last updated: November 14, 2026 at 1:36 AM MST (America/Denver)**
+**Last updated: November 16, 2026**
+
+## Main Board and button backlighting update — November 16, 2026
+
+The Main Board had some clearance issues, so I revised the layout and added the power and dimming circuitry for future LED button backlighting while I was in there. I’m still checking the fit of the SQL switch and all four USB tie-wrap slots before I post the new Gerbers.
+
+I’m getting a little burned out on the project, so I’m leaving the Button Matrix Board as it is for now. If you’ve been waiting for backlit buttons before building your ARC-210, it’s going to be a while. Once I release the revised Main Board, my plan is for the backlighting upgrade to require swapping only the Button Matrix PCB and using buttons that let the light through.
 
 **[Windows COM port tools](Tools/README.md)** — Download the scripts to rename a COM port in Device Manager or restore its previous display name.
 
@@ -45,7 +51,7 @@ Have all the parts and ready to build it?
 
 [View the remaining work](Docs/Remaining-Work.md) for the testing, documentation, and design tasks still to complete.
 
-**SQL On/Off:** I use the **C&K A12515RNZQ solder-lug rotary switch**, with its stop ring set to **two positions for 45° total travel**. Align the knob with the panel’s ON/OFF markings. See the [parts list](parts/README.md) for shaft-length and mounting details.
+The ARC-210 uses **five PCBs**: one Main Board, one Button Matrix, one Rotary Encoder board, and two Rotary Switch boards for MAIN and MOD. Mount the **C&K A12515RNZQ solder-lug SQL switch** at the Main Board and wire it directly to **J13**. Set the stop ring to two positions for 45° of travel. [Parts and mounting details](parts/README.md#component-selection-notes)
 
 ## Tools needed
 

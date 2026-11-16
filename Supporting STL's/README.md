@@ -132,7 +132,7 @@ I have printed this spacer at **100% scale**, and it passed its test fit.
 
 [Shaft_Spacer_v.5.stl](Shaft_Spacer_v.5.stl)
 
-Use this spacer in **all installations** to support the **longer shaft used by the SQL On/Off rotary switch**. Fit it whether using the optional switch PCB or wiring directly to the switch’s solder lugs.
+Use this spacer in **all installations** to support the **longer shaft used by the SQL On/Off rotary switch**.
 
 **October 22, 2026 — v.5 clearance fix:** The previous shaft spacer had a clearance issue. I corrected it in version 5, then physically test-fitted the spacer and checked that it works. Use v.5 for new prints; v.4 remains available in repository history.
 

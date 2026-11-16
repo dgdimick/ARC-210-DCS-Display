@@ -10,12 +10,12 @@ I can provide bare PCBs to help other builders complete my ARC-210 panel. I also
 
 **Price: US$40, plus shipping and handling.**
 
-The complete set contains **six bare boards** for one ARC-210 panel:
+The offered set contains **five boards for one ARC-210 panel and one spare Rotary Switch board**:
 
 - One Main Board v1.1
 - One Button Matrix PCB v3.2
 - One Rotary Encoder PCB v1.4
-- Three Rotary Switch PCBs v2.0, including the optional SQL On/Off board
+- Three Rotary Switch PCBs v2.0, two for MAIN and MOD and one spare
 
 This is a convenient way to get the boards for one radio without managing four design uploads or ordering extra copies of each design. You’ll supply the electronics, faceplate, and assembly. You can print the plastic parts yourself or [ask me for a printed set](#printed-parts). The assembled Rotary Switch PCBs v2.0 passed both fit and functional testing. Testing of the full assembly is still pending. The current Button Matrix PCB does not support LED backlighting; see [Future Thoughts](Future-Thoughts.md) for the possible redesign.
 

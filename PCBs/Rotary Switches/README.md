@@ -20,20 +20,9 @@ The Main Board schematic shows a 220 Ω series resistor and 100 nF capacitor nea
 
 **Tested wiring:** I tested both seven-position rotary switches, and they worked with each switch PCB’s J1 pin 2 connected directly to its Teensy input (GPIO 14 or GPIO 15), without the 220 Ω series resistor or 100 nF input-filter capacitor. The six 1 kΩ resistor-ladder resistors on each switch PCB were still fitted, and JP1 was left open. I saw some fluctuation in the TFT voltage readings, but it did not affect the detected switch positions. This records the successful breadboard setup; the input-filter components shown in the Main Board schematic were not part of that test.
 
-## SQL On/Off option added in version 1.2
+## SQL On/Off direct wiring
 
-**SQL On/Off:** I use the **C&K A12515RNZQ solder-lug rotary switch**, with its stop ring set to **two positions for 45° total travel**. Align the knob with the panel’s ON/OFF markings. See the [parts list](../../parts/README.md) for shaft-length and mounting details.
-
-The **SQL On/Off PCB is optional**: use it for the switch wiring, or omit it and wire directly to the switch’s solder lugs as described below. The panel uses five required boards, or six with this optional SQL board.
-
-The [shaft spacer v.5](../../Supporting%20STL%27s/Shaft_Spacer_v.5.stl) is **required in all installations** to support the **longer SQL On/Off switch shaft**, whether or not the optional PCB is fitted.
-
-I modified the PCB so it can also be used with the SQL On/Off switch. **JP1**, marked **ON/OFF** on the back of the PCB near R2, is an open solder jumper between GND and the R1–R2 junction: R2 pad 1, also connected to switch terminal 2.
-
-- **SQL On/Off:** omit all six resistors R1–R6 and bridge JP1 with solder. Connect J1 pin 2 (switch common A1) to a Teensy input configured with a pull-up, and J1 pin 3 to GND. Selecting terminal 2 pulls the input LOW; an ungrounded contact reads HIGH. J1 pin 1 is not needed for this configuration. Choose the contact for the intended electrical ON/OFF states. Set the stop ring to **two positions with 45° total travel**.
-- **Resistor ladder:** fit all six resistors R1–R6 and leave JP1 open. Use the three J1 connections listed above.
-
-The solder-lug A12515RNZQ still requires mechanical support and wires to the corresponding PCB connections; it does not fit the PCB-pin footprint directly.
+Mount the C&K A12515RNZQ solder-lug switch by its shaft bushing. Solder its common lug to **Main Board J13 pad 1 (SQL_ONOFF, Teensy GPIO 41)** and the contact selected in the ON position to **J13 pad 2 (GND)**. Set the stop ring to two positions for 45° of travel. [Parts and mounting details](../../parts/README.md#component-selection-notes)
 
 ## MAIN and MOD rotary switches
 
@@ -47,7 +36,6 @@ The solder-lug A12515RNZQ still requires mechanical support and wires to the cor
 
 Validation for version 2.0: KiCad PCB DRC, with zones refilled, reported zero non-excluded violations and zero unconnected pads under the saved project settings. The project contains 15 specific PTH-inside-switch-courtyard exclusions for the rear-side resistors and connector; I checked fit on the assembled boards. Several other check categories are disabled in the project. Fresh electrical schematic and PCB checks, including schematic parity, were run October 27, 2026; see the manufacturing files section. The assembled Rotary Switch PCBs v2.0 passed both fit and functional testing.
 
-**SQL On/Off direct-wiring option:** The SQL On/Off PCB is optional when using the solder-lug switch. You can solder wires directly to the switch’s common lug and the selected contact lug, then connect them to the Main Board’s SQL signal (GPIO 41) and GND connections. Configure GPIO 41 with a pull-up and choose the contact for the intended electrical ON/OFF states. Set the stop ring to **two positions with 45° total travel**. No resistor ladder is needed for this option. The Main Board v1.1 now includes TP1 (SQL signal, GPIO 41 / U1 pad 33) and TP2 (GND) for direct solder-wire connections. The optional SQL1 header remains; the current Main Board v1.1 is routed with zero unconnected items; physical fit is confirmed for Main Board v1.1; final routing review and assembly checks remain pending.
 
 ## Manufacturing files
 
